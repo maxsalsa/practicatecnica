@@ -1,0 +1,7 @@
+import {mkdtemp,writeFile,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {resolve} from 'node:path';
+import {spawn} from 'node:child_process';
+import {main,flag,authorizeWrite,need} from './shared';
+async function cli(args:string[]){await new Promise<void>((ok,fail)=>{const child=spawn(process.execPath,[resolve('node_modules/supabase/dist/supabase.js'),...args],{stdio:'inherit',env:process.env,shell:false});child.on('error',fail);child.on('exit',code=>code===0?ok():fail(new Error(`Supabase CLI terminó con código ${code}.`)));});}
+main(async()=>{if(flag('help')){console.log('pnpm mail:deploy --apply --project-ref=REF. Despliega el worker y dos secretos sin exponer valores.');return;}const{ref}=authorizeWrite();need('SUPABASE_ACCESS_TOKEN');const path=await mkdtemp(resolve(tmpdir(),'practica-worker-'));try{const file=resolve(path,'worker.env'),app=need('APP_URL'),secret=need('MAIL_WORKER_SECRET');if([app,secret].some(s=>/[\r\n]/.test(s)))throw new Error('Variables de worker contienen saltos de línea.');await writeFile(file,`APP_URL=${app}\nMAIL_WORKER_SECRET=${secret}\n`,{mode:0o600});await cli(['secrets','set','--env-file',file,'--project-ref',ref]);await cli(['functions','deploy','mail-worker','--project-ref',ref]);}finally{await rm(path,{recursive:true,force:true});}console.log('Worker desplegado. Continúe con mail:configure y una prueba real autorizada.');});

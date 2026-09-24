@@ -1,0 +1,4334 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-24",
+  "scope": "Inspección estática local. No certifica equivalencia curricular, derechos de distribución ni aplicación Next.js/Supabase.",
+  "source_manifest": "SHA256SUMS.json",
+  "source_hashes_match": true,
+  "source_files_checked": 22,
+  "totals": {
+    "specialties": 7,
+    "forms": 35,
+    "questions": 2100,
+    "pdfs": 14,
+    "with_distractors": 64,
+    "without_distractors": 2036,
+    "with_language": 1140,
+    "without_language": 960
+  },
+  "fields": {
+    "answer": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "int": 2100
+      }
+    },
+    "area": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "int": 2100
+      }
+    },
+    "difficulty": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "str": 2100
+      }
+    },
+    "distractors": {
+      "present": 64,
+      "absent": 2036,
+      "python_json_types": {
+        "dict": 64
+      }
+    },
+    "explanation": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "str": 2100
+      }
+    },
+    "id": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "str": 2100
+      }
+    },
+    "indicator": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "str": 2100
+      }
+    },
+    "indicatorText": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "str": 2100
+      }
+    },
+    "language": {
+      "present": 1140,
+      "absent": 960,
+      "python_json_types": {
+        "str": 1140
+      }
+    },
+    "level": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "str": 1500,
+        "int": 600
+      }
+    },
+    "number": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "int": 2100
+      }
+    },
+    "official_indicator": {
+      "present": 300,
+      "absent": 1800,
+      "python_json_types": {
+        "str": 300
+      }
+    },
+    "options": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "list": 2100
+      }
+    },
+    "origin": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "str": 2100
+      }
+    },
+    "page": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "int": 2100
+      }
+    },
+    "stem": {
+      "present": 2100,
+      "absent": 0,
+      "python_json_types": {
+        "str": 2100
+      }
+    }
+  },
+  "specialties": [
+    {
+      "code": "2017",
+      "name": "Electrónica Industrial",
+      "entry_count": 300,
+      "unique_source_ids": 300,
+      "unique_fingerprints": 300,
+      "distinct_area_indicators": 55,
+      "pool_unique_questions": {
+        "practice": 180,
+        "pro": 120
+      },
+      "forms": [
+        {
+          "form": "A",
+          "question_count": 60,
+          "area_counts": {
+            "0": 4,
+            "1": 11,
+            "2": 7,
+            "3": 9,
+            "4": 8,
+            "5": 12,
+            "6": 2,
+            "7": 7
+          },
+          "difficulty_counts": {
+            "Básica": 51,
+            "Media": 8,
+            "Alta": 1
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 22,
+            "str:Undécimo": 24,
+            "str:Duodécimo": 14
+          },
+          "distractor_source_ids": [
+            "A01",
+            "A02",
+            "A03",
+            "A04"
+          ],
+          "forced_question_count": 51,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:2.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:6.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:7.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:7.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:7.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:2.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:10.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:11.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:7.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:8.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:8.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "6:9.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 6,
+              "indicator": "7:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 6,
+              "indicator": "7:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 7,
+              "indicator": "8:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 7,
+              "indicator": "8:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 7,
+              "indicator": "8:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 7,
+              "indicator": "8:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 7,
+              "indicator": "8:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 7,
+              "indicator": "8:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 7,
+              "indicator": "8:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        },
+        {
+          "form": "B",
+          "question_count": 60,
+          "area_counts": {
+            "0": 4,
+            "1": 11,
+            "2": 7,
+            "3": 9,
+            "4": 8,
+            "5": 12,
+            "6": 2,
+            "7": 7
+          },
+          "difficulty_counts": {
+            "Media": 59,
+            "Básica": 1
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 22,
+            "str:Undécimo": 24,
+            "str:Duodécimo": 14
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 2,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        },
+        {
+          "form": "C",
+          "question_count": 60,
+          "area_counts": {
+            "0": 4,
+            "1": 11,
+            "2": 7,
+            "3": 9,
+            "4": 8,
+            "5": 12,
+            "6": 2,
+            "7": 7
+          },
+          "difficulty_counts": {
+            "Básica": 1,
+            "Media": 59
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 22,
+            "str:Undécimo": 24,
+            "str:Duodécimo": 14
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "D",
+          "question_count": 60,
+          "area_counts": {
+            "0": 4,
+            "1": 11,
+            "2": 7,
+            "3": 9,
+            "4": 8,
+            "5": 12,
+            "6": 2,
+            "7": 7
+          },
+          "difficulty_counts": {
+            "Alta": 60
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 22,
+            "str:Undécimo": 24,
+            "str:Duodécimo": 14
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "E",
+          "question_count": 60,
+          "area_counts": {
+            "0": 4,
+            "1": 11,
+            "2": 7,
+            "3": 9,
+            "4": 8,
+            "5": 12,
+            "6": 2,
+            "7": 7
+          },
+          "difficulty_counts": {
+            "Alta": 60
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 22,
+            "str:Undécimo": 24,
+            "str:Duodécimo": 14
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        }
+      ],
+      "pdfs": [
+        {
+          "path": "especialidades/2017/materials/Libro_electronica_industrial.pdf",
+          "bytes": 401961,
+          "sha256": "69e5bdf1bf04549daca598bd3503837ea416c5dac880cfefbd101e069140cfb6"
+        },
+        {
+          "path": "especialidades/2017/materials/Tabla_DGEC_2026.pdf",
+          "bytes": 312929,
+          "sha256": "77f9558ba309404c62b2217ed55339de9629578dc188233d814c4521d20e2185"
+        }
+      ]
+    },
+    {
+      "code": "3002",
+      "name": "Administración, Logística y Distribución",
+      "entry_count": 300,
+      "unique_source_ids": 300,
+      "unique_fingerprints": 300,
+      "distinct_area_indicators": 48,
+      "pool_unique_questions": {
+        "practice": 180,
+        "pro": 120
+      },
+      "forms": [
+        {
+          "form": "A",
+          "question_count": 60,
+          "area_counts": {
+            "0": 10,
+            "1": 16,
+            "2": 21,
+            "3": 6,
+            "4": 7
+          },
+          "difficulty_counts": {
+            "Básica": 60
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 27,
+            "str:Duodécimo": 13,
+            "str:Undécimo": 20
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 60,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:4.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:5.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:6.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 1,
+              "indicator": "2:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:10.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:10.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:3.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 1,
+              "indicator": "2:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:4.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:6.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 1,
+              "indicator": "2:7.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:8.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 1,
+              "indicator": "2:9.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 2,
+              "indicator": "3:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:10.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:10.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:11.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 2,
+              "indicator": "3:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:3.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:4.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 2,
+              "indicator": "3:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:5.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:6.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:7.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 2,
+              "indicator": "3:8.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 2,
+              "indicator": "3:9.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 3,
+              "indicator": "4:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:1.2",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:2.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 4,
+              "indicator": "5:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:3.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        },
+        {
+          "form": "B",
+          "question_count": 60,
+          "area_counts": {
+            "0": 10,
+            "1": 16,
+            "2": 21,
+            "3": 6,
+            "4": 7
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 27,
+            "str:Duodécimo": 13,
+            "str:Undécimo": 20
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "C",
+          "question_count": 60,
+          "area_counts": {
+            "0": 10,
+            "1": 16,
+            "2": 21,
+            "3": 6,
+            "4": 7
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 27,
+            "str:Duodécimo": 13,
+            "str:Undécimo": 20
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "D",
+          "question_count": 60,
+          "area_counts": {
+            "0": 10,
+            "1": 16,
+            "2": 21,
+            "3": 6,
+            "4": 7
+          },
+          "difficulty_counts": {
+            "Alta": 60
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 27,
+            "str:Duodécimo": 13,
+            "str:Undécimo": 20
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "E",
+          "question_count": 60,
+          "area_counts": {
+            "0": 10,
+            "1": 16,
+            "2": 21,
+            "3": 6,
+            "4": 7
+          },
+          "difficulty_counts": {
+            "Alta": 60
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 27,
+            "str:Duodécimo": 13,
+            "str:Undécimo": 20
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        }
+      ],
+      "pdfs": [
+        {
+          "path": "especialidades/3002/materials/Libro_administracion_logistica.pdf",
+          "bytes": 308058,
+          "sha256": "a0ac0d540f35da3e44f212a44669c7bb9d037ee2a094a1945ce54c6f114abe66"
+        },
+        {
+          "path": "especialidades/3002/materials/Tabla_DGEC_2026.pdf",
+          "bytes": 271817,
+          "sha256": "07b00d5a2466e35d2d37db26e839af1e8f17f6ad69693e8b96394f8bf53bfd46"
+        }
+      ]
+    },
+    {
+      "code": "3006",
+      "name": "Ciberseguridad",
+      "entry_count": 300,
+      "unique_source_ids": 300,
+      "unique_fingerprints": 300,
+      "distinct_area_indicators": 60,
+      "pool_unique_questions": {
+        "practice": 180,
+        "pro": 120
+      },
+      "forms": [
+        {
+          "form": "A",
+          "question_count": 60,
+          "area_counts": {
+            "0": 6,
+            "1": 17,
+            "2": 30,
+            "3": 3,
+            "4": 4
+          },
+          "difficulty_counts": {
+            "Básica": 49,
+            "Media": 11
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "int:10": 25,
+            "int:11": 21,
+            "int:12": 14
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 49,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:10.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:11.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:11.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:12.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:13.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:14.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:15.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:7.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:12.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:13.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:14.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:15.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:15.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:17.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:18.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:19.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:20.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:21.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:22.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:24.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:25.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:26.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:7.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:7.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:8.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:8.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:9.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:2.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        },
+        {
+          "form": "B",
+          "question_count": 60,
+          "area_counts": {
+            "0": 6,
+            "1": 17,
+            "2": 30,
+            "3": 3,
+            "4": 4
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "int:10": 25,
+            "int:11": 21,
+            "int:12": 14
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "C",
+          "question_count": 60,
+          "area_counts": {
+            "0": 6,
+            "1": 17,
+            "2": 30,
+            "3": 3,
+            "4": 4
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "int:10": 25,
+            "int:11": 21,
+            "int:12": 14
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "D",
+          "question_count": 60,
+          "area_counts": {
+            "0": 6,
+            "1": 17,
+            "2": 30,
+            "3": 3,
+            "4": 4
+          },
+          "difficulty_counts": {
+            "Media": 49,
+            "Alta": 11
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "int:10": 25,
+            "int:11": 21,
+            "int:12": 14
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 38,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:4.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:1.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:11.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:12.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:13.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:14.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:15.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:5.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:7.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:9.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:11.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:12.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:13.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:14.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:17.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:18.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:19.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:2.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:20.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:21.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:22.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:25.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:26.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:3.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:4.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:5.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:6.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:7.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:7.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:8.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:8.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:3.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:1.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:2.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        },
+        {
+          "form": "E",
+          "question_count": 60,
+          "area_counts": {
+            "0": 6,
+            "1": 17,
+            "2": 30,
+            "3": 3,
+            "4": 4
+          },
+          "difficulty_counts": {
+            "Alta": 47,
+            "Media": 13
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "int:10": 25,
+            "int:11": 21,
+            "int:12": 14
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 38,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:4.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:1.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:11.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:12.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:13.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:14.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:15.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:5.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:7.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:9.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:11.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:12.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:13.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:14.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:17.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:18.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:19.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:2.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:20.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:21.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:22.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:25.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:26.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:3.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:4.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:5.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:6.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:7.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:7.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:8.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:8.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:3.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:1.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:2.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        }
+      ],
+      "pdfs": [
+        {
+          "path": "especialidades/3006/materials/Libro_ciberseguridad.pdf",
+          "bytes": 4911531,
+          "sha256": "c34e69fe980241c84057372af465a77776a3081f4b7f21c1d8337aeea18ad2a7"
+        },
+        {
+          "path": "especialidades/3006/materials/Tabla_DGEC_2026.pdf",
+          "bytes": 312483,
+          "sha256": "996bc2a6a936a1f605e43587f3dbd84c98482f9cdeeb9df61e7dbc90cd3cf681"
+        }
+      ]
+    },
+    {
+      "code": "3010",
+      "name": "Contabilidad",
+      "entry_count": 300,
+      "unique_source_ids": 300,
+      "unique_fingerprints": 300,
+      "distinct_area_indicators": 49,
+      "pool_unique_questions": {
+        "practice": 180,
+        "pro": 120
+      },
+      "forms": [
+        {
+          "form": "A",
+          "question_count": 60,
+          "area_counts": {
+            "0": 25,
+            "1": 7,
+            "2": 15,
+            "3": 7,
+            "4": 6
+          },
+          "difficulty_counts": {
+            "Básica": 60
+          },
+          "language_counts": {
+            "es": 60
+          },
+          "level_values": {
+            "str:Décimo": 23,
+            "str:Duodécimo": 15,
+            "str:Undécimo": 22
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 60,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:10.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:11.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:12.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:13.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:14.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:15.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:4.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:6.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:7.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:7.2",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:8.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:8.2",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:9.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:5.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:1.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 2,
+              "indicator": "3:10.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:11.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:12.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:2.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:3.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:7.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:8.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:9.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 3,
+              "indicator": "4:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:4.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 3,
+              "indicator": "4:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:2.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 4,
+              "indicator": "5:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:3.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        },
+        {
+          "form": "B",
+          "question_count": 60,
+          "area_counts": {
+            "0": 25,
+            "1": 7,
+            "2": 15,
+            "3": 7,
+            "4": 6
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "es": 60
+          },
+          "level_values": {
+            "str:Décimo": 23,
+            "str:Duodécimo": 15,
+            "str:Undécimo": 22
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "C",
+          "question_count": 60,
+          "area_counts": {
+            "0": 25,
+            "1": 7,
+            "2": 15,
+            "3": 7,
+            "4": 6
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "es": 60
+          },
+          "level_values": {
+            "str:Décimo": 23,
+            "str:Duodécimo": 15,
+            "str:Undécimo": 22
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "D",
+          "question_count": 60,
+          "area_counts": {
+            "0": 25,
+            "1": 7,
+            "2": 15,
+            "3": 7,
+            "4": 6
+          },
+          "difficulty_counts": {
+            "Alta": 60
+          },
+          "language_counts": {
+            "es": 60
+          },
+          "level_values": {
+            "str:Décimo": 23,
+            "str:Duodécimo": 15,
+            "str:Undécimo": 22
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "E",
+          "question_count": 60,
+          "area_counts": {
+            "0": 25,
+            "1": 7,
+            "2": 15,
+            "3": 7,
+            "4": 6
+          },
+          "difficulty_counts": {
+            "Alta": 60
+          },
+          "language_counts": {
+            "es": 60
+          },
+          "level_values": {
+            "str:Décimo": 23,
+            "str:Duodécimo": 15,
+            "str:Undécimo": 22
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        }
+      ],
+      "pdfs": [
+        {
+          "path": "especialidades/3010/materials/Libro_contabilidad.pdf",
+          "bytes": 315863,
+          "sha256": "69e4093438d83d1412dc1ad477b8bc9782b3948d067834ebc3c5480b92879ed7"
+        },
+        {
+          "path": "especialidades/3010/materials/Tabla_DGEC_2026.pdf",
+          "bytes": 291224,
+          "sha256": "322a666d9dc0e644473d702b78c891431d1ad6be0288e98e4639815881556a3f"
+        }
+      ]
+    },
+    {
+      "code": "3016",
+      "name": "Desarrollo Web",
+      "entry_count": 300,
+      "unique_source_ids": 300,
+      "unique_fingerprints": 300,
+      "distinct_area_indicators": 47,
+      "pool_unique_questions": {
+        "practice": 180,
+        "pro": 120
+      },
+      "forms": [
+        {
+          "form": "A",
+          "question_count": 60,
+          "area_counts": {
+            "0": 9,
+            "1": 21,
+            "2": 15,
+            "3": 12,
+            "4": 3
+          },
+          "difficulty_counts": {
+            "Básica": 24,
+            "Media": 27,
+            "Alta": 9
+          },
+          "language_counts": {
+            "__ABSENT__": 60
+          },
+          "level_values": {
+            "str:Décimo": 26,
+            "str:Duodécimo": 13,
+            "str:Undécimo": 21
+          },
+          "distractor_source_ids": [
+            "A01",
+            "A02",
+            "A03",
+            "A04",
+            "A05",
+            "A06",
+            "A07",
+            "A08",
+            "A09",
+            "A10",
+            "A11",
+            "A12",
+            "A13",
+            "A14",
+            "A15",
+            "A16",
+            "A17",
+            "A18",
+            "A19",
+            "A20",
+            "A21",
+            "A22",
+            "A23",
+            "A24",
+            "A25",
+            "A26",
+            "A27",
+            "A28",
+            "A29",
+            "A30",
+            "A31",
+            "A32",
+            "A33",
+            "A34",
+            "A35",
+            "A36",
+            "A37",
+            "A38",
+            "A39",
+            "A40",
+            "A41",
+            "A42",
+            "A43",
+            "A44",
+            "A45",
+            "A46",
+            "A47",
+            "A48",
+            "A49",
+            "A50",
+            "A51",
+            "A52",
+            "A53",
+            "A54",
+            "A55",
+            "A56",
+            "A57",
+            "A58",
+            "A59",
+            "A60"
+          ],
+          "forced_question_count": 33,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:1.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:10.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:4.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:9.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 2,
+              "indicator": "3:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:3.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:4.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:8.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:9.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:1.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:3.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:6.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:8.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "5:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        },
+        {
+          "form": "B",
+          "question_count": 60,
+          "area_counts": {
+            "0": 9,
+            "1": 21,
+            "2": 15,
+            "3": 12,
+            "4": 3
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "es": 60
+          },
+          "level_values": {
+            "str:Décimo": 26,
+            "str:Duodécimo": 13,
+            "str:Undécimo": 21
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "C",
+          "question_count": 60,
+          "area_counts": {
+            "0": 9,
+            "1": 21,
+            "2": 15,
+            "3": 12,
+            "4": 3
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "es": 60
+          },
+          "level_values": {
+            "str:Décimo": 26,
+            "str:Duodécimo": 13,
+            "str:Undécimo": 21
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "D",
+          "question_count": 60,
+          "area_counts": {
+            "0": 9,
+            "1": 21,
+            "2": 15,
+            "3": 12,
+            "4": 3
+          },
+          "difficulty_counts": {
+            "Alta": 60
+          },
+          "language_counts": {
+            "es": 60
+          },
+          "level_values": {
+            "str:Décimo": 26,
+            "str:Duodécimo": 13,
+            "str:Undécimo": 21
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "E",
+          "question_count": 60,
+          "area_counts": {
+            "0": 9,
+            "1": 21,
+            "2": 15,
+            "3": 12,
+            "4": 3
+          },
+          "difficulty_counts": {
+            "Alta": 60
+          },
+          "language_counts": {
+            "es": 60
+          },
+          "level_values": {
+            "str:Décimo": 26,
+            "str:Duodécimo": 13,
+            "str:Undécimo": 21
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        }
+      ],
+      "pdfs": [
+        {
+          "path": "especialidades/3016/materials/Libro_desarrollo_web.pdf",
+          "bytes": 2613421,
+          "sha256": "d598886f79aee111bf814191ec2899a2e9a451928f99a0cceea643a3087f8e19"
+        },
+        {
+          "path": "especialidades/3016/materials/Tabla_DGEC_2026.pdf",
+          "bytes": 334133,
+          "sha256": "6a69ec1db3fefaeed30c25d61088c6ed2c4f17fb809b971d0c5e0271f794911c"
+        }
+      ]
+    },
+    {
+      "code": "3019",
+      "name": "Ejecutivo Comercial y Servicio al Cliente",
+      "entry_count": 300,
+      "unique_source_ids": 300,
+      "unique_fingerprints": 300,
+      "distinct_area_indicators": 38,
+      "pool_unique_questions": {
+        "practice": 180,
+        "pro": 120
+      },
+      "forms": [
+        {
+          "form": "A",
+          "question_count": 60,
+          "area_counts": {
+            "0": 24,
+            "1": 14,
+            "2": 2,
+            "3": 20
+          },
+          "difficulty_counts": {
+            "Básica": 24,
+            "Media": 27,
+            "Alta": 9
+          },
+          "language_counts": {
+            "es": 40,
+            "en": 20
+          },
+          "level_values": {
+            "int:10": 15,
+            "int:11": 26,
+            "int:12": 19
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 9,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:3.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:7.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:9.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:3.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:4.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:4.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:6.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:8.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        },
+        {
+          "form": "B",
+          "question_count": 60,
+          "area_counts": {
+            "0": 24,
+            "1": 14,
+            "2": 2,
+            "3": 20
+          },
+          "difficulty_counts": {
+            "Básica": 54,
+            "Media": 6
+          },
+          "language_counts": {
+            "es": 40,
+            "en": 20
+          },
+          "level_values": {
+            "int:10": 15,
+            "int:11": 26,
+            "int:12": 19
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 13,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:10.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:5.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:6.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:5.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            }
+          ]
+        },
+        {
+          "form": "C",
+          "question_count": 60,
+          "area_counts": {
+            "0": 24,
+            "1": 14,
+            "2": 2,
+            "3": 20
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "es": 40,
+            "en": 20
+          },
+          "level_values": {
+            "int:10": 15,
+            "int:11": 26,
+            "int:12": 19
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 13,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:10.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:4.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:7.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:8.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:8.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:3.1",
+              "difficulty": "Media",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 1,
+              "indicator": "2:4.2",
+              "difficulty": "Media",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 1,
+              "indicator": "2:5.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:6.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        },
+        {
+          "form": "D",
+          "question_count": 60,
+          "area_counts": {
+            "0": 24,
+            "1": 14,
+            "2": 2,
+            "3": 20
+          },
+          "difficulty_counts": {
+            "Media": 42,
+            "Alta": 18
+          },
+          "language_counts": {
+            "es": 40,
+            "en": 20
+          },
+          "level_values": {
+            "int:10": 15,
+            "int:11": 26,
+            "int:12": 19
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 27,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:1.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:10.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:3.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:3.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:6.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:7.2",
+              "difficulty": "Alta",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:8.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:3.1",
+              "difficulty": "Media",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 1,
+              "indicator": "2:6.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:1.1",
+              "difficulty": "Media",
+              "quota": 3,
+              "distinct_eligible": 3
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Alta",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 3,
+              "indicator": "4:3.1",
+              "difficulty": "Media",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 3,
+              "indicator": "4:4.1",
+              "difficulty": "Alta",
+              "quota": 3,
+              "distinct_eligible": 3
+            },
+            {
+              "area": 3,
+              "indicator": "4:7.1",
+              "difficulty": "Media",
+              "quota": 2,
+              "distinct_eligible": 2
+            }
+          ]
+        },
+        {
+          "form": "E",
+          "question_count": 60,
+          "area_counts": {
+            "0": 24,
+            "1": 14,
+            "2": 2,
+            "3": 20
+          },
+          "difficulty_counts": {
+            "Alta": 27,
+            "Media": 33
+          },
+          "language_counts": {
+            "es": 40,
+            "en": 20
+          },
+          "level_values": {
+            "int:10": 15,
+            "int:11": 26,
+            "int:12": 19
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 30,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:1.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:10.1",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:3.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:6.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:7.2",
+              "difficulty": "Media",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:8.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:9.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:1.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:2.2",
+              "difficulty": "Media",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:3.1",
+              "difficulty": "Alta",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 1,
+              "indicator": "2:4.2",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "2:6.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "3:1.1",
+              "difficulty": "Alta",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "4:1.1",
+              "difficulty": "Alta",
+              "quota": 3,
+              "distinct_eligible": 3
+            },
+            {
+              "area": 3,
+              "indicator": "4:2.1",
+              "difficulty": "Media",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 3,
+              "indicator": "4:3.1",
+              "difficulty": "Alta",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 3,
+              "indicator": "4:4.1",
+              "difficulty": "Media",
+              "quota": 3,
+              "distinct_eligible": 3
+            },
+            {
+              "area": 3,
+              "indicator": "4:7.1",
+              "difficulty": "Alta",
+              "quota": 2,
+              "distinct_eligible": 2
+            }
+          ]
+        }
+      ],
+      "pdfs": [
+        {
+          "path": "especialidades/3019/materials/Libro_ejecutivo_comercial.pdf",
+          "bytes": 2153548,
+          "sha256": "897f50401042c294599b6faf1cc9a537b8da5900336d107426c3a10ff3514fbf"
+        },
+        {
+          "path": "especialidades/3019/materials/Tabla_DGEC_2026.pdf",
+          "bytes": 276526,
+          "sha256": "a84c0734065bb04d56d5a31230f5fd564c95fb8107089c5c926afe40cbb5b5f2"
+        }
+      ]
+    },
+    {
+      "code": "3001",
+      "name": "Accounting",
+      "entry_count": 300,
+      "unique_source_ids": 300,
+      "unique_fingerprints": 300,
+      "distinct_area_indicators": 53,
+      "pool_unique_questions": {
+        "practice": 180,
+        "pro": 120
+      },
+      "forms": [
+        {
+          "form": "A",
+          "question_count": 60,
+          "area_counts": {
+            "0": 15,
+            "1": 6,
+            "2": 7,
+            "3": 16,
+            "4": 9,
+            "5": 2,
+            "6": 5
+          },
+          "difficulty_counts": {
+            "Básica": 60
+          },
+          "language_counts": {
+            "es": 15,
+            "en": 45
+          },
+          "level_values": {
+            "str:Décimo": 24,
+            "str:Undécimo": 24,
+            "str:Duodécimo": 12
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 60,
+          "forced_groups": [
+            {
+              "area": 0,
+              "indicator": "1:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:3.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:5.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "1:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:6.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:7.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "1:7.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "2:1.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 0,
+              "indicator": "2:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 0,
+              "indicator": "2:2.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "3:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "3:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "3:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "3:2.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 1,
+              "indicator": "3:3.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 2,
+              "indicator": "4:1.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 2,
+              "indicator": "4:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "4:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "4:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "4:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 2,
+              "indicator": "4:5.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:2.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:3.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:4.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:5.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:6.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:7.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:7.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:8.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:8.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:9.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 3,
+              "indicator": "5:9.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "6:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "6:2.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 4,
+              "indicator": "6:3.1",
+              "difficulty": "Básica",
+              "quota": 2,
+              "distinct_eligible": 2
+            },
+            {
+              "area": 4,
+              "indicator": "6:4.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "6:4.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "6:5.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 4,
+              "indicator": "6:5.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "7:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 5,
+              "indicator": "7:1.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 6,
+              "indicator": "8:1.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 6,
+              "indicator": "8:2.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 6,
+              "indicator": "8:2.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 6,
+              "indicator": "8:3.1",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            },
+            {
+              "area": 6,
+              "indicator": "8:3.2",
+              "difficulty": "Básica",
+              "quota": 1,
+              "distinct_eligible": 1
+            }
+          ]
+        },
+        {
+          "form": "B",
+          "question_count": 60,
+          "area_counts": {
+            "0": 15,
+            "1": 6,
+            "2": 7,
+            "3": 16,
+            "4": 9,
+            "5": 2,
+            "6": 5
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "es": 15,
+            "en": 45
+          },
+          "level_values": {
+            "str:Décimo": 24,
+            "str:Undécimo": 24,
+            "str:Duodécimo": 12
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "C",
+          "question_count": 60,
+          "area_counts": {
+            "0": 15,
+            "1": 6,
+            "2": 7,
+            "3": 16,
+            "4": 9,
+            "5": 2,
+            "6": 5
+          },
+          "difficulty_counts": {
+            "Media": 60
+          },
+          "language_counts": {
+            "es": 15,
+            "en": 45
+          },
+          "level_values": {
+            "str:Décimo": 24,
+            "str:Undécimo": 24,
+            "str:Duodécimo": 12
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "D",
+          "question_count": 60,
+          "area_counts": {
+            "0": 15,
+            "1": 6,
+            "2": 7,
+            "3": 16,
+            "4": 9,
+            "5": 2,
+            "6": 5
+          },
+          "difficulty_counts": {
+            "Alta": 60
+          },
+          "language_counts": {
+            "es": 15,
+            "en": 45
+          },
+          "level_values": {
+            "str:Décimo": 24,
+            "str:Undécimo": 24,
+            "str:Duodécimo": 12
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        },
+        {
+          "form": "E",
+          "question_count": 60,
+          "area_counts": {
+            "0": 15,
+            "1": 6,
+            "2": 7,
+            "3": 16,
+            "4": 9,
+            "5": 2,
+            "6": 5
+          },
+          "difficulty_counts": {
+            "Alta": 60
+          },
+          "language_counts": {
+            "es": 15,
+            "en": 45
+          },
+          "level_values": {
+            "str:Décimo": 24,
+            "str:Undécimo": 24,
+            "str:Duodécimo": 12
+          },
+          "distractor_source_ids": [],
+          "forced_question_count": 0,
+          "forced_groups": []
+        }
+      ],
+      "pdfs": [
+        {
+          "path": "especialidades/3001/materials/Libro_accounting.pdf",
+          "bytes": 332209,
+          "sha256": "6db5adbaaad886dfc91b3e8c805a681666bf4f807f76c9fc625710e34f3db3f7"
+        },
+        {
+          "path": "especialidades/3001/materials/Tabla_DGEC_2026.pdf",
+          "bytes": 324539,
+          "sha256": "1587ee26d05769f5774f4c7efabc17797d954c02ef79e7129facc0993fc1e2c7"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,536 @@
+{
+  "source": "PracTICAtecnica 9.9.1; paquete verificado",
+  "source_sha256": "e8f7196184e70c034eaddb8a3dbfb11f8ed67a05d7227befcfdd1ea8812ff865",
+  "specialty_count": 7,
+  "specialties": [
+    {
+      "code": "2017",
+      "name": "Electrónica Industrial",
+      "initials": "EI",
+      "slug": "electronica_industrial",
+      "areas": [
+        "Tecnologías de información aplicadas a Electrónica Industrial",
+        "Instalaciones eléctricas",
+        "Fundamentos de electrónica",
+        "Electrónica analógica",
+        "Automatismo industrial",
+        "Electrónica digital",
+        "Emprendimiento e innovación aplicada a la electrónica industrial",
+        "Control industrial"
+      ],
+      "forms": [
+        {
+          "id": "A",
+          "title": "Práctica 1",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "B",
+          "title": "Práctica 2",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "C",
+          "title": "Práctica 3",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "D",
+          "title": "Práctica pro 1",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        },
+        {
+          "id": "E",
+          "title": "Práctica pro 2",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        }
+      ],
+      "materials": [
+        {
+          "id": "tabla",
+          "title": "Tabla oficial DGEC 2026",
+          "file": "Tabla_DGEC_2026.pdf",
+          "note": "Resultados e indicadores de la especialidad."
+        },
+        {
+          "id": "libro",
+          "title": "Libro de estudio y repaso",
+          "file": "Libro_electronica_industrial.pdf",
+          "note": "55 indicadores con explicaciones, mapas y casos resueltos."
+        }
+      ],
+      "bank_file": "especialidades/2017/bank.json"
+    },
+    {
+      "code": "3002",
+      "name": "Administración, Logística y Distribución",
+      "initials": "ALD",
+      "slug": "administracion_logistica",
+      "areas": [
+        "Compras",
+        "Importación y exportación",
+        "Logística",
+        "Administración de inventarios",
+        "Operaciones de manufactura"
+      ],
+      "forms": [
+        {
+          "id": "A",
+          "title": "Práctica 1",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "B",
+          "title": "Práctica 2",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "C",
+          "title": "Práctica 3",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "D",
+          "title": "Práctica pro 1",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        },
+        {
+          "id": "E",
+          "title": "Práctica pro 2",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        }
+      ],
+      "materials": [
+        {
+          "id": "tabla",
+          "title": "Tabla oficial DGEC 2026",
+          "file": "Tabla_DGEC_2026.pdf",
+          "note": "Resultados e indicadores de la especialidad."
+        },
+        {
+          "id": "libro",
+          "title": "Libro de estudio y repaso",
+          "file": "Libro_administracion_logistica.pdf",
+          "note": "48 indicadores con explicaciones, mapas y casos resueltos."
+        }
+      ],
+      "bank_file": "especialidades/3002/bank.json"
+    },
+    {
+      "code": "3006",
+      "name": "Ciberseguridad",
+      "initials": "C",
+      "slug": "ciberseguridad",
+      "areas": [
+        "Tecnologías de la información",
+        "Programación y pruebas de la seguridad del software",
+        "Operaciones ciberseguras",
+        "Emprendimiento e innovación aplicada a la ciberseguridad",
+        "Seguridad de la información y gestión administrativa en ciberseguridad"
+      ],
+      "forms": [
+        {
+          "id": "A",
+          "title": "Práctica 1",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "B",
+          "title": "Práctica 2",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "C",
+          "title": "Práctica 3",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "D",
+          "title": "Práctica pro 1",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        },
+        {
+          "id": "E",
+          "title": "Práctica pro 2",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        }
+      ],
+      "materials": [
+        {
+          "id": "tabla",
+          "title": "Tabla oficial DGEC 2026",
+          "file": "Tabla_DGEC_2026.pdf",
+          "note": "Resultados e indicadores de la especialidad."
+        },
+        {
+          "id": "libro",
+          "title": "Libro de estudio y repaso",
+          "file": "Libro_ciberseguridad.pdf",
+          "note": "60 indicadores con explicaciones, mapas y casos resueltos."
+        }
+      ],
+      "bank_file": "especialidades/3006/bank.json"
+    },
+    {
+      "code": "3010",
+      "name": "Contabilidad",
+      "initials": "CT",
+      "slug": "contabilidad",
+      "areas": [
+        "Gestión contable",
+        "Gestión en tecnologías digitales contables",
+        "Gestión tributaria",
+        "Gestión empresarial para contadores",
+        "Gestión en costos"
+      ],
+      "forms": [
+        {
+          "id": "A",
+          "title": "Práctica 1",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "B",
+          "title": "Práctica 2",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "C",
+          "title": "Práctica 3",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "D",
+          "title": "Práctica pro 1",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        },
+        {
+          "id": "E",
+          "title": "Práctica pro 2",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        }
+      ],
+      "materials": [
+        {
+          "id": "tabla",
+          "title": "Tabla oficial DGEC 2026",
+          "file": "Tabla_DGEC_2026.pdf",
+          "note": "Resultados e indicadores de la especialidad."
+        },
+        {
+          "id": "libro",
+          "title": "Libro de estudio y repaso",
+          "file": "Libro_contabilidad.pdf",
+          "note": "49 indicadores con explicaciones, mapas y casos resueltos."
+        }
+      ],
+      "bank_file": "especialidades/3010/bank.json"
+    },
+    {
+      "code": "3016",
+      "name": "Desarrollo Web",
+      "initials": "DW",
+      "slug": "desarrollo_web",
+      "areas": [
+        "Tecnologías de la información (TI)",
+        "Programación para web",
+        "Diseño de software",
+        "Soporte TI",
+        "Emprendimiento e innovación"
+      ],
+      "forms": [
+        {
+          "id": "A",
+          "title": "Práctica 1",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "B",
+          "title": "Práctica 2",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "C",
+          "title": "Práctica 3",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "D",
+          "title": "Práctica pro 1",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        },
+        {
+          "id": "E",
+          "title": "Práctica pro 2",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        }
+      ],
+      "materials": [
+        {
+          "id": "tabla",
+          "title": "Tabla oficial DGEC 2026",
+          "file": "Tabla_DGEC_2026.pdf",
+          "note": "Resultados e indicadores de la especialidad."
+        },
+        {
+          "id": "libro",
+          "title": "Libro de estudio y repaso",
+          "file": "Libro_desarrollo_web.pdf",
+          "note": "47 indicadores con explicaciones, mapas y casos resueltos."
+        }
+      ],
+      "bank_file": "especialidades/3016/bank.json"
+    },
+    {
+      "code": "3019",
+      "name": "Ejecutivo Comercial y Servicio al Cliente",
+      "initials": "EC",
+      "slug": "ejecutivo_comercial",
+      "areas": [
+        "Gestión comercial y comunicación para el servicio al cliente",
+        "Destrezas digitales para gestionar la información y el comercio electrónico",
+        "Emprendimiento e innovación aplicada al Ejecutivo Comercial y de Servicio al cliente",
+        "English oriented to Business and Customer Service Executive"
+      ],
+      "forms": [
+        {
+          "id": "A",
+          "title": "Práctica 1",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "B",
+          "title": "Práctica 2",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "C",
+          "title": "Práctica 3",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "D",
+          "title": "Práctica pro 1",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        },
+        {
+          "id": "E",
+          "title": "Práctica pro 2",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        }
+      ],
+      "materials": [
+        {
+          "id": "tabla",
+          "title": "Tabla oficial DGEC 2026",
+          "file": "Tabla_DGEC_2026.pdf",
+          "note": "Resultados e indicadores de la especialidad."
+        },
+        {
+          "id": "libro",
+          "title": "Libro de estudio y repaso",
+          "file": "Libro_ejecutivo_comercial.pdf",
+          "note": "38 indicadores con explicaciones, mapas y casos resueltos."
+        }
+      ],
+      "bank_file": "especialidades/3019/bank.json"
+    },
+    {
+      "code": "3001",
+      "name": "Accounting",
+      "initials": "AC",
+      "slug": "accounting",
+      "areas": [
+        "Contabilidad",
+        "Computing · rótulo editorial, sin encabezado en la tabla",
+        "Business foundations · rótulo editorial, sin encabezado en la tabla",
+        "Accounting",
+        "Manufacturing Management",
+        "Business management",
+        "Accounting Decision Tools"
+      ],
+      "forms": [
+        {
+          "id": "A",
+          "title": "Práctica 1",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "B",
+          "title": "Práctica 2",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "C",
+          "title": "Práctica 3",
+          "mode": "practice",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Retroalimentación al confirmar cada respuesta."
+        },
+        {
+          "id": "D",
+          "title": "Práctica pro 1",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        },
+        {
+          "id": "E",
+          "title": "Práctica pro 2",
+          "mode": "pro",
+          "total": 60,
+          "expected": 60,
+          "available": true,
+          "note": "Resultados y explicaciones después de entregar."
+        }
+      ],
+      "materials": [
+        {
+          "id": "tabla",
+          "title": "Tabla oficial DGEC 2026",
+          "file": "Tabla_DGEC_2026.pdf",
+          "note": "Resultados e indicadores de la especialidad."
+        },
+        {
+          "id": "libro",
+          "title": "Libro de estudio y repaso",
+          "file": "Libro_accounting.pdf",
+          "note": "53 indicadores con explicaciones, mapas y casos resueltos."
+        }
+      ],
+      "bank_file": "especialidades/3001/bank.json"
+    }
+  ]
+}

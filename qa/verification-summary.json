@@ -1,0 +1,24 @@
+{
+  "version": "11.0.0",
+  "checked_at": "2026-09-24T05:57:12.243866+00:00",
+  "automated_tests": {
+    "passed": 133,
+    "failed": 0,
+    "suites": 22
+  },
+  "typescript": "passed",
+  "eslint": "passed",
+  "production_build": "passed",
+  "http_checks_passed": 11,
+  "content": {
+    "specialties": 7,
+    "forms": 35,
+    "items": 2100,
+    "pdfs": 14,
+    "source_hashes": 22
+  },
+  "frozen_lockfile": "passed",
+  "browser_e2e": "not_run_chromium_download_truncated",
+  "hosted_services": "not_configured",
+  "deployment": "not_performed"
+}

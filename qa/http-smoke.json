@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-24T05:56:06.370Z",
+  "productionBuild": true,
+  "configuredServices": false,
+  "checks": [
+    {
+      "name": "Portada y cabeceras de seguridad",
+      "status": "passed"
+    },
+    {
+      "name": "Catálogo de siete especialidades sin respuestas",
+      "status": "passed"
+    },
+    {
+      "name": "Visitante sin identidad ficticia",
+      "status": "passed"
+    },
+    {
+      "name": "Prácticas requieren sesión",
+      "status": "passed"
+    },
+    {
+      "name": "Administración requiere sesión",
+      "status": "passed"
+    },
+    {
+      "name": "Mutación sin origen rechazada",
+      "status": "passed"
+    },
+    {
+      "name": "Mutación desde otro sitio rechazada",
+      "status": "passed"
+    },
+    {
+      "name": "GET de verificación no activa cuentas",
+      "status": "passed"
+    },
+    {
+      "name": "JSON inválido produce error controlado",
+      "status": "passed"
+    },
+    {
+      "name": "Manifest, iconos y worker disponibles",
+      "status": "passed"
+    },
+    {
+      "name": "Pantalla de verificación y rutas inválidas",
+      "status": "passed"
+    }
+  ]
+}

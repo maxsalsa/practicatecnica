@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "specialties": 7,
+  "forms": 35,
+  "questions": 2100,
+  "pdfs": 14,
+  "sourceFiles": 22,
+  "itemsWithDistractors": 64,
+  "validatedAt": "2026-09-24T05:47:29.875Z",
+  "note": "Integridad y estructura verificadas; no equivale a validación pedagógica independiente ni detección exhaustiva de malware."
+}
