@@ -1,7 +1,7 @@
 ﻿import React, { useState, useMemo } from 'react';
 import {
   DICCIONARIO_UI,
-  FAMILIAS_MENU,
+  NIVELES_MACRO,
   ESPECIALIDADES_CATALOGO,
   CONTEXTOS_REGIONALES,
   BIBLIA_HABILIDADES_BLANDAS,
@@ -12,7 +12,7 @@ import {
 export default function UniversoPracticaTecnica() {
   const [idioma, setIdioma] = useState('ES');
   const [altoContraste, setAltoContraste] = useState(false);
-  const [familiaActiva, setFamiliaActiva] = useState('TODAS');
+  const [familiaActiva, setFamiliaActiva] = useState('TODOS');
   const [codigoFiltro, setCodigoFiltro] = useState('TODOS');
   const [busqueda, setBusqueda] = useState('');
   const [regionActiva, setRegionActiva] = useState('limon');
@@ -47,7 +47,7 @@ export default function UniversoPracticaTecnica() {
   const reg = CONTEXTOS_REGIONALES[regionActiva];
 
   const especialidadesMenu = useMemo(() => {
-    if (familiaActiva === 'TODAS') return ESPECIALIDADES_CATALOGO;
+    if (familiaActiva === 'TODOS') return ESPECIALIDADES_CATALOGO;
     return ESPECIALIDADES_CATALOGO.filter((e) => e.familia === familiaActiva);
   }, [familiaActiva]);
 
@@ -165,7 +165,7 @@ export default function UniversoPracticaTecnica() {
               </span>
               {usuarioGoogle.rol === 'SUPER_ADMIN' && (
                 <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
-                  [ADMIN] {t.badgeSuperAdmin}
+                  [SUPER ADMIN] {t.badgeSuperAdmin}
                 </span>
               )}
               {usuarioGoogle.planPro && (
@@ -242,6 +242,7 @@ export default function UniversoPracticaTecnica() {
         </div>
       )}
 
+      {/* MEGA MENU ORDENADO POR NIVELES: PRIMARIA, SECUNDARIA, ETP Y ADMISION */}
       <section className="max-w-7xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-4 mb-5 space-y-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-3">
           <div className="lg:col-span-5">
@@ -285,8 +286,9 @@ export default function UniversoPracticaTecnica() {
           </div>
         </div>
 
+        {/* Botones de Nivel Educativo (Escuela, Colegio, ETP, Admision) */}
         <div className="flex flex-wrap gap-2 border-t border-slate-800 pt-3">
-          {FAMILIAS_MENU.map((fam) => (
+          {NIVELES_MACRO.map((fam) => (
             <button
               key={fam.id}
               onClick={() => { setFamiliaActiva(fam.id); setCodigoFiltro('TODOS'); }}
@@ -299,6 +301,7 @@ export default function UniversoPracticaTecnica() {
           ))}
         </div>
 
+        {/* Botones de Materia / Especialidad por Codigo */}
         <div className="flex gap-2 overflow-x-auto pb-1">
           <button
             onClick={() => { setCodigoFiltro('TODOS'); setIndicePregunta(0); }}
