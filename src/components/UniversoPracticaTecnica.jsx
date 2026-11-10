@@ -10,7 +10,6 @@ import {
 } from '../data/bancoOficialMEP2026';
 
 export default function UniversoPracticaTecnica() {
-  // Estados de Idioma (Traducción Total), Menú y Accesibilidad DUA
   const [idioma, setIdioma] = useState('ES');
   const [altoContraste, setAltoContraste] = useState(false);
   const [familiaActiva, setFamiliaActiva] = useState('TODAS');
@@ -20,10 +19,9 @@ export default function UniversoPracticaTecnica() {
   const [modoVista, setModoVista] = useState('juegos');
   const [juegoActivo, setJuegoActivo] = useState('simulador');
 
-  // Estados de Control de Usuarios Google y Suscripción Automática Google Pay
   const [usuarioGoogle, setUsuarioGoogle] = useState({
     autenticado: true,
-    nombre: 'Max Salazar Sánchez',
+    nombre: 'Max Salazar Sanchez',
     email: 'max.salazar@practicatecnica.com',
     rol: 'SUPER_ADMIN',
     planPro: true
@@ -31,7 +29,6 @@ export default function UniversoPracticaTecnica() {
   const [modalPagoAbierto, setModalPagoAbierto] = useState(false);
   const [mensajePago, setMensajePago] = useState('');
 
-  // Estados de los 5 Juegos
   const [indicePregunta, setIndicePregunta] = useState(0);
   const [nivelEscalera, setNivelEscalera] = useState('gatear');
   const [opcionElegida, setOpcionElegida] = useState(null);
@@ -49,13 +46,11 @@ export default function UniversoPracticaTecnica() {
   const t = DICCIONARIO_UI[idioma];
   const reg = CONTEXTOS_REGIONALES[regionActiva];
 
-  // Especialidades filtradas por familia del menú
   const especialidadesMenu = useMemo(() => {
     if (familiaActiva === 'TODAS') return ESPECIALIDADES_CATALOGO;
     return ESPECIALIDADES_CATALOGO.filter((e) => e.familia === familiaActiva);
   }, [familiaActiva]);
 
-  // Preguntas filtradas en ambos idiomas
   const preguntasFiltradas = useMemo(() => {
     const q = busqueda.toLowerCase().trim();
     const res = BANCO_ITEMS_2026.filter((it) => {
@@ -79,12 +74,11 @@ export default function UniversoPracticaTecnica() {
   const pasosMeta = idioma === 'ES' ? secuenciaActual.pasosES : secuenciaActual.pasosEN;
   const palabraMeta = idioma === 'ES' ? itemActual.palabraES : itemActual.palabraEN;
 
-  // Función de Login con Google (OAuth / Supabase Ready)
   const alternarLoginGoogle = () => {
     if (usuarioGoogle.autenticado) {
       setUsuarioGoogle({
         autenticado: false,
-        nombre: idioma === 'ES' ? 'Persona Estudiante Invitada' : 'Guest Student',
+        nombre: idioma === 'ES' ? 'Persona Estudiante' : 'Guest Student',
         email: '',
         rol: 'ESTUDIANTE',
         planPro: false
@@ -92,7 +86,7 @@ export default function UniversoPracticaTecnica() {
     } else {
       setUsuarioGoogle({
         autenticado: true,
-        nombre: 'Max Salazar Sánchez',
+        nombre: 'Max Salazar Sanchez',
         email: 'max.salazar@practicatecnica.com',
         rol: 'SUPER_ADMIN',
         planPro: true
@@ -100,7 +94,6 @@ export default function UniversoPracticaTecnica() {
     }
   };
 
-  // Pasarela Automática con Google Pay (PaymentRequest API nativa + Fallback instantáneo)
   const ejecutarPagoGooglePay = async () => {
     setMensajePago('');
     try {
@@ -122,7 +115,7 @@ export default function UniversoPracticaTecnica() {
           }
         }];
         const detalles = {
-          total: { label: 'Suscripción PRO pracTICAtecnica.com', amount: { currency: 'CRC', value: '5000.00' } }
+          total: { label: 'PRO pracTICAtecnica.com', amount: { currency: 'CRC', value: '5000.00' } }
         };
         const request = new window.PaymentRequest(metodos, detalles);
         const canPay = await request.canMakePayment();
@@ -132,18 +125,10 @@ export default function UniversoPracticaTecnica() {
         }
       }
       setUsuarioGoogle((prev) => ({ ...prev, autenticado: true, planPro: true }));
-      setMensajePago(
-        idioma === 'ES'
-          ? '✅ ¡Pago automático con Google Pay verificado! Tu cuenta PRO ya está activa.'
-          : '✅ Automatic Google Pay payment verified! Your PRO account is now active.'
-      );
+      setMensajePago(idioma === 'ES' ? 'Pago automatico con Google Pay verificado. Cuenta PRO activa.' : 'Automatic Google Pay verified. PRO account active.');
     } catch (err) {
       setUsuarioGoogle((prev) => ({ ...prev, autenticado: true, planPro: true }));
-      setMensajePago(
-        idioma === 'ES'
-          ? '✅ ¡Suscripción PRO activada automáticamente con tu cuenta de Google!'
-          : '✅ PRO Subscription automatically activated with your Google account!'
-      );
+      setMensajePago(idioma === 'ES' ? 'Suscripcion PRO activada con tu cuenta Google.' : 'PRO Subscription activated with your Google account.');
     }
   };
 
@@ -168,7 +153,6 @@ export default function UniversoPracticaTecnica() {
 
   return (
     <div className={`min-h-screen p-3 md:p-6 ${altoContraste ? 'bg-black text-yellow-300' : 'bg-slate-950 text-slate-100'}`}>
-      {/* BARRA SUPERIOR CON CONTROL GOOGLE Y GOOGLE PAY */}
       <header className="max-w-7xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-4 mb-4 flex flex-wrap justify-between items-center gap-4 shadow-xl">
         <div className="flex items-center gap-3">
           <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-black text-white text-lg">
@@ -181,47 +165,38 @@ export default function UniversoPracticaTecnica() {
               </span>
               {usuarioGoogle.rol === 'SUPER_ADMIN' && (
                 <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
-                  👑 {t.badgeSuperAdmin}
+                  [ADMIN] {t.badgeSuperAdmin}
                 </span>
               )}
               {usuarioGoogle.planPro && (
                 <span className="text-[11px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
-                  {t.badgeProActivo}
+                  [PRO] {t.badgeProActivo}
                 </span>
               )}
             </div>
-            <h1 className="text-lg md:text-xl font-black text-white mt-0.5">
-              {t.subtituloHeader}
-            </h1>
+            <h1 className="text-lg md:text-xl font-black text-white mt-0.5">{t.subtituloHeader}</h1>
           </div>
         </div>
 
-        {/* Controles de Idioma 100%, DUA, Google Auth y Google Pay */}
         <div className="flex flex-wrap items-center gap-2">
           <button
-            onClick={() => {
-              setIdioma(idioma === 'ES' ? 'EN' : 'ES');
-              setPasosUsuario([]);
-            }}
+            onClick={() => { setIdioma(idioma === 'ES' ? 'EN' : 'ES'); setPasosUsuario([]); }}
             className="px-3 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-extrabold shadow"
           >
-            🌐 {idioma === 'ES' ? '100% ENGLISH' : '100% ESPAÑOL'}
+            [ES/EN] {idioma === 'ES' ? '100% ENGLISH' : '100% ESPANOL'}
           </button>
-
           <button
             onClick={() => setAltoContraste(!altoContraste)}
             className="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 text-xs font-bold border border-slate-700"
           >
-            ♿ DUA
+            [DUA]
           </button>
-
           <button
             onClick={() => setModalPagoAbierto(true)}
-            className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-extrabold shadow"
+            className="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-extrabold shadow"
           >
             {t.btnMejorarPro}
           </button>
-
           <button
             onClick={alternarLoginGoogle}
             className="px-3 py-2 rounded-xl bg-white text-slate-900 hover:bg-slate-200 text-xs font-extrabold flex items-center gap-1.5 shadow"
@@ -232,39 +207,32 @@ export default function UniversoPracticaTecnica() {
         </div>
       </header>
 
-      {/* MODAL DE PAGOS AUTOMÁTICOS CON GOOGLE PAY + SINPE MÓVIL */}
       {modalPagoAbierto && (
         <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
           <div className="bg-slate-900 border border-slate-700 rounded-2xl max-w-md w-full p-6 space-y-4 shadow-2xl">
             <div className="flex justify-between items-center border-b border-slate-800 pb-3">
               <h3 className="font-black text-base text-cyan-400">{t.modalPagoTitulo}</h3>
-              <button onClick={() => setModalPagoAbierto(false)} className="text-slate-400 hover:text-white font-bold">✕</button>
+              <button onClick={() => setModalPagoAbierto(false)} className="text-slate-400 hover:text-white font-bold">X</button>
             </div>
             <p className="text-xs text-slate-300 leading-relaxed">{t.modalPagoSub}</p>
-
-            {/* Botón Oficial Google Pay */}
             <button
               onClick={ejecutarPagoGooglePay}
-              className="w-full py-3 px-4 rounded-xl bg-white hover:bg-slate-100 text-slate-950 font-black text-sm flex items-center justify-center gap-2 shadow-lg"
+              className="w-full py-3 px-4 rounded-xl bg-white hover:bg-slate-100 text-slate-950 font-black text-sm shadow-lg"
             >
-              <span>💳</span>
-              <span>{t.btnPagarGooglePay} (G Pay)</span>
+              {t.btnPagarGooglePay}
             </button>
-
-            {/* Respaldo Oficial SINPE Móvil */}
             <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-xs space-y-2">
-              <div className="font-bold text-amber-400">🇨🇷 SINPE Móvil Oficial (Costa Rica):</div>
-              <div>Número: <strong>6090-6359</strong> (Max Salazar Sánchez - Banco Popular)</div>
+              <div className="font-bold text-amber-400">SINPE Movil Oficial (Costa Rica):</div>
+              <div>Numero: <strong>6090-6359</strong> (Max Salazar Sanchez - Banco Popular)</div>
               <a
                 href="https://wa.me/50660906359?text=Hola%20Max,%20realice%20el%20pago%20SINPE%20para%20activar%20mi%20cuenta%20PRO%20en%20pracTICAtecnica.com"
                 target="_blank"
                 rel="noreferrer"
                 className="block text-center w-full py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold"
               >
-                📱 {t.btnPagarSinpe}
+                {t.btnPagarSinpe}
               </a>
             </div>
-
             {mensajePago && (
               <div className="p-3 rounded-xl bg-emerald-950 border border-emerald-500 text-emerald-200 text-xs font-bold">
                 {mensajePago}
@@ -274,7 +242,6 @@ export default function UniversoPracticaTecnica() {
         </div>
       )}
 
-      {/* NUEVO MENÚ INTELIGENTE POR FAMILIAS + BUSCADOR + REGIÓN */}
       <section className="max-w-7xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-4 mb-5 space-y-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-3">
           <div className="lg:col-span-5">
@@ -283,16 +250,15 @@ export default function UniversoPracticaTecnica() {
               value={busqueda}
               onChange={(e) => { setBusqueda(e.target.value); setIndicePregunta(0); }}
               placeholder={t.buscarPlaceholder}
-              className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-400"
+              className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white"
             />
           </div>
-
           <div className="lg:col-span-4 grid grid-cols-4 gap-1.5">
             {['limon', 'rural', 'indigena', 'urbano'].map((rKey) => (
               <button
                 key={rKey}
                 onClick={() => setRegionActiva(rKey)}
-                className={`py-2 px-1 rounded-xl text-[11px] font-extrabold transition-all ${
+                className={`py-2 px-1 rounded-xl text-[11px] font-extrabold ${
                   regionActiva === rKey ? 'bg-amber-500 text-slate-950' : 'bg-slate-950 text-slate-300 border border-slate-800'
                 }`}
               >
@@ -300,7 +266,6 @@ export default function UniversoPracticaTecnica() {
               </button>
             ))}
           </div>
-
           <div className="lg:col-span-3 grid grid-cols-3 gap-1.5">
             {[
               { id: 'juegos', label: t.tabJuegos },
@@ -320,7 +285,6 @@ export default function UniversoPracticaTecnica() {
           </div>
         </div>
 
-        {/* Categorías del Menú Mejorado */}
         <div className="flex flex-wrap gap-2 border-t border-slate-800 pt-3">
           {FAMILIAS_MENU.map((fam) => (
             <button
@@ -335,7 +299,6 @@ export default function UniversoPracticaTecnica() {
           ))}
         </div>
 
-        {/* Especialidades Filtradas */}
         <div className="flex gap-2 overflow-x-auto pb-1">
           <button
             onClick={() => { setCodigoFiltro('TODOS'); setIndicePregunta(0); }}
@@ -353,13 +316,12 @@ export default function UniversoPracticaTecnica() {
                 codigoFiltro === e.codigo ? 'bg-cyan-600 border-cyan-400 text-white' : 'bg-slate-950 border-slate-800 text-slate-300'
               }`}
             >
-              {e.icono} [{e.codigo}] {idioma === 'ES' ? e.nombreES : e.nombreEN}
+              [{e.codigo}] {idioma === 'ES' ? e.nombreES : e.nombreEN}
             </button>
           ))}
         </div>
       </section>
 
-      {/* VISTA 1: LOS 5 JUEGOS 100% TRADUCIDOS */}
       {modoVista === 'juegos' && (
         <main className="max-w-7xl mx-auto space-y-5">
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-3 flex flex-wrap gap-2">
@@ -387,8 +349,7 @@ export default function UniversoPracticaTecnica() {
               <div className="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-2xl p-5">
                 <div className="flex justify-between text-xs font-bold text-cyan-400 mb-3">
                   <span>
-                    [{itemActual.codigo}] {idioma === 'ES' ? itemActual.especialidadES : itemActual.especialidadEN} •{' '}
-                    {idioma === 'ES' ? itemActual.subareaES : itemActual.subareaEN}
+                    [{itemActual.codigo}] {idioma === 'ES' ? itemActual.especialidadES : itemActual.especialidadEN} - {idioma === 'ES' ? itemActual.subareaES : itemActual.subareaEN}
                   </span>
                   <span>#{indicePregunta + 1} / {preguntasFiltradas.length}</span>
                 </div>
@@ -451,14 +412,11 @@ export default function UniversoPracticaTecnica() {
                     {textoEscalera}
                   </div>
                   <div className="p-3 rounded-xl bg-amber-950/40 border border-amber-500/40 text-amber-200 text-xs">
-                    <strong>⚡ {idioma === 'ES' ? 'Nemotecnia:' : 'Mnemonic:'}</strong>{' '}
-                    {idioma === 'ES' ? itemActual.nemotecniaES : itemActual.nemotecniaEN}
+                    <strong>{idioma === 'ES' ? 'Nemotecnia:' : 'Mnemonic:'}</strong> {idioma === 'ES' ? itemActual.nemotecniaES : itemActual.nemotecniaEN}
                   </div>
                 </div>
                 <div className="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/30 text-xs">
-                  <strong className="text-emerald-300 block mb-1">
-                    📍 {idioma === 'ES' ? reg.nombreES : reg.nombreEN}:
-                  </strong>
+                  <strong className="text-emerald-300 block mb-1">{idioma === 'ES' ? reg.nombreES : reg.nombreEN}:</strong>
                   {idioma === 'ES' ? reg.enfoqueES : reg.enfoqueEN}
                 </div>
               </div>
@@ -469,13 +427,11 @@ export default function UniversoPracticaTecnica() {
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
               <div className="flex justify-between items-center border-b border-slate-800 pb-3 text-xs font-bold">
                 <div className="flex gap-3">
-                  <span className="px-3 py-1.5 rounded-xl bg-amber-500/20 text-amber-300">🏆 {puntos} pts</span>
-                  <span className="px-3 py-1.5 rounded-xl bg-cyan-500/20 text-cyan-300">🔥 x{racha + 1}</span>
-                  <span className="px-3 py-1.5 rounded-xl bg-rose-500/20 text-rose-300">❤️ {vidas}</span>
+                  <span className="px-3 py-1.5 rounded-xl bg-amber-500/20 text-amber-300">Pts: {puntos}</span>
+                  <span className="px-3 py-1.5 rounded-xl bg-cyan-500/20 text-cyan-300">x{racha + 1}</span>
+                  <span className="px-3 py-1.5 rounded-xl bg-rose-500/20 text-rose-300">Vidas: {vidas}</span>
                 </div>
-                <button onClick={() => setCincuenta(true)} disabled={cincuenta} className="px-3 py-1.5 rounded-xl bg-purple-600 text-white">
-                  ✂️ 50/50
-                </button>
+                <button onClick={() => setCincuenta(true)} disabled={cincuenta} className="px-3 py-1.5 rounded-xl bg-purple-600 text-white">50/50</button>
               </div>
               <p className="text-base font-medium bg-slate-950 p-4 rounded-xl border border-slate-800">
                 {idioma === 'ES' ? itemActual.enunciadoES : itemActual.enunciadoEN}
@@ -504,9 +460,7 @@ export default function UniversoPracticaTecnica() {
                 })}
               </div>
               <div className="flex justify-end">
-                <button onClick={siguientePregunta} className="px-4 py-2 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs">
-                  {t.btnSiguiente}
-                </button>
+                <button onClick={siguientePregunta} className="px-4 py-2 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs">{t.btnSiguiente}</button>
               </div>
             </div>
           )}
@@ -514,12 +468,8 @@ export default function UniversoPracticaTecnica() {
           {juegoActivo === 'secuencia' && (
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
               <div className="flex justify-between items-center">
-                <h3 className="text-sm font-extrabold text-cyan-400">
-                  ⚙️ {idioma === 'ES' ? secuenciaActual.tituloES : secuenciaActual.tituloEN}
-                </h3>
-                <button onClick={() => { setIndiceSecuencia((s) => s + 1); setPasosUsuario([]); }} className="px-3 py-1.5 rounded-xl bg-slate-800 text-xs font-bold text-cyan-300">
-                  ➔
-                </button>
+                <h3 className="text-sm font-extrabold text-cyan-400">{idioma === 'ES' ? secuenciaActual.tituloES : secuenciaActual.tituloEN}</h3>
+                <button onClick={() => { setIndiceSecuencia((s) => s + 1); setPasosUsuario([]); }} className="px-3 py-1.5 rounded-xl bg-slate-800 text-xs font-bold text-cyan-300">-&gt;</button>
               </div>
               <p className="text-xs text-slate-300">{idioma === 'ES' ? secuenciaActual.instruccionES : secuenciaActual.instruccionEN}</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -543,7 +493,7 @@ export default function UniversoPracticaTecnica() {
                   ))}
                   {pasosUsuario.length === pasosMeta.length && (
                     <div className={`p-3 rounded-xl text-xs font-bold ${secuenciaCorrecta ? 'bg-emerald-950 text-emerald-300' : 'bg-rose-950 text-rose-300'}`}>
-                      {secuenciaCorrecta ? '✅ OK!' : '❌ Reset'}
+                      {secuenciaCorrecta ? 'OK!' : 'Reset'}
                     </div>
                   )}
                 </div>
@@ -562,7 +512,7 @@ export default function UniversoPracticaTecnica() {
                       parejasResueltas.includes(it.id) ? 'bg-emerald-950/40 border-emerald-500' : seleccionMemoria === it.id ? 'bg-cyan-600 text-white' : 'bg-slate-950 border-slate-800'
                     }`}
                   >
-                    🔑 {idioma === 'ES' ? it.palabraES : it.palabraEN}
+                    {idioma === 'ES' ? it.palabraES : it.palabraEN}
                   </button>
                 ))}
               </div>
@@ -601,19 +551,15 @@ export default function UniversoPracticaTecnica() {
                     setIntentoPalabra(v);
                     if (v === palabraMeta) setPalabraResuelta(true);
                   }}
-                  placeholder={`${palabraMeta.length} letters...`}
+                  placeholder={`${palabraMeta.length} letras/letters...`}
                   className="bg-slate-950 border border-slate-700 rounded-xl px-4 py-2 text-sm font-mono uppercase text-cyan-300"
                 />
-                <button onClick={() => { setIntentoPalabra(palabraMeta); setPalabraResuelta(true); }} className="px-4 py-2 rounded-xl bg-slate-800 text-xs font-bold text-amber-300">
-                  {t.btnRevelar}
-                </button>
-                <button onClick={siguientePregunta} className="px-4 py-2 rounded-xl bg-cyan-600 text-xs font-bold text-white">
-                  {t.btnSiguiente}
-                </button>
+                <button onClick={() => { setIntentoPalabra(palabraMeta); setPalabraResuelta(true); }} className="px-4 py-2 rounded-xl bg-slate-800 text-xs font-bold text-amber-300">{t.btnRevelar}</button>
+                <button onClick={siguientePregunta} className="px-4 py-2 rounded-xl bg-cyan-600 text-xs font-bold text-white">{t.btnSiguiente}</button>
               </div>
               {palabraResuelta && (
                 <div className="p-3.5 rounded-xl bg-emerald-950 border border-emerald-500 text-emerald-200 text-xs">
-                  🎉 <strong>{palabraMeta}:</strong> {idioma === 'ES' ? itemActual.nemotecniaES : itemActual.nemotecniaEN}
+                  <strong>{palabraMeta}:</strong> {idioma === 'ES' ? itemActual.nemotecniaES : itemActual.nemotecniaEN}
                 </div>
               )}
             </div>
@@ -621,39 +567,32 @@ export default function UniversoPracticaTecnica() {
         </main>
       )}
 
-      {/* VISTA 2: PLAN COTIDIANO MEP 100% BILINGÜE CON BINOMIO SAGRADO */}
       {modoVista === 'planeamiento' && (
         <section className="max-w-7xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
           <h2 className="text-base font-extrabold text-cyan-400">
-            📋 {idioma === 'ES' ? itemActual.especialidadES : itemActual.especialidadEN} •{' '}
-            {idioma === 'ES' ? reg.nombreES : reg.nombreEN}
+            {idioma === 'ES' ? itemActual.especialidadES : itemActual.especialidadEN} - {idioma === 'ES' ? reg.nombreES : reg.nombreEN}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs leading-relaxed">
             <div className="p-4 rounded-xl bg-slate-950 border-l-4 border-cyan-500">
-              <strong className="text-cyan-400 block mb-1">1. Focalización / Focus (15 min)</strong>
-              <strong>{t.docenteLabel}</strong>: {idioma === 'ES' ? reg.enfoqueES : reg.enfoqueEN}{' '}
-              <strong>{t.estudianteLabel}</strong>: {idioma === 'ES' ? itemActual.escalera.gatearES : itemActual.escalera.gatearEN}
+              <strong className="text-cyan-400 block mb-1">1. Focalizacion / Focus (15 min)</strong>
+              <strong>{t.docenteLabel}</strong>: {idioma === 'ES' ? reg.enfoqueES : reg.enfoqueEN} <strong>{t.estudianteLabel}</strong>: {idioma === 'ES' ? itemActual.escalera.gatearES : itemActual.escalera.gatearEN}
             </div>
             <div className="p-4 rounded-xl bg-slate-950 border-l-4 border-emerald-500">
-              <strong className="text-emerald-400 block mb-1">2. Exploración / Exploration (20 min)</strong>
-              <strong>{t.docenteLabel}</strong> & <strong>{t.estudianteLabel}</strong>:{' '}
-              {idioma === 'ES' ? itemActual.pistaES : itemActual.pistaEN}
+              <strong className="text-emerald-400 block mb-1">2. Exploracion / Exploration (20 min)</strong>
+              <strong>{t.docenteLabel}</strong> &amp; <strong>{t.estudianteLabel}</strong>: {idioma === 'ES' ? itemActual.pistaES : itemActual.pistaEN}
             </div>
             <div className="p-4 rounded-xl bg-slate-950 border-l-4 border-amber-500">
-              <strong className="text-amber-400 block mb-1">3. Contrastación / Contrast (20 min)</strong>
-              <strong>{t.docenteLabel}</strong> & <strong>{t.estudianteLabel}</strong>:{' '}
-              {idioma === 'ES' ? itemActual.escalera.correrES : itemActual.escalera.correrEN}
+              <strong className="text-amber-400 block mb-1">3. Contrastacion / Contrast (20 min)</strong>
+              <strong>{t.docenteLabel}</strong> &amp; <strong>{t.estudianteLabel}</strong>: {idioma === 'ES' ? itemActual.escalera.correrES : itemActual.escalera.correrEN}
             </div>
             <div className="p-4 rounded-xl bg-slate-950 border-l-4 border-purple-500">
-              <strong className="text-purple-400 block mb-1">4. Aplicación / Application (25 min)</strong>
-              <strong>{t.docenteLabel}</strong> & <strong>{t.estudianteLabel}</strong>:{' '}
-              {idioma === 'ES' ? reg.retoES : reg.retoEN} ({t.encargadoLabel}).
+              <strong className="text-purple-400 block mb-1">4. Aplicacion / Application (25 min)</strong>
+              <strong>{t.docenteLabel}</strong> &amp; <strong>{t.estudianteLabel}</strong>: {idioma === 'ES' ? reg.retoES : reg.retoEN} ({t.encargadoLabel}).
             </div>
           </div>
         </section>
       )}
 
-      {/* VISTA 3: CULTURA EMPRESARIAL Y HABILIDADES BLANDAS 100% BILINGÜE */}
       {modoVista === 'blandas' && (
         <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
           {BIBLIA_HABILIDADES_BLANDAS.map((b) => (
@@ -661,7 +600,7 @@ export default function UniversoPracticaTecnica() {
               <h3 className="font-bold text-cyan-400 text-sm">{idioma === 'ES' ? b.tituloES : b.tituloEN}</h3>
               <p className="text-xs text-slate-200">{idioma === 'ES' ? b.habitoES : b.habitoEN}</p>
               <p className="text-xs text-emerald-300 bg-emerald-950/40 p-3 rounded-xl border border-emerald-500/30">
-                🏢 {idioma === 'ES' ? b.empresaES : b.empresaEN}
+                {idioma === 'ES' ? b.empresaES : b.empresaEN}
               </p>
             </div>
           ))}
