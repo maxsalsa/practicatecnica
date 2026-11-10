@@ -1,77 +1,44 @@
 ﻿export const DICCIONARIO_UI = {
   ES: {
-    subtituloHeader: 'Universo Educativo Nacional: Primaria, Secundaria, Especialidades ETP y Admision',
-    buscarPlaceholder: 'Buscar letra por letra: codigo (1001, 2003), materia, primaria, colegio, viga, queso...',
-    filtroTodas: 'Ver Todas las Materias y Especialidades',
-    tabJuegos: '1. 5 Juegos y Practicas',
-    tabPlan: '2. Plan Cotidiano MEP',
-    tabBlandas: '3. Habitos y Empresa',
+    agradecimiento: 'Creado con gratitud, excelencia Kaizen y cortesia profesional para toda Costa Rica',
+    subtituloHeader: '3 Practicas Guiadas (3 Intentos) + 2 Simulacros Ciegos de 60 Preguntas + Generador Infinito PISA/MEP',
+    buscarPlaceholder: 'Buscar letra por letra: codigo (1001, 2003), materia, nivel (Facil, Intermedio, Alto, DUA)...',
+    tabPracticas: '1. 3 Practicas Guiadas (3 Intentos)',
+    tabSimulacros: '2. 2 Simulacros de 60 Items (Certificacion)',
+    tabGenerador: '3. Generador Infinito 1000x1000 + Cargar',
+    tabPisa: '4. Reglas MEP, PISA y Certificaciones',
+    tabJuegos: '5. 5 Juegos + Plan MEP + Empresa',
     btnGoogleLogin: 'Acceder con Google',
     btnMejorarPro: 'Activar PRO (Google Pay)',
     badgeSuperAdmin: 'SUPER ADMIN - Max Salazar Sanchez',
-    badgeProActivo: 'PLAN PRO ACTIVO',
-    modalPagoTitulo: 'Suscripcion Automatica PRO - pracTICAtecnica.com',
-    modalPagoSub: 'Acceso total a Primaria, Secundaria, Especialidades Tecnicas ETP, Admision, Planes MEP y 5 Juegos.',
-    btnPagarGooglePay: 'Pagar Automaticamente con Google Pay (G Pay)',
-    btnPagarSinpe: 'Confirmar por SINPE Movil (6090-6359)',
-    juego1: '1. Simulador Escalera DUA',
-    juego2: '2. Reto Millonario (50/50)',
-    juego3: '3. Ordena el Proceso',
-    juego4: '4. Memoria de Parejas',
-    juego5: '5. Crucigrama y Practica',
-    nivelGatear: '1. Gatear (Intuicion)',
-    nivelCorrer: '2. Correr (Oficial MEP)',
-    nivelEspacio: '3. Al Espacio (Avanzado)',
-    btnSiguiente: 'Siguiente Pregunta ->',
-    btnRevelar: 'Mostrar Respuesta',
-    docenteLabel: 'La persona docente',
-    estudianteLabel: 'La persona estudiante',
-    encargadoLabel: 'la persona encargada legal'
+    badgeProActivo: 'PLAN PRO ACTIVO'
   },
   EN: {
-    subtituloHeader: 'National Education Universe: Elementary, High School, Technical Majors & Admission',
-    buscarPlaceholder: 'Search letter by letter: code (1001, 2003), subject, elementary, beam, cheese...',
-    filtroTodas: 'View All Subjects & Majors',
-    tabJuegos: '1. 5 Interactive Games',
-    tabPlan: '2. Daily Lesson Plan',
-    tabBlandas: '3. Workplace Soft Skills',
+    agradecimiento: 'Built with gratitude, Kaizen excellence, and professional courtesy for Costa Rica',
+    subtituloHeader: '3 Guided Practices (3 Attempts) + 2 Blind 60-Question Mock Exams + Infinite PISA/MEP Generator',
+    buscarPlaceholder: 'Search letter by letter: code (1001, 2003), subject, level (Easy, Intermediate, High, UDL)...',
+    tabPracticas: '1. 3 Guided Practices (3 Attempts)',
+    tabSimulacros: '2. 2 Mock Exams of 60 Items (Certification)',
+    tabGenerador: '3. Infinite 1000x1000 Generator + Upload',
+    tabPisa: '4. MEP Rules, PISA & Certifications',
+    tabJuegos: '5. 5 Games + Lesson Plan + Soft Skills',
     btnGoogleLogin: 'Sign in with Google',
     btnMejorarPro: 'Upgrade to PRO (Google Pay)',
     badgeSuperAdmin: 'SUPER ADMIN - Max Salazar Sanchez',
-    badgeProActivo: 'PRO PLAN ACTIVE',
-    modalPagoTitulo: 'Automatic PRO Subscription - pracTICAtecnica.com',
-    modalPagoSub: 'Full access to Elementary, High School, Technical Majors, University Admission, Lesson Plans & 5 Games.',
-    btnPagarGooglePay: 'Pay Automatically with Google Pay (G Pay)',
-    btnPagarSinpe: 'Confirm via SINPE Movil (+506 6090-6359)',
-    juego1: '1. UDL Ladder Simulator',
-    juego2: '2. Millionaire Quiz (50/50)',
-    juego3: '3. Process Sequence',
-    juego4: '4. Tech Memory Match',
-    juego5: '5. Crossword & Practice',
-    nivelGatear: '1. Crawl (Intuition)',
-    nivelCorrer: '2. Run (MEP Standard)',
-    nivelEspacio: '3. Space (Engineering)',
-    btnSiguiente: 'Next Question ->',
-    btnRevelar: 'Reveal Answer',
-    docenteLabel: 'The teacher',
-    estudianteLabel: 'The student',
-    encargadoLabel: 'the legal guardian'
+    badgeProActivo: 'PRO PLAN ACTIVE'
   }
 };
 
-export const NIVELES_MACRO = [
-  { id: 'TODOS', es: 'Toda la Malla CR', en: 'All CR Curriculum' },
-  { id: 'ETP_AGRO', es: 'ETP: Agro y Ambiente', en: 'CTE: Agro & Environment' },
-  { id: 'ETP_IND', es: 'ETP: Construccion y Dibujo', en: 'CTE: Construction & CAD' },
-  { id: 'ETP_ART', es: 'ETP: Diseno y Publicidad', en: 'CTE: Design & Media' },
-  { id: 'ETP_TI', es: 'ETP: Web, Redes y TI', en: 'CTE: Web, Cyber & IT' },
-  { id: 'SECUNDARIA', es: 'Secundaria Academica (7 a 11)', en: 'Academic High School (7-11)' },
-  { id: 'PRIMARIA', es: 'Primaria (1 a 6 Grado)', en: 'Elementary School (1-6)' },
-  { id: 'ADMISION', es: 'Admision UCR/TEC/UNA y Manejo', en: 'University Admission & Driving' }
+export const NIVELES_DIFICULTAD = [
+  { id: 'TODOS', nombre: 'Todos los Niveles', color: 'bg-slate-800 text-slate-200' },
+  { id: 'DUA', nombre: 'Nivel DUA (Acceso Guiado)', color: 'bg-teal-900/60 text-teal-300 border-teal-500' },
+  { id: 'FACIL', nombre: 'Nivel Facil (Base)', color: 'bg-emerald-900/60 text-emerald-300 border-emerald-500' },
+  { id: 'MEDIANO', nombre: 'Nivel Mediano (Procedimental)', color: 'bg-cyan-900/60 text-cyan-300 border-cyan-500' },
+  { id: 'INTERMEDIO', nombre: 'Nivel Intermedio (Analisis)', color: 'bg-amber-900/60 text-amber-300 border-amber-500' },
+  { id: 'ALTO', nombre: 'Nivel Alto (PISA / Certificacion)', color: 'bg-purple-900/60 text-purple-300 border-purple-500' }
 ];
 
 export const ESPECIALIDADES_CATALOGO = [
-  // ESPECIALIDADES TECNICAS OFICIALES 2026
   { codigo: '1001', familia: 'ETP_AGRO', nombreES: 'Agroecologia', nombreEN: 'Agroecology' },
   { codigo: '1003', familia: 'ETP_AGRO', nombreES: 'Agroindustria Agricola', nombreEN: 'Crop Food Processing' },
   { codigo: '1004', familia: 'ETP_AGRO', nombreES: 'Agroindustria Pecuaria', nombreEN: 'Livestock Food Processing' },
@@ -84,410 +51,411 @@ export const ESPECIALIDADES_CATALOGO = [
   { codigo: '2008', familia: 'ETP_ART', nombreES: 'Diseno Publicitario', nombreEN: 'Advertising Design' },
   { codigo: '4001', familia: 'ETP_TI', nombreES: 'Desarrollo Web y Software', nombreEN: 'Web & Software Development' },
   { codigo: '4002', familia: 'ETP_TI', nombreES: 'Ciberseguridad y Redes', nombreEN: 'Cybersecurity & Networks' },
-  // SECUNDARIA ACADEMICA
-  { codigo: 'SEC-MAT', familia: 'SECUNDARIA', nombreES: 'Matematicas Secundaria', nombreEN: 'High School Mathematics' },
-  { codigo: 'SEC-CIE', familia: 'SECUNDARIA', nombreES: 'Ciencias (Fisica, Quimica, Biologia)', nombreEN: 'Sciences (Physics, Chem, Bio)' },
-  { codigo: 'SEC-SOC', familia: 'SECUNDARIA', nombreES: 'Estudios Sociales y Civica', nombreEN: 'Social Studies & Civics' },
-  { codigo: 'SEC-ESP', familia: 'SECUNDARIA', nombreES: 'Espanol y Literatura', nombreEN: 'Spanish & Literature' },
-  // PRIMARIA (ESCUELA)
-  { codigo: 'PRI-MAT', familia: 'PRIMARIA', nombreES: 'Matematicas Primaria (1 a 6)', nombreEN: 'Elementary Math (Grades 1-6)' },
-  { codigo: 'PRI-CIE', familia: 'PRIMARIA', nombreES: 'Ciencias Primaria (1 a 6)', nombreEN: 'Elementary Science (Grades 1-6)' },
-  { codigo: 'PRI-SOC', familia: 'PRIMARIA', nombreES: 'Estudios Sociales Primaria', nombreEN: 'Elementary Social Studies' },
-  // ADMISION Y PRUEBAS
-  { codigo: 'ADM-UNI', familia: 'ADMISION', nombreES: 'Razonamiento Admision UCR / TEC / UNA', nombreEN: 'University Admission Reasoning' },
-  { codigo: 'ADM-COSEVI', familia: 'ADMISION', nombreES: 'Examen Teorico de Manejo COSEVI', nombreEN: 'Driver License Theory Exam' }
+  { codigo: 'SEC-MAT', familia: 'ACADEMICA', nombreES: 'Matematicas (Primaria y Secundaria)', nombreEN: 'Mathematics (K-12)' },
+  { codigo: 'SEC-CIE', familia: 'ACADEMICA', nombreES: 'Ciencias (Fisica, Quimica, Biologia)', nombreEN: 'Sciences (Physics, Chem, Bio)' },
+  { codigo: 'SEC-SOC', familia: 'ACADEMICA', nombreES: 'Estudios Sociales y Civica', nombreEN: 'Social Studies & Civics' },
+  { codigo: 'ADM-PISA', familia: 'ADMISION', nombreES: 'PISA + Admision UCR/TEC/UNA', nombreEN: 'PISA & University Admission' }
+];
+
+export const LINEAMIENTOS_EVALUACION = [
+  {
+    categoria: '1. Reglas Oficiales de la Prueba Nacional Estandarizada MEP (Convocatoria 2026)',
+    reglas: [
+      'Composicion oficial: La prueba consta exactamente de 60 items de seleccion unica con cuatro opciones (A, B, C y D), donde solo una es correcta.',
+      'Integridad del cuadernillo: La persona estudiante debe verificar que no existan paginas faltantes, repetidas o en blanco antes de iniciar.',
+      'Regla de Simulacro Oficial en pracTICAtecnica.com: Se disponen de 2 Simulacros Oficiales de 60 preguntas aleatorias. Durante su ejecucion NO se muestran notas ni explicaciones hasta contestar y entregar la totalidad de la prueba.',
+      'Regla de Practica Guiada: Se disponen de 3 Practicas Guiadas (3 intentos por practica) con retroalimentacion inmediata del concepto, la formula y la respuesta correcta.',
+      'Protocolo de correccion en hoja optica: En formato fisico se rellena el circulo con boligrafo negro o azul y cualquier cambio requiere firma en observaciones (Ejemplo: 12=A, firma).'
+    ]
+  },
+  {
+    categoria: '2. Lineamientos Internacionales PISA (OCDE) y Niveles de Desempeno',
+    reglas: [
+      'Nivel DUA y Nivel 1-2 (Facil): Localizar informacion explicita, reconocer conceptos basicos cotidianos y ejecutar procedimientos de un solo paso con apoyo visual.',
+      'Nivel 3-4 (Mediano e Intermedio): Integrar variables de un escenario real (pendientes, pH, escalas, presupuestos), seleccionar modelos tecnicos y descartar distractores.',
+      'Nivel 5-6 (Alto / Certificacion): Evaluar criticamente sistemas complejos, sintetizar multiples fuentes normativas (Leyes, ISO, HACCP, Codigos) y transferir soluciones a contextos ineditos.'
+    ]
+  },
+  {
+    categoria: '3. Estandares de Certificacion Internacional y Normativa Costarricense',
+    reglas: [
+      'Calidad, Ambiente e Inocuidad: ISO 9001 (Calidad), ISO 14001 (Gestion Ambiental), ISO 22000 / Codex Alimentarius / HACCP (Puntos Criticos de Control y Prerrequisitos).',
+      'Ingenieria, Construccion y Electricidad: Codigo Sismico de Costa Rica, ASTM C-143 (Cono de Abrams), Codigo Electrico Nacional NEC (neutro blanco), Ley N. 7600 y NFPA 101.',
+      'Legislacion Agroambiental y Laboral: Ley N. 8591 (Agricultura Organica SFE), Ley N. 7779 (Uso y Conservacion de Suelos), SINAC y Codigo de Trabajo de Costa Rica.'
+    ]
+  }
 ];
 
 export const CONTEXTOS_REGIONALES = {
   limon: {
-    nombreES: 'Costero / Limon', nombreEN: 'Coastal / Limon',
-    enfoqueES: 'Aplicar a logistica portuaria, lluvias de 3600-4000 mm, corrosion salina, cacao, banano, pesca y costas.',
-    enfoqueEN: 'Apply to port logistics, 3600-4000 mm rainfall, salt corrosion, cocoa, banana, fisheries, and coasts.',
-    retoES: 'Disenar solucion practica para controlar humedad del 85% y temperatura de 25 C en instalaciones costeras.',
-    retoEN: 'Design a practical solution to control 85% humidity and 25 C temperature in coastal facilities.'
+    nombreES: 'Costero / Limon',
+    enfoqueES: 'Logistica portuaria, precipitacion de 3600-4000 mm, corrosion salina, cacao, banano, pesca y costas.',
+    retoES: 'Controlar condensacion de vapor y alta humedad a 25 C en infraestructura costera.'
   },
   rural: {
-    nombreES: 'Rural / Altura', nombreEN: 'Rural / Highlands',
-    enfoqueES: 'Vincular con cooperativas, laderas del 12% al 15% con pasto vetiver, riego en tropico seco y plantas lacteas.',
-    enfoqueEN: 'Connect with cooperatives, 12%-15% slopes with vetiver grass, dry-tropics irrigation, and dairy plants.',
-    retoES: 'Calcular parametros productivos y de conservacion de suelo en terrenos inclinados.',
-    retoEN: 'Calculate production and soil conservation parameters on sloped terrains.'
+    nombreES: 'Rural / Altura y Bajura',
+    enfoqueES: 'Cooperativas agricolas, laderas del 12% al 15% con barreras de vetiver, riego en tropico seco y lacteos.',
+    retoES: 'Optimizar rendimiento productivo y conservacion de suelo en parcelas inclinadas.'
   },
   indigena: {
-    nombreES: 'Indigena / Bosque', nombreEN: 'Indigenous / Forest',
-    enfoqueES: 'Integrar sistemas agrosilvopastoriles, abejas nativas Mariola, senderos de bajo impacto y apps Offline-First.',
-    enfoqueEN: 'Integrate agrosilvopastoral systems, native Mariola bees, low-impact trails, and Offline-First apps.',
-    retoES: 'Estructurar un proyecto comunitario sostenible protegiendo cuencas hidrograficas y bosque local.',
-    retoEN: 'Structure a sustainable community project protecting watersheds and local forest.'
+    nombreES: 'Indigena / Bosque',
+    enfoqueES: 'Sistemas agrosilvopastoriles, abejas nativas Mariola, senderos ecologicos y plataformas Offline-First.',
+    retoES: 'Proteger nacientes de agua y biodiversidad mediante manejo forestal sostenible.'
   },
   urbano: {
-    nombreES: 'Urbano / GAM', nombreEN: 'Urban / GAM',
-    enfoqueES: 'Enfocar en edificios multifamiliares, Ley N. 7600, NFPA 101, paneles solares y servicios digitales.',
-    enfoqueEN: 'Focus on multi-family buildings, Law 7600 accessibility, NFPA 101, solar panels, and digital services.',
-    retoES: 'Auditar el cumplimiento de accesibilidad, seguridad e infraestructura digital en el centro educativo.',
-    retoEN: 'Audit accessibility, safety, and digital infrastructure compliance at the school.'
+    nombreES: 'Urbano / GAM',
+    enfoqueES: 'Edificios multifamiliares, Ley N. 7600, NFPA 101, sistemas fotovoltaicos y ciberseguridad corporativa.',
+    retoES: 'Auditar accesibilidad universal, seguridad humana y redes de datos en edificaciones.'
   }
 };
 
-export const BIBLIA_HABILIDADES_BLANDAS = [
+// ITEMS BASE OFICIALES MEP 2026
+export const BANCO_ITEMS_BASE = [
   {
-    tituloES: '1. Saludo Ejecutivo y Presencia Profesional',
-    tituloEN: '1. Executive Greeting & Professional Presence',
-    habitoES: 'La persona estudiante saluda mirando a los ojos al ingresar al aula o taller y porta su equipo de proteccion completo.',
-    habitoEN: 'The student greets making eye contact upon entering the classroom or lab while wearing full protective gear.',
-    empresaES: 'Genera confianza inmediata en entrevistas laborales, visitas tecnicas y auditorias.',
-    empresaEN: 'Builds immediate trust in job interviews, site visits, and audits.'
-  },
-  {
-    tituloES: '2. Puntualidad y Respeto a la Ruta Critica',
-    tituloEN: '2. Punctuality & Critical Path Respect',
-    habitoES: 'Entregar avances a tiempo sin atrasar las actividades con holgura cero de la cuadrilla o equipo.',
-    habitoEN: 'Deliver progress on time without delaying zero-slack critical path team activities.',
-    empresaES: 'Evita perdidas financieras y paros de linea en la industria.',
-    empresaEN: 'Prevents financial losses and production line stops in industry.'
-  },
-  {
-    tituloES: '3. Ortografia, Diccion y Etica Documental',
-    tituloEN: '3. Spelling, Diction & Document Ethics',
-    habitoES: 'Hablar con propiedad tecnica, redactar sin faltas de ortografia y pedir autorizacion antes de divulgar archivos.',
-    habitoEN: 'Speak with technical accuracy, write without spelling errors, and request permission before sharing files.',
-    empresaES: 'Protege la confidencialidad del cliente y eleva el perfil profesional.',
-    empresaEN: 'Protects client confidentiality and elevates professional standing.'
-  },
-  {
-    tituloES: '4. Cultura 5S y Cero Actos Inseguros',
-    tituloEN: '4. 5S Culture & Zero Unsafe Acts',
-    habitoES: 'Jamas usar audifonos cerca de maquinaria en reversa, bloquear la energia al limpiar y ordenar herramientas al cerrar.',
-    habitoEN: 'Never use headphones near reversing machinery, lock out energy when cleaning, and tidy tools at closing.',
-    empresaES: 'Elimina accidentes laborales graves y reprocesos.',
-    empresaEN: 'Eliminates severe workplace accidents and rework.'
-  }
-];
-
-export const BANCO_ITEMS_2026 = [
-  {
-    id: '1001-05', codigo: '1001',
-    especialidadES: 'Agroecologia', especialidadEN: 'Agroecology',
-    subareaES: 'Tratamiento de Efluentes', subareaEN: 'Effluent Treatment',
-    enunciadoES: 'En una planta agroindustrial se trata un efluente en tres etapas: Etapa I disminuye solidos sedimentables; Etapa II reduce notablemente la turbidez; Etapa III disminuye la DBO5. Cual secuencia de procesos se aplico?',
-    enunciadoEN: 'An agro-industrial plant treats an effluent in three stages: Stage I settles solids; Stage II reduces turbidity; Stage III lowers BOD5. Which process sequence was applied?',
+    id: '1001-05', codigo: '1001', dificultad: 'INTERMEDIO',
+    especialidadES: 'Agroecologia', subareaES: 'Tratamiento de Efluentes',
+    conceptoBase: 'Tren de Tratamiento de Aguas Residuales (Fisico -> Quimico -> Biologico)',
+    enunciadoES: 'En una planta agroindustrial se trata un efluente en tres etapas: Etapa I disminuye solidos sedimentables; Etapa II reduce notablemente la turbidez; Etapa III disminuye la DBO5. Cual secuencia de procesos explica los resultados?',
     opciones: [
-      { letra: 'A', textoES: 'Biologico - fisico - quimico', textoEN: 'Biological - physical - chemical', correcta: false, expES: 'El tratamiento biologico va al final.', expEN: 'Biological treatment goes last.' },
-      { letra: 'B', textoES: 'Quimico - biologico - fisico', textoEN: 'Chemical - biological - physical', correcta: false, expES: 'Primero se sedimentan fisicamente los solidos gruesos.', expEN: 'Coarse solids are physically settled first.' },
-      { letra: 'C', textoES: 'Fisico - biologico - quimico', textoEN: 'Physical - biological - chemical', correcta: false, expES: 'La reduccion de DBO5 es biologica en la Etapa III.', expEN: 'BOD5 reduction is biological in Stage III.' },
-      { letra: 'D', textoES: 'Fisico - quimico - biologico', textoEN: 'Physical - chemical - biological', correcta: true, expES: 'Correcto: I Fisico (sedimenta), II Quimico (coagula turbidez), III Biologico (bacterias reducen DBO5).', expEN: 'Correct: I Physical (settles), II Chemical (coagulates turbidity), III Biological (bacteria lower BOD5).' }
+      { letra: 'A', textoES: 'Biologico - fisico - quimico', correcta: false, expES: 'El tratamiento biologico no puede ir al inicio con solidos gruesos.' },
+      { letra: 'B', textoES: 'Quimico - biologico - fisico', correcta: false, expES: 'La sedimentacion fisica siempre antecede al proceso quimico.' },
+      { letra: 'C', textoES: 'Fisico - biologico - quimico', correcta: false, expES: 'La reduccion de DBO5 es biologica y ocurre en la tercera etapa.' },
+      { letra: 'D', textoES: 'Fisico - quimico - biologico', correcta: true, expES: 'Correcto: Etapa I Fisico (sedimenta), Etapa II Quimico (coagula turbidez), Etapa III Biologico (bacterias degradan materia organica bajando DBO5).' }
     ],
     escalera: {
       gatearES: '1. Cuelas piedras (Fisico), 2. Aclaras el agua turbia (Quimico) y 3. Bacterias comen materia organica (Biologico).',
-      gatearEN: '1. Strain stones (Physical), 2. Clarify murky water (Chemical), 3. Bacteria eat organic matter (Biological).',
-      correrES: 'Secuencia PTAR: sedimentacion fisica primaria, coagulacion-floculacion quimica secundaria y oxidacion biologica de DBO5.',
-      correrEN: 'WWTP sequence: primary physical settling, secondary chemical coagulation, and biological BOD5 oxidation.',
-      espacioES: 'Disena un sistema de tratamiento para aguas de ordeno con biodigestor y humedal.',
-      espacioEN: 'Design a dairy wastewater treatment train using a biodigester and constructed wetland.'
+      correrES: 'Secuencia PTAR: primario fisico, secundario quimico (coagulacion-floculacion) y biologico (reduccion de DBO5).',
+      espacioES: 'Disena un sistema integrado con trampa de grasas, biodigestor y humedal artificial.'
     },
     nemotecniaES: 'FI-QUI-BIO: Fisico asienta, Quimico aclara, Biologico baja DBO5.',
-    nemotecniaEN: 'PHY-CHEM-BIO: Physical settles, Chemical clarifies, Biological lowers BOD5.',
-    palabraES: 'BIOLOGICO', palabraEN: 'BIOLOGICAL',
-    pistaES: 'Tratamiento que utiliza microorganismos para degradar materia organica y reducir la DBO5.',
-    pistaEN: 'Treatment using microorganisms to degrade organic matter and reduce BOD5.'
+    palabraES: 'BIOLOGICO', pistaES: 'Tratamiento que usa microorganismos para reducir la DBO5.'
   },
   {
-    id: '1003-09', codigo: '1003',
-    especialidadES: 'Agroindustria Agricola', especialidadEN: 'Crop Food Processing',
-    subareaES: 'Conservacion de Alimentos', subareaEN: 'Food Preservation',
-    enunciadoES: 'En el taller se concentra una mermelada hasta alcanzar 65 grados Brix, disminuyendo la disponibilidad de agua para los microorganismos. Cual principio explica su conservacion?',
-    enunciadoEN: 'Jam is concentrated to 65 degrees Brix, reducing water availability for microbial growth. Which principle explains its preservation?',
+    id: '1001-56', codigo: '1001', dificultad: 'FACIL',
+    especialidadES: 'Agroecologia', subareaES: 'Sistemas Integrados',
+    conceptoBase: 'Simbiosis Acuaponica (Acuicultura + Hidroponia con recirculacion)',
+    enunciadoES: 'En una unidad productiva se integran la crianza de tilapia y el cultivo de hortalizas: disminuye el consumo de agua, los compuestos nitrogenados son transformados en nutrientes vegetales y el agua retorna a los peces. Cual sistema se describe?',
     opciones: [
-      { letra: 'A', textoES: 'Disminucion de la actividad de agua por alta concentracion de solutos', textoEN: 'Reduction of water activity by high solute concentration', correcta: true, expES: 'Correcto: Los azucares a 65 Brix ligan el agua libre y bajan la actividad de agua (aw).', expEN: 'Correct: Sugars at 65 Brix bind free water and lower water activity (aw).' },
-      { letra: 'B', textoES: 'Inactivacion por congelacion rapida', textoEN: 'Inactivation by fast freezing', correcta: false, expES: 'La mermelada se conserva por solutos y coccion.', expEN: 'Jam is preserved by solutes and cooking.' },
-      { letra: 'C', textoES: 'Eliminacion absoluta de toda el agua', textoEN: 'Complete removal of all water', correcta: false, expES: 'El agua permanece en el producto pero ligada a los solutos.', expEN: 'Water remains in the product but bound to solutes.' },
-      { letra: 'D', textoES: 'Fermentacion lactica del azucar', textoEN: 'Lactic fermentation of sugar', correcta: false, expES: 'No es un alimento fermentado.', expEN: 'It is not a fermented food.' }
+      { letra: 'A', textoES: 'Cultivo en jaulas', correcta: false, expES: 'No integra hortalizas ni recirculacion.' },
+      { letra: 'B', textoES: 'Piscicultura extensiva', correcta: false, expES: 'No incluye biofiltracion hidroponica.' },
+      { letra: 'C', textoES: 'Flujo acuicola continuo', correcta: false, expES: 'Es un sistema abierto sin retorno.' },
+      { letra: 'D', textoES: 'Produccion acuaponica', correcta: true, expES: 'Correcto: La acuaponia integra peces y plantas en un circuito cerrado de recirculacion.' }
     ],
     escalera: {
-      gatearES: 'Tanta azucar (65 Brix) deja el agua amarrada y los microbios no tienen agua libre para crecer.',
-      gatearEN: 'So much sugar (65 Brix) ties up the water so microbes cannot use it to grow.',
-      correrES: 'La presion osmotica generada por 65% de solidos solubles reduce la actividad de agua (aw).',
-      correrEN: 'Osmotic pressure from 65% soluble solids depresses water activity (aw).',
-      espacioES: 'Formula un lote de 100 kg de mermelada ajustando pectina y pH a 3,2.',
-      espacioEN: 'Formulate a 100 kg jam batch adjusting pectin and pH to 3.2.'
+      gatearES: 'Los peces abonan a las plantas y las plantas limpian el agua para los peces: Acuaponia.',
+      correrES: 'Bacterias nitrificantes transforman el amonio de los peces en nitratos asimilables por las raices.',
+      espacioES: 'Calcula la relacion entre gramos de alimento diario para tilapia y area de cultivo de lechuga.'
     },
-    nemotecniaES: '65 BRIX = SOLUTOS AMARRAN EL AGUA (baja aw).',
-    nemotecniaEN: '65 BRIX = SOLUTES BIND WATER (lowers aw).',
-    palabraES: 'SOLUTOS', palabraEN: 'SOLUTES',
-    pistaES: 'Solidos disueltos (medidos en grados Brix) que reducen la actividad de agua en mermeladas.',
-    pistaEN: 'Dissolved solids (measured in Brix) that lower water activity in jams.'
+    nemotecniaES: 'ACUA (Peces) + PONIA (Hidroponia) = Acuaponia.',
+    palabraES: 'ACUAPONIA', pistaES: 'Sistema que integra crianza de peces y cultivo de plantas en recirculacion.'
   },
   {
-    id: '1004-29', codigo: '1004',
-    especialidadES: 'Agroindustria Pecuaria', especialidadEN: 'Livestock Food Processing',
-    subareaES: 'Control de Calidad Lacteo', subareaEN: 'Dairy Quality Control',
-    enunciadoES: 'Una muestra de leche contiene 0,45 g de acido lactico en 250 mL. Si el sistema exige registrar el resultado en gramos por litro (g/L), cual concentracion corresponde?',
-    enunciadoEN: 'A milk sample contains 0.45 g of lactic acid in 250 mL. What concentration must be recorded in grams per liter (g/L)?',
+    id: '1003-09', codigo: '1003', dificultad: 'MEDIANO',
+    especialidadES: 'Agroindustria Agricola', subareaES: 'Conservacion de Alimentos',
+    conceptoBase: 'Control de Actividad de Agua (aw) por Concentracion de Solutos (Grados Brix)',
+    enunciadoES: 'En el taller se concentra una mermelada hasta alcanzar 65 grados Brix, disminuyendo la disponibilidad de agua para el crecimiento microbiano. Cual principio de conservacion explica este efecto?',
     opciones: [
-      { letra: 'A', textoES: '0,18 g/L', textoEN: '0.18 g/L', correcta: false, expES: 'Error de division.', expEN: 'Division error.' },
-      { letra: 'B', textoES: '1,80 g/L', textoEN: '1.80 g/L', correcta: true, expES: 'Correcto: 1 L tiene cuatro veces 250 mL, por tanto 0,45 g x 4 = 1,80 g/L.', expEN: 'Correct: 1 L is four times 250 mL, so 0.45 g x 4 = 1.80 g/L.' },
-      { letra: 'C', textoES: '4,50 g/L', textoEN: '4.50 g/L', correcta: false, expES: 'Multiplico por 10 en lugar de 4.', expEN: 'Multiplied by 10 instead of 4.' },
-      { letra: 'D', textoES: '18,00 g/L', textoEN: '18.00 g/L', correcta: false, expES: '18 corresponde a grados Dornic.', expEN: '18 corresponds to Dornic degrees.' }
+      { letra: 'A', textoES: 'Disminucion de la actividad de agua por alta concentracion de solutos', correcta: true, expES: 'Correcto: Los azucares disueltos a 65 Brix ligan el agua libre y deprimen la actividad de agua (aw).' },
+      { letra: 'B', textoES: 'Inactivacion microbiana por congelacion', correcta: false, expES: 'No es un proceso de congelacion.' },
+      { letra: 'C', textoES: 'Eliminacion absoluta del agua total', correcta: false, expES: 'El agua permanece en la mermelada pero ligada a los solutos.' },
+      { letra: 'D', textoES: 'Fermentacion acida de la fruta', correcta: false, expES: 'La mermelada no se conserva por fermentacion.' }
+    ],
+    escalera: {
+      gatearES: 'Tanta azucar (65 Brix) amarra las moleculas de agua y los microbios no pueden usarla.',
+      correrES: 'La alta presion osmotica de los solidos solubles reduce la actividad de agua (aw) bajo el limite patogeno.',
+      espacioES: 'Formula el balance de masa de fruta, sacarosa y pectina para estandarizar a 65 Brix y pH 3,2.'
+    },
+    nemotecniaES: '65 BRIX = SOLUTOS AMARRAN EL AGUA (baja aw).',
+    palabraES: 'SOLUTOS', pistaES: 'Solidos disueltos que reducen la actividad de agua en mermeladas.'
+  },
+  {
+    id: '1004-29', codigo: '1004', dificultad: 'MEDIANO',
+    especialidadES: 'Agroindustria Pecuaria', subareaES: 'Analisis Lacteo',
+    conceptoBase: 'Conversion Volumetrica de Concentracion (g/mL a g/L)',
+    enunciadoES: 'En el laboratorio se determina que una muestra de leche contiene 0,45 g de acido lactico en un volumen de 250 mL. Si debe expresarse en gramos por litro (g/L), cual concentracion debe consignarse?',
+    opciones: [
+      { letra: 'A', textoES: '0,18 g/L', correcta: false, expES: 'Error de division.' },
+      { letra: 'B', textoES: '1,80 g/L', correcta: true, expES: 'Correcto: Como 1 L (1000 mL) equivale a 4 veces 250 mL, multiplicamos 0,45 g x 4 = 1,80 g/L.' },
+      { letra: 'C', textoES: '4,50 g/L', correcta: false, expES: 'Error por multiplicar por 10 en lugar de 4.' },
+      { letra: 'D', textoES: '18,00 g/L', correcta: false, expES: '18 corresponde a grados Dornic, pero en g/L es 1,80.' }
     ],
     escalera: {
       gatearES: 'En 1 litro caben 4 vasos de 250 mL. Multiplica 0,45 x 4 = 1,80 g/L.',
-      gatearEN: 'Four 250 mL cups fit in 1 liter. Multiply 0.45 x 4 = 1.80 g/L.',
-      correrES: 'Conversion volumetrica: (0,45 g / 0,250 L) = 1,80 g/L.',
-      correrEN: 'Volumetric conversion: (0.45 g / 0.250 L) = 1.80 g/L.',
-      espacioES: 'Relaciona 1,80 g/L (18 Dornic) con la prueba de estabilidad al alcohol en recepcion de planta.',
-      espacioEN: 'Relate 1.80 g/L (18 Dornic) with the alcohol stability test at plant reception.'
+      correrES: 'Factor de conversion: (0,45 g / 250 mL) x (1000 mL / 1 L) = 1,80 g/L.',
+      espacioES: 'Relaciona 1,80 g/L (18 grados Dornic) con la aptitud de la leche para pasteurizacion HTST.'
     },
-    nemotecniaES: '250 mL x 4 = 1 LITRO (Multiplica los gramos por 4).',
-    nemotecniaEN: '250 mL x 4 = 1 LITER (Multiply grams by 4).',
-    palabraES: 'LACTICO', palabraEN: 'LACTIC',
-    pistaES: 'Acido organico producido al fermentar la lactosa de la leche.',
-    pistaEN: 'Organic acid produced when fermenting milk lactose.'
+    nemotecniaES: '250 mL x 4 = 1 LITRO (Multiplica por 4).',
+    palabraES: 'LACTICO', pistaES: 'Acido producido por bacterias al fermentar la lactosa de la leche.'
   },
   {
-    id: '1005-41', codigo: '1005',
-    especialidadES: 'Agrojardineria', especialidadEN: 'Landscaping & Gardening',
-    subareaES: 'Replanteo de Jardines', subareaEN: 'Landscape Layout',
-    enunciadoES: 'En una franja total de 18 m se ubican consecutivamente: arbustos (4,50 m), sendero (2,00 m), cesped (sin cota) y jardinera (3,50 m). Cual es la longitud real del cesped?',
-    enunciadoEN: 'An 18 m strip has shrubs (4.50 m), path (2.00 m), lawn (unlabeled), and planter (3.50 m). What is the real length of the lawn?',
+    id: '1005-41', codigo: '1005', dificultad: 'FACIL',
+    especialidadES: 'Agrojardineria', subareaES: 'Replanteo de Jardines',
+    conceptoBase: 'Determinacion de Cotas Faltantes por Diferencia Longitudinal',
+    enunciadoES: 'En una franja longitudinal de 18 m se ubican consecutivamente: arbustos (4,50 m), sendero (2,00 m), cesped (sin cota) y jardinera (3,50 m). Cual es la longitud real del cesped?',
     opciones: [
-      { letra: 'A', textoES: '6,00 m', textoEN: '6.00 m', correcta: false, expES: 'Resta incompleta.', expEN: 'Incomplete subtraction.' },
-      { letra: 'B', textoES: '7,00 m', textoEN: '7.00 m', correcta: false, expES: 'Error de suma.', expEN: 'Addition error.' },
-      { letra: 'C', textoES: '8,00 m', textoEN: '8.00 m', correcta: true, expES: 'Correcto: 4,50 + 2,00 + 3,50 = 10,00 m. Luego 18,00 - 10,00 = 8,00 m.', expEN: 'Correct: 4.50 + 2.00 + 3.50 = 10.00 m. Then 18.00 - 10.00 = 8.00 m.' },
-      { letra: 'D', textoES: '10,00 m', textoEN: '10.00 m', correcta: false, expES: '10 m es la suma de los otros elementos.', expEN: '10 m is the sum of the other elements.' }
+      { letra: 'A', textoES: '6,00 m', correcta: false, expES: 'Resta incompleta.' },
+      { letra: 'B', textoES: '7,00 m', correcta: false, expES: 'Error de suma.' },
+      { letra: 'C', textoES: '8,00 m', correcta: true, expES: 'Correcto: Sumamos 4,50 + 2,00 + 3,50 = 10,00 m. Restamos 18,00 - 10,00 = 8,00 m.' },
+      { letra: 'D', textoES: '10,00 m', correcta: false, expES: '10,00 m es la suma de los otros segmentos.' }
     ],
     escalera: {
-      gatearES: 'Suma las partes conocidas (4,50 + 2 + 3,50 = 10 m). A 18 m restale 10 m y quedan 8 m.',
-      gatearEN: 'Add known parts (4.50 + 2 + 3.50 = 10 m). Subtract 10 m from 18 m to get 8 m.',
-      correrES: 'Diferencia longitudinal a escala 1:100: L = 18,00 m - 10,00 m = 8,00 m.',
-      correrEN: 'Longitudinal difference at 1:100 scale: L = 18.00 m - 10.00 m = 8.00 m.',
-      espacioES: 'Representa la franja de 8,00 m a escala 1:50 y cuantifica tepes de zacate.',
-      espacioEN: 'Draw the 8.00 m strip at 1:50 scale and quantify sod rolls.'
+      gatearES: 'Suma las partes conocidas (4,50 + 2 + 3,50 = 10 m). A 18 m quitale 10 m y quedan 8 m.',
+      correrES: 'Cota restante: L = 18,00 m - (4,50 + 2,00 + 3,50) m = 8,00 m.',
+      espacioES: 'Convierte los 8,00 m a escala 1:100 (8 cm en el plano) y calcula el area total.'
     },
-    nemotecniaES: '18 MENOS 10 = 8 METROS DE CESPED.',
-    nemotecniaEN: '18 MINUS 10 = 8 METERS OF LAWN.',
-    palabraES: 'REPLANTEO', palabraEN: 'LAYOUT',
-    pistaES: 'Operacion tecnica de trasladar las medidas del plano de jardineria al terreno real.',
-    pistaEN: 'Technical operation of transferring landscape plan dimensions to the actual ground.'
+    nemotecniaES: '18 MENOS 10 = 8 METROS.',
+    palabraES: 'REPLANTEO', pistaES: 'Traslado de las medidas del plano de jardineria al terreno real.'
   },
   {
-    id: '1009-05', codigo: '1009',
-    especialidadES: 'Produccion Agricola y Pecuaria', especialidadEN: 'Crop & Livestock Production',
-    subareaES: 'Maquinaria y Suelos', subareaEN: 'Machinery & Soils',
-    enunciadoES: 'Se requiere fracturar una capa compactada ubicada a 40 cm de profundidad procurando poca inversion del suelo superficial. Cual implemento corresponde?',
-    enunciadoEN: 'Which implement fractures a compacted soil layer at 40 cm depth with minimal topsoil inversion?',
+    id: '1009-05', codigo: '1009', dificultad: 'DUA',
+    especialidadES: 'Produccion Agricola y Pecuaria', subareaES: 'Mecanizacion Agricola',
+    conceptoBase: 'Labranza Vertical Profunda sin Inversion de Horizontes',
+    enunciadoES: 'Se debe seleccionar un implemento para fracturar una capa compactada ubicada a 40 cm de profundidad, procurando poca inversion del suelo superficial. Cual implemento corresponde?',
     opciones: [
-      { letra: 'A', textoES: 'Subsolador', textoEN: 'Subsoiler', correcta: true, expES: 'Correcto: El subsolador rompe capas profundas verticalmente sin voltear el suelo.', expEN: 'Correct: The subsoiler fractures deep layers vertically without inverting topsoil.' },
-      { letra: 'B', textoES: 'Arado de discos', textoEN: 'Disc plow', correcta: false, expES: 'Invierte el prisma de suelo.', expEN: 'Inverts the soil layer.' },
-      { letra: 'C', textoES: 'Rastra niveladora', textoEN: 'Leveling harrow', correcta: false, expES: 'Actua solo en la superficie.', expEN: 'Acts only on the surface.' },
-      { letra: 'D', textoES: 'Cultivador rotativo', textoEN: 'Rotary tiller', correcta: false, expES: 'Pulveriza superficialmente.', expEN: 'Pulverizes the surface.' }
+      { letra: 'A', textoES: 'Subsolador', correcta: true, expES: 'Correcto: El subsolador realiza corte vertical profundo a 40 cm sin voltear la capa fertil superficial.' },
+      { letra: 'B', textoES: 'Arado de discos', correcta: false, expES: 'Invierte el prisma de suelo.' },
+      { letra: 'C', textoES: 'Rastra niveladora', correcta: false, expES: 'Trabaja solo superficialmente.' },
+      { letra: 'D', textoES: 'Cultivador rotativo', correcta: false, expES: 'Pulveriza la superficie sin descompactar a 40 cm.' }
     ],
     escalera: {
-      gatearES: 'Para romper suelo duro a 40 cm de profundidad sin revolver la tierra de arriba, usas el Subsolador.',
-      gatearEN: 'To break hard soil at 40 cm depth without flipping the top layer, use a Subsoiler.',
-      correrES: 'Labranza vertical profunda: fractura el piso de arado mejorando infiltracion y drenaje.',
-      correrEN: 'Deep vertical tillage: fractures hardpan improving infiltration and root drainage.',
-      espacioES: 'Calcula la potencia requerida del tractor para operar un subsolador de 3 puas.',
-      espacioEN: 'Calculate tractor horsepower required to pull a 3-shank subsoiler.'
+      gatearES: 'Para romper suelo duro en lo profundo (40 cm) sin voltear la tierra de arriba, usas el Subsolador.',
+      correrES: 'El subsolador rompe el piso de arado mejorando la infiltracion hidrica y la aireacion radical.',
+      espacioES: 'Calcula la potencia requerida en HP para traccionar un subsolador de 3 cinceles.'
     },
     nemotecniaES: 'SUB-SUELO PROFUNDO = SUBSOLADOR.',
-    nemotecniaEN: 'DEEP SUB-SOIL = SUBSOILER.',
-    palabraES: 'SUBSOLADOR', palabraEN: 'SUBSOILER',
-    pistaES: 'Implemento de labranza vertical que rompe capas compactadas profundas sin voltear el suelo.',
-    pistaEN: 'Vertical tillage implement that fractures deep compacted soil layers.'
+    palabraES: 'SUBSOLADOR', pistaES: 'Implemento de labranza vertical para romper capas compactadas profundas.'
   },
   {
-    id: '2003-19', codigo: '2003',
-    especialidadES: 'Construccion Civil', especialidadEN: 'Civil Construction',
-    subareaES: 'Estatica y Sistemas Estructurales', subareaEN: 'Statics & Structural Systems',
+    id: '2003-19', codigo: '2003', dificultad: 'MEDIANO',
+    especialidadES: 'Construccion Civil', subareaES: 'Estatica de Vigas',
+    conceptoBase: 'Equilibrio Estatico de Fuerzas y Momentos en Vigas Simplemente Apoyadas',
     enunciadoES: 'Se debe construir una viga de 6 m de longitud, sujeta en ambos extremos con apoyos simples, con una carga puntual en el centro de 1200 kgf. Cual es la reaccion RA para mantener el equilibrio estatico?',
-    enunciadoEN: 'A 6 m simply supported beam carries a central point load of 1200 kgf. What is the reaction force RA required for static equilibrium?',
     opciones: [
-      { letra: 'A', textoES: '0 kgf', textoEN: '0 kgf', correcta: false, expES: 'Sin reaccion vertical la viga colapsaria.', expEN: 'Without vertical reaction the beam would collapse.' },
-      { letra: 'B', textoES: '600 kgf', textoEN: '600 kgf', correcta: true, expES: 'Correcto: Por simetria cada apoyo soporta la mitad: 1200 / 2 = 600 kgf.', expEN: 'Correct: By symmetry each support carries half: 1200 / 2 = 600 kgf.' },
-      { letra: 'C', textoES: '1200 kgf', textoEN: '1200 kgf', correcta: false, expES: '1200 kgf es la carga total.', expEN: '1200 kgf is the total load.' },
-      { letra: 'D', textoES: '2400 kgf', textoEN: '2400 kgf', correcta: false, expES: 'Duplica erroneamente la carga.', expEN: 'Incorrectly doubles the load.' }
+      { letra: 'A', textoES: '0 kgf', correcta: false, expES: 'Sin reaccion vertical la viga colapsaria.' },
+      { letra: 'B', textoES: '600 kgf', correcta: true, expES: 'Correcto: Por simetria, cada apoyo recibe la mitad de la carga central: 1200 / 2 = 600 kgf.' },
+      { letra: 'C', textoES: '1200 kgf', correcta: false, expES: 'Es la suma de las dos reacciones.' },
+      { letra: 'D', textoES: '2400 kgf', correcta: false, expES: 'Duplica erroneamente la carga.' }
     ],
     escalera: {
-      gatearES: 'Si dos personas cargan un tronco de 6 m con 1200 kg justo en el medio, cada hombro soporta 600 kgf.',
-      gatearEN: 'If two people carry a 6 m log with 1200 kg in the middle, each shoulder carries 600 kgf.',
-      correrES: 'Sumatoria de momentos en B igual a cero: -(RA x 6 m) + (1200 kgf x 3 m) = 0 -> RA = 600 kgf.',
-      correrEN: 'Sum of moments about B equals zero: -(RA x 6 m) + (1200 kgf x 3 m) = 0 -> RA = 600 kgf.',
-      espacioES: 'Determina el momento flector maximo Mmax = (P x L) / 4 = 1800 kgf.m.',
-      espacioEN: 'Determine the maximum bending moment Mmax = (P x L) / 4 = 1800 kgf.m.'
+      gatearES: 'Si el peso de 1200 kgf esta justo en la mitad, cada apoyo sostiene la mitad: 600 kgf.',
+      correrES: 'Por sumatoria de momentos en B igual a cero: -(RA x 6 m) + (1200 kgf x 3 m) = 0 -> RA = 600 kgf.',
+      espacioES: 'Calcula el momento flector maximo Mmax = (P x L) / 4 = 1800 kgf.m.'
     },
     nemotecniaES: 'CARGA AL CENTRO = MITAD EN CADA APOYO (600 kgf).',
-    nemotecniaEN: 'CENTER LOAD = HALF ON EACH SUPPORT (600 kgf).',
-    palabraES: 'EQUILIBRIO', palabraEN: 'EQUILIBRIUM',
-    pistaES: 'Condicion estatica de una viga donde la suma de fuerzas y momentos es igual a cero.',
-    pistaEN: 'Static condition of a beam where the sum of forces and moments equals zero.'
+    palabraES: 'EQUILIBRIO', pistaES: 'Condicion estatica donde la suma de fuerzas y momentos es cero.'
   },
   {
-    id: '2005-28', codigo: '2005',
-    especialidadES: 'Dibujo Tecnico', especialidadEN: 'Technical Drafting',
-    subareaES: 'Diseno de Escaleras', subareaEN: 'Staircase Design',
+    id: '2005-28', codigo: '2005', dificultad: 'FACIL',
+    especialidadES: 'Dibujo Tecnico', subareaES: 'Diseno Arquitectonico',
+    conceptoBase: 'Calculo Dimensional de Escaleras (Altura Total / Numero de Contrahuellas)',
     enunciadoES: 'Se disena una escalera para salvar una altura de 3,06 m mediante 18 contrahuellas iguales. Cual altura corresponde a cada contrahuella?',
-    enunciadoEN: 'A staircase is designed to overcome a 3.06 m height with 18 equal risers. What is the height of each riser?',
     opciones: [
-      { letra: 'A', textoES: '0,165 m', textoEN: '0.165 m', correcta: false, expES: '18 x 0,165 m solo suma 2,97 m.', expEN: '18 x 0.165 m only equals 2.97 m.' },
-      { letra: 'B', textoES: '0,16 m', textoEN: '0.16 m', correcta: false, expES: '18 x 0,16 m solo suma 2,88 m.', expEN: '18 x 0.16 m only equals 2.88 m.' },
-      { letra: 'C', textoES: '0,15 m', textoEN: '0.15 m', correcta: false, expES: '18 x 0,15 m solo suma 2,70 m.', expEN: '18 x 0.15 m only equals 2.70 m.' },
-      { letra: 'D', textoES: '0,17 m', textoEN: '0.17 m', correcta: true, expES: 'Correcto: 3,06 m / 18 contrahuellas = 0,17 m (17 cm por escalon).', expEN: 'Correct: 3.06 m / 18 risers = 0.17 m (17 cm per step).' }
+      { letra: 'A', textoES: '0,165 m', correcta: false, expES: '18 x 0,165 m solo alcanza 2,97 m.' },
+      { letra: 'B', textoES: '0,16 m', correcta: false, expES: '18 x 0,16 m solo alcanza 2,88 m.' },
+      { letra: 'C', textoES: '0,15 m', correcta: false, expES: '18 x 0,15 m solo alcanza 2,70 m.' },
+      { letra: 'D', textoES: '0,17 m', correcta: true, expES: 'Correcto: Dividimos 3,06 m / 18 contrahuellas = 0,17 m (17 cm por escalon).' }
     ],
     escalera: {
       gatearES: 'Divide la altura del piso (3,06 m) entre las 18 gradas: 3,06 / 18 = 0,17 m.',
-      gatearEN: 'Divide total height (3.06 m) by 18 steps: 3.06 / 18 = 0.17 m.',
-      correrES: 'Relacion de contrahuella C = H / N = 3,06 / 18 = 0,17 m (cumple norma <= 0,18 m).',
-      correrEN: 'Riser formula R = H / N = 3.06 / 18 = 0.17 m (complies with code <= 0.18 m).',
-      espacioES: 'Aplica la ley de Blondel (2C + H = 64 cm) para definir una huella de 30 cm.',
-      espacioEN: 'Apply Blondel law (2R + T = 64 cm) to define a 30 cm tread.'
+      correrES: 'Formula de contrahuella: C = Desnivel / Numero de gradas = 3,06 / 18 = 0,17 m.',
+      espacioES: 'Aplica la formula de Blondel (2C + H = 64 cm) para determinar la huella.'
     },
     nemotecniaES: '3,06 ENTRE 18 = 0,17 METROS.',
-    nemotecniaEN: '3.06 DIVIDED BY 18 = 0.17 METERS.',
-    palabraES: 'CONTRAHUELLA', palabraEN: 'RISER',
-    pistaES: 'Parte vertical de cada peldano o grada en el diseno de una escalera.',
-    pistaEN: 'Vertical part of each step in staircase design.'
+    palabraES: 'CONTRAHUELLA', pistaES: 'Altura vertical de cada peldano en una escalera.'
   },
   {
-    id: '2006-60', codigo: '2006',
-    especialidadES: 'Dibujo y Modelado Edificaciones', especialidadEN: 'Building Modeling & BIM',
-    subareaES: 'Estructura Financiera', subareaEN: 'Financial Structure',
-    enunciadoES: 'En el balance preliminar de una microempresa se registran Activos por 82 500 000 colones y Pasivos por 31 800 000 colones. A cual componente corresponde la diferencia entre ambos?',
-    enunciadoEN: 'A business balance shows Assets of 82,500,000 and Liabilities of 31,800,000. Which component corresponds to the difference?',
+    id: '2006-60', codigo: '2006', dificultad: 'INTERMEDIO',
+    especialidadES: 'Dibujo y Modelado Edificaciones', subareaES: 'Gestion Financiera',
+    conceptoBase: 'Ecuacion Contable Fundamental (Patrimonio = Activos - Pasivos)',
+    enunciadoES: 'En el balance preliminar de una microempresa se identifican Activos por 82 500 000 colones y Pasivos por 31 800 000 colones. A cual componente corresponde la diferencia entre ambos valores?',
     opciones: [
-      { letra: 'A', textoES: 'Activo', textoEN: 'Asset', correcta: false, expES: 'El activo ya esta dado.', expEN: 'Assets are already given.' },
-      { letra: 'B', textoES: 'Pasivo', textoEN: 'Liability', correcta: false, expES: 'El pasivo son las deudas.', expEN: 'Liabilities are debts.' },
-      { letra: 'C', textoES: 'Ingreso', textoEN: 'Revenue', correcta: false, expES: 'Pertenece al estado de resultados.', expEN: 'Belongs to the income statement.' },
-      { letra: 'D', textoES: 'Patrimonio', textoEN: 'Equity', correcta: true, expES: 'Correcto: Patrimonio = Activos - Pasivos (50 700 000 colones).', expEN: 'Correct: Equity = Assets - Liabilities (50,700,000 colones).' }
+      { letra: 'A', textoES: 'Activo', correcta: false, expES: 'El activo ya fue suministrado.' },
+      { letra: 'B', textoES: 'Pasivo', correcta: false, expES: 'El pasivo corresponde a las deudas.' },
+      { letra: 'C', textoES: 'Ingreso', correcta: false, expES: 'Pertenece al estado de resultados.' },
+      { letra: 'D', textoES: 'Patrimonio', correcta: true, expES: 'Correcto: Patrimonio = Activos - Pasivos (50 700 000 colones).' }
     ],
     escalera: {
-      gatearES: 'Lo que tienes (Activos) menos lo que debes (Pasivos) es tu Patrimonio.',
-      gatearEN: 'What you own (Assets) minus what you owe (Liabilities) is your Equity.',
-      correrES: 'Ecuacion contable patrimonial: Patrimonio = 82 500 000 - 31 800 000 = 50 700 000.',
-      correrEN: 'Accounting equation: Equity = 82,500,000 - 31,800,000 = 50,700,000.',
-      espacioES: 'Integra el balance inicial dentro de un Business Model Canvas para un estudio BIM.',
-      espacioEN: 'Integrate the opening balance into a Business Model Canvas for a BIM studio.'
+      gatearES: 'Lo que tienes (Activos) menos lo que debes (Pasivos) es tu Patrimonio neto.',
+      correrES: 'Ecuacion patrimonial: P = A - L = 82 500 000 - 31 800 000 = 50 700 000 colones.',
+      espacioES: 'Integra este patrimonio en el flujo de caja proyectado de un estudio BIM.'
     },
     nemotecniaES: 'ACTIVO MENOS PASIVO = PATRIMONIO.',
-    nemotecniaEN: 'ASSETS MINUS LIABILITIES = EQUITY.',
-    palabraES: 'PATRIMONIO', palabraEN: 'EQUITY',
-    pistaES: 'Capital propio resultante de restar los pasivos al total de activos.',
-    pistaEN: 'Net worth resulting from subtracting liabilities from total assets.'
+    palabraES: 'PATRIMONIO', pistaES: 'Capital propio resultante de restar los pasivos a los activos.'
   },
   {
-    id: '2007-30', codigo: '2007',
-    especialidadES: 'Diseno Grafico', especialidadEN: 'Graphic Design',
-    subareaES: 'Preprensa e Impresion', subareaEN: 'Digital Prepress & Printing',
+    id: '2007-30', codigo: '2007', dificultad: 'ALTO',
+    especialidadES: 'Diseno Grafico', subareaES: 'Preprensa Digital',
+    conceptoBase: 'Auditoria Tecnica Previa a la Impresion (Preflight PDF/X)',
     enunciadoES: 'Antes de reproducir un PDF en imprenta se comprueban fuentes incrustadas, resolucion de imagenes, sangrados, espacios de color y transparencias. Cual procedimiento reune estas verificaciones?',
-    enunciadoEN: 'Before printing a PDF, checking embedded fonts, image resolution, bleeds, color spaces, and transparencies is known as:',
     opciones: [
-      { letra: 'A', textoES: 'Preflight', textoEN: 'Preflight', correcta: true, expES: 'Correcto: El Preflight audita todos los requisitos tecnicos antes de imprimir.', expEN: 'Correct: Preflight audits all technical requirements prior to printing.' },
-      { letra: 'B', textoES: 'Trapping', textoEN: 'Trapping', correcta: false, expES: 'Es el traslape entre tintas.', expEN: 'Overlap between adjacent inks.' },
-      { letra: 'C', textoES: 'Imposicion', textoEN: 'Imposition', correcta: false, expES: 'Es el acomodo de paginas en el pliego.', expEN: 'Page arrangement on the press sheet.' },
-      { letra: 'D', textoES: 'Rasterizacion', textoEN: 'Rasterization', correcta: false, expES: 'Convierte vectores en pixeles.', expEN: 'Converts vectors into pixels.' }
+      { letra: 'A', textoES: 'Preflight', correcta: true, expES: 'Correcto: El Preflight valida tecnicamente el archivo antes de generar planchas CTP o imprimir.' },
+      { letra: 'B', textoES: 'Trapping', correcta: false, expES: 'Es el traslape leve entre tintas.' },
+      { letra: 'C', textoES: 'Imposicion', correcta: false, expES: 'Es el ordenamiento de paginas en el pliego.' },
+      { letra: 'D', textoES: 'Rasterizacion', correcta: false, expES: 'Es la conversion de vectores a mapa de bits.' }
     ],
     escalera: {
-      gatearES: 'Es la inspeccion antes del vuelo (Preflight) para evitar errores al imprimir.',
-      gatearEN: 'It is the pre-flight inspection to prevent printing errors.',
-      correrES: 'Validacion tecnica automatizada bajo normas ISO PDF/X.',
-      correrEN: 'Automated technical validation under ISO PDF/X standards.',
-      espacioES: 'Configura un perfil Preflight para envases en CMYK + tinta plana.',
-      espacioEN: 'Configure a Preflight profile for CMYK + spot color packaging.'
+      gatearES: 'Es el chequeo antes del vuelo (Preflight) para asegurar que nada salga mal en la imprenta.',
+      correrES: 'Verificacion automatizada de preprensa bajo estandares internacionales ISO PDF/X.',
+      espacioES: 'Configura un perfil Preflight para empaques con tintas CMYK, Pantone y barniz UV.'
     },
-    nemotecniaES: 'PRE-FLIGHT = Chequeo antes de despegar a imprenta.',
-    nemotecniaEN: 'PRE-FLIGHT = Check before printing takeoff.',
-    palabraES: 'PREFLIGHT', palabraEN: 'PREFLIGHT',
-    pistaES: 'Revision digital previa a la impresion de fuentes, sangrados y resolucion.',
-    pistaEN: 'Digital pre-print check of fonts, bleeds, and resolution.'
+    nemotecniaES: 'PRE-FLIGHT = Chequeo tecnico antes de despegar a imprenta.',
+    palabraES: 'PREFLIGHT', pistaES: 'Verificacion digital previa a la impresion de fuentes, sangrados y color.'
   },
   {
-    id: '2008-13', codigo: '2008',
-    especialidadES: 'Diseno Publicitario', especialidadEN: 'Advertising Design',
-    subareaES: 'Canon de Figura Humana', subareaEN: 'Human Figure Canon',
+    id: '2008-13', codigo: '2008', dificultad: 'ALTO',
+    especialidadES: 'Diseno Publicitario', subareaES: 'Figura Humana',
+    conceptoBase: 'Antropometria Artistica y Canon Modular de 8 Cabezas',
     enunciadoES: 'En un boceto de figura humana adulta, la cabeza mide 24 mm y la altura total de la figura es de 192 mm. Cual canon de proporcion se aplico?',
-    enunciadoEN: 'In an adult human figure sketch, the head measures 24 mm and total height is 192 mm. Which proportion canon was applied?',
     opciones: [
-      { letra: 'A', textoES: 'Ideal (8 cabezas)', textoEN: 'Ideal (8 heads)', correcta: true, expES: 'Correcto: 192 mm / 24 mm = 8 cabezas exactas (Canon Ideal).', expEN: 'Correct: 192 mm / 24 mm = 8 exact heads (Ideal Canon).' },
-      { letra: 'B', textoES: 'Natural (7,5 cabezas)', textoEN: 'Natural (7.5 heads)', correcta: false, expES: 'Daria 180 mm.', expEN: 'Would equal 180 mm.' },
-      { letra: 'C', textoES: 'Heroico (8,5 cabezas)', textoEN: 'Heroic (8.5 heads)', correcta: false, expES: 'Daria 204 mm.', expEN: 'Would equal 204 mm.' },
-      { letra: 'D', textoES: 'Infantil (5 cabezas)', textoEN: 'Child (5 heads)', correcta: false, expES: 'Daria 120 mm.', expEN: 'Would equal 120 mm.' }
+      { letra: 'A', textoES: 'Ideal (8 cabezas)', correcta: true, expES: 'Correcto: Dividimos 192 mm / 24 mm = 8 cabezas exactas, que define el canon Ideal.' },
+      { letra: 'B', textoES: 'Natural (7,5 cabezas)', correcta: false, expES: 'Mediria 180 mm.' },
+      { letra: 'C', textoES: 'Heroico (8,5 cabezas)', correcta: false, expES: 'Mediria 204 mm.' },
+      { letra: 'D', textoES: 'Infantil (5 cabezas)', correcta: false, expES: 'Mediria 120 mm.' }
     ],
     escalera: {
-      gatearES: 'Divide la estatura total (192 mm) entre la cabeza (24 mm): 192 / 24 = 8 cabezas (Canon Ideal).',
-      gatearEN: 'Divide total height (192 mm) by head size (24 mm): 192 / 24 = 8 heads (Ideal Canon).',
-      correrES: 'Proporcion antropometrica clasica donde el cuerpo humano mide 8 modulos cefalicos.',
-      correrEN: 'Classical anthropometric proportion where the adult body measures 8 head modules.',
-      espacioES: 'Construye una hoja de giro de personaje publicitario aplicando el canon de 8 cabezas.',
-      espacioEN: 'Build an advertising character turnaround sheet using the 8-head canon.'
+      gatearES: 'Divide la altura total (192 mm) entre la cabeza (24 mm): 192 / 24 = 8 cabezas (Canon Ideal).',
+      correrES: 'Relacion modular clasica: N = Altura Total / Modulo Cefalico = 192 / 24 = 8.',
+      espacioES: 'Disena un personaje publicitario aplicando vistas ortogonales con canon de 8 cabezas.'
     },
     nemotecniaES: '192 ENTRE 24 = 8 CABEZAS (Canon Ideal).',
-    nemotecniaEN: '192 DIVIDED BY 24 = 8 HEADS (Ideal Canon).',
-    palabraES: 'CANON', palabraEN: 'CANON',
-    pistaES: 'Regla de proporcion anatomica que utiliza la cabeza como unidad modular.',
-    pistaEN: 'Anatomical proportion rule using the head as a modular unit.'
-  },
-  {
-    id: '4001-01', codigo: '4001',
-    especialidadES: 'Desarrollo Web y Software', especialidadEN: 'Web & Software Development',
-    subareaES: 'Bases de Datos y CSS Responsivo', subareaEN: 'Databases & Responsive CSS',
-    enunciadoES: 'En una aplicacion web, el diseno debe reorganizar columnas, imagenes y menus automaticamente segun el ancho de pantalla del celular o monitor. Cual regla de CSS permite esto?',
-    enunciadoEN: 'In a web app, the layout must automatically reorganize columns and menus based on screen width. Which CSS feature enables this?',
-    opciones: [
-      { letra: 'A', textoES: 'Reglas responsivas y consultas de medios (@media queries)', textoEN: 'Responsive rules and CSS @media queries', correcta: true, expES: 'Correcto: Las @media queries adaptan el diseno a cualquier pantalla.', expEN: 'Correct: CSS @media queries adapt layouts to any screen width.' },
-      { letra: 'B', textoES: 'Tablas estaticas de ancho fijo en pixeles', textoEN: 'Static fixed-pixel tables', correcta: false, expES: 'Rompen el diseno en pantallas moviles.', expEN: 'Breaks layout on mobile screens.' },
-      { letra: 'C', textoES: 'Marcas de corte para impresion offset', textoEN: 'Offset print crop marks', correcta: false, expES: 'Son exclusivas para papel impreso.', expEN: 'Exclusive for printed paper.' },
-      { letra: 'D', textoES: 'Archivos sin hojas de estilo', textoEN: 'Unstyled plain files', correcta: false, expES: 'No adapta columnas.', expEN: 'Does not adapt columns.' }
-    ],
-    escalera: {
-      gatearES: 'Para que una pagina se acomode sola en celular o computadora se usan Media Queries en CSS.',
-      gatearEN: 'To make a webpage fit phones and monitors automatically, use CSS Media Queries.',
-      correrES: 'Consultas de medios CSS (@media) combinadas con Grid y Flexbox.',
-      correrEN: 'CSS @media queries combined with Grid and Flexbox.',
-      espacioES: 'Desarrolla una PWA Offline-First en React (.jsx) con Tailwind CSS.',
-      espacioEN: 'Build an Offline-First PWA in pure React (.jsx) with Tailwind CSS.'
-    },
-    nemotecniaES: 'PANTALLA CAMBIA = CSS MEDIA QUERIES.',
-    nemotecniaEN: 'SCREEN CHANGES = CSS MEDIA QUERIES.',
-    palabraES: 'RESPONSIVO', palabraEN: 'RESPONSIVE',
-    pistaES: 'Diseno web que adapta automaticamente sus columnas al tamano de cada pantalla.',
-    pistaEN: 'Web design that automatically adapts columns to each screen size.'
+    palabraES: 'CANON', pistaES: 'Regla de proporcion anatomica que toma la cabeza como unidad modular.'
   }
 ];
 
-export const JUEGO_SECUENCIAS = [
-  {
-    id: 'SEC-1',
-    tituloES: '1003 - Beneficiado Humedo del Cafe (Item 54)',
-    tituloEN: '1003 - Wet Coffee Processing (Item 54)',
-    instruccionES: 'Selecciona en orden cronologico las 4 etapas posteriores al recibo del cafe maduro:',
-    instruccionEN: 'Select in chronological order the 4 stages after receiving ripe coffee cherries:',
-    pasosES: ['1. Despulpado del fruto', '2. Fermentacion del mucilago', '3. Lavado con agua limpia', '4. Secado del grano pergamino'],
-    pasosEN: ['1. Depulping the cherry', '2. Mucilage fermentation', '3. Clean water washing', '4. Parchment drying']
-  },
-  {
-    id: 'SEC-2',
-    tituloES: '2007 - Produccion Grafica Impresa (Item 57)',
-    tituloEN: '2007 - Print Production Workflow (Item 57)',
-    instruccionES: 'Ordena las 5 etapas desde el pedido hasta la entrega del impreso:',
-    instruccionEN: 'Order the 5 stages from client order to print delivery:',
-    pasosES: ['1. Definicion del encargo', '2. Diseno y aprobacion', '3. Preprensa digital', '4. Impresion del tiraje', '5. Acabado y entrega'],
-    pasosEN: ['1. Job definition', '2. Design & approval', '3. Digital prepress', '4. Press printing', '5. Finishing & delivery']
-  },
-  {
-    id: 'SEC-3',
-    tituloES: '2008 - Captura en Camara Digital (Item 42)',
-    tituloEN: '2008 - Digital Camera Capture (Item 42)',
-    instruccionES: 'Ordena el recorrido de la luz y los datos al tomar una fotografia digital:',
-    instruccionEN: 'Order the light and data path when taking a digital photo:',
-    pasosES: ['1. Diafragma regula la luz', '2. Obturador controla el tiempo', '3. Sensor captura la imagen', '4. Procesamiento digital'],
-    pasosEN: ['1. Aperture regulates light', '2. Shutter controls time', '3. Sensor captures image', '4. Digital processing']
-  },
-  {
-    id: 'SEC-4',
-    tituloES: '2003 - Ruta Critica de Construccion (Item 44)',
-    tituloEN: '2003 - Construction Critical Path (Item 44)',
-    instruccionES: 'Ordena las 5 actividades con holgura cero (Ruta Critica) de la obra:',
-    instruccionEN: 'Order the 5 zero-slack activities (Critical Path) of the project:',
-    pasosES: ['1. a: Limpieza y excavacion', '2. b: Encofrado', '3. c: Acero de refuerzo', '4. f: Vaciado de concreto', '5. g: Curado del concreto'],
-    pasosEN: ['1. a: Clearing & excavation', '2. b: Formwork', '3. c: Reinforcing steel', '4. f: Concrete pouring', '5. g: Concrete curing']
-  }
-];
+// MOTOR PARAMETRICO 1000x1000: Genera decenas/cientos de items variados para simulacros de 60 preguntas
+export function generarBancoExpandido(itemsPersonalizados = []) {
+  const nivelesCiclo = ['DUA', 'FACIL', 'MEDIANO', 'INTERMEDIO', 'ALTO'];
+  const generados = [...itemsPersonalizados, ...BANCO_ITEMS_BASE];
+
+  // 1. Variaciones parametricas de Estatica de Vigas (Construccion Civil / Fisica / Matematica)
+  const cargasViga = [800, 1000, 1400, 1600, 1800, 2000, 2200, 2600, 3000, 3600, 4000, 4800, 5000];
+  cargasViga.forEach((carga, idx) => {
+    const mitad = carga / 2;
+    const largo = 4 + (idx % 5) * 2;
+    const niv = nivelesCiclo[idx % nivelesCiclo.length];
+    generados.push({
+      id: `GEN-VIGA-${idx + 1}`,
+      codigo: '2003',
+      dificultad: niv,
+      especialidadES: 'Construccion Civil',
+      subareaES: `Calculo Estructural (${niv})`,
+      conceptoBase: 'Equilibrio Estatico Simetrico: Reaccion RA = Carga Central / 2',
+      enunciadoES: `[Caso Parametrico #${idx + 1} - Nivel ${niv}] Se construye una viga simplemente apoyada de ${largo} m de longitud con una carga puntual en el centro de ${carga} kgf. Cual es la reaccion RA para mantener el equilibrio estatico?`,
+      opciones: [
+        { letra: 'A', textoES: `${mitad / 2} kgf`, correcta: false, expES: 'Corresponde solo a una cuarta parte de la carga.' },
+        { letra: 'B', textoES: `${mitad} kgf`, correcta: true, expES: `Correcto: Por simetria estatica, cada apoyo recibe la mitad de ${carga} kgf: ${carga} / 2 = ${mitad} kgf.` },
+        { letra: 'C', textoES: `${carga} kgf`, correcta: false, expES: 'Asume erroneamente que un solo apoyo soporta toda la carga.' },
+        { letra: 'D', textoES: `${carga * 2} kgf`, correcta: false, expES: 'Duplica erroneamente la carga central.' }
+      ],
+      escalera: {
+        gatearES: `Divide el peso central (${carga} kgf) entre los 2 apoyos: ${carga} / 2 = ${mitad} kgf.`,
+        correrES: `Por sumatoria de momentos igual a cero: RA = ${carga} kgf / 2 = ${mitad} kgf.`,
+        espacioES: `El momento flector maximo en el centro es Mmax = (${carga} x ${largo}) / 4 = ${(carga * largo) / 4} kgf.m.`
+      },
+      nemotecniaES: `MITAD EXACTA: ${carga} / 2 = ${mitad} kgf.`,
+      palabraES: 'EQUILIBRIO',
+      pistaES: 'Condicion donde la suma de fuerzas y momentos en la viga es cero.'
+    });
+  });
+
+  // 2. Variaciones parametricas de Rendimiento y Concentracion (Agroindustria / Quimica / PISA)
+  const muestrasLeche = [0.30, 0.35, 0.40, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.90, 1.10];
+  muestrasLeche.forEach((gramos, idx) => {
+    const porLitro = (gramos * 4).toFixed(2).replace('.', ',');
+    const mal1 = (gramos * 2).toFixed(2).replace('.', ',');
+    const mal2 = (gramos * 10).toFixed(2).replace('.', ',');
+    const mal3 = (gramos / 2).toFixed(2).replace('.', ',');
+    const gTexto = gramos.toFixed(2).replace('.', ',');
+    const niv = nivelesCiclo[(idx + 1) % nivelesCiclo.length];
+    generados.push({
+      id: `GEN-LAC-${idx + 1}`,
+      codigo: '1004',
+      dificultad: niv,
+      especialidadES: 'Agroindustria Pecuaria',
+      subareaES: `Control de Calidad y Laboratorio (${niv})`,
+      conceptoBase: 'Estequiometria y Concentracion en Gramos por Litro (1 L = 4 x 250 mL)',
+      enunciadoES: `[Laboratorio #${idx + 1} - Nivel ${niv}] Una muestra de 250 mL de leche contiene ${gTexto} g de acido lactico. Cual es la concentracion expresada en gramos por litro (g/L)?`,
+      opciones: [
+        { letra: 'A', textoES: `${mal3} g/L`, correcta: false, expES: 'Dividio en lugar de multiplicar por 4.' },
+        { letra: 'B', textoES: `${porLitro} g/L`, correcta: true, expES: `Correcto: Como 1 litro contiene 4 veces 250 mL, multiplicamos ${gTexto} g x 4 = ${porLitro} g/L.` },
+        { letra: 'C', textoES: `${mal1} g/L`, correcta: false, expES: 'Multiplico solo por 2 (500 mL) en lugar de 4 (1000 mL).' },
+        { letra: 'D', textoES: `${mal2} g/L`, correcta: false, expES: 'Multiplico por 10 en lugar de 4.' }
+      ],
+      escalera: {
+        gatearES: `En 1 litro caben cuatro muestras de 250 mL. Multiplica ${gTexto} x 4 = ${porLitro} g/L.`,
+        correrES: `Conversion unitaria: (${gTexto} g / 0,250 L) = ${porLitro} g/L.`,
+        espacioES: `Equivale a ${(gramos * 40).toFixed(1)} grados Dornic en control de recepcion de planta.`
+      },
+      nemotecniaES: `250 mL x 4 = 1 L -> ${gTexto} x 4 = ${porLitro} g/L.`,
+      palabraES: 'CONCENTRACION',
+      pistaES: 'Cantidad de soluto o acido lactico presente por cada litro de disolucion.'
+    });
+  });
+
+  // 3. Variaciones parametricas de Escaleras y Replanteo (Dibujo Tecnico / Agrojardineria / Matematica)
+  const gradasLista = [12, 14, 15, 16, 17, 19, 20, 21, 22, 24];
+  gradasLista.forEach((nGradas, idx) => {
+    const alturaTotal = (nGradas * 0.17).toFixed(2).replace('.', ',');
+    const niv = nivelesCiclo[(idx + 2) % nivelesCiclo.length];
+    generados.push({
+      id: `GEN-ESC-${idx + 1}`,
+      codigo: '2005',
+      dificultad: niv,
+      especialidadES: 'Dibujo Tecnico',
+      subareaES: `Diseno Arquitectonico (${niv})`,
+      conceptoBase: 'Modulado Vertical de Escaleras (Altura de Contrahuella = Desnivel / N)',
+      enunciadoES: `[Diseno #${idx + 1} - Nivel ${niv}] En un edificio se proyecta una escalera para salvar una altura total de ${alturaTotal} m mediante ${nGradas} contrahuellas iguales. Cual es la altura exacta de cada contrahuella?`,
+      opciones: [
+        { letra: 'A', textoES: '0,15 m', correcta: false, expES: 'No alcanzaria el nivel de entrepiso.' },
+        { letra: 'B', textoES: '0,16 m', correcta: false, expES: 'Quedaria faltando 1 cm por cada peldano.' },
+        { letra: 'C', textoES: '0,17 m', correcta: true, expES: `Correcto: Al dividir la altura de ${alturaTotal} m entre ${nGradas} contrahuellas se obtiene exactamente 0,17 m.` },
+        { letra: 'D', textoES: '0,19 m', correcta: false, expES: 'Excede el desnivel y supera el limite ergonomico habitual.' }
+      ],
+      escalera: {
+        gatearES: `Divide la altura total (${alturaTotal} m) entre las ${nGradas} gradas = 0,17 m.`,
+        correrES: `C = H / N = ${alturaTotal} m / ${nGradas} = 0,17 m (17 cm).`,
+        espacioES: `Con huella de 0,30 m, el desarrollo horizontal del tramo sera de ${(nGradas - 1) * 0.30} m.`
+      },
+      nemotecniaES: `${alturaTotal} ENTRE ${nGradas} = 0,17 m.`,
+      palabraES: 'CONTRAHUELLA',
+      pistaES: 'Medida vertical de cada escalon en un plano constructivo.'
+    });
+  });
+
+  // 4. Variaciones parametricas de Contabilidad, Topografia Pitagorica y Canon Publicitario (PISA / Admision)
+  const lotesContables = [
+    { act: 90, pas: 35 }, { act: 120, pas: 45 }, { act: 75, pas: 25 }, { act: 150, pas: 60 },
+    { act: 64, pas: 19 }, { act: 110, pas: 40 }, { act: 95, pas: 30 }, { act: 180, pas: 70 },
+    { act: 200, pas: 85 }, { act: 140, pas: 55 }, { act: 88, pas: 28 }, { act: 165, pas: 50 },
+    { act: 130, pas: 42 }, { act: 175, pas: 65 }, { act: 210, pas: 90 }, { act: 250, pas: 110 }
+  ];
+  lotesContables.forEach((par, idx) => {
+    const pat = par.act - par.pas;
+    const niv = nivelesCiclo[(idx + 3) % nivelesCiclo.length];
+    generados.push({
+      id: `GEN-FIN-${idx + 1}`,
+      codigo: '2006',
+      dificultad: niv,
+      especialidadES: 'Dibujo y Modelado Edificaciones',
+      subareaES: `Analisis Financiero y PISA (${niv})`,
+      conceptoBase: 'Ecuacion Contable Patrimonial (Patrimonio = Activos - Pasivos)',
+      enunciadoES: `[Caso Financiero #${idx + 1} - Nivel ${niv}] Una empresa constructora registra Activos totales por ${par.act} millones de colones y Pasivos por ${par.pas} millones de colones. Cual es el valor de su Patrimonio neto?`,
+      opciones: [
+        { letra: 'A', textoES: `${par.act + par.pas} millones`, correcta: false, expES: 'Error por sumar las deudas a los activos.' },
+        { letra: 'B', textoES: `${pat} millones`, correcta: true, expES: `Correcto: Patrimonio = Activos (${par.act}) - Pasivos (${par.pas}) = ${pat} millones de colones.` },
+        { letra: 'C', textoES: `${par.pas} millones`, correcta: false, expES: 'Ese monto corresponde unicamente al pasivo.' },
+        { letra: 'D', textoES: `${pat - 10} millones`, correcta: false, expES: 'Error aritmetico en la resta.' }
+      ],
+      escalera: {
+        gatearES: `A lo que tienes (${par.act} millones) restale las deudas (${par.pas} millones) = ${pat} millones.`,
+        correrES: `Ecuacion contable: Patrimonio = Activo - Pasivo = ${pat} millones.`,
+        espacioES: `Razon de endeudamiento = (${par.pas} / ${par.act}) x 100 = ${((par.pas / par.act) * 100).toFixed(1)}%.`
+      },
+      nemotecniaES: `${par.act} MENOS ${par.pas} = ${pat} MILLONES DE PATRIMONIO.`,
+      palabraES: 'PATRIMONIO',
+      pistaES: 'Capital propio obtenido al restar los pasivos del total de activos.'
+    });
+  });
+
+  return generados;
+}
