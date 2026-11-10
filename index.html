@@ -3,24 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#0891b2" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="pracTICAtecnica" />
+    <title>pracTICAtecnica.com - Pruebas Estandarizadas MEP, Coosevi y Simulacros Mundiales</title>
+    <meta name="description" content="Plataforma global de aprendizaje gamificado. Practica para pruebas estandarizadas MEP, admision universitaria UCR/TEC/UNA, examen teorico de manejo COSEVI e ingles tecnico con juegos interactivos DUA." />
+    <meta name="keywords" content="pruebas estandarizadas mep, practica teorica manejo cosevi, admision ucr, duolingo educativo costa rica, simulacro 60 preguntas, ingles tecnico ctp" />
+    <meta name="author" content="Ing. Max Salazar Sanchez - Servicios Profesionales ICM" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" />
-    <title>pracTICAtecnica.com - App Educativa MEP (Online & Offline)</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-slate-950 text-slate-100 select-none sm:select-auto">
+  <body class="bg-slate-950 text-slate-100">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(() => {});
-        });
-      }
-    </script>
   </body>
 </html>
