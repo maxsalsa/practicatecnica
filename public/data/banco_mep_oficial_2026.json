@@ -1,0 +1,281 @@
+[
+  {
+    "id": "AGR-12-U1-T1-0001",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Transición Agroecológica y Manejo Sostenible",
+    "indicador": "Transforma sistemas convencionales mediante el funcionamiento integrado de procesos ecológicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En la unidad productiva de un Colegio Técnico Profesional, el cultivo continuo de maíz ha generado disminución de la materia orgánica, compactación del suelo, aumento de organismos perjudiciales y mayores costos por la compra de insumos. ¿Cuál propuesta transforma el sistema convencional mediante el funcionamiento integrado de procesos ecológicos?",
+    "options": [
+      "Rotación de cultivos, cobertura vegetal, compostaje y regulación biológica",
+      "Labranza mecanizada, semillas híbridas, fertirriego y control selectivo de plagas",
+      "Monocultivo tecnificado, fertilización mineral, riego presurizado y control químico",
+      "Agricultura de precisión, sensores de humedad y dosificación variable de agroquímicos"
+    ],
+    "answer": 0,
+    "why": "La opción A (índice 0) integra procesos ecológicos (rotación, cobertura, compostaje y control biológico) para restaurar la fertilidad edáfica y regular poblaciones sin depender de insumos sintéticos. B, C y D mantienen el enfoque convencional de sustitución de insumos.",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "In a Technical High School farm, continuous corn cropping has reduced organic matter, compacted the soil, and increased pest pressure. Which proposal transforms the conventional system through integrated ecological processes?",
+      "options": [
+        "Crop rotation, cover cropping, composting, and biological regulation",
+        "Mechanized tillage, hybrid seeds, fertigation, and selective pest control",
+        "Technified monoculture, mineral fertilization, pressurized irrigation, and chemical control",
+        "Precision agriculture, moisture sensors, and variable agrochemical dosing"
+      ],
+      "why": "Option A integrates ecological processes to restore soil organic matter and natural pest regulation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T1-0002",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesos de Conservación de Alimentos",
+    "indicador": "Aplica principios de actividad de agua y concentración de solutos en procesamiento de frutas",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller de agroindustria de un Colegio Técnico Profesional, un grupo concentra una mermelada hasta alcanzar 65 °Brix. El análisis del producto indica que la disponibilidad de agua para el crecimiento microbiano disminuyó, aunque parte del agua permanece en su composición. ¿Cuál principio de conservación explica específicamente el efecto de la concentración alcanzada?",
+    "options": [
+      "Disminución de la actividad de agua por alta concentración de solutos",
+      "Inactivación microbiana por exposición a temperaturas elevadas",
+      "Limitación del oxígeno por cierre hermético del envase",
+      "Reducción del pH por producción de ácidos orgánicos"
+    ],
+    "answer": 0,
+    "why": "Al concentrar sólidos solubles hasta 65 °Brix, el azúcar liga las moléculas de agua libre reduciendo la actividad de agua (aw) disponible para el metabolismo microbiano (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A student group concentrates jam to 65 °Brix, reducing water availability for microbial growth even though water remains present. Which preservation principle explains this effect?",
+      "options": [
+        "Reduction of water activity due to high solute concentration",
+        "Microbial inactivation due to high temperature exposure",
+        "Oxygen limitation due to hermetic sealing",
+        "pH reduction due to organic acid production"
+      ],
+      "why": "High soluble solids (65 °Brix) bind free water, lowering water activity (aw)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T3-0003",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Control de Calidad de Derivados Lácteos",
+    "indicador": "Determina concentraciones químicas y rendimientos en productos lácteos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el laboratorio de un Colegio Técnico Profesional se determina que una muestra de leche contiene 0,45 g de ácido láctico en un volumen de 250 mL. El sistema de control de calidad exige registrar el resultado en gramos por litro (g/L). ¿Cuál concentración debe consignarse en el informe?",
+    "options": [
+      "0,18 g/L",
+      "1,80 g/L",
+      "4,50 g/L",
+      "18,00 g/L"
+    ],
+    "answer": 1,
+    "why": "250 mL equivalen a 0,25 L. Al dividir la masa entre el volumen en litros (0,45 g ÷ 0,25 L) se obtiene exactamente 1,80 g/L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A milk sample contains 0.45 g of lactic acid in a volume of 250 mL. Quality control requires reporting the concentration in grams per liter (g/L). Which value must be recorded?",
+      "options": [
+        "0.18 g/L",
+        "1.80 g/L",
+        "4.50 g/L",
+        "18.00 g/L"
+      ],
+      "why": "Converting 250 mL to 0.25 L and dividing 0.45 g / 0.25 L yields 1.80 g/L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T2-0004",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo e Interpretación de Planos Paisajísticos",
+    "indicador": "Calcula dimensiones reales de áreas verdes a partir de cotas en planos a escala",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un proyecto de jardinería, una persona técnica interpreta un plano a escala 1:100. En uno de los costados de una edificación se dispone de una franja longitudinal total de 18,00 m. Dentro de esa franja se establecen consecutivamente: zona de arbustos (4,50 m), sendero de acceso (2,00 m), área destinada a césped (sin cota) y jardinera próxima al acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "6,00 m",
+      "7,00 m",
+      "8,00 m",
+      "10,00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los segmentos acotados es 4,50 m + 2,00 m + 3,50 m = 10,00 m. Restando esa suma a la longitud general de la franja (18,00 m − 10,00 m), el área de césped mide 8,00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A 18.00 m longitudinal strip in a landscaping plan is divided into: shrub zone (4.50 m), access path (2.00 m), lawn area (unlabeled), and planter (3.50 m). What is the real length of the lawn area?",
+      "options": [
+        "6.00 m",
+        "7.00 m",
+        "8.00 m",
+        "10.00 m"
+      ],
+      "why": "Subtracting the known segments (4.50 + 2.00 + 3.50 = 10.00 m) from 18.00 m gives 8.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T1-0005",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sanitario en Unidades Lecheras",
+    "indicador": "Aplica protocolos de prevención de mastitis durante el ordeño",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva lechera se detecta una vaca con secreción anormal y resultado positivo en la prueba de mastitis, mientras los demás animales del lote no presentan alteraciones clínicas. Para disminuir la transmisión de microorganismos mediante las unidades de ordeño, ¿en cuál orden debe ubicarse la vaca afectada?",
+    "options": [
+      "Antes del lote de primer parto",
+      "Al final de la jornada de ordeño",
+      "Entre los grupos de mayor producción",
+      "Después del lote de vacas recién paridas"
+    ],
+    "answer": 1,
+    "why": "Las vacas positivas a mastitis clínica o subclínica deben ordeñarse siempre al final de la jornada (opción B, índice 1) para evitar que las pezoneras actúen como vector de contagio hacia los animales sanos.",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy cow tests positive for mastitis while the rest of the herd is healthy. To prevent cross-contamination through milking clusters, when should the affected cow be milked?",
+      "options": [
+        "Before the first-calf heifers",
+        "At the end of the milking session",
+        "Between the high-producing groups",
+        "Right after fresh cows"
+      ],
+      "why": "Milking infected cows last prevents transmitting pathogens to healthy udders via milking units."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T2-0006",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Cubicación y Presupuesto de Obra",
+    "indicador": "Calcula volúmenes de concreto y depreciación de maquinaria de construcción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Antes de programar el colado de una losa maciza de concreto en una vivienda, el encargado de obra revisa las dimensiones indicadas en los planos: largo de 8,40 m, ancho de 5,60 m y espesor de 0,15 m. ¿Qué volumen de concreto debe registrarse para este elemento?",
+    "options": [
+      "6,30 m³",
+      "7,06 m³",
+      "14,00 m³",
+      "47,04 m³"
+    ],
+    "answer": 1,
+    "why": "El volumen del prisma rectangular es Largo × Ancho × Espesor = 8,40 m × 5,60 m × 0,15 m = 7,056 m³, que redondeado a dos decimales corresponde a 7,06 m³ (opción B, índice 1). El distractor D (47,04) calcula solo el área superficial sin multiplicar por el espesor.",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A concrete slab has dimensions of 8.40 m length, 5.60 m width, and 0.15 m thickness. What volume of concrete is required?",
+      "options": [
+        "6.30 m³",
+        "7.06 m³",
+        "14.00 m³",
+        "47.04 m³"
+      ],
+      "why": "Volume = 8.40 × 5.60 × 0.15 = 7.056 m³ ≈ 7.06 m³."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T4-0007",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Tolerancias y Ajustes Mecánicos",
+    "indicador": "Determina la tolerancia total a partir de desviaciones superior e inferior",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En un Colegio Técnico Profesional se revisa el plano de una pieza mecánica cuya dimensión nominal es 40,00 mm, con una desviación superior de +0,02 mm y una desviación inferior de -0,02 mm. ¿Cuál es la tolerancia total especificada?",
+    "options": [
+      "0,01 mm",
+      "0,02 mm",
+      "0,04 mm",
+      "0,08 mm"
+    ],
+    "answer": 2,
+    "why": "La tolerancia total es la diferencia algebraica entre la desviación superior y la inferior: (+0,02 mm) − (−0,02 mm) = 0,04 mm (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A mechanical part has a nominal dimension of 40.00 mm with an upper deviation of +0.02 mm and a lower deviation of -0.02 mm. What is the total tolerance?",
+      "options": [
+        "0.01 mm",
+        "0.02 mm",
+        "0.04 mm",
+        "0.08 mm"
+      ],
+      "why": "Total tolerance = (+0.02) - (-0.02) = 0.04 mm."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T1-0008",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Gestión Empresarial y Presupuestos en Construcción",
+    "indicador": "Determina el patrimonio contable a partir de activos y pasivos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de contabilidad aplicada a una microempresa de diseño arquitectónico, en el balance preliminar se identifican Activos por ₡82 500 000 y Pasivos por ₡31 800 000. ¿A cuál componente de la estructura financiera corresponde la diferencia entre ambos valores (₡50 700 000)?",
+    "options": [
+      "Activo",
+      "Pasivo",
+      "Ingreso",
+      "Patrimonio"
+    ],
+    "answer": 3,
+    "why": "De acuerdo con la ecuación contable fundamental (Activo = Pasivo + Patrimonio), la diferencia entre los activos totales y las obligaciones (pasivos) corresponde al Patrimonio (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "In a preliminary balance sheet, a firm reports Assets of ₡82,500,000 and Liabilities of ₡31,800,000. Which financial component is represented by the difference between both values?",
+      "options": [
+        "Asset",
+        "Liability",
+        "Revenue",
+        "Equity (Patrimonio)"
+      ],
+      "why": "Assets minus Liabilities equals Owner's Equity (Patrimonio)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T1-0009",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Preprensa Digital y Producción Gráfica",
+    "indicador": "Aplica procedimientos de verificación preflight en archivos para impresión comercial",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una empresa de producción gráfica se recibe un archivo PDF destinado a impresión comercial. Antes de generar las planchas, la persona operadora debe comprobar la incrustación de fuentes, la resolución de las imágenes, los espacios de color CMYK y la presencia de sangrados. ¿Cuál operación de preprensa digital reúne estas verificaciones?",
+    "options": [
+      "Preflight",
+      "Trapping",
+      "Imposición",
+      "Rasterización"
+    ],
+    "answer": 0,
+    "why": "El control técnico previo a la filmación o impresión para validar fuentes, resolución, sangrados y perfiles de color se denomina Preflight (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007 Diseño Gráfico / 2008 Diseño Publicitario, Convocatoria 01-2026",
+    "en": {
+      "q": "Before printing a commercial brochure, the operator checks embedded fonts, image resolution, color spaces, and bleed settings in the PDF. What is this digital prepress operation called?",
+      "options": [
+        "Preflight",
+        "Trapping",
+        "Imposition",
+        "Rasterization"
+      ],
+      "why": "Preflight is the pre-production technical verification of fonts, resolution, color modes, and bleeds."
+    },
+    "revisar": false
+  }
+]
