@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "PAP-12-U1-T1-0001",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 35 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (35 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 35 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T2-0002",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 36 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (36 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 36 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T3-0003",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 37 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (37 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 37 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T1-0004",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 38 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (38 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 38 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T2-0005",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 39 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (39 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 39 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T3-0006",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 40 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (40 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 40 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T1-0007",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 41 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (41 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 41 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T2-0008",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 42 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (42 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 42 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T3-0009",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 43 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (43 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 43 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T1-0010",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 44 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (44 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 44 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T2-0011",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 45 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (45 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 45 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T3-0012",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 46 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (46 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 46 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T1-0013",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 47 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (47 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 47 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T2-0014",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 48 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (48 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 48 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T3-0015",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 49 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (49 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 49 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T1-0016",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 35 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (35 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 35 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T2-0017",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 36 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (36 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 36 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T3-0018",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 37 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (37 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 37 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T1-0019",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 38 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (38 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 38 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T2-0020",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 39 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (39 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 39 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T3-0021",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 40 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (40 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 40 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T1-0022",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 41 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (41 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 41 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T2-0023",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 42 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (42 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 42 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T3-0024",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 43 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (43 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 43 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T1-0025",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 44 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (44 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 44 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T2-0026",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 45 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (45 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 45 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T3-0027",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 46 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (46 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 46 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T1-0028",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 47 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (47 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 47 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T2-0029",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 48 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (48 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 48 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T3-0030",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 49 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (49 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 49 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T1-0031",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 35 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (35 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 35 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T2-0032",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 36 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (36 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 36 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T3-0033",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 37 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (37 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 37 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T1-0034",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 38 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (38 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 38 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T2-0035",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 39 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (39 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 39 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T3-0036",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 40 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (40 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 40 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T1-0037",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 41 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (41 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 41 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T2-0038",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 42 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (42 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 42 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T3-0039",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 43 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (43 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 43 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T1-0040",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 44 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (44 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 44 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T2-0041",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 45 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (45 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 45 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T3-0042",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 46 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (46 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 46 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T1-0043",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 47 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (47 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 47 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T2-0044",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 48 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (48 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 48 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T3-0045",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 49 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (49 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 49 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T1-0046",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 35 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (35 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 35 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T2-0047",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 36 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (36 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 36 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T3-0048",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 37 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (37 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 37 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T1-0049",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 38 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (38 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 38 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T2-0050",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 39 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (39 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 39 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T3-0051",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 40 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (40 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 40 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T1-0052",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 41 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (41 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 41 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T2-0053",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 42 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (42 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 42 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T3-0054",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 43 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (43 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 43 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T1-0055",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 44 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (44 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 44 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T2-0056",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 45 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (45 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 45 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U1-T3-0057",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 46 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (46 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 46 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U2-T1-0058",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 47 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (47 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 47 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U3-T2-0059",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 48 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (48 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 48 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  },
+  {
+    "id": "PAP-12-U4-T3-0060",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Agricultura de Precisión, Carbono Neutralidad y Zootecnia",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En el taller agrícola de un Colegio Técnico Profesional se requiere seleccionar un implemento para fracturar verticalmente una capa compactada de suelo (pie de arado) ubicada a 49 cm de profundidad, procurando mínima inversión del horizonte superficial. ¿Cuál implemento agrícola corresponde a esta labor?",
+    "options": [
+      "Subsolador",
+      "Arado de discos",
+      "Rastra niveladora",
+      "Cultivador rotativo"
+    ],
+    "answer": 0,
+    "why": "El subsolador descompacta capas profundas (49 cm) mediante corte vertical sin voltear ni invertir los horizontes del suelo (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "Which agricultural implement is designed to vertically fracture a compacted hardpan layer at 49 cm depth with minimal inversion of the topsoil?",
+      "options": [
+        "Subsoiler",
+        "Disc plow",
+        "Leveling harrow",
+        "Rotary cultivator"
+      ],
+      "why": "A subsoiler fractures deep compacted soil layers vertically without inverting the soil profile."
+    },
+    "revisar": false
+  }
+]

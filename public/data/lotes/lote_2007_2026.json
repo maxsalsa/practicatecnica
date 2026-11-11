@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "DGR-12-U1-T1-0001",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (20 mm) como módulo y alcanzando una estatura total de 160 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (160 mm ÷ 20 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 20 mm and a total height of 160 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T2-0002",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (21 mm) como módulo y alcanzando una estatura total de 168 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (168 mm ÷ 21 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 21 mm and a total height of 168 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T3-0003",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (22 mm) como módulo y alcanzando una estatura total de 176 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (176 mm ÷ 22 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 22 mm and a total height of 176 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T1-0004",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (23 mm) como módulo y alcanzando una estatura total de 184 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (184 mm ÷ 23 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 23 mm and a total height of 184 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T2-0005",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (24 mm) como módulo y alcanzando una estatura total de 192 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (192 mm ÷ 24 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 24 mm and a total height of 192 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T3-0006",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (25 mm) como módulo y alcanzando una estatura total de 200 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (200 mm ÷ 25 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 25 mm and a total height of 200 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T1-0007",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (26 mm) como módulo y alcanzando una estatura total de 208 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (208 mm ÷ 26 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 26 mm and a total height of 208 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T2-0008",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (27 mm) como módulo y alcanzando una estatura total de 216 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (216 mm ÷ 27 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 27 mm and a total height of 216 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T3-0009",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (28 mm) como módulo y alcanzando una estatura total de 224 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (224 mm ÷ 28 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 28 mm and a total height of 224 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T1-0010",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (29 mm) como módulo y alcanzando una estatura total de 232 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (232 mm ÷ 29 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 29 mm and a total height of 232 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T2-0011",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (20 mm) como módulo y alcanzando una estatura total de 160 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (160 mm ÷ 20 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 20 mm and a total height of 160 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T3-0012",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (21 mm) como módulo y alcanzando una estatura total de 168 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (168 mm ÷ 21 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 21 mm and a total height of 168 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T1-0013",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (22 mm) como módulo y alcanzando una estatura total de 176 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (176 mm ÷ 22 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 22 mm and a total height of 176 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T2-0014",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (23 mm) como módulo y alcanzando una estatura total de 184 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (184 mm ÷ 23 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 23 mm and a total height of 184 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T3-0015",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (24 mm) como módulo y alcanzando una estatura total de 192 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (192 mm ÷ 24 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 24 mm and a total height of 192 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T1-0016",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (25 mm) como módulo y alcanzando una estatura total de 200 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (200 mm ÷ 25 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 25 mm and a total height of 200 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T2-0017",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (26 mm) como módulo y alcanzando una estatura total de 208 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (208 mm ÷ 26 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 26 mm and a total height of 208 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T3-0018",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (27 mm) como módulo y alcanzando una estatura total de 216 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (216 mm ÷ 27 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 27 mm and a total height of 216 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T1-0019",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (28 mm) como módulo y alcanzando una estatura total de 224 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (224 mm ÷ 28 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 28 mm and a total height of 224 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T2-0020",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (29 mm) como módulo y alcanzando una estatura total de 232 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (232 mm ÷ 29 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 29 mm and a total height of 232 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T3-0021",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (20 mm) como módulo y alcanzando una estatura total de 160 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (160 mm ÷ 20 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 20 mm and a total height of 160 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T1-0022",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (21 mm) como módulo y alcanzando una estatura total de 168 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (168 mm ÷ 21 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 21 mm and a total height of 168 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T2-0023",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (22 mm) como módulo y alcanzando una estatura total de 176 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (176 mm ÷ 22 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 22 mm and a total height of 176 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T3-0024",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (23 mm) como módulo y alcanzando una estatura total de 184 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (184 mm ÷ 23 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 23 mm and a total height of 184 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T1-0025",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (24 mm) como módulo y alcanzando una estatura total de 192 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (192 mm ÷ 24 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 24 mm and a total height of 192 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T2-0026",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (25 mm) como módulo y alcanzando una estatura total de 200 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (200 mm ÷ 25 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 25 mm and a total height of 200 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T3-0027",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (26 mm) como módulo y alcanzando una estatura total de 208 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (208 mm ÷ 26 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 26 mm and a total height of 208 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T1-0028",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (27 mm) como módulo y alcanzando una estatura total de 216 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (216 mm ÷ 27 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 27 mm and a total height of 216 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T2-0029",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (28 mm) como módulo y alcanzando una estatura total de 224 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (224 mm ÷ 28 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 28 mm and a total height of 224 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T3-0030",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (29 mm) como módulo y alcanzando una estatura total de 232 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (232 mm ÷ 29 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 29 mm and a total height of 232 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T1-0031",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (20 mm) como módulo y alcanzando una estatura total de 160 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (160 mm ÷ 20 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 20 mm and a total height of 160 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T2-0032",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (21 mm) como módulo y alcanzando una estatura total de 168 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (168 mm ÷ 21 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 21 mm and a total height of 168 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T3-0033",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (22 mm) como módulo y alcanzando una estatura total de 176 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (176 mm ÷ 22 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 22 mm and a total height of 176 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T1-0034",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (23 mm) como módulo y alcanzando una estatura total de 184 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (184 mm ÷ 23 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 23 mm and a total height of 184 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T2-0035",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (24 mm) como módulo y alcanzando una estatura total de 192 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (192 mm ÷ 24 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 24 mm and a total height of 192 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T3-0036",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (25 mm) como módulo y alcanzando una estatura total de 200 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (200 mm ÷ 25 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 25 mm and a total height of 200 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T1-0037",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (26 mm) como módulo y alcanzando una estatura total de 208 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (208 mm ÷ 26 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 26 mm and a total height of 208 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T2-0038",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (27 mm) como módulo y alcanzando una estatura total de 216 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (216 mm ÷ 27 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 27 mm and a total height of 216 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T3-0039",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (28 mm) como módulo y alcanzando una estatura total de 224 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (224 mm ÷ 28 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 28 mm and a total height of 224 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T1-0040",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (29 mm) como módulo y alcanzando una estatura total de 232 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (232 mm ÷ 29 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 29 mm and a total height of 232 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T2-0041",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (20 mm) como módulo y alcanzando una estatura total de 160 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (160 mm ÷ 20 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 20 mm and a total height of 160 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T3-0042",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (21 mm) como módulo y alcanzando una estatura total de 168 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (168 mm ÷ 21 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 21 mm and a total height of 168 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T1-0043",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (22 mm) como módulo y alcanzando una estatura total de 176 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (176 mm ÷ 22 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 22 mm and a total height of 176 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T2-0044",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (23 mm) como módulo y alcanzando una estatura total de 184 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (184 mm ÷ 23 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 23 mm and a total height of 184 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T3-0045",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (24 mm) como módulo y alcanzando una estatura total de 192 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (192 mm ÷ 24 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 24 mm and a total height of 192 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T1-0046",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (25 mm) como módulo y alcanzando una estatura total de 200 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (200 mm ÷ 25 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 25 mm and a total height of 200 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T2-0047",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (26 mm) como módulo y alcanzando una estatura total de 208 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (208 mm ÷ 26 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 26 mm and a total height of 208 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T3-0048",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (27 mm) como módulo y alcanzando una estatura total de 216 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (216 mm ÷ 27 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 27 mm and a total height of 216 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T1-0049",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (28 mm) como módulo y alcanzando una estatura total de 224 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (224 mm ÷ 28 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 28 mm and a total height of 224 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T2-0050",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (29 mm) como módulo y alcanzando una estatura total de 232 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (232 mm ÷ 29 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 29 mm and a total height of 232 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T3-0051",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (20 mm) como módulo y alcanzando una estatura total de 160 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (160 mm ÷ 20 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 20 mm and a total height of 160 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T1-0052",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (21 mm) como módulo y alcanzando una estatura total de 168 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (168 mm ÷ 21 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 21 mm and a total height of 168 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T2-0053",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (22 mm) como módulo y alcanzando una estatura total de 176 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (176 mm ÷ 22 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 22 mm and a total height of 176 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T3-0054",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (23 mm) como módulo y alcanzando una estatura total de 184 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (184 mm ÷ 23 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 23 mm and a total height of 184 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T1-0055",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (24 mm) como módulo y alcanzando una estatura total de 192 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (192 mm ÷ 24 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 24 mm and a total height of 192 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T2-0056",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (25 mm) como módulo y alcanzando una estatura total de 200 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (200 mm ÷ 25 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 25 mm and a total height of 200 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U1-T3-0057",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (26 mm) como módulo y alcanzando una estatura total de 208 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (208 mm ÷ 26 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 26 mm and a total height of 208 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U2-T1-0058",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (27 mm) como módulo y alcanzando una estatura total de 216 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (216 mm ÷ 27 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 27 mm and a total height of 216 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U3-T2-0059",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (28 mm) como módulo y alcanzando una estatura total de 224 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (224 mm ÷ 28 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 28 mm and a total height of 224 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DGR-12-U4-T3-0060",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Composición Visual, Color, Preprensa Offset y Vectorización",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante una práctica de ilustración anatómica, se construye una figura humana adulta utilizando la altura de la cabeza (29 mm) como módulo y alcanzando una estatura total de 232 mm (relación de 8 cabezas). ¿Cuál canon de proporción se aplica en el boceto?",
+    "options": [
+      "Ideal",
+      "Natural",
+      "Heroico",
+      "Infantil"
+    ],
+    "answer": 0,
+    "why": "Una proporción de exactamente 8 cabezas (232 mm ÷ 29 mm = 8) corresponde al canon Ideal de la figura humana adulta (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026",
+    "en": {
+      "q": "An anatomical figure is drawn using a head module of 29 mm and a total height of 232 mm (8 heads tall). Which proportion canon is applied?",
+      "options": [
+        "Ideal",
+        "Natural",
+        "Heroic",
+        "Infant"
+      ],
+      "why": "A proportion of 8 heads corresponds to the classical Ideal human figure canon."
+    },
+    "revisar": false
+  }
+]

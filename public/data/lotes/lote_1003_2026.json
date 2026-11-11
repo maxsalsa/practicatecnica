@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "AGA-12-U1-T1-0001",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 14 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (14 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 14%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (14%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T2-0002",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 16 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (16 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 16%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (16%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T3-0003",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 18 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (18 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 18%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (18%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T1-0004",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 20 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (20 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 20%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (20%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T2-0005",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 22 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (22 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 22%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (22%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T3-0006",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 19 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (19 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 19%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (19%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T1-0007",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 15 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (15 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 15%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (15%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T2-0008",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 17 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (17 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 17%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (17%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T3-0009",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 19 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (19 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 19%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (19%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T1-0010",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 21 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (21 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 21%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (21%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T2-0011",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 18 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (18 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 18%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (18%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T3-0012",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 20 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (20 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 20%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (20%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T1-0013",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 16 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (16 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 16%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (16%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T2-0014",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 18 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (18 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 18%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (18%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T3-0015",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 20 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (20 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 20%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (20%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T1-0016",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 17 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (17 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 17%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (17%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T2-0017",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 19 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (19 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 19%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (19%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T3-0018",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 21 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (21 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 21%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (21%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T1-0019",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 17 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (17 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 17%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (17%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T2-0020",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 19 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (19 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 19%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (19%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T3-0021",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 16 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (16 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 16%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (16%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T1-0022",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 18 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (18 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 18%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (18%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T2-0023",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 20 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (20 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 20%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (20%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T3-0024",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 22 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (22 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 22%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (22%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T1-0025",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 18 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (18 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 18%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (18%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T2-0026",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 15 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (15 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 15%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (15%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T3-0027",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 17 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (17 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 17%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (17%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T1-0028",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 19 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (19 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 19%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (19%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T2-0029",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 21 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (21 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 21%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (21%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T3-0030",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 23 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (23 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 23%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (23%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T1-0031",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 14 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (14 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 14%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (14%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T2-0032",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 16 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (16 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 16%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (16%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T3-0033",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 18 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (18 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 18%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (18%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T1-0034",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 20 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (20 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 20%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (20%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T2-0035",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 22 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (22 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 22%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (22%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T3-0036",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 19 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (19 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 19%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (19%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T1-0037",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 15 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (15 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 15%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (15%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T2-0038",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 17 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (17 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 17%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (17%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T3-0039",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 19 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (19 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 19%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (19%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T1-0040",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 21 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (21 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 21%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (21%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T2-0041",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 18 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (18 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 18%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (18%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T3-0042",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 20 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (20 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 20%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (20%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T1-0043",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 16 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (16 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 16%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (16%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T2-0044",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 18 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (18 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 18%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (18%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T3-0045",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 20 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (20 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 20%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (20%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T1-0046",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 17 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (17 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 17%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (17%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T2-0047",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 19 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (19 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 19%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (19%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T3-0048",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 21 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (21 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 21%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (21%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T1-0049",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 17 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (17 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 17%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (17%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T2-0050",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 19 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (19 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 19%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (19%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T3-0051",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 16 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (16 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 16%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (16%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T1-0052",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 18 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (18 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 18%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (18%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T2-0053",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 20 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (20 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 20%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (20%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T3-0054",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 22 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (22 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 22%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (22%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T1-0055",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 18 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (18 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 18%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (18%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T2-0056",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 10 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 15 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (15 %) mayor que la tasa mínima requerida (10 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 10% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 15%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (15%) > MARR (10%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U1-T3-0057",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 11 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 17 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (17 %) mayor que la tasa mínima requerida (11 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 11% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 17%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (17%) > MARR (11%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U2-T1-0058",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 12 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 19 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (19 %) mayor que la tasa mínima requerida (12 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 12% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 19%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (19%) > MARR (12%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U3-T2-0059",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 13 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 21 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (21 %) mayor que la tasa mínima requerida (13 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 13% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 21%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (21%) > MARR (13%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGA-12-U4-T3-0060",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Conservación, Inocuidad HACCP y Control de Calidad",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una finca agroindustrial analiza la instalación de una planta procesadora de pulpas de fruta. Para un horizonte de cinco años, el estudio financiero calculado con una tasa mínima aceptable de rendimiento del 14 % genera un Valor Actual Neto (VAN) positivo y una Tasa Interna de Retorno (TIR) del 23 %. ¿Cuál conclusión técnica corresponde a estos indicadores?",
+    "options": [
+      "El costo de financiamiento supera el rendimiento estimado del proyecto",
+      "La inversión proyectada genera una rentabilidad inferior a la mínima exigida",
+      "El rendimiento proyectado del proyecto supera la tasa mínima requerida",
+      "La recuperación de la inversión depende exclusivamente de subsidios externos"
+    ],
+    "answer": 2,
+    "why": "Al obtener un VAN > 0 y una TIR (23 %) mayor que la tasa mínima requerida (14 %), se comprueba que el rendimiento proyectado supera la rentabilidad mínima exigida (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026",
+    "en": {
+      "q": "A fruit pulp plant project evaluated at a 14% minimum acceptable rate of return yields a positive Net Present Value (NPV) and an Internal Rate of Return (IRR) of 23%. What is the conclusion?",
+      "options": [
+        "Financing costs exceed estimated project returns",
+        "Projected investment yields less than the required return",
+        "Projected return exceeds the minimum required rate",
+        "Capital recovery depends solely on external subsidies"
+      ],
+      "why": "Since IRR (23%) > MARR (14%) and NPV > 0, the project exceeds the minimum required return."
+    },
+    "revisar": false
+  }
+]

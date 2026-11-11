@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "AJD-12-U1-T1-0001",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 18,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "6.00 m",
+      "7.00 m",
+      "8.00 m",
+      "10.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 18,00 m se obtiene 8.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 18.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "6.00 m",
+        "7.00 m",
+        "8.00 m",
+        "10.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 18.00 m yields 8.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T2-0002",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 19,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "7.00 m",
+      "8.00 m",
+      "9.00 m",
+      "11.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 19,00 m se obtiene 9.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 19.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "7.00 m",
+        "8.00 m",
+        "9.00 m",
+        "11.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 19.00 m yields 9.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T3-0003",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 20,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "8.00 m",
+      "9.00 m",
+      "10.00 m",
+      "12.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 20,00 m se obtiene 10.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 20.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "8.00 m",
+        "9.00 m",
+        "10.00 m",
+        "12.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 20.00 m yields 10.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T1-0004",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 21,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "9.00 m",
+      "10.00 m",
+      "11.00 m",
+      "13.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 21,00 m se obtiene 11.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 21.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "9.00 m",
+        "10.00 m",
+        "11.00 m",
+        "13.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 21.00 m yields 11.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T2-0005",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 22,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "10.00 m",
+      "11.00 m",
+      "12.00 m",
+      "14.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 22,00 m se obtiene 12.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 22.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "10.00 m",
+        "11.00 m",
+        "12.00 m",
+        "14.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 22.00 m yields 12.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T3-0006",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 23,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "11.00 m",
+      "12.00 m",
+      "13.00 m",
+      "15.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 23,00 m se obtiene 13.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 23.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "11.00 m",
+        "12.00 m",
+        "13.00 m",
+        "15.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 23.00 m yields 13.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T1-0007",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 24,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "12.00 m",
+      "13.00 m",
+      "14.00 m",
+      "16.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 24,00 m se obtiene 14.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 24.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "12.00 m",
+        "13.00 m",
+        "14.00 m",
+        "16.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 24.00 m yields 14.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T2-0008",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 18,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "6.00 m",
+      "7.00 m",
+      "8.00 m",
+      "10.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 18,00 m se obtiene 8.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 18.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "6.00 m",
+        "7.00 m",
+        "8.00 m",
+        "10.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 18.00 m yields 8.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T3-0009",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 19,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "7.00 m",
+      "8.00 m",
+      "9.00 m",
+      "11.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 19,00 m se obtiene 9.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 19.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "7.00 m",
+        "8.00 m",
+        "9.00 m",
+        "11.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 19.00 m yields 9.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T1-0010",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 20,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "8.00 m",
+      "9.00 m",
+      "10.00 m",
+      "12.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 20,00 m se obtiene 10.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 20.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "8.00 m",
+        "9.00 m",
+        "10.00 m",
+        "12.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 20.00 m yields 10.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T2-0011",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 21,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "9.00 m",
+      "10.00 m",
+      "11.00 m",
+      "13.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 21,00 m se obtiene 11.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 21.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "9.00 m",
+        "10.00 m",
+        "11.00 m",
+        "13.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 21.00 m yields 11.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T3-0012",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 22,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "10.00 m",
+      "11.00 m",
+      "12.00 m",
+      "14.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 22,00 m se obtiene 12.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 22.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "10.00 m",
+        "11.00 m",
+        "12.00 m",
+        "14.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 22.00 m yields 12.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T1-0013",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 23,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "11.00 m",
+      "12.00 m",
+      "13.00 m",
+      "15.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 23,00 m se obtiene 13.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 23.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "11.00 m",
+        "12.00 m",
+        "13.00 m",
+        "15.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 23.00 m yields 13.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T2-0014",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 24,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "12.00 m",
+      "13.00 m",
+      "14.00 m",
+      "16.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 24,00 m se obtiene 14.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 24.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "12.00 m",
+        "13.00 m",
+        "14.00 m",
+        "16.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 24.00 m yields 14.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T3-0015",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 18,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "6.00 m",
+      "7.00 m",
+      "8.00 m",
+      "10.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 18,00 m se obtiene 8.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 18.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "6.00 m",
+        "7.00 m",
+        "8.00 m",
+        "10.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 18.00 m yields 8.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T1-0016",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 19,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "7.00 m",
+      "8.00 m",
+      "9.00 m",
+      "11.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 19,00 m se obtiene 9.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 19.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "7.00 m",
+        "8.00 m",
+        "9.00 m",
+        "11.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 19.00 m yields 9.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T2-0017",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 20,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "8.00 m",
+      "9.00 m",
+      "10.00 m",
+      "12.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 20,00 m se obtiene 10.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 20.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "8.00 m",
+        "9.00 m",
+        "10.00 m",
+        "12.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 20.00 m yields 10.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T3-0018",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 21,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "9.00 m",
+      "10.00 m",
+      "11.00 m",
+      "13.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 21,00 m se obtiene 11.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 21.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "9.00 m",
+        "10.00 m",
+        "11.00 m",
+        "13.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 21.00 m yields 11.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T1-0019",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 22,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "10.00 m",
+      "11.00 m",
+      "12.00 m",
+      "14.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 22,00 m se obtiene 12.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 22.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "10.00 m",
+        "11.00 m",
+        "12.00 m",
+        "14.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 22.00 m yields 12.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T2-0020",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 23,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "11.00 m",
+      "12.00 m",
+      "13.00 m",
+      "15.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 23,00 m se obtiene 13.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 23.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "11.00 m",
+        "12.00 m",
+        "13.00 m",
+        "15.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 23.00 m yields 13.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T3-0021",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 24,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "12.00 m",
+      "13.00 m",
+      "14.00 m",
+      "16.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 24,00 m se obtiene 14.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 24.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "12.00 m",
+        "13.00 m",
+        "14.00 m",
+        "16.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 24.00 m yields 14.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T1-0022",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 18,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "6.00 m",
+      "7.00 m",
+      "8.00 m",
+      "10.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 18,00 m se obtiene 8.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 18.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "6.00 m",
+        "7.00 m",
+        "8.00 m",
+        "10.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 18.00 m yields 8.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T2-0023",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 19,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "7.00 m",
+      "8.00 m",
+      "9.00 m",
+      "11.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 19,00 m se obtiene 9.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 19.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "7.00 m",
+        "8.00 m",
+        "9.00 m",
+        "11.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 19.00 m yields 9.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T3-0024",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 20,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "8.00 m",
+      "9.00 m",
+      "10.00 m",
+      "12.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 20,00 m se obtiene 10.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 20.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "8.00 m",
+        "9.00 m",
+        "10.00 m",
+        "12.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 20.00 m yields 10.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T1-0025",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 21,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "9.00 m",
+      "10.00 m",
+      "11.00 m",
+      "13.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 21,00 m se obtiene 11.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 21.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "9.00 m",
+        "10.00 m",
+        "11.00 m",
+        "13.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 21.00 m yields 11.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T2-0026",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 22,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "10.00 m",
+      "11.00 m",
+      "12.00 m",
+      "14.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 22,00 m se obtiene 12.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 22.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "10.00 m",
+        "11.00 m",
+        "12.00 m",
+        "14.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 22.00 m yields 12.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T3-0027",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 23,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "11.00 m",
+      "12.00 m",
+      "13.00 m",
+      "15.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 23,00 m se obtiene 13.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 23.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "11.00 m",
+        "12.00 m",
+        "13.00 m",
+        "15.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 23.00 m yields 13.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T1-0028",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 24,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "12.00 m",
+      "13.00 m",
+      "14.00 m",
+      "16.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 24,00 m se obtiene 14.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 24.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "12.00 m",
+        "13.00 m",
+        "14.00 m",
+        "16.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 24.00 m yields 14.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T2-0029",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 18,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "6.00 m",
+      "7.00 m",
+      "8.00 m",
+      "10.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 18,00 m se obtiene 8.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 18.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "6.00 m",
+        "7.00 m",
+        "8.00 m",
+        "10.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 18.00 m yields 8.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T3-0030",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 19,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "7.00 m",
+      "8.00 m",
+      "9.00 m",
+      "11.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 19,00 m se obtiene 9.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 19.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "7.00 m",
+        "8.00 m",
+        "9.00 m",
+        "11.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 19.00 m yields 9.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T1-0031",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 20,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "8.00 m",
+      "9.00 m",
+      "10.00 m",
+      "12.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 20,00 m se obtiene 10.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 20.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "8.00 m",
+        "9.00 m",
+        "10.00 m",
+        "12.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 20.00 m yields 10.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T2-0032",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 21,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "9.00 m",
+      "10.00 m",
+      "11.00 m",
+      "13.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 21,00 m se obtiene 11.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 21.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "9.00 m",
+        "10.00 m",
+        "11.00 m",
+        "13.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 21.00 m yields 11.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T3-0033",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 22,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "10.00 m",
+      "11.00 m",
+      "12.00 m",
+      "14.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 22,00 m se obtiene 12.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 22.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "10.00 m",
+        "11.00 m",
+        "12.00 m",
+        "14.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 22.00 m yields 12.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T1-0034",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 23,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "11.00 m",
+      "12.00 m",
+      "13.00 m",
+      "15.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 23,00 m se obtiene 13.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 23.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "11.00 m",
+        "12.00 m",
+        "13.00 m",
+        "15.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 23.00 m yields 13.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T2-0035",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 24,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "12.00 m",
+      "13.00 m",
+      "14.00 m",
+      "16.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 24,00 m se obtiene 14.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 24.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "12.00 m",
+        "13.00 m",
+        "14.00 m",
+        "16.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 24.00 m yields 14.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T3-0036",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 18,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "6.00 m",
+      "7.00 m",
+      "8.00 m",
+      "10.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 18,00 m se obtiene 8.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 18.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "6.00 m",
+        "7.00 m",
+        "8.00 m",
+        "10.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 18.00 m yields 8.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T1-0037",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 19,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "7.00 m",
+      "8.00 m",
+      "9.00 m",
+      "11.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 19,00 m se obtiene 9.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 19.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "7.00 m",
+        "8.00 m",
+        "9.00 m",
+        "11.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 19.00 m yields 9.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T2-0038",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 20,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "8.00 m",
+      "9.00 m",
+      "10.00 m",
+      "12.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 20,00 m se obtiene 10.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 20.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "8.00 m",
+        "9.00 m",
+        "10.00 m",
+        "12.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 20.00 m yields 10.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T3-0039",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 21,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "9.00 m",
+      "10.00 m",
+      "11.00 m",
+      "13.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 21,00 m se obtiene 11.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 21.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "9.00 m",
+        "10.00 m",
+        "11.00 m",
+        "13.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 21.00 m yields 11.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T1-0040",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 22,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "10.00 m",
+      "11.00 m",
+      "12.00 m",
+      "14.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 22,00 m se obtiene 12.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 22.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "10.00 m",
+        "11.00 m",
+        "12.00 m",
+        "14.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 22.00 m yields 12.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T2-0041",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 23,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "11.00 m",
+      "12.00 m",
+      "13.00 m",
+      "15.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 23,00 m se obtiene 13.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 23.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "11.00 m",
+        "12.00 m",
+        "13.00 m",
+        "15.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 23.00 m yields 13.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T3-0042",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 24,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "12.00 m",
+      "13.00 m",
+      "14.00 m",
+      "16.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 24,00 m se obtiene 14.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 24.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "12.00 m",
+        "13.00 m",
+        "14.00 m",
+        "16.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 24.00 m yields 14.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T1-0043",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 18,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "6.00 m",
+      "7.00 m",
+      "8.00 m",
+      "10.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 18,00 m se obtiene 8.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 18.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "6.00 m",
+        "7.00 m",
+        "8.00 m",
+        "10.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 18.00 m yields 8.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T2-0044",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 19,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "7.00 m",
+      "8.00 m",
+      "9.00 m",
+      "11.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 19,00 m se obtiene 9.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 19.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "7.00 m",
+        "8.00 m",
+        "9.00 m",
+        "11.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 19.00 m yields 9.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T3-0045",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 20,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "8.00 m",
+      "9.00 m",
+      "10.00 m",
+      "12.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 20,00 m se obtiene 10.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 20.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "8.00 m",
+        "9.00 m",
+        "10.00 m",
+        "12.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 20.00 m yields 10.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T1-0046",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 21,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "9.00 m",
+      "10.00 m",
+      "11.00 m",
+      "13.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 21,00 m se obtiene 11.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 21.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "9.00 m",
+        "10.00 m",
+        "11.00 m",
+        "13.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 21.00 m yields 11.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T2-0047",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 22,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "10.00 m",
+      "11.00 m",
+      "12.00 m",
+      "14.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 22,00 m se obtiene 12.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 22.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "10.00 m",
+        "11.00 m",
+        "12.00 m",
+        "14.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 22.00 m yields 12.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T3-0048",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 23,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "11.00 m",
+      "12.00 m",
+      "13.00 m",
+      "15.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 23,00 m se obtiene 13.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 23.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "11.00 m",
+        "12.00 m",
+        "13.00 m",
+        "15.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 23.00 m yields 13.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T1-0049",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 24,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "12.00 m",
+      "13.00 m",
+      "14.00 m",
+      "16.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 24,00 m se obtiene 14.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 24.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "12.00 m",
+        "13.00 m",
+        "14.00 m",
+        "16.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 24.00 m yields 14.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T2-0050",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 18,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "6.00 m",
+      "7.00 m",
+      "8.00 m",
+      "10.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 18,00 m se obtiene 8.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 18.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "6.00 m",
+        "7.00 m",
+        "8.00 m",
+        "10.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 18.00 m yields 8.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T3-0051",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 19,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "7.00 m",
+      "8.00 m",
+      "9.00 m",
+      "11.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 19,00 m se obtiene 9.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 19.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "7.00 m",
+        "8.00 m",
+        "9.00 m",
+        "11.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 19.00 m yields 9.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T1-0052",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 20,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "8.00 m",
+      "9.00 m",
+      "10.00 m",
+      "12.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 20,00 m se obtiene 10.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 20.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "8.00 m",
+        "9.00 m",
+        "10.00 m",
+        "12.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 20.00 m yields 10.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T2-0053",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 21,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "9.00 m",
+      "10.00 m",
+      "11.00 m",
+      "13.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 21,00 m se obtiene 11.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 21.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "9.00 m",
+        "10.00 m",
+        "11.00 m",
+        "13.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 21.00 m yields 11.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T3-0054",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 22,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "10.00 m",
+      "11.00 m",
+      "12.00 m",
+      "14.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 22,00 m se obtiene 12.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 22.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "10.00 m",
+        "11.00 m",
+        "12.00 m",
+        "14.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 22.00 m yields 12.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T1-0055",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 23,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "11.00 m",
+      "12.00 m",
+      "13.00 m",
+      "15.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 23,00 m se obtiene 13.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 23.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "11.00 m",
+        "12.00 m",
+        "13.00 m",
+        "15.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 23.00 m yields 13.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T2-0056",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 24,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "12.00 m",
+      "13.00 m",
+      "14.00 m",
+      "16.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 24,00 m se obtiene 14.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 24.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "12.00 m",
+        "13.00 m",
+        "14.00 m",
+        "16.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 24.00 m yields 14.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U1-T3-0057",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 18,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "6.00 m",
+      "7.00 m",
+      "8.00 m",
+      "10.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 18,00 m se obtiene 8.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 18.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "6.00 m",
+        "7.00 m",
+        "8.00 m",
+        "10.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 18.00 m yields 8.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U2-T1-0058",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 19,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "7.00 m",
+      "8.00 m",
+      "9.00 m",
+      "11.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 19,00 m se obtiene 9.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 19.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "7.00 m",
+        "8.00 m",
+        "9.00 m",
+        "11.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 19.00 m yields 9.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U3-T2-0059",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 20,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "8.00 m",
+      "9.00 m",
+      "10.00 m",
+      "12.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 20,00 m se obtiene 10.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 20.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "8.00 m",
+        "9.00 m",
+        "10.00 m",
+        "12.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 20.00 m yields 10.00 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AJD-12-U4-T3-0060",
+    "materia": "Agrojardinería (1005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Replanteo Paisajístico, Viveros y Riego",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante el replanteo de un jardín a escala 1:100, se dispone de una franja longitudinal total de 21,00 m que incluye consecutivamente: zona de arbustos (4,50 m), sendero peatonal (2,00 m), área de césped (sin cota) y jardinera de acceso (3,50 m). ¿Cuál es la longitud real correspondiente al área de césped?",
+    "options": [
+      "9.00 m",
+      "10.00 m",
+      "11.00 m",
+      "13.00 m"
+    ],
+    "answer": 2,
+    "why": "La suma de los tramos conocidos es 4,50 + 2,00 + 3,50 = 10,00 m. Al restar 10,00 m al total de 21,00 m se obtiene 11.00 m (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026",
+    "en": {
+      "q": "A landscaping strip of 21.00 m contains a shrub zone (4.50 m), walkway (2.00 m), unlabeled lawn section, and entrance planter (3.50 m). What is the real length of the lawn section?",
+      "options": [
+        "9.00 m",
+        "10.00 m",
+        "11.00 m",
+        "13.00 m"
+      ],
+      "why": "Subtracting 10.00 m (4.50 + 2.00 + 3.50) from 21.00 m yields 11.00 m."
+    },
+    "revisar": false
+  }
+]
