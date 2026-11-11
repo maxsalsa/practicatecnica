@@ -193,7 +193,7 @@ export const SEMILLA_MAESTRA_OFICIAL = [
       };
     }
   }
-];
+
 
 export function generarLoteMilVariantes(modalidadFiltro = "TODAS", cantidad = 20) {
   const baseFiltrada = modalidadFiltro === "TODAS"
