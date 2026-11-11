@@ -1,0 +1,9 @@
+{
+  "engine": "GICM Turbo Offline-First Engine",
+  "version": "gicm-turbo-202611110438",
+  "updated_at": "2026-11-11 04:38:23",
+  "architects": ["Ing. Max Salazar Sánchez", "Ing. Steven Corrales Bustos"],
+  "bilingual_mode": "ES-CR / EN-US Instant 0ms",
+  "sinpe_oficial": "6090-6359",
+  "status": "READY_ONLINE_AND_OFFLINE"
+}

@@ -1,15 +1,9 @@
 {
-      "name": "Práctica Técnica GICM",
-      "short_name": "PrácticaTécnica",
-      "start_url": "/",
-      "display": "standalone",
-      "background_color": "#020617",
-      "theme_color": "#020617",
-      "icons": [
-        {
-          "src": "https://api.dicebear.com/7.x/bottts/svg?seed=GICM",
-          "sizes": "192x192",
-          "type": "image/svg+xml"
-        }
-      ]
-    }
+  "name": "pracTICAtecnica.com (Multiverso Educativo Políglota ES/EN)",
+  "short_name": "PrácticaTécnica",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#06b6d4",
+  "description": "Desarrollado por el equipo de ingeniería GICM / BDS Devs - Ing. Max Salazar Sánchez & Ing. Steven Corrales Bustos"
+}
