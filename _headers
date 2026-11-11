@@ -1,8 +1,0 @@
-/*
-  X-Frame-Options: DENY
-  X-Content-Type-Options: nosniff
-  X-XSS-Protection: 1; mode=block
-  Referrer-Policy: strict-origin-when-cross-origin
-  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  Permissions-Policy: camera=(), geolocation=(), payment=(self), microphone=(self)
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0
