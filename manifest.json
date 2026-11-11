@@ -1,9 +1,9 @@
 {
-  "name": "pracTICAtecnica.com (Multiverso Educativo Políglota ES/EN)",
-  "short_name": "PrácticaTécnica",
+  "name": "pracTICAtecnica.com · GICM Desarrollo de Sistemas",
+  "short_name": "PrácticaTécnica GICM",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#020617",
   "theme_color": "#06b6d4",
-  "description": "Desarrollado por el equipo de ingeniería GICM / BDS Devs - Ing. Max Salazar Sánchez & Ing. Steven Corrales Bustos"
+  "description": "Ingeniería y Arquitectura de Software por GICM Desarrollo de Sistemas - Ing. Max Salazar Sánchez & Ing. Steven Corrales Bustos"
 }

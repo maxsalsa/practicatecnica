@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gicm-turbo-202611110439';
+const CACHE_NAME = 'gicm-soberano-202611110445';
 const CORE_ASSETS = ['/', '/index.html', '/manifest.json'];
 
 self.addEventListener('install', (event) => {
