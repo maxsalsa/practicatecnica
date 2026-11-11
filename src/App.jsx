@@ -1,3 +1,4 @@
-﻿import React from 'react';
+import ConsolaCuadernillosDual from './components/ConsolaCuadernillosDual';
+import React from 'react';
 import UniversoPracticaTecnica from './components/UniversoPracticaTecnica';
 export default function App() { return <UniversoPracticaTecnica />; }
