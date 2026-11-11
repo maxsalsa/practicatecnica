@@ -3,27 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
-    <title>pracTICAtecnica.com · Enciclopedia MEP, Simulacros, Juegos & Multiverso Políglota (GICM)</title>
-    <meta name="description" content="Plataforma oficial GICM: 45 especialidades MEP, simulacros PNE/PNEET, Enciclopedia Wiki-MEP, Preguntados, CLUE Técnico, Scrabble Políglota MCER y DUA." />
+    <title>pracTICAtecnica.com · Simulacros MEP, 45 Especialidades Técnicas, Primaria y Admisión (GICM)</title>
+    <meta name="description" content="Plataforma educativa oficial GICM Desarrollo de Sistemas: Simulacros cronometrados MEP, 45 Especialidades Técnicas CTP, Secundaria PNE, 6.° Grado, Admisión, Idiomas MCER y DUA." />
     <meta name="author" content="Ing. Max Salazar Sánchez - GICM Desarrollo de Sistemas" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lexend:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      body { font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif; }
-      .font-dua { font-family: 'Lexend', sans-serif; letter-spacing: 0.015em; line-height: 1.75; }
+      body { font-family: 'Lexend', 'Inter', system-ui, -apple-system, sans-serif; letter-spacing: 0.01em; }
     </style>
-    <script type="module" crossorigin src="/assets/index-C7x6HHVh.js"></script>
+    <script type="module" crossorigin src="/assets/index-DlHtQ0-b.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-Cf29ovO8.css">
   </head>
-  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+  <body class="bg-[#061326] text-slate-100 antialiased selection:bg-cyan-400 selection:text-slate-950">
     <div id="root"></div>
-      <link rel="manifest" href="/manifest.json" />
     <script>
+      // Limpiar cualquier Service Worker antiguo que retenga vistas viejas
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').then(reg => reg.update()).catch(() => {});
+        navigator.serviceWorker.getRegistrations().then(regs => {
+          for (let reg of regs) { reg.unregister(); }
         });
       }
     </script>
