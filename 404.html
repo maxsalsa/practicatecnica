@@ -6,28 +6,33 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
-    <title>pracTICAtecnica.com · Cabina de Mando, 50 Especialidades MEP, Simulacros y Juegos Políglotas (GICM)</title>
-    <meta name="description" content="Repase. Practique. Prepárese. Plataforma oficial GICM Desarrollo de Sistemas: Primaria, Secundaria PNE, 40 Especialidades CTP, Admisión UCR/TEC/UNA, Examen MOPT y Juegos." />
+    <title>pracTICAtecnica.com · Cabina de Mando, 50 Especialidades MEP y Multiverso Políglota (GICM)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      body { font-family: 'Lexend', 'Inter', system-ui, -apple-system, sans-serif; }
+      body { font-family: 'Lexend', 'Inter', system-ui, sans-serif; }
     </style>
-    <script type="module" crossorigin src="/assets/index-mO9prbeD.js"></script>
+    <script>
+      // Purgar inmediatamente cualquier Service Worker o caché antiguo antes de montar React
+      (async function() {
+        try {
+          if ('serviceWorker' in navigator) {
+            const regs = await navigator.serviceWorker.getRegistrations();
+            for (const r of regs) { await r.unregister(); }
+          }
+          if ('caches' in window) {
+            const keys = await caches.keys();
+            for (const k of keys) { await caches.delete(k); }
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-8YNQ9iZI.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-Cf29ovO8.css">
   </head>
-  <body class="bg-[#06152d] text-slate-100 antialiased selection:bg-cyan-400 selection:text-slate-950">
+  <body class="bg-[#06152d] text-slate-100 antialiased selection:bg-sky-400 selection:text-slate-950">
     <div id="root"></div>
-    <script>
-      // Desregistrar cualquier Service Worker antiguo y limpiar cachés vencidos por TTL
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(r => r.unregister()));
-      }
-      if ('caches' in window) {
-        caches.keys().then(keys => keys.forEach(k => { if (!k.includes('v2026.11.110513')) caches.delete(k); }));
-      }
-    </script>
   </body>
 </html>
