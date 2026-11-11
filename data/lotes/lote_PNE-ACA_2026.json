@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "MAT-11-U1-T1-0001",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 16x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "4 toneladas para una ganancia máxima de 24 mil colones",
+      "4 toneladas para una ganancia máxima de 12 mil colones",
+      "16 toneladas para una ganancia máxima de 24 mil colones",
+      "8 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -16 / (2 × -2) = 4 toneladas. Evaluando G(4) = -2(4)² + 16(4) - 20 = 12 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 16x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "4 tons for a maximum profit of 24 thousand colones",
+        "4 tons for a maximum profit of 12 thousand colones",
+        "16 tons for a maximum profit of 24 thousand colones",
+        "8 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -16 / (2 * -2) = 4 tons, yielding G(4) = 12 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T2-0002",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 20x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "5 toneladas para una ganancia máxima de 42 mil colones",
+      "5 toneladas para una ganancia máxima de 30 mil colones",
+      "20 toneladas para una ganancia máxima de 60 mil colones",
+      "10 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -20 / (2 × -2) = 5 toneladas. Evaluando G(5) = -2(5)² + 20(5) - 20 = 30 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 20x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "5 tons for a maximum profit of 42 thousand colones",
+        "5 tons for a maximum profit of 30 thousand colones",
+        "20 tons for a maximum profit of 60 thousand colones",
+        "10 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -20 / (2 * -2) = 5 tons, yielding G(5) = 30 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T3-0003",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 24x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "6 toneladas para una ganancia máxima de 64 mil colones",
+      "6 toneladas para una ganancia máxima de 52 mil colones",
+      "24 toneladas para una ganancia máxima de 104 mil colones",
+      "12 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -24 / (2 × -2) = 6 toneladas. Evaluando G(6) = -2(6)² + 24(6) - 20 = 52 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 24x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "6 tons for a maximum profit of 64 thousand colones",
+        "6 tons for a maximum profit of 52 thousand colones",
+        "24 tons for a maximum profit of 104 thousand colones",
+        "12 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -24 / (2 * -2) = 6 tons, yielding G(6) = 52 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T1-0004",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 28x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "7 toneladas para una ganancia máxima de 90 mil colones",
+      "7 toneladas para una ganancia máxima de 78 mil colones",
+      "28 toneladas para una ganancia máxima de 156 mil colones",
+      "14 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -28 / (2 × -2) = 7 toneladas. Evaluando G(7) = -2(7)² + 28(7) - 20 = 78 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 28x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "7 tons for a maximum profit of 90 thousand colones",
+        "7 tons for a maximum profit of 78 thousand colones",
+        "28 tons for a maximum profit of 156 thousand colones",
+        "14 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -28 / (2 * -2) = 7 tons, yielding G(7) = 78 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T2-0005",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 32x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "8 toneladas para una ganancia máxima de 120 mil colones",
+      "8 toneladas para una ganancia máxima de 108 mil colones",
+      "32 toneladas para una ganancia máxima de 216 mil colones",
+      "16 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -32 / (2 × -2) = 8 toneladas. Evaluando G(8) = -2(8)² + 32(8) - 20 = 108 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 32x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "8 tons for a maximum profit of 120 thousand colones",
+        "8 tons for a maximum profit of 108 thousand colones",
+        "32 tons for a maximum profit of 216 thousand colones",
+        "16 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -32 / (2 * -2) = 8 tons, yielding G(8) = 108 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T3-0006",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 36x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "9 toneladas para una ganancia máxima de 154 mil colones",
+      "9 toneladas para una ganancia máxima de 142 mil colones",
+      "36 toneladas para una ganancia máxima de 284 mil colones",
+      "18 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -36 / (2 × -2) = 9 toneladas. Evaluando G(9) = -2(9)² + 36(9) - 20 = 142 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 36x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "9 tons for a maximum profit of 154 thousand colones",
+        "9 tons for a maximum profit of 142 thousand colones",
+        "36 tons for a maximum profit of 284 thousand colones",
+        "18 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -36 / (2 * -2) = 9 tons, yielding G(9) = 142 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T1-0007",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 40x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "10 toneladas para una ganancia máxima de 192 mil colones",
+      "10 toneladas para una ganancia máxima de 180 mil colones",
+      "40 toneladas para una ganancia máxima de 360 mil colones",
+      "20 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -40 / (2 × -2) = 10 toneladas. Evaluando G(10) = -2(10)² + 40(10) - 20 = 180 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 40x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "10 tons for a maximum profit of 192 thousand colones",
+        "10 tons for a maximum profit of 180 thousand colones",
+        "40 tons for a maximum profit of 360 thousand colones",
+        "20 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -40 / (2 * -2) = 10 tons, yielding G(10) = 180 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T2-0008",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 16x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "4 toneladas para una ganancia máxima de 24 mil colones",
+      "4 toneladas para una ganancia máxima de 12 mil colones",
+      "16 toneladas para una ganancia máxima de 24 mil colones",
+      "8 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -16 / (2 × -2) = 4 toneladas. Evaluando G(4) = -2(4)² + 16(4) - 20 = 12 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 16x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "4 tons for a maximum profit of 24 thousand colones",
+        "4 tons for a maximum profit of 12 thousand colones",
+        "16 tons for a maximum profit of 24 thousand colones",
+        "8 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -16 / (2 * -2) = 4 tons, yielding G(4) = 12 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T3-0009",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 20x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "5 toneladas para una ganancia máxima de 42 mil colones",
+      "5 toneladas para una ganancia máxima de 30 mil colones",
+      "20 toneladas para una ganancia máxima de 60 mil colones",
+      "10 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -20 / (2 × -2) = 5 toneladas. Evaluando G(5) = -2(5)² + 20(5) - 20 = 30 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 20x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "5 tons for a maximum profit of 42 thousand colones",
+        "5 tons for a maximum profit of 30 thousand colones",
+        "20 tons for a maximum profit of 60 thousand colones",
+        "10 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -20 / (2 * -2) = 5 tons, yielding G(5) = 30 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T1-0010",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 24x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "6 toneladas para una ganancia máxima de 64 mil colones",
+      "6 toneladas para una ganancia máxima de 52 mil colones",
+      "24 toneladas para una ganancia máxima de 104 mil colones",
+      "12 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -24 / (2 × -2) = 6 toneladas. Evaluando G(6) = -2(6)² + 24(6) - 20 = 52 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 24x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "6 tons for a maximum profit of 64 thousand colones",
+        "6 tons for a maximum profit of 52 thousand colones",
+        "24 tons for a maximum profit of 104 thousand colones",
+        "12 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -24 / (2 * -2) = 6 tons, yielding G(6) = 52 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T2-0011",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 28x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "7 toneladas para una ganancia máxima de 90 mil colones",
+      "7 toneladas para una ganancia máxima de 78 mil colones",
+      "28 toneladas para una ganancia máxima de 156 mil colones",
+      "14 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -28 / (2 × -2) = 7 toneladas. Evaluando G(7) = -2(7)² + 28(7) - 20 = 78 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 28x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "7 tons for a maximum profit of 90 thousand colones",
+        "7 tons for a maximum profit of 78 thousand colones",
+        "28 tons for a maximum profit of 156 thousand colones",
+        "14 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -28 / (2 * -2) = 7 tons, yielding G(7) = 78 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T3-0012",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 32x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "8 toneladas para una ganancia máxima de 120 mil colones",
+      "8 toneladas para una ganancia máxima de 108 mil colones",
+      "32 toneladas para una ganancia máxima de 216 mil colones",
+      "16 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -32 / (2 × -2) = 8 toneladas. Evaluando G(8) = -2(8)² + 32(8) - 20 = 108 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 32x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "8 tons for a maximum profit of 120 thousand colones",
+        "8 tons for a maximum profit of 108 thousand colones",
+        "32 tons for a maximum profit of 216 thousand colones",
+        "16 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -32 / (2 * -2) = 8 tons, yielding G(8) = 108 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T1-0013",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 36x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "9 toneladas para una ganancia máxima de 154 mil colones",
+      "9 toneladas para una ganancia máxima de 142 mil colones",
+      "36 toneladas para una ganancia máxima de 284 mil colones",
+      "18 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -36 / (2 × -2) = 9 toneladas. Evaluando G(9) = -2(9)² + 36(9) - 20 = 142 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 36x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "9 tons for a maximum profit of 154 thousand colones",
+        "9 tons for a maximum profit of 142 thousand colones",
+        "36 tons for a maximum profit of 284 thousand colones",
+        "18 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -36 / (2 * -2) = 9 tons, yielding G(9) = 142 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T2-0014",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 40x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "10 toneladas para una ganancia máxima de 192 mil colones",
+      "10 toneladas para una ganancia máxima de 180 mil colones",
+      "40 toneladas para una ganancia máxima de 360 mil colones",
+      "20 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -40 / (2 × -2) = 10 toneladas. Evaluando G(10) = -2(10)² + 40(10) - 20 = 180 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 40x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "10 tons for a maximum profit of 192 thousand colones",
+        "10 tons for a maximum profit of 180 thousand colones",
+        "40 tons for a maximum profit of 360 thousand colones",
+        "20 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -40 / (2 * -2) = 10 tons, yielding G(10) = 180 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T3-0015",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 16x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "4 toneladas para una ganancia máxima de 24 mil colones",
+      "4 toneladas para una ganancia máxima de 12 mil colones",
+      "16 toneladas para una ganancia máxima de 24 mil colones",
+      "8 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -16 / (2 × -2) = 4 toneladas. Evaluando G(4) = -2(4)² + 16(4) - 20 = 12 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 16x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "4 tons for a maximum profit of 24 thousand colones",
+        "4 tons for a maximum profit of 12 thousand colones",
+        "16 tons for a maximum profit of 24 thousand colones",
+        "8 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -16 / (2 * -2) = 4 tons, yielding G(4) = 12 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T1-0016",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 20x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "5 toneladas para una ganancia máxima de 42 mil colones",
+      "5 toneladas para una ganancia máxima de 30 mil colones",
+      "20 toneladas para una ganancia máxima de 60 mil colones",
+      "10 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -20 / (2 × -2) = 5 toneladas. Evaluando G(5) = -2(5)² + 20(5) - 20 = 30 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 20x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "5 tons for a maximum profit of 42 thousand colones",
+        "5 tons for a maximum profit of 30 thousand colones",
+        "20 tons for a maximum profit of 60 thousand colones",
+        "10 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -20 / (2 * -2) = 5 tons, yielding G(5) = 30 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T2-0017",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 24x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "6 toneladas para una ganancia máxima de 64 mil colones",
+      "6 toneladas para una ganancia máxima de 52 mil colones",
+      "24 toneladas para una ganancia máxima de 104 mil colones",
+      "12 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -24 / (2 × -2) = 6 toneladas. Evaluando G(6) = -2(6)² + 24(6) - 20 = 52 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 24x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "6 tons for a maximum profit of 64 thousand colones",
+        "6 tons for a maximum profit of 52 thousand colones",
+        "24 tons for a maximum profit of 104 thousand colones",
+        "12 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -24 / (2 * -2) = 6 tons, yielding G(6) = 52 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T3-0018",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 28x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "7 toneladas para una ganancia máxima de 90 mil colones",
+      "7 toneladas para una ganancia máxima de 78 mil colones",
+      "28 toneladas para una ganancia máxima de 156 mil colones",
+      "14 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -28 / (2 × -2) = 7 toneladas. Evaluando G(7) = -2(7)² + 28(7) - 20 = 78 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 28x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "7 tons for a maximum profit of 90 thousand colones",
+        "7 tons for a maximum profit of 78 thousand colones",
+        "28 tons for a maximum profit of 156 thousand colones",
+        "14 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -28 / (2 * -2) = 7 tons, yielding G(7) = 78 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T1-0019",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 32x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "8 toneladas para una ganancia máxima de 120 mil colones",
+      "8 toneladas para una ganancia máxima de 108 mil colones",
+      "32 toneladas para una ganancia máxima de 216 mil colones",
+      "16 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -32 / (2 × -2) = 8 toneladas. Evaluando G(8) = -2(8)² + 32(8) - 20 = 108 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 32x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "8 tons for a maximum profit of 120 thousand colones",
+        "8 tons for a maximum profit of 108 thousand colones",
+        "32 tons for a maximum profit of 216 thousand colones",
+        "16 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -32 / (2 * -2) = 8 tons, yielding G(8) = 108 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T2-0020",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 36x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "9 toneladas para una ganancia máxima de 154 mil colones",
+      "9 toneladas para una ganancia máxima de 142 mil colones",
+      "36 toneladas para una ganancia máxima de 284 mil colones",
+      "18 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -36 / (2 × -2) = 9 toneladas. Evaluando G(9) = -2(9)² + 36(9) - 20 = 142 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 36x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "9 tons for a maximum profit of 154 thousand colones",
+        "9 tons for a maximum profit of 142 thousand colones",
+        "36 tons for a maximum profit of 284 thousand colones",
+        "18 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -36 / (2 * -2) = 9 tons, yielding G(9) = 142 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T3-0021",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 40x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "10 toneladas para una ganancia máxima de 192 mil colones",
+      "10 toneladas para una ganancia máxima de 180 mil colones",
+      "40 toneladas para una ganancia máxima de 360 mil colones",
+      "20 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -40 / (2 × -2) = 10 toneladas. Evaluando G(10) = -2(10)² + 40(10) - 20 = 180 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 40x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "10 tons for a maximum profit of 192 thousand colones",
+        "10 tons for a maximum profit of 180 thousand colones",
+        "40 tons for a maximum profit of 360 thousand colones",
+        "20 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -40 / (2 * -2) = 10 tons, yielding G(10) = 180 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T1-0022",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 16x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "4 toneladas para una ganancia máxima de 24 mil colones",
+      "4 toneladas para una ganancia máxima de 12 mil colones",
+      "16 toneladas para una ganancia máxima de 24 mil colones",
+      "8 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -16 / (2 × -2) = 4 toneladas. Evaluando G(4) = -2(4)² + 16(4) - 20 = 12 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 16x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "4 tons for a maximum profit of 24 thousand colones",
+        "4 tons for a maximum profit of 12 thousand colones",
+        "16 tons for a maximum profit of 24 thousand colones",
+        "8 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -16 / (2 * -2) = 4 tons, yielding G(4) = 12 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T2-0023",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 20x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "5 toneladas para una ganancia máxima de 42 mil colones",
+      "5 toneladas para una ganancia máxima de 30 mil colones",
+      "20 toneladas para una ganancia máxima de 60 mil colones",
+      "10 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -20 / (2 × -2) = 5 toneladas. Evaluando G(5) = -2(5)² + 20(5) - 20 = 30 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 20x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "5 tons for a maximum profit of 42 thousand colones",
+        "5 tons for a maximum profit of 30 thousand colones",
+        "20 tons for a maximum profit of 60 thousand colones",
+        "10 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -20 / (2 * -2) = 5 tons, yielding G(5) = 30 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T3-0024",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 24x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "6 toneladas para una ganancia máxima de 64 mil colones",
+      "6 toneladas para una ganancia máxima de 52 mil colones",
+      "24 toneladas para una ganancia máxima de 104 mil colones",
+      "12 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -24 / (2 × -2) = 6 toneladas. Evaluando G(6) = -2(6)² + 24(6) - 20 = 52 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 24x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "6 tons for a maximum profit of 64 thousand colones",
+        "6 tons for a maximum profit of 52 thousand colones",
+        "24 tons for a maximum profit of 104 thousand colones",
+        "12 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -24 / (2 * -2) = 6 tons, yielding G(6) = 52 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T1-0025",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 28x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "7 toneladas para una ganancia máxima de 90 mil colones",
+      "7 toneladas para una ganancia máxima de 78 mil colones",
+      "28 toneladas para una ganancia máxima de 156 mil colones",
+      "14 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -28 / (2 × -2) = 7 toneladas. Evaluando G(7) = -2(7)² + 28(7) - 20 = 78 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 28x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "7 tons for a maximum profit of 90 thousand colones",
+        "7 tons for a maximum profit of 78 thousand colones",
+        "28 tons for a maximum profit of 156 thousand colones",
+        "14 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -28 / (2 * -2) = 7 tons, yielding G(7) = 78 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T2-0026",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 32x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "8 toneladas para una ganancia máxima de 120 mil colones",
+      "8 toneladas para una ganancia máxima de 108 mil colones",
+      "32 toneladas para una ganancia máxima de 216 mil colones",
+      "16 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -32 / (2 × -2) = 8 toneladas. Evaluando G(8) = -2(8)² + 32(8) - 20 = 108 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 32x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "8 tons for a maximum profit of 120 thousand colones",
+        "8 tons for a maximum profit of 108 thousand colones",
+        "32 tons for a maximum profit of 216 thousand colones",
+        "16 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -32 / (2 * -2) = 8 tons, yielding G(8) = 108 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T3-0027",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 36x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "9 toneladas para una ganancia máxima de 154 mil colones",
+      "9 toneladas para una ganancia máxima de 142 mil colones",
+      "36 toneladas para una ganancia máxima de 284 mil colones",
+      "18 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -36 / (2 × -2) = 9 toneladas. Evaluando G(9) = -2(9)² + 36(9) - 20 = 142 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 36x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "9 tons for a maximum profit of 154 thousand colones",
+        "9 tons for a maximum profit of 142 thousand colones",
+        "36 tons for a maximum profit of 284 thousand colones",
+        "18 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -36 / (2 * -2) = 9 tons, yielding G(9) = 142 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T1-0028",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 40x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "10 toneladas para una ganancia máxima de 192 mil colones",
+      "10 toneladas para una ganancia máxima de 180 mil colones",
+      "40 toneladas para una ganancia máxima de 360 mil colones",
+      "20 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -40 / (2 × -2) = 10 toneladas. Evaluando G(10) = -2(10)² + 40(10) - 20 = 180 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 40x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "10 tons for a maximum profit of 192 thousand colones",
+        "10 tons for a maximum profit of 180 thousand colones",
+        "40 tons for a maximum profit of 360 thousand colones",
+        "20 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -40 / (2 * -2) = 10 tons, yielding G(10) = 180 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T2-0029",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 16x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "4 toneladas para una ganancia máxima de 24 mil colones",
+      "4 toneladas para una ganancia máxima de 12 mil colones",
+      "16 toneladas para una ganancia máxima de 24 mil colones",
+      "8 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -16 / (2 × -2) = 4 toneladas. Evaluando G(4) = -2(4)² + 16(4) - 20 = 12 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 16x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "4 tons for a maximum profit of 24 thousand colones",
+        "4 tons for a maximum profit of 12 thousand colones",
+        "16 tons for a maximum profit of 24 thousand colones",
+        "8 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -16 / (2 * -2) = 4 tons, yielding G(4) = 12 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T3-0030",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 20x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "5 toneladas para una ganancia máxima de 42 mil colones",
+      "5 toneladas para una ganancia máxima de 30 mil colones",
+      "20 toneladas para una ganancia máxima de 60 mil colones",
+      "10 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -20 / (2 × -2) = 5 toneladas. Evaluando G(5) = -2(5)² + 20(5) - 20 = 30 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 20x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "5 tons for a maximum profit of 42 thousand colones",
+        "5 tons for a maximum profit of 30 thousand colones",
+        "20 tons for a maximum profit of 60 thousand colones",
+        "10 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -20 / (2 * -2) = 5 tons, yielding G(5) = 30 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T1-0031",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 24x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "6 toneladas para una ganancia máxima de 64 mil colones",
+      "6 toneladas para una ganancia máxima de 52 mil colones",
+      "24 toneladas para una ganancia máxima de 104 mil colones",
+      "12 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -24 / (2 × -2) = 6 toneladas. Evaluando G(6) = -2(6)² + 24(6) - 20 = 52 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 24x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "6 tons for a maximum profit of 64 thousand colones",
+        "6 tons for a maximum profit of 52 thousand colones",
+        "24 tons for a maximum profit of 104 thousand colones",
+        "12 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -24 / (2 * -2) = 6 tons, yielding G(6) = 52 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T2-0032",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 28x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "7 toneladas para una ganancia máxima de 90 mil colones",
+      "7 toneladas para una ganancia máxima de 78 mil colones",
+      "28 toneladas para una ganancia máxima de 156 mil colones",
+      "14 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -28 / (2 × -2) = 7 toneladas. Evaluando G(7) = -2(7)² + 28(7) - 20 = 78 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 28x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "7 tons for a maximum profit of 90 thousand colones",
+        "7 tons for a maximum profit of 78 thousand colones",
+        "28 tons for a maximum profit of 156 thousand colones",
+        "14 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -28 / (2 * -2) = 7 tons, yielding G(7) = 78 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T3-0033",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 32x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "8 toneladas para una ganancia máxima de 120 mil colones",
+      "8 toneladas para una ganancia máxima de 108 mil colones",
+      "32 toneladas para una ganancia máxima de 216 mil colones",
+      "16 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -32 / (2 × -2) = 8 toneladas. Evaluando G(8) = -2(8)² + 32(8) - 20 = 108 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 32x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "8 tons for a maximum profit of 120 thousand colones",
+        "8 tons for a maximum profit of 108 thousand colones",
+        "32 tons for a maximum profit of 216 thousand colones",
+        "16 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -32 / (2 * -2) = 8 tons, yielding G(8) = 108 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T1-0034",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 36x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "9 toneladas para una ganancia máxima de 154 mil colones",
+      "9 toneladas para una ganancia máxima de 142 mil colones",
+      "36 toneladas para una ganancia máxima de 284 mil colones",
+      "18 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -36 / (2 × -2) = 9 toneladas. Evaluando G(9) = -2(9)² + 36(9) - 20 = 142 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 36x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "9 tons for a maximum profit of 154 thousand colones",
+        "9 tons for a maximum profit of 142 thousand colones",
+        "36 tons for a maximum profit of 284 thousand colones",
+        "18 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -36 / (2 * -2) = 9 tons, yielding G(9) = 142 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T2-0035",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 40x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "10 toneladas para una ganancia máxima de 192 mil colones",
+      "10 toneladas para una ganancia máxima de 180 mil colones",
+      "40 toneladas para una ganancia máxima de 360 mil colones",
+      "20 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -40 / (2 × -2) = 10 toneladas. Evaluando G(10) = -2(10)² + 40(10) - 20 = 180 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 40x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "10 tons for a maximum profit of 192 thousand colones",
+        "10 tons for a maximum profit of 180 thousand colones",
+        "40 tons for a maximum profit of 360 thousand colones",
+        "20 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -40 / (2 * -2) = 10 tons, yielding G(10) = 180 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T3-0036",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 16x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "4 toneladas para una ganancia máxima de 24 mil colones",
+      "4 toneladas para una ganancia máxima de 12 mil colones",
+      "16 toneladas para una ganancia máxima de 24 mil colones",
+      "8 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -16 / (2 × -2) = 4 toneladas. Evaluando G(4) = -2(4)² + 16(4) - 20 = 12 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 16x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "4 tons for a maximum profit of 24 thousand colones",
+        "4 tons for a maximum profit of 12 thousand colones",
+        "16 tons for a maximum profit of 24 thousand colones",
+        "8 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -16 / (2 * -2) = 4 tons, yielding G(4) = 12 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T1-0037",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 20x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "5 toneladas para una ganancia máxima de 42 mil colones",
+      "5 toneladas para una ganancia máxima de 30 mil colones",
+      "20 toneladas para una ganancia máxima de 60 mil colones",
+      "10 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -20 / (2 × -2) = 5 toneladas. Evaluando G(5) = -2(5)² + 20(5) - 20 = 30 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 20x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "5 tons for a maximum profit of 42 thousand colones",
+        "5 tons for a maximum profit of 30 thousand colones",
+        "20 tons for a maximum profit of 60 thousand colones",
+        "10 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -20 / (2 * -2) = 5 tons, yielding G(5) = 30 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T2-0038",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 24x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "6 toneladas para una ganancia máxima de 64 mil colones",
+      "6 toneladas para una ganancia máxima de 52 mil colones",
+      "24 toneladas para una ganancia máxima de 104 mil colones",
+      "12 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -24 / (2 × -2) = 6 toneladas. Evaluando G(6) = -2(6)² + 24(6) - 20 = 52 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 24x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "6 tons for a maximum profit of 64 thousand colones",
+        "6 tons for a maximum profit of 52 thousand colones",
+        "24 tons for a maximum profit of 104 thousand colones",
+        "12 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -24 / (2 * -2) = 6 tons, yielding G(6) = 52 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T3-0039",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 28x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "7 toneladas para una ganancia máxima de 90 mil colones",
+      "7 toneladas para una ganancia máxima de 78 mil colones",
+      "28 toneladas para una ganancia máxima de 156 mil colones",
+      "14 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -28 / (2 × -2) = 7 toneladas. Evaluando G(7) = -2(7)² + 28(7) - 20 = 78 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 28x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "7 tons for a maximum profit of 90 thousand colones",
+        "7 tons for a maximum profit of 78 thousand colones",
+        "28 tons for a maximum profit of 156 thousand colones",
+        "14 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -28 / (2 * -2) = 7 tons, yielding G(7) = 78 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T1-0040",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 32x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "8 toneladas para una ganancia máxima de 120 mil colones",
+      "8 toneladas para una ganancia máxima de 108 mil colones",
+      "32 toneladas para una ganancia máxima de 216 mil colones",
+      "16 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -32 / (2 × -2) = 8 toneladas. Evaluando G(8) = -2(8)² + 32(8) - 20 = 108 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 32x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "8 tons for a maximum profit of 120 thousand colones",
+        "8 tons for a maximum profit of 108 thousand colones",
+        "32 tons for a maximum profit of 216 thousand colones",
+        "16 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -32 / (2 * -2) = 8 tons, yielding G(8) = 108 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T2-0041",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 36x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "9 toneladas para una ganancia máxima de 154 mil colones",
+      "9 toneladas para una ganancia máxima de 142 mil colones",
+      "36 toneladas para una ganancia máxima de 284 mil colones",
+      "18 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -36 / (2 × -2) = 9 toneladas. Evaluando G(9) = -2(9)² + 36(9) - 20 = 142 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 36x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "9 tons for a maximum profit of 154 thousand colones",
+        "9 tons for a maximum profit of 142 thousand colones",
+        "36 tons for a maximum profit of 284 thousand colones",
+        "18 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -36 / (2 * -2) = 9 tons, yielding G(9) = 142 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T3-0042",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 40x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "10 toneladas para una ganancia máxima de 192 mil colones",
+      "10 toneladas para una ganancia máxima de 180 mil colones",
+      "40 toneladas para una ganancia máxima de 360 mil colones",
+      "20 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -40 / (2 × -2) = 10 toneladas. Evaluando G(10) = -2(10)² + 40(10) - 20 = 180 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 40x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "10 tons for a maximum profit of 192 thousand colones",
+        "10 tons for a maximum profit of 180 thousand colones",
+        "40 tons for a maximum profit of 360 thousand colones",
+        "20 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -40 / (2 * -2) = 10 tons, yielding G(10) = 180 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T1-0043",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 16x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "4 toneladas para una ganancia máxima de 24 mil colones",
+      "4 toneladas para una ganancia máxima de 12 mil colones",
+      "16 toneladas para una ganancia máxima de 24 mil colones",
+      "8 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -16 / (2 × -2) = 4 toneladas. Evaluando G(4) = -2(4)² + 16(4) - 20 = 12 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 16x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "4 tons for a maximum profit of 24 thousand colones",
+        "4 tons for a maximum profit of 12 thousand colones",
+        "16 tons for a maximum profit of 24 thousand colones",
+        "8 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -16 / (2 * -2) = 4 tons, yielding G(4) = 12 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T2-0044",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 20x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "5 toneladas para una ganancia máxima de 42 mil colones",
+      "5 toneladas para una ganancia máxima de 30 mil colones",
+      "20 toneladas para una ganancia máxima de 60 mil colones",
+      "10 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -20 / (2 × -2) = 5 toneladas. Evaluando G(5) = -2(5)² + 20(5) - 20 = 30 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 20x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "5 tons for a maximum profit of 42 thousand colones",
+        "5 tons for a maximum profit of 30 thousand colones",
+        "20 tons for a maximum profit of 60 thousand colones",
+        "10 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -20 / (2 * -2) = 5 tons, yielding G(5) = 30 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T3-0045",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 24x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "6 toneladas para una ganancia máxima de 64 mil colones",
+      "6 toneladas para una ganancia máxima de 52 mil colones",
+      "24 toneladas para una ganancia máxima de 104 mil colones",
+      "12 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -24 / (2 × -2) = 6 toneladas. Evaluando G(6) = -2(6)² + 24(6) - 20 = 52 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 24x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "6 tons for a maximum profit of 64 thousand colones",
+        "6 tons for a maximum profit of 52 thousand colones",
+        "24 tons for a maximum profit of 104 thousand colones",
+        "12 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -24 / (2 * -2) = 6 tons, yielding G(6) = 52 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T1-0046",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 28x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "7 toneladas para una ganancia máxima de 90 mil colones",
+      "7 toneladas para una ganancia máxima de 78 mil colones",
+      "28 toneladas para una ganancia máxima de 156 mil colones",
+      "14 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -28 / (2 × -2) = 7 toneladas. Evaluando G(7) = -2(7)² + 28(7) - 20 = 78 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 28x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "7 tons for a maximum profit of 90 thousand colones",
+        "7 tons for a maximum profit of 78 thousand colones",
+        "28 tons for a maximum profit of 156 thousand colones",
+        "14 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -28 / (2 * -2) = 7 tons, yielding G(7) = 78 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T2-0047",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 32x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "8 toneladas para una ganancia máxima de 120 mil colones",
+      "8 toneladas para una ganancia máxima de 108 mil colones",
+      "32 toneladas para una ganancia máxima de 216 mil colones",
+      "16 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -32 / (2 × -2) = 8 toneladas. Evaluando G(8) = -2(8)² + 32(8) - 20 = 108 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 32x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "8 tons for a maximum profit of 120 thousand colones",
+        "8 tons for a maximum profit of 108 thousand colones",
+        "32 tons for a maximum profit of 216 thousand colones",
+        "16 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -32 / (2 * -2) = 8 tons, yielding G(8) = 108 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T3-0048",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 36x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "9 toneladas para una ganancia máxima de 154 mil colones",
+      "9 toneladas para una ganancia máxima de 142 mil colones",
+      "36 toneladas para una ganancia máxima de 284 mil colones",
+      "18 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -36 / (2 × -2) = 9 toneladas. Evaluando G(9) = -2(9)² + 36(9) - 20 = 142 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 36x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "9 tons for a maximum profit of 154 thousand colones",
+        "9 tons for a maximum profit of 142 thousand colones",
+        "36 tons for a maximum profit of 284 thousand colones",
+        "18 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -36 / (2 * -2) = 9 tons, yielding G(9) = 142 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T1-0049",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 40x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "10 toneladas para una ganancia máxima de 192 mil colones",
+      "10 toneladas para una ganancia máxima de 180 mil colones",
+      "40 toneladas para una ganancia máxima de 360 mil colones",
+      "20 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -40 / (2 × -2) = 10 toneladas. Evaluando G(10) = -2(10)² + 40(10) - 20 = 180 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 40x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "10 tons for a maximum profit of 192 thousand colones",
+        "10 tons for a maximum profit of 180 thousand colones",
+        "40 tons for a maximum profit of 360 thousand colones",
+        "20 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -40 / (2 * -2) = 10 tons, yielding G(10) = 180 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T2-0050",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 16x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "4 toneladas para una ganancia máxima de 24 mil colones",
+      "4 toneladas para una ganancia máxima de 12 mil colones",
+      "16 toneladas para una ganancia máxima de 24 mil colones",
+      "8 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -16 / (2 × -2) = 4 toneladas. Evaluando G(4) = -2(4)² + 16(4) - 20 = 12 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 16x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "4 tons for a maximum profit of 24 thousand colones",
+        "4 tons for a maximum profit of 12 thousand colones",
+        "16 tons for a maximum profit of 24 thousand colones",
+        "8 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -16 / (2 * -2) = 4 tons, yielding G(4) = 12 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T3-0051",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 20x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "5 toneladas para una ganancia máxima de 42 mil colones",
+      "5 toneladas para una ganancia máxima de 30 mil colones",
+      "20 toneladas para una ganancia máxima de 60 mil colones",
+      "10 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -20 / (2 × -2) = 5 toneladas. Evaluando G(5) = -2(5)² + 20(5) - 20 = 30 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 20x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "5 tons for a maximum profit of 42 thousand colones",
+        "5 tons for a maximum profit of 30 thousand colones",
+        "20 tons for a maximum profit of 60 thousand colones",
+        "10 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -20 / (2 * -2) = 5 tons, yielding G(5) = 30 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T1-0052",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 24x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "6 toneladas para una ganancia máxima de 64 mil colones",
+      "6 toneladas para una ganancia máxima de 52 mil colones",
+      "24 toneladas para una ganancia máxima de 104 mil colones",
+      "12 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -24 / (2 × -2) = 6 toneladas. Evaluando G(6) = -2(6)² + 24(6) - 20 = 52 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 24x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "6 tons for a maximum profit of 64 thousand colones",
+        "6 tons for a maximum profit of 52 thousand colones",
+        "24 tons for a maximum profit of 104 thousand colones",
+        "12 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -24 / (2 * -2) = 6 tons, yielding G(6) = 52 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T2-0053",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 28x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "7 toneladas para una ganancia máxima de 90 mil colones",
+      "7 toneladas para una ganancia máxima de 78 mil colones",
+      "28 toneladas para una ganancia máxima de 156 mil colones",
+      "14 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -28 / (2 × -2) = 7 toneladas. Evaluando G(7) = -2(7)² + 28(7) - 20 = 78 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 28x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "7 tons for a maximum profit of 90 thousand colones",
+        "7 tons for a maximum profit of 78 thousand colones",
+        "28 tons for a maximum profit of 156 thousand colones",
+        "14 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -28 / (2 * -2) = 7 tons, yielding G(7) = 78 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T3-0054",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 32x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "8 toneladas para una ganancia máxima de 120 mil colones",
+      "8 toneladas para una ganancia máxima de 108 mil colones",
+      "32 toneladas para una ganancia máxima de 216 mil colones",
+      "16 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -32 / (2 × -2) = 8 toneladas. Evaluando G(8) = -2(8)² + 32(8) - 20 = 108 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 32x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "8 tons for a maximum profit of 120 thousand colones",
+        "8 tons for a maximum profit of 108 thousand colones",
+        "32 tons for a maximum profit of 216 thousand colones",
+        "16 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -32 / (2 * -2) = 8 tons, yielding G(8) = 108 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T1-0055",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 36x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "9 toneladas para una ganancia máxima de 154 mil colones",
+      "9 toneladas para una ganancia máxima de 142 mil colones",
+      "36 toneladas para una ganancia máxima de 284 mil colones",
+      "18 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -36 / (2 × -2) = 9 toneladas. Evaluando G(9) = -2(9)² + 36(9) - 20 = 142 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 36x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "9 tons for a maximum profit of 154 thousand colones",
+        "9 tons for a maximum profit of 142 thousand colones",
+        "36 tons for a maximum profit of 284 thousand colones",
+        "18 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -36 / (2 * -2) = 9 tons, yielding G(9) = 142 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T2-0056",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 40x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "10 toneladas para una ganancia máxima de 192 mil colones",
+      "10 toneladas para una ganancia máxima de 180 mil colones",
+      "40 toneladas para una ganancia máxima de 360 mil colones",
+      "20 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -40 / (2 × -2) = 10 toneladas. Evaluando G(10) = -2(10)² + 40(10) - 20 = 180 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 40x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "10 tons for a maximum profit of 192 thousand colones",
+        "10 tons for a maximum profit of 180 thousand colones",
+        "40 tons for a maximum profit of 360 thousand colones",
+        "20 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -40 / (2 * -2) = 10 tons, yielding G(10) = 180 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U1-T3-0057",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 16x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "4 toneladas para una ganancia máxima de 24 mil colones",
+      "4 toneladas para una ganancia máxima de 12 mil colones",
+      "16 toneladas para una ganancia máxima de 24 mil colones",
+      "8 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -16 / (2 × -2) = 4 toneladas. Evaluando G(4) = -2(4)² + 16(4) - 20 = 12 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 16x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "4 tons for a maximum profit of 24 thousand colones",
+        "4 tons for a maximum profit of 12 thousand colones",
+        "16 tons for a maximum profit of 24 thousand colones",
+        "8 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -16 / (2 * -2) = 4 tons, yielding G(4) = 12 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U2-T1-0058",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 20x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "5 toneladas para una ganancia máxima de 42 mil colones",
+      "5 toneladas para una ganancia máxima de 30 mil colones",
+      "20 toneladas para una ganancia máxima de 60 mil colones",
+      "10 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -20 / (2 × -2) = 5 toneladas. Evaluando G(5) = -2(5)² + 20(5) - 20 = 30 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 20x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "5 tons for a maximum profit of 42 thousand colones",
+        "5 tons for a maximum profit of 30 thousand colones",
+        "20 tons for a maximum profit of 60 thousand colones",
+        "10 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -20 / (2 * -2) = 5 tons, yielding G(5) = 30 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U3-T2-0059",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 24x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "6 toneladas para una ganancia máxima de 64 mil colones",
+      "6 toneladas para una ganancia máxima de 52 mil colones",
+      "24 toneladas para una ganancia máxima de 104 mil colones",
+      "12 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -24 / (2 × -2) = 6 toneladas. Evaluando G(6) = -2(6)² + 24(6) - 20 = 52 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 24x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "6 tons for a maximum profit of 64 thousand colones",
+        "6 tons for a maximum profit of 52 thousand colones",
+        "24 tons for a maximum profit of 104 thousand colones",
+        "12 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -24 / (2 * -2) = 6 tons, yielding G(6) = 52 thousand colones."
+    },
+    "revisar": false
+  },
+  {
+    "id": "MAT-11-U4-T3-0060",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "nivel": "11.º",
+    "modalidad": "Académica",
+    "unidad": "Álgebra, Geometría Analítica, Estequiometría, Física y Democracia",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "La ganancia mensual G(x), en miles de colones, de una cooperativa que procesa x toneladas de producto está modelada por G(x) = -2x² + 28x - 20. ¿Cuántas toneladas debe procesar para alcanzar la ganancia máxima y cuál es dicho monto?",
+    "options": [
+      "7 toneladas para una ganancia máxima de 90 mil colones",
+      "7 toneladas para una ganancia máxima de 78 mil colones",
+      "28 toneladas para una ganancia máxima de 156 mil colones",
+      "14 toneladas para una ganancia máxima de 40 mil colones"
+    ],
+    "answer": 1,
+    "why": "El vértice se alcanza en xv = -b / (2a) = -28 / (2 × -2) = 7 toneladas. Evaluando G(7) = -2(7)² + 28(7) - 20 = 78 mil colones (opción B, índice 1).",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública",
+    "en": {
+      "q": "Monthly profit G(x), in thousands of colones, for processing x tons is modeled by G(x) = -2x² + 28x - 20. How many tons maximize profit and what is the maximum amount?",
+      "options": [
+        "7 tons for a maximum profit of 90 thousand colones",
+        "7 tons for a maximum profit of 78 thousand colones",
+        "28 tons for a maximum profit of 156 thousand colones",
+        "14 tons for a maximum profit of 40 thousand colones"
+      ],
+      "why": "Vertex x = -28 / (2 * -2) = 7 tons, yielding G(7) = 78 thousand colones."
+    },
+    "revisar": false
+  }
+]

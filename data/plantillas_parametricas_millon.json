@@ -1,0 +1,79 @@
+[
+  {
+    "plantilla": "AGR-12-P01",
+    "materia": "Agroecología (1001)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026"
+  },
+  {
+    "plantilla": "AGA-12-P02",
+    "materia": "Agroindustria Alimentaria Tecnología Agrícola (1003)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Controla procesos térmicos, actividad de agua, evaluación financiera VAN/TIR y normas sanitarias",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1003 Agroindustria Agrícola, Convocatoria 01-2026"
+  },
+  {
+    "plantilla": "AGP-12-P03",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026"
+  },
+  {
+    "plantilla": "AJD-12-P04",
+    "materia": "Agrojardinería (1005)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Determina dimensiones en planos a escala, fisiología vegetal y diseño de jardines",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1005 Agrojardinería, Convocatoria 01-2026"
+  },
+  {
+    "plantilla": "PAP-12-P05",
+    "materia": "Producción Agrícola y Pecuaria (1009)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Aplica mecanización agrícola, taxonomía de cultivos, nutrición animal y bioseguridad pecuaria",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1009 Producción Agrícola y Pecuaria, Convocatoria 01-2026"
+  },
+  {
+    "plantilla": "CCI-12-P06",
+    "materia": "Construcción Civil (2003)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026"
+  },
+  {
+    "plantilla": "DTE-12-P07",
+    "materia": "Dibujo Técnico (2005)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026"
+  },
+  {
+    "plantilla": "DME-12-P08",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026"
+  },
+  {
+    "plantilla": "DGR-12-P09",
+    "materia": "Diseño Gráfico (2007) y Diseño Publicitario (2008)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Aplica síntesis vectorial, modos RGB/CMYK, preflight y leyes de proporción",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2007/2008 Diseño, Convocatoria 01-2026"
+  },
+  {
+    "plantilla": "WEB-12-P10",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026"
+  },
+  {
+    "plantilla": "MAT-11-P11",
+    "materia": "Matemáticas, Ciencias, Español y Cívica (PNE)",
+    "capacidad_variantes": "1000 plantillas x 1000 combinaciones = 1.000.000 de ítems dinámicos",
+    "indicador": "Resuelve modelos cuadráticos, circunferencias, molaridad, Leyes de Newton y mecanismos cívicos",
+    "source": "Cuadernillo Académico Nacional PNE 2026 - Ministerio de Educación Pública"
+  }
+]

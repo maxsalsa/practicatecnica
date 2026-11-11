@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "DME-12-U1-T1-0001",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 5550 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.555 m",
+      "5.55 m",
+      "55.5 m",
+      "555 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 5550 ÷ 1 000 = 5.55 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 5550 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.555 m",
+        "5.55 m",
+        "55.5 m",
+        "555 m"
+      ],
+      "why": "Dividing 5550 mm by 1,000 mm/m yields 5.55 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T2-0002",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 5650 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.565 m",
+      "5.65 m",
+      "56.5 m",
+      "565 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 5650 ÷ 1 000 = 5.65 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 5650 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.565 m",
+        "5.65 m",
+        "56.5 m",
+        "565 m"
+      ],
+      "why": "Dividing 5650 mm by 1,000 mm/m yields 5.65 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T3-0003",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 5750 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.575 m",
+      "5.75 m",
+      "57.5 m",
+      "575 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 5750 ÷ 1 000 = 5.75 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 5750 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.575 m",
+        "5.75 m",
+        "57.5 m",
+        "575 m"
+      ],
+      "why": "Dividing 5750 mm by 1,000 mm/m yields 5.75 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T1-0004",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 5850 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.585 m",
+      "5.85 m",
+      "58.5 m",
+      "585 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 5850 ÷ 1 000 = 5.85 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 5850 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.585 m",
+        "5.85 m",
+        "58.5 m",
+        "585 m"
+      ],
+      "why": "Dividing 5850 mm by 1,000 mm/m yields 5.85 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T2-0005",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 5950 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.595 m",
+      "5.95 m",
+      "59.5 m",
+      "595 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 5950 ÷ 1 000 = 5.95 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 5950 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.595 m",
+        "5.95 m",
+        "59.5 m",
+        "595 m"
+      ],
+      "why": "Dividing 5950 mm by 1,000 mm/m yields 5.95 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T3-0006",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6050 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.605 m",
+      "6.05 m",
+      "60.5 m",
+      "605 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6050 ÷ 1 000 = 6.05 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6050 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.605 m",
+        "6.05 m",
+        "60.5 m",
+        "605 m"
+      ],
+      "why": "Dividing 6050 mm by 1,000 mm/m yields 6.05 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T1-0007",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6150 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.615 m",
+      "6.15 m",
+      "61.5 m",
+      "615 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6150 ÷ 1 000 = 6.15 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6150 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.615 m",
+        "6.15 m",
+        "61.5 m",
+        "615 m"
+      ],
+      "why": "Dividing 6150 mm by 1,000 mm/m yields 6.15 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T2-0008",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6250 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.625 m",
+      "6.25 m",
+      "62.5 m",
+      "625 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6250 ÷ 1 000 = 6.25 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6250 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.625 m",
+        "6.25 m",
+        "62.5 m",
+        "625 m"
+      ],
+      "why": "Dividing 6250 mm by 1,000 mm/m yields 6.25 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T3-0009",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6350 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.635 m",
+      "6.35 m",
+      "63.5 m",
+      "635 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6350 ÷ 1 000 = 6.35 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6350 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.635 m",
+        "6.35 m",
+        "63.5 m",
+        "635 m"
+      ],
+      "why": "Dividing 6350 mm by 1,000 mm/m yields 6.35 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T1-0010",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6450 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.645 m",
+      "6.45 m",
+      "64.5 m",
+      "645 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6450 ÷ 1 000 = 6.45 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6450 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.645 m",
+        "6.45 m",
+        "64.5 m",
+        "645 m"
+      ],
+      "why": "Dividing 6450 mm by 1,000 mm/m yields 6.45 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T2-0011",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6550 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.655 m",
+      "6.55 m",
+      "65.5 m",
+      "655 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6550 ÷ 1 000 = 6.55 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6550 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.655 m",
+        "6.55 m",
+        "65.5 m",
+        "655 m"
+      ],
+      "why": "Dividing 6550 mm by 1,000 mm/m yields 6.55 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T3-0012",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6650 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.665 m",
+      "6.65 m",
+      "66.5 m",
+      "665 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6650 ÷ 1 000 = 6.65 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6650 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.665 m",
+        "6.65 m",
+        "66.5 m",
+        "665 m"
+      ],
+      "why": "Dividing 6650 mm by 1,000 mm/m yields 6.65 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T1-0013",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6750 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.675 m",
+      "6.75 m",
+      "67.5 m",
+      "675 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6750 ÷ 1 000 = 6.75 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6750 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.675 m",
+        "6.75 m",
+        "67.5 m",
+        "675 m"
+      ],
+      "why": "Dividing 6750 mm by 1,000 mm/m yields 6.75 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T2-0014",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6850 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.685 m",
+      "6.85 m",
+      "68.5 m",
+      "685 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6850 ÷ 1 000 = 6.85 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6850 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.685 m",
+        "6.85 m",
+        "68.5 m",
+        "685 m"
+      ],
+      "why": "Dividing 6850 mm by 1,000 mm/m yields 6.85 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T3-0015",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6950 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.695 m",
+      "6.95 m",
+      "69.5 m",
+      "695 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6950 ÷ 1 000 = 6.95 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6950 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.695 m",
+        "6.95 m",
+        "69.5 m",
+        "695 m"
+      ],
+      "why": "Dividing 6950 mm by 1,000 mm/m yields 6.95 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T1-0016",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7050 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.705 m",
+      "7.05 m",
+      "70.5 m",
+      "705 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7050 ÷ 1 000 = 7.05 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7050 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.705 m",
+        "7.05 m",
+        "70.5 m",
+        "705 m"
+      ],
+      "why": "Dividing 7050 mm by 1,000 mm/m yields 7.05 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T2-0017",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7150 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.715 m",
+      "7.15 m",
+      "71.5 m",
+      "715 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7150 ÷ 1 000 = 7.15 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7150 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.715 m",
+        "7.15 m",
+        "71.5 m",
+        "715 m"
+      ],
+      "why": "Dividing 7150 mm by 1,000 mm/m yields 7.15 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T3-0018",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7250 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.725 m",
+      "7.25 m",
+      "72.5 m",
+      "725 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7250 ÷ 1 000 = 7.25 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7250 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.725 m",
+        "7.25 m",
+        "72.5 m",
+        "725 m"
+      ],
+      "why": "Dividing 7250 mm by 1,000 mm/m yields 7.25 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T1-0019",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7350 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.735 m",
+      "7.35 m",
+      "73.5 m",
+      "735 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7350 ÷ 1 000 = 7.35 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7350 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.735 m",
+        "7.35 m",
+        "73.5 m",
+        "735 m"
+      ],
+      "why": "Dividing 7350 mm by 1,000 mm/m yields 7.35 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T2-0020",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7450 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.745 m",
+      "7.45 m",
+      "74.5 m",
+      "745 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7450 ÷ 1 000 = 7.45 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7450 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.745 m",
+        "7.45 m",
+        "74.5 m",
+        "745 m"
+      ],
+      "why": "Dividing 7450 mm by 1,000 mm/m yields 7.45 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T3-0021",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7550 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.755 m",
+      "7.55 m",
+      "75.5 m",
+      "755 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7550 ÷ 1 000 = 7.55 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7550 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.755 m",
+        "7.55 m",
+        "75.5 m",
+        "755 m"
+      ],
+      "why": "Dividing 7550 mm by 1,000 mm/m yields 7.55 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T1-0022",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7650 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.765 m",
+      "7.65 m",
+      "76.5 m",
+      "765 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7650 ÷ 1 000 = 7.65 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7650 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.765 m",
+        "7.65 m",
+        "76.5 m",
+        "765 m"
+      ],
+      "why": "Dividing 7650 mm by 1,000 mm/m yields 7.65 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T2-0023",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7750 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.775 m",
+      "7.75 m",
+      "77.5 m",
+      "775 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7750 ÷ 1 000 = 7.75 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7750 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.775 m",
+        "7.75 m",
+        "77.5 m",
+        "775 m"
+      ],
+      "why": "Dividing 7750 mm by 1,000 mm/m yields 7.75 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T3-0024",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7850 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.785 m",
+      "7.85 m",
+      "78.5 m",
+      "785 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7850 ÷ 1 000 = 7.85 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7850 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.785 m",
+        "7.85 m",
+        "78.5 m",
+        "785 m"
+      ],
+      "why": "Dividing 7850 mm by 1,000 mm/m yields 7.85 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T1-0025",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7950 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.795 m",
+      "7.95 m",
+      "79.5 m",
+      "795 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7950 ÷ 1 000 = 7.95 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7950 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.795 m",
+        "7.95 m",
+        "79.5 m",
+        "795 m"
+      ],
+      "why": "Dividing 7950 mm by 1,000 mm/m yields 7.95 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T2-0026",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 8050 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.805 m",
+      "8.05 m",
+      "80.5 m",
+      "805 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 8050 ÷ 1 000 = 8.05 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 8050 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.805 m",
+        "8.05 m",
+        "80.5 m",
+        "805 m"
+      ],
+      "why": "Dividing 8050 mm by 1,000 mm/m yields 8.05 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T3-0027",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 8150 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.815 m",
+      "8.15 m",
+      "81.5 m",
+      "815 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 8150 ÷ 1 000 = 8.15 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 8150 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.815 m",
+        "8.15 m",
+        "81.5 m",
+        "815 m"
+      ],
+      "why": "Dividing 8150 mm by 1,000 mm/m yields 8.15 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T1-0028",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 8250 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.825 m",
+      "8.25 m",
+      "82.5 m",
+      "825 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 8250 ÷ 1 000 = 8.25 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 8250 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.825 m",
+        "8.25 m",
+        "82.5 m",
+        "825 m"
+      ],
+      "why": "Dividing 8250 mm by 1,000 mm/m yields 8.25 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T2-0029",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 8350 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.835 m",
+      "8.35 m",
+      "83.5 m",
+      "835 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 8350 ÷ 1 000 = 8.35 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 8350 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.835 m",
+        "8.35 m",
+        "83.5 m",
+        "835 m"
+      ],
+      "why": "Dividing 8350 mm by 1,000 mm/m yields 8.35 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T3-0030",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 8450 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.845 m",
+      "8.45 m",
+      "84.5 m",
+      "845 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 8450 ÷ 1 000 = 8.45 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 8450 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.845 m",
+        "8.45 m",
+        "84.5 m",
+        "845 m"
+      ],
+      "why": "Dividing 8450 mm by 1,000 mm/m yields 8.45 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T1-0031",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 8550 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.855 m",
+      "8.55 m",
+      "85.5 m",
+      "855 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 8550 ÷ 1 000 = 8.55 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 8550 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.855 m",
+        "8.55 m",
+        "85.5 m",
+        "855 m"
+      ],
+      "why": "Dividing 8550 mm by 1,000 mm/m yields 8.55 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T2-0032",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 8650 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.865 m",
+      "8.65 m",
+      "86.5 m",
+      "865 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 8650 ÷ 1 000 = 8.65 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 8650 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.865 m",
+        "8.65 m",
+        "86.5 m",
+        "865 m"
+      ],
+      "why": "Dividing 8650 mm by 1,000 mm/m yields 8.65 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T3-0033",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 8750 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.875 m",
+      "8.75 m",
+      "87.5 m",
+      "875 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 8750 ÷ 1 000 = 8.75 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 8750 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.875 m",
+        "8.75 m",
+        "87.5 m",
+        "875 m"
+      ],
+      "why": "Dividing 8750 mm by 1,000 mm/m yields 8.75 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T1-0034",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 8850 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.885 m",
+      "8.85 m",
+      "88.5 m",
+      "885 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 8850 ÷ 1 000 = 8.85 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 8850 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.885 m",
+        "8.85 m",
+        "88.5 m",
+        "885 m"
+      ],
+      "why": "Dividing 8850 mm by 1,000 mm/m yields 8.85 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T2-0035",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 8950 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.895 m",
+      "8.95 m",
+      "89.5 m",
+      "895 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 8950 ÷ 1 000 = 8.95 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 8950 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.895 m",
+        "8.95 m",
+        "89.5 m",
+        "895 m"
+      ],
+      "why": "Dividing 8950 mm by 1,000 mm/m yields 8.95 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T3-0036",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 5550 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.555 m",
+      "5.55 m",
+      "55.5 m",
+      "555 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 5550 ÷ 1 000 = 5.55 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 5550 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.555 m",
+        "5.55 m",
+        "55.5 m",
+        "555 m"
+      ],
+      "why": "Dividing 5550 mm by 1,000 mm/m yields 5.55 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T1-0037",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 5650 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.565 m",
+      "5.65 m",
+      "56.5 m",
+      "565 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 5650 ÷ 1 000 = 5.65 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 5650 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.565 m",
+        "5.65 m",
+        "56.5 m",
+        "565 m"
+      ],
+      "why": "Dividing 5650 mm by 1,000 mm/m yields 5.65 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T2-0038",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 5750 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.575 m",
+      "5.75 m",
+      "57.5 m",
+      "575 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 5750 ÷ 1 000 = 5.75 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 5750 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.575 m",
+        "5.75 m",
+        "57.5 m",
+        "575 m"
+      ],
+      "why": "Dividing 5750 mm by 1,000 mm/m yields 5.75 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T3-0039",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 5850 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.585 m",
+      "5.85 m",
+      "58.5 m",
+      "585 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 5850 ÷ 1 000 = 5.85 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 5850 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.585 m",
+        "5.85 m",
+        "58.5 m",
+        "585 m"
+      ],
+      "why": "Dividing 5850 mm by 1,000 mm/m yields 5.85 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T1-0040",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 5950 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.595 m",
+      "5.95 m",
+      "59.5 m",
+      "595 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 5950 ÷ 1 000 = 5.95 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 5950 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.595 m",
+        "5.95 m",
+        "59.5 m",
+        "595 m"
+      ],
+      "why": "Dividing 5950 mm by 1,000 mm/m yields 5.95 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T2-0041",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6050 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.605 m",
+      "6.05 m",
+      "60.5 m",
+      "605 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6050 ÷ 1 000 = 6.05 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6050 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.605 m",
+        "6.05 m",
+        "60.5 m",
+        "605 m"
+      ],
+      "why": "Dividing 6050 mm by 1,000 mm/m yields 6.05 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T3-0042",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6150 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.615 m",
+      "6.15 m",
+      "61.5 m",
+      "615 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6150 ÷ 1 000 = 6.15 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6150 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.615 m",
+        "6.15 m",
+        "61.5 m",
+        "615 m"
+      ],
+      "why": "Dividing 6150 mm by 1,000 mm/m yields 6.15 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T1-0043",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6250 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.625 m",
+      "6.25 m",
+      "62.5 m",
+      "625 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6250 ÷ 1 000 = 6.25 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6250 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.625 m",
+        "6.25 m",
+        "62.5 m",
+        "625 m"
+      ],
+      "why": "Dividing 6250 mm by 1,000 mm/m yields 6.25 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T2-0044",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6350 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.635 m",
+      "6.35 m",
+      "63.5 m",
+      "635 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6350 ÷ 1 000 = 6.35 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6350 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.635 m",
+        "6.35 m",
+        "63.5 m",
+        "635 m"
+      ],
+      "why": "Dividing 6350 mm by 1,000 mm/m yields 6.35 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T3-0045",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6450 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.645 m",
+      "6.45 m",
+      "64.5 m",
+      "645 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6450 ÷ 1 000 = 6.45 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6450 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.645 m",
+        "6.45 m",
+        "64.5 m",
+        "645 m"
+      ],
+      "why": "Dividing 6450 mm by 1,000 mm/m yields 6.45 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T1-0046",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6550 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.655 m",
+      "6.55 m",
+      "65.5 m",
+      "655 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6550 ÷ 1 000 = 6.55 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6550 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.655 m",
+        "6.55 m",
+        "65.5 m",
+        "655 m"
+      ],
+      "why": "Dividing 6550 mm by 1,000 mm/m yields 6.55 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T2-0047",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6650 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.665 m",
+      "6.65 m",
+      "66.5 m",
+      "665 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6650 ÷ 1 000 = 6.65 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6650 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.665 m",
+        "6.65 m",
+        "66.5 m",
+        "665 m"
+      ],
+      "why": "Dividing 6650 mm by 1,000 mm/m yields 6.65 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T3-0048",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6750 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.675 m",
+      "6.75 m",
+      "67.5 m",
+      "675 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6750 ÷ 1 000 = 6.75 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6750 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.675 m",
+        "6.75 m",
+        "67.5 m",
+        "675 m"
+      ],
+      "why": "Dividing 6750 mm by 1,000 mm/m yields 6.75 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T1-0049",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6850 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.685 m",
+      "6.85 m",
+      "68.5 m",
+      "685 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6850 ÷ 1 000 = 6.85 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6850 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.685 m",
+        "6.85 m",
+        "68.5 m",
+        "685 m"
+      ],
+      "why": "Dividing 6850 mm by 1,000 mm/m yields 6.85 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T2-0050",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 6950 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.695 m",
+      "6.95 m",
+      "69.5 m",
+      "695 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 6950 ÷ 1 000 = 6.95 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 6950 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.695 m",
+        "6.95 m",
+        "69.5 m",
+        "695 m"
+      ],
+      "why": "Dividing 6950 mm by 1,000 mm/m yields 6.95 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T3-0051",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7050 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.705 m",
+      "7.05 m",
+      "70.5 m",
+      "705 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7050 ÷ 1 000 = 7.05 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7050 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.705 m",
+        "7.05 m",
+        "70.5 m",
+        "705 m"
+      ],
+      "why": "Dividing 7050 mm by 1,000 mm/m yields 7.05 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T1-0052",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7150 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.715 m",
+      "7.15 m",
+      "71.5 m",
+      "715 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7150 ÷ 1 000 = 7.15 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7150 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.715 m",
+        "7.15 m",
+        "71.5 m",
+        "715 m"
+      ],
+      "why": "Dividing 7150 mm by 1,000 mm/m yields 7.15 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T2-0053",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7250 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.725 m",
+      "7.25 m",
+      "72.5 m",
+      "725 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7250 ÷ 1 000 = 7.25 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7250 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.725 m",
+        "7.25 m",
+        "72.5 m",
+        "725 m"
+      ],
+      "why": "Dividing 7250 mm by 1,000 mm/m yields 7.25 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T3-0054",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7350 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.735 m",
+      "7.35 m",
+      "73.5 m",
+      "735 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7350 ÷ 1 000 = 7.35 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7350 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.735 m",
+        "7.35 m",
+        "73.5 m",
+        "735 m"
+      ],
+      "why": "Dividing 7350 mm by 1,000 mm/m yields 7.35 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T1-0055",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7450 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.745 m",
+      "7.45 m",
+      "74.5 m",
+      "745 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7450 ÷ 1 000 = 7.45 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7450 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.745 m",
+        "7.45 m",
+        "74.5 m",
+        "745 m"
+      ],
+      "why": "Dividing 7450 mm by 1,000 mm/m yields 7.45 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T2-0056",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7550 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.755 m",
+      "7.55 m",
+      "75.5 m",
+      "755 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7550 ÷ 1 000 = 7.55 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7550 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.755 m",
+        "7.55 m",
+        "75.5 m",
+        "755 m"
+      ],
+      "why": "Dividing 7550 mm by 1,000 mm/m yields 7.55 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U1-T3-0057",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7650 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.765 m",
+      "7.65 m",
+      "76.5 m",
+      "765 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7650 ÷ 1 000 = 7.65 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7650 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.765 m",
+        "7.65 m",
+        "76.5 m",
+        "765 m"
+      ],
+      "why": "Dividing 7650 mm by 1,000 mm/m yields 7.65 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U2-T1-0058",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7750 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.775 m",
+      "7.75 m",
+      "77.5 m",
+      "775 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7750 ÷ 1 000 = 7.75 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7750 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.775 m",
+        "7.75 m",
+        "77.5 m",
+        "775 m"
+      ],
+      "why": "Dividing 7750 mm by 1,000 mm/m yields 7.75 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U3-T2-0059",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7850 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.785 m",
+      "7.85 m",
+      "78.5 m",
+      "785 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7850 ÷ 1 000 = 7.85 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7850 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.785 m",
+        "7.85 m",
+        "78.5 m",
+        "785 m"
+      ],
+      "why": "Dividing 7850 mm by 1,000 mm/m yields 7.85 m."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DME-12-U4-T3-0060",
+    "materia": "Dibujo y Modelado para Edificaciones (2006)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Modelado BIM, Normativa Ley 7600, Código Sísmico y Presupuestos",
+    "indicador": "Aplica metodología BIM, conversión de unidades, accesibilidad Ley 7600 y ecuación contable",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Durante la cuantificación de materiales en un modelo BIM, una tubería principal de PVC registra una longitud de 7950 mm. Para consignar correctamente el dato en la hoja de presupuesto en metros (m), ¿qué valor debe registrarse?",
+    "options": [
+      "0.795 m",
+      "7.95 m",
+      "79.5 m",
+      "795 m"
+    ],
+    "answer": 1,
+    "why": "Como 1 metro equivale a 1 000 milímetros, se divide 7950 ÷ 1 000 = 7.95 m (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2006 Dibujo y Modelado para Edificaciones, Convocatoria 01-2026",
+    "en": {
+      "q": "During quantity takeoff in a BIM model, a PVC pipe measures 7950 mm. Expressed in meters (m) for the budget sheet, which value must be recorded?",
+      "options": [
+        "0.795 m",
+        "7.95 m",
+        "79.5 m",
+        "795 m"
+      ],
+      "why": "Dividing 7950 mm by 1,000 mm/m yields 7.95 m."
+    },
+    "revisar": false
+  }
+]

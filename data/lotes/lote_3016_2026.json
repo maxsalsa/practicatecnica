@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "WEB-12-U1-T1-0001",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T2-0002",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T3-0003",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T1-0004",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T2-0005",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T3-0006",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T1-0007",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T2-0008",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T3-0009",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T1-0010",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T2-0011",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T3-0012",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T1-0013",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T2-0014",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T3-0015",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T1-0016",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T2-0017",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T3-0018",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T1-0019",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T2-0020",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T3-0021",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T1-0022",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T2-0023",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T3-0024",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T1-0025",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T2-0026",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T3-0027",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T1-0028",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T2-0029",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T3-0030",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T1-0031",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T2-0032",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T3-0033",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T1-0034",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T2-0035",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T3-0036",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T1-0037",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T2-0038",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T3-0039",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T1-0040",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T2-0041",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T3-0042",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T1-0043",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T2-0044",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T3-0045",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T1-0046",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T2-0047",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T3-0048",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T1-0049",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T2-0050",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T3-0051",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T1-0052",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T2-0053",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T3-0054",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T1-0055",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T2-0056",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U1-T3-0057",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 12 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 12?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.240 (/28), que provee 14 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 4 bits de host se obtienen 2^4 - 2 = 14 direcciones útiles (prefijo 32 - 4 = /28, máscara 255.255.255.240), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 12 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 12?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.240 (/28), providing 14 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 4 host bits, 2^4 - 2 = 14 usable host addresses (/28)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U2-T1-0058",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 28 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 28?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.224 (/27), que provee 30 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 5 bits de host se obtienen 2^5 - 2 = 30 direcciones útiles (prefijo 32 - 5 = /27, máscara 255.255.255.224), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 28 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 28?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.224 (/27), providing 30 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 5 host bits, 2^5 - 2 = 30 usable host addresses (/27)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U3-T2-0059",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 58 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 58?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.192 (/26), que provee 62 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 6 bits de host se obtienen 2^6 - 2 = 62 direcciones útiles (prefijo 32 - 6 = /26, máscara 255.255.255.192), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 58 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 58?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.192 (/26), providing 62 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 6 host bits, 2^6 - 2 = 62 usable host addresses (/26)."
+    },
+    "revisar": false
+  },
+  {
+    "id": "WEB-12-U4-T3-0060",
+    "materia": "Desarrollo Web y Ciberseguridad (3016)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Arquitectura Full-Stack, Redes IPv4 (VLSM), SQL 3FN y Ciberseguridad",
+    "indicador": "Dimensiona subredes VLSM, aplica 3FN, códigos HTTP y controles anti-IDOR/RLS",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Un especialista en redes y desarrollo web necesita segmentar una red IPv4 mediante VLSM para alojar una subred con 118 terminales activas sin desperdiciar direcciones. ¿Cuál máscara de subred y prefijo CIDR cumplen con 2ⁿ - 2 ≥ 118?",
+    "options": [
+      "255.255.255.248 (/29), que provee 6 direcciones utilizables",
+      "255.255.255.252 (/30), que provee 2 direcciones utilizables",
+      "255.255.255.128 (/25), que provee 126 direcciones utilizables",
+      "255.255.0.0 (/16), que provee 65 534 direcciones utilizables"
+    ],
+    "answer": 2,
+    "why": "Con n = 7 bits de host se obtienen 2^7 - 2 = 126 direcciones útiles (prefijo 32 - 7 = /25, máscara 255.255.255.128), correspondiendo a la opción C (índice 2).",
+    "source": "Programa de Estudio MEP Desarrollo Web (3016) y Cuadernillo PNEET 2026",
+    "en": {
+      "q": "An IT specialist needs to segment an IPv4 network using VLSM to support 118 active hosts without wasting addresses. Which mask and CIDR prefix meet 2ⁿ - 2 ≥ 118?",
+      "options": [
+        "255.255.255.248 (/29), providing 6 usable addresses",
+        "255.255.255.252 (/30), providing 2 usable addresses",
+        "255.255.255.128 (/25), providing 126 usable addresses",
+        "255.255.0.0 (/16), providing 65,534 usable addresses"
+      ],
+      "why": "With 7 host bits, 2^7 - 2 = 126 usable host addresses (/25)."
+    },
+    "revisar": false
+  }
+]

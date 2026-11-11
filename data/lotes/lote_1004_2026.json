@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "AGP-12-U1-T1-0001",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 400 litros de leche estandarizada y obtiene 44 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (44 kg) entre los litros procesados (400 L) y multiplicando por 100 se obtiene (44 ÷ 400) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 400 liters of milk and obtains 44 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(44 kg / 400 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T2-0002",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 500 litros de leche estandarizada y obtiene 60 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (60 kg) entre los litros procesados (500 L) y multiplicando por 100 se obtiene (60 ÷ 500) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 500 liters of milk and obtains 60 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(60 kg / 500 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T3-0003",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 600 litros de leche estandarizada y obtiene 78 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (78 kg) entre los litros procesados (600 L) y multiplicando por 100 se obtiene (78 ÷ 600) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 600 liters of milk and obtains 78 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(78 kg / 600 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T1-0004",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 700 litros de leche estandarizada y obtiene 98 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (98 kg) entre los litros procesados (700 L) y multiplicando por 100 se obtiene (98 ÷ 700) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 700 liters of milk and obtains 98 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(98 kg / 700 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T2-0005",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 800 litros de leche estandarizada y obtiene 120 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (120 kg) entre los litros procesados (800 L) y multiplicando por 100 se obtiene (120 ÷ 800) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 800 liters of milk and obtains 120 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(120 kg / 800 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T3-0006",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 900 litros de leche estandarizada y obtiene 99 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (99 kg) entre los litros procesados (900 L) y multiplicando por 100 se obtiene (99 ÷ 900) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 900 liters of milk and obtains 99 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(99 kg / 900 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T1-0007",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 400 litros de leche estandarizada y obtiene 48 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (48 kg) entre los litros procesados (400 L) y multiplicando por 100 se obtiene (48 ÷ 400) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 400 liters of milk and obtains 48 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(48 kg / 400 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T2-0008",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 500 litros de leche estandarizada y obtiene 65 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (65 kg) entre los litros procesados (500 L) y multiplicando por 100 se obtiene (65 ÷ 500) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 500 liters of milk and obtains 65 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(65 kg / 500 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T3-0009",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 600 litros de leche estandarizada y obtiene 84 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (84 kg) entre los litros procesados (600 L) y multiplicando por 100 se obtiene (84 ÷ 600) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 600 liters of milk and obtains 84 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(84 kg / 600 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T1-0010",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 700 litros de leche estandarizada y obtiene 105 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (105 kg) entre los litros procesados (700 L) y multiplicando por 100 se obtiene (105 ÷ 700) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 700 liters of milk and obtains 105 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(105 kg / 700 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T2-0011",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 800 litros de leche estandarizada y obtiene 88 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (88 kg) entre los litros procesados (800 L) y multiplicando por 100 se obtiene (88 ÷ 800) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 800 liters of milk and obtains 88 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(88 kg / 800 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T3-0012",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 900 litros de leche estandarizada y obtiene 108 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (108 kg) entre los litros procesados (900 L) y multiplicando por 100 se obtiene (108 ÷ 900) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 900 liters of milk and obtains 108 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(108 kg / 900 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T1-0013",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 400 litros de leche estandarizada y obtiene 52 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (52 kg) entre los litros procesados (400 L) y multiplicando por 100 se obtiene (52 ÷ 400) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 400 liters of milk and obtains 52 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(52 kg / 400 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T2-0014",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 500 litros de leche estandarizada y obtiene 70 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (70 kg) entre los litros procesados (500 L) y multiplicando por 100 se obtiene (70 ÷ 500) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 500 liters of milk and obtains 70 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(70 kg / 500 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T3-0015",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 600 litros de leche estandarizada y obtiene 90 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (90 kg) entre los litros procesados (600 L) y multiplicando por 100 se obtiene (90 ÷ 600) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 600 liters of milk and obtains 90 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(90 kg / 600 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T1-0016",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 700 litros de leche estandarizada y obtiene 77 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (77 kg) entre los litros procesados (700 L) y multiplicando por 100 se obtiene (77 ÷ 700) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 700 liters of milk and obtains 77 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(77 kg / 700 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T2-0017",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 800 litros de leche estandarizada y obtiene 96 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (96 kg) entre los litros procesados (800 L) y multiplicando por 100 se obtiene (96 ÷ 800) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 800 liters of milk and obtains 96 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(96 kg / 800 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T3-0018",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 900 litros de leche estandarizada y obtiene 117 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (117 kg) entre los litros procesados (900 L) y multiplicando por 100 se obtiene (117 ÷ 900) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 900 liters of milk and obtains 117 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(117 kg / 900 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T1-0019",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 400 litros de leche estandarizada y obtiene 56 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (56 kg) entre los litros procesados (400 L) y multiplicando por 100 se obtiene (56 ÷ 400) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 400 liters of milk and obtains 56 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(56 kg / 400 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T2-0020",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 500 litros de leche estandarizada y obtiene 75 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (75 kg) entre los litros procesados (500 L) y multiplicando por 100 se obtiene (75 ÷ 500) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 500 liters of milk and obtains 75 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(75 kg / 500 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T3-0021",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 600 litros de leche estandarizada y obtiene 66 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (66 kg) entre los litros procesados (600 L) y multiplicando por 100 se obtiene (66 ÷ 600) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 600 liters of milk and obtains 66 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(66 kg / 600 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T1-0022",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 700 litros de leche estandarizada y obtiene 84 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (84 kg) entre los litros procesados (700 L) y multiplicando por 100 se obtiene (84 ÷ 700) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 700 liters of milk and obtains 84 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(84 kg / 700 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T2-0023",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 800 litros de leche estandarizada y obtiene 104 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (104 kg) entre los litros procesados (800 L) y multiplicando por 100 se obtiene (104 ÷ 800) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 800 liters of milk and obtains 104 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(104 kg / 800 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T3-0024",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 900 litros de leche estandarizada y obtiene 126 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (126 kg) entre los litros procesados (900 L) y multiplicando por 100 se obtiene (126 ÷ 900) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 900 liters of milk and obtains 126 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(126 kg / 900 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T1-0025",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 400 litros de leche estandarizada y obtiene 60 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (60 kg) entre los litros procesados (400 L) y multiplicando por 100 se obtiene (60 ÷ 400) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 400 liters of milk and obtains 60 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(60 kg / 400 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T2-0026",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 500 litros de leche estandarizada y obtiene 55 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (55 kg) entre los litros procesados (500 L) y multiplicando por 100 se obtiene (55 ÷ 500) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 500 liters of milk and obtains 55 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(55 kg / 500 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T3-0027",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 600 litros de leche estandarizada y obtiene 72 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (72 kg) entre los litros procesados (600 L) y multiplicando por 100 se obtiene (72 ÷ 600) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 600 liters of milk and obtains 72 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(72 kg / 600 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T1-0028",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 700 litros de leche estandarizada y obtiene 91 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (91 kg) entre los litros procesados (700 L) y multiplicando por 100 se obtiene (91 ÷ 700) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 700 liters of milk and obtains 91 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(91 kg / 700 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T2-0029",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 800 litros de leche estandarizada y obtiene 112 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (112 kg) entre los litros procesados (800 L) y multiplicando por 100 se obtiene (112 ÷ 800) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 800 liters of milk and obtains 112 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(112 kg / 800 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T3-0030",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 900 litros de leche estandarizada y obtiene 135 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (135 kg) entre los litros procesados (900 L) y multiplicando por 100 se obtiene (135 ÷ 900) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 900 liters of milk and obtains 135 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(135 kg / 900 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T1-0031",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 400 litros de leche estandarizada y obtiene 44 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (44 kg) entre los litros procesados (400 L) y multiplicando por 100 se obtiene (44 ÷ 400) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 400 liters of milk and obtains 44 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(44 kg / 400 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T2-0032",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 500 litros de leche estandarizada y obtiene 60 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (60 kg) entre los litros procesados (500 L) y multiplicando por 100 se obtiene (60 ÷ 500) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 500 liters of milk and obtains 60 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(60 kg / 500 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T3-0033",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 600 litros de leche estandarizada y obtiene 78 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (78 kg) entre los litros procesados (600 L) y multiplicando por 100 se obtiene (78 ÷ 600) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 600 liters of milk and obtains 78 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(78 kg / 600 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T1-0034",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 700 litros de leche estandarizada y obtiene 98 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (98 kg) entre los litros procesados (700 L) y multiplicando por 100 se obtiene (98 ÷ 700) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 700 liters of milk and obtains 98 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(98 kg / 700 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T2-0035",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 800 litros de leche estandarizada y obtiene 120 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (120 kg) entre los litros procesados (800 L) y multiplicando por 100 se obtiene (120 ÷ 800) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 800 liters of milk and obtains 120 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(120 kg / 800 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T3-0036",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 900 litros de leche estandarizada y obtiene 99 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (99 kg) entre los litros procesados (900 L) y multiplicando por 100 se obtiene (99 ÷ 900) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 900 liters of milk and obtains 99 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(99 kg / 900 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T1-0037",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 400 litros de leche estandarizada y obtiene 48 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (48 kg) entre los litros procesados (400 L) y multiplicando por 100 se obtiene (48 ÷ 400) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 400 liters of milk and obtains 48 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(48 kg / 400 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T2-0038",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 500 litros de leche estandarizada y obtiene 65 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (65 kg) entre los litros procesados (500 L) y multiplicando por 100 se obtiene (65 ÷ 500) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 500 liters of milk and obtains 65 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(65 kg / 500 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T3-0039",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 600 litros de leche estandarizada y obtiene 84 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (84 kg) entre los litros procesados (600 L) y multiplicando por 100 se obtiene (84 ÷ 600) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 600 liters of milk and obtains 84 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(84 kg / 600 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T1-0040",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 700 litros de leche estandarizada y obtiene 105 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (105 kg) entre los litros procesados (700 L) y multiplicando por 100 se obtiene (105 ÷ 700) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 700 liters of milk and obtains 105 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(105 kg / 700 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T2-0041",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 800 litros de leche estandarizada y obtiene 88 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (88 kg) entre los litros procesados (800 L) y multiplicando por 100 se obtiene (88 ÷ 800) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 800 liters of milk and obtains 88 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(88 kg / 800 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T3-0042",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 900 litros de leche estandarizada y obtiene 108 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (108 kg) entre los litros procesados (900 L) y multiplicando por 100 se obtiene (108 ÷ 900) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 900 liters of milk and obtains 108 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(108 kg / 900 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T1-0043",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 400 litros de leche estandarizada y obtiene 52 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (52 kg) entre los litros procesados (400 L) y multiplicando por 100 se obtiene (52 ÷ 400) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 400 liters of milk and obtains 52 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(52 kg / 400 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T2-0044",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 500 litros de leche estandarizada y obtiene 70 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (70 kg) entre los litros procesados (500 L) y multiplicando por 100 se obtiene (70 ÷ 500) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 500 liters of milk and obtains 70 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(70 kg / 500 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T3-0045",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 600 litros de leche estandarizada y obtiene 90 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (90 kg) entre los litros procesados (600 L) y multiplicando por 100 se obtiene (90 ÷ 600) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 600 liters of milk and obtains 90 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(90 kg / 600 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T1-0046",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 700 litros de leche estandarizada y obtiene 77 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (77 kg) entre los litros procesados (700 L) y multiplicando por 100 se obtiene (77 ÷ 700) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 700 liters of milk and obtains 77 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(77 kg / 700 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T2-0047",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 800 litros de leche estandarizada y obtiene 96 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (96 kg) entre los litros procesados (800 L) y multiplicando por 100 se obtiene (96 ÷ 800) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 800 liters of milk and obtains 96 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(96 kg / 800 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T3-0048",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 900 litros de leche estandarizada y obtiene 117 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (117 kg) entre los litros procesados (900 L) y multiplicando por 100 se obtiene (117 ÷ 900) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 900 liters of milk and obtains 117 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(117 kg / 900 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T1-0049",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 400 litros de leche estandarizada y obtiene 56 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (56 kg) entre los litros procesados (400 L) y multiplicando por 100 se obtiene (56 ÷ 400) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 400 liters of milk and obtains 56 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(56 kg / 400 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T2-0050",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 500 litros de leche estandarizada y obtiene 75 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (75 kg) entre los litros procesados (500 L) y multiplicando por 100 se obtiene (75 ÷ 500) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 500 liters of milk and obtains 75 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(75 kg / 500 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T3-0051",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 600 litros de leche estandarizada y obtiene 66 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (66 kg) entre los litros procesados (600 L) y multiplicando por 100 se obtiene (66 ÷ 600) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 600 liters of milk and obtains 66 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(66 kg / 600 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T1-0052",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 700 litros de leche estandarizada y obtiene 84 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (84 kg) entre los litros procesados (700 L) y multiplicando por 100 se obtiene (84 ÷ 700) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 700 liters of milk and obtains 84 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(84 kg / 700 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T2-0053",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 800 litros de leche estandarizada y obtiene 104 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (104 kg) entre los litros procesados (800 L) y multiplicando por 100 se obtiene (104 ÷ 800) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 800 liters of milk and obtains 104 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(104 kg / 800 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T3-0054",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 900 litros de leche estandarizada y obtiene 126 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (126 kg) entre los litros procesados (900 L) y multiplicando por 100 se obtiene (126 ÷ 900) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 900 liters of milk and obtains 126 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(126 kg / 900 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T1-0055",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 400 litros de leche estandarizada y obtiene 60 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (60 kg) entre los litros procesados (400 L) y multiplicando por 100 se obtiene (60 ÷ 400) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 400 liters of milk and obtains 60 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(60 kg / 400 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T2-0056",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 500 litros de leche estandarizada y obtiene 55 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "8 kg/100 L",
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "22 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (55 kg) entre los litros procesados (500 L) y multiplicando por 100 se obtiene (55 ÷ 500) × 100 = 11 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 500 liters of milk and obtains 55 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "8 kg/100 L",
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "22 kg/100 L"
+      ],
+      "why": "(55 kg / 500 L) * 100 = 11 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U1-T3-0057",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una planta láctea procesa 600 litros de leche estandarizada y obtiene 72 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "9 kg/100 L",
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "24 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (72 kg) entre los litros procesados (600 L) y multiplicando por 100 se obtiene (72 ÷ 600) × 100 = 12 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 600 liters of milk and obtains 72 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "9 kg/100 L",
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "24 kg/100 L"
+      ],
+      "why": "(72 kg / 600 L) * 100 = 12 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U2-T1-0058",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 700 litros de leche estandarizada y obtiene 91 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "10 kg/100 L",
+      "13 kg/100 L",
+      "16 kg/100 L",
+      "26 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (91 kg) entre los litros procesados (700 L) y multiplicando por 100 se obtiene (91 ÷ 700) × 100 = 13 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 700 liters of milk and obtains 91 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "10 kg/100 L",
+        "13 kg/100 L",
+        "16 kg/100 L",
+        "26 kg/100 L"
+      ],
+      "why": "(91 kg / 700 L) * 100 = 13 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U3-T2-0059",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una planta láctea procesa 800 litros de leche estandarizada y obtiene 112 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "11 kg/100 L",
+      "14 kg/100 L",
+      "17 kg/100 L",
+      "28 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (112 kg) entre los litros procesados (800 L) y multiplicando por 100 se obtiene (112 ÷ 800) × 100 = 14 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 800 liters of milk and obtains 112 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "11 kg/100 L",
+        "14 kg/100 L",
+        "17 kg/100 L",
+        "28 kg/100 L"
+      ],
+      "why": "(112 kg / 800 L) * 100 = 14 kg/100 L."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGP-12-U4-T3-0060",
+    "materia": "Agroindustria Alimentaria Tecnología Pecuaria (1004)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Procesamiento Lácteo, Cárnico y Control Microbiológico",
+    "indicador": "Calcula rendimientos queseros, concentraciones de ácido láctico y aplica controles HACCP",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una planta láctea procesa 900 litros de leche estandarizada y obtiene 135 kg de queso fresco. Si el encargado expresa el rendimiento productivo en kilogramos de queso por cada 100 litros de leche procesada, ¿cuál rendimiento obtuvo?",
+    "options": [
+      "12 kg/100 L",
+      "15 kg/100 L",
+      "18 kg/100 L",
+      "30 kg/100 L"
+    ],
+    "answer": 1,
+    "why": "Dividiendo los kilogramos obtenidos (135 kg) entre los litros procesados (900 L) y multiplicando por 100 se obtiene (135 ÷ 900) × 100 = 15 kg/100 L (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1004 Agroindustria Pecuaria, Convocatoria 01-2026",
+    "en": {
+      "q": "A dairy plant processes 900 liters of milk and obtains 135 kg of cheese. Expressed in kg of cheese per 100 liters of milk, what is the yield?",
+      "options": [
+        "12 kg/100 L",
+        "15 kg/100 L",
+        "18 kg/100 L",
+        "30 kg/100 L"
+      ],
+      "why": "(135 kg / 900 L) * 100 = 15 kg/100 L."
+    },
+    "revisar": false
+  }
+]

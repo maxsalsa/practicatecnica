@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "AGR-12-U1-T1-0001",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 20 m³ por hectárea, mientras la extracción proyectada corresponde a 10 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (10 m³/ha) inferior al incremento anual (20 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 20 m³/ha while projected harvesting is 10 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T2-0002",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 27:1, humedad entre 55 % y 60 %, temperatura máxima de 59 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (27:1), humedad, fase termofílica (59 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 27:1 C:N ratio, 55-60% moisture, 59 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T3-0003",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T1-0004",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T2-0005",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 24 m³ por hectárea, mientras la extracción proyectada corresponde a 14 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (14 m³/ha) inferior al incremento anual (24 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 24 m³/ha while projected harvesting is 14 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T3-0006",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 31:1, humedad entre 55 % y 60 %, temperatura máxima de 63 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (31:1), humedad, fase termofílica (63 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 31:1 C:N ratio, 55-60% moisture, 63 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T1-0007",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T2-0008",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T3-0009",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 28 m³ por hectárea, mientras la extracción proyectada corresponde a 18 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (18 m³/ha) inferior al incremento anual (28 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 28 m³/ha while projected harvesting is 18 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T1-0010",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 29:1, humedad entre 55 % y 60 %, temperatura máxima de 59 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (29:1), humedad, fase termofílica (59 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 29:1 C:N ratio, 55-60% moisture, 59 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T2-0011",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T3-0012",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T1-0013",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 32 m³ por hectárea, mientras la extracción proyectada corresponde a 13 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (13 m³/ha) inferior al incremento anual (32 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 32 m³/ha while projected harvesting is 13 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T2-0014",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 27:1, humedad entre 55 % y 60 %, temperatura máxima de 63 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (27:1), humedad, fase termofílica (63 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 27:1 C:N ratio, 55-60% moisture, 63 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T3-0015",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T1-0016",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T2-0017",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 21 m³ por hectárea, mientras la extracción proyectada corresponde a 17 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (17 m³/ha) inferior al incremento anual (21 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 21 m³/ha while projected harvesting is 17 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T3-0018",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 31:1, humedad entre 55 % y 60 %, temperatura máxima de 59 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (31:1), humedad, fase termofílica (59 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 31:1 C:N ratio, 55-60% moisture, 59 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T1-0019",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T2-0020",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T3-0021",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 25 m³ por hectárea, mientras la extracción proyectada corresponde a 12 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (12 m³/ha) inferior al incremento anual (25 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 25 m³/ha while projected harvesting is 12 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T1-0022",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 29:1, humedad entre 55 % y 60 %, temperatura máxima de 63 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (29:1), humedad, fase termofílica (63 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 29:1 C:N ratio, 55-60% moisture, 63 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T2-0023",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T3-0024",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T1-0025",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 29 m³ por hectárea, mientras la extracción proyectada corresponde a 16 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (16 m³/ha) inferior al incremento anual (29 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 29 m³/ha while projected harvesting is 16 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T2-0026",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 27:1, humedad entre 55 % y 60 %, temperatura máxima de 59 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (27:1), humedad, fase termofílica (59 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 27:1 C:N ratio, 55-60% moisture, 59 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T3-0027",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T1-0028",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T2-0029",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 33 m³ por hectárea, mientras la extracción proyectada corresponde a 11 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (11 m³/ha) inferior al incremento anual (33 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 33 m³/ha while projected harvesting is 11 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T3-0030",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 31:1, humedad entre 55 % y 60 %, temperatura máxima de 63 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (31:1), humedad, fase termofílica (63 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 31:1 C:N ratio, 55-60% moisture, 63 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T1-0031",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T2-0032",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T3-0033",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 22 m³ por hectárea, mientras la extracción proyectada corresponde a 15 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (15 m³/ha) inferior al incremento anual (22 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 22 m³/ha while projected harvesting is 15 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T1-0034",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 29:1, humedad entre 55 % y 60 %, temperatura máxima de 59 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (29:1), humedad, fase termofílica (59 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 29:1 C:N ratio, 55-60% moisture, 59 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T2-0035",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T3-0036",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T1-0037",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 26 m³ por hectárea, mientras la extracción proyectada corresponde a 10 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (10 m³/ha) inferior al incremento anual (26 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 26 m³/ha while projected harvesting is 10 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T2-0038",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 27:1, humedad entre 55 % y 60 %, temperatura máxima de 63 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (27:1), humedad, fase termofílica (63 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 27:1 C:N ratio, 55-60% moisture, 63 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T3-0039",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T1-0040",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T2-0041",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 30 m³ por hectárea, mientras la extracción proyectada corresponde a 14 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (14 m³/ha) inferior al incremento anual (30 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 30 m³/ha while projected harvesting is 14 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T3-0042",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 31:1, humedad entre 55 % y 60 %, temperatura máxima de 59 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (31:1), humedad, fase termofílica (59 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 31:1 C:N ratio, 55-60% moisture, 59 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T1-0043",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T2-0044",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T3-0045",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 34 m³ por hectárea, mientras la extracción proyectada corresponde a 18 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (18 m³/ha) inferior al incremento anual (34 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 34 m³/ha while projected harvesting is 18 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T1-0046",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 29:1, humedad entre 55 % y 60 %, temperatura máxima de 63 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (29:1), humedad, fase termofílica (63 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 29:1 C:N ratio, 55-60% moisture, 63 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T2-0047",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T3-0048",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T1-0049",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 23 m³ por hectárea, mientras la extracción proyectada corresponde a 13 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (13 m³/ha) inferior al incremento anual (23 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 23 m³/ha while projected harvesting is 13 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T2-0050",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 27:1, humedad entre 55 % y 60 %, temperatura máxima de 59 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (27:1), humedad, fase termofílica (59 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 27:1 C:N ratio, 55-60% moisture, 59 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T3-0051",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T1-0052",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T2-0053",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 27 m³ por hectárea, mientras la extracción proyectada corresponde a 17 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (17 m³/ha) inferior al incremento anual (27 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 27 m³/ha while projected harvesting is 17 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T3-0054",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 31:1, humedad entre 55 % y 60 %, temperatura máxima de 63 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (31:1), humedad, fase termofílica (63 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 31:1 C:N ratio, 55-60% moisture, 63 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T1-0055",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T2-0056",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U1-T3-0057",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En la finca forestal de un Colegio Técnico Profesional se formula un plan para aprovechar árboles maderables. El inventario registra un incremento anual de 31 m³ por hectárea, mientras la extracción proyectada corresponde a 12 m³ por hectárea, conservando árboles semilleros y protegiendo las franjas cercanas a los cauces. ¿Cuál concepto se aplica en la situación descrita?",
+    "options": [
+      "Aprovechamiento forestal intensivo",
+      "Restauración ecológica pasiva",
+      "Conservación forestal ex situ",
+      "Manejo forestal sostenible"
+    ],
+    "answer": 3,
+    "why": "Al ser la tasa de extracción (12 m³/ha) inferior al incremento anual (31 m³/ha) y proteger árboles semilleros y cauces, se garantiza el Manejo forestal sostenible (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "A forest management plan records an annual growth of 31 m³/ha while projected harvesting is 12 m³/ha, preserving seed trees and riparian buffers. Which concept applies?",
+      "options": [
+        "Intensive logging",
+        "Passive ecological restoration",
+        "Ex situ forest conservation",
+        "Sustainable forest management"
+      ],
+      "why": "Harvesting below the annual growth rate while protecting seed trees ensures sustainable forest management."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U2-T1-0058",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una finca hortícola se mezclan residuos de cosecha, estiércol bovino y material seco con relación carbono-nitrógeno inicial de 29:1, humedad entre 55 % y 60 %, temperatura máxima de 59 °C y volteos periódicos para mantener la aireación. ¿Cuál explicación técnica corresponde al tratamiento aplicado?",
+    "options": [
+      "Los microorganismos aeróbicos degradan la materia orgánica y generan un material estabilizado",
+      "Los reactivos alcalinos neutralizan los compuestos orgánicos presentes en la mezcla",
+      "La presión mecánica reduce el volumen y modifica la granulometría de los residuos",
+      "La separación por densidad recupera las fracciones orgánicas de mayor tamaño"
+    ],
+    "answer": 0,
+    "why": "El control de relación C:N (29:1), humedad, fase termofílica (59 °C) y volteos periódicos corresponde al compostaje aeróbico mediado por microorganismos (opción A, índice 0).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Crop residues and manure are mixed at a 29:1 C:N ratio, 55-60% moisture, 59 °C peak temperature, and periodic turning for aeration. Which process occurs?",
+      "options": [
+        "Aerobic microorganisms degrade organic matter and produce stabilized compost",
+        "Alkaline reagents neutralize organic compounds in the mixture",
+        "Mechanical pressure reduces volume and modifies particle size",
+        "Density separation recovers larger organic fractions"
+      ],
+      "why": "Aeration via turning and thermophilic temperatures drive aerobic microbial degradation."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U3-T2-0059",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una planta agroindustrial se analiza el tratamiento de un efluente con alta turbidez y elevada carga orgánica. Etapa I: disminuyen los sólidos sedimentables; Etapa II: se reduce notablemente la turbidez mediante coagulantes; Etapa III: disminuye la DBO5 por acción microbiana. ¿Cuál secuencia de procesos explica los resultados?",
+    "options": [
+      "Biológico - físico - químico",
+      "Químico - biológico - físico",
+      "Físico - biológico - químico",
+      "Físico - químico - biológico"
+    ],
+    "answer": 3,
+    "why": "La sedimentación de sólidos es un proceso físico (Etapa I), la coagulación-floculación de turbidez es químico (Etapa II) y la reducción de DBO5 es biológico (Etapa III), correspondiendo a la opción D (índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "Wastewater treatment shows: Stage I: settleable solids decrease; Stage II: turbidity drops via coagulants; Stage III: BOD5 decreases via microorganisms. What is the process sequence?",
+      "options": [
+        "Biological - physical - chemical",
+        "Chemical - biological - physical",
+        "Physical - biological - chemical",
+        "Physical - chemical - biological"
+      ],
+      "why": "Sedimentation is physical, coagulation is chemical, and BOD5 reduction is biological."
+    },
+    "revisar": false
+  },
+  {
+    "id": "AGR-12-U4-T3-0060",
+    "materia": "Agroecología (1001)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Manejo Sostenible, Suelos y Sistemas Agroforestales",
+    "indicador": "Aplica procesos ecológicos, compostaje aeróbico, curvas de nivel y manejo forestal sostenible",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Una parcela experimental integra la siembra en callejones de árboles maderables de laurel, intercalados con surcos de maíz y el manejo de forrajes en el estrato inferior para la rotación controlada de ganado ovino. ¿A qué tipo de sistema agroforestal corresponde?",
+    "options": [
+      "Silvoapícola",
+      "Silvoagrícola",
+      "Silvopastoril",
+      "Agrosilvopastoril"
+    ],
+    "answer": 3,
+    "why": "La integración simultánea de componentes arbóreos (laurel), cultivos agrícolas (maíz) y pastoreo pecuario (ganado ovino) define un sistema Agrosilvopastoril (opción D, índice 3).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 1001 Agroecología, Convocatoria 01-2026",
+    "en": {
+      "q": "An experimental plot integrates timber trees (laurel), agricultural crops (corn), and forage for controlled sheep grazing. How is this system classified?",
+      "options": [
+        "Apiforestry",
+        "Silvoarable",
+        "Silvopastoral",
+        "Agrosilvopastoral"
+      ],
+      "why": "Combining crops (agro), trees (silvo), and livestock (pastoral) forms an agrosilvopastoral system."
+    },
+    "revisar": false
+  }
+]

@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "CCI-12-U1-T1-0001",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1000 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "500 kgf",
+      "1000 kgf",
+      "2000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1000 kgf ÷ 2 = 500 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1000 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "500 kgf",
+        "1000 kgf",
+        "2000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1000 / 2 = 500 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T2-0002",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1100 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "550 kgf",
+      "1100 kgf",
+      "2200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1100 kgf ÷ 2 = 550 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1100 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "550 kgf",
+        "1100 kgf",
+        "2200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1100 / 2 = 550 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T3-0003",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1200 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "600 kgf",
+      "1200 kgf",
+      "2400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1200 kgf ÷ 2 = 600 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1200 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "600 kgf",
+        "1200 kgf",
+        "2400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1200 / 2 = 600 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T1-0004",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1300 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "650 kgf",
+      "1300 kgf",
+      "2600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1300 kgf ÷ 2 = 650 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1300 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "650 kgf",
+        "1300 kgf",
+        "2600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1300 / 2 = 650 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T2-0005",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1400 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "700 kgf",
+      "1400 kgf",
+      "2800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1400 kgf ÷ 2 = 700 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1400 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "700 kgf",
+        "1400 kgf",
+        "2800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1400 / 2 = 700 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T3-0006",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1500 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "750 kgf",
+      "1500 kgf",
+      "3000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1500 kgf ÷ 2 = 750 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1500 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "750 kgf",
+        "1500 kgf",
+        "3000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1500 / 2 = 750 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T1-0007",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1600 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "800 kgf",
+      "1600 kgf",
+      "3200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1600 kgf ÷ 2 = 800 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1600 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "800 kgf",
+        "1600 kgf",
+        "3200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1600 / 2 = 800 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T2-0008",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1700 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "850 kgf",
+      "1700 kgf",
+      "3400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1700 kgf ÷ 2 = 850 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1700 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "850 kgf",
+        "1700 kgf",
+        "3400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1700 / 2 = 850 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T3-0009",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1800 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "900 kgf",
+      "1800 kgf",
+      "3600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1800 kgf ÷ 2 = 900 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1800 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "900 kgf",
+        "1800 kgf",
+        "3600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1800 / 2 = 900 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T1-0010",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1900 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "950 kgf",
+      "1900 kgf",
+      "3800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1900 kgf ÷ 2 = 950 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1900 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "950 kgf",
+        "1900 kgf",
+        "3800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1900 / 2 = 950 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T2-0011",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2000 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1000 kgf",
+      "2000 kgf",
+      "4000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2000 kgf ÷ 2 = 1000 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2000 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1000 kgf",
+        "2000 kgf",
+        "4000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2000 / 2 = 1000 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T3-0012",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2100 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1050 kgf",
+      "2100 kgf",
+      "4200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2100 kgf ÷ 2 = 1050 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2100 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1050 kgf",
+        "2100 kgf",
+        "4200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2100 / 2 = 1050 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T1-0013",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2200 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1100 kgf",
+      "2200 kgf",
+      "4400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2200 kgf ÷ 2 = 1100 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2200 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1100 kgf",
+        "2200 kgf",
+        "4400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2200 / 2 = 1100 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T2-0014",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2300 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1150 kgf",
+      "2300 kgf",
+      "4600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2300 kgf ÷ 2 = 1150 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2300 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1150 kgf",
+        "2300 kgf",
+        "4600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2300 / 2 = 1150 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T3-0015",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2400 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1200 kgf",
+      "2400 kgf",
+      "4800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2400 kgf ÷ 2 = 1200 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2400 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1200 kgf",
+        "2400 kgf",
+        "4800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2400 / 2 = 1200 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T1-0016",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1000 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "500 kgf",
+      "1000 kgf",
+      "2000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1000 kgf ÷ 2 = 500 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1000 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "500 kgf",
+        "1000 kgf",
+        "2000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1000 / 2 = 500 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T2-0017",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1100 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "550 kgf",
+      "1100 kgf",
+      "2200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1100 kgf ÷ 2 = 550 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1100 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "550 kgf",
+        "1100 kgf",
+        "2200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1100 / 2 = 550 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T3-0018",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1200 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "600 kgf",
+      "1200 kgf",
+      "2400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1200 kgf ÷ 2 = 600 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1200 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "600 kgf",
+        "1200 kgf",
+        "2400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1200 / 2 = 600 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T1-0019",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1300 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "650 kgf",
+      "1300 kgf",
+      "2600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1300 kgf ÷ 2 = 650 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1300 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "650 kgf",
+        "1300 kgf",
+        "2600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1300 / 2 = 650 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T2-0020",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1400 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "700 kgf",
+      "1400 kgf",
+      "2800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1400 kgf ÷ 2 = 700 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1400 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "700 kgf",
+        "1400 kgf",
+        "2800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1400 / 2 = 700 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T3-0021",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1500 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "750 kgf",
+      "1500 kgf",
+      "3000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1500 kgf ÷ 2 = 750 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1500 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "750 kgf",
+        "1500 kgf",
+        "3000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1500 / 2 = 750 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T1-0022",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1600 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "800 kgf",
+      "1600 kgf",
+      "3200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1600 kgf ÷ 2 = 800 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1600 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "800 kgf",
+        "1600 kgf",
+        "3200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1600 / 2 = 800 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T2-0023",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1700 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "850 kgf",
+      "1700 kgf",
+      "3400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1700 kgf ÷ 2 = 850 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1700 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "850 kgf",
+        "1700 kgf",
+        "3400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1700 / 2 = 850 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T3-0024",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1800 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "900 kgf",
+      "1800 kgf",
+      "3600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1800 kgf ÷ 2 = 900 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1800 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "900 kgf",
+        "1800 kgf",
+        "3600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1800 / 2 = 900 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T1-0025",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1900 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "950 kgf",
+      "1900 kgf",
+      "3800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1900 kgf ÷ 2 = 950 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1900 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "950 kgf",
+        "1900 kgf",
+        "3800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1900 / 2 = 950 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T2-0026",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2000 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1000 kgf",
+      "2000 kgf",
+      "4000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2000 kgf ÷ 2 = 1000 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2000 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1000 kgf",
+        "2000 kgf",
+        "4000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2000 / 2 = 1000 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T3-0027",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2100 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1050 kgf",
+      "2100 kgf",
+      "4200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2100 kgf ÷ 2 = 1050 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2100 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1050 kgf",
+        "2100 kgf",
+        "4200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2100 / 2 = 1050 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T1-0028",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2200 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1100 kgf",
+      "2200 kgf",
+      "4400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2200 kgf ÷ 2 = 1100 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2200 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1100 kgf",
+        "2200 kgf",
+        "4400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2200 / 2 = 1100 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T2-0029",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2300 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1150 kgf",
+      "2300 kgf",
+      "4600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2300 kgf ÷ 2 = 1150 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2300 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1150 kgf",
+        "2300 kgf",
+        "4600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2300 / 2 = 1150 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T3-0030",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2400 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1200 kgf",
+      "2400 kgf",
+      "4800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2400 kgf ÷ 2 = 1200 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2400 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1200 kgf",
+        "2400 kgf",
+        "4800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2400 / 2 = 1200 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T1-0031",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1000 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "500 kgf",
+      "1000 kgf",
+      "2000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1000 kgf ÷ 2 = 500 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1000 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "500 kgf",
+        "1000 kgf",
+        "2000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1000 / 2 = 500 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T2-0032",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1100 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "550 kgf",
+      "1100 kgf",
+      "2200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1100 kgf ÷ 2 = 550 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1100 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "550 kgf",
+        "1100 kgf",
+        "2200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1100 / 2 = 550 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T3-0033",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1200 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "600 kgf",
+      "1200 kgf",
+      "2400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1200 kgf ÷ 2 = 600 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1200 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "600 kgf",
+        "1200 kgf",
+        "2400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1200 / 2 = 600 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T1-0034",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1300 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "650 kgf",
+      "1300 kgf",
+      "2600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1300 kgf ÷ 2 = 650 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1300 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "650 kgf",
+        "1300 kgf",
+        "2600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1300 / 2 = 650 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T2-0035",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1400 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "700 kgf",
+      "1400 kgf",
+      "2800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1400 kgf ÷ 2 = 700 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1400 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "700 kgf",
+        "1400 kgf",
+        "2800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1400 / 2 = 700 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T3-0036",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1500 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "750 kgf",
+      "1500 kgf",
+      "3000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1500 kgf ÷ 2 = 750 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1500 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "750 kgf",
+        "1500 kgf",
+        "3000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1500 / 2 = 750 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T1-0037",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1600 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "800 kgf",
+      "1600 kgf",
+      "3200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1600 kgf ÷ 2 = 800 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1600 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "800 kgf",
+        "1600 kgf",
+        "3200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1600 / 2 = 800 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T2-0038",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1700 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "850 kgf",
+      "1700 kgf",
+      "3400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1700 kgf ÷ 2 = 850 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1700 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "850 kgf",
+        "1700 kgf",
+        "3400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1700 / 2 = 850 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T3-0039",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1800 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "900 kgf",
+      "1800 kgf",
+      "3600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1800 kgf ÷ 2 = 900 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1800 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "900 kgf",
+        "1800 kgf",
+        "3600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1800 / 2 = 900 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T1-0040",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1900 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "950 kgf",
+      "1900 kgf",
+      "3800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1900 kgf ÷ 2 = 950 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1900 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "950 kgf",
+        "1900 kgf",
+        "3800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1900 / 2 = 950 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T2-0041",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2000 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1000 kgf",
+      "2000 kgf",
+      "4000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2000 kgf ÷ 2 = 1000 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2000 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1000 kgf",
+        "2000 kgf",
+        "4000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2000 / 2 = 1000 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T3-0042",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2100 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1050 kgf",
+      "2100 kgf",
+      "4200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2100 kgf ÷ 2 = 1050 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2100 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1050 kgf",
+        "2100 kgf",
+        "4200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2100 / 2 = 1050 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T1-0043",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2200 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1100 kgf",
+      "2200 kgf",
+      "4400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2200 kgf ÷ 2 = 1100 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2200 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1100 kgf",
+        "2200 kgf",
+        "4400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2200 / 2 = 1100 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T2-0044",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2300 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1150 kgf",
+      "2300 kgf",
+      "4600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2300 kgf ÷ 2 = 1150 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2300 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1150 kgf",
+        "2300 kgf",
+        "4600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2300 / 2 = 1150 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T3-0045",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2400 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1200 kgf",
+      "2400 kgf",
+      "4800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2400 kgf ÷ 2 = 1200 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2400 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1200 kgf",
+        "2400 kgf",
+        "4800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2400 / 2 = 1200 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T1-0046",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1000 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "500 kgf",
+      "1000 kgf",
+      "2000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1000 kgf ÷ 2 = 500 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1000 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "500 kgf",
+        "1000 kgf",
+        "2000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1000 / 2 = 500 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T2-0047",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1100 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "550 kgf",
+      "1100 kgf",
+      "2200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1100 kgf ÷ 2 = 550 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1100 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "550 kgf",
+        "1100 kgf",
+        "2200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1100 / 2 = 550 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T3-0048",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1200 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "600 kgf",
+      "1200 kgf",
+      "2400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1200 kgf ÷ 2 = 600 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1200 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "600 kgf",
+        "1200 kgf",
+        "2400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1200 / 2 = 600 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T1-0049",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1300 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "650 kgf",
+      "1300 kgf",
+      "2600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1300 kgf ÷ 2 = 650 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1300 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "650 kgf",
+        "1300 kgf",
+        "2600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1300 / 2 = 650 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T2-0050",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1400 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "700 kgf",
+      "1400 kgf",
+      "2800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1400 kgf ÷ 2 = 700 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1400 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "700 kgf",
+        "1400 kgf",
+        "2800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1400 / 2 = 700 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T3-0051",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1500 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "750 kgf",
+      "1500 kgf",
+      "3000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1500 kgf ÷ 2 = 750 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1500 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "750 kgf",
+        "1500 kgf",
+        "3000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1500 / 2 = 750 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T1-0052",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1600 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "800 kgf",
+      "1600 kgf",
+      "3200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1600 kgf ÷ 2 = 800 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1600 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "800 kgf",
+        "1600 kgf",
+        "3200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1600 / 2 = 800 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T2-0053",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1700 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "850 kgf",
+      "1700 kgf",
+      "3400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1700 kgf ÷ 2 = 850 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1700 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "850 kgf",
+        "1700 kgf",
+        "3400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1700 / 2 = 850 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T3-0054",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1800 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "900 kgf",
+      "1800 kgf",
+      "3600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1800 kgf ÷ 2 = 900 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1800 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "900 kgf",
+        "1800 kgf",
+        "3600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1800 / 2 = 900 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T1-0055",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 1900 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "950 kgf",
+      "1900 kgf",
+      "3800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 1900 kgf ÷ 2 = 950 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 1900 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "950 kgf",
+        "1900 kgf",
+        "3800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 1900 / 2 = 950 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T2-0056",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2000 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1000 kgf",
+      "2000 kgf",
+      "4000 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2000 kgf ÷ 2 = 1000 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2000 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1000 kgf",
+        "2000 kgf",
+        "4000 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2000 / 2 = 1000 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U1-T3-0057",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2100 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1050 kgf",
+      "2100 kgf",
+      "4200 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2100 kgf ÷ 2 = 1050 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2100 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1050 kgf",
+        "2100 kgf",
+        "4200 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2100 / 2 = 1050 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U2-T1-0058",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2200 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1100 kgf",
+      "2200 kgf",
+      "4400 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2200 kgf ÷ 2 = 1100 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2200 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1100 kgf",
+        "2200 kgf",
+        "4400 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2200 / 2 = 1100 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U3-T2-0059",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2300 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1150 kgf",
+      "2300 kgf",
+      "4600 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2300 kgf ÷ 2 = 1150 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2300 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1150 kgf",
+        "2300 kgf",
+        "4600 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2300 / 2 = 1150 kgf."
+    },
+    "revisar": false
+  },
+  {
+    "id": "CCI-12-U4-T3-0060",
+    "materia": "Construcción Civil (2003)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Estructuras, Topografía, Maquinaria y Presupuestos",
+    "indicador": "Calcula reacciones en vigas, nivelación topográfica, depreciación y ruta crítica",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "Se construye una viga horizontal simétrica de 6 m de longitud apoyada simplemente en sus extremos A y B, sometida a una carga puntual en su centro geométrico de 2400 kgf. Para que el sistema permanezca en equilibrio estático, ¿cuál es la magnitud de la reacción vertical Ra?",
+    "options": [
+      "0 kgf",
+      "1200 kgf",
+      "2400 kgf",
+      "4800 kgf"
+    ],
+    "answer": 1,
+    "why": "Por simetría y equilibrio estático vertical (ΣFy = 0), cada apoyo soporta la mitad de la carga central: 2400 kgf ÷ 2 = 1200 kgf (opción B, índice 1).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2003 Construcción Civil, Convocatoria 01-2026",
+    "en": {
+      "q": "A 6 m simply supported symmetric beam carries a central point load of 2400 kgf. What is the vertical reaction Ra required for static equilibrium?",
+      "options": [
+        "0 kgf",
+        "1200 kgf",
+        "2400 kgf",
+        "4800 kgf"
+      ],
+      "why": "By symmetry, Ra = Rb = 2400 / 2 = 1200 kgf."
+    },
+    "revisar": false
+  }
+]

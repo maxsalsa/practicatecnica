@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "DTE-12-U1-T1-0001",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T2-0002",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T3-0003",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T1-0004",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T2-0005",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T3-0006",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T1-0007",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T2-0008",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T3-0009",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T1-0010",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T2-0011",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T3-0012",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T1-0013",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T2-0014",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T3-0015",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T1-0016",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T2-0017",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T3-0018",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T1-0019",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T2-0020",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T3-0021",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T1-0022",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T2-0023",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T3-0024",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T1-0025",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T2-0026",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T3-0027",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T1-0028",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T2-0029",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T3-0030",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T1-0031",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T2-0032",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T3-0033",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T1-0034",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T2-0035",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T3-0036",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T1-0037",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T2-0038",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T3-0039",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T1-0040",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T2-0041",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T3-0042",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T1-0043",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T2-0044",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T3-0045",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T1-0046",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T2-0047",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T3-0048",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T1-0049",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T2-0050",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T3-0051",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T1-0052",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T2-0053",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T3-0054",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T1-0055",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T2-0056",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.72 m mediante 16 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.72 m) entre el número de contrahuellas (16), se obtiene 2.72 ÷ 16 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.72 m using 16 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.72 m by 16 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U1-T3-0057",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 1,
+    "tipo": "Fácil/DUA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 2.89 m mediante 17 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (2.89 m) entre el número de contrahuellas (17), se obtiene 2.89 ÷ 17 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 2.89 m using 17 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 2.89 m by 17 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U2-T1-0058",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.06 m mediante 18 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.06 m) entre el número de contrahuellas (18), se obtiene 3.06 ÷ 18 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.06 m using 18 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.06 m by 18 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U3-T2-0059",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 2,
+    "tipo": "Media",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.23 m mediante 19 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.23 m) entre el número de contrahuellas (19), se obtiene 3.23 ÷ 19 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.23 m using 19 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.23 m by 19 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  },
+  {
+    "id": "DTE-12-U4-T3-0060",
+    "materia": "Dibujo Técnico (2005)",
+    "nivel": "12.º",
+    "modalidad": "CTP",
+    "unidad": "Escalas, Geometría Descriptiva, Tolerancias y CAD",
+    "indicador": "Calcula escalas normalizadas, contrahuellas, tolerancias y vistas ortogonales",
+    "dificultad": 3,
+    "tipo": "Alta/PISA",
+    "q": "En una unidad productiva se diseña una escalera para salvar una altura total de entrepiso de 3.40 m mediante 20 contrahuellas exactamente iguales. ¿Cuál altura corresponde a cada contrahuella?",
+    "options": [
+      "0,15 m",
+      "0,16 m",
+      "0,17 m",
+      "0,19 m"
+    ],
+    "answer": 2,
+    "why": "Al dividir la altura total a salvar (3.40 m) entre el número de contrahuellas (20), se obtiene 3.40 ÷ 20 = 0,17 m por contrahuella (opción C, índice 2).",
+    "source": "Prueba Nacional Estandarizada Especialidades Técnicas 2005 Dibujo Técnico, Convocatoria 01-2026",
+    "en": {
+      "q": "A staircase is designed to span a total floor-to-floor height of 3.40 m using 20 equal risers. What is the height of each riser?",
+      "options": [
+        "0.15 m",
+        "0.16 m",
+        "0.17 m",
+        "0.19 m"
+      ],
+      "why": "Dividing 3.40 m by 20 risers gives 0.17 m per riser."
+    },
+    "revisar": false
+  }
+]
