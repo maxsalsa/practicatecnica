@@ -748,3 +748,8 @@ export function generarBancoEspecialidad(especialidadId = "TEC-3016", cantidad =
   }
   return lista;
 }
+// Alias de compatibilidad total para que ningún componente falle jamás al importar
+export function generarLoteMilVariantes(especialidadId = "TEC-3016", cantidad = 60, seed = 2026, dificultad = "TODAS") {
+  return generarBancoEspecialidad(especialidadId, cantidad, seed, dificultad);
+}
+export const ESPECIALIDADES_OFICIALES_MEP = CATALOGO_MATERIAS_Y_ESPECIALIDADES;
