@@ -3,8 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/legal")({staticData:{sitemap:true},
   head: () => ({
-    meta: [
-      { title: "Términos, privacidad y aviso legal · pracTICAtecnica.com" },
+    meta { title: "Términos, privacidad y aviso legal · pracTICAtecnica.com" },
       { name: "description", content: "Términos de uso, política de privacidad (Ley 8968), pagos y aviso legal de pracTICAtecnica.com." },
       { property: "og:title", content: "Términos y privacidad · pracTICAtecnica.com" },
       { property: "og:description", content: "Condiciones de uso, datos personales y pagos SINPE." },
@@ -12,12 +11,12 @@ export const Route = createFileRoute("/legal")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: Legal,
+  component,
 });
 
-const sections: [string, string[]][] = [
+const sections, string[]][] = [
   ["1. Aviso legal", [
-    "pracTICAtecnica.com es una plataforma de preparación independiente desarrollada por GICM Desarrollo de Sistemas Digitales y Constructivos ICM. Responsable: Max Salazar Sánchez, contacto +506 6090 6359.",
+    "pracTICAtecnica.com es una plataforma de preparación independiente desarrollada por GICM Desarrollo de Sistemas Digitales y Constructivos ICM. Responsable Sánchez, contacto +506 6090 6359.",
     "No tiene afiliación oficial con el MEP, el MOPT, COSEVI ni ninguna universidad. Los nombres de pruebas se usan solo como referencia. Los resultados de práctica no sustituyen evaluaciones oficiales.",
   ]],
   ["2. Términos de uso", [
@@ -27,11 +26,11 @@ const sections: [string, string[]][] = [
     "Podemos suspender cuentas que hagan uso abusivo o fraudulento del servicio.",
   ]],
   ["3. Planes y pagos", [
-    "Prueba gratis: toda cuenta nueva tiene 13 días naturales de acceso completo sin costo y sin datos de pago. Al terminar, la cuenta conserva el Inicio y la Biblioteca; para practicar, hacer simulacros y competir en ligas debe suscribirse.",
+    "Prueba gratis 13 días naturales de acceso completo sin costo y sin datos de pago. Al terminar, la cuenta conserva el Inicio y la Biblioteca; para practicar, hacer simulacros y competir en ligas debe suscribirse.",
     "Planes anuales vigentes por 12 meses desde la activación: Estudiantes ₡2.500; Estudiantes de colegio con plan institucional vigente y matrícula verificada ₡1.000; Público General y Docentes ₡3.500; Institución educativa ₡10.000. El plan institucional cubre al personal verificado de esa institución y no incluye el plan de cada estudiante.",
     "SINPE Móvil requiere revisión administrativa. Los cobros reales PayPal y tarjeta están bloqueados hasta completar las pruebas y verificaciones necesarias; Visa, Stripe y Google Pay no se presentan como habilitados. Cuando se habilite un pago, revise antes de aprobar el monto, moneda, conversión y comisiones mostrados. No guardamos números de tarjeta.",
     "Pago por SINPE Móvil al 6090 6359 (Max Salazar Sánchez, Banco Popular). Registrar un comprobante no activa el plan: administración debe confirmar la transferencia real antes de habilitar los 12 meses de acceso.",
-    "Reembolsos: puede solicitarlos por WhatsApp dentro de los 14 días naturales siguientes al pago. Las suscripciones anteriores gestionadas por Paddle conservan sus condiciones de renovación y cancelación; no se trasladan automáticamente a PayPal directo.",
+    "Reembolsos 14 días naturales siguientes al pago. Las suscripciones anteriores gestionadas por Paddle conservan sus condiciones de renovación y cancelación; no se trasladan automáticamente a PayPal directo.",
     "El comprobante SINPE no es una factura electrónica de Hacienda.",
     "Para pedidos efectivamente procesados por Paddle, Paddle.com actúa como Merchant of Record (revendedor), gestionando cobro, impuestos y facturación, y aplican sus condiciones del comprador: https://www.paddle.com/legal/checkout-buyer-terms. Esta referencia no significa que el cobro esté habilitado. Cambiar de proveedor no migra automáticamente suscripciones existentes.",
     "Los pagos anuales SINPE y PayPal directo no autorizan por sí solos renovaciones automáticas. Para una suscripción recurrente anterior, revise las condiciones del proveedor y solicite asistencia para cancelarla; solicitar cancelación no demuestra que ya se haya completado ni equivale a un reembolso.",
@@ -46,19 +45,19 @@ const sections: [string, string[]][] = [
   ["Accesibilidad, inclusión y DUA", [
     "El compromiso de calidad es aplicar Diseño Universal para el Aprendizaje a prácticas, trabajos, preguntas e ítems: instrucciones claras, apoyos pertinentes y alternativas de representación y respuesta acordes al objetivo evaluado.",
     "Se procuran contextos diversos, trato respetuoso y neutral, sin estereotipos ni discriminación. Los apoyos no deben revelar respuestas de simulacros ni cambiar automáticamente sus tiempos, intentos o criterios de certificación.",
-    "La revisión es progresiva: no afirmamos cumplimiento integral de accesibilidad ni certificación WCAG de todo el catálogo. Puede solicitar ayuda o comunicar barreras por WhatsApp al +506 60906359 o a maxi.salsa@gmail.com.",
+    "La revisión es progresiva certificación WCAG de todo el catálogo. Puede solicitar ayuda o comunicar barreras por WhatsApp al +506 60906359 o a maxi.salsa@gmail.com.",
   ]],
   ["4. Privacidad (Ley 8968)", [
-    "Responsable del tratamiento: GICM Desarrollo de Sistemas Digitales y Constructivos ICM, que decide la finalidad y los medios del tratamiento de sus datos.",
-    "Datos que recopilamos: nombre, correo, nivel académico, resultados de práctica, visitas y actividad, solicitudes de soporte y, al pagar, teléfono y número de comprobante. El carné o libro de comunicación es opcional y privado; evite incluir datos de terceros innecesarios.",
-    "Finalidad: brindar el servicio, guardar su avance, permitir que docentes autorizados vean el progreso de su grupo y verificar pagos. No vendemos sus datos.",
+    "Responsable del tratamiento, que decide la finalidad y los medios del tratamiento de sus datos.",
+    "Datos que recopilamos, correo, nivel académico, resultados de práctica, visitas y actividad, solicitudes de soporte y, al pagar, teléfono y número de comprobante. El carné o libro de comunicación es opcional y privado; evite incluir datos de terceros innecesarios.",
+    "Finalidad, guardar su avance, permitir que docentes autorizados vean el progreso de su grupo y verificar pagos. No vendemos sus datos.",
     "Base del tratamiento: prestación del servicio solicitado, cumplimiento de obligaciones legales sobre pagos y consentimiento para documentos opcionales. Los menores de edad deben usar el sitio con autorización de su madre, padre o encargado.",
     "Personas menores de edad (protección reforzada): solo pedimos los datos mínimos para estudiar; no hay perfiles públicos ni chat entre estudiantes. En los canales institucionales el estudiantado solo lee los avisos de su sección. Las familias conversan únicamente con el personal de la institución, los insultos se bloquean y las fotos o documentos que envían quedan en revisión hasta que la dirección o la persona guía los aprueben.",
-    "Comunicación institucional: cada institución afiliada decide quién integra su personal, sus secciones y las familias vinculadas, y GICM trata esos datos por cuenta de ella. Avisos, permisos y mensajes quedan registrados con fecha y autor como respaldo; la moderación puede ocultar mensajes sin borrarlos del registro. Antes de subirse, las fotos se procesan en su teléfono para quitar datos ocultos como la ubicación.",
-    "Destinatarios: GICM y administradores autorizados; docentes únicamente respecto de su grupo; proveedores de alojamiento, autenticación, almacenamiento y entrega de correo necesarios para operar el servicio. PayPal procesa los pagos directos y los datos necesarios para cobro y prevención de fraude. Paddle.com actúa como Merchant of Record (revendedor) para la venta, gestión de suscripciones, cobros, impuestos y facturación de los pedidos procesados por Paddle. También podemos compartir datos con asesores profesionales (legales o contables) y con autoridades cuando la ley lo exija. No guardamos números de tarjeta.",
+    "Comunicación institucional institución afiliada decide quién integra su personal, sus secciones y las familias vinculadas, y GICM trata esos datos por cuenta de ella. Avisos, permisos y mensajes quedan registrados con fecha y autor como respaldo; la moderación puede ocultar mensajes sin borrarlos del registro. Antes de subirse, las fotos se procesan en su teléfono para quitar datos ocultos como la ubicación.",
+    "Destinatarios autorizados; docentes únicamente respecto de su grupo; proveedores de alojamiento, autenticación, almacenamiento y entrega de correo necesarios para operar el servicio. PayPal procesa los pagos directos y los datos necesarios para cobro y prevención de fraude. Paddle.com actúa como Merchant of Record (revendedor) para la venta, gestión de suscripciones, cobros, impuestos y facturación de los pedidos procesados por Paddle. También podemos compartir datos con asesores profesionales (legales o contables) y con autoridades cuando la ley lo exija. No guardamos números de tarjeta.",
     "Conservación: los datos de perfil y avance se mantienen mientras la cuenta esté vigente. Puede solicitar eliminación; los documentos opcionales se conservan hasta su eliminación o cierre de la cuenta. Registros de pago y auditoría se conservan únicamente durante los plazos legales aplicables o para resolver reclamaciones. Las copias de respaldo pueden tardar en reflejar una eliminación.",
-    "Medidas de seguridad: comunicaciones cifradas por HTTPS, acceso autenticado y restringido por rol, separación de datos por usuario, documentos en almacenamiento privado con enlaces temporales, autorización del servidor para operaciones administrativas y registro de cambios de estado. Ningún sistema garantiza seguridad absoluta; comunique incidentes al contacto indicado.",
-    "Cookies: solo usamos almacenamiento esencial del navegador para mantener la sesión, preferencias de tema e idioma y el avance guardado; no usamos cookies publicitarias. Puede borrarlo desde la configuración de su navegador.",
+    "Medidas de seguridad, acceso autenticado y restringido por rol, separación de datos por usuario, documentos en almacenamiento privado con enlaces temporales, autorización del servidor para operaciones administrativas y registro de cambios de estado. Ningún sistema garantiza seguridad absoluta; comunique incidentes al contacto indicado.",
+    "Cookies sesión, preferencias de tema e idioma y el avance guardado; no usamos cookies publicitarias. Puede borrarlo desde la configuración de su navegador.",
     "Usted puede pedir acceso, rectificación, cancelación u oposición sobre sus datos (derechos ARCO) por WhatsApp al +506 6090 6359 o al correo maxi.salsa@gmail.com; responderemos dentro de los plazos de la Ley 8968. Si considera que sus derechos no fueron atendidos, puede acudir a la Agencia de Protección de Datos de los Habitantes (PRODHAB).",
   ]],
   ["5. Cambios", ["Podemos actualizar estas condiciones; la versión vigente es siempre la publicada en esta página. Última actualización: noviembre de 2026."]],

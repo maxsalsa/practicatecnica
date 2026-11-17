@@ -21,7 +21,7 @@ import { LogoUploader } from '@/components/institution/LogoUploader';
 import { EnrollmentReview } from '@/components/institution/EnrollmentReview';
 import { DocumentsPanel } from '@/components/institution/DocumentsPanel';
 import { FollowUpPanel } from '@/components/institution/FollowUpPanel';
-import { ROLE_LABELS, canLeadInstitution, type InstitutionRole, type InstitutionKind } from '@/lib/institutions';
+import { ROLE_LABELS, canLeadInstitution } from '@/lib/institutions';
 import { PublicationsPanel } from '@/components/institution/PublicationsPanel';
 import { EditorialPanel } from '@/components/institution/EditorialPanel';
 import { InstitutionAnalytics } from '@/components/institution/InstitutionAnalytics';
@@ -44,15 +44,14 @@ import { institutionPreviewTabs } from '@/lib/institution-menu';
 import { PreviewTabs } from '@/components/institution/PreviewTabs';
 
 export const Route = createFileRoute('/institucion')({
-  validateSearch: (search): { vista?: string; centro?:string; seccion?:string } => ({
+  validateSearch: (search) => ({
     ...(typeof search['vista'] === 'string' && /^[a-z-]{2,30}$/.test(search['vista']) ? { vista: search['vista'] } : {}),
     ...(typeof search['centro']==='string'&&/^[0-9a-f-]{36}$/.test(search['centro'])?{centro:search['centro']}:{}),
     ...(typeof search['seccion']==='string'&&search['seccion'].length<=120?{seccion:search['seccion']}:{}),
   }),
-  staticData: { sitemap: false },
+  staticData: { sitemap },
   head: () => ({
-    meta: [
-      { title: 'Mi institución · avisos y permisos · pracTICAtecnica.com' },
+    meta { title: 'Mi institución · avisos y permisos · pracTICAtecnica.com' },
       { name: 'description', content: 'Avisos, agenda, canales con familias y profesor guía, permisos desde el teléfono con QR verificable y administración de colegios afiliados.' },
       { name: 'robots', content: 'noindex' },
       { property: 'og:title', content: 'Mi institución · pracTICAtecnica.com' },
@@ -61,7 +60,7 @@ export const Route = createFileRoute('/institucion')({
       { name: 'twitter:card', content: 'summary' },
     ],
   }),
-  component: InstitutionPage,
+  component,
 });
 
 
@@ -71,7 +70,7 @@ function InstitutionPage() {
   const { user, ready } = useAccount();
   const flags = useQuery({
     queryKey: ['institution-flags', user?.id], enabled: !!user,
-    queryFn: async () => {
+    queryFn () => {
       if(!user) throw new Error('Ingrese primero.');
       const [admin, approver] = await Promise.all([supabase.rpc('has_role', { _user_id: user.id, _role: 'admin' }), supabase.rpc('can_review_any_permissions')]);
       if (admin.error || approver.error) throw new Error('No se pudieron verificar sus permisos.');
@@ -80,7 +79,7 @@ function InstitutionPage() {
   });
   const mine = useQuery({
     queryKey: ['my-institutions', user?.id], enabled: !!user,
-    queryFn: async () => {
+    queryFn () => {
       const { data, error } = await supabase.rpc('my_institutions');
       if (error) throw new Error('No se pudo consultar su institución.');
       return data;
@@ -88,33 +87,33 @@ function InstitutionPage() {
   });
   const all = useQuery({
     queryKey: ['admin-institutions'], enabled: flags.data?.admin === true,
-    queryFn: async () => {
+    queryFn () => {
       const { data, error } = await supabase.rpc('admin_institutions');
       if (error) throw new Error('No se pudieron cargar las instituciones.');
       return data;
     },
   });
   const options = useMemo<Option[]>(() => {
-    const own = (mine.data ?? []).map(m => ({ id: m.id, name: m.name, logo_path: m.logo_path, is_test: m.is_test, kind: m.kind, paid_until: m.paid_until, role: m.member_role as InstitutionRole }));
+    const own = (mine.data ?? []).map(m => ({ id: m.id, name: m.name, logo_path: m.logo_path, is_test: m.is_test, kind: m.kind, paid_until: m.paid_until, role: m.member_role }));
     if (!flags.data?.admin) return own;
-    return (all.data ?? []).map(i => own.find(o => o.id === i.id) ?? { id: i.id, name: i.name, logo_path: i.logo_path, is_test: i.is_test, kind: i.kind, paid_until: i.paid_until, role: 'admin' as const });
+    return (all.data ?? []).map(i => own.find(o => o.id === i.id) ?? { id: i.id, name: i.name, logo_path: i.logo_path, is_test: i.is_test, kind: i.kind, paid_until: i.paid_until, role: 'admin' });
   }, [mine.data, all.data, flags.data?.admin]);
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedId, setSelectedId] = useState(null);
   const navigate = Route.useNavigate();
   const activeTab = vista ?? 'avisos';
-  const setActiveTab = (t: string) => { if (t !== activeTab) void navigate({ search: (p: { vista?: string }) => ({ ...p, vista: t }) }); };
+  const setActiveTab = (t) => { if (t !== activeTab) void navigate({ search: (p) => ({ ...p, vista }) }); };
   const [sectionSearch, setSectionSearch] = useState('');
   useEffect(() => { if(centro&&options.some(o=>o.id===centro)){setSelectedId(centro);return;} if (!selectedId && options[0]) setSelectedId(options[0].id); }, [options, selectedId,centro]);
   const current = options.find(o => o.id === selectedId) ?? null;
   const preview = useMenuPreview(user?.id, flags.data?.admin === true);
   const allowedTabs = institutionPreviewTabs(preview.role);
-  const effectiveRole: InstitutionRole | 'admin' | null = current ? (flags.data?.admin && current.role !== 'direccion' && current.role !== 'administrativo' ? 'admin' : current.role) : null;
+  const effectiveRole 'admin' | null = current ? (flags.data?.admin && current.role !== 'direccion' && current.role !== 'administrativo' ? 'admin' : current.role) : null;
   const memberRole = current && current.role !== 'admin' ? current.role : null;
   const leader = canLeadInstitution(current?.role) || flags.data?.admin === true;
   const manager = !!current && (current.role === 'admin' || current.role === 'direccion' || current.role === 'administrativo' || flags.data?.admin === true);
   const guide = useQuery({
     queryKey: ['is-guide', current?.id, user?.id], enabled: !!current && !!user && !manager && current.role !== 'estudiante' && current.role !== 'encargado',
-    queryFn: async () => { if(!current||!user)return false; const { count } = await supabase.from('institution_sections').select('id', { count: 'exact', head: true }).eq('institution_id', current.id).eq('guide_id', user.id); return (count ?? 0) > 0; },
+    queryFn () => { if(!current||!user)return false; const { count } = await supabase.from('institution_sections').select('id', { count: 'exact', head }).eq('institution_id', current.id).eq('guide_id', user.id); return (count ?? 0) > 0; },
   });
 
   if (!ready || (user && (flags.isPending || mine.isPending || (flags.data?.admin && all.isPending)))) return <main className="min-h-screen bg-hero"><SiteHeader /><p role="status" className="p-8 text-center">Cargando su institución…</p></main>;
@@ -227,7 +226,7 @@ function InstitutionPage() {
         {current && canReadStudentRecords(current.role) && <TabsContent value="notas-ordenes"><SignedDocumentsPanel key={current.id} institutionId={current.id} name={current.name} logoPath={current.logo_path} /></TabsContent>}
         {current && effectiveRole && <TabsContent value="avisos" className="mt-4"><AnnouncementsPanel key={current.id} institutionId={current.id} role={effectiveRole} /></TabsContent>}
         {current && <TabsContent value="agenda" className="mt-4"><AgendaPanel key={current.id} institutionId={current.id} institutionName={current.name} reviewer={flags.data?.approver === true} /></TabsContent>}
-        {current && memberRole !== 'encargado' && memberRole !== 'estudiante' && <TabsContent value="horarios" className="mt-4"><SchedulePanel key={current.id} institutionId={current.id} kind={(current.kind ?? 'ctp') as InstitutionKind} canEdit={manager || leader} /></TabsContent>}
+        {current && memberRole !== 'encargado' && memberRole !== 'estudiante' && <TabsContent value="horarios" className="mt-4"><SchedulePanel key={current.id} institutionId={current.id} kind={(current.kind ?? 'ctp')} canEdit={manager || leader} /></TabsContent>}
         {current && <TabsContent value="canales" className="mt-4"><ChannelsPanel key={current.id} institutionId={current.id} role={current.role} /></TabsContent>}
         {current && (manager || guide.data || current.role==='encargado')&&<TabsContent value="resultados"><FollowUpPanel key={`results-${current.id}`} institutionId={current.id} role={current.role} manager={manager}/></TabsContent>}
         {current && (manager || guide.data || current.role === 'encargado') && <TabsContent value="seguimiento" className="mt-4"><FollowUpPanel key={current.id} institutionId={current.id} role={current.role} manager={manager} /></TabsContent>}
@@ -241,7 +240,7 @@ function InstitutionPage() {
   </main>;
 }
 
-function ChannelsTrigger({ institutionId }: { institutionId: string }) {
+function ChannelsTrigger({ institutionId }: { institutionId }) {
   const list = useChannelList(institutionId);
   const unread = (list.data ?? []).reduce((n, r) => n + Number(r.unread ?? 0), 0);
   return <TabsTrigger value="canales">💬 Canales{unread > 0 && <span className="ml-1 rounded-full bg-accent px-1.5 text-xs font-black text-accent-foreground" aria-label={`${unread} mensajes nuevos`}>{unread}</span>}</TabsTrigger>;

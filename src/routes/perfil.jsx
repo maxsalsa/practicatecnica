@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { defaultProfile, loadProfile, saveProfile, type Profile } from "@/lib/profile";
+import { defaultProfile, loadProfile, saveProfile } from "@/lib/profile";
 import { decks } from "@/lib/questions";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useAccount } from "@/components/AccountProvider";
@@ -13,8 +13,7 @@ import {TopicPoints} from '@/components/TopicPoints';
 
 export const Route = createFileRoute("/perfil")({staticData:{sitemap:false},
   head: () => ({
-    meta: [
-      { title: "Mi perfil · pracTICAtecnica.com" },
+    meta { title: "Mi perfil · pracTICAtecnica.com" },
       {
         name: "description",
         content: "Personalice su nivel, su meta de examen y su meta diaria de práctica.",
@@ -25,7 +24,7 @@ export const Route = createFileRoute("/perfil")({staticData:{sitemap:false},
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: Perfil,
+  component,
 });
 
 const avatars = ["🦉", "🚀", "🐆", "🌋", "🦜", "🐢", "⚡", "🎓"];
@@ -42,7 +41,7 @@ const levels = [
 function Perfil() {
   const { user } = useAccount();
   const [error, setError] = useState("");
-  const [p, setP] = useState<Profile>(defaultProfile);
+  const [p, setP] = useState(defaultProfile);
   const [saved, setSaved] = useState(false);
   useEffect(() => {
     let active = true;
@@ -74,7 +73,7 @@ function Perfil() {
       active = false;
     };
   }, [user?.id]);
-  const set = <K extends keyof Profile>(k: K, v: Profile[K]) => {
+  const set = <K extends keyof Profile>(k) => {
     setP({ ...p, [k]: v });
     setSaved(false);
   };
@@ -159,7 +158,7 @@ function Perfil() {
               ].map(([v, l]) => (
                 <button
                   key={v}
-                  onClick={() => set("dailyXp", v as number)}
+                  onClick={() => set("dailyXp", v)}
                   className={`rounded-full border-2 px-4 py-2 ${p.dailyXp === v ? "border-primary bg-primary/15" : "border-border"}`}
                 >
                   {l} · {v} XP

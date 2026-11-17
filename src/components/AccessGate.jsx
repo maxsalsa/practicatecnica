@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useAccount } from "@/components/AccountProvider";
 import { supabase } from "@/integrations/supabase/client";
@@ -6,12 +6,12 @@ import { supabase } from "@/integrations/supabase/client";
 import { isFreePath } from '@/lib/free-access';
 import { GMAIL_ONLY_MESSAGE, isAllowedAccountEmail } from "@/lib/account-email";
 
-export function AccessGate({ children }: { children: ReactNode }) {
+export function AccessGate({ children }: { children }) {
   const { user } = useAccount();
   const path = useRouterState({ select: (s) => s.location.pathname });
   const [blocked, setBlocked] = useState(false);
   const observedTrials = useRef(new Set<string>());
-  const [access, setAccess] = useState<{ has: boolean; daysLeft: number; paid: boolean; trialEnds?: string } | null>(null);
+  const [access, setAccess] = useState(null);
 
   useEffect(() => {
     supabase.from("page_visits").insert({ path: path.slice(0, 200), user_id: user?.id ?? null }).then(() => {});
@@ -25,7 +25,7 @@ export function AccessGate({ children }: { children: ReactNode }) {
       .then(({ data }) => {if(active) setBlocked(data?.status === "blocked");});
     supabase.rpc("my_access").then(({ data, error }) => {
       if(!active) return;
-      const a = data?.[0]; if (error || !a) {setAccess({has:false,paid:false,daysLeft:0});return;}
+      const a = data?.[0]; if (error || !a) {setAccess({has,paid,daysLeft:0});return;}
       const paid = (!!a.paid_until && new Date(a.paid_until) > new Date()) || a.status === "gift";
       if (a.has_access && a.status === 'active' && !paid && Date.parse(a.trial_ends) > Date.now() && !observedTrials.current.has(user.id)) {
         const eventId = null;

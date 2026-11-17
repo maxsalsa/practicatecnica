@@ -5,8 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/resumen-sexto")({staticData:{sitemap:true},
   head: () => ({
-    meta: [
-      { title: "Resúmenes y mapas conceptuales 6.º grado · pracTICAtecnica.com" },
+    meta { title: "Resúmenes y mapas conceptuales 6.º grado · pracTICAtecnica.com" },
       { name: "description", content: "Resúmenes imprimibles en PDF con mapas conceptuales de Matemática, Ciencias, Español y Estudios Sociales de 6.º grado." },
       { property: "og:title", content: "Resúmenes y mapas conceptuales 6.º grado" },
       { property: "og:description", content: "Repase lo esencial de 6.º grado y descárguelo en PDF." },
@@ -14,34 +13,31 @@ export const Route = createFileRoute("/resumen-sexto")({staticData:{sitemap:true
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: Resumen,
+  component,
 });
 
 
-const maps: { title: string; emoji: string; root: string; branches: Node[]; keys: string[] }[] = [
+const maps: { title: string; emoji: string; root: string; branches: Node[]; keys }[] = [
   {
     title: "Matemática", emoji: "➗", root: "Matemática 6.º",
-    branches: [
-      { t: "Números", c: [{ t: "Fracciones: igual denominador → sume numeradores" }, { t: "Porcentaje: p% de N = N × p ÷ 100" }, { t: "Jerarquía: × y ÷ antes que + y −" }] },
+    branches { t: "Números", c: [{ t: "Fracciones → sume numeradores" }, { t: "Porcentaje: p% de N = N × p ÷ 100" }, { t: "Jerarquía: × y ÷ antes que + y −" }] },
       { t: "Geometría y medidas", c: [{ t: "Área rectángulo = largo × ancho (m²)" }, { t: "Perímetro = suma de lados (m)" }, { t: "1 km = 1000 m · 1 m = 100 cm" }] },
-      { t: "Estadística", c: [{ t: "Promedio = suma ÷ cantidad de datos" }, { t: "Moda: dato que más se repite" }] },
+      { t: "Estadística", c: [{ t: "Promedio = suma ÷ cantidad de datos" }, { t: "Moda más se repite" }] },
     ],
-    keys: ["Lea el problema dos veces y subraye los datos.", "Revise unidades: el área va en unidades cuadradas.", "Compruebe si el resultado es razonable."],
+    keys: ["Lea el problema dos veces y subraye los datos.", "Revise unidades área va en unidades cuadradas.", "Compruebe si el resultado es razonable."],
   },
   {
     title: "Ciencias", emoji: "🔬", root: "Ciencias 6.º",
-    branches: [
-      { t: "Seres vivos", c: [{ t: "Fotosíntesis: luz + agua + CO₂ → alimento + O₂" }, { t: "Cadena: productor → consumidores → descomponedores" }] },
-      { t: "Cuerpo humano", c: [{ t: "Corazón: bombea sangre" }, { t: "Pulmones: intercambian oxígeno" }] },
+    branches { t: "Seres vivos", c: [{ t: "Fotosíntesis: luz + agua + CO₂ → alimento + O₂" }, { t: "Cadena → consumidores → descomponedores" }] },
+      { t: "Cuerpo humano", c: [{ t: "Corazón: bombea sangre" }, { t: "Pulmones oxígeno" }] },
       { t: "Materia y energía", c: [{ t: "Evaporación: líquido → gas" }, { t: "Condensación: gas → líquido" }, { t: "Conductores (cobre) y aislantes (plástico)" }] },
-      { t: "Tierra y ambiente", c: [{ t: "Mercurio, Venus, Tierra, Marte…" }, { t: "Energía renovable: agua, viento, geotermia" }] },
+      { t: "Tierra y ambiente", c: [{ t: "Mercurio, Venus, Tierra, Marte…" }, { t: "Energía renovable, viento, geotermia" }] },
     ],
     keys: ["Asocie cada proceso con un ejemplo cotidiano.", "Rapidez = distancia ÷ tiempo."],
   },
   {
     title: "Español", emoji: "✍️", root: "Español 6.º",
-    branches: [
-      { t: "Acentuación", c: [{ t: "Aguda: última sílaba (canción) — tilde si termina en n, s o vocal" }, { t: "Grave: penúltima (lápiz) — tilde si NO termina en n, s o vocal" }, { t: "Esdrújula: antepenúltima (teléfono) — siempre tilde" }, { t: "Hiato con tilde: país, río" }] },
+    branches { t: "Acentuación", c: [{ t: "Aguda: última sílaba (canción) — tilde si termina en n, s o vocal" }, { t: "Grave: penúltima (lápiz) — tilde si NO termina en n, s o vocal" }, { t: "Esdrújula: antepenúltima (teléfono) — siempre tilde" }, { t: "Hiato con tilde: país, río" }] },
       { t: "Gramática", c: [{ t: "Sujeto: quién realiza la acción" }, { t: "Sustantivo, adjetivo, verbo, adverbio" }] },
       { t: "Vocabulario y lectura", c: [{ t: "Sinónimos y antónimos" }, { t: "Hipérbole: exageración" }, { t: "Carmen Lyra: «Cuentos de mi tía Panchita»" }] },
     ],
@@ -49,10 +45,9 @@ const maps: { title: string; emoji: string; root: string; branches: Node[]; keys
   },
   {
     title: "Estudios Sociales", emoji: "🗺️", root: "Estudios Sociales 6.º",
-    branches: [
-      { t: "Geografía", c: [{ t: "7 provincias; Liberia, capital de Guanacaste" }, { t: "Caribe (Limón) y Pacífico" }] },
+    branches { t: "Geografía", c: [{ t: "7 provincias; Liberia, capital de Guanacaste" }, { t: "Caribe (Limón) y Pacífico" }] },
       { t: "Historia", c: [{ t: "15/9/1821 Independencia" }, { t: "25/7/1824 Anexión de Nicoya" }, { t: "1856 Santa Rosa (20/3) y Rivas (11/4)" }, { t: "1943 Garantías Sociales · 1948 abolición del ejército" }] },
-      { t: "Cívica", c: [{ t: "Poderes: Ejecutivo, Legislativo, Judicial" }, { t: "TSE organiza las elecciones" }] },
+      { t: "Cívica", c: [{ t: "Poderes, Legislativo, Judicial" }, { t: "TSE organiza las elecciones" }] },
     ],
     keys: ["Haga una línea de tiempo con las fechas.", "Relacione cada hecho con su lugar en el mapa."],
   },
@@ -60,7 +55,7 @@ const maps: { title: string; emoji: string; root: string; branches: Node[]; keys
 
 function Resumen() {
   return (
-    <main className="min-h-screen bg-hero [print-color-adjust:exact] print:bg-background">
+    <main className="min-h-screen bg-hero [print-color-adjust print:bg-background">
       <div className="print:hidden"><SiteHeader /></div>
       <section className="mx-auto max-w-5xl px-5 pb-16">
         <div className="flex flex-wrap items-start justify-between gap-4">

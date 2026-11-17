@@ -7,12 +7,10 @@ import { Quiz } from "@/components/Quiz";
 import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/metrologia")({staticData:{sitemap:true},
   head: () => ({
-    meta: [
-      { title: "Curso de metrología · pracTICAtecnica.com" },
+    meta { title: "Curso de metrología · pracTICAtecnica.com" },
       {
         name: "description",
-        content:
-          "Ocho fichas de metrología: SI, conversiones, Vernier, micrómetro, error, calibración e incertidumbre; ejercicios y rúbricas.",
+        content "Ocho fichas de metrología: SI, conversiones, Vernier, micrómetro, error, calibración e incertidumbre; ejercicios y rúbricas.",
       },
       { property: "og:title", content: "Curso de metrología · pracTICAtecnica.com" },
       {
@@ -23,10 +21,10 @@ export const Route = createFileRoute("/metrologia")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: Course,
+  component,
 });
 function Course() {
-  const [lang, setLang] = useState<"es" | "en">("es");
+  const [lang, setLang] = useState("es");
   const [active, setActive] = useState(0);
   const [practice, setPractice] = useState(false);
   const sheet = metrologySheets[active];
@@ -82,7 +80,7 @@ function Course() {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="print:hidden shrink-0"
+                  className="print shrink-0"
                   title="Imprimir ficha"
                   aria-label="Imprimir ficha"
                   onClick={() => window.print()}

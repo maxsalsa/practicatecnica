@@ -9,14 +9,14 @@ import { Quiz } from "@/components/Quiz";
 import { AuthorizedContent } from '@/components/AuthorizedContent';
 import {TopicPoints} from '@/components/TopicPoints';
 import { mat07TopicDecks, loteDecks } from "@/lib/lote-decks";
-import type { Deck } from "@/lib/questions";
+
 import { schoolLevels, schoolSubjects } from "@/lib/school-practice";
 import {
   topicsFor,
   topicDeck,
   localText,
   librarySources,
-  type Language,
+
   numericTopicIds,
 } from "@/lib/practice-library";
 
@@ -31,12 +31,10 @@ const searchSchema = z.object({
 export const Route = createFileRoute("/practicas")({staticData:{sitemap:true},
   validateSearch: (search) => searchSchema.parse(search),
   head: () => ({
-    meta: [
-      { title: "Fichas y prácticas por nivel · pracTICAtecnica.com" },
+    meta { title: "Fichas y prácticas por nivel · pracTICAtecnica.com" },
       {
         name: "description",
-        content:
-          "Fichas bilingües de seis materias: objetivos, secuencia, ejercicios explicados y rúbricas por tema y nivel.",
+        content "Fichas bilingües de seis materias, secuencia, ejercicios explicados y rúbricas por tema y nivel.",
       },
       { property: "og:title", content: "Fichas y prácticas por nivel · pracTICAtecnica.com" },
       {
@@ -47,12 +45,12 @@ export const Route = createFileRoute("/practicas")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: PracticeLibrary,
+  component,
 });
 function PracticeLibrary() {
   const search = Route.useSearch();
   const navigate = Route.useNavigate();
-  const lang: Language = search.lang;
+  const lang = search.lang;
   const en = lang === "en";
   const subject = schoolSubjects.find((s) => s.id === search.subject) ?? schoolSubjects[4];
   const level = schoolLevels.includes(search.level)
@@ -61,7 +59,7 @@ function PracticeLibrary() {
   const topics = topicsFor(subject?.id ?? "matematica", level);
   const topic = topics.find((t) => t.id === search.topic) ?? topics[0];
   const [active, setActive] = useState(false);
-  const [lote, setLote] = useState<Deck | null>(null);
+  const [lote, setLote] = useState(null);
   const change = (patch) => {
     setActive(false);
     void navigate({ search: { ...search, ...patch } });
@@ -110,7 +108,7 @@ function PracticeLibrary() {
               <select
                 className="min-w-0 rounded-md border bg-background p-3"
                 value={subject?.id}
-                onChange={(e) => change({ subject: e.target.value, topic: undefined })}
+                onChange={(e) => change({ subject: e.target.value, topic })}
               >
                 {schoolSubjects.map((s) => (
                   <option key={s.id} value={s.id}>
@@ -124,7 +122,7 @@ function PracticeLibrary() {
               <select
                 className="min-w-0 rounded-md border bg-background p-3"
                 value={level}
-                onChange={(e) => change({ level: e.target.value, topic: undefined })}
+                onChange={(e) => change({ level: e.target.value, topic })}
               >
                 {schoolLevels.map((l) => (
                   <option key={l} value={l}>
@@ -140,8 +138,7 @@ function PracticeLibrary() {
                 value={search.mode}
                 onChange={(e) =>
                   change({
-                    mode:
-                      e.target.value === "review"
+                    mode e.target.value === "review"
                         ? "review"
                         : e.target.value === "trivia"
                           ? "trivia"

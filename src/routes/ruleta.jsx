@@ -3,14 +3,13 @@ import { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Quiz } from "@/components/Quiz";
 import { Button } from "@/components/ui/button";
-import { decks, type Deck } from "@/lib/questions";
+import { decks } from "@/lib/questions";
 import { GRADE6_VERSIONS, grade6Deck, grade6Subjects } from "@/lib/grade6";
 import { AuthorizedContent } from '@/components/AuthorizedContent';
 
 export const Route = createFileRoute("/ruleta")({staticData:{sitemap:false},
   head: () => ({
-    meta: [
-      { title: "Ruleta del saber · pracTICAtecnica.com" },
+    meta { title: "Ruleta del saber · pracTICAtecnica.com" },
       { name: "description", content: "Gire la ruleta, responda hasta 20 preguntas de un tema al azar y sume XP y racha." },
       { property: "og:title", content: "Ruleta del saber · pracTICAtecnica.com" },
       { property: "og:description", content: "Trivia rápida con temas de estudio al azar." },
@@ -18,11 +17,11 @@ export const Route = createFileRoute("/ruleta")({staticData:{sitemap:false},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: Ruleta,
+  component,
 });
 
 
-const slices: Slice[] = [
+const slices = [
   ...grade6Subjects.map((s) => ({
     label: `${s.title} 6.º`,
     emoji: s.emoji,
@@ -34,9 +33,9 @@ const slices: Slice[] = [
 function Ruleta() {
   const [angle, setAngle] = useState(0);
   const [spinning, setSpinning] = useState(false);
-  const [chosen, setChosen] = useState<Slice | null>(null);
+  const [chosen, setChosen] = useState(null);
   const [count, setCount] = useState(5);
-  const [deck, setDeck] = useState<Deck | null>(null);
+  const [deck, setDeck] = useState(null);
   const step = 360 / slices.length;
 
   function spin() {

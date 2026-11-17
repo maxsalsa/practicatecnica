@@ -1,26 +1,26 @@
 import { useMemo, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { InstitutionDocumentHeader, InstitutionDocumentFooter } from './InstitutionDocumentHeader';
-import { SPEC_LEVELS, SPEC_LEVEL_LABELS, buildSpecTable, type SpecRow } from '@/lib/spec-table';
+import { SPEC_LEVELS, SPEC_LEVEL_LABELS, buildSpecTable } from '@/lib/spec-table';
 
 const blank = (): SpecRow => ({ indicator: '', lessons: 1, split: { conocimiento: 1, aplicacion: 1, razonamiento: 1 } });
 const input = 'w-full rounded-md border border-border bg-background p-2';
 
-export function SpecTablePanel({ name, logoPath }: { name: string; logoPath: string | null }) {
+export function SpecTablePanel({ name, logoPath }: { name: string; logoPath }) {
   const [subject, setSubject] = useState('');
   const [level, setLevel] = useState('');
   const [teacher, setTeacher] = useState('');
   const [date] = useState(() => new Date().toISOString());
   const [total, setTotal] = useState(40);
-  const [rows, setRows] = useState<SpecRow[]>([blank()]);
+  const [rows, setRows] = useState([blank()]);
   const result = useMemo(() => buildSpecTable(rows, total), [rows, total]);
   const lessons = rows.reduce((a, r) => a + r.lessons, 0);
-  const set = (i: number, r: SpecRow) => setRows(rows.map((x, j) => (j === i ? r : x)));
+  const set = (i) => setRows(rows.map((x, j) => (j === i ? r)));
 
   return <section className="space-y-4">
     <div className="rounded-2xl border border-border bg-card p-4 print:hidden">
       <h2 className="text-xl font-black">Tabla de especificaciones</h2>
-      <p className="mt-1 text-sm text-muted-foreground">Puntos por indicador = lecciones del indicador ÷ lecciones totales × puntos totales. Se reparten por nivel según la proporción que indique. No se guarda: imprima o guarde como PDF.</p>
+      <p className="mt-1 text-sm text-muted-foreground">Puntos por indicador = lecciones del indicador ÷ lecciones totales × puntos totales. Se reparten por nivel según la proporción que indique. No se guarda PDF.</p>
       <div className="mt-3 grid gap-3 sm:grid-cols-4">
         <label className="text-sm font-semibold">Asignatura<input className={input} value={subject} onChange={e => setSubject(e.target.value)} maxLength={80} /></label>
         <label className="text-sm font-semibold">Nivel<input className={input} value={level} onChange={e => setLevel(e.target.value)} maxLength={40} /></label>

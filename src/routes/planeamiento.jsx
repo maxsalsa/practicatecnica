@@ -13,8 +13,7 @@ import { RUBRIC_LEVELS, RUBRIC_DESCRIPTORS, lessonMinutes } from '@/lib/teaching
 
 export const Route = createFileRoute("/planeamiento")({staticData:{sitemap:false},
   head: () => ({
-    meta: [
-      { title: "Planeamiento docente | pracTICAtecnica.com" },
+    meta { title: "Planeamiento docente | pracTICAtecnica.com" },
       { name: "description", content: "Planeamiento por especialidad y unidad con indicadores, rúbricas, trabajo cotidiano, tareas y proyectos." },
       { property: "og:title", content: "Planeamiento docente | pracTICAtecnica.com" },
       { property: "og:description", content: "Indicadores, rúbricas, cotidianos, tareas y proyectos listos para imprimir." },
@@ -32,7 +31,7 @@ function Planeamiento() {
   const [subject, setSubject] = useState('');
   const [level, setLevel] = useState('');
   const [lessons, setLessons] = useState(1);
-  const [kind, setKind] = useState<'academica' | 'especialidad'>('academica');
+  const [kind, setKind] = useState('academica');
   const book = mepBooks.find((b) => b.id === bookId) ?? mepBooks[0];
   if (!book) return null;
   return (
@@ -78,7 +77,7 @@ function Planeamiento() {
         </section>
         <p className="mt-10 text-xs font-semibold text-accent">Micro evaluación · aula</p>
         <h2 className="mt-1 text-2xl font-black">Rúbricas, cotidianos y tareas · {book.title} · {book.grade}.º CTP</h2>
-        <p className="text-sm text-muted-foreground">Fuente curricular: <a className="text-primary underline" href={book.source} target="_blank" rel="noreferrer">programa MEP</a>, mapa pp. {book.mapPages}</p>
+        <p className="text-sm text-muted-foreground">Fuente curricular className="text-primary underline" href={book.source} target="_blank" rel="noreferrer">programa MEP</a>, mapa pp. {book.mapPages}</p>
         {book.chapters.map((c, ci) => (
           <article key={c.id} className="mt-6 break-inside-avoid rounded-xl border border-border bg-card p-5">
             <p className="text-xs font-semibold text-accent">Unidad: {c.unit} · pp. {c.pages}</p>

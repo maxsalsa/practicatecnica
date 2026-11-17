@@ -7,10 +7,10 @@ import probala from "@/assets/promo/promo_probala.jpg.asset.json";
 export const promoLogo = logo.url;
 
 const banners = [
-  { src: aprende.url, to: "/explorar", alt: "Aprendé practicando: trivias, juegos, pruebas y repasos", label: "🎯 Elegir materia" },
+  { src: aprende.url, to: "/explorar", alt: "Aprendé practicando, juegos, pruebas y repasos", label: "🎯 Elegir materia" },
   { src: trivias.url, to: "/simulacro", alt: "Trivias, juegos y retos con seguimiento de su progreso (el código QR es decorativo)", label: "📝 Exámenes y simulacros" },
   { src: probala.url, to: "/ingreso", alt: "Practique para el examen de ingreso a colegios científicos, humanísticos y CTP", label: "🏫 Colegios y exámenes de ingreso" },
-] as const;
+];
 
 export function PromoBanners() {
   return (

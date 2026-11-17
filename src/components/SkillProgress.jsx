@@ -1,8 +1,8 @@
 import { Car, Bike, Code, ShieldCheck, Users, FlaskConical, Trophy, Palette, GraduationCap, Atom, Brain } from 'lucide-react';
 import { areaResults } from '@/lib/skill-areas';
-import type { Attempt } from '@/lib/progress-data';
-const icons = { car: Car, bike: Bike, code: Code, shield: ShieldCheck, users: Users, flask: FlaskConical, trophy: Trophy, palette: Palette, graduation: GraduationCap, atom: Atom, brain: Brain };
-export function SkillProgress({ attempts }: { attempts: Attempt[] }) {
+
+const icons = { car, bike, code, shield, users, flask, trophy, palette, graduation, atom, brain };
+export function SkillProgress({ attempts }: { attempts }) {
  return <section className="mt-6">
   <h3 className="text-lg font-bold">Resultados verificados por destreza</h3>
   <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

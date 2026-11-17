@@ -5,18 +5,18 @@ import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 import { resourceGrantInput } from '@/lib/institution-resource-permissions';
 
-export function ResourcePermissionsPanel({ resourceId, visibility }: { resourceId: string; visibility: string }) {
+export function ResourcePermissionsPanel({ resourceId, visibility }: { resourceId: string; visibility }) {
   const qc = useQueryClient();
   const [busy, setBusy] = useState(false);
-  const options = useQuery({ queryKey: ['permission-institutions'], queryFn: async () => {
+  const options = useQuery({ queryKey: ['permission-institutions'], queryFn () => {
     const r = await supabase.rpc('resource_permission_institutions'); if (r.error) throw r.error; return r.data;
   }});
-  const grants = useQuery({ queryKey: ['resource-grants', resourceId], queryFn: async () => {
+  const grants = useQuery({ queryKey: ['resource-grants', resourceId], queryFn () => {
     const r = await supabase.from('institution_resource_grants').select('*').eq('resource_id', resourceId); if (r.error) throw r.error; return r.data;
   }});
-  async function change(institutionId: string, read: boolean, send: boolean) {
+  async function change(institutionId) {
     setBusy(true);
-    const r = await supabase.from('institution_resource_grants').upsert(resourceGrantInput.parse({ resource_id: resourceId, institution_id: institutionId, can_read: read, can_send: read && send }));
+    const r = await supabase.from('institution_resource_grants').upsert(resourceGrantInput.parse({ resource_id, institution_id, can_read, can_send && send }));
     setBusy(false); if (r.error) { toast.error('No se pudieron guardar los permisos.'); return; }
     await qc.invalidateQueries({ queryKey: ['resource-grants', resourceId] });
   }
@@ -36,14 +36,14 @@ export function ResourcePermissionsPanel({ resourceId, visibility }: { resourceI
   </details>;
 }
 
-export function AssignedResourcesPanel({ institutionId }: { institutionId: string }) {
-  const resources = useQuery({ queryKey: ['assigned-resources', institutionId], queryFn: async () => {
+export function AssignedResourcesPanel({ institutionId }: { institutionId }) {
+  const resources = useQuery({ queryKey: ['assigned-resources', institutionId], queryFn () => {
     const g = await supabase.from('institution_resource_grants').select('*').eq('institution_id', institutionId).eq('can_read', true); if (g.error) throw g.error;
     if (!g.data.length) return [];
     const r = await supabase.from('institution_resources').select('id,title,kind,status,file_path').in('id', g.data.map(x => x.resource_id)).eq('status', 'published'); if (r.error) throw r.error;
     return r.data.map(x => ({ ...x, canSend: g.data.find(y => y.resource_id === x.id)?.can_send === true }));
   }});
-  async function read(path: string) {
+  async function read(path) {
     const r = await supabase.storage.from('institution-publications').download(path);
     if (r.error || !r.data) { toast.error('Acceso denegado o circular retirada.'); return; }
     const url = URL.createObjectURL(r.data); const a = document.createElement('a'); a.href = url; a.download = 'circular.pdf'; a.click(); setTimeout(() => URL.revokeObjectURL(url), 30000);

@@ -8,14 +8,14 @@ import { InstitutionRolesPanel } from '@/components/institution/InstitutionRoles
 import { canReadStudentRecords } from '@/lib/student-record-policy';
 
 export const Route = createFileRoute('/institucion_/roles')({
-  staticData: { sitemap: false },
+  staticData: { sitemap },
   head: () => ({ meta: [{ title: 'Roles institucionales · pracTICAtecnica.com' }, { name: 'description', content: 'Asignación privada de roles por Dirección y Subdirección de cada centro.' }, { property: 'og:title', content: 'Roles institucionales · pracTICAtecnica.com' }, { property: 'og:description', content: 'Administración de usuarios autorizada por institución.' }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }, { name: 'robots', content: 'noindex' }] }),
-  component: RolesPage,
+  component,
 });
 function RolesPage() {
   const { user } = useAccount();
   const [picked, setPicked] = useState('');
-  const q = useQuery({ queryKey: ['role-institutions', user?.id], enabled: !!user, queryFn: async () => {
+  const q = useQuery({ queryKey: ['role-institutions', user?.id], enabled: !!user, queryFn () => {
     const r = await supabase.rpc('my_institutions');
     if (r.error) throw new Error('No se pudieron consultar sus permisos.');
     return r.data.filter(m => canReadStudentRecords(m.member_role));

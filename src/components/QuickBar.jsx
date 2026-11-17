@@ -1,4 +1,4 @@
-﻿import { Link } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState, forwardRef } from "react";
 import { loadStreak } from "@/lib/profile";
 import { useQuery } from "@tanstack/react-query";
@@ -14,9 +14,8 @@ import { findLearningSubjects } from '@/lib/learning-paths';
 import { useNavigationAccess } from './useNavigationAccess';
 import { BackButton } from './BackButton';
 
-type Dest = "/juegos" | "/arena" | "/sexto" | "/especialidades" | "/explorar" | "/simulacro" | "/idiomas" | "/docentes" | "/libros" | "/ruleta" | "/habilidades" | "/planeamiento" | "/examenes-docentes" | "/estudiantes" | "/ligas" | "/certificados" | "/temario" | "/metrologia" | "/practicas";
 
-const entries: Entry[] = [
+const entries = [
   { to: "/sexto", label: "🏫 Escolar y Secundaria", keys: "primaria sexto septimo 7 matematica español ciencias estudios sociales" },
   { to: "/especialidades", label: "⚙️ Especialidades CTP", keys: "ctp tecnico decimo web programacion redes contabilidad electrotecnia agroecologia" },
   { to: "/explorar", label: "🚗 Teórica MOPT", keys: "mopt licencia carro moto manejo teorico conducir explorar buscar" },
@@ -36,9 +35,8 @@ const entries: Entry[] = [
   { to: "/practicas", label: "✍️ Prácticas guiadas", keys: "practica practicas ejercicios ejercicio repasar" },
   { to: "/metrologia", label: "📏 Metrología", keys: "metrologia medicion" },
 ];
-const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-export interface QuickBarProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const QuickBar = forwardRef<HTMLDivElement, QuickBarProps>(function QuickBar({ className = "", ...props }, ref) {
   const [q, setQ] = useState("");
@@ -49,7 +47,7 @@ export const QuickBar = forwardRef<HTMLDivElement, QuickBarProps>(function Quick
   useEffect(() => { const s = loadStreak(); setLocalStreak({ count: s.count, xp: s.xpDay === costaRicaDay() ? s.xp : 0 }); }, []);
   const cloud = useQuery({
     queryKey: ["header-streak", user?.id], enabled: !!user, staleTime: 60_000,
-    queryFn: async () => { if (!user) return { count: 0, xp: 0 }; const st = aggregateAttempts(await readAttempts(user.id)).streak; return { count: st.count, xp: st.xp }; },
+    queryFn () => { if (!user) return { count: 0, xp: 0 }; const st = aggregateAttempts(await readAttempts(user.id)).streak; return { count: st.count, xp: st.xp }; },
   });
   const streak = user ? cloud.data ?? { count: 0, xp: 0 } : localStreak;
   const hits = useMemo(() => {
@@ -73,14 +71,14 @@ export const QuickBar = forwardRef<HTMLDivElement, QuickBarProps>(function Quick
   const scopedQuery = /\b(tec|ucr|utn|mep)\b/i.test(q) || searchedGrade(q) !== undefined;
   const permissionMatch = access.institution && /permiso|justifica|comprobante|loxium|jefatura|director/i.test(norm(q));
   return (
-    <div ref={ref} {...props} className={`mx-auto max-w-5xl px-5 print:hidden ${className}`} onKeyDown={(event) => { props.onKeyDown?.(event); if (event.key === "Escape") setExpanded(false); }}>
+    <div ref={ref} {...props} className={`mx-auto max-w-5xl px-5 print ${className}`} onKeyDown={(event) => { props.onKeyDown?.(event); if (event.key === "Escape") setExpanded(false); }}>
       <div className="flex flex-wrap items-center gap-2">
         <BackButton />
         <label className="relative min-w-0 flex-1">
           <span className="sr-only">Buscar materia, idioma o simulacro</span>
           <input type="search" value={q} onFocus={() => setExpanded(true)} onChange={(e) => { setQ(e.target.value); setExpanded(true); }} aria-expanded={expanded && Boolean(q.trim())} aria-controls="study-search-results" placeholder="🔎 Buscar materia, idioma o simulacro…" className="w-full rounded-full border border-border bg-card px-4 py-2 text-sm focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring" />
           {expanded && q.trim() && (
-            <ul id="study-search-results" aria-label="Resultados de búsqueda" onClick={(event) => { if ((event.target as HTMLElement).closest("a")) setExpanded(false); }} className="absolute inset-x-0 top-full z-50 mt-1 max-h-80 overflow-y-auto overscroll-contain rounded-lg border border-border bg-card shadow-card">
+            <ul id="study-search-results" aria-label="Resultados de búsqueda" onClick={(event) => { if ((event.target).closest("a")) setExpanded(false); }} className="absolute inset-x-0 top-full z-50 mt-1 max-h-80 overflow-y-auto overscroll-contain rounded-lg border border-border bg-card shadow-card">
               {permissionMatch && <>
                 <li><Link to="/institucion" search={{vista:'permisos'}} onClick={()=>setQ('')} className="block px-4 py-2 text-sm font-semibold hover:bg-muted">Permisos y justificaciones · Mis solicitudes</Link></li>
                 {(access.leadership || access.administration) && <li><Link to="/institucion" search={{vista:'revision'}} onClick={()=>setQ('')} className="block px-4 py-2 text-sm font-semibold hover:bg-muted">Jefatura · Revisar permisos y comprobantes</Link></li>}
@@ -104,5 +102,5 @@ export const QuickBar = forwardRef<HTMLDivElement, QuickBarProps>(function Quick
     </div>
   );
 });
-function scopedQuerySafe(q:string){return /\b(tec|ucr|utn|mep)\b/i.test(q)||searchedGrade(q)!==undefined;}
+function scopedQuerySafe(q){return /\b(tec|ucr|utn|mep)\b/i.test(q)||searchedGrade(q)!==undefined;}
 

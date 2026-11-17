@@ -4,12 +4,11 @@ import { Shuffle } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Quiz } from "@/components/Quiz";
 import { Button } from "@/components/ui/button";
-import { GRADE6_VERSIONS, grade6Deck, grade6Subjects, type Grade6Subject } from "@/lib/grade6";
+import { GRADE6_VERSIONS, grade6Deck, grade6Subjects } from "@/lib/grade6";
 
 export const Route = createFileRoute("/sexto")({staticData:{sitemap:true},
   head: () => ({
-    meta: [
-      { title: "Preparación 6.º grado MEP · pracTICAtecnica.com" },
+    meta { title: "Preparación 6.º grado MEP · pracTICAtecnica.com" },
       {
         name: "description",
         content: "Matemática, Ciencias, Español y Estudios Sociales de 6.º grado: 500 versiones por materia con explicaciones.",
@@ -20,12 +19,12 @@ export const Route = createFileRoute("/sexto")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: Sexto,
+  component,
 });
 
 function Sexto() {
-  const [active, setActive] = useState<{ s: string; v: number } | null>(null);
-  const start = (s: string) => setActive({ s, v: Math.floor(Math.random() * GRADE6_VERSIONS) });
+  const [active, setActive] = useState(null);
+  const start = (s) => setActive({ s, v: Math.floor(Math.random() * GRADE6_VERSIONS) });
   return (
     <main className="min-h-screen bg-hero">
       <SiteHeader />

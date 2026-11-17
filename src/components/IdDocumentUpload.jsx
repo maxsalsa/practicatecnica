@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 
-const KINDS = { carne: "Carné estudiantil", libro: "Libro de comunicación" } as const;
+const KINDS = { carne: "Carné estudiantil", libro: "Libro de comunicación" };
 
 
-export function IdDocumentUpload({ userId }: { userId: string }) {
-  const [kind, setKind] = useState<keyof typeof KINDS>("carne");
-  const [docs, setDocs] = useState<Doc[]>([]);
+export function IdDocumentUpload({ userId }: { userId }) {
+  const [kind, setKind] = useState("carne");
+  const [docs, setDocs] = useState([]);
   const [busy, setBusy] = useState(false);
 
   async function load() {
     const { data } = await supabase.storage.from("id-documents").list(userId);
-    const out: Doc[] = [];
+    const out = [];
     for (const f of data ?? []) {
-      const { data: s } = await supabase.storage.from("id-documents").createSignedUrl(`${userId}/${f.name}`, 600);
+      const { data } = await supabase.storage.from("id-documents").createSignedUrl(`${userId}/${f.name}`, 600);
       if (s) out.push({ name: f.name, url: s.signedUrl });
     }
     setDocs(out);
@@ -37,7 +37,7 @@ export function IdDocumentUpload({ userId }: { userId: string }) {
       <h2 className="text-lg font-extrabold">🪪 Carné estudiantil o libro de comunicación</h2>
       <p className="mt-1 text-sm text-muted-foreground">Súbalo para confirmar que es estudiante. Solo usted y administración pueden verlo.</p>
       <div className="mt-3 flex flex-wrap items-center gap-2">
-        <select value={kind} onChange={(e) => setKind(e.target.value as keyof typeof KINDS)} className="rounded-xl border bg-background px-3 py-2" aria-label="Tipo de documento">
+        <select value={kind} onChange={(e) => setKind(e.target.value)} className="rounded-xl border bg-background px-3 py-2" aria-label="Tipo de documento">
           {Object.entries(KINDS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
         </select>
         <label className="cursor-pointer rounded-xl bg-primary px-4 py-2 font-bold text-primary-foreground">

@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-type Component = "Trabajo cotidiano" | "Tareas" | "Proyecto" | "Prueba corta";
 
 
-const bank: Indicator[] = [
+const bank = [
   { component: "Trabajo cotidiano", text: "Describe los conceptos básicos del tema estudiado a partir de situaciones de su entorno.", levels: ["Menciona conceptos aislados del tema.", "Caracteriza los conceptos con ejemplos generales.", "Describe los conceptos y los relaciona con situaciones de su entorno."] },
   { component: "Trabajo cotidiano", text: "Aplica procedimientos en la resolución de ejercicios propuestos en clase.", levels: ["Identifica los pasos del procedimiento.", "Ejecuta el procedimiento con apoyo.", "Aplica el procedimiento de forma autónoma y verifica el resultado."] },
   { component: "Tareas", text: "Resuelve problemas cotidianos utilizando los saberes trabajados en la lección.", levels: ["Plantea el problema sin resolverlo.", "Resuelve parcialmente el problema.", "Resuelve el problema y justifica la respuesta."] },
@@ -13,11 +12,11 @@ const bank: Indicator[] = [
   { component: "Prueba corta", text: "Identifica los elementos principales del contenido evaluado.", levels: ["Reconoce algunos elementos.", "Identifica la mayoría de los elementos.", "Identifica todos los elementos y su función."] },
   { component: "Prueba corta", text: "Resuelve ítems de selección única relacionados con el saber evaluado.", levels: ["Resuelve menos de la mitad de los ítems.", "Resuelve la mayoría de los ítems.", "Resuelve todos los ítems correctamente."] },
 ];
-const comps: Component[] = ["Trabajo cotidiano", "Tareas", "Proyecto", "Prueba corta"];
-const names = ["Inicial", "Intermedio", "Avanzado"] as const;
+const comps = ["Trabajo cotidiano", "Tareas", "Proyecto", "Prueba corta"];
+const names = ["Inicial", "Intermedio", "Avanzado"];
 
 export function IndicatorBank() {
-  const [c, setC] = useState<Component>("Trabajo cotidiano");
+  const [c, setC] = useState("Trabajo cotidiano");
   const [copied, setCopied] = useState("");
   const copy = (i) => {
     const t = `${i.text}\n${i.levels.map((l, k) => `${names[k]}: ${l}`).join("\n")}`;

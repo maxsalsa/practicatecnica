@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "./ui/button";
@@ -11,41 +11,41 @@ export function GradeBook({ studentId, editable = false, ownerUserId }: Props) {
   const cache = useQueryClient();
   const [subject, setSubject] = useState("");
   const [level, setLevel] = useState("");
-  const [kind, setKind] = useState<(typeof GRADE_KINDS)[number]>("cotidiano");
+  const [kind, setKind] = useState("cotidiano");
   const [weight, setWeight] = useState("");
   const [title, setTitle] = useState("");
   const [score, setScore] = useState("");
   const officialWeight = officialGradeWeights(subject, level)?.weights[kind];
-  const [editing, setEditing] = useState<{ id: string; score: string } | null>(null);
+  const [editing, setEditing] = useState(null);
   const key = ["grades", studentId ?? ownerUserId ?? "none"];
-  const grades = useQuery({ queryKey: key, queryFn: async () => {
-    let q = supabase.from("student_grades").select("id,subject,level,kind,title,score,weight,created_at,students!inner(user_id)").order("created_at", { ascending: false });
+  const grades = useQuery({ queryKey, queryFn () => {
+    let q = supabase.from("student_grades").select("id,subject,level,kind,title,score,weight,created_at,students!inner(user_id)").order("created_at", { ascending });
     q = studentId ? q.eq("student_id", studentId) : q.eq("students.user_id", ownerUserId ?? "");
     const { data, error } = await q; if (error) throw error; return data;
   } });
-  const refresh = () => void cache.invalidateQueries({ queryKey: key });
-  const add = useMutation({ mutationFn: async () => {
+  const refresh = () => void cache.invalidateQueries({ queryKey });
+  const add = useMutation({ mutationFn () => {
     const n = Number(score), w = officialWeight ?? Number(weight);
     if (!studentId || !subject.trim() || !title.trim() || score === "" || !(n >= 0 && n <= 100) || (officialWeight === undefined && weight === "") || !(w >= 0 && w <= 100)) throw new Error("Complete materia, descripción, porcentaje del rubro (0–100) y nota (0–100).");
-    const { error } = await supabase.from("student_grades").insert({ student_id: studentId, subject: subject.trim(), level: level.trim(), kind, title: title.trim(), score: n, weight: w });
+    const { error } = await supabase.from("student_grades").insert({ student_id, subject: subject.trim(), level: level.trim(), kind, title: title.trim(), score, weight });
     if (error) throw new Error("No se pudo guardar la nota. Solo el docente a cargo del estudiante puede registrarla.");
   }, onSuccess: () => { setTitle(""); setScore(""); refresh(); } });
-  const update = useMutation({ mutationFn: async (e: { id: string; score: string }) => {
+  const update = useMutation({ mutationFn (e) => {
     const n = Number(e.score); if (e.score === "" || !(n >= 0 && n <= 100)) throw new Error("La nota debe estar entre 0 y 100.");
-    const { error } = await supabase.from("student_grades").update({ score: n }).eq("id", e.id); if (error) throw new Error("No se pudo cambiar la nota.");
+    const { error } = await supabase.from("student_grades").update({ score }).eq("id", e.id); if (error) throw new Error("No se pudo cambiar la nota.");
   }, onSuccess: () => { setEditing(null); refresh(); } });
-  const del = useMutation({ mutationFn: async (id: string) => { const { error } = await supabase.from("student_grades").delete().eq("id", id); if (error) throw error; }, onSuccess: refresh });
+  const del = useMutation({ mutationFn (id) => { const { error } = await supabase.from("student_grades").delete().eq("id", id); if (error) throw error; }, onSuccess });
   const rows = grades.data ?? [];
   const { bySubject } = gradeAverages(rows.map(r => ({ subject: r.subject, level: r.level, kind: r.kind, score: Number(r.score), weight: Number(r.weight) })));
   return (
     <section className="mt-6 rounded-xl border border-border bg-card p-4" aria-labelledby="gb-title">
       <h3 id="gb-title" className="text-lg font-bold">Calificaciones</h3>
-      <p className="mt-1 text-xs text-muted-foreground">Privadas: solo las ven el docente a cargo, el estudiante y su encargado vinculado. Los porcentajes de cada rubro los define el docente según el Reglamento de Evaluación de los Aprendizajes para la materia y el nivel.</p>
-      <p className="mt-2 text-xs text-muted-foreground">REAC 45509-MEP: porcentajes verificados para materias comunes con grado explícito (1.º–12.º). Especialidades, modalidades particulares y niveles sin identificar conservan los porcentajes registrados, pendientes de revisión. <a href={REA_SOURCE} target="_blank" rel="noreferrer" className="text-primary underline">Reglamento oficial · artículos 40–42</a></p>
+      <p className="mt-1 text-xs text-muted-foreground">Privadas, el estudiante y su encargado vinculado. Los porcentajes de cada rubro los define el docente según el Reglamento de Evaluación de los Aprendizajes para la materia y el nivel.</p>
+      <p className="mt-2 text-xs text-muted-foreground">REAC 45509-MEP explícito (1.º–12.º). Especialidades, modalidades particulares y niveles sin identificar conservan los porcentajes registrados, pendientes de revisión. <a href={REA_SOURCE} target="_blank" rel="noreferrer" className="text-primary underline">Reglamento oficial · artículos 40–42</a></p>
       {editable && <form className="mt-3 grid gap-2 sm:grid-cols-4" onSubmit={e => { e.preventDefault(); add.mutate(); }}>
         <input aria-label="Materia" placeholder="Materia" maxLength={80} value={subject} onChange={e => setSubject(e.target.value)} className={field} />
         <input aria-label="Nivel de la materia" placeholder="Nivel (ej. 7.º)" maxLength={40} value={level} onChange={e => setLevel(e.target.value)} className={field} />
-        <select aria-label="Rubro" value={kind} onChange={e => setKind(e.target.value as typeof kind)} className={`${field} capitalize`}>{GRADE_KINDS.map(k => <option key={k} value={k}>{k}</option>)}</select>
+        <select aria-label="Rubro" value={kind} onChange={e => setKind(e.target.value)} className={`${field} capitalize`}>{GRADE_KINDS.map(k => <option key={k} value={k}>{k}</option>)}</select>
         <input aria-label="Porcentaje del rubro" placeholder="% del rubro" type="number" min={0} max={100} step="0.01" value={officialWeight ?? weight} readOnly={officialWeight !== undefined} onChange={e => setWeight(e.target.value)} className={field} />
         <input aria-label="Descripción" placeholder="Descripción" maxLength={120} value={title} onChange={e => setTitle(e.target.value)} className={`${field} sm:col-span-2`} />
         <input aria-label="Nota" placeholder="Nota 0–100" type="number" min={0} max={100} step="0.01" value={score} onChange={e => setScore(e.target.value)} className={field} />

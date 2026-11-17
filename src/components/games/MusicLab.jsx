@@ -5,14 +5,13 @@ import { Button } from '@/components/ui/button';
 import { pianoKeyboardNote } from '@/lib/game-controls';
 import { useAccount } from '@/components/AccountProvider';
 import { supabase } from '@/integrations/supabase/client';
-import { saveRecreationalSession, type RecreationalSession } from '@/lib/recreational-progress';
-import { MUSIC_MODES, MUSIC_LEVELS, SOLFEGE, ROUND_SIZE, STAFF_NOTES, buildRound, musicSubject, midiToFreq, detectPitch, nearestNote, matchesPitchClass, noteName, type MusicLevel, type MusicMode, type MusicQuestion, type PlaySpec } from '@/lib/music-lab';
+import { saveRecreationalSession } from '@/lib/recreational-progress';
+import { MUSIC_MODES, MUSIC_LEVELS, SOLFEGE, ROUND_SIZE, STAFF_NOTES, buildRound, musicSubject, midiToFreq, detectPitch, nearestNote, matchesPitchClass, noteName } from '@/lib/music-lab';
 
-type LabMode = MusicMode | 'cantar';
 const LOCAL_KEY = 'pt-anonymous-recreation';
-const POINTS: Record<MusicLevel, number> = { inicial: 10, intermedio: 20, avanzado: 30 };
-const AUDIO_MODES: LabMode[] = ['notas', 'intervalos', 'escalas', 'apreciacion'];
-const band = (pct: number) => (pct >= 90 ? 'Dominado' : pct >= 50 ? 'En proceso' : 'Requiere reforzamiento');
+const POINTS, number> = { inicial: 10, intermedio: 20, avanzado: 30 };
+const AUDIO_MODES = ['notas', 'intervalos', 'escalas', 'apreciacion'];
+const band = (pct) => (pct >= 90 ? 'Dominado' : pct >= 50 ? 'En proceso' : 'Requiere reforzamiento');
 const newSeed = () => Math.floor(Math.random() * 2 ** 31);
 
 /** Tones are synthesized on this device with the Web Audio API; nothing is downloaded or recorded. */
@@ -22,7 +21,7 @@ function useSynth() {
   const busyUntil = useRef(0);
   const ensure = useCallback(() => {
     if (!ctxRef.current || ctxRef.current.state === 'closed') {
-      const AC = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+      const AC = window.AudioContext ?? (window { webkitAudioContext}).webkitAudioContext;
       if (!AC) return null;
       ctxRef.current = new AC();
     }
@@ -52,46 +51,46 @@ function useSynth() {
   return { play, stop, ensure, busy: () => performance.now() < busyUntil.current };
 }
 
-/** Personal bests: Cloud rows when signed in, this browser only otherwise. */
+/** Personal bests, this browser only otherwise. */
 function useMusicBest() {
   const { user } = useAccount();
-  const [local, setLocal] = useState<RecreationalSession[]>([]);
-  const readLocal = useCallback(() => { try { const rows: RecreationalSession[] = JSON.parse(localStorage.getItem(LOCAL_KEY) ?? '[]'); setLocal(rows.filter(r => r.subject.startsWith('musica-v1:'))); } catch { setLocal([]); } }, []);
+  const [local, setLocal] = useState([]);
+  const readLocal = useCallback(() => { try { const rows = JSON.parse(localStorage.getItem(LOCAL_KEY) ?? '[]'); setLocal(rows.filter(r => r.subject.startsWith('musica-v1:'))); } catch { setLocal([]); } }, []);
   useEffect(() => { if (!user) readLocal(); }, [user, readLocal]);
   const query = useQuery({
     queryKey: ['music-progress', user?.id], enabled: !!user, staleTime: 30_000,
-    queryFn: async () => { if(!user)return []; const { data, error } = await supabase.from('recreational_sessions').select('id,subject,questions,correct,created_at').eq('user_id', user.id).like('subject', 'musica-v1:%').order('created_at', { ascending: false }).limit(300); if (error) throw error; return data as RecreationalSession[]; },
+    queryFn () => { if(!user)return []; const { data, error } = await supabase.from('recreational_sessions').select('id,subject,questions,correct,created_at').eq('user_id', user.id).like('subject', 'musica-v1:%').order('created_at', { ascending }).limit(300); if (error) throw error; return data; },
   });
   const rows = user ? (query.data ?? []) : local;
-  const best = new Map<string, { correct: number; questions: number }>();
+  const best = new Map<string, { correct: number; questions }>();
   for (const r of rows) { const b = best.get(r.subject); if (!b || r.correct / Math.max(1, r.questions) > b.correct / Math.max(1, b.questions)) best.set(r.subject, { correct: r.correct, questions: r.questions }); }
-  return { user, best, refresh: readLocal };
+  return { user, best, refresh };
 }
 
-function Keyboard({ highlight = [], onPlay }: { highlight?: number[]; onPlay: (midi: number) => void }) {
+function Keyboard({ highlight = [], onPlay }: { highlight; onPlay: (midi) => void }) {
   const notes = Array.from({ length: 20 }, (_, i) => 57 + i);
   const whites = notes.filter(n => !(SOLFEGE[n % 12] ?? '').includes('♯'));
   const width = 100 / whites.length;
   return (
     <div className="mt-4 overflow-x-auto pb-2">
-      <div role="group" tabIndex={0} aria-label="Teclado musical. Teclas A W S E D F T G Y H U J K o toque para escuchar." onKeyDown={e=>{const note=pianoKeyboardNote(e.key);if(note!==null&&!e.repeat){e.preventDefault();onPlay(note)}}} className="relative h-32 min-w-[528px] select-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring">
+      <div role="group" tabIndex={0} aria-label="Teclado musical. Teclas A W S E D F T G Y H U J K o toque para escuchar." onKeyDown={e=>{const note=pianoKeyboardNote(e.key);if(note!==null&&!e.repeat){e.preventDefault();onPlay(note)}}} className="relative h-32 min-w-[528px] select-none focus-visible focus-visible:outline-2 focus-visible:outline-ring">
         {whites.map((n, i) => (
           <button key={n} type="button" onClick={() => onPlay(n)} aria-label={noteName(n)} style={{ left: `${i * width}%`, width: `${width}%` }}
-            className={`absolute top-0 flex h-full items-end justify-center rounded-b-md border border-border pb-1 text-[11px] font-semibold focus-visible:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring ${highlight.includes(n) ? 'bg-accent text-accent-foreground' : 'bg-card text-foreground'}`}>
+            className={`absolute top-0 flex h-full items-end justify-center rounded-b-md border border-border pb-1 text-[11px] font-semibold focus-visible:z-20 focus-visible focus-visible:outline-2 focus-visible:outline-ring ${highlight.includes(n) ? 'bg-accent text-accent-foreground' : 'bg-card text-foreground'}`}>
             {SOLFEGE[n % 12]}
           </button>
         ))}
         {notes.filter(n => (SOLFEGE[n % 12] ?? '').includes('♯')).map(n => {
           const i = whites.indexOf(n - 1);
           return <button key={n} type="button" onClick={() => onPlay(n)} aria-label={noteName(n)} style={{ left: `${(i + 1) * width - width * 0.3}%`, width: `${width * 0.6}%` }}
-            className={`absolute top-0 z-10 h-[60%] rounded-b-md border border-border focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring ${highlight.includes(n) ? 'bg-accent' : 'bg-foreground'}`} />;
+            className={`absolute top-0 z-10 h-[60%] rounded-b-md border border-border focus-visible focus-visible:outline-2 focus-visible:outline-ring ${highlight.includes(n) ? 'bg-accent' : 'bg-foreground'}`} />;
         })}
       </div>
     </div>
   );
 }
 
-function Staff({ midi }: { midi: number }) {
+function Staff({ midi }: { midi }) {
   const pos = STAFF_NOTES.find(s => s.midi === midi)?.pos ?? 0;
   const y = 90 - pos * 5;
   return (
@@ -100,23 +99,23 @@ function Staff({ midi }: { midi: number }) {
       <text x="18" y="62" fontSize="11" fill="currentColor" fontWeight="700">Clave</text><text x="18" y="76" fontSize="11" fill="currentColor" fontWeight="700">de sol</text>
       {pos <= -2 && <line x1="120" x2="152" y1={100} y2={100} stroke="currentColor" strokeWidth="1.2" />}
       <ellipse cx="136" cy={y} rx="7.5" ry="5.2" transform={`rotate(-20 136 ${y})`} fill="currentColor" />
-      <line x1={pos >= 4 ? 129.5 : 142.5} x2={pos >= 4 ? 129.5 : 142.5} y1={y} y2={pos >= 4 ? y + 32 : y - 32} stroke="currentColor" strokeWidth="1.4" />
+      <line x1={pos >= 4 ? 129.5 : 142.5} x2={pos >= 4 ? 129.5 : 142.5} y1={y} y2={pos >= 4 ? y + 32 - 32} stroke="currentColor" strokeWidth="1.4" />
     </svg>
   );
 }
 
-function Round({ mode, level, synth, onFinish }: { mode: MusicMode; level: MusicLevel; synth: ReturnType<typeof useSynth>; onFinish: (correct: number) => void }) {
+function Round({ mode, level, synth, onFinish }: { mode: MusicMode; level: MusicLevel; synth useSynth>; onFinish: (correct) => void }) {
   const [seed, setSeed] = useState(newSeed);
-  const [round, setRound] = useState<MusicQuestion[]>(() => buildRound(mode, level, seed));
+  const [round, setRound] = useState(() => buildRound(mode, level, seed));
   const [n, setN] = useState(0);
-  const [pick, setPick] = useState<number | null>(null);
+  const [pick, setPick] = useState(null);
   const [correct, setCorrect] = useState(0);
   const promptRef = useRef<HTMLHeadingElement>(null);
   const q = round[n];
   useEffect(() => { setRound(buildRound(mode, level, seed)); setN(0); setPick(null); setCorrect(0); }, [mode, level, seed]);
   useEffect(() => { promptRef.current?.focus(); if (q?.play && AUDIO_MODES.includes(mode)) synth.play(q.play); }, [q, mode, synth]);
   if (!q) return null;
-  const answer = (i: number) => { if (pick !== null) return; setPick(i); if (i === q.answer) setCorrect(c => c + 1); if (mode === 'pentagrama' && q.play) synth.play(q.play); };
+  const answer = (i) => { if (pick !== null) return; setPick(i); if (i === q.answer) setCorrect(c => c + 1); if (mode === 'pentagrama' && q.play) synth.play(q.play); };
   const next = () => { if (n + 1 >= round.length) { onFinish(correct); setSeed(newSeed()); return; } setN(n + 1); setPick(null); };
   return (
     <div className="mt-5 rounded-2xl border border-border bg-card p-4 shadow-card">
@@ -133,39 +132,39 @@ function Round({ mode, level, synth, onFinish }: { mode: MusicMode; level: Music
       <div role="status" aria-live="polite" className="mt-3 min-h-6">
         {pick !== null && <p className={pick === q.answer ? 'font-semibold text-primary' : 'font-semibold text-destructive'}>{pick === q.answer ? 'Correcto.' : `Respuesta correcta: ${q.options[q.answer]}.`} <span className="font-normal text-foreground">{q.why}</span></p>}
       </div>
-      {pick !== null && q.highlight && <><p className="mt-2 text-sm text-muted-foreground">Notas marcadas en el teclado; tóquelas para comparar.</p><Keyboard highlight={q.highlight} onPlay={m => synth.play({ steps: [{ notes: [m], beats: 1 }], bpm: 70, gain: 0.7, wave: 'triangle' })} /></>}
+      {pick !== null && q.highlight && <><p className="mt-2 text-sm text-muted-foreground">Notas marcadas en el teclado; tóquelas para comparar.</p><Keyboard highlight={q.highlight} onPlay={m => synth.play({ steps: [{ notes, beats: 1 }], bpm: 70, gain: 0.7, wave: 'triangle' })} /></>}
       {pick !== null && <Button className="mt-4 min-h-11" onClick={next}>{n + 1 >= round.length ? 'Ver resultado' : 'Siguiente'}</Button>}
     </div>
   );
 }
 
-const SING_TARGETS: Record<MusicLevel, number[]> = { inicial: [60, 62, 64, 65, 67], intermedio: [60, 62, 64, 65, 67, 69, 71], avanzado: [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71] };
+const SING_TARGETS, number[]> = { inicial: [60, 62, 64, 65, 67], intermedio: [60, 62, 64, 65, 67, 69, 71], avanzado: [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71] };
 const SING_COUNT = 5;
 
-/** Singing practice: the microphone signal is analyzed in memory on this device; audio is never recorded or sent. */
-function SingLab({ level, synth, onFinish }: { level: MusicLevel; synth: ReturnType<typeof useSynth>; onFinish: (correct: number, total: number) => void }) {
-  const [targets, setTargets] = useState<number[]>(() => Array.from({ length: SING_COUNT }, () => { const l = SING_TARGETS[level]; return l[Math.floor(Math.random() * l.length)] ?? 60; }));
+/** Singing practice device; audio is never recorded or sent. */
+function SingLab({ level, synth, onFinish }: { level: MusicLevel; synth useSynth>; onFinish: (correct) => void }) {
+  const [targets, setTargets] = useState(() => Array.from({ length }, () => { const l = SING_TARGETS[level]; return l[Math.floor(Math.random() * l.length)] ?? 60; }));
   const [n, setN] = useState(0); const [hits, setHits] = useState(0);
-  const [heard, setHeard] = useState<{ name: string; cents: number } | null>(null);
+  const [heard, setHeard] = useState(null);
   const [status, setStatus] = useState(''); const [on, setOn] = useState(false); const [done, setDone] = useState(false);
   const stream = useRef<MediaStream | null>(null); const raf = useRef(0); const stable = useRef(0); const lock = useRef(false);
   const target = targets[n] ?? 60;
   const stopMic = useCallback(() => { cancelAnimationFrame(raf.current); stream.current?.getTracks().forEach(t => t.stop()); stream.current = null; setOn(false); }, []);
   useEffect(() => () => stopMic(), [stopMic]);
-  useEffect(() => { const l = SING_TARGETS[level]; setTargets(Array.from({ length: SING_COUNT }, () => l[Math.floor(Math.random() * l.length)] ?? 60)); setN(0); setHits(0); setDone(false); }, [level]);
-  const advance = useCallback((ok: boolean) => {
+  useEffect(() => { const l = SING_TARGETS[level]; setTargets(Array.from({ length }, () => l[Math.floor(Math.random() * l.length)] ?? 60)); setN(0); setHits(0); setDone(false); }, [level]);
+  const advance = useCallback((ok) => {
     lock.current = true; stable.current = 0;
     if (ok) setHits(h => h + 1);
     setStatus(ok ? `¡Afinado! Cantó ${noteName(target).replace(/\d+$/, '')}.` : `Se saltó ${noteName(target).replace(/\d+$/, '')}.`);
     setTimeout(() => { lock.current = false; setN(i => { if (i + 1 >= SING_COUNT) { setDone(true); return i; } return i + 1; }); }, 900);
   }, [target]);
   useEffect(() => { if (done) { stopMic(); onFinish(hits, SING_COUNT); } }, [done]); // eslint-disable-line react-hooks/exhaustive-deps
-  const playTarget = () => synth.play({ steps: [{ notes: [target], beats: 2 }], bpm: 60, gain: 0.7, wave: 'triangle' });
+  const playTarget = () => synth.play({ steps: [{ notes, beats: 2 }], bpm: 60, gain: 0.7, wave: 'triangle' });
   const start = async () => {
     const ctx = synth.ensure();
     if (!ctx || !navigator.mediaDevices?.getUserMedia) { setStatus('Este navegador no permite analizar el micrófono. Practique con los otros modos.'); return; }
     try {
-      const s = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: false, autoGainControl: false } });
+      const s = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation, noiseSuppression, autoGainControl } });
       stream.current = s; setOn(true); setStatus('Escuche la nota y cántela con «la» o «u» sostenida.');
       const analyser = ctx.createAnalyser(); analyser.fftSize = 2048; ctx.createMediaStreamSource(s).connect(analyser);
       const buf = new Float32Array(analyser.fftSize);
@@ -208,10 +207,10 @@ export function MusicLab() {
   const synth = useSynth();
   const qc = useQueryClient();
   const { user, best, refresh } = useMusicBest();
-  const [mode, setMode] = useState<LabMode>('notas');
-  const [level, setLevel] = useState<MusicLevel>('inicial');
-  const [result, setResult] = useState<{ correct: number; total: number } | null>(null);
-  const [save, setSave] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
+  const [mode, setMode] = useState('notas');
+  const [level, setLevel] = useState('inicial');
+  const [result, setResult] = useState(null);
+  const [save, setSave] = useState('idle');
   const pending = useRef<RecreationalSession | null>(null);
   const [run, setRun] = useState(0);
   const persist = async (session) => {
@@ -219,13 +218,13 @@ export function MusicLab() {
     try { await saveRecreationalSession(user?.id, session); setSave('saved'); if (user) await qc.invalidateQueries({ queryKey: ['music-progress', user.id] }); else refresh(); }
     catch { setSave('error'); }
   };
-  const finish = (correct: number, total = ROUND_SIZE) => {
+  const finish = (correct) => {
     setResult({ correct, total });
-    const session = { id: crypto.randomUUID(), subject: musicSubject(mode, level), questions: total, correct, created_at: new Date().toISOString() };
+    const session = { id: crypto.randomUUID(), subject: musicSubject(mode, level), questions, correct, created_at Date().toISOString() };
     pending.current = session; void persist(session);
   };
-  const choose = (m: LabMode, l: MusicLevel) => { synth.stop(); setMode(m); setLevel(l); setResult(null); setSave('idle'); setRun(r => r + 1); };
-  const modes: { id: LabMode; label: string; hint: string }[] = [...MUSIC_MODES, { id: 'cantar', label: 'Cantar (micrófono)', hint: 'Escuche una nota y cántela; el afinador la reconoce en su dispositivo.' }];
+  const choose = (m) => { synth.stop(); setMode(m); setLevel(l); setResult(null); setSave('idle'); setRun(r => r + 1); };
+  const modes: { id: LabMode; label: string; hint }[] = [...MUSIC_MODES, { id: 'cantar', label: 'Cantar (micrófono)', hint: 'Escuche una nota y cántela; el afinador la reconoce en su dispositivo.' }];
   const pct = result ? Math.round((result.correct / Math.max(1, result.total)) * 100) : 0;
   return (
     <div className="mt-4">
@@ -246,7 +245,7 @@ export function MusicLab() {
         <div className="mt-5 rounded-2xl border border-border bg-card p-5 shadow-card" role="region" aria-label="Resultado de la ronda">
           <h3 className="text-2xl font-black">{result.correct} de {result.total} · {pct}%</h3>
           <p className="mt-1 font-semibold">{band(pct)} · {result.correct * POINTS[level]} puntos recreativos</p>
-          <p className="mt-1 text-sm text-muted-foreground">{pct >= 90 ? (level === 'avanzado' ? 'Excelente dominio. Pruebe otro modo.' : 'Listo para subir de nivel.') : 'Repita la ronda: cada intento cambia las preguntas.'}</p>
+          <p className="mt-1 text-sm text-muted-foreground">{pct >= 90 ? (level === 'avanzado' ? 'Excelente dominio. Pruebe otro modo.' : 'Listo para subir de nivel.') : 'Repita la ronda preguntas.'}</p>
           <p role="status" className="mt-2 text-sm">{save === 'saving' ? 'Guardando…' : save === 'saved' ? (user ? 'Guardado en su perfil.' : 'Guardado solo en este navegador; inicie sesión para guardarlo en su perfil.') : save === 'error' ? 'No se pudo guardar.' : ''}</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {save === 'error' && pending.current && <Button variant="outline" className="min-h-11" onClick={() => pending.current && void persist(pending.current)}>Reintentar guardado</Button>}
@@ -260,7 +259,7 @@ export function MusicLab() {
       <details className="mt-5 rounded-2xl border border-border bg-card p-4">
         <summary className="cursor-pointer font-semibold">Teclado libre para explorar</summary>
         <p className="mt-2 text-sm text-muted-foreground">De La3 a Mi5. Toque las teclas para comparar alturas y construir escalas.</p>
-        <Keyboard onPlay={m => synth.play({ steps: [{ notes: [m], beats: 1 }], bpm: 70, gain: 0.7, wave: 'triangle' })} />
+        <Keyboard onPlay={m => synth.play({ steps: [{ notes, beats: 1 }], bpm: 70, gain: 0.7, wave: 'triangle' })} />
       </details>
     </div>
   );

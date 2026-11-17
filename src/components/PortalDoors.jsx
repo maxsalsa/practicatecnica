@@ -1,7 +1,7 @@
-﻿import { Link } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 
 
-const doors: PortalCard[] = [
+const doors = [
   { to: "/explorar", icon: "🏫", title: "Escolar y Secundaria", desc: "Primaria, secundaria y materias MEP" },
   { to: "/especialidades", icon: "⚙️", title: "Colegios Técnicos", desc: "CTP 10.° a 12.°, especialidades y pruebas" },
   { to: "/explorar", icon: "🚗", title: "Teórica MOPT", desc: "Carro B1 y moto A1/A2" },

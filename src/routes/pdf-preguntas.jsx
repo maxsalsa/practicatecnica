@@ -5,25 +5,24 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/pdf-preguntas")({staticData:{sitemap:false},
-  head: () => ({ meta: [
-    { title: "Preguntas desde PDF · pracTICAtecnica.com" },
+  head: () => ({ meta { title: "Preguntas desde PDF · pracTICAtecnica.com" },
     { name: "description", content: "Lectura privada de PDF y preparación de preguntas con control de gasto de IA." },
     { property: "og:title", content: "Preguntas desde PDF · pracTICAtecnica.com" },
     { property: "og:description", content: "Prepare material de estudio desde sus documentos PDF." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary" },
   ] }),
-  component: PDFQuestions,
+  component,
 });
 
 function PDFQuestions() {
-  const [lang, setLang] = useState<"es" | "en">("es");
+  const [lang, setLang] = useState("es");
   const [name, setName] = useState("");
   const [text, setText] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const en = lang === "en";
-  async function readPDF(file?: File) {
+  async function readPDF(file) {
     if (!file) return;
     setText(""); setError(""); setName(file.name);
     if (!file.name.toLowerCase().endsWith(".pdf") || file.size > 5 * 1024 * 1024) {
@@ -34,7 +33,7 @@ function PDFQuestions() {
       const pdfjs = await import("pdfjs-dist");
       const worker = await import("pdfjs-dist/build/pdf.worker.min.mjs?url");
       pdfjs.GlobalWorkerOptions.workerSrc = worker.default;
-      const task = pdfjs.getDocument({ data: new Uint8Array(await file.arrayBuffer()) });
+      const task = pdfjs.getDocument({ data Uint8Array(await file.arrayBuffer()) });
       const doc = await task.promise;
       try {
         if (doc.numPages > 20) throw new Error(en ? "Select a document with up to 20 pages." : "Seleccione un documento de hasta 20 páginas.");
@@ -46,7 +45,7 @@ function PDFQuestions() {
         if (extracted.replace(/\[(Página|Page) \d+\]/g, "").trim().length < 30) throw new Error(en ? "No readable text. Scanned PDFs need OCR." : "No hay texto legible. Los PDF escaneados requieren reconocimiento de texto.");
         setText(extracted.slice(0, 12000));
       } finally { await task.destroy(); }
-    } catch (e) { setError(e instanceof Error ? e.message : en ? "Could not read the PDF." : "No se pudo leer el PDF."); }
+    } catch (e) { setError(e instanceof Error ? e.message ? "Could not read the PDF." : "No se pudo leer el PDF."); }
     finally { setBusy(false); }
   }
   return <main className="min-h-screen bg-hero"><SiteHeader />
@@ -70,7 +69,7 @@ function PDFQuestions() {
       {text && <><label htmlFor="pdf-text" className="mt-6 block font-bold">{en ? "Extracted text" : "Texto extraído"}</label><textarea id="pdf-text" value={text} onChange={e => setText(e.target.value)} maxLength={12000} rows={10} className="mt-2 w-full rounded-md border bg-background p-3 text-sm" /></>}
       <div className="mt-6 border-t pt-5">
         <p className="text-sm font-bold">{en ? "Authorized spending: 0 credits" : "Gasto autorizado: 0 créditos"}</p>
-        <p className="mt-2 text-sm text-muted-foreground">{en ? "AI generation is paused: no verified free-only spending cap is configured. No questions have been generated." : "Generación con IA pausada: no hay un límite verificado que permita usar solo cobertura gratuita. Aún no se han generado preguntas."}</p>
+        <p className="mt-2 text-sm text-muted-foreground">{en ? "AI generation is paused free-only spending cap is configured. No questions have been generated." : "Generación con IA pausada límite verificado que permita usar solo cobertura gratuita. Aún no se han generado preguntas."}</p>
         <Button disabled className="mt-4"><LockKeyhole />{en ? "Generate questions and answers" : "Generar preguntas y respuestas"}</Button>
       </div>
     </section>

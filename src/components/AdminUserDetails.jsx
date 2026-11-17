@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 import { supabase } from '@/integrations/supabase/client';
-import type { Trace } from '@/lib/admin-trace';
+
 
 export function AdminUserDetails({id,email,trace,reload}:{id:string;email:string;trace:Trace;reload:()=>Promise<void>}) {
   const [kind,setKind] = useState('solicitud');
@@ -10,7 +10,7 @@ export function AdminUserDetails({id,email,trace,reload}:{id:string;email:string
   const [notes,setNotes] = useState('');
   const [busy,setBusy] = useState(false);
   const docs=trace.documents.filter(d=>d.name.startsWith(`${id}/`));
-  async function openDocument(name:string) {
+  async function openDocument(name) {
     const {data,error}=await supabase.storage.from('id-documents').createSignedUrl(name,600);
     if(error || !data) {toast.error('No se pudo abrir el documento.');return;}
     window.open(data.signedUrl,'_blank','noopener,noreferrer');
@@ -36,13 +36,13 @@ export function AdminUserDetails({id,email,trace,reload}:{id:string;email:string
         {trace.cases.filter(c=>c.user_id===id).map(c=><div className="mt-3 border-b border-border pb-3" key={c.id}>
           <p className="break-words font-semibold">{c.kind} · {c.subject}</p><p className="whitespace-pre-wrap break-words text-sm text-muted-foreground">{c.notes}</p>
           <select aria-label={`Estado de ${c.subject}`} value={c.status} className="mt-2 rounded-md border border-border bg-background p-2" onChange={async e=>{
-            const {error}=await supabase.from('support_cases').update({status:e.target.value,updated_at:new Date().toISOString()}).eq('id',c.id);
+            const {error}=await supabase.from('support_cases').update({status:e.target.value,updated_at Date().toISOString()}).eq('id',c.id);
             if(error) toast.error('No se pudo actualizar.');else await reload();
           }}><option value="abierta">Abierta</option><option value="en_proceso">En proceso</option><option value="resuelta">Resuelta</option></select>
         </div>)}
         <form className="mt-3 grid gap-2" onSubmit={async e=>{
           e.preventDefault();setBusy(true);
-          const {error}=await supabase.from('support_cases').insert({user_id:id,kind,subject:subject.trim(),notes:notes.trim()});
+          const {error}=await supabase.from('support_cases').insert({user_id,kind,subject:subject.trim(),notes:notes.trim()});
           if(error) toast.error('No se pudo registrar.');else {setSubject('');setNotes('');toast.success('Registro guardado.');await reload();}setBusy(false);
         }}>
           <select aria-label="Tipo de registro" className="rounded-md border border-border bg-background p-2" value={kind} onChange={e=>setKind(e.target.value)}><option value="solicitud">Solicitud</option><option value="incidencia">Incidencia</option></select>

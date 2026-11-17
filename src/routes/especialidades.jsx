@@ -12,10 +12,9 @@ import { findSpecialties, specialtyFamily } from "@/lib/material-search";
 const DECK_BY_CODE = specialtyDeckIds;
 
 export const Route = createFileRoute("/especialidades")({staticData:{sitemap:true},
-  validateSearch: (s) => ({ code: typeof search['code'] === "string" ? search['code'] : undefined }),
+  validateSearch: (s) => ({ code search['code'] === "string" ? search['code'] : undefined }),
   head: () => ({
-    meta: [
-      { title: "Elegir materia o especialidad | pracTICAtecnica.com" },
+    meta { title: "Elegir materia o especialidad | pracTICAtecnica.com" },
       { name: "description", content: "Elija su materia o especialidad CTP, descargue el cuadernillo PDF y practique." },
       { property: "og:title", content: "Elegir materia o especialidad | pracTICAtecnica.com" },
       { property: "og:description", content: "58 cuadernillos CTP 2026 con práctica guiada." },
@@ -23,7 +22,7 @@ export const Route = createFileRoute("/especialidades")({staticData:{sitemap:tru
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: Especialidades,
+  component,
 });
 
 function Especialidades() {

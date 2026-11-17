@@ -13,7 +13,7 @@ import { readAttempts } from "@/lib/cloud-progress";
 import { aggregateAttempts } from "@/lib/progress-data";
 import { LearningRecords } from "@/components/LearningRecords";
 import { GradeBook } from "@/components/GradeBook";
-import {updateClassroom,linkedStudentCertificates,type ClassroomAction} from '@/lib/teacher-classroom.functions';
+import {updateClassroom,linkedStudentCertificates} from '@/lib/teacher-classroom.functions';
 import {learningAchievements,progressAchievements} from '@/lib/learning-achievements';
 import {decks} from '@/lib/questions';
 import {certificationSubject} from '@/lib/certification-policy';
@@ -22,8 +22,7 @@ import { TeacherBookProgress } from '@/components/BookTopicProgress';
 import { TeacherAccess } from '@/components/TeacherAccess';
 export const Route = createFileRoute("/estudiantes")({staticData:{sitemap:false},
   head: () => ({
-    meta: [
-      { title: "Estudiantes · pracTICAtecnica.com" },
+    meta { title: "Estudiantes · pracTICAtecnica.com" },
       {
         name: "description",
         content: "Seguimiento privado de estudiantes, notas, puntos y rachas.",
@@ -47,14 +46,14 @@ function Students() {
   const [message, setMessage] = useState("");
   const [busy, setBusy] = useState(false);
   const [teacherEmail, setTeacherEmail] = useState("");
-  const [teacherRole, setTeacherRole] = useState<'teacher' | 'student'>('teacher');
+  const [teacherRole, setTeacherRole] = useState('teacher');
   const [page, setPage] = useState(0);
-  const [selected, setSelected] = useState<string | null>(null);
-  const [selectedStudent, setSelectedStudent] = useState<string | null>(null);
+  const [selected, setSelected] = useState(null);
+  const [selectedStudent, setSelectedStudent] = useState(null);
   const roles = useQuery({
     queryKey: ["roles", user?.id],
     enabled: !!user,
-    queryFn: async () => {
+    queryFn () => {
       const { data, error } = await supabase
         .from("user_roles")
         .select("role")
@@ -68,15 +67,15 @@ function Students() {
   const roster = useQuery({
     queryKey: ["students", user?.id, page],
     enabled: !!user && !!allowed,
-    queryFn: async () => {
+    queryFn () => {
       const { data, error, count } = await supabase
         .from("students")
         .select("*", { count: "exact" })
-        .order("created_at", { ascending: false })
+        .order("created_at", { ascending })
         .order("id")
         .range(page * 25, page * 25 + 24);
       if (error) throw error;
-      return { data, count: count ?? 0 };
+      return { data, count ?? 0 };
     },
   });
   const details = useQuery({
@@ -84,15 +83,15 @@ function Students() {
     enabled: !!selected,
     queryFn: () => readAttempts(selected ?? ""),
     refetchInterval: 30000,
-    refetchOnWindowFocus: true,
+    refetchOnWindowFocus,
   });
   const summary = aggregateAttempts(details.data ?? []);
   const reviewFn = useServerFn(getAttemptReview);
-  const [edit, setEdit] = useState<{ id: string; name: string; email: string; status: string; linked: boolean } | null>(null);
+  const [edit, setEdit] = useState(null);
   const [editMsg, setEditMsg] = useState('');
   async function saveEdit() {
     if (!edit) return;
-    const patch: { name: string; status: string; email?: string } = { name: edit.name.trim(), status: edit.status };
+    const patch: { name: string; status: string; email} = { name: edit.name.trim(), status: edit.status };
     if (!edit.linked) patch.email = edit.email.trim().toLowerCase();
     const { error } = await supabase.from("students").update(patch).eq("id", edit.id);
     if (error) { setEditMsg("No se pudo guardar. Revise los datos."); return; }
@@ -100,17 +99,17 @@ function Students() {
   }
   const deckReviewFn = useServerFn(getDeckReview);
   const [planDeck, setPlanDeck] = useState('');
-  const plan = useQuery({ queryKey: ["deck-review", planDeck], enabled: !!planDeck, queryFn: () => deckReviewFn({ data: { deckId: planDeck } }) });
-  const [reviewId, setReviewId] = useState<string | null>(null);
-  const review = useQuery({ queryKey: ["attempt-review", reviewId], enabled: !!reviewId, queryFn: () => reviewFn({ data: { attemptId: reviewId ?? "" } }) });
+  const plan = useQuery({ queryKey: ["deck-review", planDeck], enabled: !!planDeck, queryFn: () => deckReviewFn({ data: { deckId } }) });
+  const [reviewId, setReviewId] = useState(null);
+  const review = useQuery({ queryKey: ["attempt-review", reviewId], enabled: !!reviewId, queryFn: () => reviewFn({ data: { attemptId ?? "" } }) });
   const answerSheets = useQuery({
     queryKey: ["student-answers", selected],
     enabled: !!selected,
     refetchInterval: 30000,
-    queryFn: async () => {
-      const { data, error } = await supabase.from("practice_attempts").select("id,title,score,created_at,answers").eq("user_id", selected ?? "").eq("assessment_mode", "exam").order("created_at", { ascending: false }).limit(20);
+    queryFn () => {
+      const { data, error } = await supabase.from("practice_attempts").select("id,title,score,created_at,answers").eq("user_id", selected ?? "").eq("assessment_mode", "exam").order("created_at", { ascending }).limit(20);
       if (error) throw new Error("No se pudieron leer las respuestas.");
-      return (data ?? []).map((r) => ({ ...r, picks: Array.isArray(r.answers) ? (r.answers as { index: number; pick: number }[]) : [] }));
+      return (data ?? []).map((r) => ({ ...r, picks: Array.isArray(r.answers) ? (r.answers[]) : [] }));
     },
   });
   const linkedIds = (roster.data?.data ?? []).map((s) => s.user_id).filter((id): id is string => !!id);
@@ -118,12 +117,12 @@ function Students() {
     queryKey: ["block-stats", linkedIds.join(",")],
     enabled: linkedIds.length > 0,
     refetchInterval: 30000,
-    queryFn: async () => {
+    queryFn () => {
       const { data, error } = await supabase.from("practice_attempts").select("user_id,title,score,earned_points").eq("assessment_mode", "exam").eq("verified_scoring", true).in("user_id", linkedIds).limit(5000);
       if (error) throw new Error("No se pudo leer el avance por bloque.");
-      const map: Record<string, { n: number; sum: number; pass: number }> = {};
+      const map, { n: number; sum: number; pass }> = {};
       for (const r of data ?? []) { const m = (map[r.title] ??= { n: 0, sum: 0, pass: 0 }); m.n++; m.sum += r.score; if (r.score >= 60) m.pass++; }
-      const byUser: Record<string, { n: number; pts: number }> = {};
+      const byUser, { n: number; pts }> = {};
       for (const r of data ?? []) { const u = (byUser[r.user_id] ??= { n: 0, pts: 0 }); u.n++; u.pts += r.earned_points; }
       return { blocks: Object.entries(map).sort(([x], [y]) => x.localeCompare(y)), byUser };
     },
@@ -133,12 +132,12 @@ function Students() {
   const certificates=useQuery({queryKey:['linked-certificates',selectedStudent],enabled:!!selectedStudent&&!!allowed,queryFn:()=>readCertificates({data:{studentId:selectedStudent??''}}),refetchInterval:30000,refetchOnWindowFocus:true});
   async function changeClassroom(data){setBusy(true);try{await classroom({data});await groups.refetch();setMessage('Cambio guardado.');}catch(e){setMessage(e instanceof Error?e.message:'No se pudo guardar.');}finally{setBusy(false);}}
   const filteredRoster=roster.data?.data.filter(s=>!groupId||groups.data?.members.some(m=>m.group_id===groupId&&m.student_id===s.id))??[];
-  async function add(e: React.FormEvent) {
+  async function add(e) {
     e.preventDefault();
     setBusy(true);
     setMessage("");
     try {
-      await register({ data: form });
+      await register({ data });
       setForm(empty);
       setMessage(
         "Estudiante registrado. Su avance se vincula al ingresar con este correo confirmado.",
@@ -183,7 +182,7 @@ function Students() {
             <CsvEnrollment institution={form.institution} onDone={() => void roster.refetch()} />
             <form onSubmit={add} className="mt-8 grid gap-4 border-y py-6 sm:grid-cols-2">
               <h2 className="text-xl font-bold sm:col-span-2">Registrar estudiante</h2>
-              {(["name", "email", "institution", "level"] as const).map((k) => (
+              {(["name", "email", "institution", "level"]).map((k) => (
                 <label key={k} className="grid gap-1 text-sm font-semibold">
                   {
                     {
@@ -223,7 +222,7 @@ function Students() {
                   e.preventDefault();
                   setBusy(true);
                   try {
-                    await grant({ data: { email: teacherEmail, role: teacherRole } });
+                    await grant({ data: { email, role } });
                     setMessage(
                       teacherRole === 'teacher' ? "Correo autorizado como docente; requiere prueba vigente o plan docente confirmado." : "Permiso docente retirado. Los permisos administrativos no se modifican.",
                     );
@@ -256,7 +255,7 @@ function Students() {
                 {message}
               </p>
             )}
-            <section className="mt-8 border-t border-border pt-5"><h2 className="text-xl font-bold">Estudiantes matriculados</h2><div className="mt-3 overflow-x-auto"><table className="w-full text-left text-sm"><thead><tr className="border-b border-border"><th className="p-3">Nombre</th><th>Correo</th><th>Cuenta</th><th>Plan</th><th>Simulacros</th><th>Puntos</th><th>Estado</th><th><span className="sr-only">Acciones</span></th></tr></thead><tbody>{roster.data?.data.map(st=>{const u=st.user_id?blockStats.data?.byUser[st.user_id]:undefined;return <tr key={st.id} className="border-b border-border"><td className="p-3">{st.name}</td><td>{st.email}</td><td>{st.user_id?'Vinculada':'Pendiente'}</td><td>{(()=>{const pl=plans.data?.[st.id];if(!pl)return '—';const d=(x:string|null)=>x?new Date(x).toLocaleDateString('es-CR'):'';return !pl.has_access?'❌ Sin acceso':pl.paid_until&&new Date(pl.paid_until)>new Date()?`✅ Pagado hasta ${d(pl.paid_until)}`:`🧪 Prueba hasta ${d(pl.trial_ends)}`})()}</td><td>{u?.n??0}</td><td>{u?.pts??0}</td><td>{st.status}</td><td><Button size="sm" variant="outline" onClick={()=>{setEditMsg('');setEdit({id:st.id,name:st.name,email:st.email,status:st.status,linked:!!st.user_id})}}>Editar</Button></td></tr>})}</tbody></table></div>{editMsg&&<p role="status" className="mt-2 text-sm">{editMsg}</p>}{edit&&<form className="mt-4 grid gap-3 rounded-lg border border-border p-4 sm:grid-cols-3" onSubmit={e=>{e.preventDefault();void saveEdit();}}><label className="grid gap-1">Nombre<input required maxLength={120} value={edit.name} onChange={e=>setEdit({...edit,name:e.target.value})} className="rounded-md border border-border bg-card p-3"/></label><label className="grid gap-1">Correo{edit.linked&&<span className="text-xs text-muted-foreground">Cuenta vinculada: el correo no se cambia</span>}<input required type="email" disabled={edit.linked} value={edit.email} onChange={e=>setEdit({...edit,email:e.target.value})} className="rounded-md border border-border bg-card p-3"/></label><label className="grid gap-1">Estado<select value={edit.status} onChange={e=>setEdit({...edit,status:e.target.value})} className="rounded-md border border-border bg-card p-3"><option value="activo">Activo</option><option value="retirado">Retirado</option><option value="suspendido">Suspendido</option></select></label><div className="flex gap-2 sm:col-span-3"><Button type="submit">Guardar</Button><Button type="button" variant="outline" onClick={()=>setEdit(null)}>Cancelar</Button></div></form>}</section><section className="mt-8 border-t border-border pt-5"><h2 className="text-xl font-bold">Avance por bloque</h2><p className="mt-1 text-sm text-muted-foreground">Simulacros verificados de sus estudiantes vinculados. Aprobado: 60 o más.</p><h3 className="mt-3 font-bold">Planificar por bloque</h3><label className="mt-2 grid grid-cols-[minmax(0,1fr)] gap-1 text-sm">Bloque<select value={planDeck} onChange={e=>setPlanDeck(e.target.value)} className="w-full min-w-0 rounded-md border border-border bg-card p-3"><option value="">Seleccione un bloque</option>{decks.filter(d=>certificationSubject(d.id,d.questionCount??0)).map(d=><option key={d.id} value={d.id}>{d.title}</option>)}</select></label>{planDeck&&(plan.isPending?<p role="status">Cargando…</p>:plan.isError?<p role="alert">{plan.error.message}</p>:<ol className="mt-3 max-h-[32rem] space-y-3 overflow-y-auto text-sm">{plan.data?.map(q=><li key={q.n}><p className="font-semibold">{q.n}. {q.q}</p><ul className="ml-4">{q.options.map((o,k)=><li key={k} className={k===q.answer?'font-bold text-accent':''}>{'ABCD'[k]}) {o}{k===q.answer?' ✓':''}</li>)}</ul><p className="ml-4 text-muted-foreground">{q.why} · {q.source}</p></li>)}</ol>)}<h3 className="mt-3 font-bold">Simulacros asignados</h3><ul className="mt-2 space-y-1 text-sm">{groups.data?.assignments.map(a=><li key={a.id}>{a.title} · {roster.data?.data.find(st=>st.id===a.student_id)?.name??'Estudiante'} · Entrega: {a.due_date??'Sin fecha'}{(()=>{if(!a.due_date)return null;const d=Math.ceil((new Date(`${a.due_date}T23:59:59-06:00`).getTime()-Date.now())/86400000);return d<0?<span className="ml-2 font-bold text-destructive" role="status">⚠️ Vencido</span>:d<=3?<span className="ml-2 font-bold text-accent" role="status">⏰ Vence en {d} {d===1?'día':'días'}</span>:null})()}</li>)}</ul>{!groups.data?.assignments.length&&<p className="mt-1 text-sm text-muted-foreground">Sin simulacros asignados.</p>}{blockStats.isError?<p role="alert">No se pudo leer el avance por bloque.</p>:!linkedIds.length?<p className="mt-3 text-muted-foreground">Aún no hay estudiantes con cuenta vinculada.</p>:<div className="mt-3 overflow-x-auto"><table className="w-full text-left text-sm"><thead><tr className="border-b border-border"><th className="p-3">Bloque</th><th>Intentos</th><th>Promedio</th><th>Aprobados</th><th>Reprobados</th></tr></thead><tbody>{blockStats.data?.blocks.map(([t,m])=><tr key={t} className="border-b border-border"><td className="p-3">{t}</td><td>{m.n}</td><td>{Math.round(m.sum/m.n)}%</td><td>{m.pass}</td><td>{m.n-m.pass}</td></tr>)}</tbody></table><div className="mt-5 space-y-4" aria-label="Gráfico por bloque">{blockStats.data?.blocks.map(([t,m])=>{const avg=Math.round(m.sum/m.n);const p=Math.round(m.pass/m.n*100);return <figure key={t}><figcaption className="text-sm font-semibold">{t}</figcaption><div className="mt-1 h-3 rounded-full bg-muted" role="img" aria-label={`Promedio ${avg}%`}><div className="h-3 rounded-full bg-primary" style={{width:`${avg}%`}}/></div><div className="mt-1 flex h-3 overflow-hidden rounded-full" role="img" aria-label={`${m.pass} aprobados, ${m.n-m.pass} reprobados`}><div className="bg-accent" style={{width:`${p}%`}}/><div className="bg-destructive" style={{width:`${100-p}%`}}/></div><p className="mt-1 text-xs text-muted-foreground">Promedio {avg}% · {m.pass} aprobados · {m.n-m.pass} reprobados</p></figure>})}</div>{blockStats.data?.blocks.length===0&&<p className="mt-3 text-muted-foreground">Sin simulacros entregados todavía.</p>}</div>}</section><section className="mt-8 border-y border-border py-5"><h2 className="text-xl font-bold">Grupos y matrícula</h2><form className="mt-4 flex flex-wrap items-end gap-3" onSubmit={e=>{e.preventDefault();void changeClassroom({action:'group',name:groupName});setGroupName('');}}><label className="grid gap-1">Nombre del grupo<input required maxLength={100} value={groupName} onChange={e=>setGroupName(e.target.value)} className="rounded-md border border-border bg-card p-3"/></label><Button disabled={busy} type="submit">Crear grupo</Button></form><label className="mt-4 grid gap-1">Grupo<select value={groupId} onChange={e=>setGroupId(e.target.value)} className="rounded-md border border-border bg-card p-3"><option value="">Todos mis estudiantes</option>{groups.data?.groups.map(g=><option key={g.id} value={g.id}>{g.name}</option>)}</select></label>{groups.isError&&<p role="alert">No se pudieron consultar los grupos.</p>}{groupId&&<label className="mt-4 grid gap-1">Matricular estudiante registrado<select aria-label="Matricular estudiante registrado" value="" onChange={e=>{if(e.target.value)void changeClassroom({action:'member',groupId,studentId:e.target.value});}} className="rounded-md border border-border bg-card p-3"><option value="">Seleccione estudiante</option>{roster.data?.data.filter(s=>s.teacher_id===user.id).map(s=><option key={s.id} value={s.id}>{s.name}</option>)}</select></label>}</section><h2 className="mt-8 text-xl font-bold">Estudiantes del grupo</h2>
+            <section className="mt-8 border-t border-border pt-5"><h2 className="text-xl font-bold">Estudiantes matriculados</h2><div className="mt-3 overflow-x-auto"><table className="w-full text-left text-sm"><thead><tr className="border-b border-border"><th className="p-3">Nombre</th><th>Correo</th><th>Cuenta</th><th>Plan</th><th>Simulacros</th><th>Puntos</th><th>Estado</th><th><span className="sr-only">Acciones</span></th></tr></thead><tbody>{roster.data?.data.map(st=>{const u=st.user_id?blockStats.data?.byUser[st.user_id]:undefined;return <tr key={st.id} className="border-b border-border"><td className="p-3">{st.name}</td><td>{st.email}</td><td>{st.user_id?'Vinculada':'Pendiente'}</td><td>{(()=>{const pl=plans.data?.[st.id];if(!pl)return '—';const d=(x)=>x?new Date(x).toLocaleDateString('es-CR'):'';return !pl.has_access?'❌ Sin acceso':pl.paid_until&&new Date(pl.paid_until)>new Date()?`✅ Pagado hasta ${d(pl.paid_until)}`:`🧪 Prueba hasta ${d(pl.trial_ends)}`})()}</td><td>{u?.n??0}</td><td>{u?.pts??0}</td><td>{st.status}</td><td><Button size="sm" variant="outline" onClick={()=>{setEditMsg('');setEdit({id:st.id,name:st.name,email:st.email,status:st.status,linked:!!st.user_id})}}>Editar</Button></td></tr>})}</tbody></table></div>{editMsg&&<p role="status" className="mt-2 text-sm">{editMsg}</p>}{edit&&<form className="mt-4 grid gap-3 rounded-lg border border-border p-4 sm:grid-cols-3" onSubmit={e=>{e.preventDefault();void saveEdit();}}><label className="grid gap-1">Nombre<input required maxLength={120} value={edit.name} onChange={e=>setEdit({...edit,name:e.target.value})} className="rounded-md border border-border bg-card p-3"/></label><label className="grid gap-1">Correo{edit.linked&&<span className="text-xs text-muted-foreground">Cuenta vinculada cambia</span>}<input required type="email" disabled={edit.linked} value={edit.email} onChange={e=>setEdit({...edit,email:e.target.value})} className="rounded-md border border-border bg-card p-3"/></label><label className="grid gap-1">Estado<select value={edit.status} onChange={e=>setEdit({...edit,status:e.target.value})} className="rounded-md border border-border bg-card p-3"><option value="activo">Activo</option><option value="retirado">Retirado</option><option value="suspendido">Suspendido</option></select></label><div className="flex gap-2 sm:col-span-3"><Button type="submit">Guardar</Button><Button type="button" variant="outline" onClick={()=>setEdit(null)}>Cancelar</Button></div></form>}</section><section className="mt-8 border-t border-border pt-5"><h2 className="text-xl font-bold">Avance por bloque</h2><p className="mt-1 text-sm text-muted-foreground">Simulacros verificados de sus estudiantes vinculados. Aprobado: 60 o más.</p><h3 className="mt-3 font-bold">Planificar por bloque</h3><label className="mt-2 grid grid-cols-[minmax(0,1fr)] gap-1 text-sm">Bloque<select value={planDeck} onChange={e=>setPlanDeck(e.target.value)} className="w-full min-w-0 rounded-md border border-border bg-card p-3"><option value="">Seleccione un bloque</option>{decks.filter(d=>certificationSubject(d.id,d.questionCount??0)).map(d=><option key={d.id} value={d.id}>{d.title}</option>)}</select></label>{planDeck&&(plan.isPending?<p role="status">Cargando…</p>:plan.isError?<p role="alert">{plan.error.message}</p>:<ol className="mt-3 max-h-[32rem] space-y-3 overflow-y-auto text-sm">{plan.data?.map(q=><li key={q.n}><p className="font-semibold">{q.n}. {q.q}</p><ul className="ml-4">{q.options.map((o,k)=><li key={k} className={k===q.answer?'font-bold text-accent':''}>{'ABCD'[k]}) {o}{k===q.answer?' ✓':''}</li>)}</ul><p className="ml-4 text-muted-foreground">{q.why} · {q.source}</p></li>)}</ol>)}<h3 className="mt-3 font-bold">Simulacros asignados</h3><ul className="mt-2 space-y-1 text-sm">{groups.data?.assignments.map(a=><li key={a.id}>{a.title} · {roster.data?.data.find(st=>st.id===a.student_id)?.name??'Estudiante'} · Entrega: {a.due_date??'Sin fecha'}{(()=>{if(!a.due_date)return null;const d=Math.ceil((new Date(`${a.due_date}T23:59:59-06:00`).getTime()-Date.now())/86400000);return d<0?<span className="ml-2 font-bold text-destructive" role="status">⚠️ Vencido</span>:d<=3?<span className="ml-2 font-bold text-accent" role="status">⏰ Vence en {d} {d===1?'día':'días'}</span>:null})()}</li>)}</ul>{!groups.data?.assignments.length&&<p className="mt-1 text-sm text-muted-foreground">Sin simulacros asignados.</p>}{blockStats.isError?<p role="alert">No se pudo leer el avance por bloque.</p>:!linkedIds.length?<p className="mt-3 text-muted-foreground">Aún no hay estudiantes con cuenta vinculada.</p>:<div className="mt-3 overflow-x-auto"><table className="w-full text-left text-sm"><thead><tr className="border-b border-border"><th className="p-3">Bloque</th><th>Intentos</th><th>Promedio</th><th>Aprobados</th><th>Reprobados</th></tr></thead><tbody>{blockStats.data?.blocks.map(([t,m])=><tr key={t} className="border-b border-border"><td className="p-3">{t}</td><td>{m.n}</td><td>{Math.round(m.sum/m.n)}%</td><td>{m.pass}</td><td>{m.n-m.pass}</td></tr>)}</tbody></table><div className="mt-5 space-y-4" aria-label="Gráfico por bloque">{blockStats.data?.blocks.map(([t,m])=>{const avg=Math.round(m.sum/m.n);const p=Math.round(m.pass/m.n*100);return <figure key={t}><figcaption className="text-sm font-semibold">{t}</figcaption><div className="mt-1 h-3 rounded-full bg-muted" role="img" aria-label={`Promedio ${avg}%`}><div className="h-3 rounded-full bg-primary" style={{width:`${avg}%`}}/></div><div className="mt-1 flex h-3 overflow-hidden rounded-full" role="img" aria-label={`${m.pass} aprobados, ${m.n-m.pass} reprobados`}><div className="bg-accent" style={{width:`${p}%`}}/><div className="bg-destructive" style={{width:`${100-p}%`}}/></div><p className="mt-1 text-xs text-muted-foreground">Promedio {avg}% · {m.pass} aprobados · {m.n-m.pass} reprobados</p></figure>})}</div>{blockStats.data?.blocks.length===0&&<p className="mt-3 text-muted-foreground">Sin simulacros entregados todavía.</p>}</div>}</section><section className="mt-8 border-y border-border py-5"><h2 className="text-xl font-bold">Grupos y matrícula</h2><form className="mt-4 flex flex-wrap items-end gap-3" onSubmit={e=>{e.preventDefault();void changeClassroom({action:'group',name:groupName});setGroupName('');}}><label className="grid gap-1">Nombre del grupo<input required maxLength={100} value={groupName} onChange={e=>setGroupName(e.target.value)} className="rounded-md border border-border bg-card p-3"/></label><Button disabled={busy} type="submit">Crear grupo</Button></form><label className="mt-4 grid gap-1">Grupo<select value={groupId} onChange={e=>setGroupId(e.target.value)} className="rounded-md border border-border bg-card p-3"><option value="">Todos mis estudiantes</option>{groups.data?.groups.map(g=><option key={g.id} value={g.id}>{g.name}</option>)}</select></label>{groups.isError&&<p role="alert">No se pudieron consultar los grupos.</p>}{groupId&&<label className="mt-4 grid gap-1">Matricular estudiante registrado<select aria-label="Matricular estudiante registrado" value="" onChange={e=>{if(e.target.value)void changeClassroom({action:'member',groupId,studentId:e.target.value});}} className="rounded-md border border-border bg-card p-3"><option value="">Seleccione estudiante</option>{roster.data?.data.filter(s=>s.teacher_id===user.id).map(s=><option key={s.id} value={s.id}>{s.name}</option>)}</select></label>}</section><h2 className="mt-8 text-xl font-bold">Estudiantes del grupo</h2>
             {roster.isError ? (
               <p role="alert">
                 No se pudo cargar el grupo.{" "}
@@ -333,7 +332,7 @@ function Students() {
                 </div>
               </>
             )}
-            {selectedStudent&&user&&<section className="mt-8 border-t border-border pt-5"><h2 className="text-xl font-bold">Asignar simulacro por materia</h2><form className="mt-4 grid gap-3" onSubmit={e=>{e.preventDefault();void changeClassroom({action:'assign',studentId:selectedStudent,deckId:assignedDeck,...(dueDate?{dueDate}:{})});}}><label className="grid gap-1">Simulacro<select className="rounded-md border border-border bg-card p-3" value={assignedDeck} onChange={e=>setAssignedDeck(e.target.value)}>{decks.filter(d=>certificationSubject(d.id,d.questionCount??0)).map(d=><option key={d.id} value={d.id}>{d.title}</option>)}</select></label><label className="grid gap-1">Fecha de entrega opcional<input type="date" value={dueDate} onChange={e=>setDueDate(e.target.value)} className="rounded-md border border-border bg-card p-3"/></label><Button type="submit" disabled={busy}>Asignar simulacro</Button></form><ul className="mt-4 space-y-2">{groups.data?.assignments.filter(a=>a.student_id===selectedStudent).map(a=><li key={a.id}>{a.title} · {a.due_date??'Sin fecha'}</li>)}</ul><h3 className="mt-5 text-lg font-bold">Respuestas por simulacro</h3>{answerSheets.isError?<p role="alert">No se pudieron leer las respuestas.</p>:!answerSheets.data?.length?<p className="text-sm text-muted-foreground">Sin simulacros entregados por este estudiante.</p>:<ul className="mt-2 space-y-3">{answerSheets.data.map(r=><li key={r.id} className="rounded-lg border border-border p-3"><p className="font-semibold">{r.title} · {r.score}% · {new Date(r.created_at).toLocaleDateString('es-CR',{timeZone:'America/Costa_Rica'})}</p><p className="mt-1 text-sm">{r.picks.map(x=>`${x.index+1}:${x.pick>=0?'ABCD'[x.pick]??'?':'—'}`).join('  ')}</p><Button size="sm" variant="outline" className="mt-2" onClick={()=>setReviewId(reviewId===r.id?null:r.id)}>{reviewId===r.id?'Ocultar preguntas':'Ver preguntas y clave'}</Button>{reviewId===r.id&&(review.isPending?<p role="status">Cargando…</p>:review.isError?<p role="alert">{review.error.message}</p>:<ol className="mt-3 space-y-3 text-sm">{review.data?.map(q=><li key={q.n}><p className="font-semibold">{q.n}. {q.q}</p><ul className="ml-4">{q.options.map((o,k)=><li key={k} className={k===q.answer?'font-bold text-accent':k===q.pick?'text-destructive':''}>{'ABCD'[k]}) {o}{k===q.answer?' ✓ correcta':''}{k===q.pick?' ← eligió':''}</li>)}</ul></li>)}</ol>)}</li>)}</ul>}<h3 className="mt-5 text-lg font-bold">Certificados del estudiante vinculado</h3>{certificates.isError?<p role="alert">No se pudo consultar certificados.</p>:certificates.isPending?<p>Consultando…</p>:<ul>{certificates.data?.map(c=><li key={c.hash} className="mt-2"><Link className="text-primary underline" to="/certificados" search={{h:c.hash}}>{c.title} · {c.score}% · Verificar QR/SHA-256</Link></li>)}</ul>}</section>}
+            {selectedStudent&&user&&<section className="mt-8 border-t border-border pt-5"><h2 className="text-xl font-bold">Asignar simulacro por materia</h2><form className="mt-4 grid gap-3" onSubmit={e=>{e.preventDefault();void changeClassroom({action:'assign',studentId,deckId,...(dueDate?{dueDate}:{})});}}><label className="grid gap-1">Simulacro<select className="rounded-md border border-border bg-card p-3" value={assignedDeck} onChange={e=>setAssignedDeck(e.target.value)}>{decks.filter(d=>certificationSubject(d.id,d.questionCount??0)).map(d=><option key={d.id} value={d.id}>{d.title}</option>)}</select></label><label className="grid gap-1">Fecha de entrega opcional<input type="date" value={dueDate} onChange={e=>setDueDate(e.target.value)} className="rounded-md border border-border bg-card p-3"/></label><Button type="submit" disabled={busy}>Asignar simulacro</Button></form><ul className="mt-4 space-y-2">{groups.data?.assignments.filter(a=>a.student_id===selectedStudent).map(a=><li key={a.id}>{a.title} · {a.due_date??'Sin fecha'}</li>)}</ul><h3 className="mt-5 text-lg font-bold">Respuestas por simulacro</h3>{answerSheets.isError?<p role="alert">No se pudieron leer las respuestas.</p>:!answerSheets.data?.length?<p className="text-sm text-muted-foreground">Sin simulacros entregados por este estudiante.</p>:<ul className="mt-2 space-y-3">{answerSheets.data.map(r=><li key={r.id} className="rounded-lg border border-border p-3"><p className="font-semibold">{r.title} · {r.score}% · {new Date(r.created_at).toLocaleDateString('es-CR',{timeZone:'America/Costa_Rica'})}</p><p className="mt-1 text-sm">{r.picks.map(x=>`${x.index+1}:${x.pick>=0?'ABCD'[x.pick]??'?':'—'}`).join('  ')}</p><Button size="sm" variant="outline" className="mt-2" onClick={()=>setReviewId(reviewId===r.id?null:r.id)}>{reviewId===r.id?'Ocultar preguntas':'Ver preguntas y clave'}</Button>{reviewId===r.id&&(review.isPending?<p role="status">Cargando…</p>:review.isError?<p role="alert">{review.error.message}</p>:<ol className="mt-3 space-y-3 text-sm">{review.data?.map(q=><li key={q.n}><p className="font-semibold">{q.n}. {q.q}</p><ul className="ml-4">{q.options.map((o,k)=><li key={k} className={k===q.answer?'font-bold text-accent':k===q.pick?'text-destructive':''}>{'ABCD'[k]}) {o}{k===q.answer?' ✓ correcta':''}{k===q.pick?' ← eligió':''}</li>)}</ul></li>)}</ol>)}</li>)}</ul>}<h3 className="mt-5 text-lg font-bold">Certificados del estudiante vinculado</h3>{certificates.isError?<p role="alert">No se pudo consultar certificados.</p>:certificates.isPending?<p>Consultando…</p>:<ul>{certificates.data?.map(c=><li key={c.hash} className="mt-2"><Link className="text-primary underline" to="/certificados" search={{h:c.hash}}>{c.title} · {c.score}% · Verificar QR/SHA-256</Link></li>)}</ul>}</section>}
             {selectedStudent && user && (
               <><LearningRecords key={selectedStudent} studentId={selectedStudent} userId={user.id} />
               <GradeBook key={`g${selectedStudent}`} studentId={selectedStudent} editable={roster.data?.data.find(s=>s.id===selectedStudent)?.teacher_id===user.id} /></>

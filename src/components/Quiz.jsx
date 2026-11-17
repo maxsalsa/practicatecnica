@@ -1,8 +1,8 @@
 import { useQueryClient } from "@tanstack/react-query";
 import {isEnglishBank,questionAudio,englishSupport,speakQuestion} from "@/lib/english-audio";
 import { AuthorizedContent } from "./AuthorizedContent";
-import { useEffect, useState, useRef, forwardRef, type HTMLAttributes } from "react";
-import type { Deck } from "@/lib/questions";
+import { useEffect, useState, useRef, forwardRef } from "react";
+
 import { saveAttempt } from "@/components/Progress";
 import { useAccount } from "./AccountProvider";
 import { useServerFn } from "@tanstack/react-start";
@@ -14,7 +14,7 @@ import { practiceQuestionIndices, PRACTICE_SIZE, isBriefPractice } from '@/lib/a
 import { variedIndices, readSeen, rememberSeen } from '@/lib/practice-variety';
 import { splitQuestionForm } from '@/lib/question-forms';
 
-[]; optionOrder:number[] }
+[]; optionOrder }
 
 function shuffle<T>(a) {
   const copy = [...a];
@@ -37,9 +37,9 @@ function QuizBody({
   lang = "es",
 }: {
   deck: Deck;
-  lang?: "es" | "en";
+  lang"es" | "en";
   onExit: () => void;
-  onMore?: () => Promise<void> | void;
+  onMore() => Promise<void> | void;
 }) {
   const en = lang === "en";
   const { user } = useAccount();
@@ -48,7 +48,7 @@ function QuizBody({
   const [saveStatus, setSaveStatus] = useState("");
   const [audioStatus, setAudioStatus] = useState("");
   const questionHeading = useRef<HTMLHeadingElement>(null);
-  const [responses, setResponses] = useState<{ index: number; pick: number }[]>([]);
+  const [responses, setResponses] = useState([]);
   const attemptId = useRef<string | null>(null);
   const persisted = useRef(false);
   useEffect(()=>()=>{if(typeof speechSynthesis!=="undefined")speechSynthesis.cancel();},[]);
@@ -58,9 +58,9 @@ function QuizBody({
     isBriefPractice(deck.id) ? shuffle(deck.questions.map((_,i)=>i)) : practiceQuestionIndices(deck.questions.length,deck.progressive ? deck.questions.map((_, i) => i) : shuffle(deck.questions.map((_, i) => i))),
   );
   const [i, setI] = useState(0);
-  const [pick, setPick] = useState<number | null>(null);
-  const [sel, setSel] = useState<number | null>(null);
-  const [wrong, setWrong] = useState<number[]>([]);
+  const [pick, setPick] = useState(null);
+  const [sel, setSel] = useState(null);
+  const [wrong, setWrong] = useState([]);
   const [score, setScore] = useState(0);
   const done = i >= order.length;
   const q = deck.questions[order[i] ?? 0];
@@ -83,7 +83,7 @@ function QuizBody({
       setOrder(s.order); setI(s.i); setPick(s.pick); setSel(s.sel); setWrong(s.wrong);
       setScore(s.score); setResponses(s.responses); setOptionOrder(s.optionOrder);
     } else if (!deck.progressive) {
-      setOrder(variedIndices(deck.questions.length, isBriefPractice(deck.id) ? deck.questions.length : PRACTICE_SIZE, readSeen(seenKey)));
+      setOrder(variedIndices(deck.questions.length, isBriefPractice(deck.id) ? deck.questions.length, readSeen(seenKey)));
     }
     setRestored(true);
   }, [ready, restored, draft, signature]);
@@ -104,7 +104,7 @@ function QuizBody({
       attemptId.current = id;
       setSaveStatus("Guardando en la nube…");
       void record({
-        data: { id, deckId: deck.id, title: deck.title, answers: responses, reportedScore: pct },
+        data: { id, deckId: deck.id, title: deck.title, answers, reportedScore },
       })
         .then(() => { setSaveStatus("✓ Avance guardado en la nube."); void queryClient.invalidateQueries({ queryKey: ["header-streak"] }); void queryClient.invalidateQueries({queryKey:['topic-points']}); })
         .catch(() =>
@@ -114,8 +114,7 @@ function QuizBody({
       saveAttempt(
         {
           ...deck,
-          questions: order
-            .map((index) => deck.questions[index])
+          questions .map((index) => deck.questions[index])
             .filter((x): x is NonNullable<typeof x> => !!x),
         },
         pct,
@@ -123,17 +122,17 @@ function QuizBody({
       );
     }, [done]);
 
-  const answer = (k: number) => {
+  const answer = (k) => {
     if (pick !== null || !q) return;
     setPick(k);
     const index = order[i];
     if (index === undefined) return;
     rememberSeen(seenKey, index, deck.questions.length);
-    setResponses((r) => [...r, { index, pick: k }]);
+    setResponses((r) => [...r, { index, pick }]);
     if (k === q.answer) setScore((s) => s + 1);
     else setWrong((w) => [...w, index]);
   };
-  const restart = (ids: number[]) => {
+  const restart = (ids) => {
     setOrder(deck.progressive ? [...ids].sort((a, b) => a - b) : shuffle(ids));
     setI(0);
     setPick(null);
@@ -184,8 +183,8 @@ function QuizBody({
                         id: attemptId.current ?? crypto.randomUUID(),
                         deckId: deck.id,
                         title: deck.title,
-                        answers: responses,
-                        reportedScore: pct,
+                        answers,
+                        reportedScore,
                       },
                     });
                     setSaveStatus("✓ Avance guardado en la nube.");
@@ -218,7 +217,7 @@ function QuizBody({
           )}
           <Button
             variant="ghost"
-            onClick={() => restart(variedIndices(deck.questions.length, isBriefPractice(deck.id) ? deck.questions.length : PRACTICE_SIZE, readSeen(seenKey)))}
+            onClick={() => restart(variedIndices(deck.questions.length, isBriefPractice(deck.id) ? deck.questions.length, readSeen(seenKey)))}
             className="rounded-full border bg-card px-5 py-3 font-semibold"
           >
             Repetir todo
@@ -280,7 +279,7 @@ function QuizBody({
             : ["Fundamentos", "Aplicación", "Razonamiento"][(q.difficulty ?? 1) - 1]}{" "}
           · {deck.id.startsWith("ia-") ? 0 : exercisePoints(q)} XP
         </p>
-        <h2 ref={questionHeading} tabIndex={-1} className="text-2xl font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring">{q.q}</h2>
+        <h2 ref={questionHeading} tabIndex={-1} className="text-2xl font-bold focus-visible focus-visible:outline-2 focus-visible:outline-ring">{q.q}</h2>
         {!isEnglishBank(deck.id) && <div className="mt-3 flex flex-wrap gap-2">
           <Button variant="outline" className="min-h-11" onClick={() => {
             const options = optionOrder.flatMap(k => q.options[k] === undefined ? [] : [q.options[k]]);
@@ -371,7 +370,6 @@ function QuizBody({
   );
 }
 
-export interface QuizProps extends HTMLAttributes<HTMLDivElement> {deck:Deck;onExit:()=>void;onMore?:()=>Promise<void>|void;lang?:"es"|"en"}
 export const Quiz=forwardRef<HTMLDivElement,QuizProps>(({deck,onExit,onMore,lang,className,...rest},ref)=>{const props={deck,onExit,lang:lang??'es',...(onMore?{onMore}:{})};const render=(loaded)=>loaded.questions.length<PRACTICE_SIZE&&!isBriefPractice(loaded.id)?<section className="mx-auto max-w-2xl px-5 py-8"><h2 className="text-xl font-bold">Práctica en preparación</h2><p className="mt-3 text-muted-foreground">Este banco tiene {loaded.questions.length} preguntas; la práctica requiere 20 preguntas de la misma materia.</p><Button className="mt-4" variant="outline" onClick={onExit}>Volver</Button></section>:<QuizBody {...props} deck={loaded}/>;return <div ref={ref} className={className} {...rest}>{deck.questions.length?render(deck):<AuthorizedContent id={deck.id} lang={lang??'es'}>{render}</AuthorizedContent>}</div>;});
 Quiz.displayName='Quiz';
 

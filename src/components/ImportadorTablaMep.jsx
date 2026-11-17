@@ -25,17 +25,17 @@ export default function ImportadorTablaMep() {
   useEffect(() => { setSubarea(subareas(modalidad, materia)[0] ?? ''); }, [modalidad, materia]);
 
   const tipo = tipoContexto(modalidad);
-  const items = useMemo(() => indicadores.flatMap((r, k) => generarItemsMep({ indicador: r.indicador, tema: r.tema, tipo, semilla: semilla * 97 + k, cantidad: 3, prefijo: `tabla-${k}` })), [indicadores, tipo, semilla]);
+  const items = useMemo(() => indicadores.flatMap((r, k) => generarItemsMep({ indicador: r.indicador, tema: r.tema, tipo, semilla * 97 + k, cantidad: 3, prefijo: `tabla-${k}` })), [indicadores, tipo, semilla]);
   const xp = items.reduce((n, it) => n + (resp[it.id] ? calificarItem(it, resp[it.id]).xp : 0), 0);
 
   const leerArchivo = async (e) => { const f = e.target.files?.[0]; if (f) setTexto(await f.text()); };
   const extraer = () => { const r = parsearTablaMep(texto); setIndicadores(r); setResp({}); toast[r.length ? 'success' : 'error'](r.length ? `${r.length} indicadores extraídos.` : 'No se encontraron indicadores de logro.'); };
-  const usarCatalogo = () => { setIndicadores(filtrarIndicadores({ modalidad, nivel, asignatura: materia, subarea }).map(({ indicador, tema }) => ({ indicador, tema }))); setResp({}); };
+  const usarCatalogo = () => { setIndicadores(filtrarIndicadores({ modalidad, nivel, asignatura, subarea }).map(({ indicador, tema }) => ({ indicador, tema }))); setResp({}); };
   const guardar = async () => {
     setSaving(true);
     const { error } = await supabase.from('mep_spec_indicators').insert(indicadores.map((r) => ({ modalidad, nivel, materia, subarea, tema: r.tema, indicador: r.indicador.slice(0, 600) })));
     setSaving(false);
-    toast[error ? 'error' : 'success'](error ? 'No se pudo guardar: solo cuentas docentes o administración con sesión iniciada.' : 'Indicadores guardados.');
+    toast[error ? 'error' : 'success'](error ? 'No se pudo guardar administración con sesión iniciada.' : 'Indicadores guardados.');
   };
 
   return <div className="mx-auto grid max-w-3xl grid-cols-[minmax(0,1fr)] gap-5 px-4 py-6">
@@ -48,7 +48,7 @@ export default function ImportadorTablaMep() {
         <select aria-label="Materia" className={sel} value={materia} onChange={(e) => setMateria(e.target.value)}>{asignaturas(modalidad).map((m) => <option key={m}>{m}</option>)}</select>
         <select aria-label="Subárea" className={sel} value={subarea} onChange={(e) => setSubarea(e.target.value)}>{subareas(modalidad, materia).map((m) => <option key={m}>{m}</option>)}</select>
       </div>
-      <textarea aria-label="Tabla de especificaciones" className="min-h-40 w-full rounded-xl border border-input bg-background p-3 text-base" placeholder={'Tema: Proporcionalidad\nIndicador 1: Resuelve problemas…'} value={texto} onChange={(e) => setTexto(e.target.value)} />
+      <textarea aria-label="Tabla de especificaciones" className="min-h-40 w-full rounded-xl border border-input bg-background p-3 text-base" placeholder={'Tema: Proporcionalidad\nIndicador 1 problemas…'} value={texto} onChange={(e) => setTexto(e.target.value)} />
       <input aria-label="Subir archivo" type="file" accept=".txt,.csv,.json,.tsv" onChange={leerArchivo} className="text-sm" />
       <div className="grid gap-2 sm:grid-cols-2">
         <Button size="lg" className="h-12" onClick={extraer} disabled={!texto.trim()}>Extraer indicadores</Button>
@@ -57,7 +57,7 @@ export default function ImportadorTablaMep() {
     </section>
 
     {indicadores.length > 0 && <section className="grid gap-3 rounded-2xl border border-border bg-card p-4 print:border-0 print:shadow-none">
-      <div className="grid gap-2 print:hidden sm:grid-cols-[1fr_auto_auto_auto]">
+      <div className="grid gap-2 print sm:grid-cols-[1fr_auto_auto_auto]">
         <input aria-label="Nombre del colegio" className={sel} placeholder="Nombre del colegio para el membrete" value={colegio} onChange={(e) => setColegio(e.target.value)} />
         <Button size="lg" variant="outline" className="h-12" onClick={() => { setSemilla((s) => s + 1); setResp({}); }}>Otra versión</Button>
         <Button size="lg" variant="outline" className="h-12" onClick={guardar} disabled={saving}>Guardar</Button>

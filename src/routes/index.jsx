@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { decks, type Deck } from "@/lib/questions";
+import { decks } from "@/lib/questions";
 import heroImg from "@/assets/hero-niveles.jpg";
 import shareImage from "@/assets/inicio-26x1.jpg.asset.json";
 import { PromoBanners } from "@/components/PromoBanners";
@@ -21,8 +21,7 @@ import { CurriculumSelector } from '@/components/CurriculumSelector';
 
 export const Route = createFileRoute("/")({staticData:{sitemap:true},
   head: () => ({
-    meta: [
-      { title: "pracTICAtecnica.com | Prácticas, simulacros y juegos en Costa Rica" },
+    meta { title: "pracTICAtecnica.com | Prácticas, simulacros y juegos en Costa Rica" },
       { name: "description", content: "Repase con prácticas guiadas, simulacros, juegos y materiales de primaria, secundaria y especialidades técnicas. Preparación independiente en Costa Rica." },
       { property: "og:title", content: "pracTICAtecnica.com | Prácticas, simulacros y juegos en Costa Rica" },
       { property: "og:description", content: "Repase con prácticas guiadas, simulacros, juegos y materiales de primaria, secundaria y especialidades técnicas. Preparación independiente en Costa Rica." },
@@ -37,11 +36,11 @@ export const Route = createFileRoute("/")({staticData:{sitemap:true},
     ],
     links: [{ rel: "canonical", href: "https://practicatecnica.com" }],
   }),
-  component: Index,
+  component,
 });
 
 function Index() {
-  const [deck, setDeck] = useState<Deck | null>(null);
+  const [deck, setDeck] = useState(null);
   const [stage, setStage] = useState("primaria");
   const current = STAGES.find((x) => x.id === stage) ?? STAGES[0];
   const shown = current ? decks.filter(current.match) : [];
@@ -70,7 +69,7 @@ function Index() {
           <CurriculumSelector />
           <div className="mt-3 flex flex-wrap gap-2">
             <Button asChild variant="link"><Link to="/explorar">Todas las materias</Link></Button>
-            <Button asChild variant="link"><Link to="/especialidades" search={{ code: undefined }}>Especialidades técnicas</Link></Button>
+            <Button asChild variant="link"><Link to="/especialidades" search={{ code }}>Especialidades técnicas</Link></Button>
             <Button asChild variant="link"><Link to="/libros">Material gratuito</Link></Button>
             <Button asChild variant="link"><Link to="/ligas">Ligas</Link></Button>
             <Button asChild variant="link"><Link to="/institucion">🏫 Administración de centros educativos</Link></Button>
@@ -110,7 +109,7 @@ function Index() {
           </div>
           <div className="mt-6 flex flex-wrap justify-center gap-2">
             {current?.links.map((l) => (
-              <Link key={l.label} to={l.to as "/"} search={l.search as never} className="rounded-full border border-accent bg-card px-4 py-2 text-sm font-bold hover:bg-accent hover:text-accent-foreground">{l.label}</Link>
+              <Link key={l.label} to={l.to as "/"} search={l.search} className="rounded-full border border-accent bg-card px-4 py-2 text-sm font-bold hover:bg-accent hover:text-accent-foreground">{l.label}</Link>
             ))}
           </div>
           <h2 className="mt-10 text-center text-2xl font-black">2 · Elija una práctica</h2>
@@ -149,8 +148,8 @@ function Index() {
 }
 
 
-const fichas = (level: string) => ({ to: "/practicas", search: { subject: "matematica", level, lang: "es", mode: "practice", variant: 0 } });
-const STAGES: { id: string; emoji: string; title: string; sub: string; match: (d) => boolean; links: { label: string; to: string; search?: object }[] }[] = [
+const fichas = (level) => ({ to: "/practicas", search: { subject: "matematica", level, lang: "es", mode: "practice", variant: 0 } });
+const STAGES: { id: string; emoji: string; title: string; sub: string; match: (d) => boolean; links: { label: string; to: string; search}[] }[] = [
   { id: "primaria", emoji: "🎒", title: "Primaria", sub: "1.º a 6.º grado", match: (d) => d.id.startsWith("prim"),
     links: [{ label: "📚 Libros 1.º–5.º", to: "/libros" }, { label: "📘 6.º grado (500 versiones)", to: "/sexto" }, { label: "🗺️ Mapas 1.º–5.º", to: "/resumen-primaria" }, { label: "🗺️ Mapas 6.º", to: "/resumen-sexto" }, { label: "🎡 Ruleta", to: "/ruleta" }] },
   { id: "academica", emoji: "📚", title: "Secundaria académica", sub: "7.º a 11.º · liceos", match: (d) => ["sim7", "sim10", "historia", "espanol", "religion", "civica"].includes(d.id),

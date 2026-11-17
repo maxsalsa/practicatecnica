@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { generateQuestions } from "@/lib/ai.functions";
-import type { Deck } from "@/lib/questions";
+
 import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 
@@ -11,9 +11,9 @@ export function AiPractice({ onStart }: { onStart: (d) => void }) {
   const gen = useServerFn(generateQuestions);
   const [topic, setTopic] = useState("");
   const [subject, setSubject] = useState(subjects[0] ?? "Matemática");
-  const [lang, setLang] = useState<"es" | "en">("es");
+  const [lang, setLang] = useState("es");
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState(null);
 
   const submit = async () => {
     setLoading(true); setError(null);
@@ -41,7 +41,7 @@ export function AiPractice({ onStart }: { onStart: (d) => void }) {
           {subjects.map((s) => <option key={s}>{s}</option>)}
         </select>
         <div className="flex overflow-hidden rounded-xl border">
-          {(["es", "en"] as const).map((l) => (
+          {(["es", "en"]).map((l) => (
             <button key={l} onClick={() => setLang(l)} className={`px-4 py-2 font-semibold ${lang === l ? "bg-primary text-primary-foreground" : ""}`}>
               {l === "es" ? "Español" : "English"}
             </button>
@@ -53,7 +53,7 @@ export function AiPractice({ onStart }: { onStart: (d) => void }) {
         </button>
       </div>
       {error && <p className="mt-3 text-sm text-destructive">{error}</p>}
-      <p className="mt-3 text-xs text-muted-foreground">Contenido generado por IA: revise la fuente indicada en cada respuesta.</p>
+      <p className="mt-3 text-xs text-muted-foreground">Contenido generado por IA respuesta.</p>
     </section>
   );
 }

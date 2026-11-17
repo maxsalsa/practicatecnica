@@ -7,8 +7,7 @@ import { useAccount } from "@/components/AccountProvider";
 import { GMAIL_ONLY_MESSAGE, isAllowedAccountEmail } from "@/lib/account-email";
 export const Route = createFileRoute("/auth")({staticData:{sitemap:false},
   head: () => ({
-    meta: [
-      { title: "Ingresar · pracTICAtecnica.com" },
+    meta { title: "Ingresar · pracTICAtecnica.com" },
       {
         name: "description",
         content: "Ingrese para guardar sus prácticas y progreso entre dispositivos.",
@@ -19,12 +18,12 @@ export const Route = createFileRoute("/auth")({staticData:{sitemap:false},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: Auth,
+  component,
 });
 function Auth() {
   const { user } = useAccount();
   const navigate = useNavigate();
-  const [mode, setMode] = useState<"login" | "signup" | "forgot">("login");
+  const [mode, setMode] = useState("login");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
@@ -32,7 +31,7 @@ function Auth() {
   useEffect(() => {
     if (user) void navigate({ to: "/panel" });
   }, [user, navigate]);
-  async function social(provider: "google") {
+  async function social(provider) {
     setBusy(true);
     setMessage("");
     try {
@@ -44,7 +43,7 @@ function Auth() {
       setBusy(false);
     }
   }
-  async function submit(e: React.FormEvent) {
+  async function submit(e) {
     e.preventDefault();
     if (mode !== "forgot" && !isAllowedAccountEmail(email)) { setMessage(GMAIL_ONLY_MESSAGE); return; }
     setBusy(true);

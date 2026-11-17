@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { LANGS, type MC } from "@/lib/lang-skills";
+import { LANGS } from "@/lib/lang-skills";
 import { Button } from "@/components/ui/button";
 
 const SECONDS_PER_ITEM = 60;
@@ -7,7 +7,7 @@ const PASS = 70;
 
 function shuffle<T>(a) { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j]!, b[i]!]; } return b; }
 
-export function levelItems(level: string): MC[] {
+export function levelItems(level): MC[] {
   const en = LANGS.en;
   return [...en.grammar, ...en.listen].filter((q) => q.level === level);
 }
@@ -16,8 +16,8 @@ export function LevelTest({ level }: { level: "B2" | "C1" }) {
   const [started, setStarted] = useState(false);
   const items = useMemo(() => (started ? shuffle(levelItems(level)) : []), [started, level]);
   const [i, setI] = useState(0);
-  const [picks, setPicks] = useState<(number | null)[]>([]);
-  const [left, setLeft] = useState<number | null>(null);
+  const [picks, setPicks] = useState([]);
+  const [left, setLeft] = useState(null);
   const done = started && i >= items.length;
 
   useEffect(() => { if (started) { setLeft(items.length * SECONDS_PER_ITEM); setPicks([]); setI(0); } }, [started, items.length]);

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { loadProfile, loadStreak, type Profile } from "@/lib/profile";
+import { loadProfile, loadStreak } from "@/lib/profile";
 import { useAccount } from "./AccountProvider";
 import { supabase } from "@/integrations/supabase/client";
 import { readAttempts } from "@/lib/cloud-progress";
@@ -8,7 +8,7 @@ import { aggregateAttempts, costaRicaDay } from "@/lib/progress-data";
 
 export function Greeting() {
   const { user, ready } = useAccount();
-  const [p, setP] = useState<Profile | null>(null);
+  const [p, setP] = useState(null);
   const [st, setSt] = useState({ count: 0, xp: 0, xpDay: "" });
   useEffect(() => {
     if (!ready) return;

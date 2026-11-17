@@ -1,16 +1,16 @@
-import { useEffect, useState, type ReactNode } from "react";
-import type { Deck } from "@/lib/questions";
+import { useEffect, useState } from "react";
 
-import type { Stat } from "@/lib/progress-data";
+
+
 import { aggregateAttempts, costaRicaDay } from "@/lib/progress-data";
 import { readAttempts } from "@/lib/cloud-progress";
 import { useAccount } from "./AccountProvider";
 import { Link } from "@tanstack/react-router";
 const KEY = "pt-stats";
 
-export function saveAttempt(deck: Deck, pct: number, earned = 0) {
-  const all: Record<string, Stat> = JSON.parse(localStorage.getItem(KEY) || "{}");
-  const s = all[deck.id] ?? { title: deck.title, attempts: 0, best: 0, last: 0, history: [] };
+export function saveAttempt(deck) {
+  const all, Stat> = JSON.parse(localStorage.getItem(KEY) || "{}");
+  const s = all[deck.id] ?? { title: deck.title, attempts: 0, best: 0, last: 0, history };
   s.attempts += 1;
   s.last = pct;
   s.best = Math.max(s.best, pct);
@@ -38,14 +38,14 @@ export function saveAttempt(deck: Deck, pct: number, earned = 0) {
   localStorage.setItem("pt-streak", JSON.stringify(st));
 }
 
-export function levelFor(points: number) {
+export function levelFor(points) {
   if (points >= 2000) return "Liga Diamante 💎";
   if (points >= 1000) return "Liga Oro 🥇";
   if (points >= 400) return "Liga Plata 🥈";
   return "Liga Bronce 🥉";
 }
 
-export function Progress({ empty = null }: { empty?: ReactNode }) {
+export function Progress({ empty = null }: { empty}) {
   const { user, ready } = useAccount();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
@@ -169,7 +169,7 @@ export function Progress({ empty = null }: { empty?: ReactNode }) {
   );
 }
 
-function Box({ label, value }: { label: string; value: string }) {
+function Box({ label, value }: { label: string; value }) {
   return (
     <div className="rounded-2xl border bg-card p-5">
       <p className="text-sm text-muted-foreground">{label}</p>

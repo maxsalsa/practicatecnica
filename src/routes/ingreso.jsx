@@ -2,14 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/ingreso")({staticData:{sitemap:false},
-  head: () => ({ meta: [
-    { title: "Ingreso a colegios científicos, humanistas, bilingües y CTP · pracTICAtecnica.com" },
+  head: () => ({ meta { title: "Ingreso a colegios científicos, humanistas, bilingües y CTP · pracTICAtecnica.com" },
     { name: "description", content: "Prepárese para el ingreso a colegios científicos, humanistas, bilingües, CTP de 7.º y especialidades de 10.º, y liceos académicos." },
     { property: "og:title", content: "Ingreso a colegios · pracTICAtecnica.com" },
     { property: "og:description", content: "Qué estudiar, cómo practicar y simulacros para cada tipo de colegio en Costa Rica." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
   ] }),
-  component: Ingreso,
+  component,
 });
 
 const TIPOS = [
@@ -17,7 +16,7 @@ const TIPOS = [
   { e: "🔬", t: "Colegios científicos", d: "Ingreso a 10.º. Suelen evaluar razonamiento matemático, ciencias y comprensión lectora.", temas: ["Álgebra y geometría de 9.º", "Biología, química y física básica"] },
   { e: "📜", t: "Colegios humanistas", d: "Ingreso a 10.º. Suelen evaluar comprensión lectora, redacción, razonamiento y cultura general.", temas: ["Textos argumentativos", "Historia de Costa Rica"] },
   { e: "🇬🇧", t: "Colegios y liceos bilingües", d: "Ingreso a 7.º. Suelen incluir comprensión de lectura y escucha en inglés, más Matemática y Español.", temas: ["Inglés: grammar, listening, writing", "Matemática de 6.º"] },
-  { e: "🛠️", t: "CTP · ingreso a 7.º", d: "Talleres exploratorios en 7.º, 8.º y 9.º. Suelen pedir notas de 6.º y, en algunos casos, prueba o entrevista.", temas: ["Repaso de 6.º", "Talleres: electricidad, informática, turismo"] },
+  { e: "🛠️", t: "CTP · ingreso a 7.º", d: "Talleres exploratorios en 7.º, 8.º y 9.º. Suelen pedir notas de 6.º y, en algunos casos, prueba o entrevista.", temas: ["Repaso de 6.º", "Talleres, informática, turismo"] },
   { e: "⚙️", t: "CTP · especialidad en 10.º", d: "Elección de especialidad técnica (10.º a 12.º). Suele considerar notas de 9.º y afinidad con la especialidad.", temas: ["Simulacro de 10.º", "Libro de especialidades CTP"] },
 ];
 

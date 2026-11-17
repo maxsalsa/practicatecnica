@@ -11,7 +11,7 @@ import { useInstitutionPrices } from './TariffsPanel';
 import { InstitutionDocumentHeader } from './InstitutionDocumentHeader';
 
 const contactSchema = z.object({ name: z.string(), email: z.string(), phone: z.string(), address: z.string() });
-function FamilyContact({ value }: { value: unknown }) {
+function FamilyContact({ value }: { value }) {
   const result = contactSchema.safeParse(value);
   if (!result.success) return null;
   const c = result.data;
@@ -19,22 +19,22 @@ function FamilyContact({ value }: { value: unknown }) {
 }
 
 /** Revisión de matrículas digitales hechas por familias. Solo dirección/administración/Max. */
-export function EnrollmentReview({ inst, name, logoPath }: { inst: string; name: string; logoPath: string | null }) {
+export function EnrollmentReview({ inst, name, logoPath }: { inst: string; name: string; logoPath }) {
   const prices = useInstitutionPrices(inst);
   const pricing = useEnrollmentPricing(inst);
   const q = useQuery({
     queryKey: ['enroll-review', inst],
-    queryFn: async () => {
-      const { data, error } = await supabase.from('enrollment_requests').select('*').eq('institution_id', inst).order('created_at', { ascending: false });
+    queryFn () => {
+      const { data, error } = await supabase.from('enrollment_requests').select('*').eq('institution_id', inst).order('created_at', { ascending });
       if (error) throw error; return data;
     },
   });
-  async function open(path: string) {
+  async function open(path) {
     if (!(await openPrivateFile('enrollment-files', path))) toast.error('No se pudo abrir el archivo.');
   }
-  async function review(id: string, approve: boolean) {
+  async function review(id) {
     const note = approve ? '' : (window.prompt('Motivo del rechazo (la familia lo verá):') ?? '');
-    const { data, error } = await supabase.rpc('review_enrollment', { _id: id, _approve: approve, _note: note });
+    const { data, error } = await supabase.rpc('review_enrollment', { _id, _approve, _note });
     if (error) { toast.error('No se pudo registrar la decisión.'); return; }
     toast.success(data === 'aprobada_sin_cuenta' ? 'Aprobada. El estudiante aparecerá en la lista cuando entre con su Gmail.' : approve ? 'Matrícula aprobada.' : 'Solicitud rechazada.');
     q.refetch(); void pricing.refetch();

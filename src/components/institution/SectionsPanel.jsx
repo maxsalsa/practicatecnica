@@ -8,47 +8,47 @@ import { isAllowedAccountEmail, GMAIL_ONLY_MESSAGE } from '@/lib/account-email';
 import {institutionSectionLinks} from '@/lib/institution-links';
 
 const field = 'mt-1 w-full rounded-xl border border-border bg-background px-3 py-2';
-const RELATIONS = [['madre', 'Madre'], ['padre', 'Padre'], ['encargado', 'Encargado(a)']] as const;
-const friendly = (m: string) => (/Gmail|rol|estudiante|guía|personal|Solo|existe/.test(m) ? m : 'No se pudo guardar el cambio.');
+const RELATIONS = [['madre', 'Madre'], ['padre', 'Padre'], ['encargado', 'Encargado(a)']];
+const friendly = (m) => (/Gmail|rol|estudiante|guía|personal|Solo|existe/.test(m) ? m : 'No se pudo guardar el cambio.');
 
 /** Sections with a guide teacher, their students and linked families. Managers edit everything; guides link families of their own students. */
-export function SectionsPanel({ institutionId, manager }: { institutionId: string; manager: boolean }) {
+export function SectionsPanel({ institutionId, manager }: { institutionId: string; manager }) {
   const { user } = useAccount();
   const queries = useQueryClient();
   const people = useQuery({
     queryKey: ['institution-people', institutionId],
-    queryFn: async () => { const { data, error } = await supabase.rpc('institution_people', { _inst: institutionId }); if (error) throw new Error('No se pudo cargar el personal y estudiantes.'); return data; },
+    queryFn () => { const { data, error } = await supabase.rpc('institution_people', { _inst }); if (error) throw new Error('No se pudo cargar el personal y estudiantes.'); return data; },
   });
   const sections = useQuery({
     queryKey: ['institution-sections', institutionId],
-    queryFn: async () => { const { data, error } = await supabase.from('institution_sections').select('id,name,guide_id').eq('institution_id', institutionId).order('name'); if (error) throw new Error('No se pudieron cargar las secciones.'); return data; },
+    queryFn () => { const { data, error } = await supabase.from('institution_sections').select('id,name,guide_id').eq('institution_id', institutionId).order('name'); if (error) throw new Error('No se pudieron cargar las secciones.'); return data; },
   });
-  const refresh = () => { for (const k of ['institution-people', 'institution-sections', 'channels']) void queries.invalidateQueries({ queryKey: [k, institutionId] }); };
+  const refresh = () => { for (const k of ['institution-people', 'institution-sections', 'channels']) void queries.invalidateQueries({ queryKey, institutionId] }); };
   const [name, setName] = useState('');
   const [guide, setGuide] = useState('');
   const staff = (people.data ?? []).filter(p => p.member_role === 'docente' || p.member_role === 'direccion' || p.member_role === 'administrativo');
   const students = (people.data ?? []).filter(p => p.member_role === 'estudiante');
-  const label = (p: { display_name: string; email: string | null }) => p.display_name || p.email || 'Sin nombre registrado';
+  const label = (p) => p.display_name || p.email || 'Sin nombre registrado';
 
-  async function create(e: React.FormEvent) {
+  async function create(e) {
     e.preventDefault();
-    const { error } = await supabase.rpc('save_section', { _inst: institutionId, _id: null as unknown as string, _name: name, _guide: (guide || null) as string });
+    const { error } = await supabase.rpc('save_section', { _inst, _id, _name, _guide: (guide || null) });
     if (error) { toast.error(error.message.includes('duplicate') ? 'Ya existe una sección con ese nombre.' : friendly(error.message)); return; }
     toast.success('Sección creada.'); setName(''); setGuide(''); refresh();
   }
-  async function setSectionGuide(id: string, sectionName: string, guideId: string) {
-    const { error } = await supabase.rpc('save_section', { _inst: institutionId, _id: id, _name: sectionName, _guide: (guideId || null) as string });
+  async function setSectionGuide(id) {
+    const { error } = await supabase.rpc('save_section', { _inst, _id, _name, _guide: (guideId || null) });
     if (error) { toast.error(friendly(error.message)); return; }
     toast.success('Profesor(a) guía actualizado.'); refresh();
   }
-  async function assign(section: string, student: string) {
+  async function assign(section) {
     if (!student) return;
-    const { error } = await supabase.rpc('assign_student_section', { _section: section, _student: student });
+    const { error } = await supabase.rpc('assign_student_section', { _section, _student });
     if (error) { toast.error(friendly(error.message)); return; }
     toast.success('Estudiante asignado.'); refresh();
   }
-  async function remove(section: string, student: string) {
-    const { error } = await supabase.rpc('remove_student_section', { _section: section, _student: student });
+  async function remove(section) {
+    const { error } = await supabase.rpc('remove_student_section', { _section, _student });
     if (error) { toast.error(friendly(error.message)); return; }
     refresh();
   }
@@ -82,23 +82,23 @@ export function SectionsPanel({ institutionId, manager }: { institutionId: strin
   </div>;
 }
 
-function StudentRow({ institutionId, student, manager, onRemove, onChange }: { institutionId: string; student: { user_id: string; display_name: string; email: string | null; guardians: number }; manager: boolean; onRemove: () => void; onChange: () => void }) {
+function StudentRow({ institutionId, student, manager, onRemove, onChange }: { institutionId: string; student: { user_id: string; display_name: string; email null; guardians }; manager: boolean; onRemove: () => void; onChange: () => void }) {
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState('');
-  const [relation, setRelation] = useState<string>('madre');
+  const [relation, setRelation] = useState('madre');
   const guardians = useQuery({
-    queryKey: ['student-guardians', institutionId, student.user_id], enabled: open,
-    queryFn: async () => { const { data, error } = await supabase.rpc('student_guardians', { _inst: institutionId, _student: student.user_id }); if (error) throw new Error('No se pudieron cargar las familias.'); return data; },
+    queryKey: ['student-guardians', institutionId, student.user_id], enabled,
+    queryFn () => { const { data, error } = await supabase.rpc('student_guardians', { _inst, _student: student.user_id }); if (error) throw new Error('No se pudieron cargar las familias.'); return data; },
   });
-  async function link(e: React.FormEvent) {
+  async function link(e) {
     e.preventDefault();
     if (!isAllowedAccountEmail(email)) { toast.error(GMAIL_ONLY_MESSAGE); return; }
-    const { error } = await supabase.rpc('link_guardian', { _inst: institutionId, _student: student.user_id, _email: email.trim(), _relation: relation });
+    const { error } = await supabase.rpc('link_guardian', { _inst, _student: student.user_id, _email: email.trim(), _relation });
     if (error) { toast.error(friendly(error.message)); return; }
     toast.success('Familia vinculada.'); setEmail(''); void guardians.refetch(); onChange();
   }
-  async function unlink(guardianId: string) {
-    const { error } = await supabase.rpc('unlink_guardian', { _inst: institutionId, _guardian: guardianId, _student: student.user_id });
+  async function unlink(guardianId) {
+    const { error } = await supabase.rpc('unlink_guardian', { _inst, _guardian, _student: student.user_id });
     if (error) { toast.error(friendly(error.message)); return; }
     void guardians.refetch(); onChange();
   }

@@ -5,16 +5,15 @@ import { PublicEditorialCatalog } from '@/components/institution/PublicEditorial
 import { Button } from '@/components/ui/button';
 
 export const Route = createFileRoute('/campana-clara')({
-  staticData: { sitemap: true },
-  head: () => ({ meta: [
-    { title: 'Campaña Clara · publicaciones institucionales | pracTICAtecnica.com' },
+  staticData: { sitemap },
+  head: () => ({ meta { title: 'Campaña Clara · publicaciones institucionales | pracTICAtecnica.com' },
     { name: 'description', content: 'Campañas y circulares institucionales aprobadas, con acceso a los canales autorizados de su institución.' },
     { property: 'og:title', content: 'Campaña Clara · pracTICAtecnica.com' },
     { property: 'og:description', content: 'Publicaciones aprobadas y comunicación institucional protegida.' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary' },
   ] }),
-  component: CampaignPage,
+  component,
 });
 
 function CampaignPage() {

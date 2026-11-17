@@ -14,24 +14,23 @@ import { ROLE_LABELS } from '@/lib/institutions';
 import { menuView } from '@/lib/menu-view';
 import { useMenuPreview } from './useMenuPreview';
 
-type UiLang = "es" | "en" | "fr" | "de";
-const DICT: Record<string, [string, string, string]> = {
+const DICT, [string, string, string]> = {
   Inicio: ["Home", "Accueil", "Start"], "Acerca de": ["About", "À propos", "Über uns"], Cabina: ["Cockpit", "Cockpit", "Cockpit"], "Ingreso a colegios": ["School admission", "Admission", "Schulaufnahme"], Libros: ["Books", "Livres", "Bücher"],
   Simulacros: ["Mock exams", "Examens blancs", "Probeprüfungen"], Idiomas: ["Languages", "Langues", "Sprachen"], Juegos: ["Games", "Jeux", "Spiele"],
   "Mi panel": ["My dashboard", "Mon tableau", "Mein Bereich"], Planes: ["Plans", "Forfaits", "Tarife"], Precios: ["Pricing", "Tarifs", "Preise"], "Claro / oscuro": ["Light / dark", "Clair / sombre", "Hell / dunkel"],
   Docentes: ["Teachers", "Enseignants", "Lehrkräfte"], Planeamiento: ["Lesson planning", "Planification", "Unterrichtsplanung"], "Exámenes": ["Exams", "Examens", "Prüfungen"], Certificados: ["Certificates", "Certificats", "Zertifikate"], Salir: ["Sign out", "Quitter", "Abmelden"], Ingresar: ["Sign in", "Connexion", "Anmelden"],
 };
 export function SiteHeader() {
-  const [lang, setLang] = useState<UiLang>("es");
+  const [lang, setLang] = useState("es");
   useEffect(() => { const v = localStorage.getItem("pt-lang"); if (v === "en" || v === "fr" || v === "de") setLang(v); }, []);
   const changeLang = (v) => { setLang(v); localStorage.setItem("pt-lang", v); document.documentElement.lang = v; };
-  const t = (k: string) => (lang === "es" ? k : DICT[k]?.[lang === "en" ? 0 : lang === "fr" ? 1 : 2] ?? k);
+  const t = (k) => (lang === "es" ? k : DICT[k]?.[lang === "en" ? 0 === "fr" ? 1 : 2] ?? k);
   const { user } = useAccount();
   const queries = useQueryClient();
   const navigate = useNavigate();
   const cls = "rounded-full px-3 py-2 hover:bg-card";
   const access = useNavigationAccess();
-  const { role: previewRole, setRole: setPreviewRole } = useMenuPreview(user?.id, access.administration);
+  const { role, setRole } = useMenuPreview(user?.id, access.administration);
   const view = menuView(access, previewRole);
   const isAdmin = view.administration;
   const [open, setOpen] = useState(false);
@@ -44,7 +43,7 @@ export function SiteHeader() {
     panelRef.current?.querySelector<HTMLElement>("a,button,select")?.focus();
     return () => { document.body.style.overflow = ""; };
   }, [open]);
-  const onKey = (e: React.KeyboardEvent) => {
+  const onKey = (e) => {
     if (e.key === "Escape") { e.preventDefault(); close(); return; }
     if (e.key !== "Tab" || !panelRef.current) return;
     const f = Array.from(panelRef.current.querySelectorAll<HTMLElement>("a,button,select,summary")).filter((el) => el.offsetParent !== null);
@@ -54,9 +53,9 @@ export function SiteHeader() {
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   };
-  const items = (mobile: boolean) => (<>
-        {user && <label className="grid gap-1 px-3 py-2">Menú según rol<select aria-label="Menú según rol" value={access.administration ? previewRole : 'assigned'} disabled={!access.administration} onChange={e=>setPreviewRole(e.target.value)} className="w-full rounded-md border border-border bg-background p-2"><option value="assigned">{access.administration ? 'Superadministración' : access.assignedRoles.map(r=>ROLE_LABELS[r as keyof typeof ROLE_LABELS]??r).join(' / ') || (access.teaching?'Docente':'Estudiante')}</option>{access.administration && <>{Object.entries(ROLE_LABELS).map(([key,label])=><option key={key} value={key}>{label}</option>)}<option value="guarda">Guarda</option><option value="conserje">Conserje</option></>}</select>{previewRole!=='assigned'&&<span className="text-xs text-muted-foreground">Vista de revisión · cuenta propia de Max</span>}</label>}
-        <Link to="/" className={cls} activeOptions={{ exact: true }} activeProps={{ className: "bg-card" }}>{t("Inicio")}</Link>
+  const items = (mobile) => (<>
+        {user && <label className="grid gap-1 px-3 py-2">Menú según rol<select aria-label="Menú según rol" value={access.administration ? previewRole : 'assigned'} disabled={!access.administration} onChange={e=>setPreviewRole(e.target.value)} className="w-full rounded-md border border-border bg-background p-2"><option value="assigned">{access.administration ? 'Superadministración' : access.assignedRoles.map(r=>ROLE_LABELS[r ROLE_LABELS]??r).join(' / ') || (access.teaching?'Docente':'Estudiante')}</option>{access.administration && <>{Object.entries(ROLE_LABELS).map(([key,label])=><option key={key} value={key}>{label}</option>)}<option value="guarda">Guarda</option><option value="conserje">Conserje</option></>}</select>{previewRole!=='assigned'&&<span className="text-xs text-muted-foreground">Vista de revisión · cuenta propia de Max</span>}</label>}
+        <Link to="/" className={cls} activeOptions={{ exact }} activeProps={{ className: "bg-card" }}>{t("Inicio")}</Link>
         <Link to="/aprender" search={{materia:'english'}} className={`${cls} bg-primary text-primary-foreground hover:bg-primary/90`}>🎯 Prácticas por materia</Link>
         <Link to="/simulacro" className={cls} activeProps={{ className: "bg-card" }}>📝 {t("Simulacros")}</Link>
         <Link to="/libros" className={cls} activeProps={{ className: "bg-card" }}>📚 {t("Libros")}</Link>
@@ -106,7 +105,7 @@ export function SiteHeader() {
         </details>
         <label className="flex items-center gap-1 rounded-full border bg-card px-2 py-1" title="Idioma / Language / Langue">
           🌐
-          <select value={lang} onChange={(e) => changeLang(e.target.value as UiLang)} className="bg-card text-sm font-semibold text-foreground" aria-label="Idioma">
+          <select value={lang} onChange={(e) => changeLang(e.target.value)} className="bg-card text-sm font-semibold text-foreground" aria-label="Idioma">
             <option value="es">Español</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option>
           </select>
         </label>
@@ -118,7 +117,7 @@ export function SiteHeader() {
               await queries.cancelQueries();
               queries.clear();
               await supabase.auth.signOut();
-              await navigate({ to: "/auth", replace: true });
+              await navigate({ to: "/auth", replace });
             }}
           >
             {t("Salir")}
@@ -143,7 +142,7 @@ export function SiteHeader() {
       {open && (
         <div className="fixed inset-0 z-[9999]">
           <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" onClick={close} aria-hidden="true" />
-          <div ref={panelRef} id="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Navegación principal móvil" onKeyDown={onKey} onClick={(e) => { if ((e.target as HTMLElement).closest("a")) close(); }} className="absolute right-0 top-0 flex h-full w-[min(20rem,88vw)] flex-col gap-1 overflow-y-auto overflow-x-hidden border-l border-border bg-card p-4 text-sm font-semibold text-foreground shadow-card [&_a]:block [&_a:focus-visible]:ring-4 [&_a:focus-visible]:ring-ring [&_a:focus-visible]:outline-none">
+          <div ref={panelRef} id="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Navegación principal móvil" onKeyDown={onKey} onClick={(e) => { if ((e.target).closest("a")) close(); }} className="absolute right-0 top-0 flex h-full w-[min(20rem,88vw)] flex-col gap-1 overflow-y-auto overflow-x-hidden border-l border-border bg-card p-4 text-sm font-semibold text-foreground shadow-card [&_a]:block [&_a:focus-visible]:ring-4 [&_a:focus-visible]:ring-ring [&_a:focus-visible]:outline-none">
             <Button type="button" variant="outline" size="icon" onClick={close} aria-label="Cerrar menú" className="self-end">✕</Button>
 {items(true)}
             {access.pending && <p role="status" className="px-3 text-xs text-muted-foreground">Comprobando permisos…</p>}

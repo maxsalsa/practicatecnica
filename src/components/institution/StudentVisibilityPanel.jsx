@@ -8,7 +8,7 @@ import {studentAreaAllowed} from '@/lib/area-review';
 export function StudentVisibilityPanel({institutionId}:{institutionId:string}){
  const qc=useQueryClient();
  const [student,setStudent]=useState('');
- const [areas,setAreas]=useState<string[]>([]),[topics,setTopics]=useState<string[]>([]),[sections,setSections]=useState<string[]>([]);
+ const [areas,setAreas]=useState([]),[topics,setTopics]=useState([]),[sections,setSections]=useState([]);
  const [busy,setBusy]=useState(false);
  const catalog=useQuery({queryKey:['visibility-catalog',institutionId],queryFn:async()=>{
   const [people,publications,visibility,reviews]=await Promise.all([supabase.rpc('institution_people',{_inst:institutionId}),supabase.from('institution_publications').select('id,title,subject,status,kind').eq('institution_id',institutionId),supabase.from('student_institution_visibility').select('*').eq('institution_id',institutionId),supabase.from('institution_area_reviews').select('subject,status').eq('institution_id',institutionId)]);
@@ -16,9 +16,9 @@ export function StudentVisibilityPanel({institutionId}:{institutionId:string}){
   return {people:people.data??[],publications:publications.data??[],visibility:visibility.data??[],reviews:reviews.data??[]};
  }});
  const students=catalog.data?.people.filter(p=>p.member_role==='estudiante')??[];
- const choose=(id:string)=>{setStudent(id);const row=catalog.data?.visibility.find(v=>v.student_id===id);setAreas(row?.areas??[]);setTopics(row?.topics??[]);setSections(row?.sections??[]);};
- const toggle=(list:string[],value:string)=>list.includes(value)?list.filter(x=>x!==value):[...list,value];
- async function save(){if(!student||busy)return;setBusy(true);try{const r=await supabase.rpc('set_student_visibility',{_inst:institutionId,_student:student,_areas:areas,_topics:topics,_sections:sections});if(r.error)throw new Error('No se pudo guardar; revise su autorización y la sección asignada.');await qc.invalidateQueries({queryKey:['visibility-catalog',institutionId]});toast.success('Accesos guardados');}catch(e){toast.error(e instanceof Error?e.message:'No se pudo guardar.');}finally{setBusy(false);}}
+ const choose=(id)=>{setStudent(id);const row=catalog.data?.visibility.find(v=>v.student_id===id);setAreas(row?.areas??[]);setTopics(row?.topics??[]);setSections(row?.sections??[]);};
+ const toggle=(list)=>list.includes(value)?list.filter(x=>x!==value):[...list,value];
+ async function save(){if(!student||busy)return;setBusy(true);try{const r=await supabase.rpc('set_student_visibility',{_inst,_student,_areas,_topics,_sections:sections});if(r.error)throw new Error('No se pudo guardar; revise su autorización y la sección asignada.');await qc.invalidateQueries({queryKey:['visibility-catalog',institutionId]});toast.success('Accesos guardados');}catch(e){toast.error(e instanceof Error?e.message:'No se pudo guardar.');}finally{setBusy(false);}}
  if(catalog.isPending)return <p role="status">Cargando accesos…</p>;
  if(catalog.isError)return <p role="alert">{catalog.error.message}</p>;
  const subjects=[...new Set(catalog.data?.publications.filter(p=>p.status==='published'&&['practica','simulacro'].includes(p.kind)&&studentAreaAllowed(catalog.data?.reviews.find(r=>r.subject===p.subject)?.status,true)).map(p=>p.subject).filter(Boolean)??[])];

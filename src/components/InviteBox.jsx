@@ -10,7 +10,7 @@ export function InviteBox() {
   const inviteFn=useServerFn(sendInvite);
   return (
     <form
-      className="mt-4 grid gap-2 rounded-lg border bg-card p-4 sm:flex sm:flex-wrap sm:items-center"
+      className="mt-4 grid gap-2 rounded-lg border bg-card p-4 sm sm:flex-wrap sm:items-center"
       onSubmit={async (e) => {
         e.preventDefault();
         setBusy(true);

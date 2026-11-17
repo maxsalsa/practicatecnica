@@ -4,10 +4,10 @@ import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 
 const documentSchema = z.array(z.object({ path: z.string(), description: z.string(), sha256: z.string(), size: z.number(), type: z.string(), purpose: z.string().optional(), place: z.string().optional(), imageConsent: z.boolean().optional() }));
-export function EnrollmentDocuments({ documents }: { documents: unknown }) {
+export function EnrollmentDocuments({ documents }: { documents }) {
   const parsed = documentSchema.safeParse(documents);
   if (!parsed.success || parsed.data.length === 0) return null;
-  async function open(path: string) {
+  async function open(path) {
     if (!(await openPrivateFile('enrollment-files', path))) toast.error('No se pudo abrir el documento privado.');
   }
   return <details className="mt-3 border-t border-border pt-2"><summary className="font-semibold">Documentos recibidos ({parsed.data.length})</summary>

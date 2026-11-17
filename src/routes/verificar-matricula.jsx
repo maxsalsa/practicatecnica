@@ -3,15 +3,15 @@ import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { SiteHeader } from '@/components/SiteHeader';
 export const Route = createFileRoute('/verificar-matricula')({
-  staticData: { sitemap: false },
-  validateSearch: (s): { codigo?: string } => typeof s['codigo'] === 'string' ? { codigo: s['codigo'] } : {},
+  staticData: { sitemap },
+  validateSearch: (s) => typeof s['codigo'] === 'string' ? { codigo: s['codigo'] } : {},
   head: () => ({ meta: [{ title: 'Verificar matrícula · pracTICAtecnica.com' }, { name: 'description', content: 'Compruebe que un comprobante de matrícula fue aprobado por la institución.' }, { property: 'og:title', content: 'Verificar matrícula · pracTICAtecnica.com' }, { property: 'og:description', content: 'Verificación del comprobante sin exponer datos del estudiante.' }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }, { name: 'robots', content: 'noindex' }] }),
-  component: VerifyEnrollment,
+  component,
 });
 function VerifyEnrollment() {
   const { codigo } = Route.useSearch();
-  const q = useQuery({ queryKey: ['enrollment-verification', codigo], enabled: /^[a-f0-9]{64}$/.test(codigo ?? ''), queryFn: async () => {
-    const r = await supabase.rpc('verify_enrollment', { _hash: codigo ?? '' });
+  const q = useQuery({ queryKey: ['enrollment-verification', codigo], enabled: /^[a-f0-9]{64}$/.test(codigo ?? ''), queryFn () => {
+    const r = await supabase.rpc('verify_enrollment', { _hash ?? '' });
     if (r.error) throw new Error('No se pudo verificar.'); return r.data[0] ?? null;
   } });
   const d = q.data;

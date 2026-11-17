@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-export function PickupQr({ id }: { id: string }) {
+export function PickupQr({ id }: { id }) {
   const [src, setSrc] = useState('');
   useEffect(() => {
     let active = true;

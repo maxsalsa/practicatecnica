@@ -1,12 +1,12 @@
-﻿import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Nfc, Square } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 ) => Promise<void>;
-  onreading: ((event: { message: { records: { recordType: string; encoding?: string; data: DataView }[] } }) => void) | null;
+  onreading: ((event) => void) | null;
   onreadingerror: (() => void) | null;
 };
-export function PickupNfc({ onCode }: { onCode: (code: string) => void }) {
+export function PickupNfc({ onCode }: { onCode: (code) => void }) {
   const [supported, setSupported] = useState(false);
   const [reading, setReading] = useState(false);
   const [error, setError] = useState('');
@@ -18,7 +18,7 @@ export function PickupNfc({ onCode }: { onCode: (code: string) => void }) {
   function stop() { abort.current?.abort(); abort.current = null; setReading(false); }
   async function start() {
     stop(); setError('');
-    const Reader = (window as unknown as { NDEFReader?: new () => NdefReader }).NDEFReader;
+    const Reader = (window { NDEFReader() => NdefReader }).NDEFReader;
     if (!Reader) return;
     const controller = new AbortController(); abort.current = controller;
     const reader = new Reader(); setReading(true);

@@ -1,10 +1,8 @@
-﻿import { forwardRef } from 'react';
-import type { ComponentPropsWithoutRef } from 'react';
+import { forwardRef } from 'react';
+
 
 export 
-export interface CitedSourcesProps extends ComponentPropsWithoutRef<'section'> {
-  sources: readonly CitedSource[];
-}
+
 /** References supporting an independent material; does not imply institutional endorsement. */
 export const CitedSources = forwardRef<HTMLElement, CitedSourcesProps>(function CitedSources({ sources, className = '', ...props }, ref) {
   return <section ref={ref} className={`mt-4 border-t border-border pt-4 text-sm ${className}`} {...props}>

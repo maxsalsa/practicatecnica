@@ -3,15 +3,14 @@ import { useState } from 'react';
 import { SiteHeader } from '@/components/SiteHeader';
 import { Quiz } from '@/components/Quiz';
 import { Button } from '@/components/ui/button';
-import { GENERATED_FAMILIES, generatedDeckId, type GeneratedFamily } from '@/lib/generated-catalog';
-import type { Deck } from '@/lib/questions';
+import { GENERATED_FAMILIES, generatedDeckId } from '@/lib/generated-catalog';
+
 import {TopicPoints} from '@/components/TopicPoints';
 
 export const Route = createFileRoute('/practica-sin-repeticion')({
-  staticData: { sitemap: true },
+  staticData: { sitemap },
   head: () => ({
-    meta: [
-      { title: 'Práctica sin repetición · matemática, español, ciencias y técnica · pracTICAtecnica.com' },
+    meta { title: 'Práctica sin repetición · matemática, español, ciencias y técnica · pracTICAtecnica.com' },
       { name: 'description', content: 'Repasos breves de idiomas, matemática y técnica con selección de estructuras distintas y explicaciones. Banco finito de contenido original.' },
       { property: 'og:title', content: 'Práctica sin repetición · pracTICAtecnica.com' },
       { property: 'og:description', content: 'Repasos originales con una pregunta por estructura disponible, sin rellenar sesiones con duplicados.' },
@@ -19,14 +18,14 @@ export const Route = createFileRoute('/practica-sin-repeticion')({
       { name: 'twitter:card', content: 'summary' },
     ],
   }),
-  component: UnlimitedPractice,
+  component,
 });
 
-const stub = (f): Deck => ({ id: `${generatedDeckId(f.key)}-v2-review`, title: `${f.title} · repaso diverso`, emoji: f.emoji, level: f.level, questions: [] });
+const stub = (f): Deck => ({ id: `${generatedDeckId(f.key)}-v2-review`, title: `${f.title} · repaso diverso`, emoji: f.emoji, level: f.level, questions });
 const AREAS = ['Idiomas', 'Matemática', 'Español', 'Ciencias', 'Técnica'];
 
 function UnlimitedPractice() {
-  const [run, setRun] = useState<{ family: GeneratedFamily; exam: boolean; n: number } | null>(null);
+  const [run, setRun] = useState(null);
   if (run) return <main className="min-h-screen bg-hero">
     <SiteHeader />
     <Quiz key={`${run.family.key}-${run.n}`} deck={stub(run.family)} onExit={() => setRun(null)} />
@@ -46,7 +45,7 @@ function UnlimitedPractice() {
             <p className="text-xs font-semibold text-primary">{f.level}</p>
             <p className="mt-2 flex-1 text-sm text-muted-foreground">{f.summary}</p>
             <div className="mt-4 flex flex-wrap gap-2">
-              <Button onClick={() => setRun({ family: f, exam: false, n: 0 })}>Repaso variado</Button>
+              <Button onClick={() => setRun({ family, exam, n: 0 })}>Repaso variado</Button>
             </div>
           </article>)}
         </div>

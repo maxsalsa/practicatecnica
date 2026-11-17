@@ -17,15 +17,14 @@ import { LibraryLogoUpload } from '@/components/institution/LibraryLogoUpload';
 import { LibraryEditorial } from '@/components/institution/LibraryEditorial';
 
 export const Route = createFileRoute("/libros")({staticData:{sitemap:true},
-  validateSearch:(s):{q?:string}=>typeof s['q']==='string'?{q:s['q']}:{},
-  head: () => ({ meta: [
-    { title: "Biblioteca y manuales de usuario e ingeniería · pracTICAtecnica.com" },
+  validateSearch: (s) =>typeof s['q']==='string'?{q:s['q']}:{},
+  head: () => ({ meta { title: "Biblioteca y manuales de usuario e ingeniería · pracTICAtecnica.com" },
     { name: "description", content: "Biblioteca de cuadernillos y resúmenes independientes con fuentes MEP, ejemplos resueltos y PDF de Desarrollo Web, Contabilidad, Contabilidad y Costos y Ciberseguridad; bloques de décimo y duodécimo." },
     { property: "og:title", content: "Libros digitales y resúmenes MEP · pracTICAtecnica.com" },
     { property: "og:description", content: "Lea y descargue diez manuales de usuario, ingeniería y gestión institucional junto a los materiales de estudio." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
   ] }),
-  component: Libros,
+  component,
 });
 
 function Libros() {
@@ -34,7 +33,7 @@ function Libros() {
   const book = all.find((b) => b.grade === g) ?? primaryBooks[0];
   const [q, setQ] = useState(Route.useSearch().q??'');
   const [open, setOpen] = useState<Record<string, boolean>>({});
-  const [view, setView] = useState<{ title: string; url: string } | null>(null);
+  const [view, setView] = useState(null);
   const day = Math.floor((Date.now() - 6 * 3600e3) / 86400e3);
   const tip = MOTIVA[day % MOTIVA.length] ?? MOTIVA[0];
   const list = findSpecialties(q);
@@ -132,13 +131,13 @@ function Libros() {
     </main>
   );
 }
-function Block({ t, items }: { t: string; items: string[] }) {
+function Block({ t, items }: { t: string; items }) {
   return (<div className="mt-3"><h4 className="text-sm font-bold">{t}</h4><ul className="ml-5 list-disc text-sm text-muted-foreground">{items.map((x) => <li key={x}>{x}</li>)}</ul></div>);
 }
 
 const MOTIVA = [
   "Un poco cada día vence a mucho de vez en cuando.",
-  "Equivocarse es parte de aprender: revise el fallo y siga.",
+  "Equivocarse es parte de aprender siga.",
   "Hoy 15 minutos de práctica valen más que mañana dos horas.",
   "Su esfuerzo de hoy es su título de mañana.",
   "Lea la pregunta dos veces y descarte primero lo imposible.",

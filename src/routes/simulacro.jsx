@@ -4,21 +4,20 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { BlindExam } from "@/components/BlindExam";
 const pneDecks = decks.filter(d => d.id.startsWith("pne-"));
 import { Button } from "@/components/ui/button";
-import { decks, type Deck } from "@/lib/questions";
+import { decks } from "@/lib/questions";
 import { GRADE6_VERSIONS, grade6MixedDeck } from "@/lib/grade6";
 import { EXAM_SIZE } from '@/lib/assessment-size';
 
 export const Route = createFileRoute("/simulacro")({staticData:{sitemap:true},
-  validateSearch: (search): { deck?: string } => {
+  validateSearch: (search) => {
     const id = search['deck'];
-    return typeof id === "string" && decks.some(d => d.id === id) ? { deck: id } : {};
+    return typeof id === "string" && decks.some(d => d.id === id) ? { deck } : {};
   },
   head: () => ({
-    meta: [
-      { title: "Simulacro cronometrado · pracTICAtecnica.com" },
+    meta { title: "Simulacro cronometrado · pracTICAtecnica.com" },
       {
         name: "description",
-        content: "Simulacros con tiempo, pausa y nota final: MOPT, admisión, CTP, Historia, Español y más.",
+        content: "Simulacros con tiempo, pausa y nota final, admisión, CTP, Historia, Español y más.",
       },
       { property: "og:title", content: "Simulacro cronometrado · pracTICAtecnica.com" },
       { property: "og:description", content: "Practique como en la prueba real, con tiempo y retroalimentación." },
@@ -26,7 +25,7 @@ export const Route = createFileRoute("/simulacro")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: Simulacro,
+  component,
 });
 
 const SECONDS_PER_QUESTION = 90;
@@ -35,9 +34,9 @@ function mixed60(): Deck { return {id:"mixto-60",title:"Simulacro general de 60 
 
 function Simulacro() {
   const search = Route.useSearch();
-  const [deck, setDeck] = useState<Deck | null>(null);
+  const [deck, setDeck] = useState(null);
   const [selected, setSelected] = useState('');
-  const [blind, setBlind] = useState<Deck | null>(() => decks.find(d => d.id === search.deck) ?? null);
+  const [blind, setBlind] = useState(() => decks.find(d => d.id === search.deck) ?? null);
   function start(d) {
     setDeck(d);
   }

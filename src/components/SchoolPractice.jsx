@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Button } from "./ui/button";
 import { schoolSubjects, schoolLevels, schoolDeck } from "@/lib/school-practice";
-import type { Deck } from "@/lib/questions";
+
 export function SchoolPractice({ onStart }: { onStart: (deck) => void }) {
   const [level, setLevel] = useState(schoolLevels[0] ?? "6.º primaria");
-  const [lang, setLang] = useState<"es" | "en">("es");
+  const [lang, setLang] = useState("es");
   return (
     <section className="mt-8 border-y py-6">
       <div className="flex flex-wrap items-center justify-between gap-3">

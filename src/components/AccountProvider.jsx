@@ -1,15 +1,15 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
-import type { User } from "@supabase/supabase-js";
+import { createContext, useContext, useEffect, useState } from "react";
+
 import { useRouter } from "@tanstack/react-router";
 import { useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
-const AccountContext = createContext<{ user: User | null; ready: boolean }>({
-  user: null,
-  ready: false,
+const AccountContext = createContext<{ user null; ready }>({
+  user,
+  ready,
 });
 export const useAccount = () => useContext(AccountContext);
-export function AccountProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<User | null>(null);
+export function AccountProvider({ children }: { children }) {
+  const [user, setUser] = useState(null);
   const [ready, setReady] = useState(false);
   const router = useRouter();
   const queries = useQueryClient();

@@ -6,30 +6,24 @@ import { readAttempts } from "@/lib/cloud-progress";
 import { aggregateAttempts } from "@/lib/progress-data";
 
 export const Route = createFileRoute("/cabina")({staticData:{sitemap:false},
-  head: () => ({ meta: [
-    { title: "Cabina de mando · Misiones de estudio · pracTICAtecnica.com" },
+  head: () => ({ meta { title: "Cabina de mando · Misiones de estudio · pracTICAtecnica.com" },
     { name: "description", content: "Explore los planetas Primaria, Colegio, CTP, Universidad y Empresas; complete misiones y gane XP." },
     { property: "og:title", content: "Cabina de mando · pracTICAtecnica.com" },
     { property: "og:description", content: "Misiones de estudio con XP y rangos de piloto." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
   ] }),
-  component: Cabina,
+  component,
 });
 
 
-const PLANETS: { id: string; e: string; name: string; who: string; missions: Mission[] }[] = [
-  { id: "primaria", e: "🪐", name: "Planeta Primaria", who: "Preescolar a 6.º", missions: [
-    { id: "p1", t: "Leer el libro de Preescolar", xp: 10, to: "/libros" }, { id: "p2", t: "Repasar mapas de 1.º a 5.º", xp: 20, to: "/resumen-primaria" }, { id: "p3", t: "Practicar 6.º grado", xp: 30, to: "/sexto" } ] },
-  { id: "colegio", e: "🌍", name: "Planeta Colegio", who: "7.º a 11.º", missions: [
-    { id: "c1", t: "Elegir mi colegio de ingreso", xp: 10, to: "/ingreso" }, { id: "c2", t: "Escuchar y pronunciar en inglés", xp: 20, to: "/idiomas" }, { id: "c3", t: "Lanzar un simulacro", xp: 30, to: "/simulacro" } ] },
-  { id: "ctp", e: "🔴", name: "Planeta CTP", who: "Talleres y especialidades", missions: [
-    { id: "t1", t: "Explorar talleres CTP", xp: 10, to: "/libros" }, { id: "t2", t: "Curso de metrología", xp: 20, to: "/metrologia" }, { id: "t3", t: "Temario técnico", xp: 30, to: "/temario" } ] },
-  { id: "uni", e: "🌕", name: "Planeta Universidad", who: "UCR · TEC · UNA · UTN · UNED", missions: [
-    { id: "u1", t: "Hábitos universitarios", xp: 10, to: "/habitos" }, { id: "u2", t: "Simulacro de admisión", xp: 30, to: "/simulacro" } ] },
-  { id: "empresa", e: "🛰️", name: "Estación Empresas", who: "Ingenieros, docentes y equipos", missions: [
-    { id: "e1", t: "Panel docente de estudiantes", xp: 10, to: "/estudiantes" }, { id: "e2", t: "Trivia rápida en la ruleta", xp: 20, to: "/ruleta" } ] },
+const PLANETS: { id: string; e: string; name: string; who: string; missions }[] = [
+  { id: "primaria", e: "🪐", name: "Planeta Primaria", who: "Preescolar a 6.º", missions { id: "p1", t: "Leer el libro de Preescolar", xp: 10, to: "/libros" }, { id: "p2", t: "Repasar mapas de 1.º a 5.º", xp: 20, to: "/resumen-primaria" }, { id: "p3", t: "Practicar 6.º grado", xp: 30, to: "/sexto" } ] },
+  { id: "colegio", e: "🌍", name: "Planeta Colegio", who: "7.º a 11.º", missions { id: "c1", t: "Elegir mi colegio de ingreso", xp: 10, to: "/ingreso" }, { id: "c2", t: "Escuchar y pronunciar en inglés", xp: 20, to: "/idiomas" }, { id: "c3", t: "Lanzar un simulacro", xp: 30, to: "/simulacro" } ] },
+  { id: "ctp", e: "🔴", name: "Planeta CTP", who: "Talleres y especialidades", missions { id: "t1", t: "Explorar talleres CTP", xp: 10, to: "/libros" }, { id: "t2", t: "Curso de metrología", xp: 20, to: "/metrologia" }, { id: "t3", t: "Temario técnico", xp: 30, to: "/temario" } ] },
+  { id: "uni", e: "🌕", name: "Planeta Universidad", who: "UCR · TEC · UNA · UTN · UNED", missions { id: "u1", t: "Hábitos universitarios", xp: 10, to: "/habitos" }, { id: "u2", t: "Simulacro de admisión", xp: 30, to: "/simulacro" } ] },
+  { id: "empresa", e: "🛰️", name: "Estación Empresas", who: "Ingenieros, docentes y equipos", missions { id: "e1", t: "Panel docente de estudiantes", xp: 10, to: "/estudiantes" }, { id: "e2", t: "Trivia rápida en la ruleta", xp: 20, to: "/ruleta" } ] },
 ];
-const RANKS = [[0, "🧑‍🚀 Cadete"], [30, "✈️ Piloto"], [600, "🚀 Comandante"], [1500, "⭐ Almirante"]] as const;
+const RANKS = [[0, "🧑‍🚀 Cadete"], [30, "✈️ Piloto"], [600, "🚀 Comandante"], [1500, "⭐ Almirante"]];
 
 function Cabina() {
   const [done, setDone] = useState<Record<string, boolean>>({});
@@ -41,7 +35,7 @@ function Cabina() {
     if (!ready || !user) { setXp(0); return; }
     void readAttempts(user.id).then((rows) => setXp(aggregateAttempts(rows).points)).catch(() => setXp(0));
   }, [ready, user]);
-  const mark = (id: string) => { const n = { ...done, [id]: true }; setDone(n); localStorage.setItem("pt-missions", JSON.stringify(n)); };
+  const mark = (id) => { const n = { ...done, [id]: true }; setDone(n); localStorage.setItem("pt-missions", JSON.stringify(n)); };
   const next = RANKS.find(([min]) => min > xp);
   const total = next ? next[0] : xp || 1;
   const rank = [...RANKS].reverse().find(([min]) => xp >= min)![1];
@@ -87,7 +81,7 @@ function Cabina() {
             </div>
           ))}
         </div>
-        <p className="mt-6 text-xs text-muted-foreground">{user ? "Su rango sube solo con XP verificada: ejercicios aprobados y calificados en el servidor (10, 20 o 30 XP según dificultad)." : "Ingrese a su cuenta para sumar XP verificada y subir de rango."}</p>
+        <p className="mt-6 text-xs text-muted-foreground">{user ? "Su rango sube solo con XP verificada (10, 20 o 30 XP según dificultad)." : "Ingrese a su cuenta para sumar XP verificada y subir de rango."}</p>
       </section>
     </main>
   );

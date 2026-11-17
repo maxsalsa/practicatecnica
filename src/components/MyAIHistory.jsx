@@ -8,13 +8,13 @@ import { z } from "zod";
 import { summarizeAICosts } from "@/lib/ai-cost-summary";
 
 const questionSchema = z.array(z.object({ q: z.string(), options: z.array(z.string()), answer: z.number().int(), why: z.string() }));
-export function MyAIHistory({ title = "Mi historial de IA" }: { title?: string }) {
+export function MyAIHistory({ title = "Mi historial de IA" }: { title}) {
   const { user } = useAccount();
   const { data, isPending, error } = useQuery({
     queryKey: ["my-ai-history", user?.id], enabled: !!user,
-    queryFn: async () => {
+    queryFn () => {
       if (!user) return [];
-      const result = await supabase.from("ai_generations").select("id,created_at,document_name,model,questions,actual_credits,input_tokens,output_tokens").eq("user_id", user.id).order("created_at", { ascending: false }).limit(50);
+      const result = await supabase.from("ai_generations").select("id,created_at,document_name,model,questions,actual_credits,input_tokens,output_tokens").eq("user_id", user.id).order("created_at", { ascending }).limit(50);
       if (result.error) throw new Error("No se pudo consultar su historial de IA.");
       return result.data;
     },

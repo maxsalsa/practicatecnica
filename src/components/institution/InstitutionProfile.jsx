@@ -10,27 +10,27 @@ const fields = [
   ['director_name', 'Nombre de la persona directora', 160], ['phone', 'Teléfono institucional', 40],
   ['address', 'Dirección física', 400], ['website', 'Página web', 400],
   ['facebook', 'Facebook', 400], ['instagram', 'Instagram', 400],
-] as const;
-type Field = typeof fields[number][0];
-type Profile = Record<Field, string>;
-const empty: Profile = { regional_direction: '', circuit: '', director_name: '', phone: '', address: '', website: '', facebook: '', instagram: '' };
+];
 
-export function InstitutionProfile({ institutionId, canEdit }: { institutionId: string; canEdit: boolean }) {
+
+const empty = { regional_direction: '', circuit: '', director_name: '', phone: '', address: '', website: '', facebook: '', instagram: '' };
+
+export function InstitutionProfile({ institutionId, canEdit }: { institutionId: string; canEdit }) {
   const queries = useQueryClient();
   const [editing, setEditing] = useState(false);
-  const [draft, setDraft] = useState<Profile>(empty);
+  const [draft, setDraft] = useState(empty);
   const [busy, setBusy] = useState(false);
-  const profile = useQuery({ queryKey: ['institution-contact-profile', institutionId], queryFn: async () => {
+  const profile = useQuery({ queryKey: ['institution-contact-profile', institutionId], queryFn () => {
     const { data, error } = await supabase.from('institution_contact_profiles').select('*').eq('institution_id', institutionId).maybeSingle();
     if (error) throw new Error('No se pudo cargar el perfil institucional.');
     return data;
   } });
   const data = profile.data;
-  async function save(event: React.FormEvent) {
+  async function save(event) {
     event.preventDefault(); if (!canEdit) return;
     setBusy(true);
-    const values = Object.fromEntries(fields.map(([key]) => [key, draft[key].trim()])) as Profile;
-    const { error } = await supabase.from('institution_contact_profiles').upsert({ ...values, institution_id: institutionId, updated_at: new Date().toISOString() });
+    const values = Object.fromEntries(fields.map(([key]) => [key, draft[key].trim()]));
+    const { error } = await supabase.from('institution_contact_profiles').upsert({ ...values, institution_id, updated_at Date().toISOString() });
     setBusy(false);
     if (error) { toast.error('No se pudo guardar. Verifique sus permisos y use enlaces https://.'); return; }
     await queries.invalidateQueries({ queryKey: ['institution-contact-profile', institutionId] });
@@ -50,7 +50,7 @@ export function InstitutionProfile({ institutionId, canEdit }: { institutionId: 
         {data?.address && <p className="flex items-start gap-2 break-words"><MapPin className="h-4 w-4 shrink-0" aria-hidden="true"/>{data.address}</p>}
         <div className="flex flex-wrap gap-x-4 gap-y-2">
           {data?.phone && <a className="flex items-center gap-1 text-primary underline" href={`tel:${data.phone}`}><Phone className="h-4 w-4" aria-hidden="true"/>{data.phone}</a>}
-          {(['website','facebook','instagram'] as const).map(key => data?.[key]?.startsWith('https://') && <a key={key} href={data[key]} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-primary underline"><Globe className="h-4 w-4" aria-hidden="true"/>{key === 'website' ? 'Página web' : key === 'facebook' ? 'Facebook' : 'Instagram'}</a>)}
+          {(['website','facebook','instagram']).map(key => data?.[key]?.startsWith('https://') && <a key={key} href={data[key]} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-primary underline"><Globe className="h-4 w-4" aria-hidden="true"/>{key === 'website' ? 'Página web' : key === 'facebook' ? 'Facebook' : 'Instagram'}</a>)}
         </div>
       </div>}
   </section>;

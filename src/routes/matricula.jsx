@@ -14,13 +14,12 @@ import { PickupAuthorizations } from '@/components/institution/PickupAuthorizati
 import { enrollmentSubmissionSchema } from '@/lib/enrollment-document';
 
 
-const TYPES: Record<string, string> = { 'image/png': 'png', 'image/jpeg': 'jpg', 'image/webp': 'webp', 'application/pdf': 'pdf' };
+const TYPES, string> = { 'image/png': 'png', 'image/jpeg': 'jpg', 'image/webp': 'webp', 'application/pdf': 'pdf' };
 
 export const Route = createFileRoute('/matricula')({
-  staticData: { sitemap: true },
+  staticData: { sitemap },
   head: () => ({
-    meta: [
-      { title: 'Matrícula digital para familias · pracTICAtecnica.com' },
+    meta { title: 'Matrícula digital para familias · pracTICAtecnica.com' },
       { name: 'description', content: 'Matricule a su hijo o hija desde el teléfono: datos, foto de cédula, comprobante de cuota y consentimiento. La institución revisa y aprueba.' },
       { property: 'og:title', content: 'Matrícula digital para familias' },
       { property: 'og:description', content: 'Matrícula privada y sencilla, aprobada por la institución.' },
@@ -28,18 +27,18 @@ export const Route = createFileRoute('/matricula')({
       { name: 'twitter:card', content: 'summary' },
     ],
   }),
-  component: EnrollmentPage,
+  component,
 });
 
 function EnrollmentPage() {
   const { user, ready } = useAccount();
   const [busy, setBusy] = useState(false);
-  const [purpose, setPurpose] = useState<'matricula' | 'identidad_privada' | 'centro_autorizado'>('matricula');
+  const [purpose, setPurpose] = useState('matricula');
   const sendEnrollment = useServerFn(submitEnrollment);
-  const insts = useQuery({ enabled: !!user, queryKey: ['enroll-insts'], queryFn: async () => { const { data, error } = await supabase.rpc('enrollment_institutions'); if (error) throw error; return data; } });
-  const mine = useQuery({ enabled: !!user, queryKey: ['enroll-mine', user?.id], queryFn: async () => { const { data, error } = await supabase.from('enrollment_requests').select('id,student_name,level,status,review_note,verification_hash,created_at,documents,reviewed_at').eq('guardian_id', user?.id ?? '').order('created_at', { ascending: false }); if (error) throw error; return data; } });
+  const insts = useQuery({ enabled: !!user, queryKey: ['enroll-insts'], queryFn () => { const { data, error } = await supabase.rpc('enrollment_institutions'); if (error) throw error; return data; } });
+  const mine = useQuery({ enabled: !!user, queryKey: ['enroll-mine', user?.id], queryFn () => { const { data, error } = await supabase.from('enrollment_requests').select('id,student_name,level,status,review_note,verification_hash,created_at,documents,reviewed_at').eq('guardian_id', user?.id ?? '').order('created_at', { ascending }); if (error) throw error; return data; } });
 
-  async function upload(inst: string, f: File) {
+  async function upload(inst) {
     if (!user) throw new Error('Inicie sesión.');
     const clean = await stripImageMetadata(f);
     const ext = TYPES[clean.type];
@@ -51,38 +50,38 @@ function EnrollmentPage() {
     return path;
   }
 
-  async function submit(e: React.FormEvent<HTMLFormElement>) {
+  async function submit(e) {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const inst = String(fd.get('inst') ?? '');
-    const photo = fd.get('photo') as File;
-    const fee = fd.get('fee') as File;
+    const photo = fd.get('photo');
+    const fee = fd.get('fee');
     if (!inst || !photo?.size) { toast.error('Elija la institución y suba la foto de la cédula.'); return; }
     if (fd.get('consent') !== 'on') { toast.error('Debe firmar el consentimiento.'); return; }
     setBusy(true);
     try {
-      const documents: { path: string; category: 'identificacion' | 'foto' | 'recibo'; description: string; purpose?: 'matricula' | 'identidad_privada' | 'centro_autorizado'; imageConsent?: boolean; place?: string }[] = [];
-      documents.push({ path: await upload(inst, photo), category: 'identificacion', description: 'Identificación principal' });
-      if (fee?.size) documents.push({ path: await upload(inst, fee), category: 'recibo', description: 'Comprobante de cuota' });
+      const documents: { path: string; category: 'identificacion' | 'foto' | 'recibo'; description: string; purpose'matricula' | 'identidad_privada' | 'centro_autorizado'; imageConsent; place}[] = [];
+      documents.push({ path upload(inst, photo), category: 'identificacion', description: 'Identificación principal' });
+      if (fee?.size) documents.push({ path upload(inst, fee), category: 'recibo', description: 'Comprobante de cuota' });
       const extra = fd.getAll('extra').filter((v): v is File => v instanceof File && v.size > 0);
       if (extra.length + documents.length > 10) throw new Error('Máximo 10 documentos por solicitud.');
       if (extra.length && purpose !== 'matricula' && fd.get('imageConsent') !== 'on') throw new Error('Debe aceptar el consentimiento específico de imagen.');
       if (extra.length && purpose === 'centro_autorizado' && !String(fd.get('place') || '').trim()) throw new Error('Indique el nombre del edificio o aula.');
-      for (const file of extra) documents.push({ path: await upload(inst, file), category: String(fd.get('category')) as 'identificacion' | 'foto' | 'recibo', description: String(fd.get('description') || 'Documento familiar'), purpose, imageConsent: fd.get('imageConsent') === 'on', place: String(fd.get('place') || '') });
+      for (const file of extra) documents.push({ path upload(inst, file), category: String(fd.get('category')) as 'identificacion' | 'foto' | 'recibo', description: String(fd.get('description') || 'Documento familiar'), purpose, imageConsent: fd.get('imageConsent') === 'on', place: String(fd.get('place') || '') });
       const pickup = String(fd.get('pickupName') || '').trim() ? [{ name: String(fd.get('pickupName')), identification: String(fd.get('pickupId')).replace(/[\s-]/g, ''), relation: String(fd.get('pickupRelation')) }] : [];
       const submission = enrollmentSubmissionSchema.parse({
-        institution: inst, relation: String(fd.get('relation')) as 'madre' | 'padre' | 'encargado',
+        institution, relation: String(fd.get('relation')) as 'madre' | 'padre' | 'encargado',
         guardianName: String(fd.get('guardianName')), email: String(fd.get('guardianEmail')), phone: String(fd.get('phone')),
         address: String(fd.get('address') || ''), name: String(fd.get('name')), identification: String(fd.get('idn')).replace(/[\s-]/g, ''),
         studentEmail: String(fd.get('email') || '').trim().toLowerCase(), birth: String(fd.get('birth') || ''), level: String(fd.get('level')),
-        consent: true, documents, pickup, pickupConsent: fd.get('pickupConsent') === 'on',
+        consent, documents, pickup, pickupConsent: fd.get('pickupConsent') === 'on',
       });
-      await sendEnrollment({ data: submission });
+      await sendEnrollment({ data });
       toast.success('Solicitud enviada. La institución la revisará.');
-      (e.target as HTMLFormElement).reset();
+      (e.target).reset();
       setPurpose('matricula');
       mine.refetch();
-    } catch (err) { toast.error(err instanceof Error && err.name === 'ZodError' ? 'Revise los datos, identificaciones y consentimientos antes de enviar.' : (err as Error).message); } finally { setBusy(false); }
+    } catch (err) { toast.error(err instanceof Error && err.name === 'ZodError' ? 'Revise los datos, identificaciones y consentimientos antes de enviar.' : (err).message); } finally { setBusy(false); }
   }
 
   const field = 'w-full rounded-xl border border-input bg-background px-3 py-2';
@@ -121,7 +120,7 @@ function EnrollmentPage() {
               <label className="block text-sm font-semibold">Comprobante de cuota voluntaria (opcional)<input name="fee" type="file" accept="image/png,image/jpeg,image/webp,application/pdf" className={field} /></label>
               <details className="border-t border-border pt-3"><summary className="font-semibold">Más documentos de la familia</summary>
                 <label className="block text-sm font-semibold mt-3">Tipo de documento<select name="category" className={field}><option value="identificacion">Identificación de familiar o estudiante</option><option value="foto">Fotografía</option><option value="recibo">Recibo</option></select></label>
-                <label className="block text-sm font-semibold">Finalidad<select name="purpose" value={purpose} onChange={e => setPurpose(e.target.value as typeof purpose)} className={field}><option value="matricula">Documento de matrícula</option><option value="identidad_privada">Foto privada de estudiante o familiar</option><option value="centro_autorizado">Fotografía autorizada del colegio</option></select></label>
+                <label className="block text-sm font-semibold">Finalidad<select name="purpose" value={purpose} onChange={e => setPurpose(e.target.value)} className={field}><option value="matricula">Documento de matrícula</option><option value="identidad_privada">Foto privada de estudiante o familiar</option><option value="centro_autorizado">Fotografía autorizada del colegio</option></select></label>
                 {purpose === 'centro_autorizado' && <label className="block text-sm font-semibold">Nombre del edificio o aula<input name="place" maxLength={120} className={field} /></label>}
                 {purpose !== 'matricula' && <label className="flex gap-2 py-3 text-sm"><input name="imageConsent" type="checkbox" className="mt-1" /><span>{purpose === 'centro_autorizado' ? 'Declaro contar con autorización para aportar esta imagen del colegio y me comprometo a respetar los derechos de las personas que aparezcan. La institución debe revisar su uso; esto no autoriza publicación automática.' : 'Autorizo el uso privado de estas fotografías para identificación y revisión de seguridad del estudiante y su familia. No autorizo difusión pública.'}</span></label>}
                 <label className="block text-sm font-semibold">Descripción<input name="description" maxLength={120} className={field} /></label>

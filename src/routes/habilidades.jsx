@@ -4,14 +4,13 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { Quiz } from "@/components/Quiz";
 import { useAccount } from "@/components/AccountProvider";
 import { supabase } from "@/integrations/supabase/client";
-import { decks, type Deck } from "@/lib/questions";
+import { decks } from "@/lib/questions";
 import { malla } from "@/lib/malla";
 import { AuthorizedContent } from '@/components/AuthorizedContent';
 
 export const Route = createFileRoute("/habilidades")({staticData:{sitemap:false},
   head: () => ({
-    meta: [
-      { title: "Mapa de habilidades y reto relámpago | pracTICAtecnica.com" },
+    meta { title: "Mapa de habilidades y reto relámpago | pracTICAtecnica.com" },
       { name: "description", content: "Vea su dominio por categoría, practique su punto débil y juegue el reto relámpago de 60 segundos." },
       { property: "og:title", content: "Mapa de habilidades | pracTICAtecnica.com" },
       { property: "og:description", content: "Control de conocimientos por categoría con bandas de dominio y juego relámpago." },
@@ -19,20 +18,20 @@ export const Route = createFileRoute("/habilidades")({staticData:{sitemap:false}
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: Habilidades,
+  component,
 });
 
-const CAT: Record<string, string> = {};
+const CAT = {};
 malla.forEach((m) => m.niveles.forEach((n) => n.materias.forEach((x) => x.decks.forEach((d) => { CAT[d] ??= `${m.emoji} ${m.name}`; }))));
-const band = (p: number) => (p >= 80 ? ["Dominado", "bg-accent"] : p >= 50 ? ["En proceso", "bg-primary"] : ["Reforzamiento", "bg-destructive"]);
+const band = (p) => (p >= 80 ? ["Dominado", "bg-accent"] : p >= 50 ? ["En proceso", "bg-primary"] : ["Reforzamiento", "bg-destructive"]);
 const shuffle = <T,>(a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j]!, b[i]!]; } return b; };
 
-function Flash({ onExit, deck }: { onExit: () => void; deck: Deck }) {
+function Flash({ onExit, deck }: { onExit: () => void; deck }) {
   const pool = useMemo(() => shuffle(deck.questions).slice(0, 40), [deck]);
-  const [i, setI] = useState(0); const [ok, setOk] = useState(0); const [t, setT] = useState(60); const [streak, setStreak] = useState(0); const [best, setBest] = useState(0); const [flash, setFlash] = useState<"" | "ok" | "no">("");
+  const [i, setI] = useState(0); const [ok, setOk] = useState(0); const [t, setT] = useState(60); const [streak, setStreak] = useState(0); const [best, setBest] = useState(0); const [flash, setFlash] = useState("");
   useEffect(() => { if (t <= 0) return; const id = setTimeout(() => setT(t - 1), 1000); return () => clearTimeout(id); }, [t]);
   const q = pool[i % pool.length]!;
-  function pick(k: number) {
+  function pick(k) {
     const good = k === q.answer; setFlash(good ? "ok" : "no"); setTimeout(() => setFlash(""), 250);
     if (good) { setOk(ok + 1); setStreak(streak + 1); setBest(Math.max(best, streak + 1)); } else setStreak(0);
     setI(i + 1);
@@ -41,7 +40,7 @@ function Flash({ onExit, deck }: { onExit: () => void; deck: Deck }) {
     <div className="rounded-2xl border border-primary bg-card p-6 text-center shadow-card">
       <h2 className="text-3xl font-black">⚡ ¡Tiempo!</h2>
       <p className="mt-2 text-xl">{ok} aciertos de {i} · mejor racha {best} 🔥</p>
-      <p className="mt-1 text-muted-foreground">{ok >= 12 ? "Nivel Diamante: velocidad y precisión de experto." : ok >= 7 ? "Muy bien: siga así y sube de liga." : "Cada intento entrena su cerebro. ¡Otra vez!"}</p>
+      <p className="mt-1 text-muted-foreground">{ok >= 12 ? "Nivel Diamante precisión de experto." : ok >= 7 ? "Muy bien así y sube de liga." : "Cada intento entrena su cerebro. ¡Otra vez!"}</p>
       <div className="mt-4 flex justify-center gap-2"><button className="rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground" onClick={() => { setI(0); setOk(0); setT(60); setStreak(0); }}>Jugar otra vez</button><button className="rounded-xl border px-5 py-3 font-bold" onClick={onExit}>Salir</button></div>
     </div>);
   return (
@@ -55,13 +54,13 @@ function Flash({ onExit, deck }: { onExit: () => void; deck: Deck }) {
 
 function Habilidades() {
   const { user } = useAccount();
-  const [rows, setRows] = useState<{ deck_id: string; score: number }[]>([]);
-  const [mode, setMode] = useState<"" | "flash">("");
-  const [run, setRun] = useState<Deck | null>(null);
+  const [rows, setRows] = useState([]);
+  const [mode, setMode] = useState("");
+  const [run, setRun] = useState(null);
   useEffect(() => { if (!user) return; supabase.from("practice_attempts").select("deck_id,score").eq("user_id", user.id).limit(1000).then(({ data }) => setRows(data ?? [])); }, [user?.id]);
   const byCat = useMemo(() => {
-    const m = new Map<string, { sum: number; n: number; decks: Map<string, { sum: number; n: number }> }>();
-    rows.forEach((r) => { const c = CAT[r.deck_id] ?? "🧩 Otras"; const e = m.get(c) ?? { sum: 0, n: 0, decks: new Map() }; e.sum += r.score; e.n++; const d = e.decks.get(r.deck_id) ?? { sum: 0, n: 0 }; d.sum += r.score; d.n++; e.decks.set(r.deck_id, d); m.set(c, e); });
+    const m = new Map<string, { sum: number; n: number; decks, { sum: number; n }> }>();
+    rows.forEach((r) => { const c = CAT[r.deck_id] ?? "🧩 Otras"; const e = m.get(c) ?? { sum: 0, n: 0, decks Map() }; e.sum += r.score; e.n++; const d = e.decks.get(r.deck_id) ?? { sum: 0, n: 0 }; d.sum += r.score; d.n++; e.decks.set(r.deck_id, d); m.set(c, e); });
     return [...m].map(([c, e]) => ({ c, p: Math.round(e.sum / e.n), n: e.n, decks: [...e.decks].map(([id, d]) => ({ id, p: Math.round(d.sum / d.n), n: d.n })).sort((a, b) => a.p - b.p) })).sort((a, b) => a.p - b.p);
   }, [rows]);
   const weakest = byCat[0]?.decks[0];

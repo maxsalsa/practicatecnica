@@ -1,7 +1,7 @@
-﻿import { Link } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 
 
-const tools: Tool[] = [
+const tools = [
   { to: "/examenes-docentes", icon: "📝", title: "Generar exámenes", desc: "Cree pruebas cronometradas de 4 opciones" },
   { to: "/planeamiento", icon: "🗂️", title: "Planeamiento DUA", desc: "Planes por nivel, materia y especialidad" },
   { to: "/insignias", icon: "🏅", title: "Insignias de estudiantes", desc: "Insignias por tema, simulacro aprobado y estado" },

@@ -3,15 +3,14 @@ import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
-import { applyPriorityDiscount, formatColones, matchTariff, type Discount, type Tariff } from '@/lib/institution-pricing';
+import { applyPriorityDiscount, formatColones, matchTariff } from '@/lib/institution-pricing';
 import { tokenRgb } from './pdf-color';
-import { buildEnrollmentSummary, type EnrollmentForSummary, type PricingForSummary } from '@/lib/enrollment-summary';
+import { buildEnrollmentSummary } from '@/lib/enrollment-summary';
 
-export type PricingRow = PricingForSummary & { id: string; request_id: string };
 
-export function useEnrollmentPricing(inst: string) {
-  return useQuery({ queryKey: ['enrollment-pricing', inst], queryFn: async () => {
-    const { data, error } = await supabase.from('enrollment_pricing').select('id,request_id,tariff_label,base_amount,discount_name,discount_priority,discount_amount,final_amount,priced_at').eq('institution_id', inst).order('priced_at', { ascending: false });
+export function useEnrollmentPricing(inst) {
+  return useQuery({ queryKey: ['enrollment-pricing', inst], queryFn () => {
+    const { data, error } = await supabase.from('enrollment_pricing').select('id,request_id,tariff_label,base_amount,discount_name,discount_priority,discount_amount,final_amount,priced_at').eq('institution_id', inst).order('priced_at', { ascending });
     if (error) throw new Error('No se pudieron consultar los montos de matrícula.');
     const latest = new Map<string, PricingRow>();
     for (const row of data) if (!latest.has(row.request_id)) latest.set(row.request_id, row);
@@ -20,7 +19,7 @@ export function useEnrollmentPricing(inst: string) {
 }
 
 /** Browser PDF of the stored pricing; approval and amounts come from the database, never from this file. */
-export async function downloadEnrollmentPdf(institutionName: string, r: EnrollmentForSummary & { id: string }, p: PricingForSummary, logoPath?: string | null) {
+export async function downloadEnrollmentPdf(institutionName) {
   const { jsPDF } = await import('jspdf');
   const s = buildEnrollmentSummary(r, p);
   const doc = new jsPDF();
@@ -28,13 +27,13 @@ export async function downloadEnrollmentPdf(institutionName: string, r: Enrollme
   doc.rect(0, 0, 210, 40, 'F');
   let textX = 15;
   if (logoPath) {
-    // Download the crest as a blob so the canvas is not tainted by the cross-origin signed link.
+    // Download the crest cross-origin signed link.
     const { data } = await supabase.storage.from('institution-logos').download(logoPath);
     if (data) try {
       const url = URL.createObjectURL(data); const img = new Image(); img.src = url; await img.decode();
       const c = document.createElement('canvas'); c.width = 150; c.height = 150; c.getContext('2d')?.drawImage(img, 0, 0, 150, 150); URL.revokeObjectURL(url);
       doc.addImage(c.toDataURL('image/png'), 'PNG', 12, 8, 24, 24); textX = 42;
-    } catch { /* unreadable image: keep text header */ }
+    } catch { /* unreadable image */ }
   }
   doc.setTextColor(255); doc.setFontSize(16); doc.text(doc.splitTextToSize(institutionName, 195 - textX), textX, 17); doc.setFontSize(11); doc.text(s.title, textX, 31);
   doc.setTextColor(0); doc.setFontSize(10);
@@ -60,7 +59,7 @@ export async function downloadEnrollmentPdf(institutionName: string, r: Enrollme
   doc.save(`matricula-${r.id.slice(0, 8)}.pdf`);
 }
 
-export function EnrollmentPricing({ inst, institutionName, logoPath, request, tariffs, discounts, latest }: { inst: string; institutionName: string; logoPath?: string | null; request: EnrollmentForSummary & { id: string }; tariffs: Tariff[]; discounts: Discount[]; latest: PricingRow | undefined }) {
+export function EnrollmentPricing({ inst, institutionName, logoPath, request, tariffs, discounts, latest }: { inst: string; institutionName: string; logoPath; request & { id }; tariffs: Tariff[]; discounts: Discount[]; latest }) {
   const cache = useQueryClient();
   const options = tariffs.filter(t => t.active && t.service === 'matricula');
   const suggested = matchTariff(options, { service: 'matricula', level: request.level });

@@ -1,4 +1,4 @@
-﻿import React from 'react'
+import React from 'react'
 import { Body, Button, Container, Head, Heading, Html, Preview, Text } from '@react-email/components'
 import type { TemplateEntry } from './registry'
 
@@ -21,7 +21,7 @@ const Email = ({ inviter }: Props) => (
 )
 
 export const template = {
-  component: Email,
+  component,
   subject: 'Invitación a pracTICAtecnica.com',
   displayName: 'Invitación',
   previewData: { inviter: 'Max Salazar' },

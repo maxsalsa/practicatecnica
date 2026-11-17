@@ -2,15 +2,15 @@ import { useState } from 'react';
 import { useServerFn } from '@tanstack/react-start';
 import { Button } from '@/components/ui/button';
 import { registerStudent } from '@/lib/student.functions';
-import { parseEnrollmentCsv, type EnrollRow } from '@/lib/enrollment';
+import { parseEnrollmentCsv } from '@/lib/enrollment';
 
-const KIND = { cedula: 'Cédula', dimex: 'DIMEX', otro: 'Identificación' } as const;
+const KIND = { cedula: 'Cédula', dimex: 'DIMEX', otro: 'Identificación' };
 
-/** Matrícula masiva: el docente sube un CSV; cada fila se registra con la misma validación del alta individual. */
+/** Matrícula masiva CSV; cada fila se registra con la misma validación del alta individual. */
 export function CsvEnrollment({ institution, onDone }: { institution: string; onDone: () => void }) {
   const register = useServerFn(registerStudent);
-  const [rows, setRows] = useState<EnrollRow[]>([]);
-  const [errors, setErrors] = useState<string[]>([]);
+  const [rows, setRows] = useState([]);
+  const [errors, setErrors] = useState([]);
   const [status, setStatus] = useState('');
   const [busy, setBusy] = useState(false);
   async function read(file) {
@@ -20,7 +20,7 @@ export function CsvEnrollment({ institution, onDone }: { institution: string; on
     setRows(r.rows); setErrors(r.errors); setStatus('');
   }
   async function save() {
-    setBusy(true); let ok = 0; const fails: string[] = [];
+    setBusy(true); let ok = 0; const fails = [];
     for (const r of rows) {
       try {
         await register({ data: { name: r.name, email: r.email, institution, level: r.level, notes: r.id ? `${KIND[r.idKind]}: ${r.id}` : '' } });

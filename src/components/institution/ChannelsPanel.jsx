@@ -7,48 +7,48 @@ import { useAccount } from '@/components/AccountProvider';
 import { Button } from '@/components/ui/button';
 import { attachmentExtension } from '@/lib/institutions';
 import { stripImageMetadata } from '@/lib/image-sanitize';
-import { CHANNEL_KIND_HELP, CHANNEL_KIND_LABELS, SENDER_ROLE_LABELS, canPost, messageError, type ChannelAccess, type ChannelKind } from '@/lib/channels';
+import { CHANNEL_KIND_HELP, CHANNEL_KIND_LABELS, SENDER_ROLE_LABELS, canPost, messageError } from '@/lib/channels';
 import {ArrowLeft,MessageSquare,FolderOpen,Send,ShieldCheck} from 'lucide-react';
 
 
 const rowKey = (r) => `${r.kind}:${r.section_id ?? ''}:${r.student_id ?? ''}`;
-const time = (d: string) => new Date(d).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
-const kindIcon: Record<ChannelKind, string> = { personal: '🧑‍🏫', seccion: '🏷️', familia: '👪' };
+const time = (d) => new Date(d).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
+const kindIcon, string> = { personal: '🧑‍🏫', seccion: '🏷️', familia: '👪' };
 
-export function useChannelList(institutionId: string) {
+export function useChannelList(institutionId) {
   return useQuery({
     queryKey: ['channels', institutionId],
     refetchInterval: 30000,
-    queryFn: async () => {
-      const { data, error } = await supabase.rpc('my_channels', { _inst: institutionId });
+    queryFn () => {
+      const { data, error } = await supabase.rpc('my_channels', { _inst });
       if (error) throw new Error('No se pudieron cargar los canales.');
-      return data as ChannelRow[];
+      return data;
     },
   });
 }
 
 export const GUARDIAN_CONSENT_VERSION = 'familia-2026-11';
 
-export function ChannelsPanel({ institutionId, role }: { institutionId: string; role?: string }) {
+export function ChannelsPanel({ institutionId, role }: { institutionId: string; role}) {
   const links = useQuery({
-    queryKey: ['guardian-links', institutionId], enabled: role === 'encargado',
-    queryFn: async () => { const { data, error } = await supabase.rpc('my_guardian_links', { _inst: institutionId }); if (error) throw new Error('No se pudo cargar su vínculo familiar.'); return data; },
+    queryKey: ['guardian-links', institutionId], enabled === 'encargado',
+    queryFn () => { const { data, error } = await supabase.rpc('my_guardian_links', { _inst }); if (error) throw new Error('No se pudo cargar su vínculo familiar.'); return data; },
   });
   if (role === 'encargado' && links.data?.some(l => !l.consented_at)) return <GuardianConsent institutionId={institutionId} students={links.data.map(l => l.student_name)} />;
   return <ChannelsList institutionId={institutionId} />;
 }
 
-function GuardianConsent({ institutionId, students }: { institutionId: string; students: string[] }) {
+function GuardianConsent({ institutionId, students }: { institutionId: string; students }) {
   const queries = useQueryClient();
   const [ok, setOk] = useState(false);
   const [busy, setBusy] = useState(false);
   async function accept() {
     setBusy(true);
-    const { error } = await supabase.rpc('accept_guardian_consent', { _inst: institutionId, _version: GUARDIAN_CONSENT_VERSION });
+    const { error } = await supabase.rpc('accept_guardian_consent', { _inst, _version });
     setBusy(false);
     if (error) { toast.error('No se pudo registrar su aceptación.'); return; }
     toast.success('Aceptación registrada.');
-    for (const k of ['guardian-links', 'channels']) void queries.invalidateQueries({ queryKey: [k, institutionId] });
+    for (const k of ['guardian-links', 'channels']) void queries.invalidateQueries({ queryKey, institutionId] });
   }
   return <section className="max-w-2xl rounded-2xl border border-accent bg-card p-5 shadow-card" aria-labelledby="consent-title">
     <h3 id="consent-title" className="text-lg font-black">👪 Aviso para la familia</h3>
@@ -64,20 +64,20 @@ function GuardianConsent({ institutionId, students }: { institutionId: string; s
   </section>;
 }
 
-function ChannelsList({ institutionId }: { institutionId: string }) {
+function ChannelsList({ institutionId }: { institutionId }) {
   const list = useChannelList(institutionId);
   const queries = useQueryClient();
-  const [selected, setSelected] = useState<{ key: string; id: string; title: string; kind: ChannelKind } | null>(null);
+  const [selected, setSelected] = useState(null);
   const [opening, setOpening] = useState('');
 
   async function open(r) {
     const key = rowKey(r);
-    if (r.channel_id) { setSelected({ key, id: r.channel_id, title: r.title, kind: r.kind as ChannelKind }); return; }
+    if (r.channel_id) { setSelected({ key, id: r.channel_id, title: r.title, kind: r.kind }); return; }
     setOpening(key);
-    const { data, error } = await supabase.rpc('open_channel', { _inst: institutionId, _kind: r.kind, _section: r.section_id as string, _student: r.student_id as string });
+    const { data, error } = await supabase.rpc('open_channel', { _inst, _kind: r.kind, _section: r.section_id, _student: r.student_id });
     setOpening('');
     if (error || !data) { toast.error('No se pudo abrir el canal.'); return; }
-    setSelected({ key, id: data, title: r.title, kind: r.kind as ChannelKind });
+    setSelected({ key, id, title: r.title, kind: r.kind });
     void queries.invalidateQueries({ queryKey: ['channels', institutionId] });
   }
 
@@ -91,8 +91,8 @@ function ChannelsList({ institutionId }: { institutionId: string }) {
         <ul className="grid gap-1">{rows.map(r => {
           const key = rowKey(r); const active = selected?.key === key;
           return <li key={key}><Button variant={active?'default':'ghost'} onClick={() => void open(r)} disabled={opening === key} className="flex h-auto w-full items-center gap-3 rounded-md px-3 py-3 text-left">
-            <span aria-hidden className="text-xl">{kindIcon[r.kind as ChannelKind] ?? '#'}</span>
-            <span className="min-w-0 flex-1"><span className="block truncate font-bold"># {r.title}</span><span className={`block truncate text-xs ${active ? 'text-primary-foreground/80' : 'text-muted-foreground'}`}>{CHANNEL_KIND_LABELS[r.kind as ChannelKind]}{r.last_at ? ` · ${time(r.last_at)}` : ''}</span></span>
+            <span aria-hidden className="text-xl">{kindIcon[r.kind ?? '#'}</span>
+            <span className="min-w-0 flex-1"><span className="block truncate font-bold"># {r.title}</span><span className={`block truncate text-xs ${active ? 'text-primary-foreground/80' : 'text-muted-foreground'}`}>{CHANNEL_KIND_LABELS[r.kind}{r.last_at ? ` · ${time(r.last_at)}` : ''}</span></span>
             {Number(r.unread) > 0 && <span className="rounded-full bg-accent px-2 py-0.5 text-xs font-black text-accent-foreground" aria-label={`${r.unread} mensajes nuevos`}>{r.unread}</span>}
           </Button></li>;
         })}</ul>}
@@ -102,72 +102,72 @@ function ChannelsList({ institutionId }: { institutionId: string }) {
   </div></div>;
 }
 
-function Conversation({ institutionId, channel, onBack }: { institutionId: string; channel: { id: string; title: string; kind: ChannelKind }; onBack: () => void }) {
+function Conversation({ institutionId, channel, onBack }: { institutionId: string; channel: { id: string; title: string; kind }; onBack: () => void }) {
   const { user } = useAccount();
   const queries = useQueryClient();
   const feedKey = useMemo(() => ['channel-feed', channel.id], [channel.id]);
   const access = useQuery({
     queryKey: ['channel-access', channel.id],
-    queryFn: async () => { const { data, error } = await supabase.rpc('channel_access', { _ch: channel.id }); if (error) throw new Error('Sin acceso'); return data as ChannelAccess; },
+    queryFn () => { const { data, error } = await supabase.rpc('channel_access', { _ch: channel.id }); if (error) throw new Error('Sin acceso'); return data; },
   });
   const feed = useQuery({
-    queryKey: feedKey,
-    queryFn: async () => { const { data, error } = await supabase.rpc('channel_feed', { _ch: channel.id }); if (error) throw new Error('No se pudieron cargar los mensajes.'); return data; },
+    queryKey,
+    queryFn () => { const { data, error } = await supabase.rpc('channel_feed', { _ch: channel.id }); if (error) throw new Error('No se pudieron cargar los mensajes.'); return data; },
   });
   const [text, setText] = useState('');
-  const [file, setFile] = useState<File | null>(null);
+  const [file, setFile] = useState(null);
   const [busy, setBusy] = useState(false);
-  const [view,setView]=useState<'messages'|'files'>('messages');
+  const [view,setView]=useState('messages');
   const bottom = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ch = supabase.channel(`channel-${channel.id}-${Math.random().toString(36).slice(2)}`)
-      .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'channel_messages', filter: `channel_id=eq.${channel.id}` }, () => { void queries.invalidateQueries({ queryKey: feedKey }); })
+      .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'channel_messages', filter: `channel_id=eq.${channel.id}` }, () => { void queries.invalidateQueries({ queryKey }); })
       .subscribe();
     return () => { void supabase.removeChannel(ch); };
   }, [channel.id, feedKey, queries]);
   useEffect(() => {
     if (!user || !feed.data) return;
     bottom.current?.scrollIntoView({ block: 'end' });
-    void supabase.from('channel_reads').upsert({ channel_id: channel.id, user_id: user.id, read_at: new Date().toISOString() }).then(() => queries.invalidateQueries({ queryKey: ['channels', institutionId] }));
+    void supabase.from('channel_reads').upsert({ channel_id: channel.id, user_id: user.id, read_at Date().toISOString() }).then(() => queries.invalidateQueries({ queryKey: ['channels', institutionId] }));
   }, [feed.data, user, channel.id, institutionId, queries]);
 
-  async function send(e: React.FormEvent) {
+  async function send(e) {
     e.preventDefault();
     if (!user) return;
     const err = messageError(text || (file ? `📎 ${file.name}` : ''));
     if (err) { toast.error(err); return; }
     setBusy(true);
     try {
-      let attachment_path: string | null = null;
+      let attachment_path = null;
       if (file) {
         const clean = await stripImageMetadata(file).catch(() => file);
         const check = attachmentExtension(clean);
         if (check.error) { toast.error(check.error); return; }
         attachment_path = `${channel.id}/${crypto.randomUUID()}.${check.ext}`;
-        const up = await supabase.storage.from('channel-files').upload(attachment_path, clean, { contentType: clean.type, upsert: false });
+        const up = await supabase.storage.from('channel-files').upload(attachment_path, clean, { contentType: clean.type, upsert });
         if (up.error) { toast.error('No se pudo subir el archivo.'); return; }
       }
-      const { error } = await supabase.from('channel_messages').insert({ channel_id: channel.id, sender_id: user.id, body: text.trim() || `📎 ${file?.name ?? 'Archivo'}`, attachment_path, attachment_name: file ? file.name.slice(0, 120) : null });
-      if (error) { toast.error(error.message.includes('respetuoso') ? 'Mensaje bloqueado: use un lenguaje respetuoso.' : 'No se pudo enviar el mensaje.'); return; }
+      const { error } = await supabase.from('channel_messages').insert({ channel_id: channel.id, sender_id: user.id, body: text.trim() || `📎 ${file?.name ?? 'Archivo'}`, attachment_path, attachment_name ? file.name.slice(0, 120) : null });
+      if (error) { toast.error(error.message.includes('respetuoso') ? 'Mensaje bloqueado respetuoso.' : 'No se pudo enviar el mensaje.'); return; }
       setText(''); setFile(null);
-      void queries.invalidateQueries({ queryKey: feedKey });
+      void queries.invalidateQueries({ queryKey });
     } finally { setBusy(false); }
   }
-  async function openFile(path: string) {
+  async function openFile(path) {
     if (!(await openPrivateFile('channel-files', path))) toast.error('No se pudo abrir el archivo.');
   }
-  async function review(id: string, approve: boolean) {
-    const { error } = await supabase.rpc('review_channel_attachment', { _id: id, _approve: approve });
+  async function review(id) {
+    const { error } = await supabase.rpc('review_channel_attachment', { _id, _approve });
     if (error) { toast.error('No se pudo registrar la revisión.'); return; }
     toast.success(approve ? 'Archivo aprobado y visible para el canal.' : 'Archivo rechazado.');
-    void queries.invalidateQueries({ queryKey: feedKey });
+    void queries.invalidateQueries({ queryKey });
   }
-  async function hide(id: string) {
-    const { error } = await supabase.rpc('hide_channel_message', { _id: id });
+  async function hide(id) {
+    const { error } = await supabase.rpc('hide_channel_message', { _id });
     if (error) { toast.error('No se pudo ocultar el mensaje.'); return; }
     toast.success('Mensaje ocultado; queda registrado.');
-    void queries.invalidateQueries({ queryKey: feedKey });
+    void queries.invalidateQueries({ queryKey });
   }
 
   const acc = access.data ?? 'none';
@@ -203,10 +203,10 @@ function Conversation({ institutionId, channel, onBack }: { institutionId: strin
       <div className="min-w-0 flex-1">
         {file && <p className="mb-1 truncate text-xs">📎 {file.name} <button type="button" className="underline" onClick={() => setFile(null)}>quitar</button></p>}
         <p className="mb-1 text-[11px] text-muted-foreground">Comunicación institucional registrada. No comparta datos sensibles innecesarios ni fotos de terceros sin permiso (Ley 8968).</p>
-        <textarea aria-label="Mensaje" rows={1} maxLength={2000} value={text} onChange={e => setText(e.target.value)} placeholder="Escriba un mensaje respetuoso…" className="max-h-32 w-full resize-y rounded-xl border border-border bg-background px-3 py-2" onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); (e.currentTarget.form as HTMLFormElement | null)?.requestSubmit(); } }} />
+        <textarea aria-label="Mensaje" rows={1} maxLength={2000} value={text} onChange={e => setText(e.target.value)} placeholder="Escriba un mensaje respetuoso…" className="max-h-32 w-full resize-y rounded-xl border border-border bg-background px-3 py-2" onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); (e.currentTarget.form | null)?.requestSubmit(); } }} />
       </div>
       <Button type="submit" size="icon" disabled={busy} aria-label="Enviar mensaje"><Send className="h-4 w-4"/></Button>
-    </form> : <p className="border-t border-border p-3 text-center text-sm text-muted-foreground">{access.isPending ? 'Comprobando acceso…' : 'Canal informativo: solo el personal publica aquí.'}</p>}
+    </form> : <p className="border-t border-border p-3 text-center text-sm text-muted-foreground">{access.isPending ? 'Comprobando acceso…' : 'Canal informativo aquí.'}</p>}
   </section>;
 }
 

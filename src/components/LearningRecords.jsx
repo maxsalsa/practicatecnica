@@ -6,31 +6,31 @@ import { schoolSubjects, schoolLevels } from "@/lib/school-practice";
 import { learningInput } from "@/lib/learning-input";
 import { skillAreas } from '@/lib/skill-areas';
 import { RUBRIC_LEVELS, RUBRIC_DESCRIPTORS } from '@/lib/teaching-rubric';
-export function LearningRecords({ studentId, userId }: { studentId: string; userId: string }) {
+export function LearningRecords({ studentId, userId }: { studentId: string; userId }) {
   const cache = useQueryClient();
   const [subject, setSubject] = useState("matematica");
   const [level, setLevel] = useState(schoolLevels[0] ?? "6.º primaria");
   const [progress, setProgress] = useState(0);
   const [notes, setNotes] = useState("");
   const [indicator, setIndicator] = useState('');
-  const [rating, setRating] = useState<(typeof RUBRIC_LEVELS)[number]>(3);
+  const [rating, setRating] = useState(3);
   const [reason, setReason] = useState('');
   const records = useQuery({
     queryKey: ["learning-records", studentId],
-    queryFn: async () => {
+    queryFn () => {
       const { data, error } = await supabase
         .from("student_learning_records")
         .select("*")
         .eq("student_id", studentId)
-        .order("updated_at", { ascending: false });
+        .order("updated_at", { ascending });
       if (error) throw error;
       return data;
     },
   });
   const save = useMutation({
-    mutationFn: async () => {
+    mutationFn () => {
       const rubricNote = indicator.trim() ? `Indicador: ${indicator.trim()}\nRúbrica ${rating}/3: ${RUBRIC_DESCRIPTORS[rating]}${rating === 0 ? `\nMotivo: ${reason.trim()}` : ''}\n${notes}` : notes;
-      const input = learningInput.parse({ studentId, subject, level, progress, notes: rubricNote });
+      const input = learningInput.parse({ studentId, subject, level, progress, notes });
       const { error } = await supabase
         .from("student_learning_records")
         .upsert(
@@ -40,8 +40,8 @@ export function LearningRecords({ studentId, userId }: { studentId: string; user
             level: input.level,
             progress: input.progress,
             notes: input.notes,
-            recorded_by: userId,
-            updated_at: new Date().toISOString(),
+            recorded_by,
+            updated_at Date().toISOString(),
           },
           { onConflict: "student_id,subject,level" },
         );

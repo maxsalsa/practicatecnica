@@ -2,27 +2,27 @@ import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 
-const when = (s: string) => new Date(s).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica', dateStyle: 'medium', timeStyle: 'short' });
-type R = Record<string, unknown>;
-const ES: Record<string, string> = { active: 'activa', inactive: 'inactiva', gift: 'cortesía', suspended: 'suspendida', pending: 'pendiente', approved: 'aprobada', rejected: 'rechazada', cancelled: 'cancelada', admin: 'administración', teacher: 'docente', student: 'estudiante' };
-const es = (v: string | null) => (v ? ES[v] ?? v : v);
-const str = (e: R, ...k: string[]) => { for (const x of k) if (e[x] != null) return String(e[x]); return null; };
+const when = (s) => new Date(s).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica', dateStyle: 'medium', timeStyle: 'short' });
+
+const ES, string> = { active: 'activa', inactive: 'inactiva', gift: 'cortesía', suspended: 'suspendida', pending: 'pendiente', approved: 'aprobada', rejected: 'rechazada', cancelled: 'cancelada', admin: 'administración', teacher: 'docente', student: 'estudiante' };
+const es = (v) => (v ? ES[v] ?? v);
+const str = (e) => { for (const x of k) if (e[x] != null) return String(e[x]); return null; };
 /** Reads existing append-only histories under RLS; never writes or invents events. */
-export function AuditLog({ institutionId }: { institutionId: string }) {
+export function AuditLog({ institutionId }: { institutionId }) {
   const [kind, setKind] = useState('todos');
   const log = useQuery({
     queryKey: ['audit-log', institutionId],
-    queryFn: async () => {
-      const q = (t: string) => (supabase.from(t as never).select('*').limit(150) as unknown as Promise<{ data: R[] | null }>);
+    queryFn () => {
+      const q = (t) => (supabase.from(t).select('*').limit(150) Promise<{ data }>);
       const [p, s, r, i] = await Promise.all([q('permission_request_history'), q('account_status_history'), q('account_role_events'),
-        supabase.from('institution_permission_events').select('*').eq('institution_id', institutionId).limit(150) as unknown as Promise<{ data: R[] | null }>]);
-      const ov = await supabase.rpc('admin_user_overview' as never);
+        supabase.from('institution_permission_events').select('*').eq('institution_id', institutionId).limit(150) Promise<{ data }>]);
+      const ov = await supabase.rpc('admin_user_overview');
       const people = new Map<string, string>();
-      ((ov.data ?? []) as R[]).forEach(u => { const id = str(u, 'user_id', 'id'); const m = str(u, 'email'); if (id && m) people.set(id, m); });
-      const who = (id: string | null) => (id ? people.get(id) ?? 'Usuario registrado' : 'Sistema');
+      ((ov.data ?? [])).forEach(u => { const id = str(u, 'user_id', 'id'); const m = str(u, 'email'); if (id && m) people.set(id, m); });
+      const who = (id) => (id ? people.get(id) ?? 'Usuario registrado' : 'Sistema');
       const at = (e) => str(e, 'created_at', 'changed_at') ?? '';
-      const rows: Entry[] = [
-        ...(p.data ?? []).map(e => ({ at: at(e), kind: 'Permisos', action: `Solicitud ${es(str(e, 'from_status', 'previous_status')) ?? 'nueva'} → ${es(str(e, 'to_status', 'status', 'action')) ?? 'actualizada'}`, actor: who(str(e, 'changed_by', 'actor_id')), subject: null })),
+      const rows = [
+        ...(p.data ?? []).map(e => ({ at: at(e), kind: 'Permisos', action: `Solicitud ${es(str(e, 'from_status', 'previous_status')) ?? 'nueva'} → ${es(str(e, 'to_status', 'status', 'action')) ?? 'actualizada'}`, actor: who(str(e, 'changed_by', 'actor_id')), subject })),
         ...(s.data ?? []).map(e => ({ at: at(e), kind: 'Cuentas', action: `Estado ${es(str(e, 'previous_status')) ?? 'inicial'} → ${es(str(e, 'status', 'new_status')) ?? 'actualizado'}`, actor: who(str(e, 'changed_by', 'actor_id')), subject: who(str(e, 'user_id')) })),
         ...(r.data ?? []).map(e => ({ at: at(e), kind: 'Roles de cuenta', action: `Rol → ${es(str(e, 'new_role')) ?? 'actualizado'}`, actor: who(str(e, 'actor_id', 'changed_by')), subject: who(str(e, 'user_id')) })),
         ...(i.data ?? []).map(e => ({ at: at(e), kind: 'Accesos', action: `Permiso institucional ${str(e, 'permission', 'capability', 'action') ?? 'actualizado'}`, actor: who(str(e, 'actor_id', 'changed_by')), subject: who(str(e, 'user_id')) })),

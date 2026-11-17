@@ -8,9 +8,9 @@ import {
   useRouter,
   HeadContent,
   Scripts,
-  type ErrorComponentProps,
+
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { useEffect } from "react";
 
 import appCss from "../styles.css?url";
 import { AccountProvider } from "@/components/AccountProvider";
@@ -39,7 +39,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: ErrorComponentProps) {
+function ErrorComponent({ error, reset }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -77,13 +77,11 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
   );
 }
 
-export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({staticData:{sitemap:false},
+export const Route = createRootRouteWithContext()({staticData:{sitemap:false},
   head: () => ({
     // Replace these placeholders with the app's name and description when first building the app.
-    // Each content route, / included, must still set its own head(). Never add og:image or
-    // twitter:image here: every page without its own would inherit the root's preview image.
-    meta: [
-      { charSet: "utf-8" },
+    // Each content route, / included, must still set its own head(). Never add og // twitter here root's preview image.
+    meta { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Práctica Técnica CR | Plataforma de Estudio, Simulacros y MOPT" },
       { name: "description", content: "Preparación interactiva para colegios técnicos, admisión universitaria y pruebas teóricas de manejo en Costa Rica." },
@@ -96,10 +94,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [
-      {
+    links {
         rel: "stylesheet",
-        href: appCss,
+        href,
       },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800;900&display=swap" },
       { rel: "icon", href: "/favicon.png?v=owl-26x", type: "image/png" },
@@ -107,13 +104,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png?v=owl-26x" },
     ],
   }),
-  shellComponent: RootShell,
-  component: RootComponent,
-  notFoundComponent: NotFoundComponent,
-  errorComponent: ErrorComponent,
+  shellComponent,
+  component,
+  notFoundComponent,
+  errorComponent,
 });
 
-function RootShell({ children }: { children: ReactNode }) {
+function RootShell({ children }: { children }) {
   return (
     <html lang="es">
       <head>
@@ -132,7 +129,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+      {/* Required here. Removing <Outlet /> breaks all child routes. */}
       <AccountProvider><AccessGate><div className="pb-16 md:pb-0"><PreviewRouteGate><Outlet /></PreviewRouteGate></div></AccessGate><BottomNav /><Toaster /></AccountProvider>
     </QueryClientProvider>
   );

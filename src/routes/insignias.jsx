@@ -6,24 +6,23 @@ import { supabase } from "@/integrations/supabase/client";
 import { BADGE_TOPICS, badgeTopic } from "@/lib/badge-topics";
 
 export const Route = createFileRoute("/insignias")({staticData:{sitemap:true},
-  head: () => ({ meta: [
-    { title: "Insignias por tema · pracTICAtecnica.com" },
+  head: () => ({ meta { title: "Insignias por tema · pracTICAtecnica.com" },
     { name: "description", content: "Insignias por tema emitidas automáticamente al aprobar un simulacro con certificado SHA-256." },
     { property: "og:title", content: "Insignias por tema · pracTICAtecnica.com" },
     { property: "og:description", content: "Web, Ciberseguridad, Soporte TI, Python, IoT, Contabilidad, Turismo y más." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary" },
   ] }),
-  component: Insignias,
+  component,
 });
 
 function Insignias() {
   const { user } = useAccount();
-  const mine = useQuery({ queryKey: ["my-badges", user?.id], enabled: !!user, queryFn: async () => {
-    const { data, error } = await supabase.from("certificates").select("hash,title,score,issued_at,revoked_at").eq("user_id", user?.id ?? "").order("issued_at", { ascending: false });
+  const mine = useQuery({ queryKey: ["my-badges", user?.id], enabled: !!user, queryFn () => {
+    const { data, error } = await supabase.from("certificates").select("hash,title,score,issued_at,revoked_at").eq("user_id", user?.id ?? "").order("issued_at", { ascending });
     if (error) throw error; return data ?? [];
   } });
-  const team = useQuery({ queryKey: ["teacher-badges", user?.id], enabled: !!user, retry: false, queryFn: async () => {
+  const team = useQuery({ queryKey: ["teacher-badges", user?.id], enabled: !!user, retry, queryFn () => {
     const { data, error } = await supabase.rpc("teacher_badges"); if (error) throw error; return data ?? [];
   } });
   const earned = new Map<string, NonNullable<typeof mine.data>[number]>();

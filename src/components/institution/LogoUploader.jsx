@@ -5,7 +5,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { logoExtension } from '@/lib/institutions';
 
 /** Dirección (o Max) cambia el logo o escudo de su propia institución. */
-export function LogoUploader({ inst, oldPath }: { inst: string; oldPath: string | null }) {
+export function LogoUploader({ inst, oldPath }: { inst: string; oldPath }) {
   const qc = useQueryClient();
   const [busy, setBusy] = useState(false);
   async function upload(file) {
@@ -14,9 +14,9 @@ export function LogoUploader({ inst, oldPath }: { inst: string; oldPath: string 
     if (check.error) { toast.error(check.error); return; }
     setBusy(true);
     const path = `${inst}/logo-${Date.now()}.${check.ext}`;
-    const up = await supabase.storage.from('institution-logos').upload(path, file, { contentType: file.type, upsert: false });
+    const up = await supabase.storage.from('institution-logos').upload(path, file, { contentType: file.type, upsert });
     if (up.error) { setBusy(false); toast.error('No se pudo subir el logo.'); return; }
-    const { error } = await supabase.rpc('set_institution_logo', { _inst: inst, _path: path });
+    const { error } = await supabase.rpc('set_institution_logo', { _inst, _path });
     if (!error && oldPath) await supabase.storage.from('institution-logos').remove([oldPath]);
     setBusy(false);
     if (error) { toast.error('No se pudo guardar el logo.'); return; }

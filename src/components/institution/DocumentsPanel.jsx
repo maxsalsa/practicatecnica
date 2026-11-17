@@ -7,22 +7,22 @@ import { InstitutionDocumentHeader } from './InstitutionDocumentHeader';
 import {useServerFn} from '@tanstack/react-start';
 import {downloadInstitutionDocument} from '@/lib/institution-document.functions';
 
-const TYPES: Record<string, string> = { 'application/pdf': 'pdf', 'image/png': 'png', 'image/jpeg': 'jpg', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document': 'docx' };
+const TYPES, string> = { 'application/pdf': 'pdf', 'image/png': 'png', 'image/jpeg': 'jpg', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document': 'docx' };
 
 /** Documentos de la institución (políticas, reglamentos). Dirección sube y borra; miembros leen. */
-export function DocumentsPanel({ inst, canManage, name, logoPath }: { inst: string; canManage: boolean; name: string; logoPath: string | null }) {
+export function DocumentsPanel({ inst, canManage, name, logoPath }: { inst: string; canManage: boolean; name: string; logoPath }) {
   const download=useServerFn(downloadInstitutionDocument);
   const [title, setTitle] = useState('');
-  const [file, setFile] = useState<File | null>(null);
+  const [file, setFile] = useState(null);
   const [busy, setBusy] = useState(false);
   const docs = useQuery({
     queryKey: ['inst-docs', inst],
-    queryFn: async () => {
-      const { data, error } = await supabase.from('institution_documents').select('id,title,path,created_at').eq('institution_id', inst).order('created_at', { ascending: false });
+    queryFn () => {
+      const { data, error } = await supabase.from('institution_documents').select('id,title,path,created_at').eq('institution_id', inst).order('created_at', { ascending });
       if (error) throw error; return data;
     },
   });
-  async function add(e: React.FormEvent) {
+  async function add(e) {
     e.preventDefault();
     if (!file) return;
     const ext = TYPES[file.type];
@@ -32,13 +32,13 @@ export function DocumentsPanel({ inst, canManage, name, logoPath }: { inst: stri
     const path = `${inst}/${crypto.randomUUID()}.${ext}`;
     const up = await supabase.storage.from('institution-docs').upload(path, file, { contentType: file.type });
     if (up.error) { setBusy(false); toast.error('No se pudo subir el archivo.'); return; }
-    const { error } = await supabase.from('institution_documents').insert({ institution_id: inst, title: title.trim(), path });
+    const { error } = await supabase.from('institution_documents').insert({ institution_id, title: title.trim(), path });
     if (error) await supabase.storage.from('institution-docs').remove([path]);
     setBusy(false);
     if (error) { toast.error('No se pudo guardar. El título debe tener entre 3 y 150 caracteres.'); return; }
     toast.success('Documento publicado.'); setTitle(''); setFile(null); void docs.refetch();
   }
-  async function open(path: string) {
+  async function open(path) {
     try {
     const data=await download({data:{path}});
     const bytes=Uint8Array.from(atob(data.base64),c=>c.charCodeAt(0));
@@ -47,7 +47,7 @@ export function DocumentsPanel({ inst, canManage, name, logoPath }: { inst: stri
     setTimeout(() => URL.revokeObjectURL(url), 60_000);
     } catch { toast.error('No se pudo abrir. Revise su acceso actual.'); }
   }
-  async function remove(id: string, path: string) {
+  async function remove(id) {
     const { error } = await supabase.from('institution_documents').delete().eq('id', id);
     if (error) { toast.error('No se pudo borrar.'); return; }
     await supabase.storage.from('institution-docs').remove([path]); void docs.refetch();

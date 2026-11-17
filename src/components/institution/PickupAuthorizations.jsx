@@ -6,17 +6,17 @@ import { pickupIsAuthorized } from '@/lib/enrollment-document';
 import { Link } from '@tanstack/react-router';
 import { PickupQr } from './PickupQr';
 
-export function PickupAuthorizations({ requestId, enrollmentStatus, reviewer = false }: { requestId: string; enrollmentStatus: string; reviewer?: boolean }) {
-  const query = useQuery({ queryKey: ['pickup-authorizations', requestId], queryFn: async () => {
+export function PickupAuthorizations({ requestId, enrollmentStatus, reviewer = false }: { requestId: string; enrollmentStatus: string; reviewer}) {
+  const query = useQuery({ queryKey: ['pickup-authorizations', requestId], queryFn () => {
     const { data, error } = await supabase.from('student_pickup_authorizations').select('id,name,identification,relation,status,note,reviewed_at').eq('request_id', requestId).order('created_at');
     if (error) throw error;
     return data;
   } });
-  async function decide(id: string, status: 'autorizada' | 'rechazada' | 'revocada') {
+  async function decide(id) {
     const note = window.prompt(status === 'autorizada' ? 'Indique la comprobación de identidad y vínculo realizada por la institución:' : 'Motivo de la decisión:');
     if (!note?.trim()) return;
-    const { error } = await supabase.rpc('review_pickup_authorization', { _id: id, _status: status, _note: note });
-    if (error) { toast.error('No se pudo registrar: requiere matrícula aprobada, permiso de revisión y no puede aprobar su propia solicitud.'); return; }
+    const { error } = await supabase.rpc('review_pickup_authorization', { _id, _status, _note });
+    if (error) { toast.error('No se pudo registrar matrícula aprobada, permiso de revisión y no puede aprobar su propia solicitud.'); return; }
     toast.success('Decisión registrada.');
     void query.refetch();
   }

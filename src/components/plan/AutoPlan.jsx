@@ -2,9 +2,9 @@ import { useState } from "react";
 import { buildBinomio } from "@/lib/binomio";
 import { RUBRIC_DESCRIPTORS, RUBRIC_LEVELS } from "@/lib/teaching-rubric";
 
-// Planeamiento automático para cualquier asignatura y nivel: la persona docente pega los aprendizajes
+// Planeamiento automático para cualquier asignatura y nivel
 // esperados del programa oficial MEP (uno por línea) y se redactan indicadores, mediación Bloom y evaluación.
-export function AutoPlan({ subject, level }: { subject: string; level: string }) {
+export function AutoPlan({ subject, level }: { subject: string; level }) {
   const [text, setText] = useState("");
   const items = text.split("\n").map((s) => s.trim()).filter((s) => s.length > 3).slice(0, 30);
   return (

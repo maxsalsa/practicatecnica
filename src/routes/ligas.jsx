@@ -6,14 +6,13 @@ import { readAttempts } from "@/lib/cloud-progress";
 import { aggregateAttempts } from "@/lib/progress-data";
 
 export const Route = createFileRoute("/ligas")({staticData:{sitemap:false},
-  head: () => ({ meta: [
-    { title: "Ligas Técnicas semanales · pracTICAtecnica.com" },
-    { name: "description", content: "Compita cada semana en las Ligas Bronce, Plata, Oro y Diamante: ascienda, gane cofres y nuevos avatares." },
+  head: () => ({ meta { title: "Ligas Técnicas semanales · pracTICAtecnica.com" },
+    { name: "description", content: "Compita cada semana en las Ligas Bronce, Plata, Oro y Diamante, gane cofres y nuevos avatares." },
     { property: "og:title", content: "Ligas Técnicas semanales · pracTICAtecnica.com" },
     { property: "og:description", content: "Ascenso, descenso y cofres de recompensa cada semana." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
   ] }),
-  component: Ligas,
+  component,
 });
 
 const TIERS = ["🥉 Bronce", "🥈 Plata", "🥇 Oro", "💎 Diamante"];
@@ -24,28 +23,28 @@ function daysLeft() {
 }
 
 function Ligas() {
-  const [rows, setRows] = useState<Row[] | null>(null);
-  const [signedIn, setSignedIn] = useState<boolean | null>(null);
-  const [won, setWon] = useState<string | null>(null);
+  const [rows, setRows] = useState(null);
+  const [signedIn, setSignedIn] = useState(null);
+  const [won, setWon] = useState(null);
   const [stats, setStats] = useState({ total: 0, streak: 0 });
-  const [hist, setHist] = useState<{ closed_at: string; from_tier: number; to_tier: number; points: number; rank: number }[]>([]);
+  const [hist, setHist] = useState([]);
   const [admin, setAdmin] = useState(false);
   const [msg, setMsg] = useState("");
 
   const load = async () => {
-    const { data: s } = await supabase.auth.getSession();
+    const { data } = await supabase.auth.getSession();
     if (!s.session) { setSignedIn(false); return; }
     setSignedIn(true);
     const { data } = await supabase.rpc("league_standings");
-    setRows((data ?? []) as Row[]);
+    setRows((data ?? []));
     const uid = s.session.user.id;
     const [att, h, a] = await Promise.all([
       readAttempts(uid),
-      supabase.from("league_history").select("closed_at,from_tier,to_tier,points,rank").eq("user_id", uid).order("closed_at", { ascending: false }).limit(20),
-      supabase.rpc("has_role", { _user_id: uid, _role: "admin" }),
+      supabase.from("league_history").select("closed_at,from_tier,to_tier,points,rank").eq("user_id", uid).order("closed_at", { ascending }).limit(20),
+      supabase.rpc("has_role", { _user_id, _role: "admin" }),
     ]);
     setStats({ total: att.reduce((t, r) => t + (r.earned_points ?? 0), 0), streak: aggregateAttempts(att).streak.count });
-    setHist((h.data ?? []) as typeof hist);
+    setHist((h.data ?? []));
     setAdmin(a.data === true);
   };
   useEffect(() => { void load(); }, []);
@@ -55,10 +54,10 @@ function Ligas() {
   const closeWeek = async () => {
     if (!confirm("¿Cerrar la semana ahora? Se aplicarán ascensos, descensos y cofres a todas las ligas.")) return;
     const { error } = await supabase.rpc("league_close_now");
-    setMsg(error ? "No se pudo cerrar la semana." : "✅ Semana cerrada: ascensos, descensos y cofres aplicados.");
+    setMsg(error ? "No se pudo cerrar la semana." : "✅ Semana cerrada, descensos y cofres aplicados.");
     setWon(null); void load();
   };
-  const claim = async () => { const { data } = await supabase.rpc("league_claim_chest"); if (data) { setWon(data as string); void load(); } };
+  const claim = async () => { const { data } = await supabase.rpc("league_claim_chest"); if (data) { setWon(data); void load(); } };
 
   return (
     <main className="min-h-screen bg-hero">
@@ -82,7 +81,7 @@ function Ligas() {
             <p className="mt-4 font-bold">⏳ Faltan {daysLeft()} día(s) para el cierre. {me.points === 0 && "🔥 ¡Practique hoy para no quedarse atrás!"}</p>
             {me.chest && (
               <div className="mt-4 rounded-2xl border bg-card p-5 text-center">
-                {me.chest_claimed || won ? <p className="text-lg font-black">🎁 Cofre abierto: nuevo avatar {won ?? me.chest} ya está en su perfil.</p>
+                {me.chest_claimed || won ? <p className="text-lg font-black">🎁 Cofre abierto {won ?? me.chest} ya está en su perfil.</p>
                   : <button onClick={claim} className="rounded-full bg-accent px-6 py-3 font-black text-accent-foreground">🎁 Abrir cofre de la semana pasada</button>}
               </div>
             )}
@@ -107,7 +106,7 @@ function Ligas() {
                   <span className="ml-auto text-muted-foreground">#{x.rank} · {x.points} XP</span>
                 </li>))}</ul>
             )}
-            <p className="mt-3 text-xs text-muted-foreground">Borde verde: zona de ascenso · Borde rojo: zona de descenso.</p>
+            <p className="mt-3 text-xs text-muted-foreground">Borde verde · Borde rojo descenso.</p>
           </>
         )}
       </section>

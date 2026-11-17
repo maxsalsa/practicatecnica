@@ -1,7 +1,7 @@
 import {isEnglishBank,questionAudio,englishSupport,speakQuestion} from "@/lib/english-audio";
 import { AuthorizedContent } from "./AuthorizedContent";
-import { useEffect, useMemo, useRef, useState, forwardRef, type HTMLAttributes } from "react";
-import type { Deck } from "@/lib/questions";
+import { useEffect, useMemo, useRef, useState, forwardRef } from "react";
+
 import { Button } from "./ui/button";
 import { useAccount } from './AccountProvider';
 import { useServerFn } from '@tanstack/react-start';
@@ -12,7 +12,7 @@ import { examHasRequiredSize } from '@/lib/assessment-size';
 
 
 const L = ["A", "B", "C", "D", "E"];
-type Filter = "todas" | "fallos" | "dudas" | "blanco";
+
 
 function BlindExamBody({ deck, onExit }: { deck: Deck; onExit: () => void }) {
   const { user } = useAccount();
@@ -23,12 +23,12 @@ function BlindExamBody({ deck, onExit }: { deck: Deck; onExit: () => void }) {
   const [saveStatus, setSaveStatus] = useState('');
   const [qs, setQs] = useState(deck.questions);
   const [i, setI] = useState(0);
-  const [marks, setMarks] = useState<(number | null)[]>(() => qs.map(() => null));
-  const [doubt, setDoubt] = useState<boolean[]>(() => qs.map(() => false));
+  const [marks, setMarks] = useState(() => qs.map(() => null));
+  const [doubt, setDoubt] = useState(() => qs.map(() => false));
   const [done, setDone] = useState(false);
   const [left, setLeft] = useState(qs.length * 90);
   const [paused, setPaused] = useState(false);
-  const [filter, setFilter] = useState<Filter>("todas");
+  const [filter, setFilter] = useState("todas");
   const key = draftKey(user?.id, deck.id, 'exam');
   const {ready,draft} = useAssessmentDraft<ExamDraft>(key);
   const [restored,setRestored] = useState(false);
@@ -62,24 +62,24 @@ function BlindExamBody({ deck, onExit }: { deck: Deck; onExit: () => void }) {
   const pctAnswered = answered ? Math.round((score / answered) * 100) : 0;
   const band = pct >= 80 ? "Dominado" : pct >= 50 ? "En proceso" : "Reforzamiento";
   const q = qs[i];
-  const setMark = (n: number, o: number) => setMarks((m) => m.map((v, k) => (k === n ? o : v)));
-  const toggleDoubt = (n: number) => setDoubt((d) => d.map((v, k) => (k === n ? !v : v)));
+  const setMark = (n) => setMarks((m) => m.map((v, k) => (k === n ? o)));
+  const toggleDoubt = (n) => setDoubt((d) => d.map((v, k) => (k === n ? !v)));
   const visible = qs.map((_, n) => n).filter((n) =>
-    filter === "todas" ? true : filter === "dudas" ? doubt[n] : filter === "blanco" ? marks[n] === null : done && marks[n] !== null && marks[n] !== qs[n]?.answer);
+    filter === "todas" ? true === "dudas" ? doubt[n] : filter === "blanco" ? marks[n] === null && marks[n] !== null && marks[n] !== qs[n]?.answer);
 
   async function saveResult() {
     if (!user || qs.length !== deck.questions.length || marks.some(m => m === null)) return;
     attemptId.current ??= crypto.randomUUID();
     setSaveStatus('Guardando resultado…');
     try {
-      await record({ data: { id: attemptId.current, deckId: deck.id, title: deck.title, answers: marks.flatMap((pick,index) => pick === null ? [] : [{index,pick}]), reportedScore: pct, examSessionId:sessionId.current } });
+      await record({ data: { id: attemptId.current, deckId: deck.id, title: deck.title, answers: marks.flatMap((pick,index) => pick === null ? [] : [{index,pick}]), reportedScore, examSessionId:sessionId.current } });
       setSaveStatus('Resultado guardado por área.');
     } catch { setSaveStatus('No se pudo guardar el resultado.'); }
   }
   useEffect(() => {
     if (!done || saved.current || !deck.examSessionId) return;
     saved.current = true;
-    if (marks.some(m => m === null)) setSaveStatus('Resultado incompleto: no se guarda como intento verificado.');
+    if (marks.some(m => m === null)) setSaveStatus('Resultado incompleto verificado.');
     else if (!user) setSaveStatus('Ingrese a su cuenta para guardar resultados.');
     else if (qs.length === deck.questions.length) void saveResult();
   }, [done]);
@@ -145,12 +145,12 @@ function BlindExamBody({ deck, onExit }: { deck: Deck; onExit: () => void }) {
             <li>❓ Dudas acertadas: <strong>{doubtOk} de {doubts}</strong></li>
             <li>⬜ Preguntas en blanco: <strong>{blank}</strong> (cuentan como no acertadas)</li>
           </ul>
-          <p className="mt-3 text-center text-sm text-muted-foreground">{pct >= 80 ? "¡Excelente! Ya domina este tema. Mantenga el ritmo." : pct >= 50 ? "Va por buen camino. Repase los fallos y vuelva a intentarlo." : "Cada error es una lección. Repase los fallos con calma: usted puede."}</p>
+          <p className="mt-3 text-center text-sm text-muted-foreground">{pct >= 80 ? "¡Excelente! Ya domina este tema. Mantenga el ritmo." : pct >= 50 ? "Va por buen camino. Repase los fallos y vuelva a intentarlo." : "Cada error es una lección. Repase los fallos con calma puede."}</p>
           {saveStatus && <p role="status" className="mt-3 text-center text-sm">{saveStatus}</p>}
           {saveStatus === 'No se pudo guardar el resultado.' && <Button className="mt-3" variant="outline" onClick={() => void saveResult()}>Reintentar guardado</Button>}
           <div className="mt-4 flex flex-wrap justify-center gap-2">
             {wrong + blank > 0 && <Button onClick={retryWrong}>🔁 Repetir solo fallos y blancos ({wrong + blank})</Button>}
-            <Button variant="outline" onClick={() => { const esc = (t?: string) => (t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;"); const rows = qs.map((x, k) => `<h3>${k + 1}. ${esc(x.q)}</h3><p>Su respuesta: ${marks[k] === null ? "En blanco" : esc(x.options[marks[k] as number])}</p><p>Correcta: ${esc(x.options[x.answer])}</p><p>${esc(x.why)}</p>`).join(""); const blob = new Blob([`<html><meta charset="utf-8"><body><h1>${esc(deck.title)}</h1>${rows}</body></html>`], { type: "application/msword" }); const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "resultados.doc"; a.click(); }}>📄 Descargar Word</Button>
+            <Button variant="outline" onClick={() => { const esc = (t) => (t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;"); const rows = qs.map((x, k) => `<h3>${k + 1}. ${esc(x.q)}</h3><p>Su respuesta: ${marks[k] === null ? "En blanco" : esc(x.options[marks[k])}</p><p>Correcta: ${esc(x.options[x.answer])}</p><p>${esc(x.why)}</p>`).join(""); const blob = new Blob([`<html><meta charset="utf-8"><body><h1>${esc(deck.title)}</h1>${rows}</body></html>`], { type: "application/msword" }); const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "resultados.doc"; a.click(); }}>📄 Descargar Word</Button>
             <Button variant="outline" onClick={() => { setFilter("fallos"); const f = qs.findIndex((x, k) => marks[k] !== null && marks[k] !== x.answer); if (f >= 0) setI(f); }}>Ver correcciones</Button>
           </div>
         </article>
@@ -194,7 +194,7 @@ function BlindExamBody({ deck, onExit }: { deck: Deck; onExit: () => void }) {
             <h3 className="font-black">Hoja de respuestas</h3>
             <p className="text-xs text-muted-foreground">Puede cambiar su opción y marcar dudas hasta entregar.</p>
             <div className="mt-2 flex flex-wrap gap-1 text-xs">
-              {(["todas", "dudas", "blanco", ...(done ? ["fallos"] : [])] as Filter[]).map((f) => (
+              {(["todas", "dudas", "blanco", ...(done ? ["fallos"] : [])]).map((f) => (
                 <button key={f} onClick={() => setFilter(f)} className={`rounded-full border px-2 py-1 font-bold ${filter === f ? "bg-primary text-primary-foreground" : ""}`}>{f === "todas" ? "Todas" : f === "dudas" ? "❓ Dudas" : f === "blanco" ? "⬜ Blanco" : "❌ Fallos"}</button>
               ))}
             </div>
@@ -224,12 +224,11 @@ function BlindExamBody({ deck, onExit }: { deck: Deck; onExit: () => void }) {
   );
 }
 
-function Stat({ label, value, tone }: { label: string; value: string | number; tone?: "accent" | "destructive" | "primary" }) {
+function Stat({ label, value, tone }: { label: string; value number; tone"accent" | "destructive" | "primary" }) {
   const c = tone === "accent" ? "text-accent" : tone === "destructive" ? "text-destructive" : tone === "primary" ? "text-primary" : "";
   return <div className="rounded-xl border bg-card p-2"><p className={`text-xl font-black ${c}`}>{value}</p><p className="text-[11px] text-muted-foreground">{label}</p></div>;
 }
 
-export interface BlindExamProps extends HTMLAttributes<HTMLDivElement> {deck:Deck;onExit:()=>void}
 export const BlindExam=forwardRef<HTMLDivElement,BlindExamProps>(({deck,onExit,className,...rest},ref)=>{const render=(loaded)=>examHasRequiredSize(loaded.questions.length)?<BlindExamBody deck={loaded} onExit={onExit}/>:<section className="mx-auto max-w-2xl px-5 py-8"><h2 className="text-xl font-bold">Simulacro en preparación</h2><p className="mt-3 text-muted-foreground">Este banco tiene {loaded.questions.length} preguntas; el simulacro requiere exactamente 60 preguntas de la misma materia.</p><Button className="mt-4" variant="outline" onClick={onExit}>Volver</Button></section>;return <div ref={ref} className={className} {...rest}>{deck.questions.length?render(deck):<AuthorizedContent id={deck.id} exam>{render}</AuthorizedContent>}</div>;});
 BlindExam.displayName='BlindExam';
 

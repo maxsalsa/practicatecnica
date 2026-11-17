@@ -1,32 +1,32 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { useAccount } from '@/components/AccountProvider';
-import { MODE_LABELS, summarizeFollowUp, type Band } from '@/lib/family-progress';
-import type { Attempt } from '@/lib/progress-data';
+import { MODE_LABELS, summarizeFollowUp } from '@/lib/family-progress';
+
 import { GradeBook } from '@/components/GradeBook';
 import { StudentSchedulePanel } from './StudentSchedulePanel';
 import {StudentResults} from './StudentResults';
 import {institutionResultAttempts} from '@/lib/institution-results';
 
 const field = 'mt-1 w-full rounded-xl border border-border bg-background px-3 py-2';
-const bandClass: Record<Band, string> = { Dominado: 'bg-accent text-accent-foreground', 'En proceso': 'bg-primary text-primary-foreground', 'Requiere reforzamiento': 'bg-destructive text-destructive-foreground' };
-const date = (d: string) => new Date(d).toLocaleDateString('es-CR', { timeZone: 'America/Costa_Rica', day: 'numeric', month: 'short' });
+const bandClass, string> = { Dominado: 'bg-accent text-accent-foreground', 'En proceso': 'bg-primary text-primary-foreground', 'Requiere reforzamiento': 'bg-destructive text-destructive-foreground' };
+const date = (d) => new Date(d).toLocaleDateString('es-CR', { timeZone: 'America/Costa_Rica', day: 'numeric', month: 'short' });
 
 
 /** Families see their linked students; direccion, administración/orientación and guides see the students they may follow. */
-export function FollowUpPanel({ institutionId, role, manager }: { institutionId: string; role: string; manager: boolean }) {
+export function FollowUpPanel({ institutionId, role, manager }: { institutionId: string; role: string; manager }) {
   const { user } = useAccount();
   const options = useQuery({
     queryKey: ['follow-options', institutionId, role, user?.id],
-    queryFn: async (): Promise<Followed[]> => {
+    queryFn (): Promise<Followed[]> => {
       if (role === 'encargado') {
-        const { data, error } = await supabase.rpc('my_guardian_links', { _inst: institutionId });
+        const { data, error } = await supabase.rpc('my_guardian_links', { _inst });
         if (error) throw new Error('No se pudo cargar su vínculo familiar.');
         return data.filter(l => l.consented_at).map(l => ({ id: l.student_id, name: l.student_name }));
       }
       const [people, sections] = await Promise.all([
-        supabase.rpc('institution_people', { _inst: institutionId }),
+        supabase.rpc('institution_people', { _inst }),
         supabase.from('institution_sections').select('id,guide_id').eq('institution_id', institutionId),
       ]);
       if (people.error || sections.error) throw new Error('No se pudo cargar la lista de estudiantes.');
@@ -48,21 +48,21 @@ export function FollowUpPanel({ institutionId, role, manager }: { institutionId:
   </div>;
 }
 
-function FollowUp({ institutionId, studentId }: { institutionId: string; studentId: string }) {
+function FollowUp({ institutionId, studentId }: { institutionId: string; studentId }) {
   const q = useQuery({
     queryKey: ['follow-up', institutionId, studentId],
-    queryFn: async () => {
-      const { data, error } = await supabase.rpc('student_follow_up', { _inst: institutionId, _student: studentId });
+    queryFn () => {
+      const { data, error } = await supabase.rpc('student_follow_up', { _inst, _student });
       if (error) throw new Error(error.code === '42501' ? 'No tiene permiso para ver este seguimiento.' : 'No se pudo cargar el seguimiento.');
       const results=await supabase.from('institution_practice_results').select('id,publication_id,publication_version,subject,title,score,question_count,created_at').eq('institution_id',institutionId).eq('user_id',studentId).gte('created_at',new Date(Date.now()-365*86400000).toISOString()).order('created_at');
       if(results.error)throw new Error('No se pudieron cargar los resultados institucionales.');
-      return {...data as { student_name: string; attempts: Attempt[]; visit_days: string[]; last_seen: string | null },institutionAttempts:institutionResultAttempts(results.data)};
+      return {...data,institutionAttempts:institutionResultAttempts(results.data)};
     },
   });
   if (q.isPending) return <p role="status">Cargando seguimiento…</p>;
   if (q.isError) return <p role="alert" className="text-destructive">{q.error.message}</p>;
   const s = summarizeFollowUp(q.data.attempts, q.data.visit_days);
-  const stats: [string, string][] = [
+  const stats, string][] = [
     ['Días de uso (30 días)', String(s.activeDays30)], ['Racha actual', `${s.streak} día(s)`], ['Puntos', String(s.points)],
     ['Prácticas y simulacros', String(s.verifiedCount)], ['Promedio verificado', s.average === null ? '—' : `${s.average}`], ['Última conexión', q.data.last_seen ? date(q.data.last_seen) : '—'],
   ];

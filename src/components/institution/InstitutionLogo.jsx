@@ -2,10 +2,10 @@ import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 
 /** Only current public-directory logos and authorized member logos receive signed links. */
-export function InstitutionLogo({ path, name, className = 'h-14 w-14' }: { path: string | null | undefined; name: string; className?: string }) {
+export function InstitutionLogo({ path, name, className = 'h-14 w-14' }: { path undefined; name: string; className}) {
   const logo = useQuery({
     queryKey: ['institution-logo', path], enabled: !!path, staleTime: 4 * 60 * 1000,
-    queryFn: async () => {
+    queryFn () => {
       if (!path) throw new Error('Logo no disponible');
       const { data, error } = await supabase.storage.from('institution-logos').createSignedUrl(path, 300);
       if (error) throw new Error('Logo no disponible');

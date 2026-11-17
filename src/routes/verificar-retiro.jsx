@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { useServerFn } from '@tanstack/react-start';
 import { useEffect, useRef, useState } from 'react';
-import type { IScannerControls } from '@zxing/browser';
+
 import { Camera, ScanLine, Square } from 'lucide-react';
 import { SiteHeader } from '@/components/SiteHeader';
 import { useAccount } from '@/components/AccountProvider';
@@ -11,15 +11,14 @@ import { parsePickupCode } from '@/lib/pickup-code';
 import { PickupNfc } from '@/components/institution/PickupNfc';
 
 export const Route = createFileRoute('/verificar-retiro')({
-  staticData: { sitemap: false },
-  head: () => ({ meta: [
-    { title: 'Consulta privada de retiros · pracTICAtecnica.com' },
+  staticData: { sitemap },
+  head: () => ({ meta { title: 'Consulta privada de retiros · pracTICAtecnica.com' },
     { name: 'description', content: 'Consulta autorizada del estado vigente de retiros mediante QR, barras o identificación registrada.' },
     { property: 'og:title', content: 'Verificar retiro · pracTICAtecnica.com' },
     { property: 'og:description', content: 'Verificación privada para familias y personal institucional autorizado.' },
     { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }, { name: 'robots', content: 'noindex' },
   ] }),
-  component: PickupScanner,
+  component,
 });
 
 function PickupScanner() {
@@ -36,12 +35,12 @@ function PickupScanner() {
   function stop() { generation.current += 1; controls.current?.stop(); controls.current = null; setScanning(false); }
   useEffect(() => () => { generation.current += 1; controls.current?.stop(); }, []);
   useEffect(() => { stop(); setResponse(null); setCode(''); setError(''); }, [user?.id]);
-  async function check(value: string) {
+  async function check(value) {
     stop(); setResponse(null); setError('');
     if (!parsePickupCode(value)) { setError('Formato no reconocido. Ingrese el número registrado o el código PT-RETIRO.'); return; }
     const identity = generation.current;
     setBusy(true);
-    try { const result = await lookup({ data: { code: value } }); if (generation.current === identity) setResponse(result); }
+    try { const result = await lookup({ data: { code } }); if (generation.current === identity) setResponse(result); }
     catch { if (generation.current === identity) setError('No se pudo verificar. Compruebe su sesión y conexión; el retiro no queda autorizado.'); }
     finally { setBusy(false); }
   }
@@ -53,7 +52,7 @@ function PickupScanner() {
       const { BrowserMultiFormatReader } = await import('@zxing/browser');
       if (!video.current || generation.current !== current) return;
       const scanner = new BrowserMultiFormatReader();
-      const activeControls = await scanner.decodeFromConstraints({ video: { facingMode: { ideal: 'environment' } }, audio: false }, video.current, (result, _error, scannerControls) => {
+      const activeControls = await scanner.decodeFromConstraints({ video: { facingMode: { ideal: 'environment' } }, audio }, video.current, (result, _error, scannerControls) => {
         if (!result || generation.current !== current) return;
         scannerControls.stop();
         const text = result.getText(); setCode(text); void check(text);
@@ -79,7 +78,7 @@ function PickupScanner() {
         {response.results.map(item => <article key={item.id} className="space-y-1 border-b border-border pb-4"><h2 className={item.authorized ? 'font-bold text-accent' : 'font-bold text-destructive'}>{item.authorized ? 'Autorización vigente registrada' : 'NO autorizado para retiro'}</h2><p>{item.name} · {item.relation}</p><p>{item.student} · {item.level}</p><p>Estado: {item.status}</p></article>)}
         <p className="text-xs text-muted-foreground">Consultado: {new Date(response.checkedAt).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica' })}. Vuelva a consultar antes del retiro.</p>
       </div>}
-      <p className="text-sm text-muted-foreground">Compruebe la identidad con el documento y el procedimiento institucional. Un QR, código de barras o SHA-256 no acredita identidad ni registra una salida. La cámara no almacena fotografías. Cédula, licencia o pasaporte: use el número previamente registrado; formatos no reconocidos requieren entrada manual.</p>
+      <p className="text-sm text-muted-foreground">Compruebe la identidad con el documento y el procedimiento institucional. Un QR, código de barras o SHA-256 no acredita identidad ni registra una salida. La cámara no almacena fotografías. Cédula, licencia o pasaporte número previamente registrado; formatos no reconocidos requieren entrada manual.</p>
     </>}
   </section></main>;
 }

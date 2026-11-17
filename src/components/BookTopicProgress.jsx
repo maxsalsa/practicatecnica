@@ -4,22 +4,22 @@ import { useAccount } from './AccountProvider';
 import { Button } from './ui/button';
 import { readBookProgress, saveBookProgress } from '@/lib/book-progress.functions';
 import { bookTopics, topicExamResults } from '@/lib/book-topics';
-import type { Attempt } from '@/lib/progress-data';
+
 import { gradeSubjectProgress } from '@/lib/book-topics';
 import { useState } from 'react';
 import { Link } from '@tanstack/react-router';
-export function BookTopicProgress({ topicId }: { topicId: string }) {
+export function BookTopicProgress({ topicId }: { topicId }) {
   const { user } = useAccount();
   const cache = useQueryClient();
   const read = useServerFn(readBookProgress);
   const save = useServerFn(saveBookProgress);
   const query = useQuery({ queryKey: ['book-progress', user?.id], enabled: !!user, queryFn: () => read({ data: {} }) });
   const row = query.data?.find(r => r.topic_id === topicId);
-  const mutation = useMutation({ mutationFn: (data: { readDone: boolean; exercisesDone: boolean }) => save({ data: { topicId, ...data } }), onSuccess: () => cache.invalidateQueries({ queryKey: ['book-progress', user?.id] }) });
+  const mutation = useMutation({ mutationFn: (data) => save({ data: { topicId, ...data } }), onSuccess: () => cache.invalidateQueries({ queryKey: ['book-progress', user?.id] }) });
   if (!user) return <p className="mt-4 text-sm text-muted-foreground">Ingrese para guardar su lectura y ejercicios.</p>;
   return <div className="mt-4 border-t border-border pt-3"><p className="text-sm font-semibold">Mi avance · Autodeclarado</p><div className="mt-2 flex flex-wrap gap-2"><Button size="sm" variant={row?.read_done ? 'default' : 'outline'} disabled={mutation.isPending || query.isPending || query.isError} onClick={() => mutation.mutate({ readDone: !row?.read_done, exercisesDone: row?.exercises_done ?? false })}>{row?.read_done ? '✓ Leído' : 'Marcar leído'}</Button><Button size="sm" variant={row?.exercises_done ? 'default' : 'outline'} disabled={mutation.isPending || query.isPending || query.isError} onClick={() => mutation.mutate({ readDone: row?.read_done ?? false, exercisesDone: !row?.exercises_done })}>{row?.exercises_done ? '✓ Ejercicios realizados' : 'Marcar ejercicios realizados'}</Button></div>{row && <p className="mt-2 text-xs text-muted-foreground">{new Date(row.updated_at).toLocaleDateString('es-CR', { timeZone: 'America/Costa_Rica' })} · Sin nota ni XP</p>}{(query.isError || mutation.isError) && <p role="alert" className="mt-2 text-sm text-destructive">No se pudo guardar o consultar el avance.</p>}</div>;
 }
-export function TeacherBookProgress({ studentId, studentName, attempts = [], attemptsPending = false, attemptsError = false }: { studentId: string; studentName?: string | undefined; attempts?: Attempt[]; attemptsPending?: boolean; attemptsError?: boolean }) {
+export function TeacherBookProgress({ studentId, studentName, attempts = [], attemptsPending = false, attemptsError = false }: { studentId: string; studentName; attempts; attemptsPending; attemptsError}) {
   const [grade, setGrade] = useState('');
   const [subject, setSubject] = useState('');
   const read = useServerFn(readBookProgress);

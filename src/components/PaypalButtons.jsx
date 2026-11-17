@@ -1,16 +1,16 @@
-﻿import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { useServerFn } from "@tanstack/react-start";
 import { createPaypalOrder, capturePaypalOrder, quoteTeacherPaypal } from "@/lib/paypal.functions";
 import { Button } from './ui/button';
-import type { AnnualPlan } from '@/lib/pricing';
+
 import { assertPaypalCheckoutEnabled } from '@/lib/payment-safety';
 
 declare global {
   
 }
-let sdkReady: Promise<void> | undefined;
-function loadPaypal(clientId: string) {
+let sdkReady undefined;
+function loadPaypal(clientId) {
   if (window.paypal) return Promise.resolve();
   if (sdkReady) return sdkReady;
   sdkReady = new Promise<void>((resolve, reject) => {
@@ -23,7 +23,7 @@ function loadPaypal(clientId: string) {
   return sdkReady;
 }
 
-export function PaypalButtons({ plan, institutionId, onPaid }: { plan: AnnualPlan; institutionId?: string | undefined; onPaid: () => void }) {
+export function PaypalButtons({ plan, institutionId, onPaid }: { plan: AnnualPlan; institutionId; onPaid: () => void }) {
   const ref = useRef<HTMLDivElement>(null);
   const [ready, setReady] = useState(false);
   const [loadError, setLoadError] = useState(false);
@@ -33,7 +33,7 @@ export function PaypalButtons({ plan, institutionId, onPaid }: { plan: AnnualPla
   const [quote, setQuote] = useState<Awaited<ReturnType<typeof quoteTeacherPaypal>>>();
   const [quoting, setQuoting] = useState(false);
   const [quoteError, setQuoteError] = useState('');
-  const clientId = import.meta.env['VITE_PAYPAL_CLIENT_ID'] as string | undefined;
+  const clientId = import.meta.env['VITE_PAYPAL_CLIENT_ID'] | undefined;
 
   useEffect(() => {
     try { assertPaypalCheckoutEnabled(); } catch { return; }
@@ -49,11 +49,11 @@ export function PaypalButtons({ plan, institutionId, onPaid }: { plan: AnnualPla
     el.innerHTML = "";
     const buttons = window.paypal.Buttons({
       style: { shape: "pill", label: "pay" },
-      createOrder: async () => {
+      createOrder () => {
         
-        return (await create({ data: { plan, quoteId: plan === 'docente' ? quote?.id : undefined, institutionId } })).id;
+        return (await create({ data: { plan, quoteId === 'docente' ? quote?.id, institutionId } })).id;
       },
-      onApprove: async (d: { orderID: string }) => {
+      onApprove (d) => {
         try {
           await capture({ data: { orderId: d.orderID } });
           

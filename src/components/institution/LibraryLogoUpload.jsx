@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { hasVisibleTransparency } from '@/lib/institution-publication';
 import { toast } from 'sonner';
 export function LibraryLogoUpload(){
- const {user}=useAccount();const qc=useQueryClient();const input=useRef<HTMLInputElement>(null);const [selected,setSelected]=useState('');const [preview,setPreview]=useState('');const [file,setFile]=useState<File>();const [busy,setBusy]=useState(false);
+ const {user}=useAccount();const qc=useQueryClient();const input=useRef<HTMLInputElement>(null);const [selected,setSelected]=useState('');const [preview,setPreview]=useState('');const [file,setFile]=useState();const [busy,setBusy]=useState(false);
  const list=useQuery({queryKey:['library-logo-institutions',user?.id],enabled:!!user,queryFn:async()=>{
   if(!user)return[];const a=await supabase.rpc('has_role',{_user_id:user.id,_role:'admin'});
   if(a.error)throw new Error('No se pudieron consultar permisos.');

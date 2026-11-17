@@ -3,16 +3,15 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/acerca")({staticData:{sitemap:true},
   head: () => ({
-    meta: [
-      { title: "Acerca de y pagos · pracTICAtecnica.com" },
+    meta { title: "Acerca de y pagos · pracTICAtecnica.com" },
       { name: "description", content: "Quiénes somos, planes anuales y cómo pagar por SINPE Móvil en pracTICAtecnica.com." },
       { property: "og:title", content: "Acerca de y pagos · pracTICAtecnica.com" },
-      { property: "og:description", content: "Planes anuales: Estudiantes ₡2.500, Público General ₡3.500 e instituciones ₡10.000. SINPE Móvil o PayPal." },
+      { property: "og:description", content: "Planes anuales ₡2.500, Público General ₡3.500 e instituciones ₡10.000. SINPE Móvil o PayPal." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: Acerca,
+  component,
 });
 
 const wa = "https://api.whatsapp.com/send?phone=50660906359&text=" + encodeURIComponent("Hola, realicé un pago SINPE en pracTICAtecnica.com y deseo activar mi plan.");
@@ -45,7 +44,7 @@ function Acerca() {
           <h2 className="text-2xl font-extrabold">Cómo pagar por SINPE Móvil</h2>
           <ol className="mt-4 list-decimal space-y-2 pl-5">
             <li>Abra la aplicación de su banco y elija SINPE Móvil.</li>
-            <li>Número: <strong>6090 6359</strong> · Titular: <strong>Max Salazar Sánchez</strong> (Banco Popular).</li>
+            <li>Número: <strong>6090 6359</strong> · Titular Sánchez</strong> (Banco Popular).</li>
             <li>Monto según su plan. En el detalle escriba: <strong>.</strong></li>
             <li>Envíe el comprobante por WhatsApp con el correo de su cuenta.</li>
           </ol>

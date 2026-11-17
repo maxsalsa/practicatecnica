@@ -16,11 +16,11 @@ export function PermissionSupport({requestId, reviewer, pending}: {requestId:str
   }});
   async function request() {
     setBusy(true);setMessage('');
-    const r=await supabase.rpc('request_permission_support',{_id:requestId,_note:note.trim()});
+    const r=await supabase.rpc('request_permission_support',{_id,_note:note.trim()});
     setBusy(false);setMessage(r.error ? r.error.message : 'Respaldo solicitado sin aprobar ni rechazar el permiso.');
     if(!r.error){setNote('');void cache.invalidateQueries({queryKey:['permission-support',requestId]});}
   }
-  async function respond(id:string,original:File|undefined){
+  async function respond(id){
     if(!user||!original)return;setBusy(true);setMessage('');
     try{
       const file=await stripImageMetadata(original).catch(()=>original);const check=attachmentExtension(file);
@@ -28,12 +28,12 @@ export function PermissionSupport({requestId, reviewer, pending}: {requestId:str
       const path=`${user.id}/${crypto.randomUUID()}.${check.ext}`;
       const upload=await supabase.storage.from('permission-attachments').upload(path,file,{contentType:file.type});
       if(upload.error){setMessage('No se pudo subir el archivo.');return;}
-      const r=await supabase.rpc('respond_permission_support',{_id:id,_path:path});
+      const r=await supabase.rpc('respond_permission_support',{_id,_path:path});
       setMessage(r.error ? 'No se pudo registrar el respaldo.' : 'Respaldo entregado para revisión.');
       if(!r.error)void cache.invalidateQueries({queryKey:['permission-support',requestId]});
     }finally{setBusy(false);}
   }
-  async function open(path:string){if(!(await openPrivateFile('permission-attachments',path)))setMessage('No se pudo abrir el respaldo.');}
+  async function open(path){if(!(await openPrivateFile('permission-attachments',path)))setMessage('No se pudo abrir el respaldo.');}
   const outstanding=rows.data?.some(r=>!r.responded_at);
   return <div className="mt-3 space-y-2 border-t border-border pt-3">
     {rows.isError&&<p role="alert">{rows.error.message}</p>}

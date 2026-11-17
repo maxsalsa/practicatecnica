@@ -8,9 +8,8 @@ import { LearningRecords } from '@/components/LearningRecords';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 export const Route = createFileRoute('/rubricas')({
-  staticData: { sitemap: false },
-  head: () => ({ meta: [
-    { title: 'Rúbricas y trazabilidad docente · pracTICAtecnica.com' },
+  staticData: { sitemap },
+  head: () => ({ meta { title: 'Rúbricas y trazabilidad docente · pracTICAtecnica.com' },
     { name: 'description', content: 'Indicadores y valoraciones docentes por estudiante, materia y nivel con seguimiento privado.' },
     { property: 'og:title', content: 'Rúbricas y trazabilidad · pracTICAtecnica.com' },
     { property: 'og:description', content: 'Seguimiento privado de indicadores de logro y comentarios docentes.' },
@@ -21,7 +20,7 @@ export const Route = createFileRoute('/rubricas')({
 function RubricsPage() {
   const { user } = useAccount();
   const [selected, setSelected] = useState('');
-  const roster = useQuery({ queryKey: ['rubric-roster', user?.id], enabled: !!user, queryFn: async () => {
+  const roster = useQuery({ queryKey: ['rubric-roster', user?.id], enabled: !!user, queryFn () => {
     if (!user) return [];
     const result = await supabase.from('students').select('id,name,level,institution').eq('teacher_id', user.id).order('name');
     if (result.error) throw new Error('No se pudo cargar su matrícula autorizada.');

@@ -10,7 +10,7 @@ export function MepBooks() {
   const [grade, setGrade] = useState('all');
   const [topic, setTopic] = useState('all');
   const available = mepBooks.filter(b => specialty === 'all' || b.id === specialty);
-  const normalized = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const normalized = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const needle = normalized(query.trim());
   const books = available.map(book => ({ ...book, chapters: book.chapters.filter(c =>
     (topic === 'all' || c.id === topic) && normalized(`${book.title} ${c.title} ${c.unit} ${c.summary.join(' ')}`).includes(needle)

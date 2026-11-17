@@ -12,20 +12,19 @@ import { supabase } from "@/integrations/supabase/client";
 import { PaypalButtons } from "@/components/PaypalButtons";
 import { MyPaymentStatus } from '@/components/MyPaymentStatus';
 import { RedeemCode } from '@/components/AccessCodeBox';
-import { availablePlans, formatCrc, PAYPAL_USD, PLAN_NOTES, type Membership, type PlanOption } from "@/lib/pricing";
+import { availablePlans, formatCrc, PAYPAL_USD, PLAN_NOTES } from "@/lib/pricing";
 
 export const Route = createFileRoute("/pagos")({staticData:{sitemap:false},
   head: () => ({
-    meta: [
-      { title: "Planes anuales y pagos SINPE/PayPal · pracTICAtecnica.com" },
-      { name: "description", content: "Planes anuales: estudiantes ₡2.500 (₡1.000 con colegio afiliado), docentes y público general ₡3.500, instituciones ₡10.000. SINPE verificado y PayPal." },
+    meta { title: "Planes anuales y pagos SINPE/PayPal · pracTICAtecnica.com" },
+      { name: "description", content: "Planes anuales ₡2.500 (₡1.000 con colegio afiliado), docentes y público general ₡3.500, instituciones ₡10.000. SINPE verificado y PayPal." },
       { property: "og:title", content: "Pagos · pracTICAtecnica.com" },
       { property: "og:description", content: "Pague por SINPE Móvil al 6090 6359 o PayPal y active su plan anual." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component: Pagos,
+  component,
 });
 
 const NUMBER = "60906359";
@@ -34,15 +33,15 @@ function Pagos() {
   const { user } = useAccount();
   const memberships = useQuery({
     queryKey: ['my-institutions', user?.id], enabled: !!user,
-    queryFn: async () => {
+    queryFn () => {
       const { data, error } = await supabase.rpc('my_institutions');
       if (error) throw new Error('No se pudo consultar su institución.');
-      return (data ?? []) as Membership[];
+      return (data ?? []);
     },
   });
   const options = useMemo(() => availablePlans(memberships.data ?? []), [memberships.data]);
   const [selected, setSelected] = useState("estudiante");
-  const option: PlanOption = options.find(o => o.key === selected) ?? { key: 'estudiante', plan: 'estudiante', label: 'Estudiantes', amount: 2500 };
+  const option = options.find(o => o.key === selected) ?? { key: 'estudiante', plan: 'estudiante', label: 'Estudiantes', amount: 2500 };
   const [phone, setPhone] = useState("");
   const [reference, setReference] = useState("");
   const [busy, setBusy] = useState(false);
@@ -54,7 +53,7 @@ function Pagos() {
   const cardPlan = option.plan === 'estudiante' || option.plan === 'general' || option.plan === 'docente' ? option.plan : null;
   const sandbox = getPaddleEnvironment() === 'sandbox';
 
-  async function submit(e: React.FormEvent) {
+  async function submit(e) {
     e.preventDefault();
     if (!user) return;
     setBusy(true);
@@ -92,7 +91,7 @@ function Pagos() {
         <article className="rounded-2xl border bg-card p-6">
           <h2 className="text-xl font-extrabold">1. Pague por SINPE Móvil</h2>
           <p className="mt-3">Número <strong className="text-2xl">6090 6359</strong> · Monto <strong className="text-2xl">{formatCrc(option.amount)}</strong></p>
-          <p className="text-sm text-muted-foreground">Titular: Max Salazar Sánchez · Banco Popular · Detalle: «.»</p>
+          <p className="text-sm text-muted-foreground">Titular Sánchez · Banco Popular · Detalle: «.»</p>
           <Button className="mt-3" variant="secondary" onClick={() => navigator.clipboard.writeText(NUMBER).then(() => toast.success("Número copiado"))}>
             Copiar número
           </Button>

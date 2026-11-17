@@ -2,19 +2,17 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { generateQuestions } from "@/lib/ai.functions";
-import type { Deck } from "@/lib/questions";
+
 import { Quiz } from "@/components/Quiz";
 import { SchoolPractice } from "@/components/SchoolPractice";
 import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/temario")({staticData:{sitemap:true},
   head: () => ({
-    meta: [
-      { title: "Temario · pracTICAtecnica.com" },
+    meta { title: "Temario · pracTICAtecnica.com" },
       {
         name: "description",
-        content:
-          "Contenidos por prueba según programas del MEP, con preguntas ilimitadas por tema.",
+        content "Contenidos por prueba según programas del MEP, con preguntas ilimitadas por tema.",
       },
       { property: "og:title", content: "Temario · pracTICAtecnica.com" },
       { property: "og:description", content: "Practique cada tema con preguntas ilimitadas." },
@@ -22,15 +20,14 @@ export const Route = createFileRoute("/temario")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: Temario,
+  component,
 });
 
-const temario: { area: string; subject: string; topics: string[] }[] = [
+const temario: { area: string; subject: string; topics }[] = [
   {
     area: "Matemática (MEP)",
     subject: "Matemática",
-    topics: [
-      "Números y operaciones",
+    topics "Números y operaciones",
       "Álgebra y ecuaciones",
       "Geometría",
       "Funciones",
@@ -40,8 +37,7 @@ const temario: { area: string; subject: string; topics: string[] }[] = [
   {
     area: "Español (MEP)",
     subject: "Español",
-    topics: [
-      "Ortografía y acentuación",
+    topics "Ortografía y acentuación",
       "Comprensión de lectura",
       "Gramática",
       "Literatura costarricense",
@@ -72,26 +68,26 @@ const temario: { area: string; subject: string; topics: string[] }[] = [
 
 function Temario() {
   const gen = useServerFn(generateQuestions);
-  const [deck, setDeck] = useState<Deck | null>(null);
-  const [cur, setCur] = useState<{ subject: string; topic: string } | null>(null);
-  const [loading, setLoading] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [deck, setDeck] = useState(null);
+  const [cur, setCur] = useState(null);
+  const [loading, setLoading] = useState(null);
+  const [error, setError] = useState(null);
 
-  const load = async (subject: string, topic: string) => {
+  const load = async (subject) => {
     setLoading(topic);
     setError(null);
     try {
       const r = await gen({
-        data: { topic, subject, lang: subject === "Inglés" ? "en" : "es", count: 5 },
+        data: { topic, subject, lang === "Inglés" ? "en" : "es", count: 5 },
       });
       if (r.error) setError(r.error);
       else {
         setCur({ subject, topic });
         setDeck({
           id: `ia-${subject}`,
-          title: topic,
+          title,
           emoji: "∞",
-          level: subject,
+          level,
           questions: r.questions,
         });
       }
@@ -116,7 +112,7 @@ function Temario() {
         <section className="mx-auto max-w-5xl px-5 pb-16">
           <h1 className="text-4xl font-black">Temario</h1>
           <p className="mt-2 text-muted-foreground">
-            Elija un tema: preguntas ilimitadas con explicación.
+            Elija un tema explicación.
           </p>
           <Link
             to="/metrologia"
