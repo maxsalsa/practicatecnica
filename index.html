@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=01.14.09" />
     <meta name="theme-color" content="#0284C7" />
-    <meta name="application-name" content="Práctica Técnica .com" />
-    <meta name="apple-mobile-web-app-title" content="Práctica Técnica" />
-    <meta name="description" content="Práctica Técnica .com — Plataforma Educativa y Técnica Oficial GICM: Asignaturas MEP, Especialidades CTP, Universidades y Licencias MOPT." />
+    <meta name="application-name" content="PrÃ¡ctica TÃ©cnica .com" />
+    <meta name="apple-mobile-web-app-title" content="PrÃ¡ctica TÃ©cnica" />
+    <meta name="description" content="PrÃ¡ctica TÃ©cnica .com â€” Plataforma Educativa y TÃ©cnica Oficial GICM: Asignaturas MEP, Especialidades CTP, Universidades y Licencias MOPT." />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="manifest" href="/manifest.json" />
-    <title>Práctica Técnica .com [v26xd.01.14.09] — Ecosistema GICM</title>
+    <title>PrÃ¡ctica TÃ©cnica .com [v26xd.01.14.09] â€” Ecosistema GICM</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -31,7 +31,16 @@
         }
       }
     </script>
-  </head>
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (let registration of registrations) {
+          registration.update();
+        }
+      });
+    }
+  </script>
+</head>
   <body class="bg-background text-foreground antialiased selection:bg-sky-600 selection:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
