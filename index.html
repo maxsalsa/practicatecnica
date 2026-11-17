@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>pracTICAtecnica.com | Ecosistema Educativo MEP, CTP, Académicos & Universidades</title>
+    <title>pracTICAtecnica.com | Ecosistema Educativo MEP, CTP & Universidades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      // Purga automática de Service Workers y Caches antiguos que muestran la versión vieja
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      body {
+        background-color: #020617;
+        color: #f1f5f9;
+        font-family: 'Inter', system-ui, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: #0f172a; }
+      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 9999px; }
+      ::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
+    </style>
+    <script>
       (function () {
-        const VERSION_ACTUAL = 'v26.9.0-BDS-QA-TOTAL';
+        const VERSION_ACTUAL = 'v26.9.5-UI-RESTORED';
         const verGuardada = localStorage.getItem('pt_pwa_version');
         if (verGuardada !== VERSION_ACTUAL) {
           if ('serviceWorker' in navigator) {
             navigator.serviceWorker.getRegistrations().then(function (regs) {
-              for (let reg of regs) {
-                reg.unregister();
-              }
+              for (let reg of regs) { reg.unregister(); }
             });
           }
           if ('caches' in window) {
             caches.keys().then(function (names) {
-              for (let name of names) {
-                caches.delete(name);
-              }
+              for (let name of names) { caches.delete(name); }
             });
           }
           localStorage.setItem('pt_pwa_version', VERSION_ACTUAL);
@@ -32,7 +56,7 @@
       })();
     </script>
   </head>
-  <body class="bg-slate-950 text-slate-100 antialiased">
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -12,7 +12,7 @@ import SelectorMultimedia from './components/SelectorMultimedia';
 import PanelCampanaClara from './components/PanelCampanaClara';
 import AsistenteIaGenerativo from './components/AsistenteIaGenerativo';
 import SimuladorUniversitarioMep from './components/SimuladorUniversitarioMep';
-import HubModalidadesMep, { MODALIDADES_OFICIALES_MEP } from './components/HubModalidadesMep';
+import HubModalidadesMep from './components/HubModalidadesMep';
 
 export default function App() {
   const [usuarioActual, setUsuarioActual] = useState({
@@ -22,7 +22,6 @@ export default function App() {
     seccion: 'SuperAdmin Global & Docente CTP'
   });
 
-  // Iniciar en 'inicio' donde se ve TANTO el Hub de Modalidades MEP (CTP Diurno/Nocturno/Académico) COMO los Simulacros
   const [seccionActiva, setSeccionActiva] = useState('inicio');
   const [modalidadMepId, setModalidadMepId] = useState('ctp_diurno');
   const [mostrarSinpe, setMostrarSinpe] = useState(false);
@@ -31,15 +30,15 @@ export default function App() {
 
   const [contextoMep, setContextoMep] = useState({
     region: 'Dirección Regional de Alajuela',
-    circuito: '04 (CTP Mercedes Norte & Circuito Oficial)',
-    modalidad: 'CTP Diurno / Técnico Nocturno / Académico'
+    circuito: '04 (CTP Mercedes Norte)',
+    modalidad: 'CTP Diurno (Colegio Técnico Profesional)'
   });
 
   const cambiarRolRapido = (nuevoRol) => {
     setUsuarioActual((prev) => ({
       ...prev,
       rol: nuevoRol,
-      nombre: nuevoRol === 'SuperAdmin' ? 'Ing. Max Salazar Sánchez' : `${prev.nombre.split(' (')[0]} (${nuevoRol})`
+      nombre: nuevoRol === 'SuperAdmin' ? 'Ing. Max Salazar Sánchez' : `Usuario Prueba (${nuevoRol})`
     }));
   };
 
@@ -48,6 +47,7 @@ export default function App() {
 
       <NavbarInstitucional
         usuarioActual={usuarioActual}
+        seccionActiva={seccionActiva}
         onCambiarSeccion={(id) => {
           if (id === 'login') setMostrarLogin(true);
           else if (id === 'sinpe') setMostrarSinpe(true);
@@ -57,78 +57,47 @@ export default function App() {
 
       <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:px-6 lg:px-8 space-y-6">
 
-        {/* Barra de Control Institucional + Selector Rápido de Modalidad y Rol SuperAdmin */}
-        <div className="bg-slate-900 border border-slate-800 p-4 rounded-2xl flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 shadow-xl">
-          <div className="space-y-1">
-            <div className="flex flex-wrap items-center gap-2 text-xs">
-              <span className="bg-emerald-950 text-emerald-300 border border-emerald-600 px-2 py-0.5 rounded font-extrabold">
-                ✓ v26.9 EN LÍNEA
-              </span>
-              <span className="text-cyan-400 font-bold">🏛️ {contextoMep.region}</span>
-              <span className="text-slate-400">| Circuito {contextoMep.circuito}</span>
-              <span className="text-amber-300 font-bold">| Modalidad: {contextoMep.modalidad}</span>
-            </div>
-            <p className="text-[11px] text-slate-400">
-              Sesión activa: <strong className="text-white">{usuarioActual.nombre}</strong> — Rol: <strong className="text-cyan-300">{usuarioActual.rol}</strong> (Todos los servicios desbloqueados)
-            </p>
+        {/* Cintillo Institucional compacto y estilizado */}
+        <div className="bg-slate-900/90 border border-slate-800 px-4 py-3 rounded-2xl flex flex-wrap justify-between items-center gap-3 shadow-lg">
+          <div className="flex flex-wrap items-center gap-2 text-xs">
+            <span className="text-cyan-400 font-extrabold">🏛️ MEP Costa Rica:</span>
+            <span className="text-slate-200 font-medium">{contextoMep.region}</span>
+            <span className="text-slate-600">•</span>
+            <span className="text-slate-300">Circuito {contextoMep.circuito}</span>
+            <span className="text-slate-600">•</span>
+            <span className="bg-cyan-950 text-cyan-300 border border-cyan-800 px-2.5 py-0.5 rounded-lg font-bold">
+              {contextoMep.modalidad}
+            </span>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
             <select
               value={usuarioActual.rol}
               onChange={(e) => cambiarRolRapido(e.target.value)}
-              className="bg-slate-950 border border-cyan-600/60 text-cyan-300 text-xs font-bold rounded-lg px-2.5 py-1.5"
-              title="Cambiar vista de rol para pruebas QA"
+              className="bg-slate-950 border border-slate-700 text-cyan-300 text-xs font-bold rounded-xl px-3 py-1.5 focus:outline-none focus:border-cyan-500"
             >
-              <option value="SuperAdmin">👑 Vista: SuperAdmin (Total)</option>
-              <option value="Docente MEP">👨‍🏫 Vista: Docente MEP</option>
-              <option value="Estudiante CTP">🎓 Vista: Estudiante CTP / Académico</option>
-              <option value="Director / Coordinación">🏛️ Vista: Director / Coordinador</option>
+              <option value="SuperAdmin">👑 Rol: SuperAdmin</option>
+              <option value="Docente MEP">👨‍🏫 Rol: Docente MEP</option>
+              <option value="Estudiante CTP">🎓 Rol: Estudiante</option>
+              <option value="Director / Coordinación">🏛️ Rol: Director</option>
             </select>
 
             <button
               onClick={() => setMostrarSelector(true)}
-              className="bg-cyan-700 hover:bg-cyan-600 text-white font-semibold px-3 py-1.5 rounded-lg text-xs transition-all shadow"
+              className="bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 font-bold px-3 py-1.5 rounded-xl text-xs transition-all"
             >
-              🏛️ Cambiar Región / Circuito
+              🏛️ Región / Circuito
             </button>
+
             <button
               onClick={() => setMostrarSinpe(true)}
-              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs transition-all shadow"
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-all shadow-lg shadow-emerald-600/20"
             >
-              📱 SINPE (6090-6359)
+              📱 SINPE 6090-6359
             </button>
           </div>
         </div>
 
-        {/* Barra de Navegación Completa de los 8 Módulos del Ecosistema */}
-        <div className="flex flex-wrap gap-2 bg-slate-900/90 border border-slate-800 p-2.5 rounded-xl">
-          {[
-            { id: 'inicio', label: '🏠 Todo el Ecosistema (Vista Completa)' },
-            { id: 'modalidades', label: '🏫 CTP Diurno / Nocturno / Académico / CINDEA' },
-            { id: 'simuladores', label: '🎓 Simulacros UCR / TEC / UNA / UTN / COSEVI' },
-            { id: 'ia', label: '🤖 Asistente IA (Planeamientos y Exámenes)' },
-            { id: 'carnet', label: '🪪 Carné Digital QR' },
-            { id: 'chats', label: '💬 Chats Institucionales' },
-            { id: 'multimedia', label: '🖼️ Multimedia & Campaña Clara' },
-            { id: 'reportes', label: '📄 Reportes PDF & Push' },
-            { id: 'admin', label: '🔐 Consola SuperAdmin' }
-          ].map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setSeccionActiva(tab.id)}
-              className={`px-3.5 py-2 rounded-lg text-xs font-extrabold transition-all ${
-                seccionActiva === tab.id
-                  ? 'bg-cyan-600 text-white shadow-lg'
-                  : 'bg-slate-950 text-slate-300 hover:bg-slate-800 border border-slate-800'
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
-        {/* VISTA INICIO: Muestra todo el poder (Hub de Modalidades MEP + Simulacros + IA + SuperAdmin) */}
         {seccionActiva === 'inicio' && (
           <div className="space-y-8">
             <HubModalidadesMep
@@ -149,23 +118,7 @@ export default function App() {
                 <GestorPushPwa />
               </div>
             </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <SelectorMultimedia />
-              <PanelCampanaClara />
-            </div>
           </div>
-        )}
-
-        {seccionActiva === 'modalidades' && (
-          <HubModalidadesMep
-            modalidadActiva={modalidadMepId}
-            onSeleccionarModalidad={(mod) => {
-              setModalidadMepId(mod.id);
-              setContextoMep((prev) => ({ ...prev, modalidad: mod.nombre }));
-            }}
-            onIrASimuladores={() => setSeccionActiva('simuladores')}
-          />
         )}
 
         {seccionActiva === 'simuladores' && (
@@ -180,13 +133,6 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <SelectorMultimedia />
             <PanelCampanaClara />
-          </div>
-        )}
-
-        {seccionActiva === 'reportes' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <ReportePdfMep />
-            <GestorPushPwa />
           </div>
         )}
 
@@ -236,7 +182,7 @@ export default function App() {
         </div>
       )}
 
-      <footer className="bg-slate-950 border-t border-slate-800 py-6 text-center text-xs text-slate-500 space-y-1">
+      <footer className="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-500 space-y-1 mt-12">
         <p>© 2026 pracTICAtecnica.com — Desarrollado por GICM & BDS Devs S.A. | Ley 8968 Activa</p>
         <p>Soporte Oficial MEP & WhatsApp: +506 6090-6359 | Ing. Max Salazar Sánchez</p>
       </footer>
