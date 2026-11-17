@@ -49,10 +49,13 @@ export default function App() {
   const manejarAccionHero = (accionId) => {
     if (accionId === 'cosevi' || accionId === 'universidades' || accionId === 'idiomas') {
       setSeccionActiva('simuladores');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (accionId === 'materias') {
       setSeccionActiva('materias');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (accionId === 'ctp_gestion') {
       setSeccionActiva('gestion');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (accionId === 'modalidades') {
       const el = document.getElementById('seccion-modalidades-mep');
       if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -68,7 +71,10 @@ export default function App() {
         onCambiarSeccion={(id) => {
           if (id === 'login') setMostrarLogin(true);
           else if (id === 'sinpe') setMostrarSinpe(true);
-          else setSeccionActiva(id);
+          else {
+            setSeccionActiva(id);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
         }}
       />
 
@@ -78,7 +84,7 @@ export default function App() {
         <div className="bg-slate-900/90 border border-slate-800 px-4 py-3 rounded-2xl flex flex-wrap justify-between items-center gap-3 shadow-lg">
           <div className="flex flex-wrap items-center gap-2 text-xs">
             <span className="bg-emerald-950 text-emerald-300 border border-emerald-600 px-2 py-0.5 rounded font-extrabold">
-              v27.5 FUSIÓN SUPREMA
+              v28.5 EN LÍNEA
             </span>
             <span className="text-cyan-400 font-extrabold">🏛️ {contextoMep.region}</span>
             <span className="text-slate-600">•</span>
@@ -117,7 +123,12 @@ export default function App() {
           </div>
         </div>
 
-        {/* VISTA INICIO: Portada Gamificada + Materias + Horarios/Tardías + Modalidades + Simulacros */}
+        {/* VISTA INICIO LIMPIA (SIN CRONÓMETRO EN PORTADA):
+            1. Hero Gamificado
+            2. Explorador de Especialidades y Materias
+            3. Generador Dual (IA + Plantilla) de Planes, Exámenes, Cotidianos, Proyectos y Horarios
+            4. Centro Administrativo de Horarios, Tardías, Ausencias y Permisos
+            5. Modalidades MEP */}
         {seccionActiva === 'inicio' && (
           <div className="space-y-8">
             <HeroGamificadoMep
@@ -128,6 +139,8 @@ export default function App() {
             />
 
             <ExploradorMateriasMep onPracticarMateria={() => setSeccionActiva('simuladores')} />
+
+            <AsistenteIaGenerativo />
 
             <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
 
@@ -142,14 +155,9 @@ export default function App() {
               />
             </div>
 
-            <SimuladorUniversitarioMep usuarioActual={usuarioActual} />
-
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <AsistenteIaGenerativo />
-              <div className="space-y-6">
-                <ReportePdfMep />
-                <GestorPushPwa />
-              </div>
+              <ReportePdfMep />
+              <GestorPushPwa />
             </div>
           </div>
         )}
@@ -159,9 +167,13 @@ export default function App() {
         )}
 
         {seccionActiva === 'gestion' && (
-          <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
+          <div className="space-y-8">
+            <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
+            <AsistenteIaGenerativo />
+          </div>
         )}
 
+        {/* El Cronómetro y la Hoja de Respuestas viven exclusivamente aquí en Simuladores */}
         {seccionActiva === 'simuladores' && (
           <SimuladorUniversitarioMep usuarioActual={usuarioActual} />
         )}

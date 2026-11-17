@@ -9,44 +9,98 @@ import {
 import SimuladorVialCoseviCanvas from './SimuladorVialCoseviCanvas';
 import SuiteAuditoriaQaBds from './SuiteAuditoriaQaBds';
 
+const CLAVE_GUARDADO_LOCAL = 'pt_avance_simulacro_v28_5';
+
 export default function SimuladorUniversitarioMep({ usuarioActual }) {
   const [institucionActiva, setInstitucionActiva] = useState('UCR_UNA');
-  const [cantidadMeta, setCantidadMeta] = useState(20); // 20 | 30 | 40 | 60
-  const [modoPractica, setModoPractica] = useState('guiada');
+  const [cantidadMeta, setCantidadMeta] = useState(10); // 10 | 20 | 30 | 40 | 60
+  const [modoPractica, setModoPractica] = useState('examen'); // 'examen' (nota al final) | 'guiada' (paso a paso)
   const [modalidadGenerador, setModalidadGenerador] = useState('mixto');
   const [listaReactivos, setListaReactivos] = useState(() =>
-    ensamblarSimulacroCompleto('UCR_UNA', 20, 'mixto')
+    ensamblarSimulacroCompleto('UCR_UNA', 10, 'mixto')
   );
   const [indiceActual, setIndiceActual] = useState(0);
   const [historialRespuestas, setHistorialRespuestas] = useState({});
-  const [mostrarExplicacion, setMostrarExplicacion] = useState(false);
-  const [mostrarTablaCortes, setMostrarTablaCortes] = useState(true);
+  const [examenFinalizado, setExamenFinalizado] = useState(false);
+  const [mensajeGuardado, setMensajeGuardado] = useState('');
 
-  // Cronómetro Oficial de 3 Horas (10,800 segundos)
-  const [segundosRestantes, setSegundosRestantes] = useState(10800);
+  // Cronómetro exclusivo del simulacro (se ajusta según cantidad de preguntas o 3h)
+  const [segundosRestantes, setSegundosRestantes] = useState(3600);
   const [cronometroActivo, setCronometroActivo] = useState(true);
 
   const [notaColegio, setNotaColegio] = useState(92);
   const [hashCertificado, setHashCertificado] = useState('Calculando huella SHA-256...');
 
-  // Re-ensamblar cuando cambia la institución, el tamaño (20, 30, 40, 60) o la modalidad
+  // Cargar avance guardado si existe en localStorage
+  useEffect(() => {
+    try {
+      const guardado = localStorage.getItem(CLAVE_GUARDADO_LOCAL);
+      if (guardado) {
+        const parsed = JSON.parse(guardado);
+        if (parsed && Array.isArray(parsed.listaReactivos) && parsed.listaReactivos.length > 0) {
+          setInstitucionActiva(parsed.institucionActiva || 'UCR_UNA');
+          setCantidadMeta(parsed.cantidadMeta || 10);
+          setModoPractica(parsed.modoPractica || 'examen');
+          setListaReactivos(parsed.listaReactivos);
+          setHistorialRespuestas(parsed.historialRespuestas || {});
+          setIndiceActual(parsed.indiceActual || 0);
+          setSegundosRestantes(parsed.segundosRestantes || 3600);
+          setExamenFinalizado(Boolean(parsed.examenFinalizado));
+          setMensajeGuardado('✓ Se restauró tu último avance guardado.');
+        }
+      }
+    } catch (e) {
+      // Ignorar errores de lectura de caché
+    }
+  }, []);
+
+  // Configurar nuevo simulacro de 10, 20, 30, 40 o 60 preguntas
   const configurarSimulacro = (nuevaInst, nuevaCant, nuevaMod = modalidadGenerador) => {
     setInstitucionActiva(nuevaInst);
     setCantidadMeta(nuevaCant);
     setModalidadGenerador(nuevaMod);
     const nuevoBanco = ensamblarSimulacroCompleto(nuevaInst, nuevaCant, nuevaMod);
     setListaReactivos(nuevoBanco);
+    setHistorialRespuestas({});
     setIndiceActual(0);
-    setMostrarExplicacion(false);
+    setExamenFinalizado(false);
+    // Tiempo proporcional sugerido: 3 min por pregunta (o 3h en 60 preguntas)
+    setSegundosRestantes(nuevaCant * 180);
+    setCronometroActivo(true);
+    setMensajeGuardado('');
+  };
+
+  // Guardar avance y pausar cuando el estudiante o docente lo desee
+  const guardarAvanceYPausar = () => {
+    setCronometroActivo(false);
+    const payload = {
+      institucionActiva,
+      cantidadMeta,
+      modoPractica,
+      listaReactivos,
+      historialRespuestas,
+      indiceActual,
+      segundosRestantes,
+      examenFinalizado,
+      fechaGuardado: new Date().toLocaleTimeString('es-CR')
+    };
+    localStorage.setItem(CLAVE_GUARDADO_LOCAL, JSON.stringify(payload));
+    setMensajeGuardado(`💾 Avance guardado y cronómetro en pausa (${payload.fechaGuardado}). Puedes continuar cuando gustes.`);
   };
 
   useEffect(() => {
-    if (!cronometroActivo) return;
+    if (!cronometroActivo || examenFinalizado) return;
     const timer = setInterval(() => {
-      setSegundosRestantes((prev) => (prev > 0 ? prev - 1 : 0));
+      setSegundosRestantes((prev) => {
+        if (prev <= 1) {
+          setExamenFinalizado(true);
+          return 0;
+        }
+        return prev - 1;
+      });
     }, 1000);
     return () => clearInterval(timer);
-  }, [cronometroActivo]);
+  }, [cronometroActivo, examenFinalizado]);
 
   const formatearTiempo = (totalSeg) => {
     const h = Math.floor(totalSeg / 3600);
@@ -68,9 +122,11 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
         if (resp === it.correcta) aciertos += 1;
       }
     });
-    const calculo = calcularPuntajeAdmision(institucionActiva, aciertos, respondidas, notaColegio);
-    return { aciertos, respondidas, ...calculo };
-  }, [listaReactivos, historialRespuestas, institucionActiva, notaColegio]);
+    // Calificar sobre el total de preguntas del simulacro cuando se finaliza
+    const baseEval = modoPractica === 'examen' ? listaReactivos.length : Math.max(1, respondidas);
+    const calculo = calcularPuntajeAdmision(institucionActiva, aciertos, baseEval, notaColegio);
+    return { aciertos, respondidas, totalPreguntas: listaReactivos.length, ...calculo };
+  }, [listaReactivos, historialRespuestas, institucionActiva, notaColegio, modoPractica]);
 
   useEffect(() => {
     async function generarSha256() {
@@ -88,12 +144,11 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
     generarSha256();
   }, [institucionActiva, cantidadMeta, estadisticas, usuarioActual]);
 
-  const verificarRespuesta = (idxOpcion) => {
-    if (respuestaGuardada !== undefined) return;
-    setHistorialRespuestas(prev => ({ ...prev, [itemActual.id]: idxOpcion }));
-    if (modoPractica === 'guiada') {
-      setMostrarExplicacion(true);
-    }
+  const seleccionarRespuesta = (idxOpcion) => {
+    if (examenFinalizado) return;
+    // En modo guiado se bloquea tras responder para mostrar paso a paso; en modo examen permite cambiar antes de entregar
+    if (modoPractica === 'guiada' && respuestaGuardada !== undefined) return;
+    setHistorialRespuestas((prev) => ({ ...prev, [itemActual.id]: idxOpcion }));
   };
 
   const inyectarMasInfinitos = (cantidadExtra = 10, tipoForzado = 'mixto') => {
@@ -102,12 +157,12 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
     for (let i = 1; i <= cantidadExtra; i++) {
       nuevos.push(generarItemInfinito(institucionActiva, baseLen + i, tipoForzado));
     }
-    setListaReactivos(prev => [...prev, ...nuevos]);
+    setListaReactivos((prev) => [...prev, ...nuevos]);
     setCantidadMeta(baseLen + cantidadExtra);
   };
 
   const exportarComprobantePdf = () => {
-    const instObj = CATALOGO_INSTITUCIONES_SUPERIOR.find(i => i.id === institucionActiva);
+    const instObj = CATALOGO_INSTITUCIONES_SUPERIOR.find((i) => i.id === institucionActiva);
     const fechaHoy = new Date().toLocaleString('es-CR');
     const ventanaPdf = window.open('', '_blank', 'width=920,height=720');
     if (!ventanaPdf) {
@@ -118,7 +173,7 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
     const filasHoja = listaReactivos.map((it, idx) => {
       const r = historialRespuestas[it.id];
       const letras = ['A', 'B', 'C', 'D'];
-      const estado = r === undefined ? 'Pendiente' : (r === it.correcta ? '✓ CORRECTA' : `✕ INCORRECTA (Marcó ${letras[r]}, Correcta ${letras[it.correcta]})`);
+      const estado = r === undefined ? 'Sin responder' : (r === it.correcta ? '✓ CORRECTA' : `✕ INCORRECTA (Marcó ${letras[r]}, Correcta ${letras[it.correcta]})`);
       return `<tr>
         <td style="padding:5px;border:1px solid #cbd5e1;text-align:center;">#${idx + 1}</td>
         <td style="padding:5px;border:1px solid #cbd5e1;">${it.subarea || it.area}</td>
@@ -143,7 +198,7 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
           <div class="header">
             <div>
               <h1 style="margin:0;font-size:20px;">🦉 pracTICAtecnica.com — CTP Mercedes Norte & BDS Devs</h1>
-              <p style="margin:4px 0 0 0;font-size:12px;color:#475569;">Certificado de Simulacro Oficial (${listaReactivos.length} Preguntas)</p>
+              <p style="margin:4px 0 0 0;font-size:12px;color:#475569;">Certificado Oficial de Simulacro (${listaReactivos.length} Preguntas)</p>
             </div>
             <div style="text-align:right;font-size:11px;">
               <strong>Fecha:</strong> ${fechaHoy}<br/>
@@ -153,16 +208,16 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
           <div class="box">
             <p style="margin:4px 0;"><strong>Estudiante:</strong> ${usuarioActual?.nombre || 'Estudiante Activo'}</p>
             <p style="margin:4px 0;"><strong>Institución Evaluada:</strong> ${instObj.sigla} — ${instObj.nombre}</p>
-            <p style="margin:8px 0;" class="score">Nota Estimada: ${estadisticas.puntajeFinal} / ${estadisticas.escalaMax} pts</p>
+            <p style="margin:8px 0;" class="score">Calificación Final: ${estadisticas.puntajeFinal} / ${estadisticas.escalaMax} pts</p>
             <p style="margin:4px 0;font-size:12px;">${estadisticas.detalleFormula}</p>
           </div>
-          <h3>Desglose de los ${listaReactivos.length} Reactivos</h3>
+          <h3>Hoja de Respuestas Auditada (${listaReactivos.length} Reactivos)</h3>
           <table>
             <thead>
               <tr style="background:#e2e8f0;">
                 <th style="padding:5px;border:1px solid #cbd5e1;">#</th>
                 <th style="padding:5px;border:1px solid #cbd5e1;">Subárea</th>
-                <th style="padding:5px;border:1px solid #cbd5e1;">Estado</th>
+                <th style="padding:5px;border:1px solid #cbd5e1;">Resultado</th>
               </tr>
             </thead>
             <tbody>${filasHoja}</tbody>
@@ -176,48 +231,62 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
     ventanaPdf.document.close();
   };
 
+  // Determinar si se deben mostrar los colores de acierto/error y la nota
+  const revelarSoluciones = modoPractica === 'guiada' || examenFinalizado;
+
   return (
     <div className="space-y-6">
-      {/* Cabecera Maestra con Cronómetro 3h y Selector de 20, 30, 40 y 60 Preguntas */}
+      {/* Cabecera Exclusiva del Simulador: Cronómetro, Pausa/Guardado y Selector 10/20/30/40/60 */}
       <div className="bg-slate-900 border border-cyan-500/40 p-5 rounded-2xl shadow-2xl space-y-5">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
           <div>
             <span className="text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-700">
-              ⚡ Calidad 100% BDS Devs — Simulacros de 20, 30, 40 y 60 Preguntas Activos
+              🎯 Simulacros Oficiales con Nota al Final y Guardado de Avance
             </span>
             <h2 className="text-2xl font-extrabold text-white mt-2">
-              🎓 Admisión UCR, TEC, UNA, UTN, UNED, Pruebas MEP & Simulador Vial 2D
+              🎓 Simulacros UCR, TEC, UNA, UTN, UNED, Pruebas MEP & Teórica COSEVI
             </h2>
           </div>
 
-          {/* Cronómetro Oficial de 3 Horas */}
-          <div className="flex items-center gap-3 bg-slate-950 p-3 rounded-xl border border-slate-800">
-            <div className="text-right">
-              <span className="text-[10px] text-slate-400 uppercase block font-bold">⏱️ Cronómetro Oficial (3 Horas)</span>
-              <span className="text-2xl font-mono font-extrabold text-amber-400">{formatearTiempo(segundosRestantes)}</span>
+          {/* Cronómetro y Botones de Pausa / Guardar Avance */}
+          <div className="flex flex-wrap items-center gap-3 bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+            <div className="text-right pr-2 border-r border-slate-800">
+              <span className="text-[10px] text-slate-400 uppercase block font-bold">
+                ⏱️ Tiempo de Prueba ({cantidadMeta} ítems)
+              </span>
+              <span className={`text-2xl font-mono font-extrabold ${cronometroActivo ? 'text-amber-400' : 'text-cyan-400'}`}>
+                {formatearTiempo(segundosRestantes)}
+              </span>
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setCronometroActivo(!cronometroActivo)}
-                className="bg-slate-800 hover:bg-slate-700 text-xs text-cyan-300 font-bold px-2.5 py-1 rounded"
+                className="bg-slate-800 hover:bg-slate-700 text-xs text-cyan-300 font-bold px-3 py-1.5 rounded-lg"
               >
-                {cronometroActivo ? '⏸ Pausar' : '▶ Reanudar'}
+                {cronometroActivo ? '⏸ Pausar Tiempo' : '▶ Reanudar'}
               </button>
               <button
-                onClick={() => setSegundosRestantes(10800)}
-                className="bg-slate-800 hover:bg-slate-700 text-[10px] text-slate-300 px-2.5 py-0.5 rounded"
+                onClick={guardarAvanceYPausar}
+                className="bg-indigo-600 hover:bg-indigo-500 text-xs text-white font-bold px-3 py-1.5 rounded-lg shadow"
               >
-                ↺ Reiniciar 3h
+                💾 Guardar Avance y Pausar
               </button>
             </div>
           </div>
         </div>
 
-        {/* Selector de Tamaño de Simulacro: 20, 30, 40 o 60 Preguntas + Modo Guiado/Examen */}
+        {mensajeGuardado && (
+          <div className="bg-emerald-950/80 border border-emerald-500/60 text-emerald-200 px-4 py-2.5 rounded-xl text-xs font-bold flex justify-between items-center">
+            <span>{mensajeGuardado}</span>
+            <button onClick={() => setMensajeGuardado('')} className="text-emerald-300 hover:text-white">✕</button>
+          </div>
+        )}
+
+        {/* Selector de Cantidad: 10, 20, 30, 40 y 60 Preguntas + Modo */}
         <div className="flex flex-wrap items-center justify-between gap-4 bg-slate-950 p-4 rounded-xl border border-slate-800">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-extrabold text-cyan-400 mr-1">🔢 Cantidad de Preguntas del Simulacro:</span>
-            {[20, 30, 40, 60].map((cant) => (
+            <span className="text-xs font-extrabold text-cyan-400 mr-1">🔢 Cantidad de Preguntas:</span>
+            {[10, 20, 30, 40, 60].map((cant) => (
               <button
                 key={cant}
                 onClick={() => configurarSimulacro(institucionActiva, cant, modalidadGenerador)}
@@ -234,25 +303,28 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
 
           <div className="flex flex-wrap items-center gap-2">
             <button
-              onClick={() => setModoPractica('guiada')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold ${
-                modoPractica === 'guiada' ? 'bg-cyan-600 text-white' : 'bg-slate-800 text-slate-300'
+              onClick={() => {
+                setModoPractica('examen');
+                setExamenFinalizado(false);
+              }}
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                modoPractica === 'examen' ? 'bg-indigo-600 text-white shadow' : 'bg-slate-800 text-slate-300'
               }`}
             >
-              🧭 Práctica Guiada (Paso a Paso)
+              📝 Modo Simulacro (Nota hasta el Final)
             </button>
             <button
-              onClick={() => setModoPractica('examen')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold ${
-                modoPractica === 'examen' ? 'bg-indigo-600 text-white' : 'bg-slate-800 text-slate-300'
+              onClick={() => setModoPractica('guiada')}
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                modoPractica === 'guiada' ? 'bg-cyan-600 text-white shadow' : 'bg-slate-800 text-slate-300'
               }`}
             >
-              📝 Modo Examen Sin Pistas
+              🧭 Práctica Guiada (Explicación Inmediata)
             </button>
           </div>
         </div>
 
-        {/* Tarjetas de las 6 Instituciones (UCR/UNA, TEC, UTN, UNED, MEP, COSEVI) */}
+        {/* Tarjetas de las 6 Instituciones */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
           {CATALOGO_INSTITUCIONES_SUPERIOR.map((inst) => {
             const activo = inst.id === institucionActiva;
@@ -281,61 +353,89 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
           })}
         </div>
 
-        {/* Panel de Nota 200-800 y Control Deslizable de Nota de Colegio */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center bg-slate-950 p-4 rounded-xl border border-slate-800">
-          <div>
-            <p className="text-xs text-slate-400">Puntaje Estimado de Admisión:</p>
-            <div className="flex items-baseline gap-2 mt-1">
-              <span className="text-3xl font-extrabold text-cyan-400">{estadisticas.puntajeFinal}</span>
-              <span className="text-xs text-slate-400 font-bold">/ {estadisticas.escalaMax} pts</span>
-              <span className="ml-2 text-xs text-emerald-400 font-semibold">
-                ({estadisticas.aciertos}/{estadisticas.respondidas} aciertos de {listaReactivos.length})
-              </span>
+        {/* Barra de Progreso o Panel de Calificación Final (según si ya terminó el simulacro) */}
+        {!revelarSoluciones ? (
+          <div className="bg-slate-950 border border-slate-800 p-4 rounded-xl flex flex-wrap items-center justify-between gap-4">
+            <div className="space-y-1 flex-1">
+              <div className="flex justify-between text-xs font-bold">
+                <span className="text-cyan-300">
+                  📊 Avance del Simulacro: {estadisticas.respondidas} de {listaReactivos.length} preguntas respondidas
+                </span>
+                <span className="text-slate-400">
+                  La nota final se revelará al entregar el simulacro
+                </span>
+              </div>
+              <div className="w-full h-2.5 bg-slate-900 rounded-full overflow-hidden border border-slate-800">
+                <div
+                  className="h-full bg-gradient-to-r from-cyan-500 to-indigo-500 transition-all"
+                  style={{ width: `${Math.round((estadisticas.respondidas / listaReactivos.length) * 100)}%` }}
+                />
+              </div>
             </div>
-            <p className="text-[11px] text-slate-400 mt-1">{estadisticas.detalleFormula}</p>
-          </div>
 
-          <div className="space-y-1">
-            <label className="text-xs font-bold text-slate-300 flex justify-between">
-              <span>📊 Promedio Educación Diversificada (Colegio):</span>
-              <span className="text-cyan-300 font-mono">{notaColegio} / 100</span>
-            </label>
-            <input
-              type="range"
-              min="70"
-              max="100"
-              value={notaColegio}
-              onChange={(e) => setNotaColegio(Number(e.target.value))}
-              className="w-full accent-cyan-500 cursor-pointer"
-            />
-            <p className="text-[10px] text-slate-500">
-              Ponderación automática: UCR/UNA (50% PAA + 50% Colegio) | TEC (60% Examen + 40% Colegio).
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row lg:flex-col gap-2">
             <button
-              onClick={exportarComprobantePdf}
-              className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition-all shadow flex items-center justify-center gap-2"
+              onClick={() => {
+                setExamenFinalizado(true);
+                setCronometroActivo(false);
+              }}
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-5 py-2.5 rounded-xl text-xs shadow-lg shadow-emerald-600/20 transition-all"
             >
-              <span>📄</span> Exportar Certificado PDF (Firma SHA-256)
-            </button>
-            <button
-              onClick={() => setMostrarTablaCortes(!mostrarTablaCortes)}
-              className="w-full bg-slate-800 hover:bg-slate-700 text-cyan-300 font-bold py-1.5 px-3 rounded-lg text-[11px]"
-            >
-              {mostrarTablaCortes ? '🔼 Ocultar Tabla de Cortes de Carreras' : '🔽 Ver Tabla de Cortes de Carreras UCR/TEC'}
+              ✅ Finalizar y Calificar Simulacro Ahora
             </button>
           </div>
-        </div>
+        ) : (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center bg-emerald-950/30 border-2 border-emerald-500/60 p-4 rounded-xl">
+            <div>
+              <span className="text-[10px] font-extrabold uppercase bg-emerald-500 text-slate-950 px-2 py-0.5 rounded">
+                🏆 RESULTADO OFICIAL DEL SIMULACRO
+              </span>
+              <div className="flex items-baseline gap-2 mt-1.5">
+                <span className="text-3xl font-extrabold text-cyan-400">{estadisticas.puntajeFinal}</span>
+                <span className="text-xs text-slate-300 font-bold">/ {estadisticas.escalaMax} pts</span>
+                <span className="ml-2 text-xs text-emerald-400 font-bold">
+                  ({estadisticas.aciertos} aciertos de {listaReactivos.length})
+                </span>
+              </div>
+              <p className="text-[11px] text-slate-300 mt-1">{estadisticas.detalleFormula}</p>
+            </div>
+
+            <div className="space-y-1">
+              <label className="text-xs font-bold text-slate-200 flex justify-between">
+                <span>📊 Nota Educación Diversificada (Colegio):</span>
+                <span className="text-cyan-300 font-mono">{notaColegio} / 100</span>
+              </label>
+              <input
+                type="range"
+                min="70"
+                max="100"
+                value={notaColegio}
+                onChange={(e) => setNotaColegio(Number(e.target.value))}
+                className="w-full accent-cyan-500 cursor-pointer"
+              />
+              <p className="text-[10px] text-slate-400">
+                UCR/UNA (50% PAA + 50% Colegio) | TEC (60% Examen + 40% Colegio).
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <button
+                onClick={exportarComprobantePdf}
+                className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs shadow"
+              >
+                📄 Descargar Certificado PDF (SHA-256)
+              </button>
+              <button
+                onClick={() => configurarSimulacro(institucionActiva, cantidadMeta, modalidadGenerador)}
+                className="w-full bg-slate-800 hover:bg-slate-700 text-cyan-300 font-bold py-1.5 px-3 rounded-lg text-xs"
+              >
+                ↺ Iniciar Nuevo Simulacro
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
-      {/* Si está seleccionada COSEVI, mostrar también el Jueguito Interactivo en Canvas 2D */}
-      {institucionActiva === 'COSEVI' && (
-        <SimuladorVialCoseviCanvas />
-      )}
-
-      {/* Área Interactiva: Reactivo Actual + Hoja de Respuestas de 20/30/40/60 Casillas */}
+      {/* Área Interactiva: Pregunta Actual + Hoja de Respuestas */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-2xl space-y-5">
           <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3 text-xs">
@@ -376,20 +476,27 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
               let estiloBoton = 'bg-slate-950 border-slate-800 hover:border-cyan-500 text-slate-200';
 
               if (respuestaGuardada !== undefined) {
-                if (idx === itemActual.correcta) {
-                  estiloBoton = 'bg-emerald-950/90 border-emerald-500 text-emerald-200 font-bold';
-                } else if (idx === respuestaGuardada && idx !== itemActual.correcta) {
-                  estiloBoton = 'bg-rose-950/90 border-rose-500 text-rose-200';
+                if (!revelarSoluciones) {
+                  // En modo simulacro activo: solo resalta cuál marcó el estudiante sin revelar si es correcta
+                  estiloBoton = idx === respuestaGuardada
+                    ? 'bg-cyan-950/90 border-cyan-400 text-white font-bold ring-1 ring-cyan-400'
+                    : 'bg-slate-950 border-slate-800 text-slate-300 hover:border-slate-700';
                 } else {
-                  estiloBoton = 'bg-slate-950 border-slate-800 opacity-60 text-slate-400';
+                  // Al finalizar el examen o en modo guiado: revela verde/rojo
+                  if (idx === itemActual.correcta) {
+                    estiloBoton = 'bg-emerald-950/90 border-emerald-500 text-emerald-200 font-bold';
+                  } else if (idx === respuestaGuardada && idx !== itemActual.correcta) {
+                    estiloBoton = 'bg-rose-950/90 border-rose-500 text-rose-200';
+                  } else {
+                    estiloBoton = 'bg-slate-950 border-slate-800 opacity-60 text-slate-400';
+                  }
                 }
               }
 
               return (
                 <button
                   key={idx}
-                  onClick={() => verificarRespuesta(idx)}
-                  disabled={respuestaGuardada !== undefined}
+                  onClick={() => seleccionarRespuesta(idx)}
                   className={`w-full text-left p-4 rounded-xl border transition-all flex items-start gap-3 text-xs sm:text-sm ${estiloBoton}`}
                 >
                   <span className="bg-slate-800 text-cyan-300 font-mono font-bold px-2.5 py-1 rounded">
@@ -402,7 +509,7 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
           </div>
 
           <div className="space-y-3 pt-2">
-            {respuestaGuardada !== undefined && (mostrarExplicacion || modoPractica === 'guiada') && (
+            {revelarSoluciones && (
               <div className="bg-cyan-950/40 border border-cyan-500/40 p-4 rounded-xl text-xs space-y-1.5">
                 <p className="font-extrabold text-cyan-300">💡 Solución Explicada Paso a Paso:</p>
                 <p className="text-slate-200 whitespace-pre-line leading-relaxed">
@@ -411,7 +518,7 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
               </div>
             )}
 
-            <div className="flex justify-between items-center pt-2">
+            <div className="flex flex-wrap justify-between items-center gap-2 pt-2">
               <button
                 onClick={() => setIndiceActual(Math.max(0, indiceActual - 1))}
                 disabled={indiceActual === 0}
@@ -419,25 +526,34 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
               >
                 ← Anterior
               </button>
-              <button
-                onClick={() => {
-                  setMostrarExplicacion(false);
-                  if (indiceActual + 1 < listaReactivos.length) {
-                    setIndiceActual(indiceActual + 1);
-                  } else {
-                    inyectarMasInfinitos(5, modalidadGenerador);
-                    setIndiceActual(listaReactivos.length);
-                  }
-                }}
-                className="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-5 py-2.5 rounded-xl text-xs transition-all shadow"
-              >
-                Siguiente Pregunta →
-              </button>
+
+              <div className="flex gap-2">
+                {indiceActual + 1 < listaReactivos.length ? (
+                  <button
+                    onClick={() => setIndiceActual(indiceActual + 1)}
+                    className="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-5 py-2.5 rounded-xl text-xs transition-all shadow"
+                  >
+                    Siguiente Pregunta →
+                  </button>
+                ) : (
+                  !examenFinalizado && (
+                    <button
+                      onClick={() => {
+                        setExamenFinalizado(true);
+                        setCronometroActivo(false);
+                      }}
+                      className="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-5 py-2.5 rounded-xl text-xs shadow-lg"
+                    >
+                      🏆 Entregar y Ver Calificación Final
+                    </button>
+                  )
+                )}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Hoja de Respuestas Dinámica (20, 30, 40 o 60 casillas) */}
+        {/* Hoja de Respuestas (10, 20, 30, 40 o 60 casillas) */}
         <div className="bg-slate-900 border border-slate-800 p-5 rounded-2xl shadow-2xl flex flex-col justify-between space-y-4">
           <div className="space-y-3">
             <div className="border-b border-slate-800 pb-3 flex justify-between items-center">
@@ -446,14 +562,14 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
                   📋 Hoja Oficial ({listaReactivos.length} Ítems)
                 </h3>
                 <p className="text-[11px] text-slate-400">
-                  Navega por las {listaReactivos.length} preguntas del simulacro.
+                  {revelarSoluciones ? 'Revisión de aciertos y fallos' : 'Casillas marcadas (sin calificar aún)'}
                 </p>
               </div>
               <button
-                onClick={() => setHistorialRespuestas({})}
-                className="text-[10px] bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1 rounded"
+                onClick={guardarAvanceYPausar}
+                className="text-[10px] bg-indigo-700 hover:bg-indigo-600 text-white font-bold px-2.5 py-1 rounded"
               >
-                Limpiar Hoja
+                💾 Guardar
               </button>
             </div>
 
@@ -462,13 +578,18 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
                 const resp = historialRespuestas[it.id];
                 const letras = ['A', 'B', 'C', 'D'];
                 let colorCasilla = 'bg-slate-950 border-slate-800 text-slate-400';
+
                 if (resp !== undefined) {
-                  colorCasilla = resp === it.correcta
-                    ? 'bg-emerald-950 border-emerald-500 text-emerald-300 font-bold'
-                    : 'bg-rose-950 border-rose-500 text-rose-300 font-bold';
+                  if (!revelarSoluciones) {
+                    colorCasilla = 'bg-cyan-950 border-cyan-500 text-cyan-200 font-bold';
+                  } else {
+                    colorCasilla = resp === it.correcta
+                      ? 'bg-emerald-950 border-emerald-500 text-emerald-300 font-bold'
+                      : 'bg-rose-950 border-rose-500 text-rose-300 font-bold';
+                  }
                 }
                 if (idx === indiceActual) {
-                  colorCasilla += ' ring-2 ring-cyan-400';
+                  colorCasilla += ' ring-2 ring-amber-400';
                 }
 
                 return (
@@ -487,52 +608,54 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
             </div>
           </div>
 
-          <div className="bg-slate-950 p-3.5 rounded-xl border border-slate-800 space-y-2 text-[11px]">
-            <p className="text-white font-bold">🔐 Huella SHA-256 en Tiempo Real:</p>
-            <p className="font-mono text-[10px] text-cyan-300 break-all bg-slate-900 p-2 rounded border border-slate-800">
-              {hashCertificado}
-            </p>
+          <div className="space-y-2">
+            {!examenFinalizado && modoPractica === 'examen' && (
+              <button
+                onClick={() => {
+                  setExamenFinalizado(true);
+                  setCronometroActivo(false);
+                }}
+                className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold py-2.5 rounded-xl text-xs shadow-lg"
+              >
+                ✅ Finalizar Simulacro y Ver Nota
+              </button>
+            )}
+            <div className="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-1 text-[11px]">
+              <p className="text-white font-bold">🔐 Huella SHA-256:</p>
+              <p className="font-mono text-[10px] text-cyan-300 break-all bg-slate-900 p-2 rounded border border-slate-800">
+                {hashCertificado}
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Tabla Comparativa de Cortes Históricos de Carreras (UCR, TEC, UNA, UTN, UNED) */}
-      {mostrarTablaCortes && (
+      {/* Tabla Comparativa de Cortes (Visible al finalizar o en práctica guiada) */}
+      {revelarSoluciones && (
         <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-2xl space-y-4">
-          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
-            <div>
-              <h3 className="text-lg font-extrabold text-white">
-                🏛️ Comparador de Cortes Históricos de Carreras (UCR, TEC, UNA, UTN & UNED)
-              </h3>
-              <p className="text-xs text-slate-400">
-                Compara automáticamente tu puntaje actual ({estadisticas.puntajeFinal} / {estadisticas.escalaMax} pts) con los cortes de admisión.
-              </p>
-            </div>
-          </div>
-
+          <h3 className="text-lg font-extrabold text-white">
+            🏛️ Comparador de Cortes Históricos de Carreras (UCR, TEC, UNA, UTN & UNED)
+          </h3>
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse text-xs">
               <thead>
                 <tr className="bg-slate-950 text-cyan-400 border-b border-slate-800">
                   <th className="p-3">Universidad</th>
                   <th className="p-3">Carrera Universitaria</th>
-                  <th className="p-3">Sede / Campus</th>
-                  <th className="p-3">Corte Referencia</th>
-                  <th className="p-3">Diagnóstico con tu Nota Actual</th>
+                  <th className="p-3">Sede</th>
+                  <th className="p-3">Corte Oficial</th>
+                  <th className="p-3">Diagnóstico con tu Nota Final</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800">
                 {CORTES_HISTORICOS_CARRERAS.map((c, i) => {
-                  // Normalizar comparación según si la carrera está en escala 800 o 100
                   const puntajeComparable = c.escala === estadisticas.escalaMax
                     ? estadisticas.puntajeFinal
                     : c.escala === 800
                       ? Math.round(200 + (estadisticas.puntajeFinal / 100) * 600)
                       : Math.round(((estadisticas.puntajeFinal - 200) / 600) * 100);
-
                   const alcanza = puntajeComparable >= c.corte;
                   const diferencia = puntajeComparable - c.corte;
-
                   return (
                     <tr key={i} className="hover:bg-slate-950/60">
                       <td className="p-3 font-extrabold text-white">{c.universidad}</td>
@@ -559,12 +682,7 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
         </div>
       )}
 
-      {/* Botón directo al Simulador Vial 2D también desde cualquier pestaña */}
-      {institucionActiva !== 'COSEVI' && (
-        <SimuladorVialCoseviCanvas />
-      )}
-
-      {/* Suite de Auditoría QA Caja Negra / Caja Blanca / Funcional / Integral */}
+      <SimuladorVialCoseviCanvas />
       <SuiteAuditoriaQaBds />
     </div>
   );
