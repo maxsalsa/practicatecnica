@@ -50,18 +50,22 @@ export function PaypalButtons({ plan, institutionId, onPaid }: { plan: AnnualPla
     const buttons = window.paypal.Buttons({
       style: { shape: "pill", label: "pay" },
       createOrder: async () => {
+        
         return (await create({ data: { plan, quoteId: plan === 'docente' ? quote?.id : undefined, institutionId } })).id;
       },
       onApprove: async (d: { orderID: string }) => {
         try {
           await capture({ data: { orderId: d.orderID } });
+          
           toast.success("Pago recibido. Su plan se activará cuando Max confirme el pago.");
           onPaid();
         } catch (e) {
+          
           toast.error(e instanceof Error ? e.message : "No se pudo confirmar el pago.");
         }
       },
-      onCancel: () => toast.error("PayPal no pudo procesar el pago."); },
+      onCancel: () => {},
+      onError: () => {  toast.error("PayPal no pudo procesar el pago."); },
     });
     if (buttons.isEligible?.() !== false) buttons.render(el).catch(() => setLoadError(true));
     return () => { try { buttons.close?.(); } catch { /* ignore */ } el.innerHTML = ""; };
