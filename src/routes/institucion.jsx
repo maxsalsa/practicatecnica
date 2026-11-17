@@ -1,4 +1,4 @@
-import { AuditLog } from '@/components/AuditLog';
+﻿import { AuditLog } from '@/components/AuditLog';
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { useEffect, useMemo, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
@@ -182,7 +182,7 @@ function InstitutionPage() {
         </nav>
         <details className="my-4"><summary className="cursor-pointer py-2 font-semibold">Todas las secciones</summary>
         <label className="mb-3 flex items-center gap-2 rounded-md border border-border bg-background px-3"><Search className="h-4 w-4 shrink-0" aria-hidden="true"/><input aria-label="Buscar sección institucional" placeholder="Buscar sección…" value={sectionSearch} onChange={event => setSectionSearch(event.target.value)} className="min-w-0 flex-1 bg-transparent py-3 text-sm"/></label>
-        <TabsList ref={element => { if (!element) return; const needle = sectionSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim(); element.querySelectorAll<HTMLElement>('[role="tab"]').forEach(tab => { tab.hidden = !(tab.textContent ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(needle); }); }} className="flex h-auto flex-wrap justify-start gap-1 [&_[hidden]]:hidden">
+        <TabsList ref={element => { if (!element) return; const needle = sectionSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim(); element.querySelectorAll('[role="tab"]').forEach(tab => { tab.hidden = !(tab.textContent ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(needle); }); }} className="flex h-auto flex-wrap justify-start gap-1 [&_[hidden]]:hidden">
           {current && <TabsTrigger value="avisos">📢 Avisos</TabsTrigger>}
           {current && <TabsTrigger value="comedor">Comedor</TabsTrigger>}
           {current && <TabsTrigger value="asistencia">Asistencia</TabsTrigger>}
@@ -240,9 +240,10 @@ function InstitutionPage() {
   </main>;
 }
 
-function ChannelsTrigger({ institutionId }: { institutionId }) {
+function ChannelsTrigger({ institutionId }) {
   const list = useChannelList(institutionId);
   const unread = (list.data ?? []).reduce((n, r) => n + Number(r.unread ?? 0), 0);
   return <TabsTrigger value="canales">💬 Canales{unread > 0 && <span className="ml-1 rounded-full bg-accent px-1.5 text-xs font-black text-accent-foreground" aria-label={`${unread} mensajes nuevos`}>{unread}</span>}</TabsTrigger>;
 }
+
 

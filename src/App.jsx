@@ -2,11 +2,13 @@
 import ExamSimulatorHub from './components/simulator/ExamSimulatorHub.jsx';
 import AnnouncementsBroadcastPanel from './components/institution/AnnouncementsBroadcastPanel.jsx';
 import { SchedulesModule, CafeteriaModule, PermissionsModule } from './components/institution/InstitutionOperationsSuite.jsx';
+import { SchedulePanel } from './components/institution/SchedulePanel.jsx';
+import { SchoolServicesPanel } from './components/institution/SchoolServicesPanel.jsx';
 
 const KPI_METRICS = [
   { label: 'Simulacros Práctica Técnica', value: 'MEP · CTP · MOPT · U', delta: 'Motor Interactivo Activo', tone: 'text-indigo-600' },
-  { label: 'Horarios y Laboratorios', value: 'Bloques 40/80m', delta: 'Exportación Excel CSV', tone: 'text-indigo-600' },
-  { label: 'Comedor Estudiantil', value: 'Aforo + Reporte', delta: 'Descarga CSV UTF-8', tone: 'text-emerald-600' },
+  { label: 'Horarios y Laboratorios', value: 'Bloques + Matriz MEP', delta: 'Exportación Excel CSV', tone: 'text-indigo-600' },
+  { label: 'Comedor y Asistencia', value: 'Aforo + Servicios', delta: 'Descarga CSV UTF-8', tone: 'text-emerald-600' },
   { label: 'Permisos y Avisos', value: '100% Offline-First', delta: 'Sincronizado con Lovable', tone: 'text-emerald-600' }
 ];
 
@@ -14,12 +16,13 @@ const NAVIGATION_TABS = [
   { id: 'simulacros', label: '1. Simulacros Práctica Técnica' },
   { id: 'avisos', label: '2. Avisos Oficiales' },
   { id: 'horarios', label: '3. Horarios (+Excel)' },
-  { id: 'comedor', label: '4. Comedor (+Excel)' },
+  { id: 'comedor', label: '4. Comedor y Asistencia (+Excel)' },
   { id: 'permisos', label: '5. Permisos (+Excel)' }
 ];
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('simulacros');
+  const [institutionId] = useState('ctp-mercedes-norte');
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f8f9fe]">
@@ -36,11 +39,11 @@ export default function App() {
                     practicatecnica.com
                   </h1>
                   <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-400/20 text-emerald-100 border border-emerald-300/30">
-                    Producción Activa
+                    Suite Completa Activa
                   </span>
                 </div>
                 <p className="text-xs text-indigo-100 mt-0.5">
-                  Simulacros MEP · CTP · MOPT · Admisión U + Suite Institucional con Reportes Excel
+                  Simulacros MEP · CTP · MOPT · Admisión U + Gestión Institucional con Reportes Excel
                 </p>
               </div>
             </div>
@@ -80,11 +83,25 @@ export default function App() {
         </div>
       </header>
 
-      <main className="max-w-7xl w-full mx-auto px-4 sm:px-8 -mt-16 pb-16 flex-1">
+      <main className="max-w-7xl w-full mx-auto px-4 sm:px-8 -mt-16 pb-16 flex-1 space-y-6">
         {activeTab === 'simulacros' && <ExamSimulatorHub />}
         {activeTab === 'avisos' && <AnnouncementsBroadcastPanel />}
-        {activeTab === 'horarios' && <SchedulesModule />}
-        {activeTab === 'comedor' && <CafeteriaModule />}
+        {activeTab === 'horarios' && (
+          <div className="space-y-6">
+            <SchedulesModule />
+            <div className="argon-card p-6">
+              <SchedulePanel institutionId={institutionId} kind="ctp" canEdit={true} />
+            </div>
+          </div>
+        )}
+        {activeTab === 'comedor' && (
+          <div className="space-y-6">
+            <CafeteriaModule />
+            <div className="argon-card p-6">
+              <SchoolServicesPanel institutionId={institutionId} mode="comedor" />
+            </div>
+          </div>
+        )}
         {activeTab === 'permisos' && <PermissionsModule />}
       </main>
 
