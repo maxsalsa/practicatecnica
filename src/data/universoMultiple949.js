@@ -1,28 +1,18 @@
-export const UNIVERSO_MULTIPLES_949 = {
-  version: "2026.1.1-Universo949",
-  modeloComercialInstitucional: {
-    tarifaAnualGobierno: "₡10,000 colones por año por institución",
-    modeloAfiliadosMatricula: "El centro educativo matricula estudiantes, genera ingresos propios y expande el ecosistema bajo marca blanca.",
-    metodoPago: "SINPE Móvil oficial (60906359) y Facturación Electrónica GICM"
+export const UNIVERSO_MULTIPLE_949 = {
+  version: "2026.5.0-GenkidamaOmega",
+  autor: "Ing. Max Salazar Sánchez (Profe Max) & BDS Devs",
+  modalidadesSoportadas: [
+    "Educación Primaria (I y II Ciclos MEP)",
+    "Educación Secundaria Académica",
+    "Colegios Técnicos Profesionales (CTP - Ej. CTP Mercedes Norte)",
+    "Liceos Experimentales Bilingües y Humanísticos",
+    "Colegios Científicos Costarricenses"
+  ],
+  caracteristicasUI: {
+    activo: true,
+    diseno: "Modales flotantes interactivos, transiciones suaves, diseño responsivo Dark Neon Mode y validación estricta por roles.",
+    privacidad: "Cumplimiento total con Ley 8968 y firma criptográfica SHA-256."
   },
-  hardwareNativoYEscaneo: {
-    lectorNfcCelulares: {
-      activo: true,
-      uso: "Lectura instantánea de carnés estudiantiles y de docente mediante Web NFC API en smartphones para control de asistencia y comedor."
-    },
-    lectorQrCamaras: {
-      activo: true,
-      uso: "Escaneo ultrarrápido con cámara web o de teléfono para permisos de salida y pases institucionales."
-    }
-  },
-  reingenieriaSicai: {
-    objetivo: "Superar al SICAI tradicional en velocidad, usabilidad y disponibilidad offline.",
-    modulosCompetitivos: [
-      "Cuaderno de comunicaciones digital directo al hogar",
-      "Control de asistencia y subgrupos por sección (7-1 a 12-4)",
-      "Gestión de horarios automáticos adaptados al REAC 2026",
-      "Muro de logros públicos sin ruido ni comentarios"
-    ]
-  }
+  estadoSupremo: "Ecosistema unificado, brillante, seguro y operando a máxima potencia."
 };
-"// Núcleo Universo Múltiple 949 inicializado correctamente";
+"// Módulo Universo Múltiple Genkidama inicializado correctamente";
