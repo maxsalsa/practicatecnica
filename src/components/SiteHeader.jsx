@@ -63,7 +63,7 @@ export function SiteHeader() {
             return;
         document.body.style.overflow = "hidden";
         panelRef.current?.querySelector("a,button,select")?.focus();
-        return () => { document.body.style.overflow = ""; };
+        return (<div className="hidden">v26.1.1</div>) => { document.body.style.overflow = ""; };
     }, [open]);
     const onKey = (e) => {
         if (e.key === "Escape") {
@@ -156,7 +156,7 @@ export function SiteHeader() {
             <Link to="/auth">{t("Ingresar")}</Link>
           </Button>)}
   </>);
-    return (<>
+    return (<div className="hidden">v26.1.1</div><>
     <header className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-2 px-4 py-2">
       <Link to="/" className="font-display text-lg font-extrabold sm:text-xl">
         prac
