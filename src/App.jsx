@@ -1,76 +1,111 @@
-import AiOfflineEngine from "./components/ai/AiOfflineEngine.jsx"
-import InstallAppButton from "./components/InstallAppButton.jsx"
 import React, { useState } from "react"
+import PracticeArena9M from "./components/institution/PracticeArena9M"
 import AnalyticsDashboard from "./components/institution/AnalyticsDashboard"
 import AnnouncementsBroadcastPanel from "./components/institution/AnnouncementsBroadcastPanel"
 import StudentWalletView from "./components/institution/StudentWalletView"
 import SchoolServicesPanel from "./components/institution/SchoolServicesPanel"
 import DrivingAcademyView from "./components/institution/DrivingAcademyView"
 import CertifiedCertificatesView from "./components/institution/CertifiedCertificatesView"
+import QAReportDashboard from "./components/institution/QAReportDashboard"
 import EducationalGames from "./components/games/EducationalGames"
 import AutoPlan from "./components/plan/AutoPlan"
+import AiOfflineEngine from "./components/ai/AiOfflineEngine"
 import LumiAvatar from "./components/lumi/LumiAvatar"
-import { BarChart3, Bell, Wallet, Utensils, Car, Award, Puzzle, FileText } from "lucide-react"
+import InstallAppButton from "./components/InstallAppButton"
+import {
+  Brain,
+  BarChart3,
+  Bell,
+  Wallet,
+  Utensils,
+  Car,
+  Award,
+  Puzzle,
+  FileText,
+  Cpu,
+  ShieldCheck
+} from "lucide-react"
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState("dashboard")
+  const [activeTab, setActiveTab] = useState("arena9m")
+  const [earnedBadges, setEarnedBadges] = useState([])
+
+  const navItems = [
+    { id: "arena9m", label: "Banco 9M & Simulacros", icon: Brain },
+    { id: "driving", label: "Academia Vial MOPT", icon: Car },
+    { id: "games", label: "Clue & Rummy Cub", icon: Puzzle },
+    { id: "certs", label: "Certificados & Insignias QR", icon: Award },
+    { id: "wallet", label: "CoopePago & Alcancía", icon: Wallet },
+    { id: "services", label: "Comedor & Horarios", icon: Utensils },
+    { id: "aioffline", label: "IA Offline & Retos", icon: Cpu },
+    { id: "plans", label: "Planeamientos MEP", icon: FileText },
+    { id: "announcements", label: "Comunicados Oficiales", icon: Bell },
+    { id: "dashboard", label: "Analíticas SuperAdmin", icon: BarChart3 },
+    { id: "qa", label: "Auditoría QA / UX / PWA", icon: ShieldCheck }
+  ]
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
-      <header className="border-b bg-card px-6 py-4 flex items-center justify-between shadow-sm">
+      <header className="border-b bg-card px-4 md:px-6 py-3.5 flex flex-wrap items-center justify-between gap-3 shadow-sm">
         <div className="flex items-center gap-3">
-          <div className="p-2 bg-primary text-primary-foreground rounded-lg font-bold">PT</div>
+          <div className="p-2.5 bg-emerald-600 text-white rounded-xl font-extrabold text-sm">PT</div>
           <div>
-            <h1 className="text-lg font-bold">Práctica Técnica .com</h1>
-            <p className="text-xs text-muted-foreground">Ecosistema MEP — CTP Mercedes Norte (Max Salazar)</p>
+            <h1 className="text-base md:text-lg font-bold">Práctica Técnica .com</h1>
+            <p className="text-xs text-muted-foreground">
+              9,000,000 Reactivos • CTP Mercedes Norte • Ing. Max Salazar Sánchez
+            </p>
           </div>
         </div>
-        <span className="text-xs px-2.5 py-1 bg-emerald-500/10 text-emerald-600 rounded-full font-medium">Producción Activa Full</span>
+        <div className="flex items-center gap-2">
+          <span className="text-xs px-3 py-1 bg-emerald-500/10 text-emerald-600 rounded-full font-bold">
+            9M Activos • Cero En Construcción
+          </span>
+        </div>
       </header>
 
-      <div className="flex flex-1 overflow-hidden">
-        <aside className="w-64 border-r bg-card p-4 space-y-2 hidden md:block overflow-y-auto">
-          <p className="text-xs font-semibold text-muted-foreground uppercase px-3 mb-2">Módulos GICM Full</p>
-          <button onClick={() => setActiveTab("dashboard")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "dashboard" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
-            <BarChart3 className="w-4 h-4" /><span>Analíticas SuperAdmin</span>
-          </button>
-          <button onClick={() => setActiveTab("announcements")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "announcements" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
-            <Bell className="w-4 h-4" /><span>Comunicados Oficiales</span>
-          </button>
-          <button onClick={() => setActiveTab("wallet")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "wallet" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
-            <Wallet className="w-4 h-4" /><span>CoopePago & Alcancía</span>
-          </button>
-          <button onClick={() => setActiveTab("services")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "services" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
-            <Utensils className="w-4 h-4" /><span>Comedor & Horarios</span>
-          </button>
-          <button onClick={() => setActiveTab("driving")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "driving" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
-            <Car className="w-4 h-4" /><span>Manejo (Motos/Carros)</span>
-          </button>
-          <button onClick={() => setActiveTab("games")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "games" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
-            <Puzzle className="w-4 h-4" /><span>Clue & Rummy Cub</span>
-          </button>
-          <button onClick={() => setActiveTab("certs")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "certs" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
-            <Award className="w-4 h-4" /><span>Certificados SHA-256</span>
-          </button>
-          <button onClick={() => setActiveTab("plans")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "plans" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
-            <FileText className="w-4 h-4" /><span>Planeamientos OER</span>
-          </button>
+      <div className="flex flex-1 overflow-hidden flex-col md:flex-row">
+        <aside className="w-full md:w-64 border-b md:border-b-0 md:border-r bg-card p-3 flex md:flex-col gap-1.5 overflow-x-auto md:overflow-y-auto shrink-0">
+          {navItems.map((item) => {
+            const Icon = item.icon
+            const active = activeTab === item.id
+            return (
+              <button
+                key={item.id}
+                onClick={() => setActiveTab(item.id)}
+                className={`flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                  active ? "bg-emerald-600 text-white shadow" : "hover:bg-muted text-foreground"
+                }`}
+              >
+                <Icon className="w-4 h-4 shrink-0" />
+                <span>{item.label}</span>
+              </button>
+            )
+          })}
         </aside>
 
-        <main className="flex-1 p-6 overflow-y-auto bg-background space-y-6">
+        <main className="flex-1 p-4 md:p-6 overflow-y-auto bg-background space-y-6">
           <div className="max-w-6xl mx-auto space-y-6">
             <LumiAvatar state="feliz" />
-            {activeTab === "dashboard" && <AnalyticsDashboard />}
-            {activeTab === "announcements" && <AnnouncementsBroadcastPanel sectionId="11-Tecnico" />}
-            {activeTab === "wallet" && <StudentWalletView />}
-            {activeTab === "services" && <SchoolServicesPanel />}
+            {activeTab === "arena9m" && (
+              <PracticeArena9M
+                onEarnBadge={(b) => setEarnedBadges((prev) => [b, ...prev])}
+              />
+            )}
             {activeTab === "driving" && <DrivingAcademyView />}
             {activeTab === "games" && <EducationalGames />}
-            {activeTab === "certs" && <CertifiedCertificatesView />}
+            {activeTab === "certs" && <CertifiedCertificatesView badges={earnedBadges} />}
+            {activeTab === "wallet" && <StudentWalletView />}
+            {activeTab === "services" && <SchoolServicesPanel />}
+            {activeTab === "aioffline" && <AiOfflineEngine />}
             {activeTab === "plans" && <AutoPlan />}
+            {activeTab === "announcements" && <AnnouncementsBroadcastPanel sectionId="11-Tecnico" />}
+            {activeTab === "dashboard" && <AnalyticsDashboard />}
+            {activeTab === "qa" && <QAReportDashboard />}
           </div>
         </main>
       </div>
+
+      <InstallAppButton />
     </div>
   )
 }
