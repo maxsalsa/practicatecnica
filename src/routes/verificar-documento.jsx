@@ -4,7 +4,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { SiteHeader } from '@/components/SiteHeader';
 export const Route = createFileRoute('/verificar-documento')({
   staticData: { sitemap: false },
-  validateSearch: (s: Record<string, unknown>): { codigo?: string } => typeof s['codigo'] === 'string' ? { codigo: s['codigo'] } : {},
+  validateSearch: (s): { codigo?: string } => typeof s['codigo'] === 'string' ? { codigo: s['codigo'] } : {},
   head: () => ({ meta: [{ title: 'Verificación de documento institucional · pracTICAtecnica.com' }, { name: 'description', content: 'Consulta mínima de emisión e integridad de documentos institucionales.' }, { property: 'og:title', content: 'Verificación institucional · pracTICAtecnica.com' }, { property: 'og:description', content: 'Verifique el registro sin exponer notas ni datos de menores.' }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }, { name: 'robots', content: 'noindex' }] }),
   component: Verification,
 });

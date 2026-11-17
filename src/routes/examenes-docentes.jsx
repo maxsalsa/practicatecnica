@@ -1,4 +1,4 @@
-﻿import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
@@ -46,7 +46,7 @@ function Editor() {
   const qc = useQueryClient();
   const mine = useQuery({ queryKey: ["teacher-exams"], queryFn: async () => (await supabase.from("teacher_exams").select("id,title,minutes,published,questions").order("created_at", { ascending: false })).data ?? [] });
   const [title, setTitle] = useState(""); const [minutes, setMinutes] = useState(20); const [qs, setQs] = useState<Q[]>([blank()]); const [msg, setMsg] = useState("");
-  const set = (i: number, f: (q: Q) => Q) => setQs((a) => a.map((q, k) => (k === i ? f(q) : q)));
+  const set = (i: number, f: (q) => Q) => setQs((a) => a.map((q, k) => (k === i ? f(q) : q)));
   const valid = title.trim().length >= 3 && qs.every((q) => q.q.trim() && q.options.every((o) => o.trim()));
   async function save(published: boolean) {
     const { error } = await supabase.from("teacher_exams").insert({ title: title.trim(), minutes, questions: qs, published });

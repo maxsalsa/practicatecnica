@@ -1,4 +1,4 @@
-﻿import {isEnglishBank,questionAudio,englishSupport,speakQuestion} from "@/lib/english-audio";
+import {isEnglishBank,questionAudio,englishSupport,speakQuestion} from "@/lib/english-audio";
 import { AuthorizedContent } from "./AuthorizedContent";
 import { useEffect, useMemo, useRef, useState, forwardRef, type HTMLAttributes } from "react";
 import type { Deck } from "@/lib/questions";
@@ -230,6 +230,6 @@ function Stat({ label, value, tone }: { label: string; value: string | number; t
 }
 
 export interface BlindExamProps extends HTMLAttributes<HTMLDivElement> {deck:Deck;onExit:()=>void}
-export const BlindExam=forwardRef<HTMLDivElement,BlindExamProps>(({deck,onExit,className,...rest},ref)=>{const render=(loaded:Deck)=>examHasRequiredSize(loaded.questions.length)?<BlindExamBody deck={loaded} onExit={onExit}/>:<section className="mx-auto max-w-2xl px-5 py-8"><h2 className="text-xl font-bold">Simulacro en preparación</h2><p className="mt-3 text-muted-foreground">Este banco tiene {loaded.questions.length} preguntas; el simulacro requiere exactamente 60 preguntas de la misma materia.</p><Button className="mt-4" variant="outline" onClick={onExit}>Volver</Button></section>;return <div ref={ref} className={className} {...rest}>{deck.questions.length?render(deck):<AuthorizedContent id={deck.id} exam>{render}</AuthorizedContent>}</div>;});
+export const BlindExam=forwardRef<HTMLDivElement,BlindExamProps>(({deck,onExit,className,...rest},ref)=>{const render=(loaded)=>examHasRequiredSize(loaded.questions.length)?<BlindExamBody deck={loaded} onExit={onExit}/>:<section className="mx-auto max-w-2xl px-5 py-8"><h2 className="text-xl font-bold">Simulacro en preparación</h2><p className="mt-3 text-muted-foreground">Este banco tiene {loaded.questions.length} preguntas; el simulacro requiere exactamente 60 preguntas de la misma materia.</p><Button className="mt-4" variant="outline" onClick={onExit}>Volver</Button></section>;return <div ref={ref} className={className} {...rest}>{deck.questions.length?render(deck):<AuthorizedContent id={deck.id} exam>{render}</AuthorizedContent>}</div>;});
 BlindExam.displayName='BlindExam';
 

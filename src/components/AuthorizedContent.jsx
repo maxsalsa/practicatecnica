@@ -9,7 +9,7 @@ import {useEffect,useState} from 'react';
 import {QUESTION_FORM_COUNT,questionFormId,splitQuestionForm} from '@/lib/question-forms';
 import {draftKey,readDraft} from '@/lib/assessment-draft';
 
-export interface AuthorizedContentProps extends Omit<HTMLAttributes<HTMLDivElement>,'children'> {id:string;lang?:'es'|'en';exam?:boolean;children:(deck:Deck)=>ReactNode}
+export interface AuthorizedContentProps extends Omit<HTMLAttributes<HTMLDivElement>,'children'> {id:string;lang?:'es'|'en';exam?:boolean;children:(deck)=>ReactNode}
 function AuthorizedContentBody({id,lang='es',exam=false,children}:AuthorizedContentProps) {
  const {user}=useAccount();const load=useServerFn(getAuthorizedContent);
  const [request,setRequest]=useState('');

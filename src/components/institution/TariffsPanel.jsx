@@ -28,7 +28,7 @@ function friendly(e: { code?: string; message: string }, kind: 'tarifa' | 'descu
   return kind === 'tarifa' ? 'No se pudo guardar la tarifa.' : 'No se pudo guardar el descuento.';
 }
 
-const scopeText = (t: Tariff) => [t.level && (bandLabels[t.level as keyof typeof bandLabels] ?? t.level), t.vehicle && roadVehicles.find(v => v.id === t.vehicle)?.label, t.license_category && `Licencia ${t.license_category}`].filter(Boolean).join(' · ') || 'General';
+const scopeText = (t) => [t.level && (bandLabels[t.level as keyof typeof bandLabels] ?? t.level), t.vehicle && roadVehicles.find(v => v.id === t.vehicle)?.label, t.license_category && `Licencia ${t.license_category}`].filter(Boolean).join(' · ') || 'General';
 
 /** Price lists and priority discounts entered by each institution; nothing is charged automatically. */
 export function TariffsPanel({ institutionId, canEdit }: { institutionId: string; canEdit: boolean }) {

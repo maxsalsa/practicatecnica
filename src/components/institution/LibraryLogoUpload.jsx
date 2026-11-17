@@ -13,7 +13,7 @@ export function LibraryLogoUpload(){
   if(a.data){const r=await supabase.rpc('admin_institutions');if(r.error)throw new Error('No se pudieron cargar instituciones.');return r.data;}
   const r=await supabase.rpc('my_institutions');if(r.error)throw new Error('No se pudieron cargar instituciones.');return r.data.filter(i=>i.member_role==='direccion');
  }});
- async function choose(f:File|undefined){setFile(undefined);setPreview('');if(!f)return;
+ async function choose(f){setFile(undefined);setPreview('');if(!f)return;
   if(f.type!=='image/png'||f.size===0||f.size>1048576){toast.error('Use PNG transparente de hasta 1 MB.');return;}
   try{const bitmap=await createImageBitmap(f);if(bitmap.width*bitmap.height>16000000){bitmap.close();throw new Error();}const canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;const ctx=canvas.getContext('2d');if(!ctx){bitmap.close();throw new Error();}ctx.drawImage(bitmap,0,0);bitmap.close();if(!hasVisibleTransparency(ctx.getImageData(0,0,canvas.width,canvas.height).data)){toast.error('El PNG debe tener fondo transparente y contenido visible.');return;}setPreview(canvas.toDataURL('image/png'));setFile(f);}catch{toast.error('No se pudo leer el PNG.');}
  }

@@ -9,7 +9,7 @@ import { GRADE6_VERSIONS, grade6MixedDeck } from "@/lib/grade6";
 import { EXAM_SIZE } from '@/lib/assessment-size';
 
 export const Route = createFileRoute("/simulacro")({staticData:{sitemap:true},
-  validateSearch: (search: Record<string, unknown>): { deck?: string } => {
+  validateSearch: (search): { deck?: string } => {
     const id = search['deck'];
     return typeof id === "string" && decks.some(d => d.id === id) ? { deck: id } : {};
   },
@@ -38,7 +38,7 @@ function Simulacro() {
   const [deck, setDeck] = useState<Deck | null>(null);
   const [selected, setSelected] = useState('');
   const [blind, setBlind] = useState<Deck | null>(() => decks.find(d => d.id === search.deck) ?? null);
-  function start(d: Deck) {
+  function start(d) {
     setDeck(d);
   }
 

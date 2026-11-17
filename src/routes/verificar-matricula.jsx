@@ -4,7 +4,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { SiteHeader } from '@/components/SiteHeader';
 export const Route = createFileRoute('/verificar-matricula')({
   staticData: { sitemap: false },
-  validateSearch: (s: Record<string, unknown>): { codigo?: string } => typeof s['codigo'] === 'string' ? { codigo: s['codigo'] } : {},
+  validateSearch: (s): { codigo?: string } => typeof s['codigo'] === 'string' ? { codigo: s['codigo'] } : {},
   head: () => ({ meta: [{ title: 'Verificar matrícula · pracTICAtecnica.com' }, { name: 'description', content: 'Compruebe que un comprobante de matrícula fue aprobado por la institución.' }, { property: 'og:title', content: 'Verificar matrícula · pracTICAtecnica.com' }, { property: 'og:description', content: 'Verificación del comprobante sin exponer datos del estudiante.' }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }, { name: 'robots', content: 'noindex' }] }),
   component: VerifyEnrollment,
 });

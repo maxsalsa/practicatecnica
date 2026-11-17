@@ -43,7 +43,7 @@ export function InstitutionAdmin({ selectedId, onSelect }: { selectedId: string 
     if (error || !data) { toast.error('No se pudo crear la institución. Use entre 3 y 120 caracteres.'); return; }
     toast.success('Institución creada.'); setName(''); setIsTest(false); refresh(); onSelect(data);
   }
-  async function uploadLogo(file: File | undefined) {
+  async function uploadLogo(file) {
     if (!file || !selected) return;
     const check = logoExtension(file);
     if (check.error) { toast.error(check.error); return; }

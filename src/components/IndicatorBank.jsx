@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 
 type Component = "Trabajo cotidiano" | "Tareas" | "Proyecto" | "Prueba corta";
 
@@ -19,7 +19,7 @@ const names = ["Inicial", "Intermedio", "Avanzado"] as const;
 export function IndicatorBank() {
   const [c, setC] = useState<Component>("Trabajo cotidiano");
   const [copied, setCopied] = useState("");
-  const copy = (i: Indicator) => {
+  const copy = (i) => {
     const t = `${i.text}\n${i.levels.map((l, k) => `${names[k]}: ${l}`).join("\n")}`;
     void navigator.clipboard.writeText(t).then(() => setCopied(i.text));
   };

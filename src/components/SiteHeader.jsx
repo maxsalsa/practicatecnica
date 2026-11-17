@@ -24,7 +24,7 @@ const DICT: Record<string, [string, string, string]> = {
 export function SiteHeader() {
   const [lang, setLang] = useState<UiLang>("es");
   useEffect(() => { const v = localStorage.getItem("pt-lang"); if (v === "en" || v === "fr" || v === "de") setLang(v); }, []);
-  const changeLang = (v: UiLang) => { setLang(v); localStorage.setItem("pt-lang", v); document.documentElement.lang = v; };
+  const changeLang = (v) => { setLang(v); localStorage.setItem("pt-lang", v); document.documentElement.lang = v; };
   const t = (k: string) => (lang === "es" ? k : DICT[k]?.[lang === "en" ? 0 : lang === "fr" ? 1 : 2] ?? k);
   const { user } = useAccount();
   const queries = useQueryClient();

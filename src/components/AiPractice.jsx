@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const subjects = ["Matemática", "Español", "Inglés", "Ciencias", "Estudios Sociales", "Desarrollo de Software", "Contabilidad", "Electrónica", "Turismo", "Manejo (MOPT)"];
 
-export function AiPractice({ onStart }: { onStart: (d: Deck) => void }) {
+export function AiPractice({ onStart }: { onStart: (d) => void }) {
   const gen = useServerFn(generateQuestions);
   const [topic, setTopic] = useState("");
   const [subject, setSubject] = useState(subjects[0] ?? "Matemática");

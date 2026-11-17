@@ -17,7 +17,7 @@ export function ChessGame() {
   const [, force] = useState(0);
   const targets = useMemo(() => sel ? game.moves({ square: sel, verbose: true }).map(m => m.to) : [], [sel, game, game.fen()]);
   const files = "abcdefgh";
-  const click = (sq: Square) => {
+  const click = (sq) => {
     if (sel && targets.includes(sq)) { game.move({ from: sel, to: sq, promotion: "q" }); setSel(null); force(x => x + 1); return; }
     const p = game.get(sq); setSel(p && p.color === game.turn() ? sq : null);
   };

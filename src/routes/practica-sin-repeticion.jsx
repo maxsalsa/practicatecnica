@@ -22,7 +22,7 @@ export const Route = createFileRoute('/practica-sin-repeticion')({
   component: UnlimitedPractice,
 });
 
-const stub = (f: GeneratedFamily): Deck => ({ id: `${generatedDeckId(f.key)}-v2-review`, title: `${f.title} · repaso diverso`, emoji: f.emoji, level: f.level, questions: [] });
+const stub = (f): Deck => ({ id: `${generatedDeckId(f.key)}-v2-review`, title: `${f.title} · repaso diverso`, emoji: f.emoji, level: f.level, questions: [] });
 const AREAS = ['Idiomas', 'Matemática', 'Español', 'Ciencias', 'Técnica'];
 
 function UnlimitedPractice() {

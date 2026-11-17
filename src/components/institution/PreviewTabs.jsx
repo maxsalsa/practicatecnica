@@ -2,7 +2,7 @@ import { Children, isValidElement, type ReactNode, type ReactElement } from 'rea
 import { Tabs, TabsContent, TabsList } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 export function PreviewTabs({ allowed, children, value, onValueChange }: { allowed: string[] | null; children: ReactNode; value: string; onValueChange: (value: string) => void }) {
-  const filter = (nodes: ReactNode): ReactNode => Children.map(nodes, child => {
+  const filter = (nodes): ReactNode => Children.map(nodes, child => {
     if (!isValidElement(child)) return child;
     const el = child as ReactElement<{ value?: string; children?: ReactNode }>;
     if (allowed && el.props.value && !allowed.includes(el.props.value)) return null;

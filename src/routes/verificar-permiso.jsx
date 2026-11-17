@@ -8,7 +8,7 @@ import { PERMISSION_KIND_LABELS, type PermissionKind } from '@/lib/institutions'
 
 export const Route = createFileRoute('/verificar-permiso')({
   staticData: { sitemap: true },
-  validateSearch: (s: Record<string, unknown>) => ({ codigo: typeof s['codigo'] === 'string' ? s['codigo'].slice(0, 80) : '' }),
+  validateSearch: (s) => ({ codigo: typeof s['codigo'] === 'string' ? s['codigo'].slice(0, 80) : '' }),
   head: () => ({
     meta: [
       { title: 'Verificar permiso institucional · pracTICAtecnica.com' },

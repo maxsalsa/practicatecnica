@@ -13,7 +13,7 @@ export function CsvEnrollment({ institution, onDone }: { institution: string; on
   const [errors, setErrors] = useState<string[]>([]);
   const [status, setStatus] = useState('');
   const [busy, setBusy] = useState(false);
-  async function read(file: File | undefined) {
+  async function read(file) {
     if (!file) return;
     if (file.size > 500_000) { setErrors(['El archivo supera 500 KB.']); return; }
     const r = parseEnrollmentCsv(await file.text());

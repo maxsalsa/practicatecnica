@@ -30,7 +30,7 @@ function useSynth() {
     return ctxRef.current;
   }, []);
   const stop = useCallback(() => { for (const o of nodes.current) { try { o.stop(); } catch { /* already stopped */ } } nodes.current = []; busyUntil.current = 0; }, []);
-  const play = useCallback((spec: PlaySpec) => {
+  const play = useCallback((spec) => {
     const ctx = ensure(); if (!ctx) return false;
     stop();
     const beat = 60 / spec.bpm; let t = ctx.currentTime + 0.05;
@@ -214,7 +214,7 @@ export function MusicLab() {
   const [save, setSave] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
   const pending = useRef<RecreationalSession | null>(null);
   const [run, setRun] = useState(0);
-  const persist = async (session: RecreationalSession) => {
+  const persist = async (session) => {
     setSave('saving');
     try { await saveRecreationalSession(user?.id, session); setSave('saved'); if (user) await qc.invalidateQueries({ queryKey: ['music-progress', user.id] }); else refresh(); }
     catch { setSave('error'); }

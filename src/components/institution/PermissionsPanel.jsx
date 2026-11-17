@@ -1,4 +1,4 @@
-﻿import { openPrivateFile } from '@/lib/open-private-file';
+import { openPrivateFile } from '@/lib/open-private-file';
 import { useState } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
@@ -16,7 +16,7 @@ import {
 
 const field = 'mt-1 w-full rounded-xl border border-border bg-background px-3 py-2';
 const day = (d: string) => new Date(`${d}T12:00:00Z`).toLocaleDateString('es-CR', { timeZone: 'America/Costa_Rica', dateStyle: 'medium' });
-const when = (d: Date | string) => new Date(d).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica', dateStyle: 'medium', timeStyle: 'short' });
+const when = (d) => new Date(d).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica', dateStyle: 'medium', timeStyle: 'short' });
 const crToday = () => new Date().toLocaleDateString('en-CA', { timeZone: 'America/Costa_Rica' });
 const statusClass: Record<PermissionStatus, string> = { pendiente: 'text-accent', aprobado: 'text-primary', rechazado: 'text-destructive', cancelado: 'text-muted-foreground' };
 const kindLabel = (k: string) => PERMISSION_KIND_LABELS[k as PermissionKind] ?? k;

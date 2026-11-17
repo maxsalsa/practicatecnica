@@ -80,10 +80,10 @@ export function RoadCircuits(){
  if(!c||!state)return null;
  const unlocked=(n:number,b:DrivingBand,v:Vehicle=vehicle)=>roadStepUnlocked(completed,v,n,b);
  const reset=(n:number,v:Vehicle,b:DrivingBand)=>{const next=roadCircuits[n];if(!next||!unlocked(n,b,v))return;setCircuit(n);setVehicle(v);setBand(b);setState(startDrive(circuitForBand(next,b),v));setSave('');sessionId.current=null;started.current=null;setElapsed(0)};
- const chooseVehicle=(v:Vehicle)=>{const step=nextRoadStep(completed,v);reset(step.index,v,step.band)};
- const chooseBand=(b:DrivingBand)=>{const n=roadCircuits.findIndex((_,i)=>unlocked(i,b)&&!completed.has(roadKey(roadCircuits[i]?.id??'',vehicle,b)));reset(n>=0?n:0,vehicle,b)};
- const persist=async(done:DriveState)=>{setBusy(true);const id=sessionId.current??crypto.randomUUID();sessionId.current=id;try{await saveRecreationalSession(user?.id,{id,subject:`vial-v2:${c.id}:${vehicle}:${band}`,questions:100,correct:roadPoints(done,c.goals.length),created_at:new Date().toISOString()});setSave(user?'Guardado en su perfil. Siguiente paso desbloqueado.':'Guardado en este navegador. Siguiente paso desbloqueado.');if(user)await cache.invalidateQueries({queryKey:['road-progress',user.id]});else refreshLocal()}catch{setSave('No se pudo guardar. Reintente.')}finally{setBusy(false)}};
- const move=(a:Maneuver)=>{if(state.done)return;const now=performance.now();if(started.current===null)started.current=now;const next=driveStep(state,c,a);if(next.done){setElapsed(Math.floor((now-started.current)/1000));void persist(next)}setState(next)};
+ const chooseVehicle=(v)=>{const step=nextRoadStep(completed,v);reset(step.index,v,step.band)};
+ const chooseBand=(b)=>{const n=roadCircuits.findIndex((_,i)=>unlocked(i,b)&&!completed.has(roadKey(roadCircuits[i]?.id??'',vehicle,b)));reset(n>=0?n:0,vehicle,b)};
+ const persist=async(done)=>{setBusy(true);const id=sessionId.current??crypto.randomUUID();sessionId.current=id;try{await saveRecreationalSession(user?.id,{id,subject:`vial-v2:${c.id}:${vehicle}:${band}`,questions:100,correct:roadPoints(done,c.goals.length),created_at:new Date().toISOString()});setSave(user?'Guardado en su perfil. Siguiente paso desbloqueado.':'Guardado en este navegador. Siguiente paso desbloqueado.');if(user)await cache.invalidateQueries({queryKey:['road-progress',user.id]});else refreshLocal()}catch{setSave('No se pudo guardar. Reintente.')}finally{setBusy(false)}};
+ const move=(a)=>{if(state.done)return;const now=performance.now();if(started.current===null)started.current=now;const next=driveStep(state,c,a);if(next.done){setElapsed(Math.floor((now-started.current)/1000));void persist(next)}setState(next)};
  const goal=c.goals[state.goal];
  const stepNumber=roadSteps.findIndex(s=>s.band===band&&s.index===circuit)+1;
  const next=nextRoadStep(completed,vehicle);const nextIsNew=state.done&&!(next.band===band&&next.index===circuit);

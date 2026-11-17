@@ -131,7 +131,7 @@ function Students() {
   const groups=useQuery({queryKey:['teacher-groups',user?.id],enabled:!!user&&!!allowed,queryFn:async()=>{const [g,m,a]=await Promise.all([supabase.from('teacher_groups').select('id,name').eq('teacher_id',user?.id??''),supabase.from('teacher_group_members').select('group_id,student_id'),supabase.from('student_exam_assignments').select('id,student_id,title,deck_id,due_date').eq('teacher_id',user?.id??'')]);if(g.error||m.error||a.error)throw new Error('No se pudo cargar grupos.');return {groups:g.data,members:m.data,assignments:a.data};}});
   const plans=useQuery({queryKey:['student-plans',user?.id],enabled:!!user&&!!allowed,queryFn:async()=>{const {data,error}=await supabase.rpc('teacher_student_plans');if(error)throw error;return Object.fromEntries((data??[]).map(r=>[r.student_id,r]));}});
   const certificates=useQuery({queryKey:['linked-certificates',selectedStudent],enabled:!!selectedStudent&&!!allowed,queryFn:()=>readCertificates({data:{studentId:selectedStudent??''}}),refetchInterval:30000,refetchOnWindowFocus:true});
-  async function changeClassroom(data:ClassroomAction){setBusy(true);try{await classroom({data});await groups.refetch();setMessage('Cambio guardado.');}catch(e){setMessage(e instanceof Error?e.message:'No se pudo guardar.');}finally{setBusy(false);}}
+  async function changeClassroom(data){setBusy(true);try{await classroom({data});await groups.refetch();setMessage('Cambio guardado.');}catch(e){setMessage(e instanceof Error?e.message:'No se pudo guardar.');}finally{setBusy(false);}}
   const filteredRoster=roster.data?.data.filter(s=>!groupId||groups.data?.members.some(m=>m.group_id===groupId&&m.student_id===s.id))??[];
   async function add(e: React.FormEvent) {
     e.preventDefault();

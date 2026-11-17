@@ -17,7 +17,7 @@ import { LibraryLogoUpload } from '@/components/institution/LibraryLogoUpload';
 import { LibraryEditorial } from '@/components/institution/LibraryEditorial';
 
 export const Route = createFileRoute("/libros")({staticData:{sitemap:true},
-  validateSearch:(s:Record<string,unknown>):{q?:string}=>typeof s['q']==='string'?{q:s['q']}:{},
+  validateSearch:(s):{q?:string}=>typeof s['q']==='string'?{q:s['q']}:{},
   head: () => ({ meta: [
     { title: "Biblioteca y manuales de usuario e ingeniería · pracTICAtecnica.com" },
     { name: "description", content: "Biblioteca de cuadernillos y resúmenes independientes con fuentes MEP, ejemplos resueltos y PDF de Desarrollo Web, Contabilidad, Contabilidad y Costos y Ciberseguridad; bloques de décimo y duodécimo." },

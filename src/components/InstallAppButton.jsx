@@ -16,7 +16,7 @@ export function InstallAppButton({ compact = false }: { compact?: boolean }) {
     const detect = () => setInstalled(mode.matches || (navigator as Navigator & { standalone?: boolean }).standalone === true);
     detect();
     mode.addEventListener('change', detect);
-    const on = (e: Event) => { e.preventDefault(); setEvt(e as BIP); };
+    const on = (e) => { e.preventDefault(); setEvt(e as BIP); };
     const done = () => { setInstalled(true); setEvt(null); };
     window.addEventListener("beforeinstallprompt", on);
     window.addEventListener("appinstalled", done);

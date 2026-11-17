@@ -8,7 +8,7 @@ import { logoExtension } from '@/lib/institutions';
 export function LogoUploader({ inst, oldPath }: { inst: string; oldPath: string | null }) {
   const qc = useQueryClient();
   const [busy, setBusy] = useState(false);
-  async function upload(file: File | undefined) {
+  async function upload(file) {
     if (!file) return;
     const check = logoExtension(file);
     if (check.error) { toast.error(check.error); return; }

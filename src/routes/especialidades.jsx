@@ -12,7 +12,7 @@ import { findSpecialties, specialtyFamily } from "@/lib/material-search";
 const DECK_BY_CODE = specialtyDeckIds;
 
 export const Route = createFileRoute("/especialidades")({staticData:{sitemap:true},
-  validateSearch: (search: Record<string, unknown>) => ({ code: typeof search['code'] === "string" ? search['code'] : undefined }),
+  validateSearch: (s) => ({ code: typeof search['code'] === "string" ? search['code'] : undefined }),
   head: () => ({
     meta: [
       { title: "Elegir materia o especialidad | pracTICAtecnica.com" },

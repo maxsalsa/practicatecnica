@@ -30,7 +30,7 @@ export function SignedDocumentsPanel({ institutionId, name, logoPath }: { instit
     } catch (e) { setError(e instanceof Error ? e.message : 'No se pudo emitir.'); }
     finally { setBusy(false); }
   }
-  async function pdf(d: Doc) {
+  async function pdf(d) {
     setError('');
     try {
       const [{ jsPDF }, qr] = await Promise.all([import('jspdf'), import('qrcode')]);

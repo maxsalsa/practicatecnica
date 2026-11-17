@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -21,7 +21,7 @@ export function IdDocumentUpload({ userId }: { userId: string }) {
   }
   useEffect(() => { void load(); }, [userId]);
 
-  async function upload(file: File) {
+  async function upload(file) {
     if (file.size > 5 * 1024 * 1024) { toast.error("El archivo debe pesar menos de 5 MB."); return; }
     setBusy(true);
     const ext = file.name.split(".").pop()?.toLowerCase() || "jpg";

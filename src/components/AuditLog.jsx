@@ -1,4 +1,4 @@
-﻿import { useQuery } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 
@@ -20,7 +20,7 @@ export function AuditLog({ institutionId }: { institutionId: string }) {
       const people = new Map<string, string>();
       ((ov.data ?? []) as R[]).forEach(u => { const id = str(u, 'user_id', 'id'); const m = str(u, 'email'); if (id && m) people.set(id, m); });
       const who = (id: string | null) => (id ? people.get(id) ?? 'Usuario registrado' : 'Sistema');
-      const at = (e: R) => str(e, 'created_at', 'changed_at') ?? '';
+      const at = (e) => str(e, 'created_at', 'changed_at') ?? '';
       const rows: Entry[] = [
         ...(p.data ?? []).map(e => ({ at: at(e), kind: 'Permisos', action: `Solicitud ${es(str(e, 'from_status', 'previous_status')) ?? 'nueva'} → ${es(str(e, 'to_status', 'status', 'action')) ?? 'actualizada'}`, actor: who(str(e, 'changed_by', 'actor_id')), subject: null })),
         ...(s.data ?? []).map(e => ({ at: at(e), kind: 'Cuentas', action: `Estado ${es(str(e, 'previous_status')) ?? 'inicial'} → ${es(str(e, 'status', 'new_status')) ?? 'actualizado'}`, actor: who(str(e, 'changed_by', 'actor_id')), subject: who(str(e, 'user_id')) })),

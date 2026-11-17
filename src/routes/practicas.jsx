@@ -62,7 +62,7 @@ function PracticeLibrary() {
   const topic = topics.find((t) => t.id === search.topic) ?? topics[0];
   const [active, setActive] = useState(false);
   const [lote, setLote] = useState<Deck | null>(null);
-  const change = (patch: Partial<typeof search>) => {
+  const change = (patch) => {
     setActive(false);
     void navigate({ search: { ...search, ...patch } });
   };

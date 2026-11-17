@@ -1,4 +1,4 @@
-﻿import { AuditLog } from '@/components/AuditLog';
+import { AuditLog } from '@/components/AuditLog';
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { useEffect, useMemo, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
@@ -44,7 +44,7 @@ import { institutionPreviewTabs } from '@/lib/institution-menu';
 import { PreviewTabs } from '@/components/institution/PreviewTabs';
 
 export const Route = createFileRoute('/institucion')({
-  validateSearch: (search: Record<string, unknown>): { vista?: string; centro?:string; seccion?:string } => ({
+  validateSearch: (search): { vista?: string; centro?:string; seccion?:string } => ({
     ...(typeof search['vista'] === 'string' && /^[a-z-]{2,30}$/.test(search['vista']) ? { vista: search['vista'] } : {}),
     ...(typeof search['centro']==='string'&&/^[0-9a-f-]{36}$/.test(search['centro'])?{centro:search['centro']}:{}),
     ...(typeof search['seccion']==='string'&&search['seccion'].length<=120?{seccion:search['seccion']}:{}),

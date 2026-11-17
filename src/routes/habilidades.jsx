@@ -25,7 +25,7 @@ export const Route = createFileRoute("/habilidades")({staticData:{sitemap:false}
 const CAT: Record<string, string> = {};
 malla.forEach((m) => m.niveles.forEach((n) => n.materias.forEach((x) => x.decks.forEach((d) => { CAT[d] ??= `${m.emoji} ${m.name}`; }))));
 const band = (p: number) => (p >= 80 ? ["Dominado", "bg-accent"] : p >= 50 ? ["En proceso", "bg-primary"] : ["Reforzamiento", "bg-destructive"]);
-const shuffle = <T,>(a: T[]) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j]!, b[i]!]; } return b; };
+const shuffle = <T,>(a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j]!, b[i]!]; } return b; };
 
 function Flash({ onExit, deck }: { onExit: () => void; deck: Deck }) {
   const pool = useMemo(() => shuffle(deck.questions).slice(0, 40), [deck]);

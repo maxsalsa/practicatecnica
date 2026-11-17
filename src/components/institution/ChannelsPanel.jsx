@@ -1,4 +1,4 @@
-﻿import { openPrivateFile } from '@/lib/open-private-file';
+import { openPrivateFile } from '@/lib/open-private-file';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
@@ -11,7 +11,7 @@ import { CHANNEL_KIND_HELP, CHANNEL_KIND_LABELS, SENDER_ROLE_LABELS, canPost, me
 import {ArrowLeft,MessageSquare,FolderOpen,Send,ShieldCheck} from 'lucide-react';
 
 
-const rowKey = (r: ChannelRow) => `${r.kind}:${r.section_id ?? ''}:${r.student_id ?? ''}`;
+const rowKey = (r) => `${r.kind}:${r.section_id ?? ''}:${r.student_id ?? ''}`;
 const time = (d: string) => new Date(d).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
 const kindIcon: Record<ChannelKind, string> = { personal: '🧑‍🏫', seccion: '🏷️', familia: '👪' };
 
@@ -70,7 +70,7 @@ function ChannelsList({ institutionId }: { institutionId: string }) {
   const [selected, setSelected] = useState<{ key: string; id: string; title: string; kind: ChannelKind } | null>(null);
   const [opening, setOpening] = useState('');
 
-  async function open(r: ChannelRow) {
+  async function open(r) {
     const key = rowKey(r);
     if (r.channel_id) { setSelected({ key, id: r.channel_id, title: r.title, kind: r.kind as ChannelKind }); return; }
     setOpening(key);

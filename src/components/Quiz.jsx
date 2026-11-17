@@ -1,4 +1,4 @@
-﻿import { useQueryClient } from "@tanstack/react-query";
+import { useQueryClient } from "@tanstack/react-query";
 import {isEnglishBank,questionAudio,englishSupport,speakQuestion} from "@/lib/english-audio";
 import { AuthorizedContent } from "./AuthorizedContent";
 import { useEffect, useState, useRef, forwardRef, type HTMLAttributes } from "react";
@@ -16,7 +16,7 @@ import { splitQuestionForm } from '@/lib/question-forms';
 
 []; optionOrder:number[] }
 
-function shuffle<T>(a: T[]) {
+function shuffle<T>(a) {
   const copy = [...a];
   for (let i = copy.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -372,6 +372,6 @@ function QuizBody({
 }
 
 export interface QuizProps extends HTMLAttributes<HTMLDivElement> {deck:Deck;onExit:()=>void;onMore?:()=>Promise<void>|void;lang?:"es"|"en"}
-export const Quiz=forwardRef<HTMLDivElement,QuizProps>(({deck,onExit,onMore,lang,className,...rest},ref)=>{const props={deck,onExit,lang:lang??'es',...(onMore?{onMore}:{})};const render=(loaded:Deck)=>loaded.questions.length<PRACTICE_SIZE&&!isBriefPractice(loaded.id)?<section className="mx-auto max-w-2xl px-5 py-8"><h2 className="text-xl font-bold">Práctica en preparación</h2><p className="mt-3 text-muted-foreground">Este banco tiene {loaded.questions.length} preguntas; la práctica requiere 20 preguntas de la misma materia.</p><Button className="mt-4" variant="outline" onClick={onExit}>Volver</Button></section>:<QuizBody {...props} deck={loaded}/>;return <div ref={ref} className={className} {...rest}>{deck.questions.length?render(deck):<AuthorizedContent id={deck.id} lang={lang??'es'}>{render}</AuthorizedContent>}</div>;});
+export const Quiz=forwardRef<HTMLDivElement,QuizProps>(({deck,onExit,onMore,lang,className,...rest},ref)=>{const props={deck,onExit,lang:lang??'es',...(onMore?{onMore}:{})};const render=(loaded)=>loaded.questions.length<PRACTICE_SIZE&&!isBriefPractice(loaded.id)?<section className="mx-auto max-w-2xl px-5 py-8"><h2 className="text-xl font-bold">Práctica en preparación</h2><p className="mt-3 text-muted-foreground">Este banco tiene {loaded.questions.length} preguntas; la práctica requiere 20 preguntas de la misma materia.</p><Button className="mt-4" variant="outline" onClick={onExit}>Volver</Button></section>:<QuizBody {...props} deck={loaded}/>;return <div ref={ref} className={className} {...rest}>{deck.questions.length?render(deck):<AuthorizedContent id={deck.id} lang={lang??'es'}>{render}</AuthorizedContent>}</div>;});
 Quiz.displayName='Quiz';
 

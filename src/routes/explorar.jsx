@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/button';
 import { PRACTICE_SIZE, EXAM_SIZE } from '@/lib/assessment-size';
 
 export const Route = createFileRoute("/explorar")({staticData:{sitemap:true},
-  validateSearch: (s: Record<string,unknown>): CurriculumSelection & {banco?:string} => ({ ...validCurriculumSearch(s), ...(typeof s['banco']==='string'&&decks.some(d=>d.id===s['banco'])?{banco:s['banco']}:{}) }),
+  validateSearch: (s): CurriculumSelection & {banco?:string} => ({ ...validCurriculumSearch(s), ...(typeof s['banco']==='string'&&decks.some(d=>d.id===s['banco'])?{banco:s['banco']}:{}) }),
   head: () => ({
     meta: [
       { title: "Explorar la malla MEP | pracTICAtecnica.com" },

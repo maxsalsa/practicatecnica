@@ -1,4 +1,4 @@
-﻿import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useAccount } from "@/components/AccountProvider";
@@ -7,7 +7,7 @@ import QRCode from "qrcode";
 import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/certificados")({staticData:{sitemap:true},
-  validateSearch: (s: Record<string, unknown>) => ({ h: typeof s["h"] === "string" ? (s["h"] as string) : undefined }) as { h?: string },
+  validateSearch: (s) => ({ h: typeof s["h"] === "string" ? (s["h"] as string) : undefined }) as { h?: string },
   head: () => ({
     meta: [
       { title: "Certificados verificables SHA-256 · pracTICAtecnica.com" },

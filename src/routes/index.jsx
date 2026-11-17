@@ -150,7 +150,7 @@ function Index() {
 
 
 const fichas = (level: string) => ({ to: "/practicas", search: { subject: "matematica", level, lang: "es", mode: "practice", variant: 0 } });
-const STAGES: { id: string; emoji: string; title: string; sub: string; match: (d: Deck) => boolean; links: { label: string; to: string; search?: object }[] }[] = [
+const STAGES: { id: string; emoji: string; title: string; sub: string; match: (d) => boolean; links: { label: string; to: string; search?: object }[] }[] = [
   { id: "primaria", emoji: "🎒", title: "Primaria", sub: "1.º a 6.º grado", match: (d) => d.id.startsWith("prim"),
     links: [{ label: "📚 Libros 1.º–5.º", to: "/libros" }, { label: "📘 6.º grado (500 versiones)", to: "/sexto" }, { label: "🗺️ Mapas 1.º–5.º", to: "/resumen-primaria" }, { label: "🗺️ Mapas 6.º", to: "/resumen-sexto" }, { label: "🎡 Ruleta", to: "/ruleta" }] },
   { id: "academica", emoji: "📚", title: "Secundaria académica", sub: "7.º a 11.º · liceos", match: (d) => ["sim7", "sim10", "historia", "espanol", "religion", "civica"].includes(d.id),

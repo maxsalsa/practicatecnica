@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const SECONDS_PER_ITEM = 60;
 const PASS = 70;
 
-function shuffle<T>(a: T[]) { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j]!, b[i]!]; } return b; }
+function shuffle<T>(a) { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j]!, b[i]!]; } return b; }
 
 export function levelItems(level: string): MC[] {
   const en = LANGS.en;
