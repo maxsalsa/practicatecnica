@@ -9,7 +9,7 @@ const KPI_METRICS = [
   { label: 'Simulacros Práctica Técnica', value: 'MEP · CTP · MOPT · U', delta: 'Motor Interactivo Activo', tone: 'text-indigo-600' },
   { label: 'Horarios y Laboratorios', value: 'Bloques + Matriz MEP', delta: 'Exportación Excel CSV', tone: 'text-indigo-600' },
   { label: 'Comedor y Asistencia', value: 'Aforo + Servicios', delta: 'Descarga CSV UTF-8', tone: 'text-emerald-600' },
-  { label: 'Permisos y Avisos', value: '100% Offline-First', delta: 'Sincronizado con Lovable', tone: 'text-emerald-600' }
+  { label: 'Permisos y Avisos', value: '100% Offline-First', delta: 'Sincronizado con practicatecnica.com', tone: 'text-emerald-600' }
 ];
 
 const NAVIGATION_TABS = [
@@ -106,8 +106,9 @@ export default function App() {
       </main>
 
       <footer className="py-6 text-center text-xs text-slate-400 border-t border-slate-200/60 bg-white">
-        practicatecnica.com © 2026 · Sincronizado desde C:\pt26xd hacia GitHub y Lovable
+        practicatecnica.com © 2026 · Sincronizado desde C:\pt26xd hacia GitHub y practicatecnica.com
       </footer>
     </div>
   );
 }
+

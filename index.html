@@ -3,12 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Práctica Técnica CR · Suite Institucional Argon</title>
-    <link rel="manifest" href="/manifest.json" />
+    <title>practicatecnica.com · Plataforma Educativa y Técnica de Costa Rica</title>
+    <meta name="description" content="Práctica Técnica CR (practicatecnica.com): Simulacros MEP, CTP, MOPT, Admisión Universitaria y Gestión Institucional Offline-First." />
+    <meta name="application-name" content="practicatecnica.com" />
+    <meta name="apple-mobile-web-app-title" content="practicatecnica.com" />
+    <meta property="og:site_name" content="practicatecnica.com" />
+    <meta property="og:title" content="practicatecnica.com · Plataforma Educativa y Técnica CR" />
+    <meta property="og:description" content="Simulacros MEP, CTP, MOPT, Admisión U y Gestión Institucional." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://practicatecnica.com" />
+    <meta property="og:image" content="/apple-touch-icon.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="practicatecnica.com" />
+    <meta name="twitter:image" content="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2026" />
+    <link rel="alternate icon" type="image/x-icon" href="/favicon.ico?v=2026" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2026" />
+    <link rel="manifest" href="/manifest.json?v=2026" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      // Escudo QA Soberano: elimina cualquier widget o insignia externa inyectada en el DOM
+      (function() {
+        const cleanExternalBadges = () => {
+          const selectors = [
+            '#lovable-badge',
+            '[id*="lovable"]',
+            '[class*="lovable"]',
+            'a[href*="lovable.dev"]',
+            'iframe[src*="lovable"]',
+            'script[src*="gpteng"]',
+            'script[src*="lovable"]'
+          ];
+          document.querySelectorAll(selectors.join(',')).forEach((el) => el.remove());
+        };
+        document.addEventListener('DOMContentLoaded', cleanExternalBadges);
+        const obs = new MutationObserver(cleanExternalBadges);
+        obs.observe(document.documentElement, { childList: true, subtree: true });
+      })();
+    </script>
   </head>
   <body class="bg-[#f8f9fe] text-[#172b4d] antialiased">
     <div id="root"></div>
