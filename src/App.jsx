@@ -12,25 +12,36 @@ import SelectorMultimedia from './components/SelectorMultimedia';
 import PanelCampanaClara from './components/PanelCampanaClara';
 import AsistenteIaGenerativo from './components/AsistenteIaGenerativo';
 import SimuladorUniversitarioMep from './components/SimuladorUniversitarioMep';
+import HubModalidadesMep, { MODALIDADES_OFICIALES_MEP } from './components/HubModalidadesMep';
 
 export default function App() {
   const [usuarioActual, setUsuarioActual] = useState({
     nombre: 'Ing. Max Salazar Sánchez',
     correo: 'maxi.salsa@gmail.com',
     rol: 'SuperAdmin',
-    seccion: 'Administración Global'
+    seccion: 'SuperAdmin Global & Docente CTP'
   });
 
-  const [seccionActiva, setSeccionActiva] = useState('simuladores');
+  // Iniciar en 'inicio' donde se ve TANTO el Hub de Modalidades MEP (CTP Diurno/Nocturno/Académico) COMO los Simulacros
+  const [seccionActiva, setSeccionActiva] = useState('inicio');
+  const [modalidadMepId, setModalidadMepId] = useState('ctp_diurno');
   const [mostrarSinpe, setMostrarSinpe] = useState(false);
   const [mostrarLogin, setMostrarLogin] = useState(false);
   const [mostrarSelector, setMostrarSelector] = useState(false);
 
   const [contextoMep, setContextoMep] = useState({
     region: 'Dirección Regional de Alajuela',
-    circuito: '04 (Incluye CTP Mercedes Norte)',
-    modalidad: 'Colegios Técnicos Profesionales (CTP)'
+    circuito: '04 (CTP Mercedes Norte & Circuito Oficial)',
+    modalidad: 'CTP Diurno / Técnico Nocturno / Académico'
   });
+
+  const cambiarRolRapido = (nuevoRol) => {
+    setUsuarioActual((prev) => ({
+      ...prev,
+      rol: nuevoRol,
+      nombre: nuevoRol === 'SuperAdmin' ? 'Ing. Max Salazar Sánchez' : `${prev.nombre.split(' (')[0]} (${nuevoRol})`
+    }));
+  };
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
@@ -46,18 +57,35 @@ export default function App() {
 
       <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:px-6 lg:px-8 space-y-6">
 
-        <div className="bg-slate-900 border border-slate-800 p-4 rounded-xl flex flex-wrap justify-between items-center gap-3 shadow-lg">
-          <div className="flex items-center gap-2 text-xs">
-            <span className="text-cyan-400 font-bold">🏛️ MEP & Admisión Universitaria:</span>
-            <span className="text-slate-300">{contextoMep.region} | Circuito {contextoMep.circuito}</span>
+        {/* Barra de Control Institucional + Selector Rápido de Modalidad y Rol SuperAdmin */}
+        <div className="bg-slate-900 border border-slate-800 p-4 rounded-2xl flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 shadow-xl">
+          <div className="space-y-1">
+            <div className="flex flex-wrap items-center gap-2 text-xs">
+              <span className="bg-emerald-950 text-emerald-300 border border-emerald-600 px-2 py-0.5 rounded font-extrabold">
+                ✓ v26.9 EN LÍNEA
+              </span>
+              <span className="text-cyan-400 font-bold">🏛️ {contextoMep.region}</span>
+              <span className="text-slate-400">| Circuito {contextoMep.circuito}</span>
+              <span className="text-amber-300 font-bold">| Modalidad: {contextoMep.modalidad}</span>
+            </div>
+            <p className="text-[11px] text-slate-400">
+              Sesión activa: <strong className="text-white">{usuarioActual.nombre}</strong> — Rol: <strong className="text-cyan-300">{usuarioActual.rol}</strong> (Todos los servicios desbloqueados)
+            </p>
           </div>
-          <div className="flex flex-wrap gap-2">
-            <button
-              onClick={() => setSeccionActiva('simuladores')}
-              className="bg-amber-600 hover:bg-amber-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs transition-all shadow"
+
+          <div className="flex flex-wrap items-center gap-2">
+            <select
+              value={usuarioActual.rol}
+              onChange={(e) => cambiarRolRapido(e.target.value)}
+              className="bg-slate-950 border border-cyan-600/60 text-cyan-300 text-xs font-bold rounded-lg px-2.5 py-1.5"
+              title="Cambiar vista de rol para pruebas QA"
             >
-              🎓 Simulacros UCR / TEC / UNA / UTN
-            </button>
+              <option value="SuperAdmin">👑 Vista: SuperAdmin (Total)</option>
+              <option value="Docente MEP">👨‍🏫 Vista: Docente MEP</option>
+              <option value="Estudiante CTP">🎓 Vista: Estudiante CTP / Académico</option>
+              <option value="Director / Coordinación">🏛️ Vista: Director / Coordinador</option>
+            </select>
+
             <button
               onClick={() => setMostrarSelector(true)}
               className="bg-cyan-700 hover:bg-cyan-600 text-white font-semibold px-3 py-1.5 rounded-lg text-xs transition-all shadow"
@@ -73,85 +101,90 @@ export default function App() {
           </div>
         </div>
 
-        {seccionActiva === 'inicio' && (
-          <div className="space-y-6">
-            <div className="bg-gradient-to-r from-cyan-950 via-slate-900 to-slate-950 p-8 rounded-2xl border border-cyan-500/30 shadow-2xl">
-              <h2 className="text-3xl font-extrabold text-white mb-2">
-                🦉 Ecosistema Soberano <span className="text-cyan-400">pracTICAtecnica.com</span>
-              </h2>
-              <p className="text-slate-300 text-sm max-w-3xl leading-relaxed">
-                Plataforma integral para el <span className="text-white font-semibold">CTP Mercedes Norte</span>, pruebas del MEP, admisión universitaria (<span className="text-cyan-300 font-bold">UCR, TEC, UNA, UTN</span>) y teoría de manejo COSEVI con ítems infinitos.
-              </p>
+        {/* Barra de Navegación Completa de los 8 Módulos del Ecosistema */}
+        <div className="flex flex-wrap gap-2 bg-slate-900/90 border border-slate-800 p-2.5 rounded-xl">
+          {[
+            { id: 'inicio', label: '🏠 Todo el Ecosistema (Vista Completa)' },
+            { id: 'modalidades', label: '🏫 CTP Diurno / Nocturno / Académico / CINDEA' },
+            { id: 'simuladores', label: '🎓 Simulacros UCR / TEC / UNA / UTN / COSEVI' },
+            { id: 'ia', label: '🤖 Asistente IA (Planeamientos y Exámenes)' },
+            { id: 'carnet', label: '🪪 Carné Digital QR' },
+            { id: 'chats', label: '💬 Chats Institucionales' },
+            { id: 'multimedia', label: '🖼️ Multimedia & Campaña Clara' },
+            { id: 'reportes', label: '📄 Reportes PDF & Push' },
+            { id: 'admin', label: '🔐 Consola SuperAdmin' }
+          ].map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setSeccionActiva(tab.id)}
+              className={`px-3.5 py-2 rounded-lg text-xs font-extrabold transition-all ${
+                seccionActiva === tab.id
+                  ? 'bg-cyan-600 text-white shadow-lg'
+                  : 'bg-slate-950 text-slate-300 hover:bg-slate-800 border border-slate-800'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
 
-              <div className="mt-6 flex flex-wrap gap-3">
-                <button
-                  onClick={() => setSeccionActiva('simuladores')}
-                  className="bg-amber-600 hover:bg-amber-500 text-white font-bold px-5 py-2.5 rounded-xl shadow transition-all text-sm"
-                >
-                  🎓 Simulacros UCR / TEC / UTN / MEP
-                </button>
-                <button
-                  onClick={() => setSeccionActiva('ia')}
-                  className="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-5 py-2.5 rounded-xl shadow transition-all text-sm"
-                >
-                  🤖 Asistente IA Generativo
-                </button>
-                <button
-                  onClick={() => setSeccionActiva('carnet')}
-                  className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
-                >
-                  🪪 Carné Digital QR
-                </button>
-                <button
-                  onClick={() => setSeccionActiva('chats')}
-                  className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
-                >
-                  💬 Canales y Chats
-                </button>
-                <button
-                  onClick={() => setSeccionActiva('multimedia')}
-                  className="bg-slate-800 hover:bg-slate-700 text-cyan-300 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
-                >
-                  🖼️ Multimedia
-                </button>
-                <button
-                  onClick={() => setSeccionActiva('reportes')}
-                  className="bg-slate-800 hover:bg-slate-700 text-cyan-300 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
-                >
-                  📄 Informes PDF & Push
-                </button>
-                <button
-                  onClick={() => setSeccionActiva('admin')}
-                  className="bg-slate-800 hover:bg-slate-700 text-cyan-300 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
-                >
-                  🔐 Panel SuperAdmin
-                </button>
+        {/* VISTA INICIO: Muestra todo el poder (Hub de Modalidades MEP + Simulacros + IA + SuperAdmin) */}
+        {seccionActiva === 'inicio' && (
+          <div className="space-y-8">
+            <HubModalidadesMep
+              modalidadActiva={modalidadMepId}
+              onSeleccionarModalidad={(mod) => {
+                setModalidadMepId(mod.id);
+                setContextoMep((prev) => ({ ...prev, modalidad: mod.nombre }));
+              }}
+              onIrASimuladores={() => setSeccionActiva('simuladores')}
+            />
+
+            <SimuladorUniversitarioMep usuarioActual={usuarioActual} />
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <AsistenteIaGenerativo />
+              <div className="space-y-6">
+                <ReportePdfMep />
+                <GestorPushPwa />
               </div>
             </div>
 
-            <SimuladorUniversitarioMep />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <SelectorMultimedia />
+              <PanelCampanaClara />
+            </div>
           </div>
+        )}
+
+        {seccionActiva === 'modalidades' && (
+          <HubModalidadesMep
+            modalidadActiva={modalidadMepId}
+            onSeleccionarModalidad={(mod) => {
+              setModalidadMepId(mod.id);
+              setContextoMep((prev) => ({ ...prev, modalidad: mod.nombre }));
+            }}
+            onIrASimuladores={() => setSeccionActiva('simuladores')}
+          />
         )}
 
         {seccionActiva === 'simuladores' && (
-          <SimuladorUniversitarioMep />
+          <SimuladorUniversitarioMep usuarioActual={usuarioActual} />
         )}
 
         {seccionActiva === 'ia' && (
-          <div className="py-4">
-            <AsistenteIaGenerativo />
-          </div>
+          <AsistenteIaGenerativo />
         )}
 
         {seccionActiva === 'multimedia' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <SelectorMultimedia />
             <PanelCampanaClara />
           </div>
         )}
 
         {seccionActiva === 'reportes' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ReportePdfMep />
             <GestorPushPwa />
           </div>
@@ -162,9 +195,7 @@ export default function App() {
         )}
 
         {seccionActiva === 'carnet' && (
-          <div className="py-4">
-            <CarnetEstudiantilQr />
-          </div>
+          <CarnetEstudiantilQr />
         )}
 
         {seccionActiva === 'admin' && (

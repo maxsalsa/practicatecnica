@@ -1,47 +1,38 @@
-<!doctype html>
-<html lang="es" class="dark">
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=01.14.09" />
-    <meta name="theme-color" content="#0284C7" />
-    <meta name="application-name" content="PrÃ¡ctica TÃ©cnica .com" />
-    <meta name="apple-mobile-web-app-title" content="PrÃ¡ctica TÃ©cnica" />
-    <meta name="description" content="PrÃ¡ctica TÃ©cnica .com â€” Plataforma Educativa y TÃ©cnica Oficial GICM: Asignaturas MEP, Especialidades CTP, Universidades y Licencias MOPT." />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>PrÃ¡ctica TÃ©cnica .com [v26xd.01.14.09] â€” Ecosistema GICM</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>pracTICAtecnica.com | Ecosistema Educativo MEP, CTP, Académicos & Universidades</title>
     <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              background: "#090d16",
-              foreground: "#f8fafc",
-              card: "#111827",
-              border: "#1e293b",
-              muted: "#1e293b",
-              "muted-foreground": "#94a3b8",
-              primary: "#0284c7",
-              "primary-foreground": "#ffffff"
-            }
+      // Purga automática de Service Workers y Caches antiguos que muestran la versión vieja
+      (function () {
+        const VERSION_ACTUAL = 'v26.9.0-BDS-QA-TOTAL';
+        const verGuardada = localStorage.getItem('pt_pwa_version');
+        if (verGuardada !== VERSION_ACTUAL) {
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function (regs) {
+              for (let reg of regs) {
+                reg.unregister();
+              }
+            });
           }
+          if ('caches' in window) {
+            caches.keys().then(function (names) {
+              for (let name of names) {
+                caches.delete(name);
+              }
+            });
+          }
+          localStorage.setItem('pt_pwa_version', VERSION_ACTUAL);
         }
-      }
+      })();
     </script>
-    <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(function(registrations) {
-        for (let registration of registrations) {
-          registration.update();
-        }
-      });
-    }
-  </script>
-</head>
-  <body class="bg-background text-foreground antialiased selection:bg-sky-600 selection:text-white">
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
