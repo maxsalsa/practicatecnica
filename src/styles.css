@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Tailwind v4 entry: config lives here, with no tailwind.config.js or PostCSS plugin.
  * - Keep every @import in this top block, above @theme and the rest of the file. Install an
  *   npm package before @importing its CSS. Never @import a remote URL (web fonts, CDN CSS): the
@@ -193,6 +193,21 @@
  --gradient-hero: none; --google-bg: oklch(1 0 0); --google-fg: oklch(0.24 0 0); --google-border: oklch(0.56 0 0);
 }
 html { color-scheme: dark; } html.light { color-scheme: light; }
+
+/* Soberania de Marca Blanca practicatecnica.com - Cero insignias externas */
+#practicatecnica.com-badge,
+[id*="practicatecnica.com"],
+[class*="practicatecnica.com"],
+a[href*="practicatecnica.com.dev"],
+iframe[src*="practicatecnica.com"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
 
 /* Soberania de Marca Blanca practicatecnica.com - Cero insignias externas */
 #lovable-badge,

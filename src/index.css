@@ -49,6 +49,21 @@ body {
 }
 
 /* Soberania de Marca Blanca practicatecnica.com - Cero insignias externas */
+#practicatecnica.com-badge,
+[id*="practicatecnica.com"],
+[class*="practicatecnica.com"],
+a[href*="practicatecnica.com.dev"],
+iframe[src*="practicatecnica.com"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+
+/* Soberania de Marca Blanca practicatecnica.com - Cero insignias externas */
 #lovable-badge,
 [id*="lovable"],
 [class*="lovable"],
