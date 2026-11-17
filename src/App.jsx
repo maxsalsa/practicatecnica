@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import ExamSimulatorHub from './components/simulator/ExamSimulatorHub.jsx';
 import AnnouncementsBroadcastPanel from './components/institution/AnnouncementsBroadcastPanel.jsx';
 import { SchedulesModule, CafeteriaModule, PermissionsModule } from './components/institution/InstitutionOperationsSuite.jsx';
+import GicmGoogleAuth from './components/auth/GicmGoogleAuth.jsx';
 
 const KPI_METRICS = [
   { label: 'Simulacros Práctica Técnica', value: 'MEP · CTP · MOPT · U', delta: 'Motor Interactivo Activo', tone: 'text-indigo-600' },
   { label: 'Horarios y Laboratorios', value: 'Bloques 40/80m', delta: 'Exportación Excel CSV', tone: 'text-indigo-600' },
   { label: 'Comedor y Asistencia', value: 'Aforo + Reportes', delta: 'Descarga CSV UTF-8', tone: 'text-emerald-600' },
-  { label: 'Identidad Soberana', value: 'practicatecnica.com', delta: '100% Marca Propia Activa', tone: 'text-emerald-600' }
+  { label: 'Google Auth Soberano', value: 'GICM · Activo', delta: 'Client ID Propio 669679...', tone: 'text-emerald-600' }
 ];
 
 const NAVIGATION_TABS = [
@@ -36,29 +37,33 @@ export default function App() {
                     practicatecnica.com
                   </h1>
                   <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-400/20 text-emerald-100 border border-emerald-300/30">
-                    Calidad Total Kaizen
+                    GICM · Marca Propia
                   </span>
                 </div>
                 <p className="text-xs text-indigo-100 mt-0.5">
-                  Plataforma Oficial de Simulacros MEP · CTP · MOPT · Admisión U y Gestión Institucional
+                  Simulacros MEP · CTP · MOPT · Admisión U + Gestión Institucional con Reportes Excel
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-1.5 bg-white/15 p-1.5 rounded-xl backdrop-blur">
-              {NAVIGATION_TABS.map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={'px-3 py-2 rounded-lg text-xs font-bold transition cursor-pointer ' + (
-                    activeTab === tab.id
-                      ? 'bg-white text-indigo-700 shadow-sm'
-                      : 'text-white hover:bg-white/10'
-                  )}
-                >
-                  {tab.label}
-                </button>
-              ))}
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="flex flex-wrap items-center gap-1.5 bg-white/15 p-1.5 rounded-xl backdrop-blur">
+                {NAVIGATION_TABS.map((tab) => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id)}
+                    className={'px-3 py-2 rounded-lg text-xs font-bold transition cursor-pointer ' + (
+                      activeTab === tab.id
+                        ? 'bg-white text-indigo-700 shadow-sm'
+                        : 'text-white hover:bg-white/10'
+                    )}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+
+              <GicmGoogleAuth />
             </div>
           </div>
 
@@ -89,7 +94,7 @@ export default function App() {
       </main>
 
       <footer className="py-6 text-center text-xs text-slate-400 border-t border-slate-200/60 bg-white">
-        practicatecnica.com © 2026 · Soberanía Tecnológica y Marca Propia · BDS Devs
+        practicatecnica.com © 2026 · GICM & BDS Devs · Autenticación OAuth Soberana
       </footer>
     </div>
   );

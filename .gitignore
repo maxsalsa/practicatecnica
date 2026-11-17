@@ -5,6 +5,8 @@ dist-ssr/
 .env.*
 .env*
 !.env.example
+client_secret*.json
+*secret*.json
 .DS_Store
 Thumbs.db
 *.log
