@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 const STORAGE_KEY = 'practica_tecnica_chats_offline';
 
-export default function ChatInstitucional({ usuarioActual, destinatarioInicial }) {
-  const [canales, setCanales] = useState([
+export default function ChatInstitucional({ usuarioActual }) {
+  const [canales] = useState([
     { id: 'guia', nombre: 'Profesor(a) Guía (Sección 11-1)', tipo: 'docente' },
     { id: 'orientacion', nombre: 'Departamento de Orientación', tipo: 'orientacion' },
     { id: 'direccion', nombre: 'Dirección / Auxiliares CTP', tipo: 'directiva' },
@@ -22,7 +22,7 @@ export default function ChatInstitucional({ usuarioActual, destinatarioInicial }
     window.addEventListener('online', handleOnline);
     window.addEventListener('offline', handleOffline);
 
-    const guardados = localStorage.getItem(\_\);
+    const guardados = localStorage.getItem(`${STORAGE_KEY}_${canalActivo.id}`);
     if (guardados) {
       try {
         setMensajes(JSON.parse(guardados));
@@ -31,7 +31,7 @@ export default function ChatInstitucional({ usuarioActual, destinatarioInicial }
       }
     } else {
       setMensajes([
-        { id: 1, remitente: 'Sistema Institucional', texto: Bienvenido al canal oficial de \. Comunicación segura MEP., hora: '08:00 AM', leido: true }
+        { id: 1, remitente: 'Sistema Institucional', texto: `Bienvenido al canal oficial de ${canalActivo.nombre}. Comunicación segura MEP.`, hora: '08:00 AM', leido: true }
       ]);
     }
 
@@ -57,7 +57,7 @@ export default function ChatInstitucional({ usuarioActual, destinatarioInicial }
     setMensajes(nuevosMensajes);
     setNuevoTexto('');
 
-    localStorage.setItem(\_\, JSON.stringify(nuevosMensajes));
+    localStorage.setItem(`${STORAGE_KEY}_${canalActivo.id}`, JSON.stringify(nuevosMensajes));
   };
 
   return (
@@ -65,8 +65,8 @@ export default function ChatInstitucional({ usuarioActual, destinatarioInicial }
       <div className="w-1/3 bg-slate-950 border-r border-slate-800 flex flex-col">
         <div className="p-4 bg-slate-900 border-b border-slate-800 flex justify-between items-center">
           <h3 className="font-bold text-cyan-400 flex items-center gap-2">💬 Canales Oficiales</h3>
-          <span className={	ext-xs px-2 py-0.5 rounded-full \}>
-            {\}
+          <span className={`text-xs px-2 py-0.5 rounded-full ${isOnline ? 'bg-green-900 text-green-300' : 'bg-amber-900 text-amber-300'}`}>
+            {isOnline ? '🟢 En Línea' : '⚡ Modo Offline'}
           </span>
         </div>
         <div className="overflow-y-auto flex-1 p-2 space-y-1">
@@ -74,7 +74,9 @@ export default function ChatInstitucional({ usuarioActual, destinatarioInicial }
             <button
               key={canal.id}
               onClick={() => setCanalActivo(canal)}
-              className={w-full text-left p-3 rounded-lg transition-all flex items-center justify-between \}
+              className={`w-full text-left p-3 rounded-lg transition-all flex items-center justify-between ${
+                canalActivo.id === canal.id ? 'bg-cyan-600 text-white font-semibold shadow-md' : 'hover:bg-slate-800 text-slate-300'
+              }`}
             >
               <div>
                 <p className="text-sm">{canal.nombre}</p>
@@ -95,7 +97,7 @@ export default function ChatInstitucional({ usuarioActual, destinatarioInicial }
           {mensajes.map((msg) => {
             const esMio = msg.remitente === (usuarioActual?.nombre || 'Estudiante / Usuario');
             return (
-              <div key={msg.id} className={max-w-[75%] p-3 rounded-xl shadow \}>
+              <div key={msg.id} className={`max-w-[75%] p-3 rounded-xl shadow ${esMio ? 'ml-auto bg-cyan-700 text-white rounded-br-none' : 'mr-auto bg-slate-800 text-slate-200 rounded-bl-none border border-slate-700'}`}>
                 <div className="text-xs font-semibold text-cyan-200 mb-1">{msg.remitente}</div>
                 <p className="text-sm leading-relaxed">{msg.texto}</p>
                 <div className="text-[10px] text-right mt-1 opacity-70 flex items-center justify-end gap-1">

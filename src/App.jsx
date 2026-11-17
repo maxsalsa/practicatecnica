@@ -1,177 +1,111 @@
-import React, { useState, useEffect } from "react"
-import PracticeArena9M from "./components/institution/PracticeArena9M"
-import AnalyticsDashboard from "./components/institution/AnalyticsDashboard"
-import AnnouncementsBroadcastPanel from "./components/institution/AnnouncementsBroadcastPanel"
-import StudentWalletView from "./components/institution/StudentWalletView"
-import SchoolServicesPanel from "./components/institution/SchoolServicesPanel"
-import DrivingAcademyView from "./components/institution/DrivingAcademyView"
-import CertifiedCertificatesView from "./components/institution/CertifiedCertificatesView"
-import QAReportDashboard from "./components/institution/QAReportDashboard"
-import EducationalGames from "./components/games/EducationalGames"
-import AutoPlan from "./components/plan/AutoPlan"
-import AiOfflineEngine from "./components/ai/AiOfflineEngine"
-import LumiAvatar from "./components/lumi/LumiAvatar"
-import InstallAppButton from "./components/InstallAppButton"
-import GoogleGmailAuth from "./components/auth/GoogleGmailAuth"
-import SuperAdminAndPlansView from "./components/admin/SuperAdminAndPlansView"
-import {
-  esSuperAdmin,
-  obtenerPlanUsuario,
-  tienePermisoModulo
-} from "./data/planesRbac"
-import {
-  Brain,
-  BarChart3,
-  Bell,
-  Wallet,
-  Utensils,
-  Car,
-  Award,
-  Puzzle,
-  FileText,
-  Cpu,
-  ShieldCheck,
-  Crown,
-  Lock
-} from "lucide-react"
+import React, { useState } from 'react';
+import NavbarInstitucional from './components/NavbarInstitucional';
+import ChatInstitucional from './components/ChatInstitucional';
+import CarnetEstudiantilQr from './components/CarnetEstudiantilQr';
+import PanelSuperAdmin from './components/PanelSuperAdmin';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState("arena9m")
-  const [earnedBadges, setEarnedBadges] = useState([])
-  const [user, setUser] = useState(() => {
-    try {
-      const saved = localStorage.getItem("pt_real_gmail_user")
-      return saved ? JSON.parse(saved) : null
-    } catch (e) {
-      return null
-    }
-  })
-
-  const planActual = obtenerPlanUsuario(user)
-  const soySuperAdmin = esSuperAdmin(user)
-
-  const allNavItems = [
-    { id: "superadmin_panel", label: "Planes & SuperAdmin", icon: Crown, alwaysVisible: true },
-    { id: "arena9m", label: "Aprender / Repasar / Simular", icon: Brain },
-    { id: "plans", label: "Planeamientos, Cotidianos y Exámenes", icon: FileText },
-    { id: "driving", label: "Licencias MOPT (A/B/C)", icon: Car },
-    { id: "games", label: "Clue & Rummy Lógico", icon: Puzzle },
-    { id: "certs", label: "Certificados & Insignias QR", icon: Award },
-    { id: "aioffline", label: "Tutor IA Sin Conexión", icon: Cpu },
-    { id: "wallet", label: "CoopePago & Billetera", icon: Wallet },
-    { id: "services", label: "Comedor & Horarios", icon: Utensils },
-    { id: "announcements", label: "Comunicados Oficiales", icon: Bell },
-    { id: "dashboard", label: "Analíticas Institucionales", icon: BarChart3 },
-    { id: "qa", label: "Auditoría QA & PWA", icon: ShieldCheck }
-  ]
-
-  useEffect(() => {
-    if (activeTab !== "superadmin_panel" && !tienePermisoModulo(user, activeTab)) {
-      setActiveTab("superadmin_panel")
-    }
-  }, [user, activeTab])
+  const [seccionActiva, setSeccionActiva] = useState('inicio');
+  const [usuarioActual] = useState({
+    nombre: 'Ing. Max Salazar Sánchez',
+    cedula: '2-0589-0412',
+    rol: 'SuperAdmin',
+    seccion: 'Administración Global'
+  });
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
-      <header className="border-b bg-card px-4 md:px-6 py-3 flex flex-wrap items-center justify-between gap-3 shadow-sm">
-        <div className="flex items-center gap-3">
-          <img
-            src="/lumi-owl.svg"
-            alt="Búho Azul Práctica Técnica"
-            className="w-11 h-11 object-contain drop-shadow select-none"
-            style={{ background: "transparent" }}
-          />
-          <div>
-            <div className="flex items-center gap-2">
-              <h1 className="text-base md:text-lg font-extrabold tracking-tight">
-                Práctica Técnica .com [vv26.1.1d.01.14.09]
-              </h1>
-              <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-extrabold border ${planActual.badge}`}>
-                {soySuperAdmin ? "SUPERADMIN TOTAL" : planActual.nombre}
-              </span>
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
+      
+      {/* Barra de Navegación Responsiva */}
+      <NavbarInstitucional 
+        usuarioActual={usuarioActual} 
+        onCambiarSeccion={(id) => setSeccionActiva(id)} 
+      />
+
+      {/* Contenido Principal Dinámico */}
+      <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8 space-y-6">
+        
+        {seccionActiva === 'inicio' && (
+          <div className="space-y-6">
+            <div className="bg-gradient-to-r from-cyan-950 via-slate-900 to-slate-950 p-8 rounded-2xl border border-cyan-500/30 shadow-2xl">
+              <h2 className="text-3xl font-extrabold text-white mb-2">
+                🦉 Bienvenid@ al Ecosistema <span className="text-cyan-400">Práctica Técnica</span>
+              </h2>
+              <p className="text-slate-300 text-sm max-w-3xl leading-relaxed">
+                Plataforma oficial de gestión institucional, académica y técnica inspirada en el <span className="text-white font-semibold">CTP Mercedes Norte</span>. Operando bajo arquitectura Offline-First, seguridad cifrada SHA-256 y cumplimiento estricto del REAC 2026 y Ley 8968.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <button 
+                  onClick={() => setSeccionActiva('carnet')}
+                  className="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-5 py-2.5 rounded-xl shadow transition-all text-sm"
+                >
+                  🪪 Ver Mi Carné Digital QR
+                </button>
+                <button 
+                  onClick={() => setSeccionActiva('chats')}
+                  className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
+                >
+                  💬 Abrir Canales y Chats
+                </button>
+                <button 
+                  onClick={() => setSeccionActiva('admin')}
+                  className="bg-slate-800 hover:bg-slate-700 text-cyan-300 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
+                >
+                  🔐 Panel SuperAdmin
+                </button>
+              </div>
             </div>
-            <p className="text-xs text-muted-foreground">
-              Asignaturas MEP • Especialidades CTP • Universidades • MOPT
-            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-xl">
+                <div className="text-3xl mb-3">💻</div>
+                <h3 className="font-bold text-lg text-white mb-1">Simuladores Técnicos</h3>
+                <p className="text-xs text-slate-400">Pruebas interactivas para Excel, Word y Redes CCNA alineadas con las especialidades del CTP.</p>
+              </div>
+              <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-xl">
+                <div className="text-3xl mb-3">🛡️</div>
+                <h3 className="font-bold text-lg text-white mb-1">Seguridad y RBAC</h3>
+                <p className="text-xs text-slate-400">Control estricto de roles con auditoría SHA-256 y protección de datos bajo la Ley 8968.</p>
+              </div>
+              <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-xl">
+                <div className="text-3xl mb-3">⚡</div>
+                <h3 className="font-bold text-lg text-white mb-1">Modo Offline-First</h3>
+                <p className="text-xs text-slate-400">Sincronización local en IndexedDB para garantizar operación continua sin conexión a internet.</p>
+              </div>
+            </div>
           </div>
-        </div>
+        )}
 
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => setActiveTab("superadmin_panel")}
-            className="px-3 py-1.5 bg-amber-500/15 hover:bg-amber-500/25 text-amber-400 border border-amber-500/30 rounded-xl text-xs font-extrabold flex items-center gap-1.5 cursor-pointer"
-          >
-            <Crown className="w-3.5 h-3.5" />
-            <span>{soySuperAdmin ? "Consola SuperAdmin" : "Cambiar / Comprar Plan"}</span>
-          </button>
-          <GoogleGmailAuth user={user} onAuthChange={setUser} />
-        </div>
-      </header>
-
-      <div className="flex flex-1 overflow-hidden flex-col md:flex-row">
-        <aside className="w-full md:w-68 border-b md:border-b-0 md:border-r bg-card p-3 flex md:flex-col gap-1.5 overflow-x-auto md:overflow-y-auto shrink-0">
-          {allNavItems.map((item) => {
-            const Icon = item.icon
-            const permitido = item.alwaysVisible || tienePermisoModulo(user, item.id)
-            const active = activeTab === item.id
-
-            return (
-              <button
-                key={item.id}
-                onClick={() => setActiveTab(item.id)}
-                className={`flex items-center justify-between gap-2 px-3 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
-                  active
-                    ? "bg-sky-600 text-white shadow"
-                    : permitido
-                    ? "hover:bg-muted text-foreground"
-                    : "opacity-55 hover:bg-muted/50 text-muted-foreground"
-                }`}
-              >
-                <div className="flex items-center gap-2.5">
-                  <Icon className="w-4 h-4 shrink-0" />
-                  <span>{item.label}</span>
-                </div>
-                {!permitido && <Lock className="w-3.5 h-3.5 text-amber-400 shrink-0" />}
-              </button>
-            )
-          })}
-        </aside>
-
-        <main className="flex-1 p-4 md:p-6 overflow-y-auto bg-background space-y-6">
-          <div className="max-w-6xl mx-auto space-y-6">
-            <LumiAvatar state="sabio" />
-
-            {activeTab === "superadmin_panel" && (
-              <SuperAdminAndPlansView user={user} onUpdateUser={setUser} />
-            )}
-
-            {activeTab !== "superadmin_panel" && !tienePermisoModulo(user, activeTab) ? (
-              <SuperAdminAndPlansView user={user} onUpdateUser={setUser} />
-            ) : (
-              <>
-                {activeTab === "arena9m" && (
-                  <PracticeArena9M
-                    user={user}
-                    onEarnBadge={(b) => setEarnedBadges((prev) => [b, ...prev])}
-                  />
-                )}
-                {activeTab === "plans" && <AutoPlan user={user} />}
-                {activeTab === "driving" && <DrivingAcademyView />}
-                {activeTab === "games" && <EducationalGames />}
-                {activeTab === "certs" && <CertifiedCertificatesView badges={earnedBadges} />}
-                {activeTab === "aioffline" && <AiOfflineEngine />}
-                {activeTab === "wallet" && <StudentWalletView />}
-                {activeTab === "services" && <SchoolServicesPanel />}
-                {activeTab === "announcements" && <AnnouncementsBroadcastPanel sectionId="General" />}
-                {activeTab === "dashboard" && <AnalyticsDashboard />}
-                {activeTab === "qa" && <QAReportDashboard />}
-              </>
-            )}
+        {seccionActiva === 'simuladores' && (
+          <div className="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-2xl text-center py-12 space-y-4">
+            <span className="text-5xl">💻</span>
+            <h3 className="text-2xl font-bold text-white">Módulo de Simuladores Técnicos</h3>
+            <p className="text-slate-400 text-sm max-w-md mx-auto">Excel, Word y Cisco IOS listos para evaluar las competencias técnicas de los estudiantes.</p>
           </div>
-        </main>
-      </div>
+        )}
 
-      <InstallAppButton />
+        {seccionActiva === 'chats' && (
+          <ChatInstitucional usuarioActual={usuarioActual} />
+        )}
+
+        {seccionActiva === 'carnet' && (
+          <div className="py-4">
+            <CarnetEstudiantilQr />
+          </div>
+        )}
+
+        {seccionActiva === 'admin' && (
+          <PanelSuperAdmin superAdminNombre={usuarioActual.nombre} />
+        )}
+
+      </main>
+
+      {/* Pie de página institucional */}
+      <footer className="bg-slate-950 border-t border-slate-800 py-6 text-center text-xs text-slate-500 space-y-1">
+        <p>© 2026 Práctica Técnica — Desarrollado por GICM & BDS Devs S.A.</p>
+        <p>Institución Modelo: CTP Mercedes Norte, Alajuela, Costa Rica. Todos los derechos reservados.</p>
+      </footer>
+
     </div>
-  )
+  );
 }

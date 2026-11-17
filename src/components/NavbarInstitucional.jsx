@@ -21,7 +21,7 @@ export default function NavbarInstitucional({ usuarioActual, onCambiarSeccion })
     { id: 'inicio', label: 'Inicio', icono: '🏠' },
     { id: 'simuladores', label: 'Simuladores (Excel/Word/CCNA)', icono: '💻' },
     { id: 'chats', label: 'Canales y Chats', icono: '💬' },
-    { id: 'carnet', label: 'Carné Digital QR', icon: '🪪' },
+    { id: 'carnet', label: 'Carné Digital QR', icono: '🪪' },
     { id: 'admin', label: 'Panel SuperAdmin', icono: '🔐' }
   ];
 
@@ -29,8 +29,6 @@ export default function NavbarInstitucional({ usuarioActual, onCambiarSeccion })
     <header className="bg-slate-950 border-b border-slate-800 text-slate-100 sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          
-          {/* Logo y Marca */}
           <div className="flex items-center gap-3">
             <span className="text-2xl">🦉</span>
             <div>
@@ -39,7 +37,6 @@ export default function NavbarInstitucional({ usuarioActual, onCambiarSeccion })
             </div>
           </div>
 
-          {/* Navegación para Escritorio */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-2">
             {opcionesNavegacion.map((op) => (
               <button
@@ -53,9 +50,8 @@ export default function NavbarInstitucional({ usuarioActual, onCambiarSeccion })
             ))}
           </nav>
 
-          {/* Indicador de Estado y Usuario */}
           <div className="hidden md:flex items-center gap-3">
-            <span className={	ext-xs px-2.5 py-1 rounded-full font-medium }>
+            <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${isOnline ? 'bg-green-950 text-green-300 border border-green-800' : 'bg-amber-950 text-amber-300 border border-amber-800'}`}>
               {isOnline ? '🟢 En Línea' : '⚡ Offline'}
             </span>
             <div className="text-right">
@@ -64,9 +60,8 @@ export default function NavbarInstitucional({ usuarioActual, onCambiarSeccion })
             </div>
           </div>
 
-          {/* Botón de Menú Móvil (Hamburguesa) */}
           <div className="flex md:hidden items-center gap-2">
-            <span className={	ext-[10px] px-2 py-0.5 rounded-full }>
+            <span className={`text-[10px] px-2 py-0.5 rounded-full ${isOnline ? 'bg-green-950 text-green-300' : 'bg-amber-950 text-amber-300'}`}>
               {isOnline ? '🟢' : '⚡'}
             </span>
             <button
@@ -83,11 +78,9 @@ export default function NavbarInstitucional({ usuarioActual, onCambiarSeccion })
               </svg>
             </button>
           </div>
-
         </div>
       </div>
 
-      {/* Menú Desplegable para Móviles y Tablets */}
       {menuAbierto && (
         <div className="md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2 animate-fadeIn">
           <div className="pb-2 mb-2 border-b border-slate-800 flex items-center justify-between">
