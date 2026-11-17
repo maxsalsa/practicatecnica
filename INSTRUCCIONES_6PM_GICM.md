@@ -1,0 +1,9 @@
+# INSTRUCCION UNICA 6:00 PM — SOBERANIA TOTAL GICM (COPIAR Y PEGAR EN 1 SOLO MENSAJE)
+
+Sincroniza la rama `main` actual sin alterar la estructura compilada y respeta estrictamente estas 5 reglas obligatorias en un único paso:
+
+1. **CERO CORAZONES Y CERO MARCA EXTERNA:** Elimina y prohíbe cualquier ícono de corazón, badge flotante, watermark, script externo o mención a plataformas de terceros en `index.html`, `manifest.json` y toda la interfaz. La única marca visible es **Práctica Técnica .com — GICM & BDS Devs (Ing. Max Salazar Sánchez)**.
+2. **ICONO PWA Y FAVICON DEL BÚHO AZUL SIN FONDO BLANCO (SIN NOMBRE "LUMI"):** Conserva `/favicon.svg` y `/lumi-owl.svg` (el búho azul vectorial con fondo 100% transparente `fill="none"` y `background_color: "#00000000"`) como único icono en la pestaña del navegador, cabecera e instalador PWA de 1 clic. El búho no tiene nombre "Lumi"; representa la identidad visual de **Práctica Técnica .com — GICM**.
+3. **AUTENTICACIÓN GOOGLE Y GMAIL REAL GICM:** Mantén únicamente los botones **"Inicia con Google"** y **"Crear usuario Gmail"** (`@gmail.com` / `@est.mep.go.cr` / `@mep.go.cr`) bajo identidad **GICM**.
+4. **SUPERADMIN Y ACCESO POR PLANES (RBAC):** Únicamente `maxi.salsa@gmail.com` (Ing. Max Salazar Sánchez) posee acceso total SuperAdmin y delegación de roles. Los demás usuarios acceden estrictamente según su plan activo (Plan Institución Anual, Plan Docente Particular, Plan Estudiante de Centro Educativo o Plan Estudiante Particular).
+5. **PUREZA JSX Y CERO WARNINGS:** Mantén el 100% del código en `.js` y `.jsx` (cero TypeScript `.ts`/`.tsx`) con compilación limpia en 0 errores y 0 warnings.
