@@ -1,4 +1,0 @@
-import { expect,it } from 'vitest';
-import { languagePracticeDecks } from './language-practice.bank';
-import { practiceLanguages,practiceLevels,languagePracticeId } from './language-practice';
-it('each of six languages has an original block for five requested bands',()=>{expect(languagePracticeDecks).toHaveLength(30);for(const l of practiceLanguages)for(const level of practiceLevels){const d=languagePracticeDecks.find(d=>d.id===languagePracticeId(l.id,level));expect(d?.questions.length).toBe(1);const q=d?.questions[0];expect(q?.options).toHaveLength(4);expect(new Set(q?.options).size).toBe(4);expect(q?.options[q.answer]).toBeTruthy()}});

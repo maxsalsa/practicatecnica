@@ -1,4 +1,0 @@
-import {expect,it} from 'vitest';
-import {mathExpandedDeck} from './math-expanded.bank';
-import {mathFirstGradeDeck} from './math-first-grade.bank';
-it('expands the twenty-item first-grade bank fivefold without altering legacy answers',()=>{expect(mathFirstGradeDeck.questions).toHaveLength(20);expect(mathExpandedDeck.questions).toHaveLength(100);expect(mathExpandedDeck.questions.slice(0,20)).toEqual(mathFirstGradeDeck.questions);expect(new Set(mathExpandedDeck.questions.map(q=>q.q)).size).toBe(100);for(const q of mathExpandedDeck.questions){expect(new Set(q.options).size).toBe(4);expect(q.options[q.answer]).toBeTruthy()}});

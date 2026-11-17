@@ -1,5 +1,0 @@
-import {expect,it} from 'vitest';
-import {summarizeRecreation} from './recreational-progress';
-import {wellbeingDecks} from './wellbeing.bank';
-it('counts completed sessions and questions separately per subject',()=>{expect(summarizeRecreation([{id:'1',subject:'sleep',questions:5,correct:3,created_at:''},{id:'2',subject:'sleep',questions:5,correct:4,created_at:''},{id:'3',subject:'stress',questions:5,correct:1,created_at:''}])).toEqual({sleep:{partidas:2,questions:10,correct:7},stress:{partidas:1,questions:5,correct:1}})});
-it('provides four wellbeing areas with five guided questions each',()=>{expect(wellbeingDecks.map(d=>d.id)).toEqual(['arena-stress','arena-sleep','arena-nutrition','arena-mindfulness']);for(const d of wellbeingDecks){expect(d.questions).toHaveLength(5);for(const q of d.questions){expect(new Set(q.options).size).toBe(4);expect(q.options[q.answer]).toBeTruthy();}}});

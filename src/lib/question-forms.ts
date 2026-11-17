@@ -1,4 +1,0 @@
-export const QUESTION_FORM_COUNT = 15;
-export function splitQuestionForm(id:string){const match=/^(.*)~f(0[1-9]|1[0-5])$/.exec(id);return {baseId:match?.[1]??id,form:match?.[2]?Number(match[2]):0};}
-export function questionFormId(id:string,form:number){if(!Number.isInteger(form)||form<1||form>QUESTION_FORM_COUNT)throw new Error('Forma no válida.');return `${splitQuestionForm(id).baseId}~f${String(form).padStart(2,'0')}`;}
-export function optionPermutation(form:number):number[]{if(!Number.isInteger(form)||form<1||form>15)throw new Error('Forma no válida.');const remaining=[0,1,2,3],result:number[]=[];let rank=form-1;for(const divisor of [6,2,1,1]){const index=Math.floor(rank/divisor);rank%=divisor;const [value]=remaining.splice(index,1);if(value!==undefined)result.push(value);}return result;}

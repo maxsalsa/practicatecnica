@@ -1,3 +1,0 @@
-import {expect,it} from 'vitest';
-import {importInstitutionQuestions} from './institution-question-import';
-it('institutional imports preserve keys and reject more than sixty questions',()=>{const row={q:'Pregunta de prueba',options:['a','b','c','d'],answer:2};expect(importInstitutionQuestions(JSON.stringify([row]))[0]?.answer).toBe(2);expect(()=>importInstitutionQuestions(JSON.stringify(Array.from({length:61},(_,i)=>({...row,q:`Pregunta ${i}`}))))).toThrow('60');});

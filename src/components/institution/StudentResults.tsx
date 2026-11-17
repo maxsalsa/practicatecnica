@@ -1,6 +1,0 @@
-import type {Attempt} from '@/lib/progress-data';
-import {studentResults} from '@/lib/student-results';
-export function StudentResults({attempts,heading='Resultados por área y práctica'}:{attempts:Attempt[];heading?:string}){
- const areas=studentResults(attempts);
- return <section className="space-y-4 border-y border-border py-4" aria-label={heading}><h3 className="text-xl font-bold">{heading}</h3>{!areas.length?<p className="text-muted-foreground">Sin resultados verificados.</p>:areas.map(area=><div key={area.title} className="space-y-3"><h4 className="font-bold">{area.title}</h4><p className="text-sm text-muted-foreground">{area.attempts} intentos{area.points>0?` · ${area.points} XP`:''}</p>{area.practices.map(p=><article key={p.key} className="space-y-2 border-b border-border pb-3"><h5 className="break-words font-semibold">{p.title.replace(/ · forma \d+$/,'')}</h5><dl className="grid grid-cols-2 gap-2 text-sm sm:grid-cols-4">{[['Primera nota',`${p.first}%`],['Última nota',`${p.last}%`],['Mejor nota',`${p.best}%`],['Cambio',`${p.change>0?'+':''}${p.change} puntos`]].map(([label,value])=><div key={label}><dt className="text-muted-foreground">{label}</dt><dd className="font-bold">{value}</dd></div>)}</dl><p className="text-sm">{p.band} · {p.attempts} intento(s){p.points>0?` · ${p.points} XP`:''}</p></article>)}</div>)}</section>;
-}

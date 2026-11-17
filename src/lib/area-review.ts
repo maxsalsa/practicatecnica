@@ -1,2 +1,0 @@
-export function validAreaReason(reason:string){const length=reason.trim().length;return length>=5&&length<=1000;}
-export function studentAreaAllowed(status:string|undefined,individuallyAllowed:boolean){return status==='approved'&&individuallyAllowed;}

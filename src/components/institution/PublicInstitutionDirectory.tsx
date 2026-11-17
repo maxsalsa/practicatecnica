@@ -1,4 +1,0 @@
-import { useQuery } from '@tanstack/react-query';
-import { supabase } from '@/integrations/supabase/client';
-import { InstitutionLogo } from './InstitutionLogo';
-export function PublicInstitutionDirectory(){const q=useQuery({queryKey:['public-institution-directory'],queryFn:async()=>{const r=await supabase.rpc('public_institution_directory');if(r.error)throw new Error('No se pudo cargar directorio.');return r.data;}});return <section className="mt-8 border-t border-border pt-5"><h2 className="text-2xl font-black">Instituciones y escudos</h2><div className="mt-4 grid gap-4 sm:grid-cols-2">{q.data?.map(i=><article key={i.id} className="flex items-center gap-4 rounded-lg border border-border p-4"><InstitutionLogo path={i.logo_path} name={i.name} className="h-24 w-24"/><h3 className="font-bold">{i.name}</h3></article>)}</div></section>;}

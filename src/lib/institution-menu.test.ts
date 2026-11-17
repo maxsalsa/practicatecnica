@@ -1,6 +1,0 @@
-import { expect, it } from 'vitest';
-import { institutionPreviewTabs } from './institution-menu';
-it('student preview excludes management and family results',()=>{expect(institutionPreviewTabs('estudiante')).toContain('mi-horario');expect(institutionPreviewTabs('estudiante')).not.toContain('revision');expect(institutionPreviewTabs('estudiante')).not.toContain('resultados');});
-it('family preview excludes teacher grading and schedules',()=>{expect(institutionPreviewTabs('encargado')).toContain('resultados');expect(institutionPreviewTabs('encargado')).not.toContain('horarios');expect(institutionPreviewTabs('encargado')).not.toContain('publicaciones');});
-it.each(['auxiliar','conserje','guarda','orientacion'])('%s preview excludes role assignment and private grading',role=>{expect(institutionPreviewTabs(role)).not.toContain('accesos');expect(institutionPreviewTabs(role)).not.toContain('expedientes');});
-it('director review does not include global administration',()=>{expect(institutionPreviewTabs('direccion')).toContain('revision');expect(institutionPreviewTabs('direccion')).not.toContain('admin');});

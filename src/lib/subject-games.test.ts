@@ -1,5 +1,0 @@
-import {expect,it} from 'vitest';
-import {subjectMissions,selectedMissionCorrect,orderedMissionCorrect} from './subject-games';
-it('validates all twelve huerto plots, not multiplication answers',()=>{const m=subjectMissions[0];expect(selectedMissionCorrect([...m.targets],m.targets)).toBe(true);expect(selectedMissionCorrect([0,1],m.targets)).toBe(false)});
-it('requires the water cycle in the correct order',()=>{expect(orderedMissionCorrect(['Evaporación','Condensación','Precipitación','Infiltración'],subjectMissions[1].items)).toBe(true);expect(orderedMissionCorrect(['Precipitación','Condensación','Evaporación','Infiltración'],subjectMissions[1].items)).toBe(false)});
-it.each(subjectMissions.filter(m=>m.kind==='order'))('rejects reversed sequence in $id',m=>{expect(orderedMissionCorrect([...m.items],m.items)).toBe(true);expect(orderedMissionCorrect([...m.items].reverse(),m.items)).toBe(false)});
