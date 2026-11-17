@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX payments_paypal_reference_uniq ON public.payments (reference) WHERE method = 'paypal';

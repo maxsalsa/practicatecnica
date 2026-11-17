@@ -1,0 +1,18 @@
+CREATE UNIQUE INDEX institution_credential_identification ON public.institution_credentials(institution_id,identification) WHERE identification<>'';
+CREATE FUNCTION public.guard_school_service_record() RETURNS trigger LANGUAGE plpgsql SECURITY DEFINER SET search_path=public AS $$ BEGIN
+IF TG_TABLE_NAME='institution_credentials' AND length(NEW.identification)>50 THEN RAISE EXCEPTION 'Identificación demasiado larga'; END IF;
+IF TG_TABLE_NAME='institution_attendance_records' AND EXISTS(SELECT 1 FROM public.account_status WHERE user_id=NEW.student_id AND status IN ('blocked','inactive')) THEN RAISE EXCEPTION 'Cuenta estudiantil no activa'; END IF;
+RETURN NEW; END $$;
+CREATE TRIGGER school_credential_validation BEFORE INSERT OR UPDATE ON public.institution_credentials FOR EACH ROW EXECUTE FUNCTION public.guard_school_service_record();
+CREATE TRIGGER school_attendance_validation BEFORE INSERT OR UPDATE ON public.institution_attendance_records FOR EACH ROW EXECUTE FUNCTION public.guard_school_service_record();
+CREATE FUNCTION public.audit_school_service_update() RETURNS trigger LANGUAGE plpgsql SECURITY DEFINER SET search_path=public AS $$ BEGIN INSERT INTO public.institution_service_events(institution_id,actor_id,action,details) VALUES(NEW.institution_id,auth.uid(),'update:'||TG_TABLE_NAME,jsonb_build_object('before',to_jsonb(OLD),'after',to_jsonb(NEW))); RETURN NEW; END $$;
+CREATE TRIGGER meal_settings_history AFTER UPDATE ON public.institution_meal_settings FOR EACH ROW EXECUTE FUNCTION public.audit_school_service_update();
+CREATE TRIGGER meal_coverage_history AFTER UPDATE ON public.institution_meal_coverage FOR EACH ROW EXECUTE FUNCTION public.audit_school_service_update();
+CREATE TRIGGER credential_history AFTER UPDATE ON public.institution_credentials FOR EACH ROW EXECUTE FUNCTION public.audit_school_service_update();
+CREATE TRIGGER attendance_history AFTER UPDATE ON public.institution_attendance_records FOR EACH ROW EXECUTE FUNCTION public.audit_school_service_update();
+CREATE TABLE public.institution_family_notices (id uuid PRIMARY KEY DEFAULT gen_random_uuid(), institution_id uuid NOT NULL REFERENCES public.institutions(id), guardian_id uuid NOT NULL, student_id uuid NOT NULL, attendance_id uuid NOT NULL REFERENCES public.institution_attendance_records(id), created_at timestamptz NOT NULL DEFAULT now(), UNIQUE(guardian_id,attendance_id));
+GRANT SELECT ON public.institution_family_notices TO authenticated; GRANT ALL ON public.institution_family_notices TO service_role;
+ALTER TABLE public.institution_family_notices ENABLE ROW LEVEL SECURITY;
+CREATE POLICY family_notice_read ON public.institution_family_notices FOR SELECT TO authenticated USING(guardian_id=auth.uid() AND public.school_family_can_read(institution_id,student_id));
+CREATE FUNCTION public.school_attendance_notice() RETURNS trigger LANGUAGE plpgsql SECURITY DEFINER SET search_path=public AS $$ BEGIN INSERT INTO public.institution_family_notices(institution_id,guardian_id,student_id,attendance_id) SELECT NEW.institution_id,g.guardian_id,NEW.student_id,NEW.id FROM public.guardian_links g WHERE g.institution_id=NEW.institution_id AND g.student_id=NEW.student_id AND g.consented_at IS NOT NULL ON CONFLICT DO NOTHING; RETURN NEW; END $$;
+CREATE TRIGGER school_family_arrival AFTER INSERT ON public.institution_attendance_records FOR EACH ROW EXECUTE FUNCTION public.school_attendance_notice();

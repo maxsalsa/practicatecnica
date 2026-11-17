@@ -1,0 +1,4 @@
+import {expect,it} from 'vitest';
+import {roadKeyboardAction,pianoKeyboardNote} from './game-controls';
+it('supports computer arrows and WASD road controls',()=>{expect(roadKeyboardAction('ArrowUp')).toBe('avanzar');expect(roadKeyboardAction('W')).toBe('avanzar');expect(roadKeyboardAction('a')).toBe('izquierda');expect(roadKeyboardAction('s')).toBe('retroceder');expect(roadKeyboardAction('d')).toBe('derecha');expect(roadKeyboardAction('Enter')).toBeUndefined()});
+it('maps the computer piano to chromatic notes C4 through C5',()=>{expect(pianoKeyboardNote('a')).toBe(60);expect(pianoKeyboardNote('w')).toBe(61);expect(pianoKeyboardNote('k')).toBe(72);expect(pianoKeyboardNote('Escape')).toBeNull()});

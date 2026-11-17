@@ -1,0 +1,30 @@
+CREATE TABLE public.institution_user_permissions(institution_id uuid NOT NULL REFERENCES public.institutions(id),user_id uuid NOT NULL,capability text NOT NULL CHECK(capability IN ('experts','drafts','approve','issue','schedules')),enabled boolean NOT NULL,changed_by uuid NOT NULL DEFAULT auth.uid(),changed_at timestamptz NOT NULL DEFAULT now(),PRIMARY KEY(institution_id,user_id,capability));
+GRANT SELECT ON public.institution_user_permissions TO authenticated; GRANT ALL ON public.institution_user_permissions TO service_role;
+ALTER TABLE public.institution_user_permissions ENABLE ROW LEVEL SECURITY;
+CREATE POLICY permissions_read ON public.institution_user_permissions FOR SELECT TO authenticated USING(user_id=auth.uid() OR public.can_manage_student_records(institution_id));
+CREATE TABLE public.institution_permission_events(id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,institution_id uuid NOT NULL,user_id uuid NOT NULL,capability text NOT NULL,previous_enabled boolean,enabled boolean NOT NULL,actor_id uuid NOT NULL,created_at timestamptz NOT NULL DEFAULT now());
+GRANT SELECT ON public.institution_permission_events TO authenticated; GRANT ALL ON public.institution_permission_events TO service_role;
+ALTER TABLE public.institution_permission_events ENABLE ROW LEVEL SECURITY;
+CREATE POLICY permission_events_read ON public.institution_permission_events FOR SELECT TO authenticated USING(public.can_manage_student_records(institution_id));
+CREATE FUNCTION public.institution_capability_allowed(_inst uuid,_cap text) RETURNS boolean LANGUAGE sql STABLE SECURITY DEFINER SET search_path=public AS $$ SELECT coalesce(CASE WHEN _cap='experts' THEN public.institution_role_of(_inst)::text IN ('docente','direccion') WHEN _cap='drafts' THEN public.institution_role_of(_inst)::text IN ('docente','direccion','subdireccion','administrativo') WHEN _cap IN ('approve','issue') THEN public.institution_role_of(_inst)::text IN ('direccion','subdireccion') WHEN _cap='schedules' THEN public.institution_role_of(_inst)::text IN ('direccion','subdireccion','administrativo') ELSE false END,false) AND coalesce((SELECT enabled FROM public.institution_user_permissions WHERE institution_id=_inst AND user_id=auth.uid() AND capability=_cap),true); $$;
+REVOKE ALL ON FUNCTION public.institution_capability_allowed(uuid,text) FROM PUBLIC; GRANT EXECUTE ON FUNCTION public.institution_capability_allowed(uuid,text) TO authenticated;
+CREATE FUNCTION public.lead_set_institution_permission(_inst uuid,_user uuid,_cap text,_enabled boolean) RETURNS void LANGUAGE plpgsql SECURITY DEFINER SET search_path=public AS $$ DECLARE r text; prev boolean; BEGIN
+IF NOT public.can_manage_student_records(_inst) OR _user=auth.uid() THEN RAISE EXCEPTION 'Sin permiso' USING ERRCODE='42501'; END IF;
+PERFORM 1 FROM public.institutions WHERE id=_inst FOR UPDATE;
+SELECT member_role::text INTO r FROM public.institution_members WHERE institution_id=_inst AND user_id=_user;
+IF r IS NULL OR r IN ('direccion','subdireccion') OR public.has_role(_user,'admin') THEN RAISE EXCEPTION 'Autoridad protegida o usuario ajeno' USING ERRCODE='42501'; END IF;
+IF NOT ((_cap='experts' AND r='docente') OR (_cap='drafts' AND r IN ('docente','administrativo')) OR (_cap='schedules' AND r='administrativo')) THEN RAISE EXCEPTION 'Permiso incompatible con el rol' USING ERRCODE='42501'; END IF;
+SELECT enabled INTO prev FROM public.institution_user_permissions WHERE institution_id=_inst AND user_id=_user AND capability=_cap;
+INSERT INTO public.institution_user_permissions(institution_id,user_id,capability,enabled,changed_by) VALUES(_inst,_user,_cap,_enabled,auth.uid()) ON CONFLICT(institution_id,user_id,capability) DO UPDATE SET enabled=excluded.enabled,changed_by=auth.uid(),changed_at=now();
+INSERT INTO public.institution_permission_events(institution_id,user_id,capability,previous_enabled,enabled,actor_id) VALUES(_inst,_user,_cap,prev,_enabled,auth.uid()); END $$;
+REVOKE ALL ON FUNCTION public.lead_set_institution_permission(uuid,uuid,text,boolean) FROM PUBLIC; GRANT EXECUTE ON FUNCTION public.lead_set_institution_permission(uuid,uuid,text,boolean) TO authenticated;
+CREATE FUNCTION public.guard_individual_institution_capability() RETURNS trigger LANGUAGE plpgsql SET search_path=public AS $$ DECLARE inst uuid; cap text; BEGIN
+IF TG_OP='DELETE' THEN inst=OLD.institution_id; ELSE inst=NEW.institution_id; END IF;
+IF TG_TABLE_NAME='institution_schedules' THEN cap='schedules'; ELSIF TG_TABLE_NAME='institution_signed_documents' THEN cap='issue'; ELSE cap='drafts'; END IF;
+IF NOT public.institution_capability_allowed(inst,cap) AND NOT (cap<>'issue' AND coalesce(public.has_role(auth.uid(),'admin'),false)) THEN RAISE EXCEPTION 'Permiso individual desactivado' USING ERRCODE='42501'; END IF;
+IF TG_TABLE_NAME IN ('institution_resources','institution_publications') AND TG_OP<>'DELETE' THEN IF NEW.status='published' AND NOT public.institution_capability_allowed(inst,'approve') AND NOT coalesce(public.has_role(auth.uid(),'admin'),false) THEN RAISE EXCEPTION 'Sin permiso de aprobación' USING ERRCODE='42501'; END IF; END IF;
+IF TG_OP='DELETE' THEN RETURN OLD; END IF; RETURN NEW; END $$;
+CREATE TRIGGER individual_resource_capability BEFORE INSERT OR UPDATE OR DELETE ON public.institution_resources FOR EACH ROW EXECUTE FUNCTION public.guard_individual_institution_capability();
+CREATE TRIGGER individual_publication_capability BEFORE INSERT OR UPDATE OR DELETE ON public.institution_publications FOR EACH ROW EXECUTE FUNCTION public.guard_individual_institution_capability();
+CREATE TRIGGER individual_schedule_capability BEFORE INSERT OR UPDATE OR DELETE ON public.institution_schedules FOR EACH ROW EXECUTE FUNCTION public.guard_individual_institution_capability();
+CREATE TRIGGER individual_issued_capability BEFORE INSERT ON public.institution_signed_documents FOR EACH ROW EXECUTE FUNCTION public.guard_individual_institution_capability();

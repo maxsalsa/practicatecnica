@@ -1,0 +1,678 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1794234103425,
+      "tag": "0000_student_cloud_progress",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794234461491,
+      "tag": "0001_restrict_student_linking",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794234562392,
+      "tag": "0002_narrow_private_data_grants",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794235117358,
+      "tag": "0003_student_learning_records",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1794235647808,
+      "tag": "0004_difficulty_earned_points",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1794235703850,
+      "tag": "0005_verified_founder_admins",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1794328183423,
+      "tag": "0006_sinpe_payments",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1794328328130,
+      "tag": "0007_remove_test_payment",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1794328781822,
+      "tag": "0008_payments_unique_reference",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1794498764218,
+      "tag": "0009_superadmin_tracking",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1794499734088,
+      "tag": "0010_weekly_leagues",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1794499931537,
+      "tag": "0011_league_history_and_close",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1794500043750,
+      "tag": "0012_league_apply_where_fix",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1794500292079,
+      "tag": "0013_trial_access",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1794500949030,
+      "tag": "0014_card_subscriptions",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1794501005298,
+      "tag": "0015_id_documents_policies",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1794504937601,
+      "tag": "0016_admin_user_trace",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1794505801475,
+      "tag": "0017_personal_ai_history",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1794534857302,
+      "tag": "0018_confirm_payments_before_access",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1794537372277,
+      "tag": "0019_teacher_paypal_quotes",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1794540340581,
+      "tag": "0020_restrict_role_lookup_to_self_or_admin",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1794540447997,
+      "tag": "0021_test_role_lookup_privacy",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1794541146734,
+      "tag": "0022_require_paid_or_trial_access_for_teachers",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1794541261137,
+      "tag": "0023_assert_teacher_no_subscription_bypass",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1794542175657,
+      "tag": "0024_guard_student_account_link",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1794543371769,
+      "tag": "0025_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1794544116648,
+      "tag": "0026_teacher_exams",
+      "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1794544304017,
+      "tag": "0027_verifiable_certificates",
+      "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "7",
+      "when": 1794612064532,
+      "tag": "0028_private_recreational_sessions",
+      "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "7",
+      "when": 1794612183517,
+      "tag": "0029_certification_two_verified_exams",
+      "breakpoints": true
+    },
+    {
+      "idx": 30,
+      "version": "7",
+      "when": 1794615195816,
+      "tag": "0030_teacher_groups_assignments",
+      "breakpoints": true
+    },
+    {
+      "idx": 31,
+      "version": "7",
+      "when": 1794618148646,
+      "tag": "0031_certificate_one_exam_60",
+      "breakpoints": true
+    },
+    {
+      "idx": 32,
+      "version": "7",
+      "when": 1794619913035,
+      "tag": "0032_student_status",
+      "breakpoints": true
+    },
+    {
+      "idx": 33,
+      "version": "7",
+      "when": 1794674276137,
+      "tag": "0033_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 34,
+      "version": "7",
+      "when": 1794676357572,
+      "tag": "0034_teacher_student_plans",
+      "breakpoints": true
+    },
+    {
+      "idx": 35,
+      "version": "7",
+      "when": 1794677784653,
+      "tag": "0035_payments_hardening",
+      "breakpoints": true
+    },
+    {
+      "idx": 36,
+      "version": "7",
+      "when": 1794677925193,
+      "tag": "0036_teacher_badges",
+      "breakpoints": true
+    },
+    {
+      "idx": 37,
+      "version": "7",
+      "when": 1794681640797,
+      "tag": "0037_book_topic_progress",
+      "breakpoints": true
+    },
+    {
+      "idx": 38,
+      "version": "7",
+      "when": 1794684527046,
+      "tag": "0038_teacher_entitlement",
+      "breakpoints": true
+    },
+    {
+      "idx": 39,
+      "version": "7",
+      "when": 1794693758894,
+      "tag": "0039_institutions_announcements_permissions_prices",
+      "breakpoints": true
+    },
+    {
+      "idx": 40,
+      "version": "7",
+      "when": 1794694292094,
+      "tag": "0040_gmail_only_single_superadmin_schedules",
+      "breakpoints": true
+    },
+    {
+      "idx": 41,
+      "version": "7",
+      "when": 1794694760663,
+      "tag": "0041_permissions_v2_justification_qr",
+      "breakpoints": true
+    },
+    {
+      "idx": 42,
+      "version": "7",
+      "when": 1794696281912,
+      "tag": "0042_institution_role_encargado",
+      "breakpoints": true
+    },
+    {
+      "idx": 43,
+      "version": "7",
+      "when": 1794696391356,
+      "tag": "0043_sections_guardians_channels",
+      "breakpoints": true
+    },
+    {
+      "idx": 44,
+      "version": "7",
+      "when": 1794696550926,
+      "tag": "0044_permissions_exclude_families",
+      "breakpoints": true
+    },
+    {
+      "idx": 45,
+      "version": "7",
+      "when": 1794696635795,
+      "tag": "0045_channel_attachment_review",
+      "breakpoints": true
+    },
+    {
+      "idx": 46,
+      "version": "7",
+      "when": 1794696921593,
+      "tag": "0046_guardian_consent",
+      "breakpoints": true
+    },
+    {
+      "idx": 47,
+      "version": "7",
+      "when": 1794697332435,
+      "tag": "0047_student_progress_for_family",
+      "breakpoints": true
+    },
+    {
+      "idx": 48,
+      "version": "7",
+      "when": 1794697440425,
+      "tag": "0048_fix_follow_student_null_check",
+      "breakpoints": true
+    },
+    {
+      "idx": 49,
+      "version": "7",
+      "when": 1794698071198,
+      "tag": "0049_institution_kinds_all_levels",
+      "breakpoints": true
+    },
+    {
+      "idx": 50,
+      "version": "7",
+      "when": 1794701738800,
+      "tag": "0050_direccion_institution_logo",
+      "breakpoints": true
+    },
+    {
+      "idx": 51,
+      "version": "7",
+      "when": 1794701803950,
+      "tag": "0051_institution_documents",
+      "breakpoints": true
+    },
+    {
+      "idx": 52,
+      "version": "7",
+      "when": 1794702357079,
+      "tag": "0052_family_enrollment_requests",
+      "breakpoints": true
+    },
+    {
+      "idx": 53,
+      "version": "7",
+      "when": 1794702375659,
+      "tag": "0053_enrollment_verification_hash",
+      "breakpoints": true
+    },
+    {
+      "idx": 54,
+      "version": "7",
+      "when": 1794711539184,
+      "tag": "0054_institution_publication_workflow",
+      "breakpoints": true
+    },
+    {
+      "idx": 55,
+      "version": "7",
+      "when": 1794711723489,
+      "tag": "0055_validate_institution_questions",
+      "breakpoints": true
+    },
+    {
+      "idx": 56,
+      "version": "7",
+      "when": 1794712570444,
+      "tag": "0056_institution_editorial_resources",
+      "breakpoints": true
+    },
+    {
+      "idx": 57,
+      "version": "7",
+      "when": 1794712587123,
+      "tag": "0057_count_scored_institution_completions",
+      "breakpoints": true
+    },
+    {
+      "idx": 58,
+      "version": "7",
+      "when": 1794712985242,
+      "tag": "0058_public_institution_logo_directory",
+      "breakpoints": true
+    },
+    {
+      "idx": 59,
+      "version": "7",
+      "when": 1794715872469,
+      "tag": "0059_public_directory_logo_read",
+      "breakpoints": true
+    },
+    {
+      "idx": 60,
+      "version": "7",
+      "when": 1794715915153,
+      "tag": "0060_qualify_public_logo_object_path",
+      "breakpoints": true
+    },
+    {
+      "idx": 61,
+      "version": "7",
+      "when": 1794716375830,
+      "tag": "0061_institution_resource_permissions_and_contacts",
+      "breakpoints": true
+    },
+    {
+      "idx": 62,
+      "version": "7",
+      "when": 1794754476950,
+      "tag": "0062_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 63,
+      "version": "7",
+      "when": 1794754576341,
+      "tag": "0063_add_staff_roles",
+      "breakpoints": true
+    },
+    {
+      "idx": 64,
+      "version": "7",
+      "when": 1794755815472,
+      "tag": "0064_subdirection_campaign_and_schedule_authority",
+      "breakpoints": true
+    },
+    {
+      "idx": 65,
+      "version": "7",
+      "when": 1794756927142,
+      "tag": "0065_private_student_records",
+      "breakpoints": true
+    },
+    {
+      "idx": 66,
+      "version": "7",
+      "when": 1794756988213,
+      "tag": "0066_institution_delegated_roles",
+      "breakpoints": true
+    },
+    {
+      "idx": 67,
+      "version": "7",
+      "when": 1794757158650,
+      "tag": "0067_signed_institution_documents",
+      "breakpoints": true
+    },
+    {
+      "idx": 68,
+      "version": "7",
+      "when": 1794757283745,
+      "tag": "0068_assessment_attempt_limits",
+      "breakpoints": true
+    },
+    {
+      "idx": 69,
+      "version": "7",
+      "when": 1794758043228,
+      "tag": "0069_individual_institution_capabilities",
+      "breakpoints": true
+    },
+    {
+      "idx": 70,
+      "version": "7",
+      "when": 1794770370456,
+      "tag": "0070_private_enrollment_documents",
+      "breakpoints": true
+    },
+    {
+      "idx": 71,
+      "version": "7",
+      "when": 1794770632089,
+      "tag": "0071_enrollment_pickup_authorizations",
+      "breakpoints": true
+    },
+    {
+      "idx": 72,
+      "version": "7",
+      "when": 1794772544022,
+      "tag": "0072_institution_meals_attendance",
+      "breakpoints": true
+    },
+    {
+      "idx": 73,
+      "version": "7",
+      "when": 1794772712873,
+      "tag": "0073_school_service_privacy_guards",
+      "breakpoints": true
+    },
+    {
+      "idx": 74,
+      "version": "7",
+      "when": 1794775502146,
+      "tag": "0074_institution_tariffs_discounts",
+      "breakpoints": true
+    },
+    {
+      "idx": 75,
+      "version": "7",
+      "when": 1794782488027,
+      "tag": "0075_permission_support_account_corrections",
+      "breakpoints": true
+    },
+    {
+      "idx": 76,
+      "version": "7",
+      "when": 1794783155667,
+      "tag": "0076_scoped_additional_roles_and_backup",
+      "breakpoints": true
+    },
+    {
+      "idx": 77,
+      "version": "7",
+      "when": 1794787335796,
+      "tag": "0077_institution_contact_profile",
+      "breakpoints": true
+    },
+    {
+      "idx": 78,
+      "version": "7",
+      "when": 1794845786384,
+      "tag": "0078_justification_review_and_role_history",
+      "breakpoints": true
+    },
+    {
+      "idx": 79,
+      "version": "7",
+      "when": 1794845816336,
+      "tag": "0079_permission_justification_states",
+      "breakpoints": true
+    },
+    {
+      "idx": 80,
+      "version": "7",
+      "when": 1794847090207,
+      "tag": "0080_recreation_ranking",
+      "breakpoints": true
+    },
+    {
+      "idx": 81,
+      "version": "7",
+      "when": 1794847223169,
+      "tag": "0081_recreation_ranking_private",
+      "breakpoints": true
+    },
+    {
+      "idx": 82,
+      "version": "7",
+      "when": 1794848736613,
+      "tag": "0082_mep_spec_indicators",
+      "breakpoints": true
+    },
+    {
+      "idx": 83,
+      "version": "7",
+      "when": 1794849152853,
+      "tag": "0083_admin_card_revenue",
+      "breakpoints": true
+    },
+    {
+      "idx": 84,
+      "version": "7",
+      "when": 1794853321849,
+      "tag": "0084_student_grades",
+      "breakpoints": true
+    },
+    {
+      "idx": 85,
+      "version": "7",
+      "when": 1794853664829,
+      "tag": "0085_student_grades_privacy",
+      "breakpoints": true
+    },
+    {
+      "idx": 86,
+      "version": "7",
+      "when": 1794853683439,
+      "tag": "0086_student_grades_weights",
+      "breakpoints": true
+    },
+    {
+      "idx": 87,
+      "version": "7",
+      "when": 1794855046196,
+      "tag": "0087_verify_enrollment",
+      "breakpoints": true
+    },
+    {
+      "idx": 88,
+      "version": "7",
+      "when": 1794859127097,
+      "tag": "0088_edit_pending_permission",
+      "breakpoints": true
+    },
+    {
+      "idx": 89,
+      "version": "7",
+      "when": 1794864590669,
+      "tag": "0089_student_institution_visibility",
+      "breakpoints": true
+    },
+    {
+      "idx": 90,
+      "version": "7",
+      "when": 1794864631743,
+      "tag": "0090_enforce_institution_practice_visibility",
+      "breakpoints": true
+    },
+    {
+      "idx": 91,
+      "version": "7",
+      "when": 1794864733549,
+      "tag": "0091_private_documents_no_signed_urls",
+      "breakpoints": true
+    },
+    {
+      "idx": 92,
+      "version": "7",
+      "when": 1794867573831,
+      "tag": "0092_institution_area_review",
+      "breakpoints": true
+    },
+    {
+      "idx": 93,
+      "version": "7",
+      "when": 1794870631184,
+      "tag": "0093_institution_practice_results",
+      "breakpoints": true
+    },
+    {
+      "idx": 94,
+      "version": "7",
+      "when": 1794872912056,
+      "tag": "0094_institution_director_role_assignment",
+      "breakpoints": true
+    },
+    {
+      "idx": 95,
+      "version": "7",
+      "when": 1794878193015,
+      "tag": "0095_migration",
+      "breakpoints": true
+    }
+  ]
+}

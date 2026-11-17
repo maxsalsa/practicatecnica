@@ -1,0 +1,19 @@
+import type { Deck, Q } from './questions';
+export const MOPT_LAW = 'https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=73504';
+const question = (q: string, options: string[], answer: number, why: string, article: number): Q => ({ q, options, answer, why, source: `Práctica original, no pregunta oficial del examen. Ley 9078, art. ${article}: ${MOPT_LAW}`, difficulty: 1 });
+export const moptDecks: Deck[] = [
+ { id: 'mopt-carro', title: 'MOPT · Carro · Práctica basada en Ley 9078', emoji: '🚗', level: 'Carro · Banco introductorio de 5 preguntas, no examen oficial', questions: [
+  question('Antes de iniciar la marcha, ¿quién debe utilizar el cinturón?', ['Solo quien conduce','Todos los ocupantes sujetos a la obligación legal','Solo los adultos del asiento delantero','Solo en viajes largos'],1,'El conductor debe utilizarlo y asegurarse de que los ocupantes utilicen los dispositivos exigidos.',94),
+  question('Una persona de 8 años y 1,30 m viaja en un automóvil particular con asientos traseros, sin excepción médica. ¿Dónde debe viajar?', ['Adelante con cinturón','Atrás con sistema de retención infantil correspondiente','Atrás sin dispositivo','En brazos de un adulto'],1,'Es menor de doce años y mide menos de 1,45 m: asiento trasero y sistema de retención infantil.',94),
+  question('¿Qué obligación tiene usted respecto a las señales verticales y horizontales?', ['Respetar solo las verticales','Respetar solo las horizontales','Cumplir ambas','Cumplirlas solo si hay policía'],2,'El artículo 93 obliga a cumplir las señales verticales y horizontales.',93),
+  question('Un vehículo de emergencia atiende un incidente con sus dispositivos de alarma activados. ¿Qué corresponde?', ['Competir para pasar primero','Dar prioridad de paso','Ignorarlo si el semáforo está verde','Seguirlo de cerca'],1,'Se debe dar prioridad de paso al vehículo de emergencia en las condiciones indicadas.',93),
+  question('¿Qué conducta caracteriza el manejo defensivo según la ley?', ['Precaución y consideración hacia peatones y conductores','Acelerar para que nadie pase','Presionar con bocina a todo peatón','Confiar solo en que otros frenarán'],0,'La ley exige manejo defensivo, precaución constante y consideración mutua.',93),
+ ] },
+ { id: 'mopt-moto', title: 'MOPT · Moto · Práctica basada en Ley 9078', emoji: '🏍️', level: 'Moto · Banco introductorio de 5 preguntas, no examen oficial', questions: [
+  question('¿Quién debe llevar casco en una motocicleta?', ['Solo el conductor','Solo el pasajero','Conductor y pasajero','Nadie en trayectos cortos'],2,'La obligación de casco del artículo 117 comprende a conductores y pasajeros.',117),
+  question('¿Puede llevar un bulto que limite la libertad de movimiento al conducir una moto?', ['Sí, si pesa poco','Sí, si no hay policía','No','Solo de día'],2,'Está prohibido llevar paquetes y objetos que limiten la libertad de movimiento.',117),
+  question('¿Puede sujetarse de otro vehículo en marcha?', ['No','Sí, para ahorrar combustible','Sí, a baja velocidad','Solo si es un camión'],0,'El artículo 117 obliga a abstenerse de sujetarse de otro vehículo en marcha.',117),
+  question('Se detiene a reparar la moto en el espaldón. ¿Qué exige el artículo 117 respecto a la vestimenta?', ['Solo ropa oscura','Prendas retrorreflectivas también durante la reparación','Prendas retrorreflectivas solo en movimiento','Ninguna condición'],1,'Las prendas retrorreflectivas se exigen en movimiento y al reparar a la orilla de la carretera.',117),
+  question('¿Se permite transportar a una persona de cuatro años como pasajera de una moto?', ['Sí, con casco','Sí, con otro adulto','No','Solo los fines de semana'],2,'El artículo 117 prohíbe transportar menores de cinco años como pasajeros.',117),
+ ] },
+];

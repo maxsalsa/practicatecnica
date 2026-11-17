@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "events": {
+    "project.beta_activated": {
+      "event_schema_version": 1,
+      "description": "The signed-in owner first observes active unpaid 13-day trial access confirmed by my_access in this app mount; not a count of newly created accounts.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "duration_days"
+        ],
+        "properties": {
+          "duration_days": {
+            "type": "integer",
+            "const": 13
+          }
+        }
+      }
+    },
+    "project.payment_result": {
+      "event_schema_version": 1,
+      "description": "Checkout reports completed, canceled or failed; PayPal confirmation is persisted and SINPE stays pending review. Sandbox completion never grants paid access.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "method",
+          "plan",
+          "environment",
+          "result"
+        ],
+        "properties": {
+          "method": {
+            "type": "string",
+            "enum": [
+              "paypal",
+              "card",
+              "sinpe"
+            ]
+          },
+          "plan": {
+            "type": "string"
+          },
+          "environment": {
+            "type": "string",
+            "enum": [
+              "sandbox",
+              "live",
+              "manual"
+            ]
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "completed",
+              "confirmed",
+              "pending",
+              "canceled",
+              "failed"
+            ]
+          }
+        }
+      }
+    },
+    "project.payment_started": {
+      "event_schema_version": 1,
+      "description": "A user begins a payment checkout or submits SINPE for review.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "method",
+          "plan",
+          "environment"
+        ],
+        "properties": {
+          "method": {
+            "type": "string",
+            "enum": [
+              "paypal",
+              "card",
+              "sinpe"
+            ]
+          },
+          "plan": {
+            "type": "string"
+          },
+          "environment": {
+            "type": "string",
+            "enum": [
+              "sandbox",
+              "live",
+              "manual"
+            ]
+          }
+        }
+      }
+    },
+    "project.practice_completed": {
+      "event_schema_version": 1,
+      "description": "A student finished all questions of a practice and saw the result.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "deck_id",
+          "score_pct",
+          "questions"
+        ],
+        "properties": {
+          "deck_id": {
+            "type": "string"
+          },
+          "score_pct": {
+            "type": "number"
+          },
+          "questions": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "project.practice_started": {
+      "event_schema_version": 1,
+      "description": "A student started a practice (question bank or AI-generated).",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "deck_id",
+          "source"
+        ],
+        "properties": {
+          "deck_id": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string",
+            "enum": [
+              "bank",
+              "ai"
+            ]
+          },
+          "subject": {
+            "type": "string"
+          },
+          "lang": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "project.wrong_answers_retried": {
+      "event_schema_version": 1,
+      "description": "A student chose to retry only the questions they got wrong.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "deck_id",
+          "wrong_count"
+        ],
+        "properties": {
+          "deck_id": {
+            "type": "string"
+          },
+          "wrong_count": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

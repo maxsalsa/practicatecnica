@@ -1,0 +1,2 @@
+DROP POLICY "inst docs read" ON storage.objects;
+COMMENT ON TABLE public.institution_documents IS 'Private document bytes are delivered through authenticated downloadInstitutionDocument with current row authorization; no client storage SELECT/sign URL grant.';

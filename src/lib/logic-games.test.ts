@@ -1,0 +1,5 @@
+import { expect,it } from 'vitest';
+import { bridgeSolution,crossBridge,frogSolution,frogStart,moveFrog,frogsSolved,lineWinner } from './logic-games';
+it('frogs solve in eight legal moves',()=>{const path=frogSolution();expect(path).toHaveLength(8);expect(frogsSolved(path.reduce(moveFrog,frogStart))).toBe(true);expect(moveFrog(frogStart,0)).toBe(frogStart)});
+it('bridge optimal route takes seventeen minutes and requires the torch',()=>{const solution=bridgeSolution();expect(solution?.s.minutes).toBe(17);expect(solution?.s.sides).toEqual([true,true,true,true]);const s={sides:[false,false,false,false],torch:false,minutes:0};expect(crossBridge(s,[0,1,2])).toBe(s);const crossed=crossBridge(s,[0,1]);expect(crossBridge(crossed,[2])).toBe(crossed)});
+it('detects a three-cell win without declaring an empty board winner',()=>{expect(lineWinner(['X','X','X','','','','','',''])).toBe('X');expect(lineWinner(Array(9).fill(''))).toBe('')});

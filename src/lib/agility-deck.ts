@@ -1,0 +1,8 @@
+import type { Deck } from './questions';
+export const agilityDeck: Deck = { id: 'agilidad-mental', title: 'Agilidad mental · Razonamiento', emoji: '🧠', level: 'Práctica propia · No es una prueba oficial MOPT', questions: [
+ {q:'Continúe: 3, 6, 12, 24, …',options:['27','30','48','36'],answer:2,why:'Cada número se multiplica por 2: 24 × 2 = 48.',source:'Ejercicio original de sucesiones',difficulty:1},
+ {q:'¿Cuánto es 25 % de 240?',options:['40','60','80','120'],answer:1,why:'25 % es una cuarta parte: 240 / 4 = 60.',source:'Ejercicio original de porcentajes',difficulty:1},
+ {q:'Si hoy es martes, ¿qué día será dentro de 10 días?',options:['Viernes','Jueves','Domingo','Lunes'],answer:0,why:'10 = 7 + 3: una semana después sigue siendo martes; tres días más es viernes.',source:'Ejercicio original de cálculo temporal',difficulty:1},
+ {q:'Todos los cuadrados son rectángulos. Esta figura es un cuadrado. ¿Qué se concluye?',options:['No es rectángulo','Es rectángulo','Es necesariamente un círculo','No se puede concluir nada'],answer:1,why:'Se aplica la inclusión: todo elemento del grupo cuadrados pertenece al grupo rectángulos.',source:'Ejercicio original de lógica',difficulty:1},
+ {q:'Cinco cajas tienen 8 piezas cada una. Se retiran 13 piezas. ¿Cuántas quedan?',options:['27','35','40','53'],answer:0,why:'5 × 8 − 13 = 40 − 13 = 27.',source:'Ejercicio original de operaciones',difficulty:1},
+] };

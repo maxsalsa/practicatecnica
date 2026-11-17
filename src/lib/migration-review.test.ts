@@ -1,0 +1,4 @@
+import {expect,it} from 'vitest';import {parseMigrationBackup,unresolvedPermissionUsers} from './migration-review';
+const base={format:'practicatecnica-institution',version:1,institution:{id:'centre',name:'Centre'},users:[{id:'u1'}],grades:[{id:'g1',holder:'Name'}],permissions:[{id:'p1',requester_id:'u1',reviewer_id:'u2'}]};
+it('preserves original identifiers and flags missing linked users',()=>{const b=parseMigrationBackup(JSON.stringify(base));expect(b.users[0]?.['id']).toBe('u1');expect(unresolvedPermissionUsers(b)).toEqual([{permission:'p1',field:'reviewer_id'}]);});
+it('rejects duplicate IDs and unrecognized formats',()=>{expect(()=>parseMigrationBackup(JSON.stringify({...base,users:[{id:'u1'},{id:'u1'}]}))).toThrow();expect(()=>parseMigrationBackup(JSON.stringify({...base,format:'other'}))).toThrow();});

@@ -1,0 +1,49 @@
+{
+  "schoolSubjects": [
+    {
+      "id": "religion",
+      "title": "Educación Religiosa",
+      "en": "Religious Education",
+      "emoji": "🤝"
+    },
+    {
+      "id": "biologia",
+      "title": "Biología",
+      "en": "Biology",
+      "emoji": "🌱"
+    },
+    {
+      "id": "quimica",
+      "title": "Química",
+      "en": "Chemistry",
+      "emoji": "🧪"
+    },
+    {
+      "id": "fisica",
+      "title": "Física",
+      "en": "Physics",
+      "emoji": "⚙️"
+    },
+    {
+      "id": "matematica",
+      "title": "Matemática",
+      "en": "Mathematics",
+      "emoji": "📐"
+    },
+    {
+      "id": "espanol",
+      "title": "Español",
+      "en": "Spanish",
+      "emoji": "📖"
+    }
+  ],
+  "schoolLevels": [
+    "6.º primaria",
+    "7.º secundaria",
+    "8.º secundaria",
+    "9.º secundaria",
+    "10.º secundaria / CTP",
+    "11.º secundaria / CTP",
+    "12.º CTP"
+  ]
+}

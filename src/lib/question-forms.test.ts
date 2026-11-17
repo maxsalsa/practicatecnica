@@ -1,0 +1,11 @@
+import {it,expect} from 'vitest';
+import {QUESTION_FORM_COUNT,questionFormId,splitQuestionForm,optionPermutation} from './question-forms';
+import {applyQuestionForm} from './question-forms.bank';
+import {decks} from './questions.bank';
+import {mathExpandedDeck} from './math-expanded.bank';
+import {scoreAnswers} from './progress-data';
+import {certificationSubject} from './certification-policy';
+it('provides exactly 15 distinct valid option permutations',()=>{expect(QUESTION_FORM_COUNT).toBe(15);expect(new Set(Array.from({length:15},(_,i)=>optionPermutation(i+1).join(','))).size).toBe(15);expect(()=>optionPermutation(16)).toThrow()});
+it('preserves each four-option canonical key in every bank and form',()=>{for(const deck of decks)for(let f=1;f<=15;f++){const variant=applyQuestionForm(deck,f);for(let i=0;i<deck.questions.length;i++){const q=deck.questions[i],v=variant.questions[i];if(!q||!v||deck.id==='mep-math-01-v2'&&i>=20)continue;expect(v.options[v.answer]).toBe(q.options[q.answer]);expect(v.q).toBe(q.q);expect(v.source).toBe(q.source)}}});
+it('reconstructs the exact form for scoring and canonical certificate subject',()=>{const d=decks.find(d=>d.id==='study-finance-b1-v1');if(!d)throw new Error('Missing bank');const form=applyQuestionForm(d,12);expect(splitQuestionForm(form.id)).toEqual({baseId:d.id,form:12});expect(scoreAnswers(form.questions,form.questions.map((q,index)=>({index,pick:q.answer})))).toBe(100);expect(certificationSubject(form.id,20)).toBe('study-finance');expect(certificationSubject(questionFormId('arena-finance',12),20)).toBeUndefined()});
+it('numerical first-grade addition is recalculated in all 15 forms',()=>{const texts=new Set<string>();for(let f=1;f<=15;f++){const q=applyQuestionForm(mathExpandedDeck,f).questions[20];if(!q)throw new Error('Missing question');const m=/Hay (\d+).*Se agregan (\d+)/.exec(q.q);expect(Number(q.options[q.answer])).toBe(Number(m?.[1])+Number(m?.[2]));expect(new Set(q.options).size).toBe(4);texts.add(q.q)}expect(texts.size).toBe(15)});

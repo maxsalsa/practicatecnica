@@ -1,0 +1,326 @@
+[
+  {
+    "id": "fracciones",
+    "subject": "matematica",
+    "title": [
+      "Fracciones y proporciones",
+      "Fractions and proportions"
+    ],
+    "objective": [
+      "Resolver proporciones mostrando la operación.",
+      "Solve proportions and show the calculation."
+    ],
+    "summary": [
+      "Una proporción mantiene una razón constante. Divida para hallar el valor de una unidad y multiplique por la cantidad requerida.",
+      "A proportion preserves a constant ratio. Divide to find the unit value, then multiply by the required quantity."
+    ],
+    "minGrade": 6,
+    "source": "OpenStax · Prealgebra"
+  },
+  {
+    "id": "ecuaciones",
+    "subject": "matematica",
+    "title": [
+      "Ecuaciones lineales",
+      "Linear equations"
+    ],
+    "objective": [
+      "Resolver una ecuación y comprobar por sustitución.",
+      "Solve an equation and check by substitution."
+    ],
+    "summary": [
+      "Realice la misma operación a ambos lados de la igualdad. Primero elimine el término constante; luego divida entre el coeficiente.",
+      "Apply the same operation to both sides. Remove the constant term first, then divide by the coefficient."
+    ],
+    "minGrade": 8,
+    "source": "OpenStax · Elementary Algebra"
+  },
+  {
+    "id": "probabilidad",
+    "subject": "matematica",
+    "title": [
+      "Probabilidad simple",
+      "Simple probability"
+    ],
+    "objective": [
+      "Calcular probabilidades con resultados equiprobables.",
+      "Calculate probabilities for equally likely outcomes."
+    ],
+    "summary": [
+      "Probabilidad = casos favorables / casos posibles, cuando todos los resultados son igualmente probables.",
+      "Probability = favourable outcomes / possible outcomes, when all outcomes are equally likely."
+    ],
+    "minGrade": 10,
+    "source": "OpenStax · Introductory Statistics"
+  },
+  {
+    "id": "rapidez",
+    "subject": "fisica",
+    "title": [
+      "Movimiento y rapidez",
+      "Motion and speed"
+    ],
+    "objective": [
+      "Calcular rapidez media con unidades correctas.",
+      "Calculate average speed with correct units."
+    ],
+    "summary": [
+      "La rapidez media es distancia total dividida entre tiempo total. No confunda distancia con desplazamiento.",
+      "Average speed is total distance divided by total time. Do not confuse distance with displacement."
+    ],
+    "minGrade": 6,
+    "source": "OpenStax · College Physics 2e"
+  },
+  {
+    "id": "fuerza",
+    "subject": "fisica",
+    "title": [
+      "Fuerza y aceleración",
+      "Force and acceleration"
+    ],
+    "objective": [
+      "Aplicar la segunda ley de Newton a la fuerza neta.",
+      "Apply Newton’s second law to net force."
+    ],
+    "summary": [
+      "La fuerza neta es F = ma. Use masa en kilogramos y aceleración en m/s² para obtener newtons.",
+      "Net force is F = ma. Use mass in kilograms and acceleration in m/s² to obtain newtons."
+    ],
+    "minGrade": 8,
+    "source": "OpenStax · College Physics 2e"
+  },
+  {
+    "id": "energia",
+    "subject": "fisica",
+    "title": [
+      "Trabajo y energía",
+      "Work and energy"
+    ],
+    "objective": [
+      "Calcular trabajo de una fuerza constante paralela al desplazamiento.",
+      "Calculate work by a constant force parallel to displacement."
+    ],
+    "summary": [
+      "Para una fuerza constante paralela al desplazamiento, W = Fd. La unidad es el joule (J). Si son perpendiculares, esa fuerza no realiza trabajo.",
+      "For a constant force parallel to displacement, W = Fd. The unit is the joule (J). A perpendicular force does no work."
+    ],
+    "minGrade": 10,
+    "source": "OpenStax · College Physics 2e"
+  },
+  {
+    "id": "densidad",
+    "subject": "quimica",
+    "title": [
+      "Materia y densidad",
+      "Matter and density"
+    ],
+    "objective": [
+      "Determinar densidad a partir de masa y volumen.",
+      "Determine density from mass and volume."
+    ],
+    "summary": [
+      "Densidad = masa / volumen. Compare materiales usando las mismas unidades y condiciones; la masa sola no identifica una sustancia.",
+      "Density = mass / volume. Compare materials using the same units and conditions; mass alone does not identify a substance."
+    ],
+    "minGrade": 6,
+    "source": "OpenStax · Chemistry 2e"
+  },
+  {
+    "id": "atomos",
+    "subject": "quimica",
+    "title": [
+      "Átomos e isótopos",
+      "Atoms and isotopes"
+    ],
+    "objective": [
+      "Deducir neutrones usando número másico y número atómico.",
+      "Deduce the neutron count from mass number and atomic number."
+    ],
+    "summary": [
+      "Z es el número de protones. A es protones + neutrones. Por tanto, neutrones = A − Z; en un átomo neutro, electrones = Z.",
+      "Z is the proton count. A is protons + neutrons. Thus neutrons = A − Z; in a neutral atom, electrons = Z."
+    ],
+    "minGrade": 8,
+    "source": "OpenStax · Chemistry 2e"
+  },
+  {
+    "id": "disoluciones",
+    "subject": "quimica",
+    "title": [
+      "Concentración de disoluciones",
+      "Solution concentration"
+    ],
+    "objective": [
+      "Calcular concentración másica por volumen de disolución.",
+      "Calculate mass concentration using solution volume."
+    ],
+    "summary": [
+      "Concentración másica = masa de soluto / volumen de disolución. El volumen se refiere a la disolución final, no solo al disolvente inicial.",
+      "Mass concentration = solute mass / solution volume. The volume is the final solution volume, not just the initial solvent volume."
+    ],
+    "minGrade": 10,
+    "source": "OpenStax · Chemistry 2e"
+  },
+  {
+    "id": "celulas",
+    "subject": "biologia",
+    "title": [
+      "Células y organización",
+      "Cells and organization"
+    ],
+    "objective": [
+      "Relacionar estructuras celulares con funciones.",
+      "Relate cell structures to their functions."
+    ],
+    "summary": [
+      "La membrana regula intercambios; los ribosomas sintetizan proteínas. En eucariotas, el núcleo contiene la mayor parte del ADN.",
+      "The membrane regulates exchange; ribosomes synthesize proteins. In eukaryotes, the nucleus contains most DNA."
+    ],
+    "minGrade": 6,
+    "source": "OpenStax · Biology 2e"
+  },
+  {
+    "id": "ecosistemas",
+    "subject": "biologia",
+    "title": [
+      "Ecosistemas y redes tróficas",
+      "Ecosystems and food webs"
+    ],
+    "objective": [
+      "Interpretar flujo de energía y relaciones alimentarias.",
+      "Interpret energy flow and feeding relationships."
+    ],
+    "summary": [
+      "Los productores incorporan energía a las redes tróficas. La energía disponible disminuye entre niveles; la materia circula en ciclos.",
+      "Producers bring energy into food webs. Available energy decreases between levels; matter circulates in cycles."
+    ],
+    "minGrade": 8,
+    "source": "OpenStax · Biology 2e"
+  },
+  {
+    "id": "genetica",
+    "subject": "biologia",
+    "title": [
+      "Herencia y genética",
+      "Inheritance and genetics"
+    ],
+    "objective": [
+      "Distinguir genotipo, fenotipo y probabilidades mendelianas simples.",
+      "Distinguish genotype, phenotype and simple Mendelian probabilities."
+    ],
+    "summary": [
+      "El genotipo describe variantes genéticas; el fenotipo son características observables influidas por genes y ambiente. En dominancia completa, Aa expresa el rasgo dominante.",
+      "Genotype describes genetic variants; phenotype refers to observable traits influenced by genes and environment. Under complete dominance, Aa expresses the dominant trait."
+    ],
+    "minGrade": 10,
+    "source": "OpenStax · Biology 2e"
+  },
+  {
+    "id": "acentuacion",
+    "subject": "espanol",
+    "title": [
+      "Acentuación y ortografía",
+      "Spanish accentuation and spelling"
+    ],
+    "objective": [
+      "Aplicar reglas de acentuación a palabras españolas.",
+      "Apply accentuation rules to Spanish words."
+    ],
+    "summary": [
+      "Las agudas llevan tilde si terminan en vocal, n o s; las llanas, si no terminan así; las esdrújulas siempre llevan tilde.",
+      "Spanish oxytone words take an accent when ending in a vowel, n or s; paroxytone words when not ending in those; proparoxytone words always take an accent."
+    ],
+    "minGrade": 6,
+    "source": "RAE · Ortografía de la lengua española"
+  },
+  {
+    "id": "gramatica",
+    "subject": "espanol",
+    "title": [
+      "Concordancia y gramática",
+      "Spanish agreement and grammar"
+    ],
+    "objective": [
+      "Reconocer concordancia y funciones en una oración.",
+      "Recognize agreement and functions in a sentence."
+    ],
+    "summary": [
+      "El verbo concuerda con el sujeto en número y persona. El núcleo del sujeto suele ser un sustantivo o pronombre.",
+      "The verb agrees with the subject in number and person. The subject head is usually a noun or pronoun."
+    ],
+    "minGrade": 8,
+    "source": "RAE · Nueva gramática de la lengua española"
+  },
+  {
+    "id": "lectura",
+    "subject": "espanol",
+    "title": [
+      "Lectura y argumentación",
+      "Reading and argumentation"
+    ],
+    "objective": [
+      "Distinguir tesis, evidencia e inferencia en textos breves.",
+      "Distinguish claims, evidence and inference in short texts."
+    ],
+    "summary": [
+      "Una tesis expresa la postura. La evidencia debe ser pertinente y verificable. Una inferencia se apoya en pistas del texto, no en suposiciones ajenas.",
+      "A claim states a position. Evidence must be relevant and verifiable. An inference relies on textual clues, not unrelated assumptions."
+    ],
+    "minGrade": 10,
+    "source": "REA · comprensión lectora y pensamiento crítico"
+  },
+  {
+    "id": "respeto",
+    "subject": "religion",
+    "title": [
+      "Dignidad y libertad de conciencia",
+      "Dignity and freedom of conscience"
+    ],
+    "objective": [
+      "Reconocer acciones que respetan la dignidad y las creencias.",
+      "Recognize actions respecting dignity and beliefs."
+    ],
+    "summary": [
+      "Toda persona tiene dignidad y libertad de conciencia. El respeto no exige compartir una creencia ni autoriza imponerla.",
+      "Every person has dignity and freedom of conscience. Respect does not require sharing a belief or justify imposing it."
+    ],
+    "minGrade": 6,
+    "source": "Declaración Universal de Derechos Humanos · artículos 1 y 18"
+  },
+  {
+    "id": "convivencia",
+    "subject": "religion",
+    "title": [
+      "Convivencia y resolución de conflictos",
+      "Coexistence and conflict resolution"
+    ],
+    "objective": [
+      "Elegir respuestas pacíficas y responsables ante conflictos.",
+      "Choose peaceful and responsible responses to conflicts."
+    ],
+    "summary": [
+      "Resolver un conflicto exige escuchar, identificar necesidades y acordar acciones sin violencia. Ante amenazas, busque ayuda de una persona adulta responsable.",
+      "Resolving conflict requires listening, identifying needs and agreeing on nonviolent actions. In cases of threats, seek help from a responsible adult."
+    ],
+    "minGrade": 8,
+    "source": "UNESCO · educación para la paz"
+  },
+  {
+    "id": "etica",
+    "subject": "religion",
+    "title": [
+      "Ética, solidaridad y decisiones",
+      "Ethics, solidarity and decisions"
+    ],
+    "objective": [
+      "Justificar decisiones considerando consecuencias y derechos.",
+      "Justify decisions by considering consequences and rights."
+    ],
+    "summary": [
+      "Una decisión ética considera dignidad, derechos, consecuencias y responsabilidad. La solidaridad ayuda sin humillar ni exigir beneficios personales.",
+      "An ethical decision considers dignity, rights, consequences and responsibility. Solidarity helps without humiliation or demands for personal benefit."
+    ],
+    "minGrade": 10,
+    "source": "Declaración Universal de Derechos Humanos · UNESCO educación para la paz"
+  }
+]

@@ -1,0 +1,2 @@
+REVOKE INSERT, UPDATE, DELETE ON public.students FROM authenticated;
+COMMENT ON TABLE public.students IS 'Student linking is performed only by authenticated role-checked server functions; browser access is read-only to prevent forged ownership links.';

@@ -1,0 +1,2 @@
+ALTER TABLE public.students ADD COLUMN IF NOT EXISTS status text NOT NULL DEFAULT 'activo';
+ALTER TABLE public.students ADD CONSTRAINT students_status_check CHECK (status IN ('activo','retirado','suspendido'));

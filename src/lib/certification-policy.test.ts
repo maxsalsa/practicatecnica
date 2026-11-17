@@ -1,0 +1,4 @@
+import {expect,it} from 'vitest';
+import {certificationSubject,eligibleScores} from './certification-policy';
+it('requires one exam with 60 or more',()=>{expect(eligibleScores([59])).toBe(false);expect(eligibleScores([60])).toBe(true);expect(eligibleScores([40,75])).toBe(true)});
+it('excludes games and short questions from certification',()=>{expect(certificationSubject('arena-stress',25)).toBeUndefined();expect(certificationSubject('language-en-a1-v1',1)).toBeUndefined();expect(certificationSubject('ctp-web',5)).toBeUndefined();expect(certificationSubject('mep-math-01-v1',20)).toBe('mep-math-01-v1')});

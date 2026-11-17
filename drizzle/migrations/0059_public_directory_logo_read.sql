@@ -1,0 +1,1 @@
+CREATE POLICY institution_directory_current_logo_read ON storage.objects FOR SELECT TO anon, authenticated USING (bucket_id = 'institution-logos' AND EXISTS (SELECT 1 FROM public.public_institution_directory() d WHERE d.logo_path = name));

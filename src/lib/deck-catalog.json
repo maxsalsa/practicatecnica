@@ -1,0 +1,994 @@
+[
+  {
+    "id": "study-science-b1-v1",
+    "title": "Ciencias · Bloque 1 · Vida y ambiente",
+    "emoji": "🔬",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-science-b2-v1",
+    "title": "Ciencias · Bloque 2 · Materia y energía",
+    "emoji": "🔬",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-science-b3-v1",
+    "title": "Ciencias · Bloque 3 · Investigación y datos",
+    "emoji": "🔬",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-finance-b1-v1",
+    "title": "Finanzas · Bloque 1 · Presupuesto y liquidez",
+    "emoji": "📊",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-finance-b2-v1",
+    "title": "Finanzas · Bloque 2 · Interés y valor del dinero",
+    "emoji": "📊",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-finance-b3-v1",
+    "title": "Finanzas · Bloque 3 · Riesgo y decisiones",
+    "emoji": "📊",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-banking-b1-v1",
+    "title": "Banca · Bloque 1 · Productos y registros",
+    "emoji": "🏦",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-banking-b2-v1",
+    "title": "Banca · Bloque 2 · Crédito y pagos",
+    "emoji": "🏦",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-banking-b3-v1",
+    "title": "Banca · Bloque 3 · Seguridad y derechos",
+    "emoji": "🏦",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-costs-b1-v1",
+    "title": "Contabilidad de costos · Bloque 1 · Clasificación y producción",
+    "emoji": "🧮",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-costs-b2-v1",
+    "title": "Contabilidad de costos · Bloque 2 · Costeo y asignación",
+    "emoji": "🧮",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-costs-b3-v1",
+    "title": "Contabilidad de costos · Bloque 3 · Equilibrio y decisiones",
+    "emoji": "🧮",
+    "level": "Preparación introductoria independiente · 20 preguntas originales; sin grado específico ni cotejo curricular integral",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "arena-science",
+    "title": "Retos breves · Ciencias · Bloque 1 · Vida y ambiente",
+    "emoji": "🔬",
+    "level": "Juego recreativo; no examen ni certificación",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "arena-finance",
+    "title": "Retos breves · Finanzas · Bloque 1 · Presupuesto y liquidez",
+    "emoji": "📊",
+    "level": "Juego recreativo; no examen ni certificación",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "arena-banking",
+    "title": "Retos breves · Banca · Bloque 1 · Productos y registros",
+    "emoji": "🏦",
+    "level": "Juego recreativo; no examen ni certificación",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "arena-costs",
+    "title": "Retos breves · Contabilidad de costos · Bloque 1 · Clasificación y producción",
+    "emoji": "🧮",
+    "level": "Juego recreativo; no examen ni certificación",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "study-english-b1-v1",
+    "title": "Inglés · Bloque 1 · Presente y vocabulario",
+    "emoji": "🌍",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-english-b2-v1",
+    "title": "Inglés · Bloque 2 · Pasado y have / had",
+    "emoji": "🌍",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-english-b3-v1",
+    "title": "Inglés · Bloque 3 · Infinitivo y allow",
+    "emoji": "🌍",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-math-b1-v1",
+    "title": "Matemáticas · Bloque 1 · Operaciones y proporciones",
+    "emoji": "📐",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-math-b2-v1",
+    "title": "Matemáticas · Bloque 2 · Álgebra y geometría",
+    "emoji": "📐",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-math-b3-v1",
+    "title": "Matemáticas · Bloque 3 · Datos y razonamiento",
+    "emoji": "📐",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-security-b1-v1",
+    "title": "Ciberseguridad · Bloque 1 · Caso Laboratorio de formación",
+    "emoji": "🛡️",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-security-b2-v1",
+    "title": "Ciberseguridad · Bloque 2 · Caso Cooperativa de servicios",
+    "emoji": "🛡️",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-security-b3-v1",
+    "title": "Ciberseguridad · Bloque 3 · Caso Empresa de mantenimiento",
+    "emoji": "🛡️",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-web-b1-v1",
+    "title": "Desarrollo web · Bloque 1 · Caso Laboratorio de formación",
+    "emoji": "💻",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-web-b2-v1",
+    "title": "Desarrollo web · Bloque 2 · Caso Cooperativa de servicios",
+    "emoji": "💻",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-web-b3-v1",
+    "title": "Desarrollo web · Bloque 3 · Caso Empresa de mantenimiento",
+    "emoji": "💻",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-architecture-b1-v1",
+    "title": "Arquitectura de software · Bloque 1 · Caso Laboratorio de formación",
+    "emoji": "🏗️",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-architecture-b2-v1",
+    "title": "Arquitectura de software · Bloque 2 · Caso Cooperativa de servicios",
+    "emoji": "🏗️",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-architecture-b3-v1",
+    "title": "Arquitectura de software · Bloque 3 · Caso Empresa de mantenimiento",
+    "emoji": "🏗️",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-accounting-b1-v1",
+    "title": "Contabilidad · Accounting · Bloque 1 · Caso Laboratorio de formación",
+    "emoji": "🧾",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-accounting-b2-v1",
+    "title": "Contabilidad · Accounting · Bloque 2 · Caso Cooperativa de servicios",
+    "emoji": "🧾",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-accounting-b3-v1",
+    "title": "Contabilidad · Accounting · Bloque 3 · Caso Empresa de mantenimiento",
+    "emoji": "🧾",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "mep-math-01-v2",
+    "title": "Matemática · 1.º · Conteo, operaciones y formas · Ampliado",
+    "emoji": "📐",
+    "level": "1.º · 100 variantes originales; cotejo integral pendiente",
+    "questions": [],
+    "questionCount": 100
+  },
+  {
+    "id": "mep-math-01-e60",
+    "title": "Matemática · 1.º · Simulacro oficial de 60",
+    "emoji": "📐",
+    "level": "1.º · 60 preguntas originales para simulacro",
+    "questions": [],
+    "questionCount": 60
+  },
+  {
+    "id": "mep-spanish-01-v1",
+    "title": "Español · 1.º · Lectura y escritura inicial",
+    "emoji": "📖",
+    "level": "1.º · Bloque original de 20 preguntas; programa completo pendiente",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "mep-math-01-v1",
+    "title": "Matemática · 1.º · Conteo, operaciones y formas",
+    "emoji": "📐",
+    "level": "1.º · Bloque original de 20 preguntas; programa completo pendiente",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "mopt",
+    "title": "Examen teórico MOPT",
+    "emoji": "🚗",
+    "level": "Licencia B1",
+    "questions": [],
+    "questionCount": 11
+  },
+  {
+    "id": "admision",
+    "title": "Admisión · Razonamiento, lectura y matemática",
+    "emoji": "🎓",
+    "level": "Preparación independiente · No es examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "ctp",
+    "title": "Especialidades CTP",
+    "emoji": "💻",
+    "level": "Técnico medio",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "civica",
+    "title": "Estudios Sociales y Cívica",
+    "emoji": "🇨🇷",
+    "level": "Bachillerato",
+    "questions": [],
+    "questionCount": 4
+  },
+  {
+    "id": "historia",
+    "title": "Historia de Costa Rica",
+    "emoji": "📜",
+    "level": "Primaria y secundaria",
+    "questions": [],
+    "questionCount": 6
+  },
+  {
+    "id": "espanol",
+    "title": "Español: ortografía y gramática",
+    "emoji": "✍️",
+    "level": "Primaria y secundaria",
+    "questions": [],
+    "questionCount": 6
+  },
+  {
+    "id": "religion",
+    "title": "Educación Religiosa",
+    "emoji": "🕊️",
+    "level": "Primaria y secundaria",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "sim7",
+    "title": "Simulacro de ingreso a 7.º",
+    "emoji": "🧭",
+    "level": "Contenidos hasta 6.º",
+    "questions": [],
+    "questionCount": 12
+  },
+  {
+    "id": "sim10",
+    "title": "Simulacro de ingreso a 10.º",
+    "emoji": "🚀",
+    "level": "Contenidos hasta 9.º",
+    "questions": [],
+    "questionCount": 12
+  },
+  {
+    "id": "prim1",
+    "title": "Repaso 1.º grado",
+    "emoji": "🌱",
+    "level": "Primaria 1.º",
+    "questions": [],
+    "questionCount": 6
+  },
+  {
+    "id": "prim2",
+    "title": "Repaso 2.º grado",
+    "emoji": "🌿",
+    "level": "Primaria 2.º",
+    "questions": [],
+    "questionCount": 6
+  },
+  {
+    "id": "prim3",
+    "title": "Repaso 3.º grado",
+    "emoji": "🍃",
+    "level": "Primaria 3.º",
+    "questions": [],
+    "questionCount": 6
+  },
+  {
+    "id": "prim4",
+    "title": "Repaso 4.º grado",
+    "emoji": "🌳",
+    "level": "Primaria 4.º",
+    "questions": [],
+    "questionCount": 6
+  },
+  {
+    "id": "prim5",
+    "title": "Repaso 5.º grado",
+    "emoji": "🌲",
+    "level": "Primaria 5.º",
+    "questions": [],
+    "questionCount": 6
+  },
+  {
+    "id": "ctp-prog",
+    "title": "Programación",
+    "emoji": "💻",
+    "level": "CTP · Especialidad técnica",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "ctp-web",
+    "title": "Desarrollo web",
+    "emoji": "🌐",
+    "level": "CTP · Especialidad técnica",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "ctp-ciber",
+    "title": "Ciberseguridad",
+    "emoji": "🛡️",
+    "level": "CTP · Especialidad técnica",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "ctp-conta",
+    "title": "Contabilidad y finanzas",
+    "emoji": "📊",
+    "level": "CTP · Especialidad técnica",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "ctp-ejec",
+    "title": "Ejecutivo comercial y servicio al cliente",
+    "emoji": "🤝",
+    "level": "CTP · Especialidad técnica",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "ctp-logis",
+    "title": "Administración y logística",
+    "emoji": "📦",
+    "level": "CTP · Especialidad técnica",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "ctp-electro",
+    "title": "Electrónica",
+    "emoji": "🔌",
+    "level": "CTP · Especialidad técnica",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "ctp-accounting",
+    "title": "English for Accounting",
+    "emoji": "🧾",
+    "level": "CTP · Especialidad técnica",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "experto",
+    "title": "Desafío experto",
+    "emoji": "🏆",
+    "level": "Dificultad alta · 10.º, 11.º y admisión",
+    "questions": [],
+    "questionCount": 12
+  },
+  {
+    "id": "pne-3016",
+    "title": "3016 Desarrollo Web",
+    "emoji": "🌐",
+    "level": "CTP · Prueba Nacional 01-2026",
+    "questions": [],
+    "questionCount": 54
+  },
+  {
+    "id": "pne-1001",
+    "title": "1001 Agroecología",
+    "emoji": "🌱",
+    "level": "CTP · Prueba Nacional 01-2026",
+    "questions": [],
+    "questionCount": 52
+  },
+  {
+    "id": "lote-mat-07-01",
+    "title": "Matemática 7.º · Lote 1",
+    "emoji": "➗",
+    "level": "7.º",
+    "questions": [],
+    "questionCount": 50
+  },
+  {
+    "id": "lote-mat-08-01",
+    "title": "Matemática 8.º · Lote 1",
+    "emoji": "📐",
+    "level": "8.º",
+    "questions": [],
+    "questionCount": 50
+  },
+  {
+    "id": "lote-mat-07-01-t1",
+    "title": "Matemática 7.º · Números enteros",
+    "emoji": "➖",
+    "level": "7.º",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "lote-mat-07-01-t2",
+    "title": "Matemática 7.º · Divisibilidad",
+    "emoji": "🚌",
+    "level": "7.º",
+    "questions": [],
+    "questionCount": 10
+  },
+  {
+    "id": "lote-mat-07-01-t3",
+    "title": "Matemática 7.º · Proporcionalidad",
+    "emoji": "🏷️",
+    "level": "7.º",
+    "questions": [],
+    "questionCount": 10
+  },
+  {
+    "id": "lote-mat-07-01-t4",
+    "title": "Matemática 7.º · Álgebra inicial",
+    "emoji": "🔤",
+    "level": "7.º",
+    "questions": [],
+    "questionCount": 10
+  },
+  {
+    "id": "mopt-carro",
+    "title": "MOPT · Carro · Práctica basada en Ley 9078",
+    "emoji": "🚗",
+    "level": "Carro · Banco introductorio de 5 preguntas, no examen oficial",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "mopt-moto",
+    "title": "MOPT · Moto · Práctica basada en Ley 9078",
+    "emoji": "🏍️",
+    "level": "Moto · Banco introductorio de 5 preguntas, no examen oficial",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "agilidad-mental",
+    "title": "Agilidad mental · Razonamiento",
+    "emoji": "🧠",
+    "level": "Práctica propia · No es una prueba oficial MOPT",
+    "questions": [],
+    "questionCount": 5
+  },
+  {
+    "id": "excel-fundamentos",
+    "title": "Excel · Fórmulas y referencias",
+    "emoji": "📊",
+    "level": "Práctica original · Fundamentos",
+    "questions": [],
+    "questionCount": 8
+  },
+  {
+    "id": "language-en-a1-v1",
+    "title": "EN · A1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-en-a2-v1",
+    "title": "EN · A2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-en-b1-v1",
+    "title": "EN · B1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-en-b2-v1",
+    "title": "EN · B2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-en-c1-v1",
+    "title": "EN · C1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "C1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-fr-a1-v1",
+    "title": "FR · A1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-fr-a2-v1",
+    "title": "FR · A2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-fr-b1-v1",
+    "title": "FR · B1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-fr-b2-v1",
+    "title": "FR · B2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-fr-c1-v1",
+    "title": "FR · C1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "C1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-pt-a1-v1",
+    "title": "PT · A1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-pt-a2-v1",
+    "title": "PT · A2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-pt-b1-v1",
+    "title": "PT · B1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-pt-b2-v1",
+    "title": "PT · B2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-pt-c1-v1",
+    "title": "PT · C1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "C1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-de-a1-v1",
+    "title": "DE · A1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-de-a2-v1",
+    "title": "DE · A2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-de-b1-v1",
+    "title": "DE · B1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-de-b2-v1",
+    "title": "DE · B2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-de-c1-v1",
+    "title": "DE · C1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "C1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-es-a1-v1",
+    "title": "ES · A1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-es-a2-v1",
+    "title": "ES · A2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-es-b1-v1",
+    "title": "ES · B1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-es-b2-v1",
+    "title": "ES · B2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-es-c1-v1",
+    "title": "ES · C1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "C1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-zh-a1-v1",
+    "title": "ZH · A1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-zh-a2-v1",
+    "title": "ZH · A2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "A2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-zh-b1-v1",
+    "title": "ZH · B1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-zh-b2-v1",
+    "title": "ZH · B2 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "B2 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "language-zh-c1-v1",
+    "title": "ZH · C1 · Práctica contextual",
+    "emoji": "🗣️",
+    "level": "C1 orientativo · bloque inicial, no certificación",
+    "questions": [],
+    "questionCount": 1
+  },
+  {
+    "id": "study-electrical-b1-v1",
+    "title": "Electricidad Industrial EN · Unidad 1: Safety & tools",
+    "emoji": "⚡",
+    "level": "Inglés Técnico CTP · Electricidad Industrial · Práctica original basada en el programa MEP 2021 (no es prueba oficial)",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-electrical-b2-v1",
+    "title": "Electricidad Industrial EN · Unidad 2: Circuits & measurement",
+    "emoji": "⚡",
+    "level": "Inglés Técnico CTP · Electricidad Industrial · Práctica original basada en el programa MEP 2021 (no es prueba oficial)",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-electrical-b3-v1",
+    "title": "Electricidad Industrial EN · Unidad 3: Motors, control & maintenance",
+    "emoji": "⚡",
+    "level": "Inglés Técnico CTP · Electricidad Industrial · Práctica original basada en el programa MEP 2021 (no es prueba oficial)",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-electrical-mix-v1",
+    "title": "Electricidad Industrial EN · Simulacro mezclado (60)",
+    "emoji": "⚡",
+    "level": "Inglés Técnico CTP · Electricidad Industrial · Práctica original basada en el programa MEP 2021 (no es prueba oficial)",
+    "questions": [],
+    "questionCount": 60
+  },
+  {
+    "id": "study-network-b1-v1",
+    "title": "Redes · IPv4 y dirección de red",
+    "emoji": "🔌",
+    "level": "CTP · Bloque introductorio independiente, cobertura curricular no completa",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-network-b2-v1",
+    "title": "Redes · IPv6 y notación",
+    "emoji": "🔌",
+    "level": "CTP · Bloque introductorio independiente, cobertura curricular no completa",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-network-b3-v1",
+    "title": "Redes · Subredes y capacidad",
+    "emoji": "🔌",
+    "level": "CTP · Bloque introductorio independiente, cobertura curricular no completa",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-network-b4-v1",
+    "title": "Redes · Servicios y diagnóstico",
+    "emoji": "🔌",
+    "level": "CTP · Bloque introductorio independiente, cobertura curricular no completa",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-network-mix-v1",
+    "title": "Redes · Simulacro mixto de 60 preguntas",
+    "emoji": "🔌",
+    "level": "CTP · IPv4, IPv6, subredes y servicios; preparación independiente",
+    "questions": [],
+    "questionCount": 60
+  },
+  {
+    "id": "study-support-b1-v1",
+    "title": "Soporte TI · Bloque 1 · Hardware y diagnóstico básico",
+    "emoji": "🧰",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-support-b2-v1",
+    "title": "Soporte TI · Bloque 2 · Sistemas, redes y mesa de ayuda",
+    "emoji": "🧰",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-support-b3-v1",
+    "title": "Soporte TI · Bloque 3 · Casos integrados de soporte",
+    "emoji": "🧰",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-physics-b1-v1",
+    "title": "Física · Bloque 1 · Conceptos y unidades",
+    "emoji": "🧲",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-physics-b2-v1",
+    "title": "Física · Bloque 2 · Leyes y cálculos básicos",
+    "emoji": "🧲",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-physics-b3-v1",
+    "title": "Física · Bloque 3 · Problemas integrados",
+    "emoji": "🧲",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-sports-b1-v1",
+    "title": "Deportes · Bloque 1 · Reglas básicas",
+    "emoji": "⚽",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-sports-b2-v1",
+    "title": "Deportes · Bloque 2 · Técnica y entrenamiento",
+    "emoji": "⚽",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-sports-b3-v1",
+    "title": "Deportes · Bloque 3 · Historia y casos integrados",
+    "emoji": "⚽",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-social-b1-v1",
+    "title": "Estudios Sociales · Bloque 1 · Geografía de Costa Rica",
+    "emoji": "🌎",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-social-b2-v1",
+    "title": "Estudios Sociales · Bloque 2 · Historia y civismo",
+    "emoji": "🌎",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  },
+  {
+    "id": "study-social-b3-v1",
+    "title": "Estudios Sociales · Bloque 3 · Análisis social y mundo",
+    "emoji": "🌎",
+    "level": "Preparación independiente · 20 preguntas originales; no examen oficial",
+    "questions": [],
+    "questionCount": 20
+  }
+]

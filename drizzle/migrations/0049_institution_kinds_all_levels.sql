@@ -1,0 +1,2 @@
+ALTER TABLE public.institutions DROP CONSTRAINT IF EXISTS institutions_kind_check;
+ALTER TABLE public.institutions ADD CONSTRAINT institutions_kind_check CHECK (kind IN ('preescolar','escuela','academico','ctp','universidad'));

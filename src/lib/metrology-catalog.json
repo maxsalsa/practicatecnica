@@ -1,0 +1,166 @@
+{
+  "sheets": [
+    {
+      "id": "si",
+      "title": "Magnitudes y unidades SI",
+      "objective": "Distinguir magnitud, valor y unidad; reconocer las siete unidades base.",
+      "summary": "Una magnitud es una propiedad que se puede expresar mediante un número y una referencia. Las unidades base son segundo (s), metro (m), kilogramo (kg), amperio (A), kelvin (K), mol (mol) y candela (cd).",
+      "sequence": [
+        "Identifique propiedades medibles de una pieza.",
+        "Clasifique longitud, masa y tiempo.",
+        "Registre tres valores con número y unidad."
+      ],
+      "task": "Elabore una tabla de tres magnitudes de objetos del aula, con unidad y procedimiento.",
+      "rubric": [
+        "Identifica correctamente la magnitud.",
+        "Usa una unidad adecuada y su símbolo.",
+        "Expresa cada valor con número y unidad.",
+        "Justifica el procedimiento."
+      ],
+      "questions": []
+    },
+    {
+      "id": "conversion",
+      "title": "Prefijos y conversiones",
+      "objective": "Convertir longitudes conservando la magnitud y mostrando el factor de conversión.",
+      "summary": "Kilo significa 10³, centi 10⁻², mili 10⁻³ y micro 10⁻⁶. Para longitudes: 1 m = 100 cm = 1000 mm. Las áreas y los volúmenes requieren elevar el factor al cuadrado o al cubo.",
+      "sequence": [
+        "Escriba la equivalencia de unidades.",
+        "Multiplique por un factor igual a uno.",
+        "Compruebe que la unidad original se cancela."
+      ],
+      "task": "Convierta 0,075 m a milímetros y 2500 mm a metros, mostrando cada paso.",
+      "rubric": [
+        "Selecciona el factor correcto.",
+        "Cancela las unidades.",
+        "Calcula sin errores.",
+        "Comprueba el orden de magnitud."
+      ],
+      "questions": []
+    },
+    {
+      "id": "selection",
+      "title": "Selección y cuidado del instrumento",
+      "objective": "Elegir un instrumento por su intervalo y resolución, evitando falsas garantías de exactitud.",
+      "summary": "La resolución es el cambio más pequeño que produce una variación perceptible de la indicación. No equivale a exactitud. Antes de medir, limpie las superficies, revise el cero y respete el intervalo y las condiciones del fabricante.",
+      "sequence": [
+        "Defina qué dimensión medirá.",
+        "Compare intervalo y resolución.",
+        "Revise limpieza, cero y estado del instrumento."
+      ],
+      "task": "Compare una regla y un calibrador para medir una pieza pequeña; justifique la elección.",
+      "rubric": [
+        "Define el mensurando.",
+        "Comprueba el intervalo.",
+        "Relaciona resolución y necesidad.",
+        "Documenta cuidado y revisión."
+      ],
+      "questions": []
+    },
+    {
+      "id": "vernier",
+      "title": "Lectura del calibrador Vernier",
+      "objective": "Combinar la escala principal con el nonio usando la resolución declarada.",
+      "summary": "En un Vernier métrico, sume la lectura de la escala principal anterior al cero del nonio y la división coincidente multiplicada por la resolución. Este curso usa ejemplos didácticos con resolución explícita; confirme la del instrumento real.",
+      "sequence": [
+        "Localice el cero del nonio.",
+        "Lea la escala principal anterior al cero.",
+        "Sume la contribución de la división coincidente."
+      ],
+      "task": "Para 12 mm de escala principal y división 7 coincidente a 0,02 mm, registre lectura y cálculo.",
+      "rubric": [
+        "Identifica la escala principal.",
+        "Identifica la división coincidente.",
+        "Aplica la resolución declarada.",
+        "Registra resultado y unidad."
+      ],
+      "questions": []
+    },
+    {
+      "id": "micrometer",
+      "title": "Lectura del micrómetro",
+      "objective": "Sumar escala del manguito y tambor en un micrómetro métrico convencional.",
+      "summary": "En los ejemplos, un tornillo de paso 0,5 mm tiene un tambor de 50 divisiones: cada división representa 0,01 mm. Sume la escala visible del manguito y el tambor. Incluya la marca de 0,5 mm cuando sea visible y use el mecanismo de fuerza indicado por el fabricante.",
+      "sequence": [
+        "Compruebe cero y limpieza.",
+        "Lea milímetros y medios milímetros del manguito.",
+        "Sume tambor × 0,01 mm."
+      ],
+      "task": "Calcule lecturas para manguito 5,5 mm y tambor 23; explique por qué no omite el medio milímetro.",
+      "rubric": [
+        "Lee el manguito completo.",
+        "Calcula aporte del tambor.",
+        "Suma correctamente.",
+        "Describe fuerza de contacto adecuada."
+      ],
+      "questions": []
+    },
+    {
+      "id": "errors",
+      "title": "Error, precisión y exactitud",
+      "objective": "Diferenciar error de medición y dispersión, sin confundir precisión con exactitud.",
+      "summary": "Error de medición = valor medido − valor de referencia. La precisión describe concordancia entre mediciones repetidas en condiciones especificadas. La exactitud se relaciona con la proximidad al valor verdadero; no es una magnitud a la que se asigne un valor numérico.",
+      "sequence": [
+        "Compare un valor medido con una referencia.",
+        "Calcule el error con su signo.",
+        "Compare dos series de resultados repetidos."
+      ],
+      "task": "Con referencia 10,00 mm y lectura 10,08 mm, calcule el error y explique si repeticiones cercanas bastan para asegurar exactitud.",
+      "rubric": [
+        "Distingue referencia y lectura.",
+        "Calcula el error con signo.",
+        "Distingue precisión y exactitud.",
+        "Evita conclusiones sin evidencia."
+      ],
+      "questions": []
+    },
+    {
+      "id": "traceability",
+      "title": "Calibración y trazabilidad",
+      "objective": "Interpretar calibración, ajuste y trazabilidad como conceptos diferentes.",
+      "summary": "La calibración establece una relación entre valores de patrones y las indicaciones, con sus incertidumbres, para obtener resultados de medición. No equivale a ajuste. La trazabilidad metrológica requiere una cadena documentada e ininterrumpida de calibraciones, cada una contribuyendo a la incertidumbre.",
+      "sequence": [
+        "Identifique patrón e instrumento.",
+        "Distinga calibrar y ajustar.",
+        "Revise cadena, fecha, condiciones e incertidumbre del certificado."
+      ],
+      "task": "Prepare una lista de revisión de certificado y explique qué información falta si solo dice «calibrado».",
+      "rubric": [
+        "Distingue calibración y ajuste.",
+        "Identifica referencia utilizada.",
+        "Incluye incertidumbre y condiciones.",
+        "Describe cadena documentada."
+      ],
+      "questions": []
+    },
+    {
+      "id": "report",
+      "title": "Incertidumbre, tolerancia e informe",
+      "objective": "Presentar resultados con incertidumbre y separar tolerancia de aceptación.",
+      "summary": "La incertidumbre caracteriza la dispersión de valores atribuidos al mensurando. La tolerancia es un intervalo permitido por una especificación, no la incertidumbre. Si el intervalo de medición cruza un límite, la conformidad depende de una regla de decisión acordada; no basta con observar solo el valor central.",
+      "sequence": [
+        "Registre resultado, unidad y condiciones.",
+        "Compare con límites de especificación.",
+        "Declare incertidumbre y regla de decisión antes de concluir."
+      ],
+      "task": "Informe 10,02 mm ± 0,03 mm para una tolerancia 9,98–10,04 mm; identifique el cruce de límites sin declarar conformidad automática.",
+      "rubric": [
+        "Registra valor y unidad.",
+        "Distingue incertidumbre y tolerancia.",
+        "Calcula intervalo correctamente.",
+        "Justifica límites de la conclusión."
+      ],
+      "questions": []
+    }
+  ],
+  "sources": [
+    {
+      "title": "BIPM · Sistema Internacional de Unidades (SI)",
+      "url": "https://www.bipm.org/en/measurement-units/si-base-units"
+    },
+    {
+      "title": "JCGM 200:2012 · Vocabulario Internacional de Metrología (VIM)",
+      "url": "https://www.bipm.org/en/committees/jc/jcgm/publications"
+    }
+  ]
+}

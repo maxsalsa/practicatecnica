@@ -1,0 +1,844 @@
+# Roadmap
+- [ ] 01:08 Bancos generales: Física (hecho 60), Estudios Sociales, Educación Física, Filosofía, Psicología, Español, Ciencias.
+- [ ] 01:00 Más juegos y variantes gamificadas por materia y tema.
+- [ ] 00:58 Meta 1.000 ítems revisados por materia/especialidad (por bloques; no afirmar hasta existir).
+- [ ] 00:58 Ampliar asignaturas de toda la malla MEP, por bloques revisados.
+- [ ] 00:42 Preguntas todas las áreas: 60 por tema (20 fácil/media/alta), por bloques revisados; luego confirmar banco por rol.
+- [x] 00:20 selector: todas las páginas (superadmin, admin-pagos, docentes) ocultan vista Max al elegir otro rol.
+- [ ] 00:20 cuentas reales: bloqueado hasta lista autorizada del usuario.
+- [ ] 00:17 bancos por tema/subárea/asignatura/nivel con dificultad (pendiente créditos y revisión editorial).
+- [ ] 00:17 plantilla de cuentas autorizadas por sección (sin datos inventados).
+- [x] 00:17 bitácora completa fechas/usuarios/acciones y aislamiento completo de vistas.
+- [ ] 00:17 guía de instalación con capturas; instalación física requiere dispositivos del usuario.
+- [x] 00:00 precios corregidos y publicación solicitada; asignación real bloqueada por lista autorizada.
+- [ ] (original) 00:00 publicar cambios verificados y guiar instalación con búho Windows/Android/Apple; asignación real por sección bloqueada por lista autorizada; corregir solo precios inconsistentes del informe GICM, conservando detalle SINPE «.».
+- [x] 23:59 selector de vista para Max (incluye orientación, auxiliar, guarda, conserje) extendido a Mi institución sin permisos nuevos; bitácora de roles; galería Campaña Clara con 5 imágenes. QA PC/móvil.
+- [ ] Pendiente bancos: más francés/portugués/software/soporte/seguridad/hábitos con revisión editorial; no hecho por créditos.
+- [ ] (original) plan antes de ampliar: selector completo (dirección, docente, estudiante, familia, orientación, auxiliar, conserje), vista limitada por plan/permisos reales, bitácora accesible, más bancos francés/portugués/software/soporte/seguridad y galería Campaña Clara; publicar solo al final aprobado.
+- [ ] 23:56 ampliar bancos incompletos de diseño de software, soporte TI y seguridad con unidades/habilidades reales; mantener mínimos de simulacro y claves privadas, sin inventar cobertura de 1.000.
+- [ ] 23:56 añadir regreso a la pantalla anterior accesible en navegación compartida y comprobar historial; publicar cambios y comprobar búho en dominio.
+- [x] QA ampliada 23:56: selector de todos los roles, destinos de dirección/estudiante/familia, ayuda Instalar y ocultamiento con evento appinstalled en PC/móvil claro/oscuro; tres roles adicionales revisados y página de asignación cargada. No instalación física ni asignación real.
+- [x] Botón Instalar junto al menú; usa invitación nativa o ayuda del navegador/Apple, se oculta con appinstalled/standalone. QA evento simulado y ayuda, no instalación física Windows/iOS; algunas instalaciones externas no son detectables desde una pestaña normal.
+- [x] Rol retirado de opciones y nuevas asignaciones: Ministro y Asesor de asignatura; dirección asigna todos los roles institucionales, sin autoasignación ni modificación de administración global, con auditoría. Funciones aplicadas y leídas; asignación real pendiente de lista autorizada.
+- [x] Selector de vista en menú: Max cambia vistas, demás usuarios selector bloqueado al rol asignado; navegación privada conserva autorización independiente. QA Max/estudiante/familia con carga completa.
+- [x] Favicon/Apple/manifiesto apuntan a búho existente, dimensiones e imágenes comprobadas; sin regenerar ni modificar referencias. Instalaciones previas pueden necesitar reinstalación tras publicar.
+- [x] 23:37 informe QA leído y contrastado con código: Acerca de contiene dólares antiguos (5/7/20 frente a 4,99/6,99/19,99); Detalle SINPE «.» sí coincide con instrucción expresa de Max y debe conservarse. Enlace sin cuenta retorna a Inicio. No se activaron cobros ni se modificaron precios. Pendiente verificación publicada del monto SINPE y etiqueta de PDF, y correcciones de presentación.
+- [x] 23:42 QA editorial final: 48 borradores/299 preguntas por cada combinación PC/móvil y claro/oscuro; cuatro opciones y clave coherente con editor, todos los filtros, guardado/recarga y tres enlaces de sección. Estudiante/familia no accedieron a editor/claves. Pantalla de publicadas vacía en institución ficticia; no se aprobaron bancos ni se verificó despliegue nuevo.
+- [x] 23:25 preparación v4 de 23 selecciones privadas, una pregunta por habilidad identificada, sin modificar bancos históricos; editor con habilidad/enunciados/opciones/clave, filtros área/estado y pantalla de publicadas. 48 borradores/299 preguntas leídas en editor, guardado y recarga comprobados PC351/1280 claro/oscuro; enlaces de sección comprobados. Etiquetado conservador no equivale a revisión semántica completa ni 1.000 ítems; pendientes distractores y etiquetas humanas ambiguas. Sin aprobación definitiva.
+- [ ] Asignar usuarios reales: falta lista autorizada de estudiantes/secciones/familias; los enlaces no conceden permisos ni crean vínculos.
+- [x] 23:27 dominio practicatecnica.com conectado y proyecto publicado confirmado por herramienta; cambios editoriales listos para solicitud de publicación tras revisión básica sin hallazgos. Despliegue nuevo aún no confirmado.
+- [x] Comprobación posterior completa: 23 bancos cargados idempotentemente, 25 borradores/162 preguntas con cuatro opciones y una clave cada una, vista previa→editar conserva enunciados y claves, PC1280 y móvil351×595 en claro/oscuro (648 vistas de preguntas). Familia relee resultado institucional y cada práctica de plataforma; estudiante sección/canales y ambos rechazan paneles privados. Sin errores de página ni desbordamiento horizontal. Dominio publicado responde 200 y muestra ingreso correcto sin sesión; esto no confirma el contenido privado del despliegue actual. No nuevas aprobaciones ni modificaciones del colegio real.
+- [x] 23:09 catálogo de 23 bancos con preparación privada de una práctica por banco y claves revisadas en UI (25 borradores incluyendo idiomas v3); francés/portugués ocho habilidades depuradas, resto pendiente revisión editorial, ninguno aprobado como 1.000. Guardado individual institucional separado de XP/certificados; estudiante ficticio entrega 100% y familia relee primera/última/mejor 100%, estudiante ajeno denegado. Aprobación QA retirada, borrador restaurado y permisos originales vacíos restaurados. 39 pruebas y build OK.
+- [ ] 23:09 confirmar publicación actual y enlaces por secciones reales; solo constan sección real «7777» y sección ficticia «10-2», sin archivo para cotejarlas ni vínculos familiares reales comprobados.
+- [x] Comprobación 22:44–22:51: 16 ítems completos × PC/351 × claro/oscuro, calificación y guardado leído; vistas de todas las claves/editar/importar localmente; permisos guardar/recargar; familia resultados/recargar/canal y estudiante sección/canal, sin paneles privados. Max alcanzó tres intentos; último repaso claro verificado con estudiante ficticio sin eludir límite. Capturas revisadas en 12 mosaicos. Producción muestra acceso de prueba sin sesión, por lo que ausencia de títulos no confirma versión desplegada.
+- [ ] Confirmar las pantallas nuevas en producción con sesión autorizada; consulta pública está limitada por ingreso, no demuestra despliegue del commit.
+- [x] Registrar nuevos resultados individuales de prácticas institucionales y leerlos en seguimiento familiar; comprobación ficticia 100% guardado/releído. No reconstruir históricos desde contadores.
+- [x] 22:39 resultados familiares por área/práctica (primera/última/mejor/cambio/XP) desde intentos verificados; lista de usuarios existentes y permisos; JSON y vista previa privada de preguntas/claves antes de aprobar publicación. QA Max PC/351, familia vinculada y denegación de estudiante ajeno; estudiantes/familias bloquean paneles y borradores. Publicación solicitada al finalizar; enlaces por sección verificados en preview, despliegue pendiente de confirmar. Prácticas institucionales no guardan intentos individuales actualmente, solo contador agregado; no se inventan resultados de ellas.
+- [x] 22:36 francés/portugués v3: ocho preguntas canónicas por idioma, habilidad única/enunciado/estructura sin duplicados ni operaciones numéricas; preparadas/releídas como borradores privados en institución de prueba GICM. Sin aprobación automática, 1.000 ítems ni novedad intersesión; históricos intactos. 66 pruebas correctas, build OK; revisión básica sin hallazgos, advertencia profunda histórica pendiente de nueva revisión.
+- [x] Comprobación final: 21 áreas × PC/móvil × claro/oscuro, responder→siguiente→volver, sin errores de ejecución; revisión de dos áreas sintéticas aprobar/rechazar/releer y editor modificar/guardar/recargar sin salir, cuatro combinaciones. Estudiante y familia consultan cinco días permitidos, todos sus canales, rechazan paneles administrativos/horario ajeno/área rechazada. Horario/borradores sintéticos eliminados y selección previa restaurada; historial de prueba rechazado conservado. No cotejo con archivo real ni confirmación de cambios publicados: URL devuelve 200 pero no se identificó el contenido nuevo.
+- [x] 22:18 revisión institucional por área con motivo obligatorio e historial privado; aprobación y rechazo guardados/releídos en UI con borrador sintético, eliminado al terminar. Carga/calificación estudiantil requiere aprobación y asignación individual; 2 pruebas.
+- [ ] 22:11 cotejar e importar archivo real completo de horarios: localizar adjunto antes de cambiar materias, docentes, aulas o horas.
+- [x] 22:12 selección nueva v2 con un ítem por plantilla, deduplicación textual/numérica y exclusión de operaciones duplicadas; francés/portugués 8 ítems por repaso, no 1.000. Formas históricas intactas; 26 pruebas y francés PC/móvil. La revisión semántica global sigue pendiente.
+- [x] 22:12 reutilizadas cuentas ficticias vinculadas: estudiante solo canal 10-2 sin escritura, familia canal propio y sección; ambos rechazan horario ajeno/tema no asignado y paneles de dirección. Horarios actuales vacíos, no se verificó un horario permitido con datos reales. Familia consulta solo estudiante vinculado.
+- [x] 22:12 publicación solicitada del commit 0ccbd8e para practicatecnica.com tras revisión básica sin hallazgos; despliegue no confirmado, advertencia profunda histórica requiere revisión actualizada. Enlaces autenticados mi-horario/seguimiento/canales no otorgan permisos; no se inventan secciones reales sin archivo.
+- [x] 21:32 Canales con cabecera institucional, burbujas, mensajes/archivos, navegación de retorno e identidad propia; lectura real verificada en PC/móvil. Permisos estudiantiles intactos.
+- [x] 21:26 auditoría reproducible de 1.000 muestras por siete áreas; 228–742 enunciados distintos. Informe docs/variety-review.md y pruebas de duplicados numéricos/textuales. No se alteraron bancos históricos.
+- [ ] 21:26 eliminar repetición conceptual en contenido nuevo versionado; faltan 1.000 ítems independientes por área y revisión editorial, no aprobado para presentarlo como completo.
+- [x] 21:26 panel de áreas/temas publicados y horarios asignados, solo Dirección/Max, cambios auditados y autorización de carga/calificación institucional. Guardado/readback de configuración vacía ficticia verificados PC/móvil sin ampliar acceso.
+- [x] 21:27 guardado sin salir verificado PC/móvil sobre horario existente sin alterar materias/profesores/aulas; importación nueva borra referencia al horario anterior para no sobrescribirlo.
+- [x] 21:27 publicación solicitada en practicatecnica.com del commit f1927ce tras revisión básica sin hallazgos; despliegue no confirmado y revisión profunda anterior no cubre cambios actuales. Ningún cotejo real afirmado.
+- [ ] 21:27 importar/cotejar horarios y práctica institucional con archivo real; pendiente adjunto identificable.
+- [x] 21:27 documentos institucionales dejan de emitir enlaces firmados; lectura directa de storage cerrada y entrega autenticada con doble comprobación actual de RLS. Escaneo básico sin hallazgos; advertencia histórica requiere nueva revisión, no se ocultó.
+- [ ] 21:27 aislamiento E2E con cuentas estudiante/familia y revocación real: requiere sesiones autorizadas de esas cuentas; no solicitar contraseñas ni simular identidad. Pruebas de rechazo del documento incluidas.
+- [x] 20:58 editor por lección/sección para materia/profesor/aula/horas, aplicar o dejar libre y guardar cambios sobre horario seleccionado con RLS existente. Tres pruebas de validación; edición local de cuatro secciones verificada en móvil oscuro sin guardar; verificación restante y escritura/readback no completadas por navegación/carga intermitente.
+- [ ] 20:58 verificar guardado/readback real del editor en ambos tamaños/temas; sin archivo real no modificar registros institucionales con datos QA.
+- [ ] 20:58 revisar 1.000 ítems por área (no existen todavía 1.000 revisados), cotejo y práctica institucional pendientes de archivo nuevo (siguen 376 adjuntos).
+- [x] 20:58 revisión profunda terminada: una advertencia por enlaces privados válidos 30 segundos tras retirar acceso; revisión básica sin hallazgos; dependencias no actualizadas en el resultado. Antes de compartir: tratar advertencia, verificar permisos con cuentas vinculadas y confirmar versión publicada. Auditoría no incluye editor posterior.
+- [x] 20:47 siete familias ampliadas separadas de versiones históricas: francés/portugués gramática, español análisis, ciberseguridad incidentes, redes servicios/equipos, IPv4 y IPv6. 32 pruebas; siete áreas verificadas con siguiente pregunta en móvil/PC claro/oscuro. No representan 1.000 ítems revisados por área.
+- [x] 20:47 Perfil muestra puntaje por tema de intentos verificados persistidos; lectura en móvil/PC claro/oscuro.
+- [x] 20:47 un horario guardado, cuatro secciones, cinco días con columnas Profesor/Aula verificados en móvil/PC claro/oscuro sin escrituras. No cotejo con fuente real: 376 adjuntos sin horario identificable; planes anuales y plantilla no usados como horarios.
+- [ ] 20:47 completar 1.000 ítems genuinamente diversos por área: expansión y revisión editorial pendientes.
+- [ ] 20:47 cotejar horarios y práctica institucional con archivo real: falta adjunto institucional identificable.
+- [x] 20:47 publicación solicitada en practicatecnica.com, no despliegue confirmado; revisión básica sin hallazgos antes de cambios de contenido; análisis profundo anterior mantiene advertencia sobre enlaces privados válidos 30 segundos tras retiro.
+- [x] 20:39 completadas y guardadas prácticas de 20 de inglés y matemática: cero enunciados idénticos dentro de cada sesión, repetición conceptual de tiempos/verbos y operaciones; no demuestra unicidad entre sesiones.
+- [x] 20:39 importación JSON de 1–1.000 preguntas propias validada en Exámenes de mi docente; revisión antes de guardar/publicar, sin modificar bancos oficiales. Puntaje por tema verificado mostrado en Prácticas y Práctica sin repetición; cuatro pruebas y lectura posterior en UI.
+- [ ] 20:39 1.000 ítems genuinamente diversos por área: pendiente expansión editorial; banco actual no cumple esa cantidad revisada ni garantiza cada sesión única.
+- [ ] 20:39 práctica institucional cotejada con horario real: falta archivo institucional identificable; no atribuir prácticas generales a una sección real.
+- [x] 20:33 primera ampliación: cinco familias variables (inglés, francés, portugués, IPv6 y ciberseguridad) en Práctica sin repetición; acceso desde Idiomas. Selección guiada prioriza índices no vistos por dueño/banco/idioma, conserva borradores y claves canónicas. 25 pruebas; cinco familias y siguiente pregunta verificadas en móvil/PC y ambos temas.
+- [ ] 20:33 expansión revisada de 1.000 preguntas genuinas por área y toda la malla — requiere ampliar y revisar contenido conceptual; no alcanzado por esta primera entrega ni por combinaciones cosméticas.
+- [ ] 20:33 variedad genuina de valores, conceptos y distractores en toda la malla; evitar repetición entre sesiones antes de reciclar el banco, sin afirmar cobertura editorial completa ni ítems inéditos infinitos.
+- [ ] 20:32 ampliar variedad y selección aleatoria sin repetición inmediata: inglés (to be, pasado, presente continuo, futuro), francés, portugués, matemática, español, ciberseguridad, redes, IPv4 e IPv6; expansión de 1.000 ítems por área requiere preguntas genuinas y revisión, no duplicados cosméticos.
+- [x] 20:27 vista por sección en Horarios con cinco días, materia, profesor y aula (sin asignar si falta); dos secciones y tres opciones verificadas en móvil/PC y ambos temas sin guardar datos ficticios. REAC verificado: 81 parcial y rubros 45/10/40/5.
+- [ ] 20:27 cotejar Horarios/perfil/portal con datos reales — falta archivo de horarios y correo autorizado del padre; no inventar vínculos ni aulas.
+- [ ] 20:26 cargar horario completo y cotejar cada sección; vincular padre autorizado al estudiante de prueba y verificar QR con notas — bloqueado: no hay adjunto de horarios identificado ni correo autorizado del padre.
+- [ ] 20:21 importar horario real por sección, conservando días y lecciones exactos — falta adjunto; no usar el generador aleatorio como importación de horario fijo.
+- [ ] 20:21 publicar y abrir QR de matrícula como cuenta no vinculada: debe permitir verificación pública, nunca acceso a notas ajenas; padre real requiere cuenta identificada.
+- [ ] 20:11 importar archivo real de horarios en Horarios — bloqueado: no llegó archivo de horarios; importador CSV/TXT existente probado.
+- [x] 20:11 REAC aplicado al cálculo de notas existentes: alias Matemáticas reconocido; docente muestra 81 parcial/95 % registrado con 45/10/40 oficiales. Registro nuevo autocompleta peso; datos históricos intactos.
+- [ ] 20:11 comparar perfil/portal — bloqueado: estudiante de prueba sin cuenta vinculada ni encargado; falta correo real autorizado, no inventar identidades.
+- [ ] 20:12 crear padre con correo real autorizado, vincular estudiante de prueba y escanear QR del recibo — falta correo autorizado identificado.
+- [x] 20:12 comprobación básica de seguridad sin hallazgos; análisis profundo anterior mantiene advertencia de enlaces privados válidos 30 s tras retiro. Publicación solicitada tras guardar cambios; no equivale a despliegue confirmado.
+- [ ] 19:58 cuenta familiar real, vínculo y prueba QR/notas — bloqueado: falta correo real autorizado del padre y estudiante identificado; no inventar identidad.
+- [x] 19:58 QA móvil: menú → Institución → Horarios → revisión de permisos → Canales; atrás vuelve a Horarios y revisión, sin desbordamiento a 390 px. Edición abre el formulario correcto.
+- [x] 19:57 permisos: accesos docente/jefatura y búsqueda; modificación propia pendiente con auditoría RPC. Formulario comprobado sin alterar solicitudes reales. Comprobantes PDF/fotos existentes conservados; decisión sobre solicitud ajena no probada por falta de otro solicitante identificado.
+- [x] 19:58 REAC oficial 45509-MEP consultado: artículos 40–42 para materias comunes y grados explícitos, cálculo compartido perfil/familias probado (Matemática 7.º = 86). Sin escritura masiva ni inferencia de modalidades.
+- [ ] REAC restante: modalidades especiales, técnica diurna/nocturna, vocacional y conducta requieren selección explícita y modelo de períodos; no aplicar tabla general automáticamente.
+- [x] 19:58 CSV/TXT de cargas por sección validado localmente genera 3 horarios automáticamente para revisión/guardado; probado como Max (CSV 7-1, 5 lecciones), sin guardar filas ficticias.
+- [x] 26xd V2.1: perfil institucional privado con región/circuito/dirección/teléfono/web/redes, escudo existente conservado; canales y avisos superiores, búsqueda de secciones y 4 nuevas misiones (12 total). Verificado como Max: guardado vacío sin inventar datos y lectura tras recarga, filtro Matrículas, música guardada, móvil360 sin desbordamiento y 20 pruebas pasan. Sin servicios externos nuevos; publicación y cobertura completa no realizadas.
+- [ ] 23:15 cobro de prueba solicitado: requiere conexión sandbox verificada y aprobación de comprador; nunca simular recibido ni habilitar live sin verificación. Excel completo requiere identificar institución y registros autorizados; SEA utiliza CSV oficial, no importa este libro completo. Afiches por materia con escenas y banderas CR/EE.UU. descargables.
+- [x] 23:11 afiches Campaña Clara: foto local y título exportados en PNG 1080×1350; archivo inspeccionado, móvil390 sin desbordamiento. Descarga no publica ni aprueba campañas; catálogo de banderas/fotos pendiente.
+- [x] 23:09 accesos superiores Inicio/Libros/Juegos/Mi avance y Mi institución condicionada a permiso; marca propia, comprobados PC/móvil390, sin abrir chats.
+- [ ] 23:07 investigar REAC 45509-MEP vigente y procesos de conducta/violencia antes de proponer notas; conservar datos sensibles separados y acceso autorizado, sin sanciones automáticas.
+- [ ] 23:05–23:06 ocho misiones introductorias creadas y ciclo del agua guardado como Max; revisión JSON comprobó 1 usuario/2 boletas/1 permiso; faltan catálogo exacto de materias institucionales y tarifas por juego registradas. Pendientes: Excel con registros reales de institución identificada; cobro sandbox antes de activar acceso; guía SEA y comparación con JSON; página de migración con carga/revisión de usuarios, notas y boletas, sin crear identidades ni escribir en SEA automáticamente.
+- [x] 23:04 plantilla Excel v1 entregable de seis hojas: campos exactos JSON (Metadata/Institution/Users/Grades/Permissions) y ID_Mapping auxiliar; encabezados/tipos texto revisados. Plantilla vacía, no convertidor automático ni importador SEA/PIAD. SEA manual junio 2025 §4.3.4 confirma descarga/carga CSV; respaldo integral PIAD y equivalencia de identidades/boletas siguen sin verificar. PayPal real permanece pendiente de prueba segura.
+- [ ] 23:03 plantilla Excel con campos exactos de JSON y guía de relación de identificadores/autenticación; SEA confirma CSV de notas por periodo/asignatura/grupo (manual docente junio 2025 §4.3.4), no respaldo total JSON. Asignación Gmail multiusuario requiere identificación autorizada; no inferir ni crear sesiones ajenas.
+- [ ] 23:02 juegos originales por materia institucional con figuras/mapas/resúmenes y precios CRC del panel, sin tarifas inventadas ni afirmar cobertura completa. Investigación SEA/PIAD: distinguir registros CSV/Excel de respaldo integral; no importar JSON directamente sin formato oficial compatible.
+- [ ] 22:58 panel de cobros antes de activar accesos, verificación por cuentas reales identificadas y juegos por materias institucionales; PayPal no admite liquidación CRC. 22:59 guía de importación externa: documentar correspondencias usuarios/notas/permisos y límites del respaldo; pasos exactos pendientes de plataforma destino, sin prometer migración completa.
+- [ ] 22:55 cada persona ingresa con su propio Google; Max asigna rol, suscripción y accesos por puesto desde el panel, sin conectar buzones ni crear cuentas en su nombre. Panel de pagos confirmados, pendientes y saldo por cobrar basado en obligaciones registradas, no inferir de usuarios sin pago. PayPal real con revisión manual requiere verificación previa. Juegos por materias institucionales requieren catálogo concreto. Respaldo descargable en PC/móvil/tablet; importación externa solo cuando exista destino/formato documentado. JSON actual no incluye adjuntos ni datos clínicos y no equivale a respaldo integral.
+- [x] 22:55 respaldo JSON descargado en app con 1 usuario, 2 boletas y 1 permiso de Escuela de Prueba; excluye contraseñas, adjuntos y detalles clínicos. Roles adicionales auditados/selector y consulta agregada creados; asignación multiusuario pendiente de cuentas autorizadas. WASD/flechas y teclado musical probados; 13 pruebas pasan. PayPal capturado quedará pendiente de confirmación de Max, no activo; cobros reales siguen bloqueados por falta de prueba verificada y PayPal liquida USD, no CRC.
+- [ ] 22:48 completar ministro de cariño, asesor de especialidad y director general con accesos delimitados; respaldo descargable usuarios/notas/permisos; PayPal real tarjeta/precios CRC con activación manual de Max; juegos teclado/táctil y mapas/figuras; asignar director/docente/estudiante/auxiliar reales tras identificar Gmail e institución.
+- [x] 22:48 primera entrega: Mi institución fuera de Más, tareas directas y secciones secundarias contraídas; apertura de permiso/foto y edición de miembros comprobadas como Max a 351 px, sin desbordamiento ni errores. 29 pruebas pasan. Respaldo privado y corrección Estudiante/Docente auditada implementados; envío/respuesta multiusuario y corrección real pendientes de cuentas autorizadas distintas. Cobros reales no activados.
+- [ ] 22:44 roles adicionales seleccionables por Max (tester, asesor por materia/especialidad, supervisor, dirección general y etiqueta honorífica) separados de privilegios reales; pagos solo confirmados tras verificación, no activar por cambio de cuenta ni cortesía.
+- [ ] 22:43 exportación de información propia y respaldos institucionales autorizados, importación con revisión de formato/propiedad; migración sin dependencia. SEA/PIAD interoperabilidad solo con especificación documentada, sin afirmar integración oficial ni exponer menores.
+- [ ] 22:41 navegación por institución/circuito educativo/región; supervisores y MEP con Gmail y permisos expresamente asignados, nunca acceso automático a menores. PayPal verificado, publicación de juegos, controles teclado/táctiles, ilustraciones/mapas y ampliación original por cinco de ítems/juegos sin contar duplicados como contenido nuevo.
+- [ ] 22:38 auditoría UX/UI y recorrido institucional: hacer visible Mi institución, solicitudes/justificaciones con foto, revisión con solicitud de respaldo, rechazo/aprobación y QR/SHA-256; medir aviso previo y enfermedad/imprevisto sin detalles médicos públicos. NFC solo etiquetas compatibles, nunca identidad oficial.
+- [ ] 22:36 separar administración global de Max, pagos por institución y trabajo de Dirección/docentes; facilitar alta/corrección/retiro de miembros y corrección del tipo de cuenta con historial, sin autoascenso.
+- [ ] 22:36 planeamientos automáticos y ya preparados, ampliación revisada de materias/ítems, comprobantes y asistencia; simplificar accesos sin retirar módulos.
+- [ ] 22:36 tiempo de actividad e ingresos con fecha/hora Costa Rica, informes privados para familias vinculadas y gamificación; tiempo conectado no demuestra aprendizaje ni altera notas verificadas.
+- [ ] 20:54 boletas/notas digitales imprimibles por materia: I periodo, II periodo y anual; membrete con escudo/logo de la institución, siglas y leyendas configurables, QR verificable; emiten Dirección, Subdirección o Secretaría (administrativo). Sin logo oficial MEP (marca independiente); QR/SHA-256 no es firma digital certificada.
+- [ ] Seguimiento de tarifas: copia del PDF de matrícula para la familia en «Matrícula digital» y verificación pública del código de matrícula con QR.
+- [ ] 20:45 juego de música: escalas, sonidos, instrumentos, notas, teoría, oído y apreciación (escuchar e identificar, como listening/speaking de idiomas), con sonidos generados en el dispositivo y resultados recreativos privados.
+- [ ] 20:43 ejercicios prácticos de música, juegos, pruebas y trabajos para todas las materias y especialidades, incluido material docente: incluir en la ampliación de bancos originales, sin afirmar cobertura completa.
+- [ ] 20:38 universo de ítems por 100 y 1.000 en todas las materias, repasos, trabajos, proyectos y cotidianos, con micro y macro evaluación de todos los niveles: ampliar por bancos originales revisados y generadores paramétricos existentes; no afirmar malla completa ni ítems oficiales.
+- [x] 20:35 niveles por circuito y vehículo: 9 pasos por vehículo (Inicial→Intermedio→Avanzado), cada uno exige el anterior con el mismo vehículo; guardado automático al terminar, botón «Siguiente», clasificación con circuito/vehículo/nivel/puntos y avance por vehículo. 11 pruebas; moto/bicicleta jugadas como Max, desbloqueo tras recarga y móvil 351 sin desborde comprobados. Nivel de partida ahora Oro/Plata/Bronce por errores.
+- [ ] 20:35 reportes de seguimiento y avance: logros, insignias, puntajes y notas de prácticas, simulacros y juegos, separando notas académicas verificadas de puntos recreativos.
+- [ ] 20:35 Stripe con cobros reales y tarifas por institución/descuentos: requiere que Max desconecte el proveedor actual y acuerde continuidad; sin migración abrupta ni automática.
+- [x] 20:34 el circuito muestra la tarifa más específica de la institución del jugador según nivel, vehículo y tipo de licencia (selector aparece solo si hay tarifas por licencia); informativa, sin cobro. Probado ₡500 general → ₡1.200 moto A2.
+- [ ] 20:34 correo propio con cuenta real de Max y push de llegada al aula antes de matrículas reales: requiere completar configuración de dominio y datos web push; no afirmar entrega sin dispositivo/destinatario autorizado.
+- [x] 20:34 pestaña «Tarifas» (Dirección/Subdirección/Max): tarifas por servicio/nivel/vehículo/licencia y descuentos por prioridad (no acumulables), con historial; Matrículas propone la tarifa por nivel, registra el monto en servidor y genera PDF (identificación enmascarada, CRC, código SHA-256 solo si aprobada, espacio para firma manuscrita). Probado como Max en Escuela de Prueba; filas QA desactivadas. 13 pruebas.
+- [x] 20:28 resumen final vial: tiempo desde primera maniobra, errores y nivel, manteniendo tres circuitos; verificado en pantalla y guardado personal, 7 pruebas pasan. Tiempo/errores solo resumen de partida, puntos se conservan en perfil.
+- [x] 20:29 tres niveles con metas/obstáculos progresivos, ocho vehículos incluyendo taxi/autobús/especiales; resultados versionados por nivel y categorías recreativas sin equivalencia legal. 8 tests pasan, guardado perfil Max y móvil comprobados.
+- [ ] Correo/push antes de matrícula: correo sin dominio configurado; actualización Firebase web cancelada por nuevo mensaje, aún faltan configuración y dispositivo receptor. Stripe preserva acceso actual; no cambiado.
+- [x] 20:28 panel institucional entregado 20:50 (ver arriba); importes reales los registra cada institución.
+- [x] 20:26 selector con carro/moto/tráiler/bicicleta/bicimoto e imágenes originales realistas, sin personaje comercial.
+- [x] 20:25 tres circuitos por casillas: conos, rotonda y parqueo, cinco vehículos, puntos/niveles/recompensas personales; resultado recreativo guardado y leído en perfil de Max. 7 tests pasan, móvil 351 sin desborde, build OK. No es conducción física ni prueba oficial.
+- [ ] 20:25 adicionales: correo/push real requiere configuración, caso/firmante/descuentos no pueden inventarse; Stripe requiere continuidad y desconexión manual, no migración automática.
+## Pedidos reiterados · 15-nov-2026 20:22 UTC
+- [ ] 20:23 juegos: varios circuitos con motos, carros y tráileres, conos y rotondas; término «comisiones» sin interpretación confirmada, no inventar cobros ni reglas.
+- [x] 20:23 primera mejora DUA: foco en pregunta, retroalimentación anunciada, botones de respuesta mínimo 44 px y lectura/paro opcionales en prácticas no inglesas; PDF actualizados, 7 pruebas pasan. No es auditoría de interfaz completa ni prueba autenticada de una práctica.
+- [ ] Correo propio + envío real aula: volver a comprobar dominio y configuración web push, sin envío arbitrario ni afirmar entrega sin destinatario/dispositivo autorizados.
+- [ ] Matrícula/PDF/retiro reales: falta caso expresamente identificado y firmante autorizado; tarifas de comedor ya por institución, descuentos por prioridad sin importes definidos.
+- [ ] Stripe integrado con suscripciones existentes: no existe migración automática; requiere continuidad acordada y desconexión manual del proveedor actual antes del alta y pruebas.
+- [ ] Accesibilidad interfaz completa y PDF: empezar por barreras concretas de la práctica, ampliar auditoría sin afirmar cobertura integral; mantener contenido diverso, inclusivo y neutral.
+- [ ] Juegos viales originales con progreso privado por estudiante: separar resultados recreativos de notas; malla mundial/MEP completa requiere fuentes y revisión, no etiqueta automática.
+- [x] Entrega 20:18: términos con derechos/deberes, propiedad intelectual, DUA, medios de pago realmente disponibles y límites de firma/avisos. Manuales usuario/ingeniería/pagos regenerados: 13 páginas inspeccionadas, corregidas 3 páginas sobrantes; descargas HTTP 200 application/pdf, móvil 351 px sin desbordamiento; 14 pruebas de cobro/precios pasan y build OK.
+- [ ] Revisión inicial Quiz: controles Button con texto y aria-pressed; advertencias: retroalimentación por pregunta sin región live y cambio de pregunta sin foco dirigido; apoyos graduados DUA no incorporados. Solo revisión de código, no recorrido autenticado ni auditoría WCAG integral. Límites/QR/bilingüismo del catálogo requieren revisión separada; no modificados por esta entrega.
+- [ ] 20:09: aplicar DUA, inclusión, diversidad y neutralidad en prácticas, trabajos, preguntas e ítems; revisión progresiva de contenido e interacción, sin declarar cumplimiento integral sin evidencia.
+## Condiciones y recorrido · 15-nov-2026 20:07 UTC
+- [ ] Stripe integrado solicitado: solo un proveedor administrado activo; conservar suscripciones existentes requiere transición sin migración automática. No desconectar Paddle ni activar cobros reales antes de acordar transición y verificar pruebas/elegibilidad.
+- [ ] Juegos viales: bloque original interactivo con resultados, sin afirmar cobertura mundial/MEP/idiomas/técnicas completa sin fuentes y revisión curricular.
+- [ ] Actualizar términos, derechos, deberes y compromisos de suscripción; armonizar manuales PDF de usuario/pagos/ingeniería con interfaces y límites reales, sin afirmar aceptación histórica no registrada.
+- [ ] Configurar dominio de correo propio para avisos de llegada; push requiere configuración y consentimiento de dispositivos aparte del dominio.
+- [ ] Revisar tarifas por institución ya editables; definir descuentos por prioridad con importes y autorización explícitos antes de aplicar.
+- [ ] Recorrido familiar solicitado otra vez: identificar matrícula real e institución y autorización del firmante antes de aprobar, emitir documento o probar retiro.
+## Pagos y validación real · 15-nov-2026 20:05 UTC
+- [x] Verificación 20:06: practicatecnica.com responde HTTP 200; no certifica recorrido familiar. Paddle informa producto no elegible para alta automática y cobros reales no habilitados. SINPE conserva revisión manual; PayPal bloqueado hasta prueba verificada. No se cambió proveedor.
+- [ ] Suscripciones PayPal/SINPE/Visa/Stripe/Google Pay y acceso huella/PIN/Authenticator: verificar proveedor vigente y opciones compatibles antes de cambios; no cambiar procesador ni habilitar cobros sin pruebas.
+- [ ] PDF de pruebas con familia real y firma autorizada: identidad familiar no autoriza firma institucional; requieren caso identificado, prueba curricular concreta y aprobación real del firmante.
+- [ ] Validación oficial chip NFC/imagen para comedor: no disponible con NDEF existente ni acreditada por OCR; no autorizar/rechazar automáticamente sin solución oficial documentada.
+- [ ] Tarifas: ₡700 estudiante/₡1.400 docente fueron indicadas por Max para CTP Mercedes Norte, no inventadas; otros centros no tienen tarifas verificadas. Asistencia no tiene tarifa propia. Descuentos nuevos requieren importes y autorización.
+- [ ] Push/correos de llegada: Firebase vinculado sin envío implementado; dominio de correo no configurado. No enviar datos familiares ni probar con cuentas arbitrarias.
+- [ ] Publicación solicitada nuevamente y recorrido real: última publicación solicitada 20:04; verificar seguridad antes de nueva publicación y no afirmar recorrido completo sin familia/firmante autorizados.
+- [x] Directriz económica 20:04: priorizar costo cero o mínimo para familias/estudiantes y tarifas bajas institucionales/docentes; no añadir recargos por módulos ni modificar precios aprobados sin importes explícitos.
+## Recorrido y avisos · 15-nov-2026 20:03 UTC
+- [ ] 20:04: revisión y publicación solicitadas, mantener minimalismo GICM y marca pracTICAtecnica.com. No afirmar auditoría total ni funciones pendientes como completas.
+- [x] Recorrido familiar explicado con acciones existentes; matrícula no almacena planes de pruebas y PDF actual usa espacio manuscrito, no firma digital certificada. Correo sin dominio configurado; Firebase vinculado pero registro/envío push pendiente.
+- [ ] Guiar registro personal Gmail de familia real, matrícula, autorización institucional de retiro y consulta aislada; PDF de pruebas con firma real sigue necesitando aprobación identificada del firmante.
+- [ ] Juegos viales originales solicitados nuevamente: desarrollar bloque definido sin afirmar malla mundial/MEP completa.
+- [ ] Lectura chip/imagen de cédula para comedor: comprobar compatibilidad oficial; NFC NDEF y OCR no acreditan identidad ni autorizan entregas.
+- [ ] Push y correo al registrar llegada al aula: verificar configuración de dominio y Firebase, destinatarios vinculados/consentidos y costos antes de enviar; no prometer entrega por un aviso interno.
+## Ampliación educativa · 15-nov-2026 19:56 UTC
+- [ ] Juegos originales de parqueo carro/moto/tráiler, rotondas, altos y cedas; laboratorios y ampliación curricular por miles requieren desarrollo y revisión por bloques, sin copiar plataformas ni declarar malla completa. Se mantienen después de comedor/asistencia en curso.
+## Solicitudes familiares y auditoría · 15-nov-2026 19:51 UTC
+- [x] Auditoría puntual 19:51: 26 pruebas pasan y compilación correcta; registros existentes: 1 matrícula, 1 vínculo familiar y 0 retiros autorizados. No demuestra aislamiento entre dos familias ni cobros reales.
+- [ ] Respuesta de Max: familias se registran ellas mismas con Gmail y autorización revisada; no crear sus cuentas manualmente. Recuperar ejemplos existentes e investigar fuentes públicas para planes propios, sin atribuir firma autorizada inexistente.
+- [ ] Revisar correos familiares registrados y firmante institucional autorizado; no completar datos por deducción. PDF de prueba requiere planes reales y autorización identificada.
+- [ ] Auditar menú, roles padre/madre/estudiante y consulta/registro de pagos; pruebas de aislamiento reales requieren cuentas familiares autorizadas y vínculos revisados.
+- [ ] Evaluar lectura de imagen de cédula y conexión al retiro: OCR no acredita autenticidad; chip NFC oficial no compatible con lector web NDEF existente, requiere documentación y solución autorizada antes de ofrecerlo.
+- [ ] Guiar flujo matrícula → documentos/planes → revisión de retiro → PDF → consulta familiar privada; identificar primero familia e institución reales, no simular aprobación ni firma.
+## Comedor y asistencia · 15-nov-2026 19:49 UTC
+- [x] Primera entrega: pestañas Comedor/Asistencia, tarifas CTP ₡700/₡1.400 guardadas y leídas tras recarga con Max; 30 pruebas pasan y compilación correcta. Registros privados, QR personal, operadores, becas/cortesías explícitas, compra efectivo/SINPE pendiente y entrega con bloqueo de doble consumo; hora de llegada y correcciones auditadas. No hubo estudiante/familia real para verificar consumo/asistencia de extremo a extremo.
+- [ ] Completar etapas pendientes: devoluciones/anulación controlada, vigencia de becas, corrección de hora, resumen agregado, interfaz ES/EN y unificación del lector de retiro; prueba real requiere padrón/responsables/familias autorizadas. Push/correos necesitan configuración y costo verificados. Firma e identidad oficial necesitan autoridad/solución documentada; no están implementadas.
+- [ ] Condiciones 19:50 UTC: CTP estudiante ₡700/docente ₡1.400 por tiquete, editables por institución; beca explícita para estudiante o docente y cortesía autorizada con motivo. Compra de varios tiquetes (3/4/5 u otra cantidad positiva), efectivo confirmado por vendedor autorizado o SINPE pendiente de verificación; saldo y consumo auditados, sin activar por referencia.
+- [ ] Preparar módulos institucionales de comedor y asistencia reutilizando cámara QR/barras y entrada manual; credencial personal separada de autorizaciones de retiro, sin asumir identidad por código.
+- [ ] Comedor configurable: gratuidad universal o beca/tiquete por persona; docentes identificados por membresía institucional verificada y almuerzo de pago según tarifa aprobada. No inventar importes ni asignar becas automáticamente.
+- [ ] Asistencia por grupo/clase: registrar hora de llegada Costa Rica y responsable, desde teléfono o computadora, con correcciones auditadas y protección contra duplicados.
+- [ ] Familias solo consultan estudiantes vinculados; personal solo sección/función autorizada. Avisos internos primero; push/correos requieren configuración, consentimiento y verificación de costos, sin activar servicios de pago.
+- [ ] Validar con personas autorizadas del CTP Mercedes Norte: tarifas iniciales recibidas; faltan padrón, becas, responsables reales y cuenta SINPE del comedor; no reutilizar SINPE de suscripciones sin autorización ni declarar avisos entregados sin evidencia.
+## Familias y lector QR · 15-nov-2026 19:41 UTC
+- [x] Auditoría puntual: 44 tests de pagos, navegación, permisos, matrícula y códigos pasan; compilación correcta. No equivale a cobros reales, auditoría integral ni prueba multirol con familia real.
+- [x] NFC opcional de etiquetas NDEF implementado con permiso/detención y alternativa cuando no está disponible; estado no disponible comprobado. Lectura física NFC, app independiente y chips oficiales sin verificar; no se ofrece lectura de esos chips.
+- [x] Consulta por número exacto de identificación registrado; QR opaco y barras Code128 leídos por cámara simulada local, sin envío de imágenes. Formatos oficiales complejos y otros tipos de barras no verificados; entrada manual disponible.
+- [x] /verificar-retiro: consulta autenticada bajo permisos existentes, estado sin caché, sin permiso no revela existencia. QR generado solo para retiros autorizados; no registra salida ni acredita identidad. Cámara QR/barras, rechazo de código ajeno y móvil 351 px comprobados con Max; no hubo autorización real para leer.
+- [ ] Crear/asignar y verificar familia real: faltan correos Gmail, identidad de padre/madre, estudiante e institución y autorización; no crear personas ficticias.
+- [ ] PDF de prueba con planes reales y firma autorizada: faltan archivos curriculares y autorización identificada del firmante.
+## Fotografías y retiro seguro · 15-nov-2026 19:22 UTC
+- [ ] Añadidos 19:24: QR digital personal (no juego), consulta web autorizada y escaneo; cuentas reales, fotos de lugares y planes/PDF requieren identidades, originales y autorización del firmante todavía no suministrados. Registro familiar reutiliza formulario existente sin asignación automática.
+- [ ] Añadido 19:23: consulta autorizada por carné/código de barras o cédula, registro de salidas y permisos, escaneo QR; no guardar expedientes en computadoras compartidas ni aceptar un código como autorización de retiro.
+- [x] Fotos del centro y de identidad privada separadas por finalidad y consentimiento, nombre de edificio/aula obligatorio para centro; guarda cuenta, fecha, versión y SHA-256, sin aprobación de publicación automática.
+- [x] Persona propuesta para retiro con nombre/identificación/relación; estados pendientes/autorizada/rechazada/revocada e historial. Autorizar exige matrícula aprobada, revisión y evidencia; prohíbe autoaprobación familiar. No se enlazan fotografías automáticamente a personas por nombre.
+- [x] 13 pruebas pasan, formulario con sesión de Max y móvil 351 px comprobados sin desbordamiento; no se simularon familias, documentos o retiros reales. Compilación correcta.
+- [ ] Puesto de retiro con permisos mínimos y registro de salidas: lector QR/barras ya implementado con permisos de familia/revisor existentes; requiere definir personas/cuentas del puesto antes de conceder acceso adicional y verificar retiros reales.
+- [ ] Carga/publicación de fotos reales y verificación de aprobación/retiro reales: faltan originales autorizados y cuentas de familia/revisor distintas; tampoco se generaron planes ni firmas inexistentes.
+## Matrícula cero papel · 15-nov-2026 19:16 UTC
+- [ ] Pedidos añadidos 19:16–19:17: registro de padre/madre/estudiante con correo/teléfono/datos familiares; perfiles solicitados y vínculos solo tras revisión. Asignar personas reales requiere sus cuentas y autorización; fotos con edificios/aulas requieren originales; PDF requiere preguntas y firmante autorizado. Gráficos privados requieren rúbricas estructuradas y notas verificadas, no publicación pública.
+- [x] Matrícula ampliada con contacto familiar, adjuntos categorizados y descripción; manifiesto privado e inmutable, apertura con enlace de 30 segundos, fechas de envío/revisión y aprobación existente sin autoascenso.
+- [x] SHA-256 calculado en servidor desde archivos descargados con permiso de la familia; valida prefijo propio, contenido binario y 5 MB. Huella de aprobación existente conservada, sin QR público de datos familiares.
+- [x] Migración 0070 aplicada: contactos/manifiestos y eventos de estado con lectura autorizada; 8 pruebas pasan y formulario comprobado con sesión de Max en escritorio y móvil 351 px sin desbordamiento.
+- [ ] Guardado y aprobación reales con familia/revisor distintos no comprobados: faltan cuentas autorizadas y documentos reales. No se crearon matrículas ficticias ni vínculos para simular verificación completa. Registro directo estudiantil, gráficos estructurados y asignaciones reales siguen pendientes.
+## Revisión de Matías · 15-nov-2026 19:12 UTC
+- [ ] Solicitudes añadidas 19:14 UTC: fotos reales (originales aún no adjuntos), ítems de planes de estudio revisados, gráficos privados de rúbricas, menú/roles sin delegación global y formulario de registro estudiantil/familiar con vínculos verificados. No exponer rúbricas privadas en página pública Campaña Clara.
+- [x] Cuadernillo Agroecología: selección y PDF real comprobados (200, application/pdf); selección ahora desplaza a sus acciones. No se comprobó cada uno de los 58 PDF.
+- [x] Selector por materia en simulacros y catálogo completo contraído; juegos con dimensiones e iconos uniformes, incluido enlace Duelo. Menú principal más compacto, sin eliminar módulos ni alterar RBAC.
+- [x] Explorar muestra requisitos antes de iniciar: 20 práctica/60 simulacro; no se reducen tamaños ni inventan bancos. 11 pruebas pasan y móvil 351 px sin desbordamiento.
+- [ ] Contenido: bancos de 12/20 preguntas no cumplen prácticas/simulacros completos; expansión editorial requiere fuentes y revisión, no solucionable solo con diseño.
+## Solicitudes 15-nov-2026 19:05 UTC
+- [x] Página /campana-clara creada con catálogo aprobado y accesos directos a panel editorial/canales existentes; móvil 351×595 sin desbordamiento, navegación con Max comprobada. No hay publicaciones públicas aprobadas; no se crearon campañas ficticias ni fotografías atribuidas al centro. No se verificó envío a una sección real.
+- [ ] 19:10 UTC: familias y estudiantes solo datos propios/vinculados; personal asignado, guía, orientación, auxiliares, administración y Dirección según autorización institucional; no asumir aval MEP ni ampliar accesos por etiqueta.
+- [ ] 19:09 UTC: estudiantes consultan notas propias, tareas, canales, anuncios y publicaciones/campañas autorizadas de su institución; no escritura estudiantil ni acceso a datos ajenos.
+- [ ] Trazabilidad: gráficos requieren registros estructurados por indicador e historial, que el guardado actual en notas no suministra; no inventar progreso.
+- [ ] Publicar página Campaña Clara con fotografías reales autorizadas del centro; no sustituirlas por imágenes generadas atribuidas a la institución.
+- [x] Acceso directo a canales existentes; Max confirmó estudiantes solo leen. No se amplían permisos ni se afirma envío real verificado.
+- [ ] Roles: Max confirmó solo él superadmin; asignaciones institucionales y pruebas con destinatarios reales pendientes, no delegar poderes globales.
+- [ ] Revisar micro/macro, dificultad, aleatoriedad y claves con fuentes curriculares verificables; PDF con firmante autorizado, sin atribuir firma oficial inexistente.
+- [ ] Reemplazar preguntas solo tras identificar materia, nivel y fuente curricular; preservar claves canónicas y evaluación servidor.
+## Entrega solicitada 15-nov-2026 18:46–18:47 UTC
+- [x] Entrega parcial 18:53 UTC: menú filtra docencia/jefatura/familia por permisos consultados; /rubricas carga matrícula propia, permite indicador y valoración 3/2/1/0, guarda con avance manual existente y muestra fecha. Planeamiento incorpora duración 40/60 y especificaciones. 11 tests pasan; Max abrió formulario móvil sin desbordamiento. Guardado real/PDF no comprobados, no atribuir historial inmutable ni nota oficial.
+- [ ] 18:51 UTC: Max conserva superpoderes exclusivos; delegación administrativa limitada por RBAC. Canales institucionales sin red social y campañas con imágenes originales solicitadas, integración pendiente.
+- [ ] 18:49 UTC corrección: Max quiere delegar superadministración y cambiar roles/estado desde usuarios; autorización explícita, auditoría y protección contra autoascenso. Sustituye la regla de único superadministrador, sin reactivar cuentas previas automáticamente.
+- [ ] 18:48 UTC: facilitar cambio de rol y activar/desactivar desde trazabilidad; solo actores autorizados, auditado y sin autoascenso ni cambio de autoridades protegido.
+- [ ] Publicar menú por roles reales sin autoasignación; asesor MEP sin acceso privado hasta definir autorización.
+- [ ] Publicar planeamientos por materia/nivel y acceso a horarios, especificaciones y rúbricas.
+- [ ] Trazabilidad y rúbricas por estudiante/materia/nivel con fechas, comentarios y valoración 3/2/1/0 separada de notas verificadas; solo matrícula autorizada.
+- [ ] Evaluaciones micro/macro: no atribuir ítems ni firma oficial MEP sin fuente y autorización verificadas; publicar únicamente contenido comprobado.
+## Solicitudes 15-nov-2026 18:45 UTC
+- [x] Recarga confirmada: pago recibido por 50 créditos, US$15.00; entrega al saldo puede tardar unos minutos.
+- [ ] Priorizar trazabilidad, menú por Dirección/docente/estudiante/familia y asesor MEP únicamente con permisos definidos; no conceder acceso por seleccionar una vista ni crear poderes de asesor por suposición.
+- [ ] Planeamientos por materia/nivel vinculados a horarios, tabla de especificaciones y rúbricas; página docente para asignar indicadores 3/2/1/0 a estudiantes autorizados y publicar tras pruebas.
+- [ ] Micro A–C y macro A–D con dificultad y aleatoriedad, PDF con firmante; identificar fuentes MEP antes de etiquetar ítems como oficiales. Completar materias faltantes por bloques revisados, sin iniciar funciones adicionales.
+## Solicitudes 15-nov-2026 18:42 UTC
+- [ ] Recarga solicitada: comprar 50 créditos; Max menciona US$15, importe y condiciones sujetos a la compra mostrada, sin cargo ni saldo confirmado todavía.
+- [ ] Completar interfaz de rúbricas por estudiante y materia, indicadores observables 3/2/1/0 y PDF con firmante; expertos privados con subida de contenidos, videos y audios para docentes y Dirección.
+- [ ] Verificar CTP: micro A–C, macro A–D, prácticas y simulacros de idiomas, PDF y QR; PNE mencionada junto a A–C requiere delimitar frente a macro estandarizada A–D sin cambiar formatos oficiales por suposición.
+- [ ] Completar permisos individuales y reorganizar menú por rol; vista demostrativa de otros roles sin impersonación ni datos ajenos (docente solo vista estudiante; jefatura y Max vistas adicionales).
+- [ ] Horarios adaptados por institución, niveles y especialidades: académicas 40 minutos, especialidades/subáreas 60 minutos; conectar planeamientos y microevaluación con tabla de especificaciones.
+- [ ] Ampliar bancos por cinco mediante variantes genuinas revisadas, casos reales y dificultad básica/media/alta; inventariar alemán y otros idiomas antes de añadir; revisar ejemplos MEP y capturas como referencias, sin copiar ni contar permutaciones como ítems nuevos.
+- [ ] SEA: canal y formato oficial autorizados pendientes; notas, asistencia, actas e historial con QR no equivalen a recepción confirmada por MEP.
+- [ ] Auditoría austera tras recarga y entregas verificadas con publicación; no prometer chat gratuito, ejecución autónoma a las 18:00 ni cobertura completa sin revisión.
+## Solicitudes 15-nov-2026 15:49–15:50 UTC
+- [ ] Indicadores de logro y rúbricas redactadas por criterio: 3 logrado, 2 con errores, 1 sin evidencia de logro y 0 faltó/no presentó; separar ausencia de desempeño académico.
+- [ ] Confirmado 15:51 UTC: cuatro opciones A–D sin E en macro, estandarizadas, MOPT, simulacros y prácticas de idiomas; tres A–C en micro. Reemplaza la regla anterior de cinco; adaptar formatos preservando calificación canónica.
+- [ ] SEA: preparar notas, asistencia, actas e historial solo con formato oficial documentado; conectar únicamente con canal autorizado, sin afirmar envío confirmado.
+- [ ] Definir alcance de docente, estudiante, Dirección y Subdirección; permisos individuales aplicados por servidor y administrables desde la página de roles.
+- [ ] Prueba de Dirección: reutilizar cuenta autorizada del centro de prueba para emitir notas y una orden; comprobar PDF, firmante y QR. Una cuenta Gmail nueva requiere identidad real verificada.
+- [ ] Página privada de expertos por materia: docentes suben contenidos, videos y audios; lectura solo docentes y Dirección de la institución.
+## Solicitudes 15-nov-2026 15:25 UTC
+- [ ] 15:30 UTC: notas/órdenes con aprobación guardada, PDF azul y QR implementados; emisión y descarga de constancia ficticia verificadas en Escuela de Prueba GICM. CTP requiere cuenta Dirección/Subdirección: Max allí no tiene ese rol. Falta prueba de orden y QR público.
+- [ ] 15:30 UTC: página /institucion/roles implementada y abierta con Dirección; asignación auditada y protección de autoridades en servidor. Permisos granulares y prueba de asignación con destinatario autorizado pendientes.
+- [ ] 15:26 UTC: confirmado microevaluación 3 opciones A–C y macroevaluación 5 A–E; adaptar bancos y scoring sin inventar distractores. Max confirmó aplicar límites de 3 prácticas y 2 simulacros.
+- [ ] Conexión SEA oficial: verificar canal autorizado para notas, asistencia, actas e historial; formato oficial y QR sin atribuir aval ni firma certificada inexistentes.
+- [ ] Expediente privado implementado con almacenamiento separado, política exclusiva Dirección/Subdirección y enlaces 30s; pestaña verificada. Subida real bloqueada en prueba por falta de estudiante vinculado; no crear vínculos ficticios en producción. 12 tests de reglas pasan.
+- [ ] Selector /generador por modalidad/nivel/materia implementado reutilizando bancos; examen solo para 60 preguntas. Cobertura completa y distractores A–E revisados pendientes; IA sigue bloqueada sin autorización individual. Límites 3/2 en carga y guardado; 31 tests pasan.
+## Solicitud 15-nov-2026 15:18 UTC
+- [x] Identificado PIAD (corrección de Max 15:19 UTC): Programa de Informatización para el Alto Desempeño; fuentes públicas MEP y evolución a expediente digital SABER documentadas. Compatibilidad/importación aún no verificadas.
+- [ ] Expediente estudiantil digital integral: matrícula, notas, horarios y adjuntos médicos privados con autorización específica, consentimiento, trazabilidad y política de conservación; no usar documentos compartidos con todos los miembros.
+## Solicitudes 15-nov-2026 15:12–15:13 UTC
+- [ ] 15:17 UTC: estudiar manuales públicos SEA del MEP para interoperabilidad y flujos originales; no acceso a cuentas ajenas ni copia de plataformas. Mantener marca pracTICAtecnica.com; nombre dictado distinto no confirma cambio de marca.
+- [ ] 15:14 UTC: documentos PDF formales azules con cuadrícula de notas, firma y QR; constancias institucionales no equivalen a certificados de práctica ni a firma digital certificada.
+- [ ] 15:14 UTC: gratuidad vitalicia CTP Mercedes Norte como institución de prueba; falta delimitar si incluye cuentas individuales, no conceder IA ilimitada ni extender a otros centros.
+- [x] Publicación nuevamente solicitada para practicatecnica.com con tabla/escudo verificados; despliegue no confirmado. Tres tests de cálculo y build OK.
+- [x] Encabezado y escudo institucional visibles en campañas, circulares y documentos; comprobados con sesión de Max en CTP Mercedes Norte. La tabla incluye fecha Costa Rica y pie GICM. No se alteraron PDF originales ni se atribuyó respaldo MEP.
+- [ ] Extender el generador a materias del catálogo con opciones de examen y simulacro, sin inventar bancos ni habilitar gastos IA no autorizados.
+- [ ] Subdirección: políticas y controles para aprobar campañas/publicaciones y gestionar horarios aplicados; 23 tests pasan. Falta cuenta de Subdirección autorizada para prueba real; no se ampliaron pagos ni asignación de roles. Notas/órdenes pendientes.
+- [ ] Notas y órdenes de dirección: aprobación registrada, comprobante privado y firma identificada; SHA-256 no es firma digital certificada.
+## Solicitudes 15-nov-2026 14:46–14:47 UTC
+- [ ] Corrección 14:49 UTC: seguimiento familiar mediante comunicación interna (no WhatsApp externo), familias/alumnos/docentes/orientación/secretaría/dirección/junta con permisos delimitados; moderación de lenguaje y revisión de imágenes/archivos. Escritura de menores requiere concretar alcance frente a regla previa de solo lectura.
+- [x] 14:48 UTC: primera construcción Kaizen verificada; revisión básica sin hallazgos y auditoría profunda iniciada sobre versión guardada previa al selector, aún pendiente. No equivale a seguridad absoluta ni QA multirol.
+- [x] Selector curricular desde Inicio implementado: cuatro modalidades principales y opciones adicionales, selecciones dependientes y enlace exacto a Explorar, materias pendientes visibles; 11 tests pasan, Ciencias 2.º y UCR comprobadas con sesión de Max, móvil 351 px sin desbordamiento y build OK. No se ampliaron bancos ni cobertura oficial.
+- [ ] Seguimiento familiar: integrar registro de hijos mediante matrícula revisada, vínculos verificados, tareas, archivos privados y seguimiento existente; sin acceso automático por conocer un correo.
+- [ ] Pagos: consolidar tarjeta y SINPE Móvil oficial +506 60906359, comprobante privado y activación manual; «SIMV» pendiente de identificación, no crear método ficticio. Tarjeta real continúa condicionada a proveedor configurado y pruebas.
+- [ ] QA multirol institución/dirección/encargado/estudiante, revocación de vínculos y QR de permisos; probar con cuentas autorizadas sin conceder roles productivos artificiales.
+- [x] WhatsApp familiar sustituido por comunicación interna según corrección 14:49 UTC; no conectar WhatsApp para esta función. Pedidos externos anteriores permanecen separados.
+- [ ] Publicar únicamente entregas verificadas después de guardar cambios y revisar seguridad; no anunciar cobertura curricular, pagos o WhatsApp completos sin evidencia.
+## Solicitudes 15-nov-2026 04:13 UTC
+- [x] 04:22 UTC: permisos lectura/envío por recurso y contactos oficiales privados implementados; asignación y revocación verificadas como Max sobre borrador QA. Seis pruebas pasan. Nuevos recursos restringidos y PDF protegido por almacenamiento. Página pública sin cambios de presentación.
+- [ ] 04:22 UTC: envío WhatsApp completo, recepción durable/estados y prueba institucional bloqueados por ausencia de conexión Business; no se añadió envío simulado. Sandbox sigue live, prueba de pago bloqueada. Faltan circulares reales y verificación con cuentas receptoras/estudiantil.
+- [ ] 04:18 UTC: completar permisos y administración privada de circulares/contactos, sin cambiar página pública; publicar panel probado. Prueba de pago y envío real bloqueados por ausencia de Sandbox y WhatsApp Business.
+- [ ] 04:17 UTC: publicar WhatsApp Business autorizado sin contactos estudiantiles y abrir nueva conexión PayPal Sandbox por solicitud expresa; no reutilizar live.
+- [ ] 04:16 UTC: panel de pagos por institución con monto y estado persistido, consulta autorizada y botón PayPal Sandbox sin activar acceso real por una prueba.
+- [ ] 04:16 UTC: botón de pago por institución en Instituciones, checkout PayPal exclusivamente sandbox junto con circulares WhatsApp; bloquear hasta conexión sandbox independiente y verificación.
+- [ ] 04:15 UTC: circulares nuevas restringidas; permisos separados de lectura y envío WhatsApp por institución, envío implica lectura y el enlace no concede acceso. Plan actualizado pendiente de aprobación.
+- [ ] 04:14 UTC: tarjeta PayPal abierta por solicitud expresa; volvió a vincular Max's PayPal con Environment live. Sandbox no creado; falta Nueva conexión con credenciales de prueba. No se hicieron pagos ni se habilitaron cobros.
+- [ ] Publicar circulares reales y PDF aprobado: localizar filas/archivos autorizados; no reutilizar informes estudiantiles ni pruebas retiradas.
+- [ ] WhatsApp Business: sección de números institucionales consentidos, mensajes y envíos múltiples con estados de entrega; falta conexión verificada. Botones por publicación, sin afirmar entrega por aceptación del proveedor.
+- [ ] Permisos por recurso: selección de instituciones lectoras para circular/campaña/resumen de conteos; distinguir público de restringido y preservar aislamiento de borradores/archivos.
+- [ ] Gemini Enterprise seleccionado: uso por definir, no acceso automático a documentos ni acciones de envío a través de esa API.
+## Solicitudes 15-nov-2026 04:06–04:07 UTC
+- [x] Página institucional y escudo real: corregida lectura pública del archivo vigente; visitante sin sesión ve imagen real (selector img), catálogo y móvil 351×595 sin desbordamiento. Publicación solicitada al cierre. Faltan otros originales y circulares autorizadas, no publicar QA como reales.
+- [x] Superprompt de ingeniería adjunto revisado y respuesta entregada: conservar TanStack/shadcn, separar CONSTRUCTA y añadir seguridad, pagos, bancos privados, conexiones individuales, pruebas y límites de costo. No identificado como el archivo workspace de título diferente.
+- [ ] WhatsApp Business elegido: conexión rechazada, faltan cuenta/número y configuración verificada de recepción/envío; no sustituir por compartir manualmente ni añadir botón que afirme envío. Conteos siguen privados.
+- [ ] PayPal: tarjeta volvió a vincular misma cuenta live, no sandbox; pruebas y cobros permanecen bloqueados.
+## Integración Campana Clara solicitada 15-nov-2026 03:06 UTC
+- [ ] 03:27 UTC: usuario eligió cuenta propia por institución y Power BI App User Connector. Catálogo individual disponible; Power BI/Calendar/Docs sin clientes configurados. Tarjeta Power BI rechazada; no iniciar integración sin cliente ni usar cuenta compartida como sustituto.
+- [ ] Archivo de workspace file_4kasbkdqw7974bqz6ak1rwg34b «superprompt.md - Gemini & PowerShell Gratis»: no localizado en montajes disponibles; requiere adjuntar contenido/archivo para revisión. No asumir que otro superprompt es el mismo.
+- [ ] 03:20–03:21 UTC: Word, Google Cloud API, WhatsApp y Firebase seleccionados; Firebase ya vinculado. No activar mensajería, notificaciones o recursos sin función y alcance definidos.
+- [ ] 03:17–03:18 UTC: usuario seleccionó Google Search Console, Calendar y Docs; comprobar conexiones, sin acceder a calendarios/documentos personales ni implementar una función no especificada.
+- [ ] 03:18–03:19 UTC: Outlook y Teams seleccionados; no hay conexiones de Calendar/Docs/Outlook/Teams en la lista actual, definir función y alcance por institución antes de compartir cuentas.
+- [x] Analítica administrativa agregada: instituciones reales y entregas calificadas desde actualización; sin IDs de estudiantes/respuestas/notas, excluye pruebas. Reenvíos cuentan de nuevo; no afirmar personas únicas.
+- [ ] 03:09 UTC: nueva solicitud PayPal sandbox/live; la tarjeta volvió a vincular la misma conexión live, continúa bloqueo hasta pruebas.
+- [x] CTP Mercedes Norte registrado sin conceder pagos/roles; escudo original con transparencia exterior cargado desde Biblioteca y directorio público. Faltan originales autorizados de los demás colegios. Publicación solicitada al cierre.
+- [x] Circular PDF separada privada hasta aprobación; Biblioteca/panel/catálogo con lectura/descarga. QA sintética verificó borrador oculto, aprobación, descarga y retirada 404; sin errores de página. Faltan circulares reales autorizadas; informes individuales no publicados.
+- [x] Revisado Campana Clara commit 3664d2ca; integración selectiva de planificación, ES/EN independiente, propuesta local y exportación PNG/SVG, sin copiar cuentas ni aprobación local. Mantiene marca y permisos.
+- [x] Plan aprobado e implementado; campaña PNG revisada visualmente, manual actualizado seis páginas, PDF descargado y móvil sin desbordamiento. 33 tests y build OK; revisión básica sin hallazgos, multirol profunda pendiente.
+- [ ] Power BI: elegir cuenta compartida o conexión individual. PowerPoint/Sheets/Slides y demás conectores seleccionados necesitan propósito concreto; no se vinculan ni leen datos automáticamente.
+- [ ] 03:25 UTC: Excel y Jira seleccionados; función pendiente de definición. Sin crear incidencias ni leer proyectos. Google Docs seleccionado nuevamente, ya contemplado.
+## Solicitudes institucionales 15-nov-2026 02:56 UTC
+- [ ] 02:59 UTC: Max aprobó cobros; habilitación sigue condicionada a pruebas completas y configuración segura, no implica garantía absoluta ni afiliación oficial.
+- [x] Botón en Biblioteca para subir PNG transparente con selector institucional, vista clara/oscura y validación de píxeles; disponible para dirección/Max. Archivos reales pendientes de originales autorizados.
+- [ ] Configurar PayPal sandbox independiente y validar flujo antes de activar live; añadir mensaje de beta confirmado por acceso, sin confundir pago con inicio de prueba.
+- [ ] Extender Mi institución para gestión propia de horarios, logos, circulares y anuncios; vista pública solo de publicaciones explícitamente autorizadas, sin nombres de docentes/alumnos ni archivos privados.
+- [x] Prácticas propias con borrador/revisión/aprobación, catálogo de metadatos y scoring servidor versionado; E2E Max crear→guardar→publicar→resolver 100%→retirar verificado con datos sintéticos, sin errores de página. Falta auditoría multirol adicional; no se guardan estas notas como evidencia académica.
+- [x] Manual institucional consolidado de cinco páginas revisado visualmente; lectura/descarga en Biblioteca verificada. Catálogo público sin sesión y móvil sin desbordamiento.
+- [x] Mensaje de beta vigente con fecha de vencimiento actualizado; pago no reinicia prueba.
+- [x] PDF públicos de circulares: carga pública separada con aprobación y retirada implementada/verificada. Temporizador de simulacros institucionales sigue pendiente (duración de referencia).
+- [ ] PayPal sandbox: tarjeta de conexión volvió a seleccionar Max's PayPal live; falta conexión sandbox independiente/comprador. No se activaron cobros reales ni se garantiza seguridad absoluta.
+## Entrega solicitada 15-nov-2026 02:48 UTC
+- [x] Diez manuales PDF (24 páginas) con horarios, canales internos, fotos/PDF, circulares, anuncios y logos; revisados visualmente, una captura de acceso retirada y diagramas corregidos. No se inventaron escudos oficiales.
+- [x] Integrar lectura/descarga en Biblioteca; 10 enlaces y descargas de usuario/ingeniería comprobados, móvil sin desbordamiento. Publicación solicitada al cierre.
+- [x] Instrumentar inicio/resultado de pago y primera observación de beta activa por sesión de interfaz; 6 eventos en catálogo válido, sin PII. Recepción de nuevos eventos reales pendiente de uso de visitantes.
+- [x] Bloquear creación/captura PayPal y resolución de precios tarjeta live en servidor; 45 pruebas pasan. Checkout de tarjeta sandbox abierto con marca Test Mode, sin cobro real ni errores de página.
+- [ ] Completar PayPal sandbox y cobro/activación E2E: falta conexión independiente de prueba y comprador sandbox; checkout tarjeta abierto pero transacción no completada. No atribuir esta apertura a pago confirmado.
+- [ ] Normalizar logos PNG transparentes: faltan originales institucionales autorizados. La carga actual admite PNG, JPG y WebP; no se cambiaron escudos.
+## Contexto revisado 15-nov-2026 02:48 UTC
+- [x] Incorporar el contexto de esta ventana y contrastar propuestas con el estado disponible, sin marcar como implementados los fragmentos aportados.
+- [x] Manual visual de usuario e ingeniería publicados como PDF estáticos en Biblioteca, junto con ocho guías operativas; cobertura inicial documenta requisitos, vistas conceptuales, decisiones y relaciones existentes.
+- [ ] Offline completo y sincronización autorizada, WebAuthn, FCM y purga de documentos: propuestas de esta ventana no implementadas ni verificadas; requieren desarrollo, pruebas y configuración correspondiente.
+- [ ] Cabeceras/CSP y nuevos índices: adaptar al despliegue y esquema reales antes de aplicar; no prometer latencia submilisegundo ni cumplimiento legal certificado.
+- [x] Auditoría profunda completada 02:50 UTC sin hallazgos en versión analizada; no certifica cambios posteriores ni flujos E2E pendientes.
+## Producción solicitada 15-nov-2026 02:44 UTC
+- [ ] Recarga solicitada de US$15 — compra interrumpida antes de ejecutarse al llegar el nuevo mensaje; sin recarga confirmada.
+- [x] Revisar seguridad básica, autenticación, beta de 13 días y estado de proveedores; revisión profunda iniciada.
+- [x] Endurecer confirmación PayPal repetida: 44 pruebas pasan; sesión de Max, historial, botones PayPal/tarjeta y cotización docente real comprobados; móvil sin desbordamiento ni errores.
+- [ ] Publicación solicitada en este turno; finalización por confirmar. Cobro y activación PayPal/tarjeta completos no verificados: no se realizó cargo real.
+- [ ] Paddle real bloqueado por elegibilidad y verificación del proveedor; no sustituirlo ni habilitar cobros sin resolución externa.
+## Prioridad para la recarga de las 6:00 p. m. (créditos limitados; cambios agrupados)
+- [x] Generador de horarios por tipo de institución (pestaña Horarios)
+- [ ] Registro de teléfonos para avisos (espera datos web push de Firebase)
+- [x] Publicada versión con tipos preescolar, escuela, liceo, CTP y universidad
+- [ ] Avisos al teléfono: Firebase conectado; falta registro de teléfonos y envío (web push)
+- [ ] Manuales PDF con capturas de canales, seguimiento y notas (notas aún no construidas)
+- [ ] Publicar la versión 26X.2 tras revisión de seguridad.
+- [ ] 23:13 UTC: notas institucionales: registro por grupo y materia, I y II período, promedio anual y nota final; historial de años anteriores; importar y exportar hoja de cálculo; impresión con código SHA-256 y QR verificable.
+- [ ] 23:13 UTC: constancias con SHA-256 y QR verificable: estudiante regular por ciclo lectivo (2026, 2027 y siguientes), beca, incapacidad y otras que la institución emita legalmente; plantilla con logo de cada institución y verificación pública con datos enmascarados.
+- [ ] 23:13 UTC: tipos de institución: preescolar, escuela, colegio académico/liceo, CTP y universidad.
+- [ ] 23:13 UTC: perfiles por rol en el menú (institución, dirección, docente, estudiante, familia): Max aprueba, activa o desactiva en superadministración según pago; la dirección ve solo su institución (avisos, horarios, permisos, notas); estudiantes nunca ven herramientas de gestión.
+- [ ] 23:13 UTC: cuentas institucionales con canales, publicaciones, archivos PDF/fotos y emisión de notas (ya existen canales y avisos; faltan notas y constancias).
+- [ ] 22:46 UTC: manuales PDF (usuario por rol e ingeniería). Capturas ya preparadas; guion de captura guardado en documentos privados.
+- [x] 23:10 UTC verificado: seguimiento para familias vinculadas (aceptadas): días de uso, última actividad, racha, puntos, notas de prácticas y simulacros verificados, saberes por área; respetando roles (familia, docente, guía, dirección, orientación, estudiante).
+- [ ] 23:01 UTC: matriz de roles y accesos documentada (familia, estudiante, docente, guía, orientación, dirección, especialidad, agenda, horarios, calificaciones, progreso, rachas, uso).
+- [ ] 23:01 UTC: plataforma multilingüe para Costa Rica, Latinoamérica y el mundo (español, inglés, portugués y más), empezando por menús y pantallas institucionales; contenido académico traducido por tandas con revisión.
+- [x] 22:50 UTC: PRODHAB (Ley 8968): privacidad actualizada con protección reforzada de menores, comunicación institucional, fotos sin ubicación, derechos ARCO por WhatsApp o correo y referencia a PRODHAB.
+- [x] 23:05 UTC verificado: la familia acepta un aviso (fecha y versión registradas) antes de usar canales; sin aceptación no tiene acceso.
+- [ ] Descarga de «mis datos» (derecho de acceso Ley 8968) desde Perfil.
+- [x] 22:49 UTC: filtro de archivos en canales: fotos/PDF de familias quedan en revisión hasta que dirección o guía los aprueben; fotos se limpian de datos ocultos (ubicación) antes de subir; todo queda registrado. Análisis automático de imágenes con IA: pendiente, requiere autorizar costo.
+- [ ] 22:46 UTC: manual de usuario PDF por rol (estudiante, docente, profesor guía, orientación, dirección, familia, persona particular): ingreso con Gmail, dónde hacer clic, capturas reales con colores de marca.
+- [ ] 22:46 UTC: manual técnico de ingeniería PDF: requerimientos, casos de uso, diagramas UML (clases, secuencia, despliegue), modelo de datos, reglas de acceso, ciclo de vida; autor Max Salazar Sánchez, GICM.
+- [ ] 22:44 UTC: ampliar ítems generados a toda la malla por tandas: inglés (gramática/vocabulario), estudios sociales y cívica (datos verificables), química/biología ampliadas, contabilidad, estadística/probabilidad, geometría, informática/programación, electromecánica, logística y más especialidades técnicas; cada familia con variedad de plantillas y validación automática.
+- [x] 22:41 UTC: ítems paramétricos verificados: 9 familias (matemática primaria/secundaria, español, física, química, biología, finanzas, redes, electricidad), práctica de 20 y simulacro de 60, calificación en el servidor; página «Sin repetición». Pendiente: inglés, cívica/estudios sociales y especialidades adicionales.
+- [x] 22:35 UTC: rol «profesor(a) guía» por sección (líder del grupo) para el canal con familias y la agenda del grupo; referencia visual: chat de equipo con canales (#Administración…), Archivos y burbujas, como en su otro proyecto.
+- [ ] 22:35 UTC: cobro con tarjeta por Stripe en este sitio. Bloqueo: Max debe desconectar Paddle en el panel de Pagos (solo un procesador a la vez); luego activo Stripe con los planes en colones.
+- [x] 22:33 UTC: canal familia ↔ profesor(a) guía, orientación, dirección, auxiliares y docentes, solo para recados, citas y agenda; filtro de lenguaje inapropiado, registro auditable y sin chat entre estudiantes. Requiere vincular encargados a estudiantes.
+- [x] 22:58 UTC verificado: canales Personal, Sección y Familia con burbujas, archivos, no leídos, filtro de lenguaje, revisión de archivos de familias y moderación; secciones con profesor(a) guía y familias vinculadas por Gmail. Estudiantes solo leen su sección.
+- [x] 22:22 UTC: canales institucionales estilo Teams (por equipo/sección, archivos adjuntos) con burbujas tipo chat: mensajes propios a la derecha y ajenos a la izquierda, colores distintos; referencia funcional PIAD y SEA del MEP sin copiar.
+- [ ] 22:22 UTC: notificaciones al teléfono (push) para personal, docentes, estudiantes, encargados y jefaturas: agenda, comunicados y permisos. Bloqueo: conectar Firebase Cloud Messaging (requiere proyecto Firebase de GICM).
+- [x] 22:22 UTC: canales institucionales seguros: solo personal adulto entre sí; estudiantes y encargados reciben comunicados de una vía, sin chat privado con menores.
+- [ ] 22:22 UTC: compatibilidad con el sistema de evaluación del MEP (SEA): investigar formatos públicos y ofrecer exportación de notas y asistencia; no afirmar integración oficial sin fuente.
+- [x] 22:19 UTC: solicitar y aprobar permisos desde el teléfono, sin firmar en el colegio (verificar en pantalla móvil).
+- [x] 22:18 UTC: tipos de permiso: cita médica, incapacidad, asunto personal, capacitación, congreso, asamblea, actividad del colegio, visita a empresa, sindical/gremial, cita de encargado, justificación de ausencia estudiantil y otro; plantilla propia, sin afirmar formato oficial MEP sin fuente.
+- [x] 22:17 UTC: permisos: aviso con 3 días de anticipación (excepciones por enfermedad marcadas), justificación dentro de 48 h tras la fecha o queda «sin justificar a tiempo»; código SHA-256 con QR verificable para permisos aprobados; dirección de cada institución aprueba los de su institución (Max global); también para estudiantes y citas de madres/padres.
+- [x] 22:17 UTC: agenda para dirección y docentes con «Agregar a mi calendario» (recordatorios del teléfono). Avisos push quedan en la tarea de Firebase.
+- [x] 22:15 UTC verificado: Max creó «Institución de Prueba GICM» (CTP, prueba) con logo; docente y estudiante asignados con cuentas reales de prueba (alias Gmail de Max); particular sin institución. Festival (todos) llegó a docente y estudiante; Consejo (personal) solo a docente; lecturas 1/1. Permiso de docente con comprobante aprobado por Max. Precios ₡10.000/₡2.500/₡1.000/₡3.500 en pantallas, políticas y PayPal; Stripe espera que Max desconecte el procesador actual.
+- [ ] 22:10 UTC: versión 26X.2 (control de versiones a cargo del agente).
+- [ ] 22:10 UTC: chat interno solo para personal adulto verificado de la misma institución (nunca estudiantes), para no depender de WhatsApp.
+- [ ] 22:10 UTC: avisos/correos a madres, padres o encargados desde la app: requiere vínculo familiar autorizado y dominio de correo propio verificado; nunca por conocer un correo.
+- [ ] 22:10 UTC: nombre completo obligatorio en el perfil al ingresar para listas y secciones correctas; secciones/grupos por institución.
+- [ ] 22:10 UTC: justificaciones de estudiantes con foto de comprobante (cita médica) revisadas por la institución.
+- [ ] 22:05 UTC: revisar SINPE, tarjeta y Stripe funcionando (Stripe requiere que Max desconecte el procesador actual en Pagos).
+- [ ] 22:05 UTC: respaldo Markdown actualizado para Gemini con estado real, decisiones y pendientes.
+- [ ] 22:05 UTC: quitar ícono/marca Lovable restante (insignia publicada; inicio con Google requiere credenciales propias).
+- [x] 22:05 UTC: solo cuentas Gmail para control de usuarios; Max único superadministrador que otorga cortesías.
+- [ ] 22:05/22:06 UTC: universo de ítems multiplicado: generadores paramétricos por materia (Matemática, Finanzas, Redes/subredes, conversiones) con corrección canónica en servidor; ítems no repetidos para la persona (registro de vistos) y orden de opciones aleatorio; bancos propios por materia y compartidos solo cuando corresponda; materias conceptuales requieren ampliación editorial.
+- [ ] 22:00/22:03 UTC: generador de horarios para escuelas (1.º–6.º), colegios académicos (7.º–11.º) y CTP (hasta 12.º); nombres de personas, materias y lo que imparte cada quien; pocos clics; horario diario correcto y validado. Base CTP con varias opciones: docentes en 2-3 colegios, jornadas 40/20 h y medio tiempo, administrativos, conserjería y seguridad; días libres, días en otra institución y ausencias avisadas; consulta móvil por dirección.
+- [ ] 21:57 UTC: asistente de ayuda sobre la app con Lovable AI autorizado por Max; respuestas frecuentes sin IA primero, modelo económico, solo con cuenta y tope diario por persona y global para limitar gasto.
+- [ ] 21:54 UTC: panel de cobertura con materiales reales de todos los grados (1.º–12.º) y especialidades, no solo duodécimo/ETP; contar solo materiales existentes.
+- [x] 21:54 UTC: institución de prueba con logo; asignar docente, estudiante y persona particular con acceso real (cuentas de prueba controladas, identificadas como prueba).
+- [x] 21:54 UTC: publicar avisos «Festival de las Artes» y «Consejo de profesores»; confirmar entrega en bandeja de docentes y estudiantes según destinatarios.
+- [ ] 21:54 UTC: completar bancos de Matemática, Español y Banca/Finanzas para simulacros de 60 preguntas con ítems originales.
+- [x] 21:54 UTC: identidad independiente pracTICAtecnica.com; sin menciones ni copias de Open English/Duolingo (sitio revisado: sin menciones).
+- [~] 21:53 UTC: activar precios anuales institución ₡10.000 y estudiante ₡2.500 (₡1.000 con colegio activo verificado) con pago por Stripe; verificar proveedor de pagos disponible antes de cobrar.
+- [ ] 21:44 UTC: institución ₡10.000/año; estudiante ₡2.500/año o ₡1.000/año con colegio activo y vinculación verificada. Personal incluido en plan institucional; publicaciones/avisos institucionales, chat solo personal adulto verificado y permisos aprobados inicialmente solo por Max. Implementación y pruebas pendientes; precios anteriores estudiantiles requieren actualización coordinada.
+- [ ] Actualización 26X.2 solicitada 21:42 UTC: instituciones con logo propio, solicitudes/aprobación de permisos de personal y adjuntos privados; definir quién aprueba y resolver alcance de comunicación frente a prohibición vigente de chats entre usuarios. Campaña Clara excluida.
+- [~] 21:42 UTC: panel /cobertura ampliado con grado/área, capítulos, descargas catalogadas y bancos exactos de 20/60; pendientes por tipo sin metas inventadas. Cinco tests pasan; Max comprobó 12.º (15 selecciones) e Industrial (18), móvil sin desbordamiento. Cobertura editorial integral y evaluaciones nuevas siguen pendientes.
+- [~] 21:42 UTC: Quiz selecciona 20 índices canónicos; bancos insuficientes muestran preparación. BlindExam rechaza tamaños distintos de 60; trivias/repasos identificados siguen breves. Diez tests pasan y Max comprobó Matemática 1/20 y Ciberseguridad (5) sin simulacro falso. Falta ampliar bancos por diez y revisar dificultad/traducción; no publicar todavía.
+- [ ] 21:42 UTC: estudiantes reales vinculados a docentes propietarios; requiere identidad/correo confirmado de cada estudiante y autorización, nunca convertir alumnado en docentes ni crear avances académicos inventados.
+- [ ] 21:42 UTC: investigar SICAI mediante información pública como referencia funcional original; verificar formatos SEA/PIAD y autorización antes de integración, CSV o acceso familiar; no ingeniería inversa de código privado.
+- [ ] 21:42 UTC: pagos sencillos tarjeta/PayPal/SINPE; conservar precios anuales y aprobación SINPE. Mensual/vitalicio pendientes de precios y proveedor confirmado; recarga de Lovable no prueba activación de pagos de la app.
+- [ ] 21:42 UTC: seguridad internacional, notificaciones de tareas, juegos de seguridad vial carro/moto y documentación completa para Gemini; no prometer ejecución automática a las 18:00 ni afiliación a Banco Popular/MEP.
+- [ ] 21:42 UTC: IA por materia continúa bloqueada hasta autorización y financiación individual verificables; documentos MEP son fuentes curriculares, no modelos IA. Saldo consultado 48,90 créditos, sin gasto total automático.
+- [~] Pedido 19:32 UTC: objetivo actualizado a dominio de materias primaria–duodécimo ETP, métrica semanal preservada; capturas confirman cobertura parcial. Producción/revisión de libros/descargas, prácticas/simulacros, juegos/trivias/retos de toda la malla sigue pendiente, sin gastar créditos como fin en sí mismo.
+- [~] Pedido 19:25 UTC: autorización docente centralizada y políticas privadas endurecidas (0038); estudiante/general sin privilegios, docente autorizado en beta 13 días o pago docente confirmado vigente. Max administra autorización/retiro docente sin tocar administración. Nueve tests de política pasan; Max edita plantillas y ve panel. Matrícula ficticia guardada y visible, luego eliminada mediante herramienta; cuenta estudiantil vinculada y evaluación completa no comprobadas.
+- [~] Pedido 19:24 UTC: revisión profunda finalizada sobre 3a8821a; detectó invitaciones arbitrarias por administradores. Destinatarios limitados a matrícula/autorización docente; queda revalidación profunda del cambio y prueba de límites de envío. No publicar durante esta revisión.
+- [~] Pedido 19:24 UTC: plantillas editables cotidiano/portada reglamento y escudo opcional Mercedes ya existen; no representan emisión oficial ni permiten reescribir el reglamento normativo. Revalidación de uso e impresión pendiente.
+- [~] Pedido 19:23 UTC: consulta real de matrícula de Max muestra dos registros sin cuenta vinculada y cero intentos verificados; solicitar identificación del estudiante real. RPC vincula solo al ingreso del propio estudiante con correo confirmado; no forzar vínculos ni importar informes privados como cuentas.
+- [ ] Pedido 19:23 UTC: IA por materia basada en ejemplos; no hay evidencia de modelos de IA propios del MEP ni financiación gratuita autorizada, mantener bloqueo de gasto mientras se verifica.
+- [ ] Pedido 19:23 UTC: completar materias y grados restantes con contenido original y referencia funcional Open English; exige producción y revisión curricular, no declarar completa la cobertura existente.
+- [ ] Pedido 19:17 UTC: ejercicios originales bilingües/multilingües y destrezas abarcan todas las materias, especialidades, niveles, áreas/subáreas/unidades; ampliación editorial integral pendiente, no limitada a idiomas.
+- [x] Pedido 19:15 UTC: referencia Open English guardada; contenido original, sin copiar materiales ni diseños.
+- [~] Pedidos 19:14 UTC: formulario de matrícula existente comprobado con cuenta Max; no se registró otra persona porque falta correo real autorizado. Panel indica ninguna cuenta estudiantil vinculada; lectura docente real sigue bloqueada.
+- [x] Pedidos 19:14 UTC: PPP editable de cinco columnas, instrumento cotidiano separado, logo MEP original e institución/escudo por sesión; comprobados en pantalla y vista de impresión. Referencia ETP 2026 localizada; descarga directa devuelve 403, no declarar cotejo integral.
+- [x] Pedido 19:14 UTC: portada institucional editable y enlace a copia MEP del reglamento 45509-MEP, escudo Mercedes opcional; no se modificó texto legal.
+- [~] Pedido 19:14 UTC: selección de Inicio solo 1.º Matemática/Español y 7.º/8.º Matemática con bancos exactos; seis tests pasan, logos cargan, sin desbordamiento móvil. Revisión básica sin hallazgos; publicación por solicitar.
+- [ ] Pedido 19:14 UTC: IA sin créditos personales ni del titular bloqueada por falta de cobertura gratuita verificable; documentos MEP son fuentes curriculares, no modelos de IA.
+- [ ] Corrección 19:04 UTC: colegio de Max CTP Mercedes Norte; cada docente personaliza institución y escudo, sin valor global obligatorio.
+- [ ] Pedido 19:04 UTC: verificar documentos/identidad visual MEP vigente, colegio indicado «TEPNEM de Suroeste Norte» y personalización privada por colegio/escudo; publicación de logo no demuestra licencia o autorización. Confirmar denominación con fuente/documento antes de atribuirla.
+- [x] Inicio por grados publicados y enlaces directos a bancos exactos; filtros y resumen docente de registros existentes implementados. Sin estudiantes vinculados en el backend (consulta 19:04 UTC), comprobación docente real bloqueada; no crear datos ficticios.
+- [ ] Pedido 19:03 UTC: corregir planeamiento/PPP, cotidianos, proyectos y prueba escrita 2026 conforme a ejemplos y formatos MEP; recuperar documentos proporcionados antes de modificar columnas.
+- [ ] Pedido 19:01 UTC: Inicio muestra solo materias/grados con materiales publicados y accesos directos a simulacros cubiertos; pendientes quedan fuera de esa selección.
+- [ ] Pedidos 19:00 UTC: malla primaria/secundaria basada en catálogo publicado y simulacros específicos solo donde existen; dashboard docente de registros reales por estudiante/grado/asignatura, sin inventar progreso.
+- [ ] Pedido 19:00 UTC IA gratuita sin créditos: cobertura/proveedor no verificados; no habilitar gasto del titular o de estudiantes. Resolver vía cuotas verificadas o alternativa sin inferencia, sin presentarla como IA.
+- [ ] Pedido 18:58 UTC malla completa: publicar solo cobertura existente; completar todos los grados/asignaturas/simulacros requiere producción y revisión editorial, no solo navegación.
+- [ ] Pedidos 18:58 UTC: conexión/página de IA gratuita sin créditos personales ni del titular: bloqueada hasta proveedor y cobertura gratuita verificables; no crear cuenta ficticia ni asumir ChatGPT Free incluye API.
+- [ ] Pedidos 18:58 UTC: publicar temas gratuitos ya cubiertos y seguimiento; completar dashboard docente por grado/asignatura y cada estudiante, con verificación de roster real pendiente.
+- [ ] Pedido 18:57 UTC: Inicio debe ofrecer todas las materias y familias técnicas sin privilegiar Inglés/Accounting; reutilizar catálogo y búsqueda, distinguir prácticas disponibles de ejercicios pendientes.
+- [ ] Pedido 18:56 UTC ampliado: priorizar cuotas gratuitas verificadas de IA por persona; cambio de modelo no garantiza costo cero. No rotar cuentas para evadir límites ni reenviar automáticamente solicitudes posiblemente cobradas; sin presupuesto autorizado del titular.
+- [~] Entrega 18:56 UTC: páginas gratuitas por capítulo público de Biblioteca con respuestas/dinámica; probada Matemática 1.º sin cuenta y sin desbordamiento móvil. Seguimiento docente por grado/asignatura y nombre, tres tests de separación más uno de acceso pasan. Prueba docente con estudiante vinculado aún pendiente; resto de malla/ampliaciones no completado.
+- [ ] Pedido 18:56 UTC: enlaces/conexiones individuales OpenAI, Anthropic y Grok; explicar diferencia entre suscripción de chat y facturación API, verificar método admitido antes de implementar credenciales o cobros.
+- [ ] Pedido 18:55 UTC: IA solo con cuota gratuita individual verificable o credenciales pagadas propias; Gmail no demuestra gratuidad. Catálogo de conexiones individuales no ofrece ChatGPT/Gemini/Grok; requiere definir integración y facturación segura, sin compartir claves del titular.
+- [ ] Pedido 18:52 UTC: IA con pago/autorización individual (ChatGPT/Gemini/Grok u otros), sin créditos del titular; verificar capacidades y facturación, no asumir que suscripciones de chat incluyen API ni conectar correo como presupuesto IA.
+- [ ] Pedido 18:50 UTC: mostrar nombre del estudiante en el seguimiento privado por grado y asignatura.
+- [ ] Pedidos 18:48 UTC: registrar solicitud docente pendiente con referencia real; el valor «60 90 63 59» coincide con el receptor SINPE previamente confirmado y necesita aclaración antes de registrarlo como comprobante. No activar ni aprobar pago por Max.
+- [ ] Pedidos 18:48 UTC: publicar primaria/secundaria y familias industrial/agropecuaria/servicios e idiomas con cobertura real, no afirmar totalidad ni certificación TOEIC A1–C1; añadir progreso docente por grado/asignatura.
+- [ ] Pedido 18:48 UTC: páginas gratuitas por tema con resúmenes, ejercicios y dinámicas originales; aprovechar capítulos públicos existentes sin exponer bancos privados ni cambiar acceso de los simulacros pagados.
+- [ ] Pedido 18:41 UTC ampliado: multiplicar por cinco inicialmente los ítems de cada materia mediante investigación y redacción original por áreas/subáreas/unidades; sexto incremento posterior revisado. No contar permutaciones de opciones como preguntas nuevas.
+- [ ] Pedido 18:41 UTC: navegación sencilla por niveles, pruebas/simulacros/material gratuito, ingreso CTP 7.º/10.º y admisión universitaria; audio y habla ES/EN por materias con recursos originales, sin copiar Open English ni diseños enviados como referencia. Aclarar «niñeras» antes de tratarlo como un nivel curricular.
+- [ ] Pedido 18:40 UTC: incluir Español, Agricultura, Ciencias, Biología, Química, Administración, Emprendimiento, Innovación, Tecnología, herramientas y destrezas computacionales; reutilizar materiales pertinentes sin atribuir cobertura inexistente.
+- [ ] Pedido 18:39 UTC: contacto 60906359 exclusivamente SINPE Móvil/WhatsApp, sin llamadas; correo maxi.salsa@gmail.com. Incluir Educación Física/deporte, Filosofía y Psicología en inventario y ampliación curricular; referencia del depósito docente todavía no proporcionada.
+- [ ] Pedido 18:38 UTC: inventariar todas las familias industrial, comercial/servicios y agropecuaria; ampliar materiales originales, prácticas, simulacros y recursos visuales por bloques; idiomas A1–C1 con audio/listening/speaking. Identificar «Belt» y «pruebas 70» antes de atribuir formatos; no copiar Duolingo/TOEIC ni presentar ejercicios propios como exámenes oficiales 2026.
+- [ ] Pedidos 14-nov-2026 18:37 UTC: revisar sitio publicado y enumerar pendientes reales de malla, libros y pago docente; organizar/publicar primaria y secundaria con materiales, simulacros y dinámicas revisados, sin afirmar totalidad inexistente.
+- [~] Pedido 18:37 UTC: libros existentes permiten guardar lectura/ejercicios por capítulo y fecha; panel docente consulta solo matrícula vinculada propia y separa resultados de examen por bancos exactos. Con Max se guardó/recargó/revirtió lectura; cuatro tests pasan y revisión básica sin hallazgos. Verificación docente real pendiente de estudiante vinculado; ampliar a temas internos y todos los materiales pendiente.
+- [ ] Pedido 18:37 UTC: ampliar/publicar Ejecutivo Comercial, Administración, Logística y Distribución, Electromecánica y Contabilidad con prácticas y dinámicas originales revisadas; cotejar primero bancos existentes.
+- [ ] Pedido 18:37 UTC: registrar pago docente real y verificar acceso solo después de aprobación de Max en Admin pagos. Bloqueado: el mensaje no incluye referencia ni teléfono del depósito; no inventarlos ni efectuar aprobación administrativa por el titular.
+## Lanzamiento 26X.1 — pedidos 14-nov-2026 18:16 UTC
+- [ ] Pedido 18:28 UTC: publicar catálogo disponible con libros, simulacros y ajedrez/damas/deducción; no denominarlo completo mientras haya áreas pendientes.
+- [ ] Pedido 18:25 UTC ampliado: organizar también Ejecutivo Comercial, Administración, Logística y Distribución, Electromecánica, Contabilidad y materias académicas de primaria/secundaria; no concentrar catálogo en Redes o Desarrollo Web.
+- [ ] Pedido 18:25 UTC: enviar solicitud SINPE docente y verificar activación después de aprobación en Admin pagos. Bloqueado hasta recibir referencia y teléfono del depósito real; no crear pago ficticio ni aprobar en nombre de Max.
+- [ ] Pedidos 18:24–18:25 UTC: publicar 26X.1 con Redes; ampliar libros/resúmenes/prácticas primaria y secundaria con progreso e insignias; completar prácticas, simulacros y dinámicas por tema de Redes. Recompensas por partida separadas de certificación académica; verificar cobertura antes de afirmar completitud.
+- [x] Pedido 18:22 UTC: favicon, icono Apple y manifest ahora usan recortes exactos del logo GICM original con nuevas direcciones CDN; HTML comprobado y sin errores. Los iconos anteriores eran búhos propios, no Lovable. La insignia externa ya está oculta; la interfaz del editor y Google administrado no se sustituyen con iconos del sitio.
+- [~] Ajedrez y damas: movimientos de ambos lados comprobados con sesión de Max; deducción descarta tarjetas; seis pruebas pasan, móvil sin desbordamiento ni errores. Mejorado contraste de ajedrez y bloqueo de selección ajena durante captura encadenada. Partidas completas/capturas en pantalla aún pendientes.
+- [x] Inicio: nuevo título/descripción y recorte propio 1200×630 (144.698 bytes); texto verificado en HTML. Imagen reutiliza la ilustración visible; publicación pendiente.
+- [~] Insignia externa ya oculta y manifest con marca propia. Google administrado permanece para no romper ingreso; sustitución requiere credenciales propias y configuración del titular.
+- [~] Redes: añadidos cuatro bloques introductorios de 15 preguntas (60 distintas), resúmenes web, ejemplo por tema, laboratorio de capacidad y simulacro mixto de 60. Catálogo CTP/Biblioteca/Aprender conectados; claves privadas, materia canónica Redes. Con Max se entregó prueba 25/100 y se leyó de Mi avance; móvil sin desbordamiento. No es módulo curricular completo: falta PDF propio, dinámicas por cada tema, variedad conceptual ampliada, recompensas recreativas y prueba de certificado aprobado.
+- [~] Insignias abre con sesión de Max y muestra cuatro enlaces activos, sin errores ni desbordamiento móvil. Lista docente con estudiante vinculado no verificada: necesita matrícula vinculada real; no fabricar datos.
+- [ ] Guardar partidas privadas y recompensas recreativas separadas de notas y certificados académicos.
+- [ ] Guiar verificación de cuenta de pagos y solicitud docente SINPE; activación solo tras aprobación de Max, sin fabricar depósitos ni efectuar cargos.
+- [ ] Simplificar navegación por modalidad → grado/especialidad → materia → tema y mostrar cobertura real de agroecología, agropecuaria, redes, soporte y diseño gráfico.
+- [ ] Ampliar malla primaria/secundaria/CTP y materiales originales por bloques revisados (libros, laboratorios, juegos, ilustraciones, videos/GIF, audios, idiomas, deportes y hábitos); no declarar cobertura completa sin revisión.
+- [~] Plan 26X.1 aprobado, primera entrega de Inicio/Juegos preparada y revisión básica sin hallazgos. Solicitar publicación única; Redes/navegación/materiales/persistencia recreativa siguen como entregas posteriores del plan, no se anuncian terminados.
+
+- [ ] Pedido 14-nov 10:22 UTC: menú compacto siempre cerrado, Más cerrado y reanudar prácticas/simulacros en el ítem pendiente; publicar tras verificar.
+- [~] Pedido 18:18 CR: entregado un video animado 30s 16:9 con música, sin narración; capturas públicas Inicio/búsqueda/libros. Pantallas con acceso se describen con tarjetas; conversación ilustrativa marcada, no captura real. Sin versión vertical ni múltiples videos. Agente revisó 12 cuadros/transición; pausas estáticas de lectura 1,2–2,6s.
+- [~] Pedido 18:10 CR: SEO actual revisado: inicio/robots/metadata correctos, falta sitemap (permiso para corregir pendiente). Auditoría parcial de Inicio/conversación/estudiantes: 0 imágenes sin alt, 0 botones sin nombre, 1 main; varios botones <44px (corrección pendiente). No auditoría exhaustiva del sitio. Video animado confirmado 18:18.
+- [ ] Pedido 18:38 CR: prueba con estudiante real (matrícula, simulacro, avance, racha, insignias). Bloqueado: ninguna matrícula tiene cuenta vinculada; requiere correo de un estudiante real que ingrese.
+- [x] Pedido 18:33 CR: video animado del recorrido estudiante (entrar, matricularse, simulacro, certificado, insignias); ilustrativo, sin datos privados.
+- [ ] Pedido 18:33 CR: cotejo oficial MEP grado por grado. Bloqueado: el MEP no reconoce avances de plataformas externas y varios programas oficiales devuelven 403; la app solo registra avance verificado propio.
+- [~] Pedido 18:08 CR: grupos, matrícula del estudiante de prueba y asignación de Finanzas guardados/recargados desde UI; permisos por dueño aplicados. Certificados de estudiante vinculado y aceptación real del lado estudiante no verificables todavía: ninguna matrícula tiene cuenta vinculada. Ampliar pantalla docente con grupos, matrícula privada, avances/rachas/insignias/certificados y asignaciones por materia; conservar vinculación solo tras correo verificado y autorización. MOPT por categorías con puntuación/QR/SHA independientes; bancos originales existentes no son preguntas oficiales ni pruebas emitidas por MOPT.
+- [~] Pedidos 18:07 CR: 15 formas de opciones probadas; matemática 1.º numérica revisada. Dos inicios distintos y simulacro inglés 100% guardado y leído en Mi avance. Audio inglés y apoyo español específico de 60 preguntas; conversación escrita de tres turnos probada, micrófono/sonido real pendientes de dispositivo compatible. Variantes ×15 para bancos existentes con cálculo/revisión de claves y puntuación reproducible del lado autorizado; no garantizar unicidad absoluta por barajar. Completar malla MEP por grado con objetivos y fuentes cotejados; resultados solo verificados en la app, no reconocimiento oficial MEP. Audio bilingüe para preguntas de inglés y juego de conversación con micrófono y escenarios originales; distinguir voz del dispositivo de audio preproducido y reconocimiento de evaluación certificada.
+- [ ] Pedido 18:01 CR: ampliar todas las materias y modalidades hasta cobertura verificada; hasta 15 variantes válidas por ítem cuando el concepto lo permita, no confundir reordenamiento con aprendizaje nuevo. Incluir física/química/biología/español, especialidades, categorías MOPT y admisiones específicas sin aval falso; bilingüismo, audio y speaking necesitan producción/revisión propias. Priorizar completar la entrega en curso; no prometer banco infinito ni gastar en servicios de voz sin autorización de costos.
+- [~] Pedido 17:56 CR: añadidos ciencias, finanzas, banca y costos: 12 bloques / 240 preguntas, cuatro PDF y cuatro familias Arena; insignias visibles incluso antes del primer intento. Dos simulacros de finanzas 100% guardados, certificado nominal QR/SHA-256 emitido, verificado y PDF descargado; pruebas móvil y 32 tests correctos. Resto de malla 1.º–12.º y especialidades pendiente de redacción/cotejo, sin asignar estos bloques introductorios a todos los grados. Inventario: 226 selecciones, 159 sin banco asignado, 41 compartidas; no equivale a malla oficial completa.
+- [x] Pedido 17:49 CR: añadidas rachas 3/7/30 días, XP 500/1000/5000, 100 preguntas por materia y primeros pasos orientativos A1–C1;  insignias adicionales por racha, XP y destreza; logros de práctica A1/B1 orientativos, no declarar dominio completo con un solo ejercicio por banda.
+- [~] Pedido 17:40 CR: primera ampliación de seis materias verificada; resto del inventario curricular/docente necesita redacción y revisión por bloques, no se realizó ampliación de matrícula/asistencia/notas en esta entrega. Revisión profunda de materias, subáreas, unidades, planeamientos, práctica pedagógica, cotidiano y registro docente (matrícula, grupos, cursos, asistencia y notas); ampliar por bloques verificables con 3–5 exámenes originales, sin afirmar cobertura íntegra.
+- [x] Pedidos 17:39 CR: 18 bloques / 360 preguntas añadidos (conceptos técnicos compartidos en tres casos, no mallas completas), seis guías PDF; dos simulacros de inglés 100% guardados, certificado QR/SHA verificado y descargado; accesos visibles a libros descargables y doce juegos; catálogo simple por materia; ampliar inglés (pasado, presente continuo, infinitivo, have/had/allow), matemática, seguridad, web, arquitectura de software y accounting con tres bloques originales por materia utilizables como prácticas y simulacros; conectar certificados >80 con materias canónicas.
+- [x] Pedidos 17:39 CR: avisos automáticos dentro de Mi avance por simulacro completado, racha y nota destacada; insignias por materia con imagen/descripción para 50 simulacros, 100 preguntas de lógica y dos notas ≥80 (insignia, no certificado).
+- [~] Pedidos 17:39 CR: admisión conserva banco original de 20 y fuentes universitarias; no se fabrican pruebas institucionales. MOPT continúa con bloques iniciales y fuente de adquisición; falta manual autorizado y revisión de bancos por categoría. MOPT y admisión conectados a fuentes y bancos pertinentes; no etiquetar preparación propia como examen oficial ni prometer certificados emitidos por MOPT/universidades; manual MOPT autorizado pendiente.
+- [~] Pedido 17:23 CR: Mi avance incorpora felicitación, insignia de primera misión y constancia de tres días, sobre métricas reales;  insignias originales por retos/rachas/puntajes reales, felicitaciones y recordatorios opcionales dentro de la app; Web Push requiere entrega específica y permiso expreso, no prometer avisos en segundo plano aún.
+- [~] Pedido 17:21 CR: regla >80 en dos simulacros completos aplicada al servidor con sesiones autorizadas; emisión QR/SHA-256 y descarga PDF probadas con dos simulacros de Matemática. Bancos cortos de idiomas/especialidades no elegibles hasta ampliación. Historial anterior conserva verificación. Aclaración: MOPT, sin «dron»; certificados solo por al menos dos simulacros de la misma materia con nota >80, nunca por juegos/trivias/pruebas cortas. Sustituye emisión anterior ≥70 de práctica; conservar verificación histórica sin cambiar hechos pasados.
+- [ ] Pedidos 17:16–17:17 CR: conectar bancos pertinentes a admisión/estandarizadas/certificación independiente, sin atribución oficial falsa; certificados descargables por materia con puntaje/fecha, separar recreativos de verificados y sin comparación pública de datos personales.
+- [~] Pedidos 17:16 CR: Matemática 1.º v2 ampliada 20→100, simulacro de 100 entregado y guardado; otras materias aún pendientes de redacción/revisión. Mi avance cuenta intentos verificados y partidas de Arena (otros juegos pendientes); cuatro familias de bienestar de cinco preguntas añadidas, estrés probado. Alcance restante: multiplicar por cinco preguntas por materia con variantes reales, ampliar materias de juegos; pantalla de conteos reales de preguntas/partidas completadas por materia, separando recreación de notas verificadas; juegos guiados de estrés, sueño, alimentación y meditación sin diagnóstico ni sustitución profesional.
+- [x] Pedido 17:15 CR: Inicio simplificado con cuatro acciones principales y herramientas desplegables, una búsqueda con lista acotada y cierre con Escape; ocho pruebas y verificación escritorio/móvil sin desbordamiento ni errores.
+- [ ] Pedido 17:18 CR: QR + SHA-256 verificables por materia y banda con criterios publicados; rachas/XP recreativos separados de nivel evaluado, no otorgar acreditación oficial ni nivel por votos/racha solamente.
+- [~] Pedido 17:14 CR: familia breve de pensamiento crítico (falacias, evidencia, conjunción/disyunción y hábitos saludables) en juegos por conceptos; ampliar después razonamiento/argumentación con revisión pedagógica, sin diagnóstico médico.
+- [~] Pedido 17:12 CR: doce opciones disponibles; puente, ranas, bingo, trivia, gato, palabras, misterio, presupuesto, deducción e interruptores probados; cinco familias técnicas/conceptuales. Resto de materias pendientes de contenido original; juegos reutilizables por materias, dificultad y apoyos DUA, más destrezas blandas/duras; añadir deducción de personaje/concepto con preguntas sí/no y acertijo de tres interruptores/bombillo como simulación segura (sin manipulación eléctrica real).
+- [ ] Pedido 17:10 CR: universo de juegos de palabras/deducción/gestión/bingo/gato (inspiración general Scrabble/Clue/Monopoly sin copiar marca/tableros), y prácticas de leyes/MOPT, Excel/Word/informática, filosofía/deporte/psicología/hogar/música; confirmar significado de «El Alcado» antes de identificar una mecánica no conocida.
+- [~] Primera entrega verificada 17:07 CR: diez mecánicas iniciales de juegos; materias religión/deporte/filosofía/psicología siguen pendientes de bancos propios y revisión. Versiones originales, sin copiar productos comerciales.
+- [~] Pedido 17:06 CR: prácticas de español/inglés/francés/portugués/alemán/mandarín con A1–C1, tiempos verbales y variedad conceptual; luego ciencias/biología/química/matemáticas/web/ciberseguridad y especialidades. Inventario por nivel y contenido genuino, sin llamar completo a bloques iniciales. La exclusión de juegos fue corregida expresamente a las 17:07.
+- [ ] Pedido 17:04 CR: multiplicar por cinco bancos de todas las materias con conceptos variados (no duplicados), libros/repasos/resúmenes/diagramas/ilustraciones y explicación docente DUA paso a paso; ampliar listening/speaking/writing/grammar, videos/audios y MOPT (rotondas, velocidades, multas, leyes y categorías). Requiere inventario por banco, fuentes vigentes y revisión editorial por bloques; no copiar marcas, cursos ni libros comerciales.
+- [~] Pedido 17:01 CR: campus técnico ilustrado en Arena y escena vial carro/moto/rotonda en MOPT; extensión a todas las materias y planes requiere producción por bloques y revisión visual/pedagógica, sin declarar cobertura completa.
+- [x] Pedido 16:57 CR: primera Arena de 20 retos originales breves en cuatro familias: ciberseguridad/redes/soporte, empresa/accounting/contabilidad/costos/finanzas, agropecuaria e industria/infraestructura; cinco retos por familia, explicaciones recreativas, no formación profesional completa.
+- [x] Pedido 16:56 CR: Arena ilustrada /arena con PC y dos jugadores locales por turnos; partidas completas verificadas y revancha; sin chat, IA pagada ni calificación académica. Duelo en línea fuera del alcance aprobado.
+- [ ] Pedido 16:54 CR: juegos/repasos rápidos usan preguntas cortas; guiadas y simulacros usan ejercicios de examen. Guiadas corrigen una a una; simulacros corrigen solo al entregar. Separar bancos por modo al revisar contenido.
+- [~] Pedido 16:51 CR: inventario /cobertura de 226 selecciones, bancos propios/mixtos separados, 58 cuadernillos y 35 PDF de temas/mapas accesibles verificados; corregida falsa exclusividad de pared celular en resumen séptimo. Español 1.º: 20 originales, buscador abre la materia y simulacro completo probado. Revisión editorial integral y cotejo de todas las modalidades pendientes de fuentes oficiales accesibles; no cobertura completa.
+- [x] Pedidos 16:46 CR: auditoría TEC/UCR/UTN/MEP: grado conservado y ordinales 1.º–12.º; búsquedas específicas no sustituyen por otro nivel/universidad, repaso mixto explícito, fuente UCR de admisión actualizada. TEC 20/20 respondidas y correcciones solo después de entrega; verificado con Max.
+- [~] Ampliación 16:50 CR: Matemática 1.º tiene bloque propio de 20 originales, cuatro opciones, explicación de errores y aciertos y fuente curricular; probado completo. Resto de materias/grados y cotejo integral requieren desarrollo editorial y fuentes accesibles; no se declara malla completa.
+- [ ] Pedido 16:46 CR: publicar revisión, fuentes y aviso MOPT; revisión básica sin hallazgos. Revisión profunda solicitada tras guardar cambios, resultado pendiente.
+- [ ] Pedidos 16:43 CR: simulacros originales por materia y grado kínder–12.º con explicaciones; requiere desarrollo y revisión curricular por bloques, sin declarar totalidad.
+- [~] Pedido 16:43 CR: búsqueda enlaza aviso oficial MOPT de manuales 2026 de venta, verificado en móvil; PDF oficial gratuito autorizado no localizado, no se publica copia sin permiso.
+- [x] Pedido 16:42–16:43 CR: fuentes citadas por capítulo CTP, materia/grado en biblioteca y camino TEC/UCR/UTN; enlaces imprimibles, 28 pruebas aprobadas y verificación móvil sin errores. PDFs CTP existentes ya incluyen fuentes; el resto de materiales y cobertura curricular no se declara completo.
+- [x] Publicación 16:46 CR: despliegue de fuentes y aviso MOPT solicitado en turno anterior; finalización no comprobada. Ampliación kínder–12.º y bancos por materia pendientes de cotejo curricular/editorial.
+- [ ] Pedido 16:41 CR: ampliar desde kínder y por grado Matemática primaria, Español y Sociales secundaria hasta duodécimo con textos y ejercicios originales, fuentes citadas y sin copiar libros; cotejo pendiente de fuentes completas accesibles.
+- [ ] Pedido 16:39 CR: publicar nuevas búsquedas y menú; ampliar búsqueda por grados, materias y especialidades, leyes y descargables ilustrados MOPT carro/moto/camión. Manual y cotejo documental pendientes; no afirmar totalidad lista.
+- [x] Pedido 16:35 CR: caminos TEC/UCR/UTN con búsqueda y accesos a prácticas/simulacros del banco compartido claramente identificado, enlace a especialidades; verificado con Max en móvil y escritorio.
+- [x] Pedido 16:35 CR: publicación solicitada para practicatecnica.com; programación confirmada, finalización no comprobada.
+- [ ] Pedido 16:34 CR: manual MOPT cotejado y búsqueda; adjunto PDF no encontrado. Créditos docentes con cobro real PayPal requieren aprobar tarifa monetaria y reglas separadas del plan anual.
+- [ ] Pedido 16:34 CR: simulacros completos de admisión TEC/UCR/UTN; identificar UNETLA y verificar requisitos institucionales antes de atribuir formatos.
+- [~] Pedido 16:34 CR: cinco fuentes oficiales MEP identificadas y catalogadas, búsqueda de Religión 1ero y Español primer/segundo grado verificada; cotejo completo bloqueado por descargas oficiales 403. Resto de programas requiere fuentes accesibles.
+- [ ] Pedido 16:34 CR: simulacros y prácticas explicadas por materia MEP de 1.º a 12.º; avanzar por bloques cotejados con programas, sin declarar cobertura completa prematuramente.
+- [~] Pedido 16:25 CR: Excel con respuestas explicadas y referencias APA; ocho preguntas originales incorporadas. Simulacros mantienen correcciones al entregar; ampliación y revisión bibliográfica del resto pendiente.
+- [x] Entrega 16:23 CR: tarjetas de 58 cuadernillos por familia, alias de búsqueda y selección por enlace, acceso directo desde Inicio; cinco búsquedas verificadas y Accounting abre con Max. Admisión ampliada de 5 a 20 preguntas originales; apertura real verificada, ampliación por institución pendiente.
+- [~] Pedido 16:18 CR: muchos ejemplos originales integrados de lógica, razonamiento, español y matemática con resúmenes/respuestas para admisión universitaria y colegios científicos/humanísticos/bilingües/CTP; «UNETLA» requiere identificar institución.
+- [~] Pedido 16:17 CR: organizar navegación por tarjetas separadas y materias/especialidades encontrables (accounting, agroindustria, agroecología, banquifinanzas, contabilidad, costos); ampliar prácticas y simulacros originales TEC/UCR/UNA sin prometer aprobación.
+- [ ] Pedido 16:14 CR: comprobar cortesías y pagos PayPal/tarjeta; sin cargos reales ni garantía absoluta de calidad. Cortesía ya existe como «Regalar cuenta» en SuperAdmin.
+- [ ] Pedido 16:13 CR: ampliar Educación Física, Filosofía, Educación para el Hogar y Artes Industriales con programas MEP verificados.
+- [ ] Pedido 16:12 CR: Educación Religiosa desde primero y progresión por grado con programa oficial MEP; búsqueda por materia y grado con temas y ejercicios reales. Bloqueado: descarga del programa vigente devuelve 403; requiere copia accesible para cotejo.
+- [ ] Pedido 16:12 CR: simulacros MOPT por niveles solicitados 1.º–12.º y cotejo con manual real; bloqueado hasta disponer del PDF y aclarar diferencia entre grado escolar y licencia.
+- [ ] Pedido 16:12 CR: definir costos internos por simulacro, planeamiento y grupo y panel con saldo; requiere acuerdo de cobro separado de créditos de construcción.
+- [x] Pedido 16:10 CR: hacer visibles SuperAdmin/Trazabilidad y Activaciones en el menú principal y móvil, conservando permisos y controles existentes; verificar con la cuenta autorizada de Max.
+- [ ] Pedido 03:55: seguimiento SuperAdmin crea usuarios, docentes ven notas/avance de matriculados; planeamiento docente (materias/especialidades/unidades/subáreas, indicadores, rúbricas, tareas, cobro opcional).
+- [ ] Pedido 04:29: cumplimiento legal CR (PRODHAB/Ley 8968), guía NIST y certificaciones; requiere trámites de GICM.
+- [ ] Pedido 04:27: más speaking/listening y temas PT/FR según MCER (contenido original, sin copiar marcas comerciales).
+- [x] Pedido 04:23: página para que docentes creen exámenes propios con clave en Lenguas.
+- [x] SINPE docente ₡3.500 activa acceso al enviarse (pedido de Max).
+- [ ] Pedido 04:14: prueba completa cronometrada por nivel inglés B2 y C1; moto/carro basados en manual COSEVI (etiqueta honesta); exámenes MEP en Macro con fuentes verificables.
+- [~] Inglés B2→C1: primer bloque de 10 ítems; ampliar con tiempo y resultados por nivel.
+- [ ] Pedido 04:11: Planeamiento con secciones Micro (rúbricas/tareas) y Macro (estandarizadas).
+- [ ] Pedido 04:10: prácticas/pruebas de idiomas B2→C1 progresivas con tiempo y resultados.
+- [ ] Separar micro (aula) y macro (estandarizadas/admisión/idiomas B2-C1+) evaluación; más prácticas multilingües.
+- [ ] Pedido 04:07: exámenes MEP oficiales con respuestas y calificación (solo pruebas liberadas verificables).
+- [ ] Pedido 04:06: libros/resúmenes/prácticas/juegos/trivias con diagramas y apoyos DUA paso a paso, lenguaje inclusivo y neutral.
+- [x] Planeamiento docente inicial (15 temas): indicadores, rúbricas, cotidianos, tareas, proyectos; acceso con plan docente/prueba. Ampliar a toda la malla pendiente (contenido editorial).
+- [ ] Pedido 03:59: cotidianos, tareas y proyectos para toda la malla MEP, en pantalla y en PDF; hacerlo por bloques verificados.
+- [ ] Pedido 03:55–03:56: mapas/diagramas PDF por tema MEP; publicar; moto/carro con fuentes oficiales verificables, tiempo límite y resultados (no presentar preguntas propias como oficiales).
+## Revisión solicitada (13-nov-2026)
+- [ ] Pedido 03:41 UTC: revisar trazabilidad de inicio, correo, notas y seguimiento para súper administradores autorizados; docentes solo sobre estudiantes matriculados/vinculados mediante identidad verificada, sin acceso a cuentas ajenas.
+- [ ] Pedido 03:38 UTC: priorizar plan de práctica pedagógica docente tras bloqueo pagado: indicadores, rúbricas, tareas/proyectos por materia/especialidad/unidad/subárea; fuentes oficiales y cobertura explícita, sin prometer ventas rápidas ni totalidad no revisada.
+- [x] Bloqueo 03:42 UTC: bancos privados separados de catálogos públicos; entrega y puntuación requieren acceso comprobado en servidor, sin excepción de docentes no pagados. Mis pagos reconoce SINPE pendiente. 34 pruebas pasan; Max ve simulacro carro, petición sin autorización no recibe preguntas. PWA móvil publicada muestra iconos/inicio e instrucciones, sin instalación nativa ejecutada.
+- [ ] Pedido 03:33–03:34 UTC restante: ampliar MOPT cronometrado con fuentes autorizadas y resultados; mapas/diagramas PDF por tema MEP antes de idiomas; ejercicios originales primaria/secundaria/Belt después («Belt» sin identificar).
+- [x] Publicación 03:32 solicitada para practicatecnica.com con Mis pagos; Gmail aceptó correo a Max con bloque Ciberseguridad y riesgo pendiente. Despliegue exacto y lectura del correo no confirmados.
+- [x] Pedido 03:29 UTC: PayPal docente conectado responde HTTP 200; cotización real, comisiones e historial privado actualizado comprobados con Max; cinco pruebas de precio/conversión pasan. No se aprobó ni capturó un pago. Publicación y correo se solicitan tras guardar; riesgo de contenido pagado sigue pendiente.
+- [ ] Pedido 03:29 UTC: ampliar educación solo con ejercicios preelaborados: todas las especialidades, grados, MOPT, UCR, juegos/visuales y planeamiento docente (cotidianos, indicadores, unidades/subáreas, tareas/proyectos); cobertura completa y miles de ítems requieren revisión por bloques. No afirmar equivalencia con Duolingo/Open English.
+- [ ] Pedido 03:29 UTC: comprobar PWA móvil/tableta con iconos e inicio propios existentes; IA personal con Gmail u otros proveedores únicamente si integración y facturación individual verificables, no asumir que Gmail incluye créditos gratuitos.
+- [ ] Pedido 03:25 UTC: conservar independencia explícita del MEP; revisar instalación sencilla en computadora/móvil/tableta y pruebas automatizadas de pagos reales sin capturas no autorizadas; publicar con cambios mínimos.
+- [ ] Pedido 03:23 UTC: solicitar publicación ahora; corregir ambas advertencias profundas antes de ejercicios EN/PT/FR, con comprobación real y revisión nueva.
+- [x] Pedido 03:22 UTC: bloque inicial Ciberseguridad décimo, 3 temas originales, fuente MEP pp. 104–107, 4 PDF reales. Descarga %PDF y filtros/celular verificados; PDF inspeccionados sin recortes ni solapamientos. Biblioteca ahora 15 temas / 4 especialidades, todavía parcial. Idiomas quedan después de seguridad; «Belt» requiere identificación.
+- [ ] Pedido 03:21 UTC: conversar sobre planes educativos, juegos, prácticas MOPT carro/moto, ilustraciones, resúmenes, diagramas de flujo y mapas conceptuales sin implementar ampliaciones; no prometer conversación gratuita, plan mode consume 1 crédito por mensaje.
+- [ ] Pedido 03:20 UTC: ejercicios originales graduados de inglés (to be, verbos, pasado, presente continuo), portugués y francés para primaria y secundaria; equivalencias gramaticales correctas por idioma, sin copiar TOEIC, Duolingo u otros cursos ni declarar afiliación. «Belt» y «Coffee English» requieren identificación antes de atribuir estándares.
+- [x] Correo 03:20 UTC: Gmail aceptó el envío a maxi.salsa@gmail.com (HTTP 200, etiqueta SENT) con enlace, publicación solicitada, cobertura MEP parcial y las dos advertencias; no se afirmó seguridad completa.
+- [ ] Pedido 03:19 UTC: IA con autorización y facturación individual de cada persona, sin consumir créditos del propietario/plataforma; verificar conexiones personales disponibles. Suscripciones de chat no equivalen a créditos API; nunca solicitar contraseñas ni guardar claves privadas en el navegador.
+- [x] Pedido 03:17 UTC: publicación inmediata solicitada, revisión básica sin hallazgos; dos advertencias profundas siguen abiertas y la cobertura MEP sigue parcial.
+- [x] Pedido 03:17 UTC: publicación solicitada; Biblioteca comprobada HTTP 200 a las 03:21 UTC, sin asegurar versión exacta desplegada; advertencias y cobertura parcial comunicadas.
+- [x] Pedido 03:17 UTC: correo aceptado por Gmail para Max con el enlace y los pendientes reales.
+- [ ] Pedido 03:17 UTC: revisar PayPal docente ₡3.500/año con comisiones verificables y estado actualizado; no efectuar capturas sin aprobación del comprador.
+- [ ] Pedido 03:17 UTC: completar resúmenes MEP restantes antes de otras ampliaciones; aumentar cinco veces los ítems revisados y mejorar seguridad, planes, juegos, trivias y UX; no afirmar cobertura ni habilitar Google Pay sin comprobar disponibilidad.
+- [ ] Pedido 03:17 UTC: compra de créditos solicitada sin importe definido; no efectuar compra ni prometer gasto cero.
+- [ ] Pedido 03:04 UTC: completar resúmenes de todas las especialidades y bloques MEP con fuentes verificadas, PDF descargables y ejemplos resueltos antes de continuar otras ampliaciones; inventariar cobertura y no presentar bloques parciales como completos.
+- [ ] Pedido 03:04 UTC: revisar PayPal docente ₡3.500/año, conversión, comisiones verificables y estado de pago; preservar conexión real existente y no efectuar cargos sin aprobación del comprador.
+- [ ] Pedido 03:04 UTC: corregir contenido pagado accesible desde el navegador y consulta de roles ajenos; comprobar denegación real y repetir revisión profunda sin prometer aprobación previa.
+- [ ] Pedido 03:04 UTC: materiales explicativos con iconos por destreza MOPT y prácticas por cada bloque/área, con fuentes y cobertura explícitas.
+- [ ] Pedido 03:04 UTC: verificar publicación de practicatecnica.com y enviar enlace a Max por correo con resultado completo de revisión profunda; requiere servicio de correo autorizado y revisión actualizada.
+- [ ] Pedido 02:42 UTC: más libros explicativos de materias/materiales actuales y variedad de prácticas/juegos hasta miles de ítems; ampliar por bloques revisados, sin afirmar que mil variantes equivalen a mil preguntas originales. «Hacia el suroeste» no define una materia curricular; no cambiar ubicación ni inventar contenido geográfico.
+- [x] Primer incremento 02:32: PayPal docente con cotización persistida y pedido real creado sin capturar; seguimiento manual separado por destreza e iconos; bancos carro/moto de 5 preguntas propias cada uno con fuentes Ley 9078 y resultados comprobados en Max; agilidad mental separada (5 preguntas); 3 temas y 4 PDF de Contabilidad y Costos duodécimo. 33 pruebas aprobadas, descargas y celular comprobados. No cobertura completa ni transacción capturada.
+- [x] Publicación solicitada a las 02:32 UTC y enlace proporcionado para Max; Biblioteca pública responde HTTP 200 y muestra los resúmenes MEP, sin confirmar la versión exacta del último despliegue. Dos advertencias profundas comunicadas; envío por correo bloqueado por dominio remitente sin verificar.
+- [ ] Explicaciones enciclopédicas originales con fuentes contrastadas; no reproducir libros Océano sin autorización ni atribuir a esa editorial los resúmenes propios. Wikipedia solo como referencia complementaria atribuida y contrastada.
+- [ ] Revisión profunda actualizada: consulta de roles restringida y contenido pagado entregado por servidor tras acceso vigente; pruebas aprobadas y revisión básica sin hallazgos. Falta análisis profundo sobre esta versión guardada; no declarar seguridad absoluta ni revisión profunda completa.
+- [x] Seguimiento separado e iconos por destreza implementados en panel docente; solo intentos verificados se agregan por mapa canónico. Áreas sin banco o sin intentos muestran Sin resultados. Registro manual ciberseguridad guardado y leído de vuelta, sin aumentar XP.
+- [x] Revisión profunda completada y comunicada: dos advertencias pendientes; comprobación básica sin hallazgos, sin declaración de seguridad absoluta.
+- [x] Publicación solicitada; dominio comprobado HTTP 200 después del despliegue anterior. Los nuevos libros requieren otra publicación.
+- [ ] Publicar simulacros existentes por especialidad; ampliar preguntas reales con fuentes revisadas posteriormente, sin presentar bancos introductorios como exámenes oficiales completos.
+- [ ] Correo: Max ya confirmado; ginglesgicm pendiente del enlace recibido por el titular. No confirmar artificialmente ni activar IA sin presupuesto.
+- [ ] Plan docente: ₡3.500 al año, activar/desactivar, asistencia y seguimiento; implementar sin cobro real, con autorización administrativa.
+- [x] Primer banco MOPT carro/moto: 5 preguntas por área y guardado comprobado con Max en ambos; agilidad mental separada de MOPT, 5 preguntas. Son prácticas introductorias propias, no preguntas oficiales ni exámenes completos de 60 ítems.
+- [x] Primer bloque libros MEP: 9 resúmenes de décimo (Desarrollo Web, Contabilidad, Contabilidad y Costos), 9 PDF por tema y 3 compendios; fuentes oficiales con páginas, ejemplos originales, filtros y descargas comprobados sin cuenta en computadora/celular; 13 pruebas aprobadas y PDF inspeccionados sin problemas de tildes o solapamientos. No cobertura completa, no edición Océano, vocabulario ES/EN pero explicaciones en español.
+- [ ] Ampliar libros a los restantes temas/grados/especialidades — requiere lectura de programas, redacción y revisión por bloques; no se sustituyen con materiales genéricos.
+- [x] PayPal docente ₡3.500/año: conversión ExchangeRate-API fechada, redondeo al centavo, cotización de 30 minutos y controles de propietario/importe antes de captura. Pedido real creado y pantalla de aprobación abierta; no aprobado ni capturado. Comisiones posibles expuestas, no inventadas; SINPE pendiente administrativo preservado.
+- [ ] Captura docente y activación de anualidad de extremo a extremo — requiere aprobación y pago voluntario del comprador; no efectuar cargos por el usuario ni activar referencias no verificadas.
+- [ ] Ampliación docente restante: cotidianos, proyectos y tareas; tarifa de por vida no definida.
+- [ ] Inglés, portugués y francés: listening y speaking por tema y grado de 1.º a 12.º; desarrollar por bloques revisados, sin afirmar cobertura completa.
+- [ ] Ampliar MOPT carro/moto, juegos de agilidad mental y seguimiento por unidades con fuentes verificables.
+- [ ] Plan curricular por bloques: REA, recursos audiovisuales, inglés y bancos por etapa/especialidad; cobertura completa y PDF por tema requieren fuentes y revisión editorial.
+- [ ] Acceso básico sin cuenta; prueba completa de 13 días con cuenta y contador; SINPE solo tras aprobación administrativa.
+- [x] Navegación de especialidades corregida: simulacro seleccionado directamente; sin redirección a otra materia cuando falta banco; duplicación PNE eliminada del listado y mezcla.
+- [x] SINPE solo confirmado concede acceso; PayPal directo live conectado, lectura de credenciales 200 y botones visibles; ningún cargo efectuado ni activación de pago real probada.
+- [x] Inicio público: título/descripcion correctos y captura previa accesible; imagen propia de 1200×630 preparada con portada existente, sin IA.
+- [x] Imagen Open Graph y Twitter del Inicio y URL canónica configuradas; falta verificar nuevo resultado después de desplegar.
+- [x] Todas las páginas de contenido inspeccionadas: títulos y descripciones propios existentes; no se reemplazó información ya relevante.
+- [ ] Publicar después de las correcciones aprobadas y la revisión de seguridad vigente.
+- [ ] Revisar acceso Google y protección contra pagos no confirmados; conciliar con la activación SINPE instantánea solicitada anteriormente.
+- [ ] CRUD docente de notas/promedios cotidianos y bingo educativo — incorporado al alcance docente; pendiente planificación por bloques.
+
+- [x] Fifty reproducible numeric variants per nine current numerical topics; canonical server scoring and random answer positions (advanced challenges reused)
+- [x] Quick-trivia mode: three stages and 60 XP maximum; unlimited validated content requires source mapping and expert review
+- [x] Max and Steven admin bootstrap for verified exact emails in this project; first login still required, other projects unchanged
+- [x] Difficulty points: 10/20/30 per correct answer, stored server-side; grades remain accuracy, practice-day streaks unchanged for verified work
+- [x] Add 36 application and reasoning exercises across 18 topics; preserve historical answer keys
+- [ ] Import real students and assign Steven's roster — blocked by missing student list and authenticated owner/teacher accounts
+- [x] Administration: record student subject, grade and teacher-entered progress; reflected in teacher panel separately from quiz scores (authenticated check blocked by no accounts)
+- [x] Topic practice library: subject, grade, language and practice mode; full sheets, answer explanations and rubrics
+- [x] Expand six school subjects: 18 topics, 72 additional bilingual exercises; three topic stages and grade-dependent numerical variants, not complete grade curricula
+- [ ] Verify teacher dashboard authenticated — Max and Steven must complete first sign-in
+- [ ] Complete grade-specific curricula and 1,000-per-level expansion — requires official curricular mapping and editorial review beyond current topic stages
+- [x] Remove visible Lovable branding, sign-in option and default favicon
+- [x] Clear light/dark themes with visible accessible controls
+- [x] Fast individual student entry, focused confirmation flow and 36 bilingual questions (metrology + school)
+- [x] Official Hostinger domain and verified HTTPS
+- [ ] Cloud profiles/auth/attempt storage implemented; authenticated end-to-end verification waits for Max to sign in (no auth users yet)
+- [ ] Private student roster and teacher management implemented; Steven's verified email and first authenticated test pending
+- [x] Metrology introductory course: 8 sheets with objectives, sequences, rubrics and interactive exercises (not exhaustive professional coverage)
+- [x] Home cards with "Comenzar práctica"
+- [x] AI question generator (ES/EN)
+- [x] Progress: notas, liga, habilidades, mejoras
+- [x] Confirm answer before locking it
+- [x] Dashboard with menu + full history of attempts (prácticas, simulacros, IA)
+- [x] Google + email sign-in enabled; confirmation remains on
+- [ ] Online leagues/tournaments (needs Cloud)
+- [x] Analytics: deck chosen, practice completed, retry wrong
+- [x] AI grounded in site question banks
+- [x] GICM logo in footer (relationship text needs user confirmation)
+- [ ] Activate Max and Steven admin accounts through first verified login (maxi.salsa@gmail.com and escb77@gmail.com)
+- [ ] Paid features (Stripe/PayPal; SINPE not built-in) — needs Cloud + user decision
+- [ ] Friendly not-found page (no dead ends)
+- [x] Profile + personalization (name, level, goal exam, daily goal)
+- [ ] MEP syllabus/content tables + infinite AI questions per topic
+- [x] Own-identity habits: daily streak, XP goal
+- Note: hosting is Lovable publish (Vercel not used)
+- [x] 6.º grado: Matemática, Ciencias, Español y Estudios Sociales, 500 versiones reproducibles por materia (/sexto)
+- [x] Simulacros cronometrados con pausa (/simulacro)
+- [ ] Primaria 1.º–5.º, colegio académico 7.º–11.º, CTP 7.º–12.º — next blocks, one grade at a time with reviewed items
+- [ ] Admisión UCR, TEC, UNA, UTN, UNED; hábitos de estudio; MOPT separado moto y carro
+- [x] Simulacro completo 6.º (12 preguntas, 500 versiones); resúmenes 6.º con mapas conceptuales imprimibles (/resumen-sexto); hábitos de estudio con temporizador (/habitos)
+- [ ] Simulacros 7.º, 10.º y UCR/TEC completos — need reviewed banks for those levels
+- [ ] Primaria 1.º–5.º con 500 versiones de preguntas revisadas
+- [ ] Todas las asignaturas y especialidades MEP — advance by blocks; free AI generation only as supervised supplement
+
+- [x] 1.º–5.º primaria: repasos revisados (simulacro y ruleta)
+- [ ] Repasos, pruebas y juegos para todos los niveles, asignaturas, temas y unidades (por bloques revisados)
+- [ ] PayPal y tarjetas reales (requiere aprobación de conexión)
+- [ ] 1.º–5.º primaria: simulacros, resúmenes y juegos revisados
+- [ ] (CONSTRUCTA, otro proyecto) ferreterías, /proveedores, factura Hacienda, seguridad de chat/precios
+- [ ] Todos los niveles/asignaturas restantes (por bloques revisados)
+- [ ] Cambiar PayPal a la cuenta de pracTICAtecnica (estaba la de CONSTRUCTA)
+- [x] Especialidades técnicas CTP: primer bloque revisado (8 áreas)
+- [ ] Libros/resúmenes PDF ampliados con saberes, habilidades, ejemplos y ejercicios por nivel
+- [ ] Ilustrar y motivar a toda la familia (niños, jóvenes, padres, abuelos) con información real y verificable
+- [ ] Libros por nivel (saberes, habilidades, ejemplos, ejercicios)
+- [ ] Hacienda factura electrónica (falta credenciales ATV)
+- [ ] Experiencia «nave espacial» para estudiantes, docentes, universidades, ingenieros y empresas (análisis entregado; implementar por fases)
+- [ ] Traducción completa del contenido a EN/FR (hoy solo el menú)
+- [ ] Cabina de mando con planetas y misiones
+- [ ] Preescolar y más capítulos por grado
+- [ ] Hacienda: decidir proveedor autorizado o conexión directa ATV
+- [ ] Más idiomas (alemán y otros) en menú e Idiomas
+- [ ] Factura con la herramienta gratuita de Hacienda (manual, sin API)
+- [ ] Hacienda TRIBU-CR: firma .p12 y envío (espera acceso de prueba y .p12)
+- [ ] Página Docentes: libro impreso y reportes (hoy /estudiantes)
+- [ ] Alinear ejercicios con programas MEP oficiales (requiere revisión de documentos)
+- [ ] XP de Cabina verificada con ejercicios aprobados
+- [ ] 7.º y 10.º con ejercicios por tema
+- [ ] Arreglar botón WhatsApp de comprobante en Planes
+
+## Nuevas tareas (11-nov-2026)
+- [x] Cuadernillos PDF oficiales descargables en /libros
+- [x] Página /contacto (correo y WhatsApp GICM) enlazada desde Acerca
+- [ ] Verificar XP de Cabina: Cadete → Piloto tras ejercicio de 7.º
+- [ ] Factura Hacienda ATV con .p12 (bloqueado: requiere credenciales ATV y certificado)
+- [ ] Prueba 21 días + cobro automático (bloqueado: requiere proveedor de pago activado)
+- [x] Imprimir/descargar simulacros en PDF (hecho: botón imprimir en simulacro ciego)
+- [ ] Libros tipo editorial ilustrados DUA paso a paso por tema, multilingües (grande; por fases)
+- [ ] Programas de estudio oficiales MEP (requiere que el usuario suba los PDF oficiales)
+- [x] Hoja de seguimiento en simulacro: dudas, blancos, fallos, correcciones, nota proporcional y repetir fallos
+- [x] Simulacro mixto de 60 ítems con todos los bancos
+- [x] Libros: vista previa del PDF + descarga, tildes corregidas, accesos a resúmenes/mapas/juegos y motivación diaria
+- [x] Guía .md para que Gemini multiplique el banco de la malla MEP (académica y técnica)
+- [x] QA: práctica completa de Matemática 7.º (50) con cuenta real; XP verificada subió 630 → 970
+- [x] Lote 1 Matemática 8.º (50) en Prácticas y Simulacros
+- [ ] Prácticas de todas las asignaturas, niveles, admisión U públicas, colegios científicos/humanísticos y especialidades (por lotes de 50; requiere elegir orden y fuentes oficiales para materias no numéricas)
+- [ ] Sin marca Lovable en ningún lado (insignia, Google, correos); Google requiere credenciales propias de GICM
+- [x] SuperAdmin: registros, avance, pagos, estados (activar/regalar/desactivar/bloquear) y visitas
+- [x] Malla MEP en selector único (/explorar); idiomas listening/speaking/grammar/writing; ligas semanales
+- [ ] Libros editoriales de toda la malla MEP (todas las materias, niveles y unidades) + admisión UCR/TEC/UNA, colegios científicos/humanísticos, ingreso CTP 7.º y 10.º — por fases
+- [ ] Visor de libros PDF por asignatura y nivel con descarga real (después de /explorar)
+- [x] (base) Inglés, francés y portugués: listening, speaking, gramática y escritura con audio y retroalimentación (después de la malla)
+- [x] Ligas semanales con ascenso/descenso, alerta de racha y cofres (después de idiomas)
+- [ ] Preparación internacional de idiomas por bandas MCER (A1–C2) en inglés, francés y portugués
+- [x] Mapa de habilidades por categoría + reto relámpago 60 s (/habilidades)
+- [ ] Completar materias «en preparación» con preguntas reales (requiere fuentes oficiales por materia)
+- [ ] UX/QA internacional, PWA con instalación al aceptar, identidad y publicidad (revisar imágenes enviadas)
+- [x] Usar 4 imágenes del usuario como logo, portada y publicidad con enlaces
+- [x] Revisar anuncios de Inicio en celular, deslizado y QR
+- [x] Ampliar ejercicios de inglés, francés y portugués (4 destrezas)
+- [x] Ligas semanales con ascenso, descenso y cofres
+- [x] Resumen en Ligas: nivel, XP, racha y ranking semanal
+- [x] Ligas: historial de ascensos/descensos y botón cerrar semana (admin)
+- [x] Probar en celular cierre de semana y cofre con avatar
+- [x] Anuncio Probala gratis → enlace real a colegios y exámenes; QR decorativo
+- [x] Prueba gratis de 13 días + términos
+- [x] Cobro con tarjeta y PayPal: planes y botón listos
+- [ ] SuperAdmin: invitar por correo
+- [ ] Campañas de descuento (códigos)
+- [ ] Tipo de usuario (estudiante/docente/adulto) con carnet o libro de comunicación
+- [x] Perfil: subir carné estudiantil / libro de comunicación
+- [x] Invitar por correo desde SuperAdmin (activo al verificarse el dominio)
+- [x] Verificar prueba vencida de 13 días
+- [ ] Verificación de identidad en pagos (la hace el usuario)
+- [x] Códigos de descuento creados desde SuperAdmin (tarjeta/PayPal)
+- [x] Publicar
+
+## SuperAdmin y publicación (12-nov-2026)
+- [x] Lista de usuarios: correo, plan, estado de pago y documento privado subido
+- [x] Trazabilidad: activar/desactivar, actividad diaria, pagos, contacto y registro interno de solicitudes/incidencias; solicitud de comprobación guardada y resuelta
+- [x] Error corregido, pruebas aprobadas y publicación solicitada para practicatecnica.com; despliegue aún no confirmado
+- [ ] Enviar invitación real a maxi.salsa@gmail.com — intentada desde SuperAdmin; bloqueada por dominio sin verificar; es cuenta admin existente, no estudiante nuevo
+- [ ] Verificación oficial de pagos y activación de plan real — revisar requisitos actuales y abrir proceso del proveedor; aprobación exclusiva del proveedor
+- [ ] Cuenta real de prueba vencida — falta correo de cuenta de prueba independiente; no se alteró la cuenta admin ni su fecha de registro
+- [ ] Pago real con PRUEBA50 y activación — bloqueado por verificación del proveedor y código solo de prueba; no se efectuará ningún cargo
+- [x] Pantalla PDF con lectura local ES/EN, comprobada en cuenta real y celular; IA bloqueada también en servidor con gasto autorizado de 0 créditos
+- [ ] Generar preguntas desde PDF — bloqueado: no hay límite gratuito verificable configurado; no se autoriza gasto adicional
+- [ ] Desbloquear IA desde PDF después de aprobación oficial de pagos y autorización de presupuesto real; aprobación de pagos no concede créditos gratuitos
+- [x] Panel personal de IA con registros privados de preguntas/respuestas y campos de gasto confirmado; sin inferencia activa ni gastos históricos inventados
+- [ ] Generar desde PDF solo con plan activo y presupuesto autorizado; registrar modelo y consumo real del proveedor
+- [ ] Pantallas propias de gastos y pregunta libre con el mismo bloqueo de presupuesto
+- [ ] Confirmación de cuenta de prueba e ingreso para comprobar historial — requiere enlace de confirmación recibido por el titular
+- [ ] Publicar los nuevos cambios tras verificarlos; publicación solicitada nuevamente por el usuario
+- [ ] Cuenta vencida: ginglesgicm@gmail.com registrada realmente desde la app pública, pendiente de confirmar correo; Inicio/Biblioteca comprobados como visitante, no como cuenta vencida
+- [ ] Leer PDF, generar PDF ilustrados y preguntas con IA sin gasto — generación ilimitada gratis no disponible; requiere límites aceptados y PDF fuente
+- [ ] Pruebas de hablar/escuchar cronometradas por nivel MECER (A1–C1)
+- [ ] Examen de prueba en Exámenes tomado como estudiante (requiere estudiante vinculado)
+- [ ] Pruebas MEP reales con clave (requiere archivos de Max)
+- [x] Certificados SHA-256 verificables (/certificados)
+- [ ] Francés y portugués A1–C1 por MECER con ejercicios originales
+- [ ] Credenciales Google propias de GICM — requiere que Max las cree en Google Cloud y las pegue en Auth settings
+- [ ] Zona Docente PRO unificada (ya existen exámenes, planeamiento y grupos por separado) — pendiente de créditos
+- [ ] Selector sencillo en 3 toques: Área → Materia/Especialidad → Unidad/Subárea → material (libro, práctica, simulacro, juego)
+- [ ] Puerta MOPT: curso completo + simulacros B1 y A1/A2 (requiere contenido oficial verificado)
+- [ ] Cobro de créditos internos en panel docente — pendiente de decisión de Max
+- [ ] Simulacros MOPT B1 y A1/A2 — esperando que Max suba el manual oficial del MOPT
+- [ ] Tras crear simulacros MOPT, cotejar cada pregunta/respuesta con el manual y corregir
+- [ ] Cada pregunta MOPT cita capítulo y párrafo del manual (requiere PDF)
+- [x] Simulacro cronometrado (/simulacro) muestra retroalimentación al instante; pasar a revisión al final
+- [ ] Revisar material de idiomas con enfoque MEP + Finlandia (contexto cotidiano, autoevaluación)
+- [x] Descargar resultados en PDF (imprimir) y Word
+
+- [ ] Prueba real con estudiante vinculado (espera correo real del estudiante)
+- [ ] Cotejo oficial MEP grado por grado (requiere revisión curricular oficial)
+- [x] Vista imprimible de certificados en Mi avance
+- [ ] Cuestionarios oficiales MEP e Inglés 10.° (espera archivos oficiales)
+- [x] Panel docente: avance por bloque (promedio, aprobados, reprobados)
+- [x] Gráficos por bloque en panel docente
+- [x] Lista de estudiantes matriculados y bienvenida del estudiante
+- [x] Simulacros asignados con fecha y aviso de vencimiento
+- [x] Respuestas por simulacro en panel docente
+- [x] Revisión docente con texto, opciones y clave
+- [x] Planificar por bloque (preguntas y clave)
+- [x] Editar nombre, correo y estado de estudiantes
+- [x] SEO: títulos, metadatos y mapa del sitio
+- [x] Certificados del estudiante con puntos y fecha en Mi avance
+- [x] Simulacros por materia/bloque sin clave visible (BlindExam existente)
+- [ ] Inglés Técnico CTP: preguntas, ejercicios y videos originales en el menú lateral
+- [ ] Página de pago con precios por materia y método (PayPal/SINPE) — precios por materia por definir con Max
+- [ ] Conectar cada materia al programa oficial MEP (temas, unidades, simulacros por nivel) — requiere programas oficiales
+- [ ] Publicar y probar pago real con tarjeta → acceso → certificado SHA-256 — requiere verificación de identidad en pagos
+- [ ] Inglés Técnico CTP con temas/unidades MEP, retroalimentación técnica y certificados — requiere programa oficial
+- [ ] Verificación de identidad en panel de pagos — la hace Max
+- [x] Inglés Electricidad Industrial: 3 unidades de 20 (60 ítems) con certificado compartido
+- [x] Página /precios con 3 planes anuales en el menú
+- [ ] SINPE: confirmar con Max si el plan docente también deja de activarse al enviarse (hoy sí se activa)
+- [ ] Insignias y certificados por tema (Desarrollo web, Ciberseguridad, Soporte TI, Diseño de software, Python, HTML, CSS, IoT…) (toda la malla: Contabilidad, Finanzas, Turismo, Hotelería, Alimentos…) canjeables/validables por el docente en su panel; para todos los usuarios
+- [ ] Módulo Redes estilo NetAcad: IPv4, IPv6, Subnetting, servicios (resumen, práctica guiada, diagnóstico)
+- [x] Insignias por tema (página /insignias + lista docente)
+- [ ] Módulo Redes completo (resumen, práctica guiada, diagnóstico) y publicar
+- [x] Página docente de insignias
+- [ ] Verificar en pantalla panel docente y prueba de 13 días
+- [x] Pagos: docente SINPE espera aprobación, años se suman, tarjeta anual automática con portal
+
+- [ ] Página de suscripciones: historial de pagos, renovación automática y botón para reactivar cuentas (espera Stripe)
+- [ ] Matrícula fácil: docentes al equipo por nombramiento (propiedad/interino) con expediente privado; estudiantes por CSV o cédula con consentimiento; provincias/cantones/distritos
+- [ ] Planeamiento por materia editable (sesiones, objetivos, recursos) guardado en el perfil docente
+- [ ] Consentimiento digital de la familia por cada estudiante matriculado antes de aparecer en la lista
+- [x] Portal de matrícula digital para familias: foto de cédula y comprobante de cuota voluntaria, revisados por la institución (privado, Ley 8968)
+- [ ] Planeamiento por materia editable (sesiones, objetivos, recursos, botón guardar)
+- [ ] Equipo docente con nombramiento (propiedad, interino) y expediente privado
+- [ ] Institución con dirección regional MEP, circuito (01–07…) y dirección 1/2/3; filtros por región/circuito (sin logo MEP oficial)
+- [x] 14:55 UTC: fecha de pago visible solo para dirección; enlaces privados 30 s, escudos 5 min.
+- [ ] 14:54 UTC: chat interno privado (padres, hijos, docentes, orientación, secretaría, dirección, junta) con archivos/imágenes moderados; prueba con institución real.
+- [ ] 14:54 UTC: prueba completa de seguimiento familiar (registro, archivo, tarea) y publicación.
+- [ ] 14:55 UTC: probar funciones de dirección (aprobar campañas, firmar notas, permisos, roles, horarios, circulares, órdenes) y añadir roles subdirección, asistencia, auxiliar, guarda, etc.
+- [ ] 14:56 UTC: cuentas de prueba padre/dirección (requieren Gmail reales que GICM cree e indique) y repaso familiar.
+- [x] 14:56 UTC: verificado (200 al inicio, 400 a los 35 s); verificar vencimiento de enlace privado a 30 s y publicar.
+- [ ] 14:56 UTC: pago real tarjeta + SINPE con comprobante y activación manual institucional (falta confirmar SIMV y configuración real verificada).
+- [ ] 14:57 UTC: superadmin ajusta rol según pago (pago incompleto/monto faltante) y bitácora de movimientos con fecha/hora y última conexión (hoy existe última conexión en Superadmin).
+- [x] 15:01 UTC: tabla de especificaciones (hecha; preguntas con IA pendientes) docente (indicadores, lecciones, dificultad, prueba con encabezado del colegio). Firmar notas/emitir órdenes aún no existen; prueba de dirección usa cuenta de Max (otras cuentas son personas reales).
+- [ ] 15:01 UTC: extender generador paramétrico a todas las materias/niveles con exámenes y simulacros (por materia, con revisión).
+- [ ] 15:02 UTC: escudo y encabezado institucional en campañas, circulares y documentos; probar con CTP Mercedes Norte.
+- [ ] 15:02 UTC: poderes para Subdirección/Asistente/Auxiliar/Guarda (aprobar campañas, firmar notas, circular, horarios) — pendiente confirmar alcance por rol.
+
+## Solicitudes 16-nov-2026
+- [ ] Planeamiento DUA: selección nivel/materia/unidad + membrete del colegio + pruebas
+- [ ] Pantallas de permisos docente/Dirección con historial de cambios de rol, aprobación de comprobantes médicos + pruebas
+- [ ] Horarios: 3 variantes, pantalla de edición y métricas para Dirección + pruebas
+- [ ] Pagos: planes Gratuito/Pro, copiado SINPE 6090-6359 (ya existe), conciliación SuperAdmin
+- [ ] Revisar /verificar-permiso, /login, /registro y aislamiento por institución con la cuenta de Max
+- [x] Pagos: precios US$ unificados, PayPal en prueba, tarjeta activa al instante y renueva sola
+- [x] PayPal real activado en /pagos (cobros quedan pendientes de confirmación de Max)
+- [x] Flujo SINPE probado: registro → confirmación → vencimiento
+- [ ] Bandeja del director: aprobación por lotes + sello SHA-256 y Code-128B
+- [ ] Planeamiento DUA con examen real de matemáticas y membrete del colegio
+- [ ] Planes Free/Pro + panel de conciliación con cobros reales y renovaciones anuales
+- [ ] Ampliar bancos ×5000: ítems, distractores, habilidades, indicadores, cotidianos, proyectos (alineado MEP, independiente)
+- [x] Permisos: aprobación de comprobantes médicos + historial de cambios de rol
+- [x] Revisión en celular/tableta: páginas ya no se salen del ancho (Juegos, Perfil, Estudiantes)
+- [ ] Planeamiento DUA: probar con cuenta de estudiante
+- [ ] Cobro real PayPal: lo hace Max con su cuenta (requiere dinero real)
+- [ ] Juegos de recreo: dominó, cuatro en fila/tres en fila, rummy, cubo Rubik, misterio sin violencia (tipo Clue), juego de negocios (tipo Monopoly), acertijos y trivia de cultura general/países/monedas/deportes
+- [ ] Juegos: culebrita (Snake), gato/tic-tac-toe, sudoku, crucigramas, retos de matemáticas que suman puntos al perfil
+
+## Pedidos 16-nov-2026 16:37 UTC
+- [x] Juegos conectados al perfil: puntos, nivel y posición semanal privada (sin nombres ajenos)
+- [x] Panel de conciliación en /admin-pagos: cobrado, renovaciones, por revisar, saldo pendiente (SINPE/PayPal; tarjeta aparte)
+- [ ] /admin-pagos: aprobación masiva con sello y código de barras (permisos y comprobantes)
+- [ ] Examen real del planeamiento DUA para toda materia/especialidad, probado con cuenta de estudiante
+- [ ] Juego original tipo «encontrar al impostor» (sin copiar Among Us) con personajes ilustrados, materias y especialidades
+- [ ] Completar bancos a 60 preguntas: matemática 1.º y luego cada materia del planeamiento DUA
+- [ ] Cuenta de prueba de estudiante que no agote intentos reales
+- [ ] Examen de 60 de matemática 1.º: el bloque de 100 existe, pero la regla exige banco de exactamente 60; definir versión de 60 sin romper certificados
+- [ ] Juego impostor con personajes y escenarios por materia, puntos en perfil
+- [ ] Conciliación: incluir cobros por tarjeta
+- [ ] Cuenta de prueba de estudiante y examen completo (requiere Gmail aparte de Max)
+- [ ] 40 preguntas faltantes por materia del planeamiento DUA (exámenes de 60)
+- [ ] Cobertura total: examen, simulacros, prácticas y resumen para cada materia 1.º–6.º, 7.º–11.º académico, 7.º–12.º CTP (incl. religión, deporte, filosofía, psicología), admisión UCR/TEC/UNA/UTN y manejo teórico; ×100 ítems con revisión editorial
+- [ ] Idiomas (inglés, portugués, alemán, español, mandarín): temas variados más allá de to be, selector visual de pronunciación, speaking y listening
+- [ ] Vista previa por rol para Max (dirección: permisos, comprobantes, chats; docente: planeamiento)
+- [ ] Banco grande de planeamientos automáticos con binomio sagrado y verbos Bloom, basado en documentos oficiales MEP (requiere los documentos)
+- [ ] Hacer visible matrícula y registro de notas por docente
+- [ ] Comparar funciones con SICAI, PIAD, Teams y portales de familias (notas, permisos, ausencias, avisos, comprobantes, horarios, publicaciones) sin copiar
+- [ ] Juegos nuevos suman puntos al perfil y ranking por sección — Max confirmó: mostrar apellidos y sección (solo compañeros de la misma sección)
+- [x] Registro de calificaciones con nota ponderada por rubro en /estudiantes y en el perfil (falta vista en el portal de familias)
+- [ ] Notas según Reglamento de Evaluación de los Aprendizajes (REA): porcentajes por rubro (cotidiano, tareas, pruebas, proyecto, asistencia) distintos por materia y nivel; valores oficiales pendientes de verificar con el documento del REA
+- [ ] Precargar porcentajes del reglamento de evaluación por materia y nivel (esperando documento de Max)
+- [ ] Buscar Reglamento de Evaluación (REA) oficial del MEP en web y precargar porcentajes por materia/nivel (Max: 'está en REA oficial MEP')
+- [x] Matemática: 60 ítems (20 por dificultad) en Prácticas
+- [x] Deportes: 60 ítems reglas/técnica/historia por dificultad
+- [x] Banco organizado por modalidad/nivel/asignatura (buscador existente)
+- [ ] Segundo bloque de 60 (variantes) en Soporte TI, Física, Matemática y Estudios Sociales (Sociales aún no existe)
+- [ ] Cuenta estudiante de prueba con código gratis; confirmar qué preguntas ve (hoy el estudiante ve todas las materias)
+- [ ] Planeamientos precargados por nivel (primaria/secundaria/técnica) para Matemática, Deportes, Física y Sociales, con aprendizajes del programa MEP oficial
+- [ ] Grado exacto dentro de cada materia de Prácticas (hoy bloques por dificultad)
+- [ ] Plan anual de práctica pedagógica por programa MEP 2026 (unidades, indicadores, resultados) por asignatura/especialidad/subárea
+- [x] Misión, visión y eslogan en Inicio (falta reducir anuncios)

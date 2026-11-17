@@ -1,0 +1,68 @@
+[
+  {
+    "id": "01-usuario",
+    "title": "Manual de usuario",
+    "audience": "Estudiantes y público general",
+    "url": "/downloads/manuales/01-usuario.pdf"
+  },
+  {
+    "id": "02-ingenieria",
+    "title": "Manual de ingeniería",
+    "audience": "Arquitectura, requisitos y mantenimiento",
+    "url": "/downloads/manuales/02-ingenieria.pdf"
+  },
+  {
+    "id": "03-docente",
+    "title": "Manual docente",
+    "audience": "Planificación y seguimiento",
+    "url": "/downloads/manuales/03-docente.pdf"
+  },
+  {
+    "id": "04-horarios",
+    "title": "Manual de horarios",
+    "audience": "Dirección y personal autorizado",
+    "url": "/downloads/manuales/04-horarios.pdf"
+  },
+  {
+    "id": "05-canales",
+    "title": "Manual de canales institucionales",
+    "audience": "Personal y familias autorizadas",
+    "url": "/downloads/manuales/05-canales.pdf"
+  },
+  {
+    "id": "06-archivos",
+    "title": "Manual de fotos y PDF",
+    "audience": "Adjuntos y documentos privados",
+    "url": "/downloads/manuales/06-archivos.pdf"
+  },
+  {
+    "id": "07-avisos",
+    "title": "Manual de anuncios y circulares",
+    "audience": "Comunicación de la institución",
+    "url": "/downloads/manuales/07-avisos.pdf"
+  },
+  {
+    "id": "08-identidad",
+    "title": "Manual de logos e identidad",
+    "audience": "CTP, colegios y otras instituciones",
+    "url": "/downloads/manuales/08-identidad.pdf"
+  },
+  {
+    "id": "09-pagos",
+    "title": "Manual de beta y pagos",
+    "audience": "Acceso, comprobantes y pruebas",
+    "url": "/downloads/manuales/09-pagos.pdf"
+  },
+  {
+    "id": "10-qa",
+    "title": "Manual de QA y operación",
+    "audience": "Verificación y despliegue",
+    "url": "/downloads/manuales/10-qa.pdf"
+  },
+  {
+    "id": "11-instituciones",
+    "title": "Manual de instituciones",
+    "audience": "Dirección y docentes autorizados",
+    "url": "/downloads/manuales/11-instituciones.pdf"
+  }
+]

@@ -1,0 +1,475 @@
+[
+  {
+    "id": "web-10",
+    "title": "Desarrollo Web",
+    "grade": 10,
+    "source": "https://mep.go.cr/sites/default/files/2025-03/DesarrolloWeb10.pdf",
+    "mapPages": "62–67",
+    "units": [
+      "Herramientas para la producción de documentos",
+      "Herramientas para la gestión y análisis de la información",
+      "Internet de todo y seguridad de los datos",
+      "Lenguaje de marcado y hojas de estilo",
+      "Programación interpretada",
+      "Técnicas para desarrollo de sitios web",
+      "Diseño de software: consultar mapa curricular",
+      "English Oriented to Web Development: consultar mapa curricular"
+    ],
+    "chapters": [
+      {
+        "id": "algoritmos",
+        "title": "Algoritmos, variables y decisiones",
+        "unit": "Lenguaje de marcado y hojas de estilo",
+        "pages": "87, 90–91",
+        "objective": "Describir una secuencia de pasos y comprobar una decisión lógica.",
+        "summary": [
+          "Un algoritmo es una secuencia finita de instrucciones claras para resolver un problema. Debe precisar entradas, proceso y salidas.",
+          "Una variable almacena un valor que puede cambiar. Una condición decide qué instrucciones ejecutar; un bucle repite instrucciones mientras se cumpla su criterio.",
+          "Antes de programar, pruebe el algoritmo con casos normales y de frontera. Un resultado correcto para un solo caso no prueba todos los casos."
+        ],
+        "terms": [
+          "algoritmo — algorithm",
+          "variable — variable",
+          "condición — condition",
+          "bucle — loop"
+        ],
+        "example": "Una entrada cuesta ₡2.000. Para tres personas: total = precio × cantidad = 2.000 × 3 = ₡6.000. Si cantidad >= 3, mostrar «grupo»; de lo contrario, «individual».",
+        "exercise": "Calcule el total para dos personas y determine qué mensaje aparece.",
+        "answer": "₡4.000 y «individual»: 2 no es mayor o igual que 3.",
+        "check": {
+          "kind": "multiply",
+          "inputs": [
+            2000,
+            3
+          ],
+          "result": 6000
+        }
+      },
+      {
+        "id": "html-css",
+        "title": "HTML y modelo de cajas CSS",
+        "unit": "Lenguaje de marcado y hojas de estilo",
+        "pages": "87–89",
+        "objective": "Distinguir estructura semántica y presentación de una página.",
+        "summary": [
+          "HTML es un lenguaje de marcado, no un lenguaje de programación. Elementos como encabezados, párrafos y listas expresan la estructura del contenido.",
+          "CSS define la presentación. Una hoja externa permite reutilizar reglas; una regla relaciona un selector con declaraciones de propiedades.",
+          "En content-box, el ancho total horizontal de una caja suma contenido, relleno y bordes; los márgenes quedan fuera. En border-box, el ancho declarado ya incluye relleno y bordes."
+        ],
+        "terms": [
+          "encabezado — heading",
+          "atributo — attribute",
+          "selector — selector",
+          "relleno — padding"
+        ],
+        "example": "Una caja content-box tiene contenido de 200 px, padding de 10 px por lado y borde de 2 px por lado: ancho total = 200 + 20 + 4 = 224 px, sin contar márgenes.",
+        "exercise": "Calcule el ancho total con contenido de 150 px, padding de 8 px por lado y borde de 1 px por lado.",
+        "answer": "168 px: 150 + 2 × 8 + 2 × 1.",
+        "check": {
+          "kind": "box",
+          "inputs": [
+            200,
+            10,
+            2
+          ],
+          "result": 224
+        }
+      },
+      {
+        "id": "funciones-arreglos",
+        "title": "Funciones, arreglos y promedio",
+        "unit": "Programación interpretada",
+        "pages": "90–91",
+        "objective": "Descomponer un cálculo en una función y recorrer datos de un arreglo.",
+        "summary": [
+          "Una función encapsula una tarea y puede recibir parámetros y devolver un resultado. Una función reutilizable evita duplicar instrucciones.",
+          "Un arreglo agrupa valores ordenados. En JavaScript, el primer índice es 0; un arreglo de tres elementos usa índices 0, 1 y 2.",
+          "El promedio aritmético se calcula sumando los valores y dividiendo entre la cantidad. Un arreglo vacío requiere un tratamiento explícito: no se divide entre cero."
+        ],
+        "terms": [
+          "función — function",
+          "parámetro — parameter",
+          "arreglo — array",
+          "valor de retorno — return value"
+        ],
+        "example": "Para [70, 80, 90], suma = 240 y cantidad = 3. promedio = 240 / 3 = 80. La función debe comprobar primero que la cantidad sea mayor que cero.",
+        "exercise": "Obtenga el promedio de [60, 75, 90].",
+        "answer": "75: (60 + 75 + 90) / 3 = 225 / 3.",
+        "check": {
+          "kind": "mean",
+          "inputs": [
+            70,
+            80,
+            90
+          ],
+          "result": 80
+        }
+      }
+    ]
+  },
+  {
+    "id": "contabilidad-10",
+    "title": "Contabilidad",
+    "grade": 10,
+    "source": "https://www.mep.go.cr/sites/default/files/2025-03/Contabilidad10.pdf",
+    "mapPages": "64–70",
+    "units": [
+      "Matemáticas financieras",
+      "Ciclos contables",
+      "Ley de Fortalecimiento de las Finanzas Públicas",
+      "Control contable de los activos, pasivos y patrimonio",
+      "Gestión en tecnologías digitales contables: consultar mapa curricular",
+      "English Oriented to Accounting: consultar mapa curricular"
+    ],
+    "chapters": [
+      {
+        "id": "interes-simple",
+        "title": "Interés simple y unidades de tiempo",
+        "unit": "Matemáticas financieras",
+        "pages": "87",
+        "objective": "Calcular interés simple usando tasa y tiempo compatibles.",
+        "summary": [
+          "El interés simple se calcula sobre el capital inicial: I = C × i × t. El monto final es M = C + I.",
+          "Una tasa de 12 % se expresa como 0,12. Si la tasa es anual, el tiempo debe estar en años: seis meses equivalen a 0,5 años bajo la convención de doce meses por año.",
+          "El ejemplo excluye comisiones, impuestos, seguros y capitalización. Un contrato real puede establecer convenciones de días y costos distintos."
+        ],
+        "terms": [
+          "capital — principal",
+          "interés simple — simple interest",
+          "tasa — rate",
+          "monto — amount"
+        ],
+        "example": "C = ₡100.000, i = 0,12 anual, t = 0,5 años. I = 100.000 × 0,12 × 0,5 = ₡6.000. M = ₡106.000.",
+        "exercise": "Calcule el interés de ₡50.000 al 8 % anual durante tres meses.",
+        "answer": "₡1.000: 50.000 × 0,08 × (3 / 12). Monto final: ₡51.000.",
+        "check": {
+          "kind": "interest",
+          "inputs": [
+            100000,
+            0.12,
+            0.5
+          ],
+          "result": 6000
+        }
+      },
+      {
+        "id": "catalogo-asientos",
+        "title": "Catálogo de cuentas y asiento simple",
+        "unit": "Ciclos contables",
+        "pages": "90–91",
+        "objective": "Clasificar cuentas y registrar una transacción equilibrada.",
+        "summary": [
+          "Un catálogo organiza cuentas y códigos según las necesidades de la entidad. Las cuentas se agrupan, por ejemplo, en activos, pasivos, patrimonio, ingresos y gastos.",
+          "En un asiento, el total del debe debe igualar el total del haber. Debe y haber no significan universalmente aumento o disminución: depende de la clase de cuenta.",
+          "Una aportación de capital en efectivo aumenta el activo y el patrimonio. La ecuación básica es activos = pasivos + patrimonio."
+        ],
+        "terms": [
+          "activo — asset",
+          "pasivo — liability",
+          "patrimonio — equity",
+          "asiento — journal entry"
+        ],
+        "example": "La propietaria aporta ₡50.000 en efectivo: debe Caja ₡50.000; haber Capital ₡50.000. Activos = 50.000, pasivos = 0 y patrimonio = 50.000.",
+        "exercise": "La empresa compra un equipo por ₡20.000 y paga en efectivo. ¿Cómo se registra, sin impuestos ni otros costos?",
+        "answer": "Debe Equipo ₡20.000; haber Caja ₡20.000. Cambia la composición del activo, no su total.",
+        "check": {
+          "kind": "balance",
+          "inputs": [
+            0,
+            50000
+          ],
+          "result": 50000
+        }
+      },
+      {
+        "id": "analisis-horizontal",
+        "title": "Análisis horizontal de ingresos",
+        "unit": "Ciclos contables",
+        "pages": "94–95",
+        "objective": "Comparar períodos e interpretar cambios absolutos y porcentuales.",
+        "summary": [
+          "El análisis horizontal compara una misma partida entre períodos. Variación absoluta = valor actual − valor anterior.",
+          "La variación porcentual usa el período anterior como base: (actual − anterior) / anterior × 100. Si la base es cero, este porcentaje no se calcula con esa fórmula.",
+          "Un aumento de ingresos no prueba por sí solo un aumento de utilidad: también deben examinarse costos, gastos y contexto."
+        ],
+        "terms": [
+          "ingresos — revenue",
+          "variación — change",
+          "período base — base period",
+          "utilidad — profit"
+        ],
+        "example": "Ingresos anteriores ₡100.000 y actuales ₡120.000: cambio = ₡20.000; variación = 20.000 / 100.000 × 100 = 20 %.",
+        "exercise": "Calcule la variación si los ingresos pasan de ₡80.000 a ₡72.000.",
+        "answer": "−₡8.000 y −10 %: disminuyen respecto al período anterior.",
+        "check": {
+          "kind": "change",
+          "inputs": [
+            100000,
+            120000
+          ],
+          "result": 20
+        }
+      }
+    ]
+  },
+  {
+    "id": "costos-10",
+    "title": "Contabilidad y Costos",
+    "grade": 10,
+    "source": "https://www.mep.go.cr/sites/default/files/2025-03/ContabilidadCostos10.pdf",
+    "mapPages": "65–72",
+    "units": [
+      "Matemáticas financieras",
+      "Ciclos contables",
+      "Régimen de Tributación Simplificada",
+      "Ley de fortalecimiento de las finanzas públicas",
+      "Guías tributarias y ayudas audiovisuales",
+      "Gestión empresarial: consultar mapa curricular",
+      "Gestión en tecnologías digitales contables: consultar mapa curricular",
+      "English Oriented to Costs Accounting: consultar mapa curricular"
+    ],
+    "chapters": [
+      {
+        "id": "descuento-comercial",
+        "title": "Descuento por pronto pago",
+        "unit": "Matemáticas financieras",
+        "pages": "86",
+        "objective": "Aplicar porcentajes sin confundir descuento y precio final.",
+        "summary": [
+          "Un descuento comercial reduce un precio base. Descuento = precio × tasa; precio neto = precio − descuento.",
+          "Un descuento por pronto pago depende de condiciones y plazos definidos. El ejemplo supone que todas las condiciones se cumplen.",
+          "Dos descuentos sucesivos se aplican sobre bases distintas y no se suman directamente. Este ejemplo no incluye tributos ni comisiones."
+        ],
+        "terms": [
+          "descuento — discount",
+          "precio neto — net price",
+          "porcentaje — percentage",
+          "pronto pago — early payment"
+        ],
+        "example": "Precio ₡20.000 y descuento de 5 %: rebaja = 20.000 × 0,05 = ₡1.000. Precio neto = ₡19.000.",
+        "exercise": "Obtenga el precio neto de ₡30.000 con descuento de 10 %.",
+        "answer": "₡27.000: la rebaja es ₡3.000.",
+        "check": {
+          "kind": "discount",
+          "inputs": [
+            20000,
+            0.05
+          ],
+          "result": 19000
+        }
+      },
+      {
+        "id": "ciclo-contable",
+        "title": "Del comprobante al estado financiero",
+        "unit": "Ciclos contables",
+        "pages": "89–91",
+        "objective": "Ordenar etapas básicas del ciclo contable y comprobar saldos.",
+        "summary": [
+          "El ciclo contable convierte transacciones documentadas en información financiera. Incluye análisis, registro, mayorización, comprobación, ajustes, estados y cierre.",
+          "Un comprobante respalda la operación; el diario registra el asiento y el mayor reúne movimientos por cuenta. Los ajustes reconocen hechos del período que aún no están reflejados correctamente.",
+          "Que los débitos y créditos coincidan es necesario, pero no detecta todos los errores: una operación omitida puede dejar ambos totales iguales."
+        ],
+        "terms": [
+          "comprobante — supporting document",
+          "libro diario — journal",
+          "libro mayor — ledger",
+          "balance de comprobación — trial balance"
+        ],
+        "example": "Caja inicia con ₡50.000; entra un cobro de ₡10.000 y sale un pago de ₡5.000. Saldo final de Caja = 50.000 + 10.000 − 5.000 = ₡55.000.",
+        "exercise": "Caja inicia con ₡20.000, recibe ₡8.000 y paga ₡3.000. Obtenga el saldo.",
+        "answer": "₡25.000. Se conserva la evidencia de cada entrada y salida.",
+        "check": {
+          "kind": "cash",
+          "inputs": [
+            50000,
+            10000,
+            5000
+          ],
+          "result": 55000
+        }
+      },
+      {
+        "id": "razon-corriente",
+        "title": "Razón corriente y liquidez",
+        "unit": "Ciclos contables",
+        "pages": "93–94",
+        "objective": "Calcular un indicador y reconocer sus límites interpretativos.",
+        "summary": [
+          "La razón corriente relaciona activo corriente con pasivo corriente: RC = AC / PC. Si el pasivo corriente es cero, el cociente no está definido.",
+          "Una RC de 2 indica dos unidades de activo corriente por cada unidad de pasivo corriente; no significa que todo ese activo sea efectivo disponible.",
+          "La calidad del inventario, el cobro de cuentas y los plazos de pago importan. No existe un valor ideal universal que garantice solvencia."
+        ],
+        "terms": [
+          "liquidez — liquidity",
+          "activo corriente — current assets",
+          "pasivo corriente — current liabilities",
+          "razón corriente — current ratio"
+        ],
+        "example": "AC = ₡120.000 y PC = ₡60.000. RC = 120.000 / 60.000 = 2. Deben revisarse los componentes del activo antes de concluir que la empresa puede pagar a tiempo.",
+        "exercise": "Calcule RC con AC de ₡90.000 y PC de ₡60.000.",
+        "answer": "1,5: hay ₡1,50 de activo corriente por cada ₡1 de pasivo corriente.",
+        "check": {
+          "kind": "ratio",
+          "inputs": [
+            120000,
+            60000
+          ],
+          "result": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "costos-12",
+    "title": "Contabilidad y Costos",
+    "grade": 12,
+    "source": "https://www.mep.go.cr/sites/default/files/2025-03/ContabilidadCostos12.pdf",
+    "mapPages": "77–81",
+    "units": [
+      "Contabilidad de costos por procesos continuos departamentales",
+      "Contabilidades especiales",
+      "Métodos de costeo basado en actividades",
+      "Gestión en finanzas y auditoría: consultar programa oficial"
+    ],
+    "chapters": [
+      {
+        "id": "costeo-abc",
+        "title": "Costeo basado en actividades (ABC)",
+        "unit": "Métodos de costeo basado en actividades",
+        "pages": "93–94",
+        "objective": "Asignar costos indirectos mediante un generador de actividad.",
+        "summary": [
+          "El costeo ABC identifica actividades que consumen recursos y asigna sus costos mediante generadores relacionados con ese consumo. No es una simple distribución igual para cada producto.",
+          "La tasa de una actividad se calcula como costo del grupo de actividad dividido entre las unidades del generador. Luego se multiplica por el consumo del producto.",
+          "Elegir un generador adecuado requiere analizar el proceso. El ejemplo usa horas de preparación; no demuestra que ese generador sea válido para cualquier empresa."
+        ],
+        "terms": [
+          "actividad — activity",
+          "generador de costo — cost driver",
+          "costo indirecto — overhead",
+          "asignación — allocation"
+        ],
+        "example": "Preparar máquinas cuesta ₡120.000 y requiere 60 horas. Tasa = 120.000 / 60 = ₡2.000 por hora. Un lote usa 15 horas: 2.000 × 15 = ₡30.000 asignados.",
+        "exercise": "Un grupo de actividad cuesta ₡90.000 para 30 horas. Un lote consume 8 horas. ¿Cuánto se asigna?",
+        "answer": "₡24.000: tasa 90.000 / 30 = ₡3.000 por hora; 3.000 × 8 = ₡24.000.",
+        "check": {
+          "kind": "abc",
+          "inputs": [
+            120000,
+            60,
+            15
+          ],
+          "result": 30000
+        }
+      },
+      {
+        "id": "margen-contribucion",
+        "title": "Margen de contribución por unidad",
+        "unit": "Métodos de costeo basado en actividades",
+        "pages": "94",
+        "objective": "Distinguir contribución y utilidad en decisiones costo-volumen-utilidad.",
+        "summary": [
+          "El margen de contribución por unidad es precio de venta menos costo variable unitario. Contribuye a cubrir costos fijos y luego a generar utilidad.",
+          "No equivale a utilidad neta: todavía deben cubrirse costos fijos y otros conceptos pertinentes.",
+          "En este modelo simple se supone que precio y costo variable por unidad permanecen constantes dentro del rango analizado."
+        ],
+        "terms": [
+          "margen de contribución — contribution margin",
+          "costo variable — variable cost",
+          "precio de venta — selling price",
+          "costo fijo — fixed cost"
+        ],
+        "example": "Precio ₡5.000 y costo variable ₡3.000: contribución = 5.000 − 3.000 = ₡2.000 por unidad. Vender 10 unidades aporta ₡20.000 antes de costos fijos.",
+        "exercise": "Precio ₡8.000 y costo variable ₡5.500. Calcule la contribución unitaria.",
+        "answer": "₡2.500 por unidad: 8.000 − 5.500. No es utilidad neta.",
+        "check": {
+          "kind": "subtract",
+          "inputs": [
+            5000,
+            3000
+          ],
+          "result": 2000
+        }
+      },
+      {
+        "id": "punto-equilibrio",
+        "title": "Punto de equilibrio en unidades",
+        "unit": "Métodos de costeo basado en actividades",
+        "pages": "94–95",
+        "objective": "Calcular el volumen que cubre costos fijos y variables bajo supuestos explícitos.",
+        "summary": [
+          "En el punto de equilibrio los ingresos totales igualan los costos totales del modelo. No hay utilidad ni pérdida operativa en ese punto.",
+          "Para un producto: unidades de equilibrio = costos fijos / (precio unitario − costo variable unitario). Si el margen es cero o negativo, esta fórmula no produce un punto de equilibrio viable.",
+          "El modelo supone un solo producto, precio y costo variable constantes y costos fijos dentro de un rango relevante. Si el resultado no es entero, se redondea hacia arriba para unidades indivisibles."
+        ],
+        "terms": [
+          "punto de equilibrio — break-even point",
+          "volumen de ventas — sales volume",
+          "costos fijos — fixed costs",
+          "rango relevante — relevant range"
+        ],
+        "example": "Costos fijos ₡100.000, precio ₡5.000 y costo variable ₡3.000: margen ₡2.000. Equilibrio = 100.000 / 2.000 = 50 unidades. Ingreso ₡250.000 y costos 100.000 + 150.000 = ₡250.000.",
+        "exercise": "Costos fijos ₡60.000, precio ₡4.000 y costo variable ₡2.500. ¿Cuántas unidades cubren los costos?",
+        "answer": "40 unidades: 60.000 / (4.000 − 2.500) = 40.",
+        "check": {
+          "kind": "breakeven",
+          "inputs": [
+            100000,
+            5000,
+            3000
+          ],
+          "result": 50
+        }
+      }
+    ]
+  },
+  {
+    "id": "ciberseguridad-10",
+    "title": "Ciberseguridad",
+    "grade": 10,
+    "source": "https://mep.go.cr/sites/default/files/2025-03/Ciberseguridad10.pdf",
+    "mapPages": "65–67",
+    "units": ["Fundamentos de ciberseguridad", "Fundamentos de tecnologías de información", "Introducción a las redes", "Programación y prueba de la seguridad del software: consultar programa oficial", "English Oriented to Cybersecurity: consultar programa oficial"],
+    "chapters": [
+      {
+        "id": "control-acceso",
+        "title": "Control de acceso y mínimo privilegio",
+        "unit": "Fundamentos de ciberseguridad",
+        "pages": "104, 107",
+        "objective": "Distinguir identidad, autenticación y permisos sin exponer datos de otras personas.",
+        "summary": ["Identificarse es indicar quién se es; autenticarse es demostrar esa identidad. La autorización determina qué acciones puede realizar una identidad autenticada.", "El mínimo privilegio concede únicamente los permisos necesarios. Ser estudiante no autoriza a consultar expedientes de otro estudiante; ser docente tampoco autoriza a consultar cualquier grupo.", "Los permisos se comprueban al solicitar cada recurso, no solo ocultando botones. Las contraseñas deben ser únicas y mantenerse privadas; la autenticación multifactor agrega una protección independiente."],
+        "terms": ["identificación — identification", "autenticación — authentication", "autorización — authorization", "mínimo privilegio — least privilege"],
+        "example": "Una cuenta tiene acceso a 12 expedientes, pero su función solo necesita 4. Deben retirarse 12 − 4 = 8 permisos innecesarios y comprobar que conserve únicamente los 4 autorizados.",
+        "exercise": "Una cuenta puede consultar 9 expedientes y únicamente necesita 3. ¿Cuántos permisos deben retirarse? ¿Ocultar el botón es suficiente?",
+        "answer": "Retire 6 permisos: 9 − 3 = 6. Ocultar el botón no basta: el sistema debe denegar solicitudes no autorizadas y conservar los 3 permisos necesarios.",
+        "check": {"kind": "subtract", "inputs": [12, 4], "result": 8}
+      },
+      {
+        "id": "continuidad-recuperacion",
+        "title": "Continuidad y recuperación ante incidentes",
+        "unit": "Fundamentos de ciberseguridad",
+        "pages": "104–105",
+        "objective": "Diferenciar continuidad del servicio y restauración de datos, con límites de recuperación explícitos.",
+        "summary": ["Un plan de continuidad mantiene actividades esenciales durante una interrupción. Un plan de recuperación define cómo restaurar sistemas y datos después del incidente.", "Las copias de seguridad solo son útiles si pueden restaurarse. Deben protegerse del mismo incidente, comprobar su integridad y ensayar la restauración con autorización.", "El objetivo de punto de recuperación (RPO) expresa la pérdida de datos tolerable medida en tiempo; el objetivo de tiempo de recuperación (RTO) expresa el plazo objetivo para recuperar el servicio. Son objetivos, no garantías."],
+        "terms": ["continuidad — continuity", "copia de seguridad — backup", "restauración — restoration", "objetivo de recuperación — recovery objective"],
+        "example": "La última copia válida corresponde a las 14:00 y el incidente ocurre a las 17:00. El intervalo potencial sin respaldo es 17 − 14 = 3 horas; no demuestra cuántos registros se perdieron. Si el RPO es 1 hora, esta copia no cumple el objetivo.",
+        "exercise": "Una copia válida es de las 09:00 y el incidente ocurre a las 11:00 del mismo día. ¿Cuál es el intervalo potencial sin respaldo? ¿Cumple un RPO de 1 hora?",
+        "answer": "2 horas: 11 − 9 = 2. No cumple un RPO de 1 hora. Debe verificarse la restauración; la existencia del archivo no garantiza recuperación.",
+        "check": {"kind": "subtract", "inputs": [17, 14], "result": 3}
+      },
+      {
+        "id": "registros-incidentes",
+        "title": "Registros de seguridad y respuesta responsable",
+        "unit": "Fundamentos de ciberseguridad",
+        "pages": "105–106",
+        "objective": "Interpretar alertas sin confundir sospecha con evidencia de un ataque.",
+        "summary": ["Los registros documentan eventos con tiempo, origen y resultado. Un SIEM reúne información para correlacionar señales; una alerta requiere investigación y no prueba por sí sola un ataque.", "Un intento de acceso fallido puede proceder de un error legítimo o de actividad maliciosa. Deben examinarse contexto, repetición y evidencia, respetando la privacidad y la conservación autorizada.", "Ante un incidente, comunique a la persona responsable, preserve evidencia y aplique el procedimiento autorizado. No comparta contraseñas, no publique registros personales ni pruebe sistemas ajenos sin permiso."],
+        "terms": ["registro — log", "evento — event", "alerta — alert", "respuesta a incidentes — incident response"],
+        "example": "En una ventana se registran 20 intentos: 15 exitosos y 5 fallidos. Proporción de fallos = 5 / 20 = 0,25 = 25 %. Este porcentaje describe la ventana, pero no identifica al responsable ni confirma un ataque.",
+        "exercise": "De 40 intentos, 8 fallan. Calcule el porcentaje y explique si demuestra un ataque.",
+        "answer": "20 %: 8 / 40 × 100 = 20. No demuestra un ataque; se requiere contexto y evidencia adicional, sin revelar datos privados.",
+        "check": {"kind": "ratio", "inputs": [5, 20], "result": 0.25}
+      }
+    ]
+  }
+]

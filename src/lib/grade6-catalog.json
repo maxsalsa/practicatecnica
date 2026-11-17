@@ -1,0 +1,22 @@
+[
+  {
+    "id": "matematica",
+    "title": "Matemática",
+    "emoji": "➗"
+  },
+  {
+    "id": "ciencias",
+    "title": "Ciencias",
+    "emoji": "🔬"
+  },
+  {
+    "id": "espanol",
+    "title": "Español",
+    "emoji": "✍️"
+  },
+  {
+    "id": "sociales",
+    "title": "Estudios Sociales",
+    "emoji": "🗺️"
+  }
+]
