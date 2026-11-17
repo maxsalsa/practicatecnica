@@ -13,6 +13,8 @@ import PanelCampanaClara from './components/PanelCampanaClara';
 import AsistenteIaGenerativo from './components/AsistenteIaGenerativo';
 import SimuladorUniversitarioMep from './components/SimuladorUniversitarioMep';
 import HubModalidadesMep from './components/HubModalidadesMep';
+import ExploradorMateriasMep from './components/ExploradorMateriasMep';
+import CentroGestionDocenteAdminMep from './components/CentroGestionDocenteAdminMep';
 
 export default function App() {
   const [usuarioActual, setUsuarioActual] = useState({
@@ -31,14 +33,14 @@ export default function App() {
   const [contextoMep, setContextoMep] = useState({
     region: 'Dirección Regional de Alajuela',
     circuito: '04 (CTP Mercedes Norte)',
-    modalidad: 'CTP Diurno (Colegio Técnico Profesional)'
+    modalidad: 'CTP Diurno / Técnico Nocturno / Académico'
   });
 
   const cambiarRolRapido = (nuevoRol) => {
     setUsuarioActual((prev) => ({
       ...prev,
       rol: nuevoRol,
-      nombre: nuevoRol === 'SuperAdmin' ? 'Ing. Max Salazar Sánchez' : `Usuario Prueba (${nuevoRol})`
+      nombre: nuevoRol === 'SuperAdmin' ? 'Ing. Max Salazar Sánchez' : `Usuario Activo (${nuevoRol})`
     }));
   };
 
@@ -57,7 +59,7 @@ export default function App() {
 
       <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:px-6 lg:px-8 space-y-6">
 
-        {/* Cintillo Institucional compacto y estilizado */}
+        {/* Cintillo Institucional y Accesos Rápidos */}
         <div className="bg-slate-900/90 border border-slate-800 px-4 py-3 rounded-2xl flex flex-wrap justify-between items-center gap-3 shadow-lg">
           <div className="flex flex-wrap items-center gap-2 text-xs">
             <span className="text-cyan-400 font-extrabold">🏛️ MEP Costa Rica:</span>
@@ -74,12 +76,12 @@ export default function App() {
             <select
               value={usuarioActual.rol}
               onChange={(e) => cambiarRolRapido(e.target.value)}
-              className="bg-slate-950 border border-slate-700 text-cyan-300 text-xs font-bold rounded-xl px-3 py-1.5 focus:outline-none focus:border-cyan-500"
+              className="bg-slate-950 border border-slate-700 text-cyan-300 text-xs font-bold rounded-xl px-3 py-1.5"
             >
               <option value="SuperAdmin">👑 Rol: SuperAdmin</option>
               <option value="Docente MEP">👨‍🏫 Rol: Docente MEP</option>
               <option value="Estudiante CTP">🎓 Rol: Estudiante</option>
-              <option value="Director / Coordinación">🏛️ Rol: Director</option>
+              <option value="Director / Coordinación">🏛️ Rol: Administrativo / Dirección</option>
             </select>
 
             <button
@@ -98,8 +100,13 @@ export default function App() {
           </div>
         </div>
 
+        {/* VISTA INICIO: Todo visible y accesible de inmediato */}
         {seccionActiva === 'inicio' && (
           <div className="space-y-8">
+            <ExploradorMateriasMep onPracticarMateria={() => setSeccionActiva('simuladores')} />
+
+            <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
+
             <HubModalidadesMep
               modalidadActiva={modalidadMepId}
               onSeleccionarModalidad={(mod) => {
@@ -119,6 +126,14 @@ export default function App() {
               </div>
             </div>
           </div>
+        )}
+
+        {seccionActiva === 'materias' && (
+          <ExploradorMateriasMep onPracticarMateria={() => setSeccionActiva('simuladores')} />
+        )}
+
+        {seccionActiva === 'gestion' && (
+          <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
         )}
 
         {seccionActiva === 'simuladores' && (
