@@ -15,7 +15,7 @@ export const CATALOGO_INSTITUCIONES_SUPERIOR = [
     escala: 'Escala 200 - 800 pts (60% Examen TEC + 40% Nota Colegio)',
     color: 'from-red-600 to-rose-950',
     icono: '⚙️',
-    descripcion: 'Matemática intensiva, geometría analítica, lógica deductiva y comprensión verbal científica.'
+    descripcion: 'Matemática intensiva, geometría analítica, lógica deductiva y comprensión científica.'
   },
   {
     id: 'UTN',
@@ -25,6 +25,15 @@ export const CATALOGO_INSTITUCIONES_SUPERIOR = [
     color: 'from-indigo-600 to-slate-900',
     icono: '🛠️',
     descripcion: 'Technical English for IT, subredes IPv4, bases de datos SQL y razonamiento aplicado.'
+  },
+  {
+    id: 'UNED',
+    sigla: 'UNED',
+    nombre: 'Autoevaluación y Nivelación — Educación a Distancia',
+    escala: 'Escala 0 - 100 pts (Autonomía, Lectura y Competencias)',
+    color: 'from-amber-600 to-yellow-950',
+    icono: '📚',
+    descripcion: 'Sin examen excluyente: diagnóstico de comprensión lectora, lógica y autorregulación universitaria.'
   },
   {
     id: 'MEP_CTP',
@@ -38,12 +47,31 @@ export const CATALOGO_INSTITUCIONES_SUPERIOR = [
   {
     id: 'COSEVI',
     sigla: 'COSEVI / MOPT',
-    nombre: 'Prueba Teórica de Manejo de Costa Rica',
+    nombre: 'Prueba Teórica y Simulador Vial 2D (Moto, Carro, Tráiler)',
     escala: 'Escala 0 - 100 pts (Aprobación mínima 80 pts)',
     color: 'from-emerald-600 to-green-950',
     icono: '🚗',
-    descripcion: 'Ley de Tránsito 9078, rotondas, prioridades de paso, dispositivos y conducción eficiente.'
+    descripcion: 'Ley de Tránsito 9078, rotondas, prioridades de paso y simulador interactivo en Canvas 2D.'
   }
+];
+
+export const CORTES_HISTORICOS_CARRERAS = [
+  { universidad: 'UCR', carrera: 'Medicina y Cirugía', corte: 726, escala: 800, sede: 'Rodrigo Facio' },
+  { universidad: 'UCR', carrera: 'Ciencias de la Computación e Informática', corte: 645, escala: 800, sede: 'Rodrigo Facio / Alajuela' },
+  { universidad: 'UCR', carrera: 'Microbiología y Química Clínica', corte: 692, escala: 800, sede: 'Rodrigo Facio' },
+  { universidad: 'UCR', carrera: 'Ingeniería Eléctrica / Mecánica', corte: 625, escala: 800, sede: 'Rodrigo Facio' },
+  { universidad: 'UCR', carrera: 'Derecho / Dirección de Empresas', corte: 598, escala: 800, sede: 'Rodrigo Facio / Sedes' },
+  { universidad: 'UNA', carrera: 'Ingeniería en Sistemas de Información', corte: 610, escala: 800, sede: 'Campus Omar Dengo (Heredia)' },
+  { universidad: 'UNA', carrera: 'Medicina Veterinaria', corte: 665, escala: 800, sede: 'Campus Benjamín Núñez' },
+  { universidad: 'TEC', carrera: 'Ingeniería en Computación', corte: 678, escala: 800, sede: 'Cartago / San José / Alajuela' },
+  { universidad: 'TEC', carrera: 'Ingeniería en Mecatrónica', corte: 695, escala: 800, sede: 'Cartago' },
+  { universidad: 'TEC', carrera: 'Ingeniería en Biotecnología', corte: 685, escala: 800, sede: 'Cartago' },
+  { universidad: 'TEC', carrera: 'Ingeniería en Electrónica', corte: 635, escala: 800, sede: 'Cartago / San Carlos' },
+  { universidad: 'TEC', carrera: 'Administración de Tecnología de Información (ATI)', corte: 615, escala: 800, sede: 'Cartago' },
+  { universidad: 'UTN', carrera: 'Ingeniería del Software / Tecnologías Informáticas', corte: 80, escala: 100, sede: 'Sede Central Alajuela' },
+  { universidad: 'UTN', carrera: 'Ingeniería en Ciberseguridad y Redes (Articulación CTP)', corte: 82, escala: 100, sede: 'Sede Central Alajuela' },
+  { universidad: 'UTN', carrera: 'Contaduría Pública y Finanzas', corte: 75, escala: 100, sede: 'Sede Central Alajuela' },
+  { universidad: 'UNED', carrera: 'Ingeniería Informática (Ingreso Abierto con Nivelación)', corte: 70, escala: 100, sede: 'Sedes Universitarias CR' }
 ];
 
 export const ITEMS_SEMILLA_CURADOS = [
@@ -61,7 +89,7 @@ export const ITEMS_SEMILLA_CURADOS = [
       'Reemplazar la observación empírica por la intuición filosófica.'
     ],
     correcta: 1,
-    guiaPasoAPaso: 'Paso 1: Analizar la advertencia del texto: «investigar sin cuestionar sus propias premisas» lleva a un «ritual de confirmación».\nPaso 2: Por contraposición lógica, para evitar ese sesgo es indispensable examinar críticamente los propios supuestos iniciales.'
+    guiaPasoAPaso: 'Paso 1: Analizar la advertencia del texto: «investigar sin cuestionar sus propias premisas» lleva a un «ritual de confirmación».\nPaso 2: Por contraposición lógica, es indispensable examinar críticamente los propios supuestos iniciales.'
   },
   {
     id: 'ucr-analogia-02',
@@ -77,18 +105,7 @@ export const ITEMS_SEMILLA_CURADOS = [
       'Semáforo es a peatón'
     ],
     correcta: 1,
-    guiaPasoAPaso: 'Paso 1: Establecer la relación base: El programador diseña y estructura una secuencia lógica de instrucciones llamada algoritmo.\nPaso 2: De igual manera, el compositor diseña y estructura una secuencia musical codificada llamada partitura.'
-  },
-  {
-    id: 'ucr-mate-03',
-    institucion: 'UCR_UNA',
-    subarea: 'Razonamiento Matemático',
-    area: 'Razonamiento Matemático (PAA)',
-    dificultad: 'Alta',
-    enunciado: 'En un colegio técnico, por cada 3 estudiantes de Desarrollo Web hay 5 de Contabilidad. Si en total ambas especialidades suman 160 estudiantes, ¿cuántos estudiantes pertenecen a Desarrollo Web?',
-    opciones: ['48', '60', '96', '100'],
-    correcta: 1,
-    guiaPasoAPaso: 'Paso 1: Sumar las partes de la razón: 3 + 5 = 8 partes.\nPaso 2: Dividir el total entre las partes: 160 / 8 = 20 estudiantes por parte.\nPaso 3: Multiplicar por las 3 partes de Desarrollo Web: 3 × 20 = 60.'
+    guiaPasoAPaso: 'Paso 1: El programador diseña una secuencia codificada llamada algoritmo.\nPaso 2: El compositor diseña una secuencia musical codificada llamada partitura.'
   },
   {
     id: 'tec-verbal-01',
@@ -104,18 +121,7 @@ export const ITEMS_SEMILLA_CURADOS = [
       'Los sistemas que no son del CTP no pueden generar resúmenes de 256 bits.'
     ],
     correcta: 1,
-    guiaPasoAPaso: 'Paso 1: Aplicar Modus Ponens (Si todo A es B, y X es A, entonces X es B).\nPaso 2: Como el expediente del CTP está dentro del conjunto de sistemas SHA-256, necesariamente hereda la propiedad de generar un resumen de 256 bits.'
-  },
-  {
-    id: 'tec-mate-02',
-    institucion: 'TEC',
-    subarea: 'Matemática Intensiva',
-    area: 'Álgebra y Geometría TEC',
-    dificultad: 'Alta',
-    enunciado: 'Si una función cuadrática f(x) = x² - 6x + k tiene su vértice exactamente sobre el eje X (una única raíz real), ¿cuál es el valor de k?',
-    opciones: ['3', '6', '9', '12'],
-    correcta: 2,
-    guiaPasoAPaso: 'Paso 1: Para que la parábola sea tangente al eje X, el discriminante Δ = b² - 4ac debe ser igual a 0.\nPaso 2: (-6)² - 4(1)(k) = 0 -> 36 - 4k = 0 -> k = 9.'
+    guiaPasoAPaso: 'Paso 1: Aplicar Modus Ponens.\nPaso 2: El expediente del CTP hereda necesariamente la propiedad de generar un resumen de 256 bits.'
   },
   {
     id: 'utn-eng-01',
@@ -123,7 +129,7 @@ export const ITEMS_SEMILLA_CURADOS = [
     subarea: 'Technical English for IT',
     area: 'Inglés Técnico UTN (Reading & Vocabulary)',
     dificultad: 'Media',
-    enunciado: 'Read the following technical excerpt: "To prevent unauthorized data exfiltration, the network administrator must configure a strict outbound firewall rule and enforce multi-factor authentication (MFA)." According to the text, what is the primary purpose of these measures?',
+    enunciado: 'Read the following technical excerpt: "To prevent unauthorized data exfiltration, the network administrator must configure a strict outbound firewall rule and enforce multi-factor authentication (MFA)." What is the primary purpose of these measures?',
     opciones: [
       'To increase the bandwidth speed of local switches.',
       'To stop sensitive information from being stolen or leaked to external networks.',
@@ -131,18 +137,23 @@ export const ITEMS_SEMILLA_CURADOS = [
       'To allow anonymous users to bypass login credentials.'
     ],
     correcta: 1,
-    guiaPasoAPaso: 'Paso 1: Analizar el término técnico "prevent unauthorized data exfiltration" (prevenir la extracción/fuga no autorizada de datos).\nPaso 2: Esto equivale directamente a "stop sensitive information from being stolen or leaked".'
+    guiaPasoAPaso: 'Paso 1: "Prevent unauthorized data exfiltration" significa impedir la fuga o robo de datos sensibles hacia el exterior.'
   },
   {
-    id: 'utn-redes-02',
-    institucion: 'UTN',
-    subarea: 'Redes y Telecomunicaciones',
-    area: 'Tecnología y Redes Aplicadas UTN',
+    id: 'uned-01',
+    institucion: 'UNED',
+    subarea: 'Autorregulación y Estudio Independiente',
+    area: 'Competencias Universitarias UNED',
     dificultad: 'Media',
-    enunciado: 'En una red local del laboratorio de la UTN con máscara /26 (255.255.255.192), ¿cuántas direcciones IP utilizables (hosts válidos) se obtienen por cada subred?',
-    opciones: ['30 hosts', '62 hosts', '64 hosts', '126 hosts'],
+    enunciado: 'En el modelo de educación universitaria a distancia de la UNED, la mediación pedagógica se apoya en el aprendizaje autónomo. Esto implica que el estudiante exitoso debe:',
+    opciones: [
+      'Esperar a que el tutor presencial le dicte diariamente cada resumen en el aula.',
+      'Planificar su cronograma, contrastar fuentes académicas y autoevaluar su avance.',
+      'Memorizar textualmente las guías sin aplicar los conceptos a proyectos reales.',
+      'Estudiar únicamente el día anterior a la entrega del proyecto final.'
+    ],
     correcta: 1,
-    guiaPasoAPaso: 'Paso 1: Prefijo /26 deja 32 - 26 = 6 bits para host.\nPaso 2: Aplicar fórmula 2^n - 2 (restando red y broadcast): 2^6 - 2 = 64 - 2 = 62 hosts utilizables.'
+    guiaPasoAPaso: 'Paso 1: La autonomía universitaria en la UNED requiere gestión activa del tiempo, pensamiento crítico y autoevaluación constante.'
   },
   {
     id: 'mep-01',
@@ -150,40 +161,40 @@ export const ITEMS_SEMILLA_CURADOS = [
     subarea: 'Ciberseguridad y Ley 8968',
     area: 'Especialidades Técnicas MEP',
     dificultad: 'Alta',
-    enunciado: 'Bajo el cumplimiento de la Ley 8968 (PRODHAB) en Costa Rica, ¿cuál es el principio que obliga a que un docente o padre de familia acceda únicamente a los registros estrictamente necesarios según su rol?',
+    enunciado: 'Bajo el cumplimiento de la Ley 8968 (PRODHAB) en Costa Rica, ¿cuál es el principio que obliga a que un usuario acceda únicamente a los registros estrictamente necesarios según su rol?',
     opciones: [
-      'Principio de privilegio mínimo y consentimiento informado.',
+      'Principio de privilegio mínimo y autodeterminación informativa.',
       'Principio de libre difusión pública de bases de datos.',
       'Neutralidad de ancho de banda inalámbrico.',
       'Indexación abierta en motores de búsqueda.'
     ],
     correcta: 0,
-    guiaPasoAPaso: 'Paso 1: En ciberseguridad y protección de datos personales (Ley 8968), el acceso basado en roles (RBAC) aplica el principio de mínimo privilegio y autodeterminación informativa.'
+    guiaPasoAPaso: 'Paso 1: El control de acceso basado en roles (RBAC) protege los datos sensibles aplicando el privilegio mínimo.'
   },
   {
     id: 'cosevi-01',
     institucion: 'COSEVI',
-    subarea: 'Normativa Vial',
-    area: 'Seguridad Vial COSEVI',
+    subarea: 'Prioridad de Paso en Rotondas',
+    area: 'Seguridad Vial COSEVI / MOPT',
     dificultad: 'Media',
-    enunciado: 'Al aproximarse a una rotonda en Costa Rica, ¿quién tiene la prioridad de paso según la Ley de Tránsito?',
+    enunciado: 'Si usted conduce una motocicleta, automóvil o tráiler y va a ingresar a una rotonda en Costa Rica, ¿cuál es la norma obligatoria de prioridad y velocidad?',
     opciones: [
-      'El vehículo que intenta ingresar por el carril externo.',
-      'El vehículo que ya circula dentro de la rotonda.',
-      'El vehículo de carga pesada sin importar su carril.',
-      'El vehículo que lleva las luces altas encendidas.'
+      'Tiene prioridad quien ingresa más rápido a más de 60 km/h.',
+      'Tiene prioridad el vehículo que ya circula dentro de la rotonda, a una velocidad máxima de 30 km/h.',
+      'Los tráileres tienen prioridad absoluta para cortar todos los carriles internos sin ceder el paso.',
+      'Se debe ingresar por el carril izquierdo para salir inmediatamente en la primera salida.'
     ],
     correcta: 1,
-    guiaPasoAPaso: 'Paso 1: En toda rotonda nacional, la prioridad de paso la tiene el vehículo que ya circula dentro del anillo vial.'
+    guiaPasoAPaso: 'Paso 1: En Costa Rica, la velocidad máxima dentro de la rotonda es de 30 km/h y la prioridad de paso la tiene siempre el vehículo que ya circula dentro del anillo.'
   }
 ];
 
-// Bancos léxicos para generación infinita de Lectura, Analogías e Inglés Técnico
 const BANCO_ANALOGIAS_INFINITAS = [
   { base: 'FIREWALL es a TRÁFICO MALICIOSO', correcta: 'Filtro es a impurezas', d1: 'Teclado es a monitor', d2: 'Cable es a electricidad', d3: 'Archivo es a carpeta', exp: 'Relación de función protectora: el firewall bloquea el tráfico malicioso tal como el filtro retiene las impurezas.' },
   { base: 'COMPILADOR es a CÓDIGO FUENTE', correcta: 'Traductor es a idioma extranjero', d1: 'Impresora es a tinta', d2: 'Antena es a satélite', d3: 'Batería es a voltaje', exp: 'Relación de transformación de lenguaje: el compilador traduce código fuente a código máquina, así como el traductor convierte de un idioma a otro.' },
-  { base: 'ÍNDICE es a BASE DE DATOS', correcta: 'Catálogo es a biblioteca', d1: 'Página es a portada', d2: 'Servidor es a enfriamiento', d3: 'Router es a gabinete', exp: 'Relación de búsqueda acelerada: el índice acelera la localización de registros en una base de datos igual que el catálogo en una biblioteca.' },
-  { base: ' AUDITORÍA es a TRANSPARENCIA', correcta: 'Vacuna es a inmunidad', d1: 'Fraude es a confianza', d2: 'Ruido es a silencio', d3: 'Sanción es a desorden', exp: 'Relación de medio a fin preventivo: la auditoría fomenta la transparencia institucional, así como la vacuna genera inmunidad.' }
+  { base: 'ÍNDICE es a BASE DE DATOS', correcta: 'Catálogo es a biblioteca', d1: 'Página es a portada', d2: 'Servidor es a enfriamiento', d3: 'Router es a gabinete', exp: 'Relación de búsqueda acelerada: el índice acelera la localización de registros igual que el catálogo en una biblioteca.' },
+  { base: 'AUDITORÍA es a TRANSPARENCIA', correcta: 'Vacuna es a inmunidad', d1: 'Fraude es a confianza', d2: 'Ruido es a silencio', d3: 'Sanción es a desorden', exp: 'Relación de medio preventivo a resultado: la auditoría fomenta la transparencia tal como la vacuna genera inmunidad.' },
+  { base: 'PROTOCOLO es a COMUNICACIÓN', correcta: 'Reglamento es a convivencia', d1: 'Pantalla es a píxel', d2: 'Tornillo es a tuerca', d3: ' Nube es a lluvia', exp: 'Relación de norma reguladora: el protocolo ordena la comunicación de red igual que el reglamento ordena la convivencia.' }
 ];
 
 const BANCO_INGLES_TECNICO_INFINITO = [
@@ -195,7 +206,7 @@ const BANCO_INGLES_TECNICO_INFINITO = [
     d1: 'It deletes all primary keys from the database schema.',
     d2: 'It converts SQL tables into uncompressed bitmap images.',
     d3: 'It disables encrypted backups on cloud servers.',
-    exp: 'Paso 1: "Reduces data redundancy" significa reducir la duplicación de datos.\nPaso 2: Esto mantiene la integridad y consistencia entre las tablas relacionales.'
+    exp: 'Paso 1: "Reduces data redundancy" significa evitar duplicidad de datos y asegurar consistencia.'
   },
   {
     termino: 'Asynchronous Programming (async/await)',
@@ -205,7 +216,7 @@ const BANCO_INGLES_TECNICO_INFINITO = [
     d1: 'To block the browser until the user restarts the computer.',
     d2: 'To remove CSS styles from mobile devices.',
     d3: 'To force synchronous execution of all network packets.',
-    exp: 'Paso 1: "Prevents the main UI thread from freezing" indica que evita que la interfaz se congele.\nPaso 2: Por lo tanto, mantiene la aplicación fluida y receptiva ("responsive").'
+    exp: 'Paso 1: "Prevents the main UI thread from freezing" = Mantiene la interfaz fluida y receptiva.'
   },
   {
     termino: 'Zero-Trust Security Architecture',
@@ -215,70 +226,92 @@ const BANCO_INGLES_TECNICO_INFINITO = [
     d1: 'Grant automatic SuperAdmin privileges to all internal LAN users.',
     d2: 'Disable password requirements for local Wi-Fi connections.',
     d3: 'Only inspect traffic coming from outside the country.',
-    exp: 'Paso 1: "No user or device is trusted by default" = Nunca confiar por defecto, verificar siempre cada solicitud.'
+    exp: 'Paso 1: "No user or device is trusted by default" = Verificar siempre cada solicitud sin importar la red.'
+  },
+  {
+    termino: 'Version Control & Git Branching',
+    contexto: 'Creating an isolated feature branch in Git allows engineers to develop and test new modules without breaking the production main branch.',
+    pregunta: 'What is the primary advantage of using feature branches?',
+    correcta: 'It protects the stability of the main production code while developing new features.',
+    d1: 'It automatically deletes the remote repository after every commit.',
+    d2: 'It replaces the need for automated QA testing.',
+    d3: 'It prevents multiple developers from working on the same project.',
+    exp: 'Paso 1: Aislar cambios en ramas protege el código en producción contra fallos.'
   }
 ];
 
 export function generarItemInfinito(institucionId, contadorSemilla = 1, modalidadContenido = 'mixto') {
   const n1 = (contadorSemilla * 7) % 25 + 4;
   const n2 = (contadorSemilla * 13) % 15 + 3;
+  const rotacionOpciones = contadorSemilla % 4;
 
-  // Determinar si toca verbal/inglés o matemático/técnico
+  // Función auxiliar para rotar la posición de la respuesta correcta entre A, B, C y D
+  const acomodarOpciones = (correctaStr, distractores) => {
+    const todas = [...distractores];
+    todas.splice(rotacionOpciones, 0, correctaStr);
+    return { opciones: todas.slice(0, 4), correcta: rotacionOpciones };
+  };
+
   const usarVerbal = modalidadContenido === 'verbal' || (modalidadContenido === 'mixto' && contadorSemilla % 2 === 0);
 
-  if (institucionId === 'UCR_UNA') {
+  if (institucionId === 'UCR_UNA' || institucionId === 'UNED') {
     if (usarVerbal) {
       const itemAn = BANCO_ANALOGIAS_INFINITAS[contadorSemilla % BANCO_ANALOGIAS_INFINITAS.length];
+      const acomodo = acomodarOpciones(itemAn.correcta, [itemAn.d1, itemAn.d2, itemAn.d3]);
       return {
-        id: `inf-ucr-v-${Date.now()}-${contadorSemilla}`,
-        institucion: 'UCR_UNA',
+        id: `inf-${institucionId}-v-${contadorSemilla}`,
+        institucion: institucionId,
         subarea: 'Comprensión de Lectura y Analogías',
-        area: 'Razonamiento Verbal Dinámico (UCR/UNA)',
+        area: `Razonamiento Verbal (${institucionId})`,
         dificultad: 'Dinámica',
-        enunciado: `[Reactivo Verbal #${contadorSemilla}] Analice la siguiente relación lógica en contexto académico: «${itemAn.base}». ¿Cuál de las siguientes opciones mantiene exactamente el mismo vínculo semántico y funcional?`,
-        opciones: [itemAn.correcta, itemAn.d1, itemAn.d2, itemAn.d3],
-        correcta: 0,
-        guiaPasoAPaso: `Paso 1: Identificar la relación funcional del par base (${itemAn.base}).\nPaso 2: ${itemAn.exp}`
+        enunciado: `[Reactivo #${contadorSemilla}] Analice la relación lógica en contexto académico: «${itemAn.base}» (Serie #${contadorSemilla}). ¿Cuál opción mantiene el mismo vínculo semántico y funcional?`,
+        opciones: acomodo.opciones,
+        correcta: acomodo.correcta,
+        guiaPasoAPaso: `Paso 1: Analizar el par base (${itemAn.base}).\nPaso 2: ${itemAn.exp}`
       };
     }
 
-    const total = (n1 + n2) * 12;
-    const correctaVal = n1 * 12;
+    const factor = (contadorSemilla % 9) + 6;
+    const total = (n1 + n2) * factor;
+    const correctaVal = n1 * factor;
+    const acomodo = acomodarOpciones(String(correctaVal), [
+      String(correctaVal + factor),
+      String(Math.max(1, correctaVal - factor)),
+      String(n2 * factor)
+    ]);
     return {
-      id: `inf-ucr-m-${Date.now()}-${contadorSemilla}`,
-      institucion: 'UCR_UNA',
+      id: `inf-${institucionId}-m-${contadorSemilla}`,
+      institucion: institucionId,
       subarea: 'Razonamiento Matemático',
-      area: 'Razonamiento Matemático Dinámico (PAA)',
+      area: `Razonamiento Matemático (${institucionId})`,
       dificultad: 'Dinámica',
-      enunciado: `[Reactivo Matemático #${contadorSemilla}] En una convocatoria conjunta entre la UCR y la UNA, la razón de proyectos aprobados entre Biotecnología y Educación es de ${n1} a ${n2}. Si en total se aprobaron ${total} proyectos, ¿cuántos corresponden a Biotecnología?`,
-      opciones: [
-        String(correctaVal),
-        String(correctaVal + 12),
-        String(correctaVal - 6),
-        String(n2 * 12)
-      ],
-      correcta: 0,
-      guiaPasoAPaso: `Paso 1: Sumar las partes de la razón: ${n1} + ${n2} = ${n1 + n2} partes.\nPaso 2: Dividir el total (${total}) entre ${n1 + n2} = 12 proyectos por parte.\nPaso 3: Multiplicar las partes de Biotecnología (${n1} × 12) = ${correctaVal}.`
+      enunciado: `[Reactivo #${contadorSemilla}] En una investigación universitaria, la proporción de becas entre Ingeniería y Educación es de ${n1} a ${n2}. Si en total se asignaron ${total} becas, ¿cuántas corresponden a Ingeniería?`,
+      opciones: acomodo.opciones,
+      correcta: acomodo.correcta,
+      guiaPasoAPaso: `Paso 1: Sumar partes: ${n1} + ${n2} = ${n1 + n2}.\nPaso 2: Dividir ${total} / ${n1 + n2} = ${factor} por parte.\nPaso 3: Multiplicar ${n1} × ${factor} = ${correctaVal}.`
     };
   }
 
   if (institucionId === 'TEC') {
     if (usarVerbal) {
+      const acomodo = acomodarOpciones(
+        `El módulo #${contadorSemilla} no presenta vulnerabilidades de inyección SQL.`,
+        [
+          `El módulo #${contadorSemilla} carece de conexión a red.`,
+          'Todo sistema auditado se ejecuta sin memoria RAM.',
+          'Las pruebas de caja blanca eliminan el compilador.'
+        ]
+      );
       return {
-        id: `inf-tec-v-${Date.now()}-${contadorSemilla}`,
+        id: `inf-tec-v-${contadorSemilla}`,
         institucion: 'TEC',
-        subarea: 'Lógica Proposicional y Lectura Científica',
+        subarea: 'Lógica Deductiva y Silogismos TEC',
         area: 'Razonamiento Verbal y Lógico TEC',
         dificultad: 'Alta',
-        enunciado: `[Silogismo Científico #${contadorSemilla}] Si un algoritmo tiene complejidad polinomial, entonces es tratable computacionalmente en el lote #${n1}. Se comprueba que el algoritmo Alfa NO es tratable computacionalmente en dicho lote. Por lo tanto, se concluye con certeza que:`,
-        opciones: [
-          'El algoritmo Alfa no tiene complejidad polinomial.',
-          'El algoritmo Alfa es el más rápido del servidor.',
-          'Todo algoritmo tratable carece de variables.',
-          'La complejidad polinomial impide compilar en C++.'
-        ],
-        correcta: 0,
-        guiaPasoAPaso: 'Paso 1: Aplicar Modus Tollens: Si P → Q, y ocurre ¬Q (no es tratable), entonces necesariamente ¬P (no tiene complejidad polinomial).'
+        enunciado: `[Reactivo TEC #${contadorSemilla}] Premisa 1: Si un módulo supera la auditoría de caja blanca de BDS Devs, entonces no presenta vulnerabilidades de inyección SQL. Premisa 2: El módulo #${contadorSemilla} superó la auditoría de caja blanca. Se deduce con certeza que:`,
+        opciones: acomodo.opciones,
+        correcta: acomodo.correcta,
+        guiaPasoAPaso: 'Paso 1: Por Modus Ponens (Si P → Q, y P es verdadero, entonces Q es necesariamente verdadero).'
       };
     }
 
@@ -286,89 +319,126 @@ export function generarItemInfinito(institucionId, contadorSemilla = 1, modalida
     const x2 = n2;
     const suma = x1 + x2;
     const prod = x1 * x2;
+    const acomodo = acomodarOpciones(String(suma + prod), [
+      String(suma * prod),
+      String(Math.abs(prod - suma)),
+      String(suma + prod + 12)
+    ]);
     return {
-      id: `inf-tec-m-${Date.now()}-${contadorSemilla}`,
+      id: `inf-tec-m-${contadorSemilla}`,
       institucion: 'TEC',
       subarea: 'Matemática Intensiva TEC',
       area: 'Álgebra y Geometría Analítica TEC',
       dificultad: 'Alta',
-      enunciado: `[Reactivo TEC #${contadorSemilla}] Si las dos raíces reales de la ecuación cuadrática x² - bx + c = 0 son x₁ = ${x1} y x₂ = ${x2}, ¿cuál es el valor numérico de (b + c)?`,
-      opciones: [
-        String(suma + prod),
-        String(suma * prod),
-        String(prod - suma),
-        String(suma + prod + 10)
-      ],
-      correcta: 0,
-      guiaPasoAPaso: `Paso 1: En x² - bx + c = 0, b es la suma de las raíces (${x1} + ${x2} = ${suma}) y c es el producto (${x1} × ${x2} = ${prod}).\nPaso 2: Por tanto, b + c = ${suma} + ${prod} = ${suma + prod}.`
+      enunciado: `[Reactivo TEC #${contadorSemilla}] Si las dos raíces reales de la ecuación cuadrática x² - bx + c = 0 son x₁ = ${x1} y x₂ = ${x2}, ¿cuál es el valor exacto de (b + c)?`,
+      opciones: acomodo.opciones,
+      correcta: acomodo.correcta,
+      guiaPasoAPaso: `Paso 1: Por relaciones de Vieta, b = ${x1} + ${x2} = ${suma} y c = ${x1} × ${x2} = ${prod}.\nPaso 2: Entonces b + c = ${suma + prod}.`
     };
   }
 
   if (institucionId === 'UTN') {
     if (usarVerbal) {
       const eng = BANCO_INGLES_TECNICO_INFINITO[contadorSemilla % BANCO_INGLES_TECNICO_INFINITO.length];
+      const acomodo = acomodarOpciones(eng.correcta, [eng.d1, eng.d2, eng.d3]);
       return {
-        id: `inf-utn-eng-${Date.now()}-${contadorSemilla}`,
+        id: `inf-utn-eng-${contadorSemilla}`,
         institucion: 'UTN',
         subarea: 'Technical English for IT',
         area: `Inglés Técnico UTN — ${eng.termino}`,
         dificultad: 'Media',
         enunciado: `[Technical English #${contadorSemilla}] "${eng.contexto}" — ${eng.pregunta}`,
-        opciones: [eng.correcta, eng.d1, eng.d2, eng.d3],
-        correcta: 0,
+        opciones: acomodo.opciones,
+        correcta: acomodo.correcta,
         guiaPasoAPaso: eng.exp
       };
     }
 
-    const bitsHost = (contadorSemilla % 5) + 3;
+    const bitsHost = (contadorSemilla % 6) + 3; // 3 a 8 bits
     const prefijo = 32 - bitsHost;
     const hostsValidos = Math.pow(2, bitsHost) - 2;
+    const acomodo = acomodarOpciones(`${hostsValidos} hosts utilizables`, [
+      `${hostsValidos + 2} hosts utilizables`,
+      `${Math.pow(2, bitsHost + 1) - 2} hosts utilizables`,
+      `${Math.max(2, hostsValidos - 6)} hosts utilizables`
+    ]);
     return {
-      id: `inf-utn-net-${Date.now()}-${contadorSemilla}`,
+      id: `inf-utn-net-${contadorSemilla}`,
       institucion: 'UTN',
       subarea: 'Redes CCNA y Articulación UTN',
       area: 'Redes, TI y Lógica Aplicada UTN',
       dificultad: 'Media',
-      enunciado: `[Reactivo UTN #${contadorSemilla}] En un laboratorio de ingeniería de la UTN se configura una subred IPv4 con máscara prefijo /${prefijo}. ¿Cuál es la cantidad exacta de direcciones de host utilizables?`,
-      opciones: [
-        `${hostsValidos} hosts utilizables`,
-        `${hostsValidos + 2} hosts utilizables`,
-        `${Math.pow(2, bitsHost + 1) - 2} hosts utilizables`,
-        `${Math.max(2, hostsValidos - 4)} hosts utilizables`
-      ],
-      correcta: 0,
-      guiaPasoAPaso: `Paso 1: Con prefijo /${prefijo}, quedan 32 - ${prefijo} = ${bitsHost} bits para host.\nPaso 2: Aplicando 2^${bitsHost} - 2, se obtienen ${hostsValidos} direcciones válidas.`
+      enunciado: `[Reactivo UTN #${contadorSemilla}] En un laboratorio de la UTN se configura una subred IPv4 con máscara /${prefijo}. ¿Cuál es la cantidad exacta de direcciones IP de host utilizables?`,
+      opciones: acomodo.opciones,
+      correcta: acomodo.correcta,
+      guiaPasoAPaso: `Paso 1: Bits de host = 32 - ${prefijo} = ${bitsHost}.\nPaso 2: Hosts válidos = 2^${bitsHost} - 2 = ${hostsValidos}.`
+    };
+  }
+
+  if (institucionId === 'COSEVI') {
+    const distanciaSegundos = (contadorSemilla % 2 === 0) ? 'vehículo liviano o motocicleta (mínimo 2 segundos)' : 'vehículo pesado o tráiler articulado (mínimo 3 a 5 segundos)';
+    const velRotonda = 30;
+    const acomodo = acomodarOpciones(
+      `Respetar los ${velRotonda} km/h en rotonda y mantener la regla de seguimiento para ${distanciaSegundos}.`,
+      [
+        'Acelerar a 80 km/h dentro del anillo de la rotonda para despejar la vía.',
+        'Invadir el carril interno con el tráiler sin señalizar con direccionales.',
+        'Detenerse por completo en medio del carril interno de la rotonda para dar paso.'
+      ]
+    );
+    return {
+      id: `inf-cosevi-${contadorSemilla}`,
+      institucion: 'COSEVI',
+      subarea: 'Maniobras Viales y Rotondas',
+      area: 'Educación Vial COSEVI / MOPT',
+      dificultad: 'Media',
+      enunciado: `[Caso Vial #${contadorSemilla}] Al conducir un ${distanciaSegundos} aproximándose a una intersección tipo rotonda en Costa Rica, ¿cuál es la maniobra reglamentaria correcta?`,
+      opciones: acomodo.opciones,
+      correcta: acomodo.correcta,
+      guiaPasoAPaso: 'Paso 1: En rotondas la velocidad máxima es de 30 km/h, tiene prioridad quien ya circula adentro y debe conservarse la distancia de seguridad.'
     };
   }
 
   const amperios = n2;
   const ohmios = n1;
   const voltios = amperios * ohmios;
+  const acomodo = acomodarOpciones(`${voltios} V`, [
+    `${voltios + ohmios} V`,
+    `${amperios + ohmios} V`,
+    `${voltios * 2} V`
+  ]);
   return {
-    id: `inf-mep-${Date.now()}-${contadorSemilla}`,
+    id: `inf-mep-${contadorSemilla}`,
     institucion: institucionId || 'MEP_CTP',
-    subarea: 'Ciencias y Especialidades Técnicas',
+    subarea: 'Especialidades Técnicas CTP',
     area: 'Práctica Guiada Técnica & Académica MEP',
     dificultad: 'Media',
-    enunciado: `[Reactivo MEP #${contadorSemilla}] En un banco de pruebas del CTP circula una corriente de ${amperios} A por una resistencia de ${ohmios} Ω. Según la Ley de Ohm, ¿cuál es el voltaje medido?`,
-    opciones: [
-      `${voltios} V`,
-      `${voltios + ohmios} V`,
-      `${amperios + ohmios} V`,
-      `${Math.round((ohmios / amperios) * 10) / 10} V`
-    ],
-    correcta: 0,
-    guiaPasoAPaso: `Paso 1: Ley de Ohm: V = I × R.\nPaso 2: Multiplicar ${amperios} A × ${ohmios} Ω = ${voltios} V.`
+    enunciado: `[Reactivo Técnico #${contadorSemilla}] En un circuito del taller del CTP circula una corriente de ${amperios} A por una resistencia de ${ohmios} Ω. Según la Ley de Ohm, ¿cuál es la tensión medida?`,
+    opciones: acomodo.opciones,
+    correcta: acomodo.correcta,
+    guiaPasoAPaso: `Paso 1: Ley de Ohm V = I × R = ${amperios} A × ${ohmios} Ω = ${voltios} V.`
   };
 }
 
-// Función oficial de cálculo diferenciado UCR/UNA vs TEC vs UTN/MEP
+// Ensamblador exacto de Simulacros de 20, 30, 40 o 60 preguntas variadas
+export function ensamblarSimulacroCompleto(institucionId, cantidadPreguntas = 20, modalidad = 'mixto') {
+  const totalMeta = Number(cantidadPreguntas) || 20;
+  const semillasBase = ITEMS_SEMILLA_CURADOS.filter(i => i.institucion === institucionId);
+  const resultado = [...semillasBase];
+
+  let contador = 1;
+  while (resultado.length < totalMeta) {
+    resultado.push(generarItemInfinito(institucionId, contador, modalidad));
+    contador++;
+  }
+  return resultado.slice(0, totalMeta);
+}
+
 export function calcularPuntajeAdmision(institucionId, aciertos, respondidas, notaColegio = 90) {
   const porcentajeExamen = respondidas > 0 ? (aciertos / respondidas) * 100 : 0;
   const notaCol = Math.min(100, Math.max(0, Number(notaColegio) || 90));
 
   if (institucionId === 'UCR_UNA') {
-    // UCR y UNA: Escala 200 a 800 (50% PAA + 50% Educación Diversificada)
     const promedioPonderado = (porcentajeExamen * 0.50) + (notaCol * 0.50);
     const puntaje800 = Math.round(200 + (promedioPonderado / 100) * 600);
     return {
@@ -380,7 +450,6 @@ export function calcularPuntajeAdmision(institucionId, aciertos, respondidas, no
   }
 
   if (institucionId === 'TEC') {
-    // TEC: Escala 200 a 800 (60% Examen de Admisión TEC + 40% Nota Educación Diversificada)
     const promedioPonderado = (porcentajeExamen * 0.60) + (notaCol * 0.40);
     const puntaje800 = Math.round(200 + (promedioPonderado / 100) * 600);
     return {
@@ -391,11 +460,10 @@ export function calcularPuntajeAdmision(institucionId, aciertos, respondidas, no
     };
   }
 
-  // UTN, MEP_CTP, COSEVI en escala 0 a 100
   return {
     escalaMax: 100,
     puntajeFinal: Math.round(porcentajeExamen),
     porcentajeExamen: porcentajeExamen.toFixed(1),
-    detalleFormula: `Calificación Directa Oficial (0-100): ${aciertos} aciertos de ${respondidas} reactivos resueltos.`
+    detalleFormula: `Calificación Directa Oficial (0-100): ${aciertos} aciertos de ${respondidas} reactivos evaluados.`
   };
 }
