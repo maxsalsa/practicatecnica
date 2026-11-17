@@ -1,4 +1,4 @@
-﻿import { createFileRoute,Link } from "@tanstack/react-router";
+import { createFileRoute,Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Quiz } from "@/components/Quiz";

@@ -1,4 +1,4 @@
-﻿import { DiscountBox } from "@/components/DiscountBox";
+import { DiscountBox } from "@/components/DiscountBox";
 import { InviteBox } from "@/components/InviteBox";
 import { AccessCodeAdmin } from "@/components/AccessCodeBox";
 import { createFileRoute } from "@tanstack/react-router";
