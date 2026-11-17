@@ -176,7 +176,7 @@ export function SiteHeader() {
             {access.error && <p role="alert" className="px-3 text-xs text-destructive">No se pudieron verificar sus accesos privados.</p>}
           </div>
         </div>)}
-      <div className="flex w-full items-center justify-between gap-2 border-t border-border pt-1"><span className="shrink-0 text-xs font-semibold text-muted-foreground">v26xd.01.14.09</span>
+      <div className="flex w-full items-center justify-between gap-2 border-t border-border pt-1"><span className="shrink-0 text-xs font-semibold text-muted-foreground">vv26.1.1d.01.14.09</span>
       <nav aria-label="Accesos rápidos superiores" className="flex min-w-0 items-center gap-1">
         {access.institution && <Button asChild variant="ghost" size="icon" className="h-11 w-11"><Link to="/institucion" search={{ vista: 'canales' }} aria-label="Canales institucionales" title="Canales institucionales"><MessageSquare aria-hidden="true"/></Link></Button>}
         {access.institution && <Button asChild variant="ghost" size="icon" className="h-11 w-11"><Link to="/institucion" search={{ vista: 'avisos' }} aria-label="Avisos institucionales" title="Avisos institucionales"><Bell aria-hidden="true"/></Link></Button>}

@@ -84,7 +84,7 @@ export default function App() {
           <div>
             <div className="flex items-center gap-2">
               <h1 className="text-base md:text-lg font-extrabold tracking-tight">
-                Práctica Técnica .com [v26xd.01.14.09]
+                Práctica Técnica .com [vv26.1.1d.01.14.09]
               </h1>
               <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-extrabold border ${planActual.badge}`}>
                 {soySuperAdmin ? "SUPERADMIN TOTAL" : planActual.nombre}

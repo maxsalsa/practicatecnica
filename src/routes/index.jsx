@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { decks } from "@/lib/questions";
 import heroImg from "@/assets/hero-niveles.jpg";
-import shareImage from "@/assets/inicio-26x1.jpg.asset.json";
+import shareImage from "@/assets/inicio-v26.1.11.jpg.asset.json";
 import { PromoBanners } from "@/components/PromoBanners";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import gicmLogo from "@/assets/gicm-logo.jpg.asset.json";
