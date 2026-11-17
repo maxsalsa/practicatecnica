@@ -4,12 +4,13 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
   const itemsMenu = [
     { id: 'inicio', icono: '🏠', label: 'Inicio' },
     { id: 'materias', icono: '🔬', label: 'Especialidades y Materias' },
+    { id: 'ofimatica', icono: '🧪', label: 'Simuladores Excel / Word / Circuitos' },
     { id: 'simuladores', icono: '🎓', label: 'Exámenes (10 a 60 Ítems)' },
     { id: 'juegovial', icono: '🕹️', label: 'Juego Vial 2D (Rotonda)' },
+    { id: 'biblioteca', icono: '📚', label: 'Programas MEP, Libros y Leyes' },
     { id: 'gestion', icono: '📋', label: 'Horarios y Tardías' },
-    { id: 'ia', icono: '🤖', label: 'Planes y Exámenes IA' },
-    { id: 'carnet', icono: '🪪', label: 'Carné QR' },
-    { id: 'admin', icono: '🔐', label: 'SuperAdmin & QA' }
+    { id: 'ia', icono: '🤖', label: 'Planes IA / Plantilla' },
+    { id: 'admin', icono: '🔐', label: 'SuperAdmin' }
   ];
 
   return (
@@ -29,11 +30,11 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
                   prac<span className="text-cyan-400">TICA</span>tecnica<span className="text-cyan-400">.com</span>
                 </span>
                 <span className="hidden sm:inline-block text-[10px] font-extrabold bg-emerald-950 text-emerald-300 border border-emerald-600 px-2 py-0.5 rounded-full">
-                  v29.5 OFFLINE-FIRST
+                  v30.0 MULTIVERSO
                 </span>
               </div>
               <p className="text-[10px] sm:text-[11px] text-slate-400">
-                CTP Mercedes Norte • Páginas Independientes & Caché Instantáneo
+                7 Provincias • 27 Regionales MEP • Simuladores Excel, Word, Circuitos & Universidades
               </p>
             </div>
           </div>
@@ -41,7 +42,7 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-950/90 text-emerald-300 border border-emerald-600/60">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Offline-Ready
+              Online / Offline
             </span>
 
             <div
@@ -56,7 +57,6 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
           </div>
         </div>
 
-        {/* Pestañas de Páginas Separadas */}
         <div className="bg-slate-900/95 border-t border-slate-800/80">
           <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-1.5 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
             {itemsMenu.map((item) => {
@@ -80,14 +80,13 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
         </div>
       </header>
 
-      {/* Barra Inferior Fija Mobile-First para Celulares */}
       <nav className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 grid grid-cols-5 py-1.5 px-1">
         {[
           { id: 'inicio', icono: '🏠', txt: 'Inicio' },
           { id: 'materias', icono: '🔬', txt: 'Materias' },
+          { id: 'ofimatica', icono: '🧪', txt: 'Labs' },
           { id: 'simuladores', icono: '🎓', txt: 'Exámenes' },
-          { id: 'juegovial', icono: '🕹️', txt: 'Juego 2D' },
-          { id: 'gestion', icono: '📋', txt: 'Horarios' }
+          { id: 'juegovial', icono: '🕹️', txt: 'Juego 2D' }
         ].map((m) => (
           <button
             key={m.id}

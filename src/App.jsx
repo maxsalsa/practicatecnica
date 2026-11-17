@@ -18,8 +18,10 @@ import SuiteAuditoriaQaBds from './components/SuiteAuditoriaQaBds';
 import HubModalidadesMep from './components/HubModalidadesMep';
 import ExploradorMateriasMep from './components/ExploradorMateriasMep';
 import CentroGestionDocenteAdminMep from './components/CentroGestionDocenteAdminMep';
+import SuiteSimuladoresOfimaticaCircuitos from './components/SuiteSimuladoresOfimaticaCircuitos';
+import BibliotecaLeyesLibrosMep from './components/BibliotecaLeyesLibrosMep';
 
-const CLAVE_PAGINA_OFFLINE = 'pt_pagina_activa_offline_v29_5';
+const CLAVE_PAGINA_OFFLINE = 'pt_pagina_activa_offline_v30_0';
 
 export default function App() {
   const [usuarioActual, setUsuarioActual] = useState({
@@ -29,7 +31,6 @@ export default function App() {
     seccion: 'SuperAdmin Global & Docente CTP'
   });
 
-  // Persistencia instantánea en el navegador de la última página visitada
   const [seccionActiva, setSeccionActiva] = useState(() => {
     return localStorage.getItem(CLAVE_PAGINA_OFFLINE) || 'inicio';
   });
@@ -40,7 +41,8 @@ export default function App() {
   const [mostrarSelector, setMostrarSelector] = useState(false);
 
   const [contextoMep, setContextoMep] = useState({
-    region: 'Dirección Regional de Alajuela',
+    provincia: 'Heredia',
+    region: 'Dirección Regional de Heredia',
     circuito: '04 (CTP Mercedes Norte)',
     modalidad: 'CTP Diurno / Nocturno / Académico'
   });
@@ -70,7 +72,7 @@ export default function App() {
     if (accionId === 'cosevi') cambiarPagina('juegovial');
     else if (accionId === 'universidades' || accionId === 'idiomas') cambiarPagina('simuladores');
     else if (accionId === 'materias') cambiarPagina('materias');
-    else if (accionId === 'ctp_gestion') cambiarPagina('gestion');
+    else if (accionId === 'ctp_gestion') cambiarPagina('ofimatica');
     else if (accionId === 'modalidades') cambiarPagina('modalidades');
   };
 
@@ -85,14 +87,15 @@ export default function App() {
 
       <main className="flex-1 max-w-7xl w-full mx-auto p-3 sm:p-6 lg:px-8 space-y-5">
 
-        {/* Cintillo Institucional Compacto */}
+        {/* Cintillo Nacional con las 7 Provincias y 27 Direcciones Regionales */}
         <div className="bg-slate-900 border border-slate-800 px-3.5 py-2.5 rounded-2xl flex flex-wrap justify-between items-center gap-2 shadow-md">
           <div className="flex flex-wrap items-center gap-2 text-xs">
-            <span className="text-cyan-400 font-bold">🏛️ {contextoMep.region}</span>
+            <span className="bg-cyan-950 text-cyan-300 border border-cyan-700 px-2 py-0.5 rounded font-extrabold">
+              🇨🇷 {contextoMep.provincia || 'Costa Rica'}
+            </span>
+            <span className="text-white font-bold">🏛️ {contextoMep.region}</span>
             <span className="text-slate-600">•</span>
-            <span className="text-slate-300">Circuito {contextoMep.circuito}</span>
-            <span className="hidden md:inline text-slate-600">•</span>
-            <span className="hidden md:inline text-amber-300 font-semibold">{contextoMep.modalidad}</span>
+            <span className="text-amber-300 font-semibold">Circuito {contextoMep.circuito}</span>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
@@ -109,9 +112,9 @@ export default function App() {
 
             <button
               onClick={() => setMostrarSelector(true)}
-              className="bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 font-bold px-2.5 py-1.5 rounded-xl text-xs"
+              className="bg-cyan-700 hover:bg-cyan-600 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs shadow"
             >
-              🏛️ Región
+              🏛️ Cambiar Provincia / Regional (27 MEP)
             </button>
 
             <button
@@ -123,7 +126,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Barra de Retorno Rápido cuando estás en una subpágina */}
         {seccionActiva !== 'inicio' && (
           <div className="flex flex-wrap items-center justify-between gap-2 bg-slate-900/80 border border-slate-800 px-4 py-2.5 rounded-xl">
             <button
@@ -133,27 +135,22 @@ export default function App() {
               ← Volver al Menú Principal
             </button>
             <div className="flex flex-wrap gap-2">
-              {seccionActiva === 'simuladores' && (
-                <button
-                  onClick={() => cambiarPagina('juegovial')}
-                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs"
-                >
-                  🕹️ Ir al Juego Vial 2D de la Rotonda →
-                </button>
-              )}
-              {seccionActiva === 'juegovial' && (
-                <button
-                  onClick={() => cambiarPagina('simuladores')}
-                  className="bg-amber-600 hover:bg-amber-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs"
-                >
-                  🎓 Ir al Examen Teórico (10 a 60 Preguntas) →
-                </button>
-              )}
+              <button
+                onClick={() => cambiarPagina('ofimatica')}
+                className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs"
+              >
+                🧪 Simuladores Excel / Word / Circuitos
+              </button>
+              <button
+                onClick={() => cambiarPagina('biblioteca')}
+                className="bg-amber-600 hover:bg-amber-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs"
+              >
+                📚 Programas MEP, Libros y Leyes
+              </button>
             </div>
           </div>
         )}
 
-        {/* PÁGINA 1: INICIO (Solo el Menú de Bienvenida y Tarjetas de Acceso a cada Página) */}
         {seccionActiva === 'inicio' && (
           <div className="space-y-6">
             <HeroGamificadoMep
@@ -162,15 +159,51 @@ export default function App() {
               setBusquedaGlobal={setBusquedaGlobal}
               onNavegarAccion={manejarAccionHero}
             />
+
+            {/* Tarjetas de Acceso Directo a los Nuevos Simuladores de Ofimática, Circuitos y Biblioteca */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div
+                onClick={() => cambiarPagina('ofimatica')}
+                className="bg-gradient-to-br from-emerald-900/70 to-slate-900 border border-emerald-500/40 p-5 rounded-2xl cursor-pointer hover:scale-[1.01] transition-all shadow-xl"
+              >
+                <span className="text-2xl">📊</span>
+                <h3 className="text-base font-extrabold text-white mt-2">Simulador de Hoja Electrónica & Contabilidad Pura</h3>
+                <p className="text-xs text-slate-300 mt-1">Fórmulas de Excel, Libro Diario NIIF, cálculo de IVA 13% (Ley 9635) y Balance en vivo.</p>
+              </div>
+
+              <div
+                onClick={() => cambiarPagina('ofimatica')}
+                className="bg-gradient-to-br from-cyan-900/70 to-slate-900 border border-cyan-500/40 p-5 rounded-2xl cursor-pointer hover:scale-[1.01] transition-all shadow-xl"
+              >
+                <span className="text-2xl">🔌</span>
+                <h3 className="text-base font-extrabold text-white mt-2">Simulador de Circuitos, Electrónica & Redes Cisco</h3>
+                <p className="text-xs text-slate-300 mt-1">Compuertas lógicas digitales (AND/OR/XOR), Ley de Ohm, Procesador de Textos APA 7 y Cisco CLI.</p>
+              </div>
+
+              <div
+                onClick={() => cambiarPagina('biblioteca')}
+                className="bg-gradient-to-br from-amber-900/70 to-slate-900 border border-amber-500/40 p-5 rounded-2xl cursor-pointer hover:scale-[1.01] transition-all shadow-xl"
+              >
+                <span className="text-2xl">📚</span>
+                <h3 className="text-base font-extrabold text-white mt-2">Biblioteca Abierta, Programas MEP, Leyes e Impuestos</h3>
+                <p className="text-xs text-slate-300 mt-1">Folletos libres de derechos de autor, Ley 9635, Ley 8968, Ley 7600 y programas oficiales.</p>
+              </div>
+            </div>
           </div>
         )}
 
-        {/* PÁGINA 2: ESPECIALIDADES CTP Y MATERIAS ACADÉMICAS */}
         {seccionActiva === 'materias' && (
           <ExploradorMateriasMep onPracticarMateria={() => cambiarPagina('simuladores')} />
         )}
 
-        {/* PÁGINA 3: MODALIDADES MEP (CTP DIURNO, NOCTURNO, ACADÉMICO, CINDEA) */}
+        {seccionActiva === 'ofimatica' && (
+          <SuiteSimuladoresOfimaticaCircuitos />
+        )}
+
+        {seccionActiva === 'biblioteca' && (
+          <BibliotecaLeyesLibrosMep />
+        )}
+
         {seccionActiva === 'modalidades' && (
           <HubModalidadesMep
             modalidadActiva={modalidadMepId}
@@ -182,27 +215,22 @@ export default function App() {
           />
         )}
 
-        {/* PÁGINA 4: EXÁMENES Y SIMULACROS (SOLO EL EXAMEN, SIN EL JUEGO ABAJO) */}
         {seccionActiva === 'simuladores' && (
           <SimuladorUniversitarioMep usuarioActual={usuarioActual} />
         )}
 
-        {/* PÁGINA 5: JUEGO VIAL 2D EN SU PROPIA PÁGINA EXCLUSIVA */}
         {seccionActiva === 'juegovial' && (
           <SimuladorVialCoseviCanvas />
         )}
 
-        {/* PÁGINA 6: HORARIOS, TARDÍAS, AUSENCIAS Y GESTIÓN DOCENTE/ADMIN */}
         {seccionActiva === 'gestion' && (
           <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
         )}
 
-        {/* PÁGINA 7: GENERADOR DUAL IA / PLANTILLAS DE PLANEAMIENTOS Y EXÁMENES */}
         {seccionActiva === 'ia' && (
           <AsistenteIaGenerativo />
         )}
 
-        {/* PÁGINA 8: MULTIMEDIA Y CAMPAÑA CLARA */}
         {seccionActiva === 'multimedia' && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <SelectorMultimedia />
@@ -210,17 +238,14 @@ export default function App() {
           </div>
         )}
 
-        {/* PÁGINA 9: CHATS INSTITUCIONALES */}
         {seccionActiva === 'chats' && (
           <ChatInstitucional usuarioActual={usuarioActual} />
         )}
 
-        {/* PÁGINA 10: CARNÉ DIGITAL QR */}
         {seccionActiva === 'carnet' && (
           <CarnetEstudiantilQr />
         )}
 
-        {/* PÁGINA 11: SUPERADMIN, REPORTES PDF Y SUITE QA */}
         {seccionActiva === 'admin' && (
           <div className="space-y-6">
             <PanelSuperAdmin superAdminNombre={usuarioActual.nombre} />
@@ -254,7 +279,7 @@ export default function App() {
 
       {mostrarSelector && (
         <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-          <div className="relative w-full max-w-md">
+          <div className="relative w-full max-w-lg">
             <button
               onClick={() => setMostrarSelector(false)}
               className="absolute top-3 right-3 text-slate-400 hover:text-white font-bold z-10 text-sm"
@@ -267,7 +292,7 @@ export default function App() {
       )}
 
       <footer className="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-500 space-y-1 mt-8">
-        <p>© 2026 pracTICAtecnica.com — Desarrollado por GICM & BDS Devs S.A. | Mobile-First & Offline-First</p>
+        <p>© 2026 pracTICAtecnica.com — Desarrollado por GICM & BDS Devs S.A. | 7 Provincias y 27 Regionales MEP</p>
         <p>Soporte Oficial MEP & WhatsApp: +506 6090-6359 | Ing. Max Salazar Sánchez</p>
       </footer>
 

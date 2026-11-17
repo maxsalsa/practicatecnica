@@ -1,78 +1,153 @@
 import React, { useState } from 'react';
-import { JERARQUIA_MEP_SEGURIDAD } from '../data/jerarquiaMepSeguridad';
+import { DIRECTORIO_27_REGIONALES_MEP } from '../data/directorioRegionalesMep';
 
 export default function SelectorInstitucionalModal({ onSeleccionar }) {
-  const [regionSeleccionada, setRegionSeleccionada] = useState(JERARQUIA_MEP_SEGURIDAD.direccionesRegionalesCostaRica[0]);
-  const [circuitoSeleccionado, setCircuitoSeleccionado] = useState(regionSeleccionada.circuitos[0]);
-  const [modalidad, setModalidad] = useState('Colegios Técnicos Profesionales (CTP)');
+  const [provIndex, setProvIndex] = useState(1); // Heredia por defecto (CTP Mercedes Norte)
+  const [regIndex, setRegIndex] = useState(0);
+  const [circuitoSel, setCircuitoSel] = useState('04');
+  const [institucionSel, setInstitucionSel] = useState('CTP Mercedes Norte (Institución Modelo)');
+  const [modalidadSel, setModalidadSel] = useState('CTP Diurno / Técnico Nocturno / Académico');
+  const [busquedaInst, setBusquedaInst] = useState('');
 
-  const handleRegionChange = (e) => {
-    const reg = JERARQUIA_MEP_SEGURIDAD.direccionesRegionalesCostaRica.find(r => r.region === e.target.value);
-    setRegionSeleccionada(reg);
-    setCircuitoSeleccionado(reg.circuitos[0]);
+  const provActual = DIRECTORIO_27_REGIONALES_MEP[provIndex] || DIRECTORIO_27_REGIONALES_MEP[0];
+  const regActual = provActual.regionales[regIndex] || provActual.regionales[0];
+
+  const cambiarProvincia = (idx) => {
+    const p = DIRECTORIO_27_REGIONALES_MEP[idx];
+    const r = p.regionales[0];
+    setProvIndex(idx);
+    setRegIndex(0);
+    setCircuitoSel(r.circuitos[0]);
+    setInstitucionSel(r.instituciones[0]);
   };
 
-  const aplicarFiltro = () => {
+  const cambiarRegional = (idx) => {
+    const r = provActual.regionales[idx];
+    setRegIndex(idx);
+    setCircuitoSel(r.circuitos[0]);
+    setInstitucionSel(r.instituciones[0]);
+  };
+
+  const guardarSeleccion = (e) => {
+    e.preventDefault();
     if (onSeleccionar) {
-      onSeleccionar({ region: regionSeleccionada.region, circuito: circuitoSeleccionado, modalidad });
+      onSeleccionar({
+        provincia: provActual.provincia,
+        region: regActual.nombre,
+        circuito: `${circuitoSel} (${institucionSel})`,
+        institucion: institucionSel,
+        modalidad: modalidadSel
+      });
     }
   };
 
   return (
-    <div className="bg-slate-900 border border-slate-700 p-6 rounded-2xl shadow-2xl text-slate-100 space-y-4 max-w-lg mx-auto">
-      <h3 className="text-xl font-extrabold text-cyan-400 flex items-center gap-2">
-        🏛️ Selector Institucional MEP & Circuitos
-      </h3>
-      <p className="text-xs text-slate-400">Selecciona la Dirección Regional, Circuito y Modalidad educativa bajo norma soberana.</p>
-
-      <div className="space-y-3 text-sm">
-        <div>
-          <label className="block text-xs font-semibold text-slate-300 mb-1">Dirección Regional:</label>
-          <select 
-            value={regionSeleccionada.region} 
-            onChange={handleRegionChange}
-            className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-cyan-500"
-          >
-            {JERARQUIA_MEP_SEGURIDAD.direccionesRegionalesCostaRica.map((r, i) => (
-              <option key={i} value={r.region}>{r.region}</option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label className="block text-xs font-semibold text-slate-300 mb-1">Circuito Escolar:</label>
-          <select 
-            value={circuitoSeleccionado} 
-            onChange={(e) => setCircuitoSeleccionado(e.target.value)}
-            className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-cyan-500"
-          >
-            {regionSeleccionada.circuitos.map((c, i) => (
-              <option key={i} value={c}>Circuito {c}</option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label className="block text-xs font-semibold text-slate-300 mb-1">Modalidad Educativa:</label>
-          <select 
-            value={modalidad} 
-            onChange={(e) => setModalidad(e.target.value)}
-            className="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-white focus:outline-none focus:border-cyan-500"
-          >
-            <option value="Primaria (I y II Ciclos)">Primaria (I y II Ciclos)</option>
-            <option value="Secundaria Académica">Secundaria Académica</option>
-            <option value="Colegios Técnicos Profesionales (CTP)">Colegios Técnicos Profesionales (CTP)</option>
-            <option value="Colegios Científicos / Humanísticos">Colegios Científicos / Humanísticos</option>
-          </select>
-        </div>
+    <div className="bg-slate-900 border-2 border-cyan-500/60 p-6 rounded-2xl shadow-2xl text-slate-100 space-y-4">
+      <div className="border-b border-slate-800 pb-3">
+        <span className="text-[10px] font-extrabold uppercase bg-cyan-950 text-cyan-300 border border-cyan-700 px-2 py-0.5 rounded">
+          🇨🇷 Cobertura Nacional — 7 Provincias y 27 Direcciones Regionales MEP
+        </span>
+        <h3 className="text-lg font-extrabold text-white mt-1">
+          🏛️ Seleccionar Provincia, Dirección Regional, Circuito e Institución
+        </h3>
       </div>
 
-      <button
-        onClick={aplicarFiltro}
-        className="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2.5 rounded-xl text-sm transition-all shadow"
-      >
-        Confirmar Contexto Institucional 🚀
-      </button>
+      <form onSubmit={guardarSeleccion} className="space-y-3 text-xs">
+        <div>
+          <label className="block font-bold text-slate-300 mb-1">1. Provincia de Costa Rica:</label>
+          <div className="grid grid-cols-4 sm:grid-cols-7 gap-1.5">
+            {DIRECTORIO_27_REGIONALES_MEP.map((p, idx) => (
+              <button
+                type="button"
+                key={p.provincia}
+                onClick={() => cambiarProvincia(idx)}
+                className={`py-1.5 px-2 rounded-lg font-bold border text-[11px] transition-all ${
+                  provIndex === idx
+                    ? 'bg-cyan-600 text-white border-cyan-400 shadow'
+                    : 'bg-slate-950 text-slate-300 border-slate-800 hover:border-slate-600'
+                }`}
+              >
+                {p.provincia}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <label className="block font-bold text-slate-300 mb-1">2. Dirección Regional de Educación (27 Oficiales):</label>
+          <select
+            value={regIndex}
+            onChange={(e) => cambiarRegional(Number(e.target.value))}
+            className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-white font-semibold"
+          >
+            {provActual.regionales.map((r, idx) => (
+              <option key={r.nombre} value={idx}>{r.nombre}</option>
+            ))}
+          </select>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label className="block font-bold text-slate-300 mb-1">3. Circuito Escolar:</label>
+            <select
+              value={circuitoSel}
+              onChange={(e) => setCircuitoSel(e.target.value)}
+              className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-white font-semibold"
+            >
+              {regActual.circuitos.map((c) => (
+                <option key={c} value={c}>Circuito Escolar {c}</option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label className="block font-bold text-slate-300 mb-1">4. Modalidad Educativa:</label>
+            <select
+              value={modalidadSel}
+              onChange={(e) => setModalidadSel(e.target.value)}
+              className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-white font-semibold"
+            >
+              <option>CTP Diurno (Colegio Técnico Profesional)</option>
+              <option>CTP Nocturno / Sección Técnica Nocturna</option>
+              <option>Colegio Académico Diurno / Liceo</option>
+              <option>Colegio Nocturno Académico</option>
+              <option>CINDEA / IPEC / CONED</option>
+              <option>Escuela Primaria (I y II Ciclos)</option>
+              <option>Colegio Científico / Humanístico / Bilingüe</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label className="block font-bold text-slate-300 mb-1">5. Centro Educativo (Escuela, Liceo, CTP, CINDEA):</label>
+          <select
+            value={institucionSel}
+            onChange={(e) => setInstitucionSel(e.target.value)}
+            className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-white font-semibold mb-2"
+          >
+            {regActual.instituciones.map((inst) => (
+              <option key={inst} value={inst}>{inst}</option>
+            ))}
+          </select>
+          <input
+            type="text"
+            value={busquedaInst}
+            onChange={(e) => {
+              setBusquedaInst(e.target.value);
+              if (e.target.value.trim()) setInstitucionSel(e.target.value);
+            }}
+            placeholder="O escribe el nombre de tu escuela, colegio o CTP específico..."
+            className="w-full bg-slate-950 border border-slate-800 rounded-xl p-2 text-xs text-cyan-300"
+          />
+        </div>
+
+        <button
+          type="submit"
+          className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold py-3 rounded-xl text-xs shadow-lg transition-all"
+        >
+          ✓ Aplicar Dirección Regional, Circuito e Institución
+        </button>
+      </form>
     </div>
   );
 }

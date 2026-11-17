@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
 
 export const CATALOGO_MATERIAS_MEP = [
+  {
+    id: 'diseno_desarrollo_digital',
+    nombre: 'Diseño y Desarrollo Digital',
+    categoria: 'Especialidades CTP',
+    icono: '🎨',
+    color: 'from-fuchsia-600 to-indigo-950',
+    niveles: '10°, 11° y 12° CTP',
+    items: 'Prototipado UI/UX, Producción Multimedia, Animación 2D/3D, Desarrollo Frontend Interactivo, Identidad Visual y Marketing Digital.',
+    ilustracion: '✨ UI/UX Figma + 🎬 Multimedia + 💻 Desarrollo Interactivo',
+    guiaDescargable: 'Programa y Manual Práctico de Diseño y Desarrollo Digital MEP'
+  },
   // ESPECIALIDADES TÉCNICAS CTP (SEPARADAS INDIVIDUALMENTE)
   {
     id: 'desarrollo_web',
