@@ -1,14 +1,14 @@
-﻿@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
+﻿:root {
   --argon-primary: #5e72e4;
   --argon-secondary: #825ee4;
   --argon-dark: #172b4d;
   --argon-success: #2dce89;
   --argon-warning: #fb6340;
   --argon-danger: #f5365c;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
