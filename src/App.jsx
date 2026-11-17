@@ -1,23 +1,25 @@
 ﻿import React, { useState } from 'react';
+import ExamSimulatorHub from './components/simulator/ExamSimulatorHub.jsx';
 import AnnouncementsBroadcastPanel from './components/institution/AnnouncementsBroadcastPanel.jsx';
 import { SchedulesModule, CafeteriaModule, PermissionsModule } from './components/institution/InstitutionOperationsSuite.jsx';
 
 const KPI_METRICS = [
-  { label: 'Horarios y Bloques', value: '42 Activos', delta: '10°, 11° y 12° Técnico', tone: 'text-indigo-600' },
-  { label: 'Servicio de Comedor', value: '524 Platos', delta: '98% Asistencia Becados', tone: 'text-emerald-600' },
-  { label: 'Permisos y Boletas', value: '100% Digital', delta: 'Control en Tiempo Real', tone: 'text-amber-600' },
-  { label: 'Motor Offline-First', value: 'Activo', delta: 'Sincronizado en GitHub', tone: 'text-emerald-600' }
+  { label: 'Simulacros Práctica Técnica', value: 'MEP · CTP · MOPT · U', delta: 'Motor Interactivo Activo', tone: 'text-indigo-600' },
+  { label: 'Horarios y Laboratorios', value: 'Bloques 40/80m', delta: '10°, 11° y 12° Técnico', tone: 'text-indigo-600' },
+  { label: 'Comedor Estudiantil', value: 'Control + Excel', delta: 'Exportación CSV UTF-8', tone: 'text-emerald-600' },
+  { label: 'Permisos y Avisos', value: '100% Offline-First', delta: 'Sincronizado con Lovable', tone: 'text-emerald-600' }
 ];
 
-const TABS = [
-  { id: 'avisos', label: '1. Avisos Oficiales' },
-  { id: 'horarios', label: '2. Horarios y Labs' },
-  { id: 'comedor', label: '3. Comedor Estudiantil' },
-  { id: 'permisos', label: '4. Permisos y Salidas' }
+const NAVIGATION_TABS = [
+  { id: 'simulacros', label: '🎯 Simulacros Práctica Técnica' },
+  { id: 'avisos', label: '📢 Avisos Oficiales' },
+  { id: 'horarios', label: '🗓️ Horarios y Labs' },
+  { id: 'comedor', label: '🍽️ Comedor (+Excel)' },
+  { id: 'permisos', label: '🪪 Permisos (+Excel)' }
 ];
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('avisos');
+  const [activeTab, setActiveTab] = useState('simulacros');
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f8f9fe]">
@@ -29,25 +31,30 @@ export default function App() {
                 PT
               </div>
               <div>
-                <h1 className="text-xl font-extrabold tracking-tight">
-                  Práctica Técnica CR · Suite Institucional Argon
-                </h1>
-                <p className="text-xs text-indigo-100">
-                  Avisos · Horarios · Comedor · Permisos · Edición PWA Offline-First 2026
+                <div className="flex items-center gap-2">
+                  <h1 className="text-xl font-extrabold tracking-tight">
+                    practicatecnica.com
+                  </h1>
+                  <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-400/20 text-emerald-100 border border-emerald-300/30">
+                    Base + Suite Institucional
+                  </span>
+                </div>
+                <p className="text-xs text-indigo-100 mt-0.5">
+                  Simulacros MEP · CTP · MOPT · Admisión U + Gestión de Avisos, Horarios, Comedor y Permisos
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-2 bg-white/15 p-1.5 rounded-xl backdrop-blur">
-              {TABS.map((tab) => (
+            <div className="flex flex-wrap items-center gap-1.5 bg-white/15 p-1.5 rounded-xl backdrop-blur">
+              {NAVIGATION_TABS.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-3.5 py-2 rounded-lg text-xs font-bold transition cursor-pointer ${
+                  className={'px-3 py-2 rounded-lg text-xs font-bold transition cursor-pointer ' + (
                     activeTab === tab.id
                       ? 'bg-white text-indigo-700 shadow-sm'
                       : 'text-white hover:bg-white/10'
-                  }`}
+                  )}
                 >
                   {tab.label}
                 </button>
@@ -61,10 +68,10 @@ export default function App() {
                 <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
                   {kpi.label}
                 </p>
-                <p className="text-2xl font-black text-slate-800 mt-1">
+                <p className="text-xl font-black text-slate-800 mt-1">
                   {kpi.value}
                 </p>
-                <p className={`text-xs font-semibold mt-2 ${kpi.tone}`}>
+                <p className={'text-xs font-semibold mt-2 ' + kpi.tone}>
                   {kpi.delta}
                 </p>
               </div>
@@ -74,6 +81,7 @@ export default function App() {
       </header>
 
       <main className="max-w-7xl w-full mx-auto px-4 sm:px-8 -mt-16 pb-16 flex-1">
+        {activeTab === 'simulacros' && <ExamSimulatorHub />}
         {activeTab === 'avisos' && <AnnouncementsBroadcastPanel />}
         {activeTab === 'horarios' && <SchedulesModule />}
         {activeTab === 'comedor' && <CafeteriaModule />}
@@ -81,7 +89,7 @@ export default function App() {
       </main>
 
       <footer className="py-6 text-center text-xs text-slate-400 border-t border-slate-200/60 bg-white">
-        Práctica Técnica CR © 2026 · Suite Institucional Argon en JavaScript (.jsx) · Cero Créditos Lovable
+        practicatecnica.com © 2026 · Plataforma Unificada en JavaScript (.jsx) sincronizada con GitHub y Lovable
       </footer>
     </div>
   );

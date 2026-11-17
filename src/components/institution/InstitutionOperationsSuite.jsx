@@ -1,5 +1,31 @@
 ﻿import React, { useState, useEffect } from 'react';
 
+function downloadExcelCSV(filenamePrefix, headers, rows) {
+  const today = new Date().toISOString().slice(0, 10);
+  const escapeCell = (val) => {
+    const str = String(val === null || val === undefined ? '' : val).replace(/"/g, '""');
+    return '"' + str + '"';
+  };
+
+  const csvLines = [
+    headers.map(escapeCell).join(','),
+    ...rows.map((row) => row.map(escapeCell).join(','))
+  ];
+
+  // Prefijo \uFEFF (UTF-8 BOM) para que Microsoft Excel reconozca tildes y ñ automáticamente
+  const csvContent = '\uFEFF' + csvLines.join('\r\n');
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement('a');
+  link.href = url;
+  link.setAttribute('download', filenamePrefix + '_' + today + '.csv');
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
+
 const INITIAL_SCHEDULES = [
   { id: 'sch-1', block: '07:00 - 08:20 (Bloque 1-2)', section: '12-1 Técnica', subject: 'Ciberseguridad y Redes', room: 'Lab 03', teacher: 'Ing. Titular', modality: 'Práctica Lab' },
   { id: 'sch-2', block: '08:35 - 09:55 (Bloque 3-4)', section: '11-2 Técnica', subject: 'Diseño de Software y Programación', room: 'Lab 01', teacher: 'Ing. Titular', modality: 'Proyecto STEAM' },
@@ -43,7 +69,7 @@ export function SchedulesModule() {
     e.preventDefault();
     if (!subject.trim()) return;
     const item = {
-      id: `sch-${Date.now()}`,
+      id: 'sch-' + Date.now(),
       block,
       section,
       subject: subject.trim(),
@@ -62,6 +88,12 @@ export function SchedulesModule() {
   const visibleSchedules = sectionFilter === 'Todas'
     ? schedules
     : schedules.filter((s) => s.section.includes(sectionFilter));
+
+  const handleExportSchedules = () => {
+    const headers = ['ID', 'Bloque Horario', 'Sección', 'Subárea / Asignatura', 'Aula / Laboratorio', 'Docente', 'Modalidad'];
+    const rows = visibleSchedules.map((s) => [s.id, s.block, s.section, s.subject, s.room, s.teacher, s.modality]);
+    downloadExcelCSV('Reporte_Horarios_Labs', headers, rows);
+  };
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -110,12 +142,24 @@ export function SchedulesModule() {
             <span className="text-xs font-bold uppercase tracking-wider text-indigo-600">Control de Laboratorios y Aulas</span>
             <h2 className="text-lg font-bold text-slate-800">Matriz de Horarios Activos ({visibleSchedules.length})</h2>
           </div>
-          <div className="flex gap-1.5 bg-slate-100 p-1 rounded-lg">
-            {['Todas', '10-', '11-', '12-'].map((f) => (
-              <button key={f} onClick={() => setSectionFilter(f)} className={`px-3 py-1.5 rounded-md text-xs font-semibold ${sectionFilter === f ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-600'}`}>
-                {f === 'Todas' ? 'Todas' : `Nivel ${f.replace('-', '°')}`}
-              </button>
-            ))}
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="flex gap-1.5 bg-slate-100 p-1 rounded-lg">
+              {['Todas', '10-', '11-', '12-'].map((f) => (
+                <button
+                  key={f}
+                  onClick={() => setSectionFilter(f)}
+                  className={'px-3 py-1.5 rounded-md text-xs font-semibold ' + (sectionFilter === f ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-600')}
+                >
+                  {f === 'Todas' ? 'Todas' : 'Nivel ' + f.replace('-', '°')}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={handleExportSchedules}
+              className="px-3.5 py-2 rounded-lg text-xs font-bold bg-emerald-600 text-white hover:bg-emerald-700 shadow-sm cursor-pointer"
+            >
+              Descargar Excel (CSV)
+            </button>
           </div>
         </div>
 
@@ -164,6 +208,22 @@ export function CafeteriaModule() {
     setMeals(meals.map((m) => (m.id === id ? { ...m, served: 0 } : m)));
   };
 
+  const handleExportCafeteria = () => {
+    const todayStr = new Date().toLocaleDateString('es-CR');
+    const headers = ['ID Turno', 'Turno de Servicio', 'Menú Oficial Servido', 'Capacidad Máxima', 'Platos Servidos', 'Porcentaje Ocupación', 'Estado', 'Fecha Corte'];
+    const rows = meals.map((m) => {
+      const pct = Math.min(100, Math.round((m.served / m.capacity) * 100)) + '%';
+      return [m.id, m.shift, m.menu, m.capacity, m.served, pct, m.status, todayStr];
+    });
+
+    const totalCap = meals.reduce((acc, m) => acc + m.capacity, 0);
+    const totalServed = meals.reduce((acc, m) => acc + m.served, 0);
+    const totalPct = Math.round((totalServed / (totalCap || 1)) * 100) + '%';
+    rows.push(['TOTAL', 'CONSOLIDADO DIARIO COMEDOR', 'Suma de todos los turnos del día', totalCap, totalServed, totalPct, 'Consolidado', todayStr]);
+
+    downloadExcelCSV('Reporte_Asistencia_Comedor', headers, rows);
+  };
+
   return (
     <div className="argon-card p-6">
       <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-6">
@@ -171,9 +231,17 @@ export function CafeteriaModule() {
           <span className="text-xs font-bold uppercase tracking-wider text-emerald-600">Nutrición y Bienestar Estudiantil</span>
           <h2 className="text-lg font-bold text-slate-800 mt-0.5">Gestión de Comedor, Menú del Día y Aforo por Turno</h2>
         </div>
-        <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
-          Registro de Asistencia en Tiempo Real
-        </span>
+        <div className="flex flex-wrap items-center gap-2.5">
+          <span className="px-3 py-1.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+            Registro de Asistencia en Tiempo Real
+          </span>
+          <button
+            onClick={handleExportCafeteria}
+            className="px-4 py-2 rounded-lg text-xs font-bold bg-emerald-600 text-white hover:bg-emerald-700 shadow-sm transition cursor-pointer"
+          >
+            Descargar Reporte Comedor (CSV / Excel)
+          </button>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -195,7 +263,7 @@ export function CafeteriaModule() {
                   <span>{percent}% de ocupación</span>
                 </div>
                 <div className="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden">
-                  <div className="h-full bg-emerald-500 transition-all" style={{ width: `${percent}%` }} />
+                  <div className="h-full bg-emerald-500 transition-all" style={{ width: percent + '%' }} />
                 </div>
 
                 <div className="flex items-center justify-between gap-2 mt-4">
@@ -243,7 +311,7 @@ export function PermissionsModule() {
     e.preventDefault();
     if (!person.trim() || !reason.trim()) return;
     const item = {
-      id: `perm-${Date.now()}`,
+      id: 'perm-' + Date.now(),
       person: person.trim(),
       type,
       time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
@@ -257,6 +325,13 @@ export function PermissionsModule() {
 
   const updateStatus = (id, newStatus) => {
     setPermissions(permissions.map((p) => (p.id === id ? { ...p, status: newStatus } : p)));
+  };
+
+  const handleExportPermissions = () => {
+    const todayStr = new Date().toLocaleDateString('es-CR');
+    const headers = ['ID Boleta', 'Estudiante o Funcionario', 'Tipo de Trámite', 'Hora de Registro', 'Motivo y Comprobante', 'Estado de Solicitud', 'Fecha Emisión'];
+    const rows = permissions.map((p) => [p.id, p.person, p.type, p.time, p.reason, p.status, todayStr]);
+    downloadExcelCSV('Bitacora_Boletas_Permisos', headers, rows);
   };
 
   return (
@@ -305,11 +380,17 @@ export function PermissionsModule() {
       </div>
 
       <div className="lg:col-span-7 argon-card p-6">
-        <div className="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4 mb-4">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-indigo-600">Bitácora Oficial</span>
             <h2 className="text-lg font-bold text-slate-800">Solicitudes y Boletas de Permiso ({permissions.length})</h2>
           </div>
+          <button
+            onClick={handleExportPermissions}
+            className="px-4 py-2 rounded-lg text-xs font-bold bg-emerald-600 text-white hover:bg-emerald-700 shadow-sm transition cursor-pointer"
+          >
+            Exportar Boletas a Excel (CSV)
+          </button>
         </div>
 
         <div className="space-y-3">
@@ -317,10 +398,10 @@ export function PermissionsModule() {
             <div key={p.id} className="p-4 rounded-xl border border-slate-100 bg-slate-50/70 flex flex-col gap-2">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
-                  <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold ${
+                  <span className={'px-2.5 py-0.5 rounded-full text-xs font-bold ' + (
                     p.status === 'Aprobado' ? 'bg-emerald-100 text-emerald-700' :
                     p.status === 'Rechazado' ? 'bg-red-100 text-red-700' : 'bg-amber-100 text-amber-700'
-                  }`}>
+                  )}>
                     {p.status}
                   </span>
                   <span className="text-xs font-bold text-indigo-600">{p.type}</span>
@@ -328,10 +409,10 @@ export function PermissionsModule() {
                 </div>
 
                 <div className="flex items-center gap-1.5">
-                  <button onClick={() => updateStatus(p.id, 'Aprobado')} className="px-2.5 py-1 rounded text-xs font-bold bg-emerald-50 text-emerald-700 hover:bg-emerald-100">
+                  <button onClick={() => updateStatus(p.id, 'Aprobado')} className="px-2.5 py-1 rounded text-xs font-bold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 cursor-pointer">
                     Aprobar
                   </button>
-                  <button onClick={() => updateStatus(p.id, 'Rechazado')} className="px-2.5 py-1 rounded text-xs font-bold bg-red-50 text-red-700 hover:bg-red-100">
+                  <button onClick={() => updateStatus(p.id, 'Rechazado')} className="px-2.5 py-1 rounded text-xs font-bold bg-red-50 text-red-700 hover:bg-red-100 cursor-pointer">
                     Denegar
                   </button>
                 </div>
