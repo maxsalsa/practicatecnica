@@ -1,3 +1,4 @@
+import InstallAppButton from "./components/InstallAppButton.jsx"
 import React, { useState } from "react"
 import AnalyticsDashboard from "./components/institution/AnalyticsDashboard"
 import AnnouncementsBroadcastPanel from "./components/institution/AnnouncementsBroadcastPanel"

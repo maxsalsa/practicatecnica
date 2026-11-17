@@ -1,45 +1,57 @@
-import { useEffect, useState } from "react";
-import { Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
-> };
+import React, { useState, useEffect } from "react"
+import { Download, CheckCircle2, Smartphone } from "lucide-react"
 
-export function InstallAppButton({ compact = false }) {
-  const [evt, setEvt] = useState(null);
-  const [installed, setInstalled] = useState(false);
-  const [help, setHelp] = useState(false);
-  const [ios, setIos] = useState(false);
+export default function InstallAppButton() {
+  const [deferredPrompt, setDeferredPrompt] = useState(null)
+  const [isInstalled, setIsInstalled] = useState(false)
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    setIos(/iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1));
-    const mode = window.matchMedia("(display-mode)");
-    const detect = () => setInstalled(mode.matches || (navigator & { standalone}).standalone === true);
-    detect();
-    mode.addEventListener('change', detect);
-    const on = (e) => { e.preventDefault(); setEvt(e); };
-    const done = () => { setInstalled(true); setEvt(null); };
-    window.addEventListener("beforeinstallprompt", on);
-    window.addEventListener("appinstalled", done);
-    return () => { mode.removeEventListener('change', detect); window.removeEventListener("beforeinstallprompt", on); window.removeEventListener("appinstalled", done); };
-  }, []);
+    const handleBeforeInstallPrompt = (e) => {
+      e.preventDefault()
+      setDeferredPrompt(e)
+      setVisible(true)
+    }
 
-  if (installed) return null;
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt)
 
-  const click = async () => {
-    if (evt) { try { await evt.prompt(); await evt.userChoice; } catch { setHelp(true); } finally { setEvt(null); } }
-    else setHelp(true);
-  };
+    // Comprobar si ya está instalada como PWA
+    if (window.matchMedia("(display-mode: standalone)").matches) {
+      setIsInstalled(true)
+    }
+
+    return () => {
+      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt)
+    }
+  }, [])
+
+  const handleInstallClick = async () => {
+    if (!deferredPrompt) {
+      alert("Para instalar en iOS (Safari): Presione el botón 'Compartir' y seleccione 'Agregar a Inicio'. En PC/Android, el navegador ya tiene la app lista.")
+      return
+    }
+
+    deferredPrompt.prompt()
+    const { outcome } = await deferredPrompt.userChoice
+    if (outcome === "accepted") {
+      setIsInstalled(true)
+      setVisible(false)
+    }
+    setDeferredPrompt(null)
+  }
+
+  if (isInstalled) return null
 
   return (
-    <div className={compact ? "relative" : "mt-6 text-center"}>
-      <Button onClick={click} size={compact ? 'sm' : 'lg'} variant={compact ? 'outline' : 'default'}><Download />{compact ? 'Instalar' : 'Instalar app'}</Button>
-      {help && (
-        <div role="status" className={compact ? "absolute right-0 top-full z-50 mt-2 w-60 rounded-md border border-border bg-card p-3 text-sm text-foreground shadow-card" : "mx-auto mt-3 max-w-md rounded-md border border-border bg-card p-4 text-sm text-muted-foreground"}>
-          {ios
-            ? "En iPhone o iPad «Agregar a pantalla de inicio»."
-            : "Abra el menú ⋮ del navegador y elija «Instalar app» o «Agregar a pantalla principal»."}
-          <Button variant="ghost" size="sm" onClick={()=>setHelp(false)}>Cerrar</Button>
-        </div>
-      )}
+    <div className="fixed bottom-6 right-6 z-50">
+      <button 
+        onClick={handleInstallClick}
+        className="flex items-center gap-2 px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold shadow-2xl transition-all transform hover:scale-105 cursor-pointer border border-emerald-400/30 backdrop-blur-md"
+      >
+        <Smartphone className="w-5 h-5 animate-pulse" />
+        <span>Instalar App PWA (1 Clic)</span>
+        <Download className="w-4 h-4 ml-1" />
+      </button>
     </div>
-  );
+  )
 }
