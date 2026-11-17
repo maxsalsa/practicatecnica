@@ -5,7 +5,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { logoExtension } from '@/lib/institutions';
 
 /** Dirección (o Max) cambia el logo o escudo de su propia institución. */
-export function LogoUploader({ inst, oldPath }: { inst: string; oldPath }) {
+export function LogoUploader({ inst, oldPath }) {
   const qc = useQueryClient();
   const [busy, setBusy] = useState(false);
   async function upload(file) {

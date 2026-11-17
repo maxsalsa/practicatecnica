@@ -45,7 +45,7 @@ export function levelFor(points) {
   return "Liga Bronce 🥉";
 }
 
-export function Progress({ empty = null }: { empty}) {
+export function Progress({ empty = null }) {
   const { user, ready } = useAccount();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
@@ -169,7 +169,7 @@ export function Progress({ empty = null }: { empty}) {
   );
 }
 
-function Box({ label, value }: { label: string; value }) {
+function Box({ label, value }) {
   return (
     <div className="rounded-2xl border bg-card p-5">
       <p className="text-sm text-muted-foreground">{label}</p>

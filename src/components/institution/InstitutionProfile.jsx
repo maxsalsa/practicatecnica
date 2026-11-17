@@ -15,7 +15,7 @@ const fields = [
 
 const empty = { regional_direction: '', circuit: '', director_name: '', phone: '', address: '', website: '', facebook: '', instagram: '' };
 
-export function InstitutionProfile({ institutionId, canEdit }: { institutionId: string; canEdit }) {
+export function InstitutionProfile({ institutionId, canEdit }) {
   const queries = useQueryClient();
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState(empty);

@@ -32,7 +32,7 @@ export function SevenAndHalf() {
   const draw = () => { const [c, ...rest] = deck; if (c === undefined) return; setHand([...hand, c]); setDeck(rest); };
   const stand = () => { let d = [...deck]; const bh = []; while (handTotal(bh) < 5.5 && d.length) { bh.push(d[0]!); d = d.slice(1); } setDeck(d); setBank(bh); if (sevenResult(total, handTotal(bh)) === 'gana') setWins(wins + 1); };
   const res = bank ? sevenResult(total, handTotal(bank)) : over ? 'pierde' : null;
-  const Cards = ({ h }: { h }) => <div className="mt-2 flex flex-wrap gap-2">{h.map((c, i) => <span key={i} className="flex h-20 w-14 flex-col items-center justify-center rounded-lg border-2 border-primary bg-background text-lg font-black">{cardName(c)}<small className="text-xs font-normal">{c >= 10 ? '½' : c}</small></span>)}</div>;
+  const Cards = ({ h }) => <div className="mt-2 flex flex-wrap gap-2">{h.map((c, i) => <span key={i} className="flex h-20 w-14 flex-col items-center justify-center rounded-lg border-2 border-primary bg-background text-lg font-black">{cardName(c)}<small className="text-xs font-normal">{c >= 10 ? '½' : c}</small></span>)}</div>;
   return <div>{rules('Baraja española sin 8, 9 ni 10. Las cartas 1 a 7 valen su número; sota, caballo y rey valen media. Acérquese a 7 y media sin pasarse. Sin apuestas ni dinero.')}
     <div className={box}><p className="font-bold">Su mano · {total}</p><Cards h={hand} />
       {bank && <><p className="mt-4 font-bold">Banca · {handTotal(bank)}</p><Cards h={bank} /></>}
@@ -45,7 +45,7 @@ const pick = () => ({ s: Math.floor(Math.random() * 4), r: Math.floor(Math.rando
 const roomIcon = ['📚', '🔬', '🍽️', '🏀']; const itemIcon = ['🔑', '🧮', '⚽', '🔬']; const personIcon = ['👩‍🏫', '🧹', '📖', '🧑‍🎓'];
 export function SchoolMystery() {
   const [secret, setSecret] = useState(pick); const [g, setG] = useState({ s: 0, r: 0, i: 0 }); const [log, setLog] = useState([]); const [won, setWon] = useState(false);
-  const Row = ({ label, list, icons, k }: { label: string; list: string[]; icons: string[]; k }) => <fieldset className="mt-3"><legend className="text-sm font-bold">{label}</legend><div className="mt-1 grid grid-cols-2 gap-2 sm:grid-cols-4">{list.map((x, i) => <Button key={x} variant={g[k] === i ? 'default' : 'outline'} className="h-auto whitespace-normal py-2" onClick={() => setG({ ...g, [k]: i })}>{icons[i]} {x}</Button>)}</div></fieldset>;
+  const Row = ({ label, list, icons, k }) => <fieldset className="mt-3"><legend className="text-sm font-bold">{label}</legend><div className="mt-1 grid grid-cols-2 gap-2 sm:grid-cols-4">{list.map((x, i) => <Button key={x} variant={g[k] === i ? 'default' : 'outline'} className="h-auto whitespace-normal py-2" onClick={() => setG({ ...g, [k]: i })}>{icons[i]} {x}</Button>)}</div></fieldset>;
   const ask = () => { const h = mysteryHint(secret, g); if (h === 3) setWon(true); setLog([`${SUSPECTS[g.s]} · ${ROOMS[g.r]} · ${ITEMS[g.i]} → ${h} de 3 aciertos`, ...log]); };
   return <div>{rules('Alguien tomó prestado un objeto del colegio y lo dejó en una habitación. Elija persona, lugar y objeto; la pista dice cuántos de los tres acertó. Resuélvalo en la menor cantidad de intentos.')}
     <div className={box}><Row label="¿Quién?" list={SUSPECTS} icons={personIcon} k="s" /><Row label="¿Dónde?" list={ROOMS} icons={roomIcon} k="r" /><Row label="¿Con qué objeto?" list={ITEMS} icons={itemIcon} k="i" />

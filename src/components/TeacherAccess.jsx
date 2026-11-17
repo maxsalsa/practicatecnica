@@ -6,7 +6,7 @@ import { useAccount } from './AccountProvider';
 import { Button } from './ui/button';
 import { readTeacherAccess } from '@/lib/teacher-access.functions';
 
-export function TeacherAccess({ children }: { children }) {
+export function TeacherAccess({ children }) {
   const { user, ready } = useAccount();
   const read = useServerFn(readTeacherAccess);
   const access = useQuery({ queryKey: ['teacher-access', user?.id], enabled && !!user, queryFn: () => read() });

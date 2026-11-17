@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
   onreading: ((event) => void) | null;
   onreadingerror: (() => void) | null;
 };
-export function PickupNfc({ onCode }: { onCode: (code) => void }) {
+export function PickupNfc({ onCode }) {
   const [supported, setSupported] = useState(false);
   const [reading, setReading] = useState(false);
   const [error, setError] = useState('');

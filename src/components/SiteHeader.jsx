@@ -46,7 +46,7 @@ export function SiteHeader() {
   const onKey = (e) => {
     if (e.key === "Escape") { e.preventDefault(); close(); return; }
     if (e.key !== "Tab" || !panelRef.current) return;
-    const f = Array.from(panelRef.current.querySelectorAll<HTMLElement>("a,button,select,summary")).filter((el) => el.offsetParent !== null);
+    const f = Array.from(panelRef.current.querySelectorAll("a,button,select,summary")).filter((el) => el.offsetParent !== null);
     if (!f.length) return;
     const first = f[0], last = f[f.length - 1];
     if (!first || !last) return;

@@ -15,7 +15,7 @@ const date = (d) => new Date(d).toLocaleDateString('es-CR', { timeZone: 'America
 
 
 /** Families see their linked students; direccion, administración/orientación and guides see the students they may follow. */
-export function FollowUpPanel({ institutionId, role, manager }: { institutionId: string; role: string; manager }) {
+export function FollowUpPanel({ institutionId, role, manager }) {
   const { user } = useAccount();
   const options = useQuery({
     queryKey: ['follow-options', institutionId, role, user?.id],
@@ -48,7 +48,7 @@ export function FollowUpPanel({ institutionId, role, manager }: { institutionId:
   </div>;
 }
 
-function FollowUp({ institutionId, studentId }: { institutionId: string; studentId }) {
+function FollowUp({ institutionId, studentId }) {
   const q = useQuery({
     queryKey: ['follow-up', institutionId, studentId],
     queryFn () => {

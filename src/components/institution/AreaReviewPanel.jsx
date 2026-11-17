@@ -11,7 +11,7 @@ import {GENERATED_FAMILIES} from '@/lib/generated-catalog';
 import {prepareAreaBank} from '@/lib/area-bank.functions';
 import {PublicationsPanel} from './PublicationsPanel';
 
-export function AreaReviewPanel({institutionId}:{institutionId:string}){
+export function AreaReviewPanel({institutionId}){
  const qc=useQueryClient(),[reasons,setReasons]=useState<Record<string,string>>({}),[busy,setBusy]=useState(null);
  const prepare=useServerFn(prepareLanguageReview);
  const prepareArea=useServerFn(prepareAreaBank);

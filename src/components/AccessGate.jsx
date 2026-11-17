@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { isFreePath } from '@/lib/free-access';
 import { GMAIL_ONLY_MESSAGE, isAllowedAccountEmail } from "@/lib/account-email";
 
-export function AccessGate({ children }: { children }) {
+export function AccessGate({ children }) {
   const { user } = useAccount();
   const path = useRouterState({ select: (s) => s.location.pathname });
   const [blocked, setBlocked] = useState(false);

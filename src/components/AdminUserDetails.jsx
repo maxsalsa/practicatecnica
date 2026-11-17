@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { supabase } from '@/integrations/supabase/client';
 
 
-export function AdminUserDetails({id,email,trace,reload}:{id:string;email:string;trace:Trace;reload:()=>Promise<void>}) {
+export function AdminUserDetails({id,email,trace,reload}) {
   const [kind,setKind] = useState('solicitud');
   const [subject,setSubject] = useState('');
   const [notes,setNotes] = useState('');

@@ -3,7 +3,7 @@ import {supabase} from '@/integrations/supabase/client';
 import {useAccount} from '@/components/AccountProvider';
 import {DAYS} from '@/lib/schedule';
 
-export function StudentSchedulePanel({institutionId,studentId,sectionName}:{institutionId:string;studentId;sectionName}){
+export function StudentSchedulePanel({institutionId,studentId,sectionName}){
  const {user}=useAccount();
  const owner=studentId??user?.id;
  const schedules=useQuery({queryKey:['student-schedules',institutionId,user?.id,owner],enabled:!!user&&!!owner,queryFn:async()=>{if(!owner)return [];const r=await supabase.rpc('student_visible_schedules',{_inst,_student:owner});if(r.error)throw new Error('No se pudo consultar su horario.');return r.data;}});

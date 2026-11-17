@@ -6,7 +6,7 @@ import { useMenuPreview } from './useMenuPreview';
 import { previewHidesPath } from '@/lib/preview-routes';
 import { ROLE_LABELS } from '@/lib/institutions';
 /** Hides pages outside the previewed role; real permissions are still enforced server-side. */
-export function PreviewRouteGate({ children }: { children }) {
+export function PreviewRouteGate({ children }) {
   const { user } = useAccount();
   const access = useNavigationAccess();
   const { role, setRole } = useMenuPreview(user?.id, access.administration);

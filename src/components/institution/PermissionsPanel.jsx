@@ -34,7 +34,7 @@ async function uploadProof(userId): Promise<string | null> {
   return path;
 }
 
-function Deadlines({ r }: { r }) {
+function Deadlines({ r }) {
   const kind = r.kind;
   const late = lateNotice(kind, r.starts_on, r.created_at, r.urgent);
   const just = r.status === 'rechazado' || r.status === 'cancelado' ? 'no_aplica' : justificationState({ kind, ends_on: r.ends_on, justified_at: r.justified_at, attachment_path: r.attachment_path });
@@ -44,7 +44,7 @@ function Deadlines({ r }: { r }) {
   </p>;
 }
 
-export function MemberPermissions({ institutionId, role }: { institutionId: string; role }) {
+export function MemberPermissions({ institutionId, role }) {
   const { user } = useAccount();
   const queries = useQueryClient();
   const kinds = role === 'estudiante' ? STUDENT_PERMISSION_KINDS : STAFF_PERMISSION_KINDS;
@@ -226,7 +226,7 @@ export function PermissionReview() {
   </section>;
 }
 
-export function RoleHistory({ institutionId }: { institutionId }) {
+export function RoleHistory({ institutionId }) {
   const list = useQuery({
     queryKey: ['role-history', institutionId],
     queryFn () => {

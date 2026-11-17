@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/button';
 import { PRACTICE_SIZE, EXAM_SIZE } from '@/lib/assessment-size';
 
 export const Route = createFileRoute("/explorar")({staticData:{sitemap:true},
-  validateSearch: (s) => ({ ...validCurriculumSearch(s), ...(typeof s['banco']==='string'&&decks.some(d=>d.id===s['banco'])?{banco:s['banco']}:{}) }),
+  validateSearch: (s) => ({ ...validCurriculumSearch(s), ...(typeof s['banco']==='string'&&decks.some(d=>d.id===s['banco'])?{banco:s['banco']}),
   head: () => ({
     meta { title: "Explorar la malla MEP | pracTICAtecnica.com" },
       { name: "description", content: "Elija modalidad, nivel y materia, secundaria, CTP, ingreso, admisión y MOPT, con prácticas, simulacros y libros." },

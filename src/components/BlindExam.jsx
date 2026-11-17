@@ -14,7 +14,7 @@ import { examHasRequiredSize } from '@/lib/assessment-size';
 const L = ["A", "B", "C", "D", "E"];
 
 
-function BlindExamBody({ deck, onExit }: { deck: Deck; onExit: () => void }) {
+function BlindExamBody({ deck, onExit }) {
   const { user } = useAccount();
   const record = useServerFn(recordAttempt);
   const saved = useRef(false);
@@ -224,7 +224,7 @@ function BlindExamBody({ deck, onExit }: { deck: Deck; onExit: () => void }) {
   );
 }
 
-function Stat({ label, value, tone }: { label: string; value number; tone"accent" | "destructive" | "primary" }) {
+function Stat({ label, value, tone }) {
   const c = tone === "accent" ? "text-accent" : tone === "destructive" ? "text-destructive" : tone === "primary" ? "text-primary" : "";
   return <div className="rounded-xl border bg-card p-2"><p className={`text-xl font-black ${c}`}>{value}</p><p className="text-[11px] text-muted-foreground">{label}</p></div>;
 }

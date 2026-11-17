@@ -31,7 +31,7 @@ function friendly(e) {
 const scopeText = (t) => [t.level && (bandLabels[t.level ?? t.level), t.vehicle && roadVehicles.find(v => v.id === t.vehicle)?.label, t.license_category && `Licencia ${t.license_category}`].filter(Boolean).join(' · ') || 'General';
 
 /** Price lists and priority discounts entered by each institution; nothing is charged automatically. */
-export function TariffsPanel({ institutionId, canEdit }: { institutionId: string; canEdit }) {
+export function TariffsPanel({ institutionId, canEdit }) {
   const cache = useQueryClient();
   const { tariffs, discounts } = useInstitutionPrices(institutionId);
   const [history, setHistory] = useState(false);
@@ -62,7 +62,7 @@ export function TariffsPanel({ institutionId, canEdit }: { institutionId: string
   async function deactivate(table) {
     if (!window.confirm('¿Desactivar? Quedará en el historial y podrá registrar uno nuevo.')) return;
     const { error } = await supabase.from(table).update({ active }).eq('id', id);
-    setMsg(error ? { ok, text: friendly(error, table === 'institution_tariffs' ? 'tarifa' : 'descuento') } : { ok, text: 'Desactivado.' });
+    setMsg(error ? { ok, text: friendly(error, table === 'institution_tariffs' ? 'tarifa' : 'descuento') });
     await refresh();
   }
 

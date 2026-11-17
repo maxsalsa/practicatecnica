@@ -8,7 +8,7 @@ import { z } from "zod";
 import { summarizeAICosts } from "@/lib/ai-cost-summary";
 
 const questionSchema = z.array(z.object({ q: z.string(), options: z.array(z.string()), answer: z.number().int(), why: z.string() }));
-export function MyAIHistory({ title = "Mi historial de IA" }: { title}) {
+export function MyAIHistory({ title = "Mi historial de IA" }) {
   const { user } = useAccount();
   const { data, isPending, error } = useQuery({
     queryKey: ["my-ai-history", user?.id], enabled: !!user,

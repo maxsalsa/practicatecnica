@@ -4,7 +4,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { canCorrectPersonalRole } from '@/lib/account-role-policy';
 
-export function AccountRoleCorrection({userId,onChanged}:{userId:string;onChanged:()=>void}){
+export function AccountRoleCorrection({userId,onChanged}){
   const [selected,setSelected]=useState('student');const [message,setMessage]=useState('');const [busy,setBusy]=useState(false);
   const rows=useQuery({queryKey:['account-roles-admin',userId],queryFn:async()=>{const r=await supabase.from('user_roles').select('role').eq('user_id',userId);if(r.error)throw new Error('No se pudo consultar el tipo de cuenta.');return r.data;}});
   const history=useQuery({queryKey:['account-role-history',userId],queryFn:async()=>{const r=await supabase.from('account_role_events').select('*').eq('user_id',userId).order('changed_at',{ascending:false}).limit(10);if(r.error)throw new Error('No se pudo consultar el historial.');return r.data;}});

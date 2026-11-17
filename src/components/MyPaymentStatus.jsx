@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 import { supabase } from '@/integrations/supabase/client';
 import { PLAN_LABELS } from '@/lib/pricing';
 
-export function MyPaymentStatus({ revision }: { revision }) {
+export function MyPaymentStatus({ revision }) {
   const { user } = useAccount();
   const query = useQuery({
     queryKey: ['my-payments', user?.id, revision], enabled: !!user,

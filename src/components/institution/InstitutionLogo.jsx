@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 
 /** Only current public-directory logos and authorized member logos receive signed links. */
-export function InstitutionLogo({ path, name, className = 'h-14 w-14' }: { path undefined; name: string; className}) {
+export function InstitutionLogo({ path, name, className = 'h-14 w-14' }) {
   const logo = useQuery({
     queryKey: ['institution-logo', path], enabled: !!path, staleTime: 4 * 60 * 1000,
     queryFn () => {

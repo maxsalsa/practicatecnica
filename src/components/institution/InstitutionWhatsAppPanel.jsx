@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 import { officialInstitutionPhone } from '@/lib/institution-resource-permissions';
 
-export function InstitutionWhatsAppPanel({ institutionId }: { institutionId }) {
+export function InstitutionWhatsAppPanel({ institutionId }) {
   const qc = useQueryClient(); const [label, setLabel] = useState(''); const [phone, setPhone] = useState(''); const [consent, setConsent] = useState(false); const [busy, setBusy] = useState(false);
   const contacts = useQuery({ queryKey: ['institution-whatsapp', institutionId], queryFn () => {
     const r = await supabase.from('institution_whatsapp_contacts').select('*').eq('institution_id', institutionId); if (r.error) throw r.error; return r.data;

@@ -1,28 +1,25 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import ExamSimulatorHub from './components/simulator/ExamSimulatorHub.jsx';
 import AnnouncementsBroadcastPanel from './components/institution/AnnouncementsBroadcastPanel.jsx';
 import { SchedulesModule, CafeteriaModule, PermissionsModule } from './components/institution/InstitutionOperationsSuite.jsx';
-import { SchedulePanel } from './components/institution/SchedulePanel.jsx';
-import { SchoolServicesPanel } from './components/institution/SchoolServicesPanel.jsx';
 
 const KPI_METRICS = [
   { label: 'Simulacros Práctica Técnica', value: 'MEP · CTP · MOPT · U', delta: 'Motor Interactivo Activo', tone: 'text-indigo-600' },
-  { label: 'Horarios y Laboratorios', value: 'Bloques + Matriz MEP', delta: 'Exportación Excel CSV', tone: 'text-indigo-600' },
-  { label: 'Comedor y Asistencia', value: 'Aforo + Servicios', delta: 'Descarga CSV UTF-8', tone: 'text-emerald-600' },
-  { label: 'Permisos y Avisos', value: '100% Offline-First', delta: 'Sincronizado con practicatecnica.com', tone: 'text-emerald-600' }
+  { label: 'Horarios y Laboratorios', value: 'Bloques 40/80m', delta: 'Exportación Excel CSV', tone: 'text-indigo-600' },
+  { label: 'Comedor y Asistencia', value: 'Aforo + Reportes', delta: 'Descarga CSV UTF-8', tone: 'text-emerald-600' },
+  { label: 'Identidad Soberana', value: 'practicatecnica.com', delta: '100% Marca Propia Activa', tone: 'text-emerald-600' }
 ];
 
 const NAVIGATION_TABS = [
   { id: 'simulacros', label: '1. Simulacros Práctica Técnica' },
   { id: 'avisos', label: '2. Avisos Oficiales' },
   { id: 'horarios', label: '3. Horarios (+Excel)' },
-  { id: 'comedor', label: '4. Comedor y Asistencia (+Excel)' },
+  { id: 'comedor', label: '4. Comedor (+Excel)' },
   { id: 'permisos', label: '5. Permisos (+Excel)' }
 ];
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('simulacros');
-  const [institutionId] = useState('ctp-mercedes-norte');
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f8f9fe]">
@@ -30,7 +27,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-white/15">
             <div className="flex items-center gap-3">
-              <div className="h-11 w-11 rounded-xl bg-white text-indigo-600 font-black flex items-center justify-center shadow-md text-lg">
+              <div className="h-11 w-11 rounded-xl bg-white text-indigo-700 font-black flex items-center justify-center shadow-md text-lg">
                 PT
               </div>
               <div>
@@ -39,11 +36,11 @@ export default function App() {
                     practicatecnica.com
                   </h1>
                   <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-400/20 text-emerald-100 border border-emerald-300/30">
-                    Suite Completa Activa
+                    Calidad Total Kaizen
                   </span>
                 </div>
                 <p className="text-xs text-indigo-100 mt-0.5">
-                  Simulacros MEP · CTP · MOPT · Admisión U + Gestión Institucional con Reportes Excel
+                  Plataforma Oficial de Simulacros MEP · CTP · MOPT · Admisión U y Gestión Institucional
                 </p>
               </div>
             </div>
@@ -83,32 +80,17 @@ export default function App() {
         </div>
       </header>
 
-      <main className="max-w-7xl w-full mx-auto px-4 sm:px-8 -mt-16 pb-16 flex-1 space-y-6">
+      <main className="max-w-7xl w-full mx-auto px-4 sm:px-8 -mt-16 pb-16 flex-1">
         {activeTab === 'simulacros' && <ExamSimulatorHub />}
         {activeTab === 'avisos' && <AnnouncementsBroadcastPanel />}
-        {activeTab === 'horarios' && (
-          <div className="space-y-6">
-            <SchedulesModule />
-            <div className="argon-card p-6">
-              <SchedulePanel institutionId={institutionId} kind="ctp" canEdit={true} />
-            </div>
-          </div>
-        )}
-        {activeTab === 'comedor' && (
-          <div className="space-y-6">
-            <CafeteriaModule />
-            <div className="argon-card p-6">
-              <SchoolServicesPanel institutionId={institutionId} mode="comedor" />
-            </div>
-          </div>
-        )}
+        {activeTab === 'horarios' && <SchedulesModule />}
+        {activeTab === 'comedor' && <CafeteriaModule />}
         {activeTab === 'permisos' && <PermissionsModule />}
       </main>
 
       <footer className="py-6 text-center text-xs text-slate-400 border-t border-slate-200/60 bg-white">
-        practicatecnica.com © 2026 · Sincronizado desde C:\pt26xd hacia GitHub y practicatecnica.com
+        practicatecnica.com © 2026 · Soberanía Tecnológica y Marca Propia · BDS Devs
       </footer>
     </div>
   );
 }
-

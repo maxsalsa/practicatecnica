@@ -5,7 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 const KINDS = { carne: "Carné estudiantil", libro: "Libro de comunicación" };
 
 
-export function IdDocumentUpload({ userId }: { userId }) {
+export function IdDocumentUpload({ userId }) {
   const [kind, setKind] = useState("carne");
   const [docs, setDocs] = useState([]);
   const [busy, setBusy] = useState(false);

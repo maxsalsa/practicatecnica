@@ -11,7 +11,7 @@ import {Dialog,DialogContent,DialogTitle,DialogDescription} from '@/components/u
 
 const EXAMPLE = '7-1 | Matemática | Ana Mora | 5\n7-1 | Español | Luis Rojas | 5\n7-2 | Matemática | Ana Mora | 5\n7-2 | Español | Luis Rojas | 5';
 
-export function SchedulePanel({ institutionId, kind, canEdit }: { institutionId: string; kind: InstitutionKind; canEdit }) {
+export function SchedulePanel({ institutionId, kind, canEdit }) {
   const qc = useQueryClient();
   const [periods, setPeriods] = useState(PERIODS_BY_KIND[kind] ?? 8);
   const [maxDaily, setMaxDaily] = useState(PERIODS_BY_KIND[kind] ?? 8);
@@ -50,7 +50,7 @@ export function SchedulePanel({ institutionId, kind, canEdit }: { institutionId:
   };
 
   const show = (o) => { setOptions([o]); setPick(0);setSavedId(id); setGroup(Object.keys(o.grid)[0] ?? ''); };
-  const apply=(clear=false)=>{if(!editing||!current)return;try{const next=editScheduleCell(current,group,editing.day,editing.period,clear?null:{subject:draft.subject.trim(),teacher:draft.teacher.trim(),...(draft.room.trim()?{room:draft.room.trim()}:{}),...(draft.startTime?{startTime:draft.startTime}:{}),...(draft.endTime?{endTime:draft.endTime}:{})});setOptions(all=>all.map((o,i)=>i===pick?next));setEditing(null);toast.success('Cambio preparado. Guarde los cambios para conservarlo.');}catch(error){toast.error(error instanceof Error?error.message:'No se pudo editar.');}};
+  const apply=(clear=false)=>{if(!editing||!current)return;try{const next=editScheduleCell(current,group,editing.day,editing.period,clear?null:{subject:draft.subject.trim(),teacher:draft.teacher.trim(),...(draft.room.trim()?{room:draft.room.trim()}:{}),...(draft.startTime?{startTime:draft.startTime}:{}),...(draft.endTime?{endTime:draft.endTime});setOptions(all=>all.map((o,i)=>i===pick?next));setEditing(null);toast.success('Cambio preparado. Guarde los cambios para conservarlo.');}catch(error){toast.error(error instanceof Error?error.message:'No se pudo editar.');}};
 
   return (
     <div className="space-y-4">

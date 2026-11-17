@@ -23,7 +23,7 @@ function loadPaypal(clientId) {
   return sdkReady;
 }
 
-export function PaypalButtons({ plan, institutionId, onPaid }: { plan: AnnualPlan; institutionId; onPaid: () => void }) {
+export function PaypalButtons({ plan, institutionId, onPaid }) {
   const ref = useRef<HTMLDivElement>(null);
   const [ready, setReady] = useState(false);
   const [loadError, setLoadError] = useState(false);

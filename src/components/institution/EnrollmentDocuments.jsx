@@ -4,7 +4,7 @@ import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 
 const documentSchema = z.array(z.object({ path: z.string(), description: z.string(), sha256: z.string(), size: z.number(), type: z.string(), purpose: z.string().optional(), place: z.string().optional(), imageConsent: z.boolean().optional() }));
-export function EnrollmentDocuments({ documents }: { documents }) {
+export function EnrollmentDocuments({ documents }) {
   const parsed = documentSchema.safeParse(documents);
   if (!parsed.success || parsed.data.length === 0) return null;
   async function open(path) {

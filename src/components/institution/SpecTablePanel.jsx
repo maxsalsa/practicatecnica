@@ -6,7 +6,7 @@ import { SPEC_LEVELS, SPEC_LEVEL_LABELS, buildSpecTable } from '@/lib/spec-table
 const blank = (): SpecRow => ({ indicator: '', lessons: 1, split: { conocimiento: 1, aplicacion: 1, razonamiento: 1 } });
 const input = 'w-full rounded-md border border-border bg-background p-2';
 
-export function SpecTablePanel({ name, logoPath }: { name: string; logoPath }) {
+export function SpecTablePanel({ name, logoPath }) {
   const [subject, setSubject] = useState('');
   const [level, setLevel] = useState('');
   const [teacher, setTeacher] = useState('');

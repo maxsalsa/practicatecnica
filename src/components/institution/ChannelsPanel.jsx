@@ -29,7 +29,7 @@ export function useChannelList(institutionId) {
 
 export const GUARDIAN_CONSENT_VERSION = 'familia-2026-11';
 
-export function ChannelsPanel({ institutionId, role }: { institutionId: string; role}) {
+export function ChannelsPanel({ institutionId, role }) {
   const links = useQuery({
     queryKey: ['guardian-links', institutionId], enabled === 'encargado',
     queryFn () => { const { data, error } = await supabase.rpc('my_guardian_links', { _inst }); if (error) throw new Error('No se pudo cargar su vínculo familiar.'); return data; },
@@ -38,7 +38,7 @@ export function ChannelsPanel({ institutionId, role }: { institutionId: string; 
   return <ChannelsList institutionId={institutionId} />;
 }
 
-function GuardianConsent({ institutionId, students }: { institutionId: string; students }) {
+function GuardianConsent({ institutionId, students }) {
   const queries = useQueryClient();
   const [ok, setOk] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -64,7 +64,7 @@ function GuardianConsent({ institutionId, students }: { institutionId: string; s
   </section>;
 }
 
-function ChannelsList({ institutionId }: { institutionId }) {
+function ChannelsList({ institutionId }) {
   const list = useChannelList(institutionId);
   const queries = useQueryClient();
   const [selected, setSelected] = useState(null);

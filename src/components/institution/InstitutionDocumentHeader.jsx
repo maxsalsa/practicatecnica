@@ -1,8 +1,6 @@
 import { InstitutionLogo } from './InstitutionLogo';
 
-export function InstitutionDocumentHeader({ name, logoPath, title, date }: {
-  name: string; logoPath; title: string; date;
-}) {
+export function InstitutionDocumentHeader({ name, logoPath, title, date }) {
   return <header className="flex items-center gap-4 border-b-2 border-primary pb-3">
     <InstitutionLogo path={logoPath} name={name} className="h-16 w-16" />
     <div className="min-w-0 flex-1">

@@ -2,7 +2,7 @@ import { Car, Bike, Code, ShieldCheck, Users, FlaskConical, Trophy, Palette, Gra
 import { areaResults } from '@/lib/skill-areas';
 
 const icons = { car, bike, code, shield, users, flask, trophy, palette, graduation, atom, brain };
-export function SkillProgress({ attempts }: { attempts }) {
+export function SkillProgress({ attempts }) {
  return <section className="mt-6">
   <h3 className="text-lg font-bold">Resultados verificados por destreza</h3>
   <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

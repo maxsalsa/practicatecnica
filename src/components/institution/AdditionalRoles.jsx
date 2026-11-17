@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { supabase } from '@/integrations/supabase/client';
 const labels={ministro:'Ministro',asesor_especialidad:'Asesor de asignatura',director_general:'Director general'};
 
-export function AdditionalRoles({institutionId,canAssign=false}:{institutionId:string;canAssign}){
+export function AdditionalRoles({institutionId,canAssign=false}){
  const cache=useQueryClient();const [email,setEmail]=useState('');const [role,setRole]=useState('ministro');const [specialty,setSpecialty]=useState('');const [reports,setReports]=useState(false);const [busy,setBusy]=useState(false);const [message,setMessage]=useState('');
  const q=useQuery({queryKey:['additional-roles',institutionId],queryFn:async()=>{const r=await supabase.from('institution_additional_roles').select('*').eq('institution_id',institutionId);if(r.error)throw r.error;return r.data;}});
  const [report,setReport]=useState('');

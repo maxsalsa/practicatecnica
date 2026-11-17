@@ -8,7 +8,7 @@ const ES, string> = { active: 'activa', inactive: 'inactiva', gift: 'cortesía',
 const es = (v) => (v ? ES[v] ?? v);
 const str = (e) => { for (const x of k) if (e[x] != null) return String(e[x]); return null; };
 /** Reads existing append-only histories under RLS; never writes or invents events. */
-export function AuditLog({ institutionId }: { institutionId }) {
+export function AuditLog({ institutionId }) {
   const [kind, setKind] = useState('todos');
   const log = useQuery({
     queryKey: ['audit-log', institutionId],

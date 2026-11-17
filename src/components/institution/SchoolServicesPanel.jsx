@@ -11,7 +11,7 @@ import { useAccount } from '@/components/AccountProvider';
 
 const field = 'w-full rounded-md border border-input bg-background p-2 text-foreground';
 
-export function SchoolServicesPanel({ institutionId, mode }: Props) {
+export function SchoolServicesPanel({ institutionId, mode }) {
   const { user } = useAccount();
   const action = useServerFn(schoolServiceAction);
   const [message, setMessage] = useState(''); const [busy, setBusy] = useState(false);

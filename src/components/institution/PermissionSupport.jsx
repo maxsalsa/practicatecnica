@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { attachmentExtension } from '@/lib/institutions';
 import { stripImageMetadata } from '@/lib/image-sanitize';
 
-export function PermissionSupport({requestId, reviewer, pending}: {requestId:string; reviewer:boolean; pending:boolean}) {
+export function PermissionSupport({requestId, reviewer, pending}) {
   const {user}=useAccount(); const cache=useQueryClient();
   const [note,setNote]=useState(''); const [busy,setBusy]=useState(false); const [message,setMessage]=useState('');
   const rows=useQuery({queryKey:['permission-support',requestId],queryFn:async()=>{

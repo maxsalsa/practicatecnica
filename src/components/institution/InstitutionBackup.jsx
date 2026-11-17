@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { supabase } from '@/integrations/supabase/client';
 import { backupDocument, downloadBackup } from '@/lib/portable-backup';
 
-export function InstitutionBackup({institutionId}:{institutionId:string}) {
+export function InstitutionBackup({institutionId}) {
  const [content,setContent]=useState(''); const [busy,setBusy]=useState(false); const [error,setError]=useState('');
  return <section className="space-y-3 border-t border-border py-5"><h2 className="text-xl font-bold">Respaldo para migrar</h2>
  <p className="text-sm text-muted-foreground">Usuarios del centro, boletas de notas emitidas y permisos. Sin contraseñas, archivos médicos ni detalles clínicos. Compatibilidad SEA/PIAD no verificada.</p>

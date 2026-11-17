@@ -4,7 +4,7 @@ import { RUBRIC_DESCRIPTORS, RUBRIC_LEVELS } from "@/lib/teaching-rubric";
 
 // Planeamiento automático para cualquier asignatura y nivel
 // esperados del programa oficial MEP (uno por línea) y se redactan indicadores, mediación Bloom y evaluación.
-export function AutoPlan({ subject, level }: { subject: string; level }) {
+export function AutoPlan({ subject, level }) {
   const [text, setText] = useState("");
   const items = text.split("\n").map((s) => s.trim()).filter((s) => s.length > 3).slice(0, 30);
   return (

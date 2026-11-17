@@ -35,11 +35,6 @@ function QuizBody({
   onExit,
   onMore,
   lang = "es",
-}: {
-  deck: Deck;
-  lang"es" | "en";
-  onExit: () => void;
-  onMore() => Promise<void> | void;
 }) {
   const en = lang === "en";
   const { user } = useAccount();

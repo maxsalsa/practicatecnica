@@ -131,7 +131,7 @@ function Libros() {
     </main>
   );
 }
-function Block({ t, items }: { t: string; items }) {
+function Block({ t, items }) {
   return (<div className="mt-3"><h4 className="text-sm font-bold">{t}</h4><ul className="ml-5 list-disc text-sm text-muted-foreground">{items.map((x) => <li key={x}>{x}</li>)}</ul></div>);
 }
 

@@ -11,7 +11,7 @@ import { useInstitutionPrices } from './TariffsPanel';
 import { InstitutionDocumentHeader } from './InstitutionDocumentHeader';
 
 const contactSchema = z.object({ name: z.string(), email: z.string(), phone: z.string(), address: z.string() });
-function FamilyContact({ value }: { value }) {
+function FamilyContact({ value }) {
   const result = contactSchema.safeParse(value);
   if (!result.success) return null;
   const c = result.data;
@@ -19,7 +19,7 @@ function FamilyContact({ value }: { value }) {
 }
 
 /** Revisión de matrículas digitales hechas por familias. Solo dirección/administración/Max. */
-export function EnrollmentReview({ inst, name, logoPath }: { inst: string; name: string; logoPath }) {
+export function EnrollmentReview({ inst, name, logoPath }) {
   const prices = useInstitutionPrices(inst);
   const pricing = useEnrollmentPricing(inst);
   const q = useQuery({

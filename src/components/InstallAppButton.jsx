@@ -3,7 +3,7 @@ import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 > };
 
-export function InstallAppButton({ compact = false }: { compact}) {
+export function InstallAppButton({ compact = false }) {
   const [evt, setEvt] = useState(null);
   const [installed, setInstalled] = useState(false);
   const [help, setHelp] = useState(false);

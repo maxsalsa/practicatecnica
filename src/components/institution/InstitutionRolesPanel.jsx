@@ -4,7 +4,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { ROLE_LABELS } from '@/lib/institutions';
 
-export function InstitutionRolesPanel({ institutionId }: { institutionId }) {
+export function InstitutionRolesPanel({ institutionId }) {
   const cache = useQueryClient();
   const [email, setEmail] = useState('');
   const [role, setRole] = useState('docente');

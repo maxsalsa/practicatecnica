@@ -7,7 +7,7 @@ import { parseEnrollmentCsv } from '@/lib/enrollment';
 const KIND = { cedula: 'Cédula', dimex: 'DIMEX', otro: 'Identificación' };
 
 /** Matrícula masiva CSV; cada fila se registra con la misma validación del alta individual. */
-export function CsvEnrollment({ institution, onDone }: { institution: string; onDone: () => void }) {
+export function CsvEnrollment({ institution, onDone }) {
   const register = useServerFn(registerStudent);
   const [rows, setRows] = useState([]);
   const [errors, setErrors] = useState([]);

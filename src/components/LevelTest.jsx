@@ -12,7 +12,7 @@ export function levelItems(level): MC[] {
   return [...en.grammar, ...en.listen].filter((q) => q.level === level);
 }
 
-export function LevelTest({ level }: { level: "B2" | "C1" }) {
+export function LevelTest({ level }) {
   const [started, setStarted] = useState(false);
   const items = useMemo(() => (started ? shuffle(levelItems(level)) : []), [started, level]);
   const [i, setI] = useState(0);

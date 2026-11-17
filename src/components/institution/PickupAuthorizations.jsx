@@ -6,7 +6,7 @@ import { pickupIsAuthorized } from '@/lib/enrollment-document';
 import { Link } from '@tanstack/react-router';
 import { PickupQr } from './PickupQr';
 
-export function PickupAuthorizations({ requestId, enrollmentStatus, reviewer = false }: { requestId: string; enrollmentStatus: string; reviewer}) {
+export function PickupAuthorizations({ requestId, enrollmentStatus, reviewer = false }) {
   const query = useQuery({ queryKey: ['pickup-authorizations', requestId], queryFn () => {
     const { data, error } = await supabase.from('student_pickup_authorizations').select('id,name,identification,relation,status,note,reviewed_at').eq('request_id', requestId).order('created_at');
     if (error) throw error;

@@ -12,7 +12,7 @@ const RELATIONS = [['madre', 'Madre'], ['padre', 'Padre'], ['encargado', 'Encarg
 const friendly = (m) => (/Gmail|rol|estudiante|guía|personal|Solo|existe/.test(m) ? m : 'No se pudo guardar el cambio.');
 
 /** Sections with a guide teacher, their students and linked families. Managers edit everything; guides link families of their own students. */
-export function SectionsPanel({ institutionId, manager }: { institutionId: string; manager }) {
+export function SectionsPanel({ institutionId, manager }) {
   const { user } = useAccount();
   const queries = useQueryClient();
   const people = useQuery({

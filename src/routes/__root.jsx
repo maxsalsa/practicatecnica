@@ -110,7 +110,7 @@ export const Route = createRootRouteWithContext()({staticData:{sitemap:false},
   errorComponent,
 });
 
-function RootShell({ children }: { children }) {
+function RootShell({ children }) {
   return (
     <html lang="es">
       <head>

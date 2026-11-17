@@ -9,7 +9,7 @@ const dayTitle = (k) => { const t = new Date(`${k}T12:00:00Z`).toLocaleDateStrin
 const hour = (d) => new Date(d).toLocaleTimeString('es-CR', { timeZone: 'America/Costa_Rica', hour: 'numeric', minute: '2-digit' });
 
 /** Upcoming dated notices (meetings, councils, activities); reviewers also see approved absences. */
-export function AgendaPanel({ institutionId, institutionName, reviewer }: { institutionId: string; institutionName: string; reviewer }) {
+export function AgendaPanel({ institutionId, institutionName, reviewer }) {
   const events = useQuery({
     queryKey: ['agenda', institutionId],
     queryFn () => {

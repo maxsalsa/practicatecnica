@@ -10,7 +10,7 @@ import {downloadInstitutionDocument} from '@/lib/institution-document.functions'
 const TYPES, string> = { 'application/pdf': 'pdf', 'image/png': 'png', 'image/jpeg': 'jpg', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document': 'docx' };
 
 /** Documentos de la institución (políticas, reglamentos). Dirección sube y borra; miembros leen. */
-export function DocumentsPanel({ inst, canManage, name, logoPath }: { inst: string; canManage: boolean; name: string; logoPath }) {
+export function DocumentsPanel({ inst, canManage, name, logoPath }) {
   const download=useServerFn(downloadInstitutionDocument);
   const [title, setTitle] = useState('');
   const [file, setFile] = useState(null);

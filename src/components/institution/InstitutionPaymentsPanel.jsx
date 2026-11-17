@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import { CreditCard } from 'lucide-react';
 import { Link } from '@tanstack/react-router';
 
-export function InstitutionPaymentsPanel({ name, paidUntil }: { name: string; paidUntil }) {
+export function InstitutionPaymentsPanel({ name, paidUntil }) {
   const active = paidUntil !== null && Date.parse(paidUntil) > Date.now();
   return <section className="space-y-5 border-t border-border py-6">
     <h2 className="text-2xl font-black">Pagos · {name}</h2>

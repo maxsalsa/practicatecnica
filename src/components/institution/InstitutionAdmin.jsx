@@ -8,7 +8,7 @@ import { INSTITUTION_KIND_LABELS, ROLE_LABELS, logoExtension } from '@/lib/insti
 
 const field = 'mt-1 min-w-0 w-full max-w-full rounded-xl border border-border bg-background px-3 py-2';
 
-export function InstitutionAdmin({ selectedId, onSelect }: { selectedId null; onSelect: (id) => void }) {
+export function InstitutionAdmin({ selectedId, onSelect }) {
   const queries = useQueryClient();
   const list = useQuery({
     queryKey: ['admin-institutions'],

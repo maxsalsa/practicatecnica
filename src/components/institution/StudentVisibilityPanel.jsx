@@ -5,7 +5,7 @@ import {Button} from '@/components/ui/button';
 import {toast} from 'sonner';
 import {studentAreaAllowed} from '@/lib/area-review';
 
-export function StudentVisibilityPanel({institutionId}:{institutionId:string}){
+export function StudentVisibilityPanel({institutionId}){
  const qc=useQueryClient();
  const [student,setStudent]=useState('');
  const [areas,setAreas]=useState([]),[topics,setTopics]=useState([]),[sections,setSections]=useState([]);

@@ -6,7 +6,7 @@ import { schoolSubjects, schoolLevels } from "@/lib/school-practice";
 import { learningInput } from "@/lib/learning-input";
 import { skillAreas } from '@/lib/skill-areas';
 import { RUBRIC_LEVELS, RUBRIC_DESCRIPTORS } from '@/lib/teaching-rubric';
-export function LearningRecords({ studentId, userId }: { studentId: string; userId }) {
+export function LearningRecords({ studentId, userId }) {
   const cache = useQueryClient();
   const [subject, setSubject] = useState("matematica");
   const [level, setLevel] = useState(schoolLevels[0] ?? "6.º primaria");

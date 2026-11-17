@@ -9,7 +9,7 @@ import { AUDIENCE_LABELS, KIND_LABELS, canPublish } from '@/lib/institutions';
 const field = 'mt-1 w-full rounded-xl border border-border bg-background px-3 py-2';
 const fmt = (d) => new Date(d).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica', dateStyle: 'medium', timeStyle: 'short' });
 
-export function AnnouncementsPanel({ institutionId, role }: { institutionId: string; role 'admin' }) {
+export function AnnouncementsPanel({ institutionId, role }) {
   const { user } = useAccount();
   const queries = useQueryClient();
   const publisher = canPublish(role);

@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { stripImageMetadata } from '@/lib/image-sanitize';
 import { RECORD_LINK_SECONDS, validateRecordFile } from '@/lib/student-record-policy';
 
-export function StudentRecordsPanel({ institutionId }: { institutionId }) {
+export function StudentRecordsPanel({ institutionId }) {
   const cache = useQueryClient();
   const [picked, setPicked] = useState('');
   const [title, setTitle] = useState('');

@@ -4,7 +4,7 @@ import type { TemplateEntry } from './registry'
 
 
 
-const Email = ({ inviter }: Props) => (
+const Email = ({ inviter }) => (
   <Html lang="es" dir="ltr">
     <Head />
     <Preview>Le invitaron a practicar en pracTICAtecnica.com</Preview>

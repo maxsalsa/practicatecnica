@@ -1,7 +1,7 @@
 import { Children, isValidElement } from 'react';
 import { Tabs, TabsContent, TabsList } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
-export function PreviewTabs({ allowed, children, value, onValueChange }: { allowed null; children: ReactNode; value: string; onValueChange: (value) => void }) {
+export function PreviewTabs({ allowed, children, value, onValueChange }) {
   const filter = (nodes): ReactNode => Children.map(nodes, child => {
     if (!isValidElement(child)) return child;
     const el = child{ value; children}>;

@@ -67,7 +67,7 @@ function useMusicBest() {
   return { user, best, refresh };
 }
 
-function Keyboard({ highlight = [], onPlay }: { highlight; onPlay: (midi) => void }) {
+function Keyboard({ highlight = [], onPlay }) {
   const notes = Array.from({ length: 20 }, (_, i) => 57 + i);
   const whites = notes.filter(n => !(SOLFEGE[n % 12] ?? '').includes('♯'));
   const width = 100 / whites.length;
@@ -90,7 +90,7 @@ function Keyboard({ highlight = [], onPlay }: { highlight; onPlay: (midi) => voi
   );
 }
 
-function Staff({ midi }: { midi }) {
+function Staff({ midi }) {
   const pos = STAFF_NOTES.find(s => s.midi === midi)?.pos ?? 0;
   const y = 90 - pos * 5;
   return (
@@ -104,7 +104,7 @@ function Staff({ midi }: { midi }) {
   );
 }
 
-function Round({ mode, level, synth, onFinish }: { mode: MusicMode; level: MusicLevel; synth useSynth>; onFinish: (correct) => void }) {
+function Round({ mode, level, synth, onFinish }) {
   const [seed, setSeed] = useState(newSeed);
   const [round, setRound] = useState(() => buildRound(mode, level, seed));
   const [n, setN] = useState(0);
@@ -142,7 +142,7 @@ const SING_TARGETS, number[]> = { inicial: [60, 62, 64, 65, 67], intermedio: [60
 const SING_COUNT = 5;
 
 /** Singing practice device; audio is never recorded or sent. */
-function SingLab({ level, synth, onFinish }: { level: MusicLevel; synth useSynth>; onFinish: (correct) => void }) {
+function SingLab({ level, synth, onFinish }) {
   const [targets, setTargets] = useState(() => Array.from({ length }, () => { const l = SING_TARGETS[level]; return l[Math.floor(Math.random() * l.length)] ?? 60; }));
   const [n, setN] = useState(0); const [hits, setHits] = useState(0);
   const [heard, setHeard] = useState(null);

@@ -26,7 +26,7 @@ malla.forEach((m) => m.niveles.forEach((n) => n.materias.forEach((x) => x.decks.
 const band = (p) => (p >= 80 ? ["Dominado", "bg-accent"] : p >= 50 ? ["En proceso", "bg-primary"] : ["Reforzamiento", "bg-destructive"]);
 const shuffle = <T,>(a) => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j]!, b[i]!]; } return b; };
 
-function Flash({ onExit, deck }: { onExit: () => void; deck }) {
+function Flash({ onExit, deck }) {
   const pool = useMemo(() => shuffle(deck.questions).slice(0, 40), [deck]);
   const [i, setI] = useState(0); const [ok, setOk] = useState(0); const [t, setT] = useState(60); const [streak, setStreak] = useState(0); const [best, setBest] = useState(0); const [flash, setFlash] = useState("");
   useEffect(() => { if (t <= 0) return; const id = setTimeout(() => setT(t - 1), 1000); return () => clearTimeout(id); }, [t]);

@@ -55,7 +55,7 @@ export function RoadProgress(){
 function useCircuitTariffs(userId){
  return useQuery({queryKey:['circuit-tariffs',userId],enabled:!!userId,staleTime:60_000,queryFn:async()=>{const {data,error}=await supabase.from('institution_tariffs').select('id,institution_id,service,label,level,vehicle,license_category,amount,active').eq('service','circuito_vial').eq('active',true);if(error)throw error;return (data??[]) as (Tariff&{institution_id:string})[];}});
 }
-function CircuitPrice({userId,band,vehicle}:{userId:string|undefined;band:DrivingBand;vehicle:Vehicle}){
+function CircuitPrice({userId,band,vehicle}){
  const q=useCircuitTariffs(userId);const [license,setLicense]=useState('');
  const rows=q.data??[];if(!rows.length)return null;
  const licenses=[...new Set(rows.filter(t=>t.license_category&&(!t.vehicle||t.vehicle===vehicle)&&(!t.level||t.level===band)).map(t=>t.license_category))].sort();

@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Button } from "./ui/button";
 import { schoolSubjects, schoolLevels, schoolDeck } from "@/lib/school-practice";
 
-export function SchoolPractice({ onStart }: { onStart: (deck) => void }) {
+export function SchoolPractice({ onStart }) {
   const [level, setLevel] = useState(schoolLevels[0] ?? "6.º primaria");
   const [lang, setLang] = useState("es");
   return (

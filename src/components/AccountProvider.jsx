@@ -8,7 +8,7 @@ const AccountContext = createContext<{ user null; ready }>({
   ready,
 });
 export const useAccount = () => useContext(AccountContext);
-export function AccountProvider({ children }: { children }) {
+export function AccountProvider({ children }) {
   const [user, setUser] = useState(null);
   const [ready, setReady] = useState(false);
   const router = useRouter();

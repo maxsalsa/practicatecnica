@@ -6,7 +6,7 @@ import { InstitutionDocumentHeader, InstitutionDocumentFooter } from './Institut
 import { tokenRgb } from './pdf-color';
 
 
-export function SignedDocumentsPanel({ institutionId, name, logoPath }: { institutionId: string; name: string; logoPath }) {
+export function SignedDocumentsPanel({ institutionId, name, logoPath }) {
   const cache = useQueryClient();
   const [kind, setKind] = useState('grades');
   const [title, setTitle] = useState('Constancia de notas');

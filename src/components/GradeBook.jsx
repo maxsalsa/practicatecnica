@@ -7,7 +7,7 @@ import { REA_SOURCE, officialGradeWeights } from '@/lib/rea-weights';
 
 
 const field = "rounded-md border border-input bg-background p-3";
-export function GradeBook({ studentId, editable = false, ownerUserId }: Props) {
+export function GradeBook({ studentId, editable = false, ownerUserId }) {
   const cache = useQueryClient();
   const [subject, setSubject] = useState("");
   const [level, setLevel] = useState("");

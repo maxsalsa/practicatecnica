@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { permissionVerifyUrl } from '@/lib/institutions';
 
 /** Verification code + QR for an approved permission; the QR opens the public verification page. */
-export function PermissionQr({ hash }: { hash }) {
+export function PermissionQr({ hash }) {
   const [src, setSrc] = useState('');
   const url = permissionVerifyUrl(hash, typeof window === 'undefined' ? undefined : window.location.origin);
   useEffect(() => {

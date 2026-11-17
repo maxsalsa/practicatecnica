@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 import { resourceGrantInput } from '@/lib/institution-resource-permissions';
 
-export function ResourcePermissionsPanel({ resourceId, visibility }: { resourceId: string; visibility }) {
+export function ResourcePermissionsPanel({ resourceId, visibility }) {
   const qc = useQueryClient();
   const [busy, setBusy] = useState(false);
   const options = useQuery({ queryKey: ['permission-institutions'], queryFn () => {
@@ -36,7 +36,7 @@ export function ResourcePermissionsPanel({ resourceId, visibility }: { resourceI
   </details>;
 }
 
-export function AssignedResourcesPanel({ institutionId }: { institutionId }) {
+export function AssignedResourcesPanel({ institutionId }) {
   const resources = useQuery({ queryKey: ['assigned-resources', institutionId], queryFn () => {
     const g = await supabase.from('institution_resource_grants').select('*').eq('institution_id', institutionId).eq('can_read', true); if (g.error) throw g.error;
     if (!g.data.length) return [];

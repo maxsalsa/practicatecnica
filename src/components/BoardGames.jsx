@@ -3,10 +3,10 @@ import { Chess } from "chess.js";
 import { Button } from "@/components/ui/button";
 import * "@/lib/checkers";
 
-function HowTo({ steps }: { steps }) {
+function HowTo({ steps }) {
   return <ol className="mt-3 grid gap-2 sm:grid-cols-3">{steps.map((s, i) => <li key={i} className="rounded-xl border bg-card p-3 text-sm"><span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary font-bold text-primary-foreground">{i + 1}</span>{s}</li>)}</ol>;
 }
-function Turn({ who, names }: { who: 0 | 1; names, string] }) {
+function Turn({ who, names }) {
   return <p className="mt-3 text-lg font-bold" role="status">Turno className={who === 0 ? "text-primary" : "text-accent"}>{names[who]}</span> · pase el dispositivo</p>;
 }
 
