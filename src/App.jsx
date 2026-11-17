@@ -35,7 +35,7 @@ export default function App() {
   const [contextoMep, setContextoMep] = useState({
     region: 'Dirección Regional de Alajuela',
     circuito: '04 (CTP Mercedes Norte)',
-    modalidad: 'CTP Diurno / Técnico Nocturno / Académico'
+    modalidad: 'CTP Diurno / Nocturno / Académico'
   });
 
   const cambiarRolRapido = (nuevoRol) => {
@@ -49,21 +49,18 @@ export default function App() {
   const manejarAccionHero = (accionId) => {
     if (accionId === 'cosevi' || accionId === 'universidades' || accionId === 'idiomas') {
       setSeccionActiva('simuladores');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (accionId === 'materias') {
       setSeccionActiva('materias');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (accionId === 'ctp_gestion') {
       setSeccionActiva('gestion');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (accionId === 'modalidades') {
-      const el = document.getElementById('seccion-modalidades-mep');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      setSeccionActiva('modalidades');
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans notranslate" translate="no">
 
       <NavbarInstitucional
         usuarioActual={usuarioActual}
@@ -78,21 +75,19 @@ export default function App() {
         }}
       />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:px-6 lg:px-8 space-y-8">
+      <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:px-6 lg:px-8 space-y-6">
 
-        {/* Cintillo Institucional Superior */}
-        <div className="bg-slate-900/90 border border-slate-800 px-4 py-3 rounded-2xl flex flex-wrap justify-between items-center gap-3 shadow-lg">
+        {/* Barra Institucional Compacta */}
+        <div className="bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-2xl flex flex-wrap justify-between items-center gap-3 shadow-md">
           <div className="flex flex-wrap items-center gap-2 text-xs">
             <span className="bg-emerald-950 text-emerald-300 border border-emerald-600 px-2 py-0.5 rounded font-extrabold">
-              v28.5 EN LÍNEA
+              v29.0 QA VERIFICADO
             </span>
-            <span className="text-cyan-400 font-extrabold">🏛️ {contextoMep.region}</span>
+            <span className="text-cyan-400 font-bold">🏛️ {contextoMep.region}</span>
             <span className="text-slate-600">•</span>
             <span className="text-slate-300">Circuito {contextoMep.circuito}</span>
             <span className="text-slate-600">•</span>
-            <span className="bg-cyan-950 text-cyan-300 border border-cyan-800 px-2.5 py-0.5 rounded-lg font-bold">
-              {contextoMep.modalidad}
-            </span>
+            <span className="text-amber-300 font-semibold">{contextoMep.modalidad}</span>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
@@ -109,28 +104,38 @@ export default function App() {
 
             <button
               onClick={() => setMostrarSelector(true)}
-              className="bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 font-bold px-3 py-1.5 rounded-xl text-xs transition-all"
+              className="bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 font-bold px-3 py-1.5 rounded-xl text-xs"
             >
               🏛️ Región / Circuito
             </button>
 
             <button
               onClick={() => setMostrarSinpe(true)}
-              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs transition-all shadow-lg shadow-emerald-600/20"
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs shadow"
             >
               📱 SINPE 6090-6359
             </button>
           </div>
         </div>
 
-        {/* VISTA INICIO LIMPIA (SIN CRONÓMETRO EN PORTADA):
-            1. Hero Gamificado
-            2. Explorador de Especialidades y Materias
-            3. Generador Dual (IA + Plantilla) de Planes, Exámenes, Cotidianos, Proyectos y Horarios
-            4. Centro Administrativo de Horarios, Tardías, Ausencias y Permisos
-            5. Modalidades MEP */}
+        {/* Botón rápido para volver al Inicio cuando estás dentro de cualquier módulo */}
+        {seccionActiva !== 'inicio' && (
+          <div className="flex items-center justify-between bg-slate-900/60 border border-slate-800 px-4 py-2.5 rounded-xl">
+            <button
+              onClick={() => setSeccionActiva('inicio')}
+              className="text-xs font-extrabold text-cyan-400 hover:text-cyan-300 flex items-center gap-1.5"
+            >
+              ← Volver al Menú Principal (Inicio)
+            </button>
+            <span className="text-xs text-slate-400">
+              Módulo activo: <strong className="text-white uppercase">{seccionActiva}</strong>
+            </span>
+          </div>
+        )}
+
+        {/* INICIO AMIGABLE Y LIMPIO: Portada + Explorador de Especialidades y Materias */}
         {seccionActiva === 'inicio' && (
-          <div className="space-y-8">
+          <div className="space-y-6">
             <HeroGamificadoMep
               usuarioActual={usuarioActual}
               busquedaGlobal={busquedaGlobal}
@@ -139,26 +144,6 @@ export default function App() {
             />
 
             <ExploradorMateriasMep onPracticarMateria={() => setSeccionActiva('simuladores')} />
-
-            <AsistenteIaGenerativo />
-
-            <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
-
-            <div id="seccion-modalidades-mep">
-              <HubModalidadesMep
-                modalidadActiva={modalidadMepId}
-                onSeleccionarModalidad={(mod) => {
-                  setModalidadMepId(mod.id);
-                  setContextoMep((prev) => ({ ...prev, modalidad: mod.nombre }));
-                }}
-                onIrASimuladores={() => setSeccionActiva('simuladores')}
-              />
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <ReportePdfMep />
-              <GestorPushPwa />
-            </div>
           </div>
         )}
 
@@ -166,14 +151,24 @@ export default function App() {
           <ExploradorMateriasMep onPracticarMateria={() => setSeccionActiva('simuladores')} />
         )}
 
+        {seccionActiva === 'modalidades' && (
+          <HubModalidadesMep
+            modalidadActiva={modalidadMepId}
+            onSeleccionarModalidad={(mod) => {
+              setModalidadMepId(mod.id);
+              setContextoMep((prev) => ({ ...prev, modalidad: mod.nombre }));
+            }}
+            onIrASimuladores={() => setSeccionActiva('simuladores')}
+          />
+        )}
+
         {seccionActiva === 'gestion' && (
-          <div className="space-y-8">
+          <div className="space-y-6">
             <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
             <AsistenteIaGenerativo />
           </div>
         )}
 
-        {/* El Cronómetro y la Hoja de Respuestas viven exclusivamente aquí en Simuladores */}
         {seccionActiva === 'simuladores' && (
           <SimuladorUniversitarioMep usuarioActual={usuarioActual} />
         )}
@@ -198,7 +193,13 @@ export default function App() {
         )}
 
         {seccionActiva === 'admin' && (
-          <PanelSuperAdmin superAdminNombre={usuarioActual.nombre} />
+          <div className="space-y-6">
+            <PanelSuperAdmin superAdminNombre={usuarioActual.nombre} />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <ReportePdfMep />
+              <GestorPushPwa />
+            </div>
+          </div>
         )}
 
       </main>
