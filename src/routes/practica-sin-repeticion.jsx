@@ -10,7 +10,7 @@ import {TopicPoints} from '@/components/TopicPoints';
 export const Route = createFileRoute('/practica-sin-repeticion')({
   staticData: { sitemap },
   head: () => ({
-    meta { title: 'Práctica sin repetición · matemática, español, ciencias y técnica · pracTICAtecnica.com' },
+    meta: [{ title: 'Práctica sin repetición · matemática, español, ciencias y técnica · pracTICAtecnica.com' },
       { name: 'description', content: 'Repasos breves de idiomas, matemática y técnica con selección de estructuras distintas y explicaciones. Banco finito de contenido original.' },
       { property: 'og:title', content: 'Práctica sin repetición · pracTICAtecnica.com' },
       { property: 'og:description', content: 'Repasos originales con una pregunta por estructura disponible, sin rellenar sesiones con duplicados.' },
@@ -18,7 +18,7 @@ export const Route = createFileRoute('/practica-sin-repeticion')({
       { name: 'twitter:card', content: 'summary' },
     ],
   }),
-  component,
+  component: UnlimitedPractice,
 });
 
 const stub = (f): Deck => ({ id: `${generatedDeckId(f.key)}-v2-review`, title: `${f.title} · repaso diverso`, emoji: f.emoji, level: f.level, questions });

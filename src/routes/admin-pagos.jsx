@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/admin-pagos')({
-  component,
+  component: RouteComponent,
 })
 
 function RouteComponent() {

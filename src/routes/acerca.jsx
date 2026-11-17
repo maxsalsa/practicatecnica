@@ -1,24 +1,20 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
-
-export const Route = createFileRoute("/acerca")({staticData:{sitemap:true},
-  head: () => ({
-    meta { title: "Acerca de y pagos · pracTICAtecnica.com" },
-      { name: "description", content: "Quiénes somos, planes anuales y cómo pagar por SINPE Móvil en pracTICAtecnica.com." },
-      { property: "og:title", content: "Acerca de y pagos · pracTICAtecnica.com" },
-      { property: "og:description", content: "Planes anuales ₡2.500, Público General ₡3.500 e instituciones ₡10.000. SINPE Móvil o PayPal." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
-  }),
-  component,
+export const Route = createFileRoute("/acerca")({ staticData: { sitemap: true },
+    head: () => ({
+        meta: [{ title: "Acerca de y pagos · pracTICAtecnica.com" },
+            { name: "description", content: "Quiénes somos, planes anuales y cómo pagar por SINPE Móvil en pracTICAtecnica.com." },
+            { property: "og:title", content: "Acerca de y pagos · pracTICAtecnica.com" },
+            { property: "og:description", content: "Planes anuales ₡2.500, Público General ₡3.500 e instituciones ₡10.000. SINPE Móvil o PayPal." },
+            { property: "og:type", content: "website" },
+            { name: "twitter:card", content: "summary" },
+        ],
+    }),
+    component: Acerca,
 });
-
 const wa = "https://api.whatsapp.com/send?phone=50660906359&text=" + encodeURIComponent("Hola, realicé un pago SINPE en pracTICAtecnica.com y deseo activar mi plan.");
-
 function Acerca() {
-  return (
-    <main className="min-h-screen bg-hero">
+    return (<main className="min-h-screen bg-hero">
       <SiteHeader />
       <section className="mx-auto max-w-3xl space-y-8 px-5 pb-16">
         <header>
@@ -31,13 +27,11 @@ function Acerca() {
         </header>
 
         <div className="grid gap-4 sm:grid-cols-2">
-          {[["Estudiantes", "₡2.500"], ["Con colegio afiliado", "₡1.000"], ["Público general", "₡3.500"], ["Institución", "₡10.000"]].map(([n, p]) => (
-            <article key={n} className="rounded-2xl border bg-card p-6">
+          {[["Estudiantes", "₡2.500"], ["Con colegio afiliado", "₡1.000"], ["Público general", "₡3.500"], ["Institución", "₡10.000"]].map(([n, p]) => (<article key={n} className="rounded-2xl border bg-card p-6">
               <h2 className="font-bold">{n}</h2>
               <p className="mt-2 text-4xl font-black text-primary">{p}</p>
               <p className="text-sm text-muted-foreground">por año</p>
-            </article>
-          ))}
+            </article>))}
         </div>
 
         <article className="rounded-2xl border bg-card p-6">
@@ -69,7 +63,8 @@ function Acerca() {
           <p className="mt-4 text-xs text-muted-foreground">Preparación independiente, sin afiliación oficial al MEP, al MOPT ni a las universidades.</p>
           <Link to="/contacto" className="mt-4 inline-flex rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground">Contáctenos</Link>
         </article>
-      </section>
-    </main>
-  );
+      </section>);
+    main >
+    ;
+    ;
 }

@@ -14,7 +14,7 @@ export const Route = createFileRoute("/simulacro")({staticData:{sitemap:true},
     return typeof id === "string" && decks.some(d => d.id === id) ? { deck } : {};
   },
   head: () => ({
-    meta { title: "Simulacro cronometrado · pracTICAtecnica.com" },
+    meta: [{ title: "Simulacro cronometrado · pracTICAtecnica.com" },
       {
         name: "description",
         content: "Simulacros con tiempo, pausa y nota final, admisión, CTP, Historia, Español y más.",
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/simulacro")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component,
+  component: Simulacro,
 });
 
 const SECONDS_PER_QUESTION = 90;

@@ -1,15 +1,32 @@
-node_modules/
-dist/
-dist-ssr/
-.env
-.env.*
-.env*
-!.env.example
-client_secret*.json
-*secret*.json
-.DS_Store
-Thumbs.db
+# Logs
+logs
 *.log
 npm-debug.log*
-.vscode/
-.idea/
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+.output
+.vinxi
+.tanstack/**
+.nitro
+*.local
+
+# Wrangler / Cloudflare
+.wrangler/
+.dev.vars
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

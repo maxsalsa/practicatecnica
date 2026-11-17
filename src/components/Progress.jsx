@@ -51,7 +51,7 @@ export function Progress({ empty = null }) {
   const [loading, setLoading] = useState(true);
   const [cloudPoints, setCloudPoints] = useState(0);
   const [streak, setStreak] = useState(0);
-  const [stats, setStats] = useState<Record<string, Stat>>({});
+  const [stats, setStats] = useState({});
   useEffect(() => {
     if (!ready) return;
     let active = true;

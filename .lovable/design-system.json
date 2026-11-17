@@ -1,0 +1,1194 @@
+{
+  "meta": {
+    "name": "PracticaTecnica",
+    "package": "@ws-zjiy9uovp0yxxlsz6zow/bda1855d-052a-47b1-a65b-3d9cd58491b8",
+    "version": "2.7.0",
+    "framework": "react",
+    "css_framework": "tailwind",
+    "starter_template": "custom_design_system_tailwind",
+    "theme_files": [
+      "src/styles.css"
+    ],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "f9294598096a249901ccdb498dd8adb38cc90db2eed601df59a812e49d203645",
+      ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
+      ".lovable/events.json": "6b4dd1c295c676e7055d86f6d860533f",
+      ".lovable/meta.yaml": "954a981e8847ec1692669dbb04ae9ae9",
+      ".lovable/north-star/north-star.md": "c8706cecaddcb7457925227bd0c3f28c",
+      ".lovable/plan/ampliación-curricular-y-certificados-por-materia-2026-11-13.md": "8513a1f02c9d5acc451c68e22064e734",
+      ".lovable/plan/aprendizaje-completo-por-bloques-originales-2026-11-13.md": "8c57120bea05165372f42ad8c723e839",
+      ".lovable/plan/arena-de-retos-técnicos-2026-11-13.md": "758626d9e509d514e574d42d7275e7ee",
+      ".lovable/plan/caminos-de-estudio-programas-mep-y-cobros-docentes-2026-11-13.md": "98afdde1ec245aee2c476cf581e320b1",
+      ".lovable/plan/cobro-docente-seguimiento-y-ampliación-educativa-2026-11-13.md": "615cefd5b5008478962a6db8eeb01776",
+      ".lovable/plan/diez-juegos-educativos-originales-2026-11-13.md": "e1ef54e8d15b4fc2ebe3135451911439",
+      ".lovable/plan/inicio-y-búsqueda-sencillos-2026-11-13.md": "be9334104edec8204d1942eeef49ab47",
+      ".lovable/plan/libros-digitales-mep-por-especialidad-2026-11-13.md": "2745bb5b236a89ff9e134a8ec05848db",
+      ".lovable/plan/materias-mep-y-controles-administrativos-2026-11-13.md": "3559f823461549c955e4d23bd3fdf416",
+      ".lovable/plan/preguntas-juegos-y-constancias-verificables-2026-11-13.md": "4d6f1c9cda08fbc39d5565f7538977f4",
+      ".lovable/plan/revisión-curricular-y-reparación-por-bloques-2026-11-13.md": "c2b13867684a0262e250f4f5bf3c602f",
+      ".lovable/plan/variantes-audio-y-seguimiento-docente-2026-11-14.md": "f230be96a24ef1835777db2ffda14037",
+      ".lovable/project.json": "882b10a2cc861c6a263730651880a63c",
+      ".lovable/sources.yaml": "ee6247f6fe77fe1387244cd3c757e6a3",
+      ".prettierignore": "7279a476f196a2da5f7edd18db568dc6",
+      ".prettierrc": "185ef0234746ab738ac1ab6cec5e2bd9",
+      "AGENTS.md": "f05fff940956d75436207f6cc5370fec",
+      "README.md": "15ccc2c959c0bff2136261ce044c418f",
+      "bunfig.toml": "44f440fc23b426e3176ee72e92f8f9f0",
+      "components.json": "30d3d035361ce807021f5c54620962e9",
+      "drizzle.config.ts": "c2b6029fa56b49433380b7263b06e3f7",
+      "drizzle/migrations/0000_student_cloud_progress.sql": "34b6a8e69f938e74b6b5d3aa078cdeb5",
+      "drizzle/migrations/0001_restrict_student_linking.sql": "b28d5c436b2ceccc1bf66dafbb9a892f",
+      "drizzle/migrations/0002_narrow_private_data_grants.sql": "d293b534b9a68635732438ab2d931a4a",
+      "drizzle/migrations/0003_student_learning_records.sql": "bb2b0e6d9a183ad245c8ba55f9788e65",
+      "drizzle/migrations/0004_difficulty_earned_points.sql": "54c17cda65863dd964c8ebd14b20ddf2",
+      "drizzle/migrations/0005_verified_founder_admins.sql": "b7f88032b389f10bd588eb4740c72fdd",
+      "drizzle/migrations/0006_sinpe_payments.sql": "c0a565d86bc3bf760593191446cc0a69",
+      "drizzle/migrations/0007_remove_test_payment.sql": "20f490e3968ea952f24ceeba37cd4a47",
+      "drizzle/migrations/0008_payments_unique_reference.sql": "cf747fe4c233535a70ca7ffdffe7c46a",
+      "drizzle/migrations/0009_superadmin_tracking.sql": "fe2ed8fa23bfdaa02e1cfbaefaed908b",
+      "drizzle/migrations/0010_weekly_leagues.sql": "76b0e65a2d593efebaab749460adb928",
+      "drizzle/migrations/0011_league_history_and_close.sql": "19edf4d23cd73b01fa993e087efc2380",
+      "drizzle/migrations/0012_league_apply_where_fix.sql": "ea2b22a7281851f230ce1931bc37b9ac",
+      "drizzle/migrations/0013_trial_access.sql": "1aa1610a792880f5a33c7536ffbbb81a",
+      "drizzle/migrations/0014_card_subscriptions.sql": "9d50f35bf82d2c6250b9f9873588bb95",
+      "drizzle/migrations/0015_id_documents_policies.sql": "62c4e18d2779b233d7a60ff59bf8da1f",
+      "drizzle/migrations/0016_admin_user_trace.sql": "a6dd58f339f67ff8dc159e3c797bc9b4",
+      "drizzle/migrations/0017_personal_ai_history.sql": "b0db72bd2c9156423bc25be5a4df942b",
+      "drizzle/migrations/0018_confirm_payments_before_access.sql": "20b6315d3190cc3037fd1168f2c025ef",
+      "drizzle/migrations/0019_teacher_paypal_quotes.sql": "a189c7af205525ebee7d76fe2bbaed77",
+      "drizzle/migrations/0020_restrict_role_lookup_to_self_or_admin.sql": "56ba44b370e8ecf4c2d8dfa59ad9f18b",
+      "drizzle/migrations/0021_test_role_lookup_privacy.sql": "89164f73af1ad3cc828e106f1bf29f8e",
+      "drizzle/migrations/0022_require_paid_or_trial_access_for_teachers.sql": "dc3389cd42ffa0ef7eb8c1601e29a354",
+      "drizzle/migrations/0023_assert_teacher_no_subscription_bypass.sql": "09c3d7979a494fb8c60856d73df5c2f5",
+      "drizzle/migrations/0024_guard_student_account_link.sql": "5c8d97118c5c4586fd72a9048f766103",
+      "drizzle/migrations/0025_migration.sql": "a7fe4ed5f1a9bd638a1b2692bf22e48d",
+      "drizzle/migrations/0026_teacher_exams.sql": "e2cec83018a26c4d20cf4c560b5c7041",
+      "drizzle/migrations/0027_verifiable_certificates.sql": "3c5a4275ada7b631bdf69a7bc874f4cb",
+      "drizzle/migrations/0028_private_recreational_sessions.sql": "934509fd20b70c873fa40d6863e4508b",
+      "drizzle/migrations/0029_certification_two_verified_exams.sql": "70fb4b4d6d703bd43d8dd911d0cab9b1",
+      "drizzle/migrations/0030_teacher_groups_assignments.sql": "f64cacc9ed7fcf3a59f8a35afce782b6",
+      "drizzle/migrations/0031_certificate_one_exam_60.sql": "9be78e5066d4a0a1296faa87716cf103",
+      "drizzle/migrations/0032_student_status.sql": "19e9f688f6c29ecc45b15efa8f551430",
+      "drizzle/migrations/meta/0000_snapshot.json": "a652d9a34b1af39ddd696437b9e008fe",
+      "drizzle/migrations/meta/0001_snapshot.json": "80daa05179559ae350d5af71a69f78f8",
+      "drizzle/migrations/meta/0002_snapshot.json": "f9a8cc4503ed22e01472e78834fb828b",
+      "drizzle/migrations/meta/0003_snapshot.json": "ff72f477af6d38391b42ca986bb8e743",
+      "drizzle/migrations/meta/0004_snapshot.json": "7114aaafee85ca714016c50ea20b374a",
+      "drizzle/migrations/meta/0005_snapshot.json": "88c3a5457be6d3262af81670cf11bc80",
+      "drizzle/migrations/meta/0006_snapshot.json": "30b62654ee24b9daec18b14abe85c49e",
+      "drizzle/migrations/meta/0007_snapshot.json": "248e8c75720fa0ac8d942fcca0dac5ab",
+      "drizzle/migrations/meta/0008_snapshot.json": "a89799a7eee05fc3ba2222f4b5323b18",
+      "drizzle/migrations/meta/0009_snapshot.json": "52da07fa1cd8054b78d90fbe2a66f30d",
+      "drizzle/migrations/meta/0010_snapshot.json": "74f43cd7d9af5382a151cc26d38eac59",
+      "drizzle/migrations/meta/0011_snapshot.json": "1d2a24cbeffdbea6f8b9c84bd1732c19",
+      "drizzle/migrations/meta/0012_snapshot.json": "f6f5a8f21480d4d3d4a365946f23a7a8",
+      "drizzle/migrations/meta/0013_snapshot.json": "7f6c02fd068cf97425c77d226bb8147b",
+      "drizzle/migrations/meta/0014_snapshot.json": "42ce6d6360316f78c2787fb3a36c687a",
+      "drizzle/migrations/meta/0015_snapshot.json": "fb8a73c53fbc4050d158fcced2155fc8",
+      "drizzle/migrations/meta/0016_snapshot.json": "b176dab3303e8cdb58932a38e7994190",
+      "drizzle/migrations/meta/0017_snapshot.json": "3fa93b860c8c7dfa1dcdfb565d49a2a2",
+      "drizzle/migrations/meta/0018_snapshot.json": "3193729164444b8dc3e3de41373e699e",
+      "drizzle/migrations/meta/0019_snapshot.json": "2488ab367261a63af9eb85e4ac1b565c",
+      "drizzle/migrations/meta/0020_snapshot.json": "8303c891b16cb19b0ba0936462b5d319",
+      "drizzle/migrations/meta/0021_snapshot.json": "d027c07ed074d053354d9ac32dcc41a3",
+      "drizzle/migrations/meta/0022_snapshot.json": "f1c9ef6924a88594ca57e00edb6547e1",
+      "drizzle/migrations/meta/0023_snapshot.json": "1f53ad9193ac5c3efc18b8528b0fbdae",
+      "drizzle/migrations/meta/0024_snapshot.json": "1c72d02a513569d82fcf0e79cee41617",
+      "drizzle/migrations/meta/0025_snapshot.json": "ff6d8a24f99496dae322c86a02555fc2",
+      "drizzle/migrations/meta/0026_snapshot.json": "39cca8c34600bc93971c87d6a7b4d447",
+      "drizzle/migrations/meta/0027_snapshot.json": "b9694fdc5d1f3c9ff2eb44606561a29f",
+      "drizzle/migrations/meta/0028_snapshot.json": "a1c167640f7288023cddc6f3e79b0ff1",
+      "drizzle/migrations/meta/0029_snapshot.json": "943e298b170f2e115995beea6dd4d3dc",
+      "drizzle/migrations/meta/0030_snapshot.json": "cb8b8f9e2b43a0123c8742f4d345a9cc",
+      "drizzle/migrations/meta/0031_snapshot.json": "f1ce53906a0a6703b65c3724b07e05d4",
+      "drizzle/migrations/meta/0032_snapshot.json": "9d9944aa06268a359af3edc875765a64",
+      "drizzle/migrations/meta/_journal.json": "f65da37ad7feb8243d14059df8947013",
+      "drizzle/schema.ts": "a60267d05d7dd11572f02686241f37c6",
+      "eslint.config.js": "345bdd57e188e0e4525edcd00e5003f5",
+      "package.json": "66bba62a32e198dddf24ecac5dbecdcb",
+      "panel.png": "7c1951d276831bcf4538966d0b5b17dd",
+      "public/apple-touch-icon.png": "52cbd791d3d511f1a27074a2ec7e2bdf",
+      "public/favicon.png": "48cf0b5bc986245d4a8dabbcac853491",
+      "public/icon-192.png": "0f6d376193ef2436e2053c1f910b8757",
+      "public/icon-512.png": "ce163061a3392d3fcf1229d9712f5e66",
+      "public/manifest.webmanifest": "7414c6a92c9d7fed7b9f05f1c0398805",
+      "public/robots.txt": "c3a372ec3dabfff74a4fc5ba733b92d7",
+      "roadmap.md": "8b8c338fb795e1f6a0aa33f1a9e0bd2a",
+      "scripts/generate-mep-books.py": "ea4d0e594f39b1fcd9a6e1546c3ecdc6",
+      "scripts/generate-mep-maps.py": "17d6e813c02d7fe2910f25488ca916f7",
+      "src/ai-gateway.types.ts": "0a11dcb04c06fbe90382a1d2f35e3e30",
+      "src/assets/cuadernillos/c01.pdf.asset.json": "fa332c9af654751eec94281a442cad82",
+      "src/assets/cuadernillos/c02.pdf.asset.json": "c1f0dd1a1f2fb47b8f3d78569907f98c",
+      "src/assets/cuadernillos/c03.pdf.asset.json": "219998778292a60b38cb4c4b6e03d74f",
+      "src/assets/cuadernillos/c04.pdf.asset.json": "3bd38983c1a592770ee153a8562ea6fc",
+      "src/assets/cuadernillos/c05.pdf.asset.json": "b54f581bd0ff20ce63242f09b433d5a4",
+      "src/assets/cuadernillos/c06.pdf.asset.json": "e76c27808042f98fed85c2bd37f559bd",
+      "src/assets/cuadernillos/c07.pdf.asset.json": "e03a1894eeb73ae08ee0fbe1ae742fe0",
+      "src/assets/cuadernillos/c08.pdf.asset.json": "3aaa116dc2249d4c9b8bc67f284a2bdc",
+      "src/assets/cuadernillos/c09.pdf.asset.json": "68fe91459e39e5946260a3c332300e60",
+      "src/assets/cuadernillos/c10.pdf.asset.json": "5b1ec6a54bb31a9b16d7f39a6840158e",
+      "src/assets/cuadernillos/c11.pdf.asset.json": "7c35a489457e8b826a6cc8087ad7710b",
+      "src/assets/cuadernillos/c12.pdf.asset.json": "a596b863b51cb3aa069200de267f59ae",
+      "src/assets/cuadernillos/c13.pdf.asset.json": "39284d565f307a37580a0213d187a1b5",
+      "src/assets/cuadernillos/c14.pdf.asset.json": "e03b781b009fd3b76611b7d2c57b2de3",
+      "src/assets/cuadernillos/c15.pdf.asset.json": "2bb42f09c56375ae0a4f54fb56bfe816",
+      "src/assets/cuadernillos/c16.pdf.asset.json": "2ef1f916ece59362b38f7b4fa7d4a1bc",
+      "src/assets/cuadernillos/c17.pdf.asset.json": "822af7e61238c17ecdc21e0155ca4b9e",
+      "src/assets/cuadernillos/c18.pdf.asset.json": "2d463405aa71f97aa3141e03f3607c40",
+      "src/assets/cuadernillos/c19.pdf.asset.json": "876824790286668e753d6f6597578cd0",
+      "src/assets/cuadernillos/c20.pdf.asset.json": "ad34328d8eaaf20c1fa30cc961169011",
+      "src/assets/cuadernillos/c21.pdf.asset.json": "72b5339f9f77195691d3e41270966d77",
+      "src/assets/cuadernillos/c22.pdf.asset.json": "7f04ad804bf2736901fa9a64d12fa8ca",
+      "src/assets/cuadernillos/c23.pdf.asset.json": "94cd17fa5d757f5d83d09967a599bb96",
+      "src/assets/cuadernillos/c24.pdf.asset.json": "a780145d4d296c4d28052f533f5a214f",
+      "src/assets/cuadernillos/c25.pdf.asset.json": "e622e0d1912b4f52bbe8b466d4e7ffb8",
+      "src/assets/cuadernillos/c26.pdf.asset.json": "fe057900c75380c7515c72a3a773eea6",
+      "src/assets/cuadernillos/c27.pdf.asset.json": "225d2840e4bee74cc38b7c40ff536770",
+      "src/assets/cuadernillos/c28.pdf.asset.json": "43741f3b09d5c737a221d43c0e2fb1f9",
+      "src/assets/cuadernillos/c29.pdf.asset.json": "b453dc217ad04f153f2d7b61468a4437",
+      "src/assets/cuadernillos/c30.pdf.asset.json": "cee1481bf74d4311add10ba950456ffd",
+      "src/assets/cuadernillos/c31.pdf.asset.json": "70b7e49cfea103d24e51f2ec65967719",
+      "src/assets/cuadernillos/c32.pdf.asset.json": "f849a295179617d509fbc4d406bec7d3",
+      "src/assets/cuadernillos/c33.pdf.asset.json": "c375fcf0d227bca0014a6c2445815a69",
+      "src/assets/cuadernillos/c34.pdf.asset.json": "b04145f7935111e3bdf288306f3fd4d2",
+      "src/assets/cuadernillos/c35.pdf.asset.json": "6c4b3f53fc37ec790258fdcd389aff49",
+      "src/assets/cuadernillos/c36.pdf.asset.json": "de38ab2c12ebf9860817fe65099817c8",
+      "src/assets/cuadernillos/c37.pdf.asset.json": "eee5cf1e945d7b996b2a049c7b07b356",
+      "src/assets/cuadernillos/c38.pdf.asset.json": "f6b29521a8f067916e05b9fd9743a7b2",
+      "src/assets/cuadernillos/c39.pdf.asset.json": "7d463da9dd42a89eeac318062e688a9b",
+      "src/assets/cuadernillos/c40.pdf.asset.json": "51d02c09d81ea6d9eb467e66a2c4308d",
+      "src/assets/cuadernillos/c41.pdf.asset.json": "5cf3cbcc56b3df5e82a5976e8a380737",
+      "src/assets/cuadernillos/c42.pdf.asset.json": "552930b55bb54cb650d66a9ccb873c2b",
+      "src/assets/cuadernillos/c43.pdf.asset.json": "f208c09279103c4a71da5e3b5760af0a",
+      "src/assets/cuadernillos/c44.pdf.asset.json": "4fc0a4c3f78424b204fe01783b64b860",
+      "src/assets/cuadernillos/c45.pdf.asset.json": "dfa431a667404910df5c50b1e3b6efbd",
+      "src/assets/cuadernillos/c46.pdf.asset.json": "e099d6367cde710656fe6f8d1887b84a",
+      "src/assets/cuadernillos/c47.pdf.asset.json": "07e5c4e2e8b82a98b872f1b4d5787d8c",
+      "src/assets/cuadernillos/c48.pdf.asset.json": "3eb8586ae0660eb9d3234357898368a2",
+      "src/assets/cuadernillos/c49.pdf.asset.json": "2d3cd795afa2030db6a75789f5d4e4cf",
+      "src/assets/cuadernillos/c50.pdf.asset.json": "19789c043ff8bf8942621e4e7fafdc1f",
+      "src/assets/cuadernillos/c51.pdf.asset.json": "5f1fc977335621955c64dd7e75bb78e5",
+      "src/assets/cuadernillos/c52.pdf.asset.json": "946afc3eacee1d4071d3b48ce67daab9",
+      "src/assets/cuadernillos/c53.pdf.asset.json": "f00622c0369106cd40ee7a404c267deb",
+      "src/assets/cuadernillos/c54.pdf.asset.json": "341a9c0fad4cede0c60aba13dff58c8d",
+      "src/assets/cuadernillos/c55.pdf.asset.json": "e9f067fb901fd29fa80d158acbb028f6",
+      "src/assets/cuadernillos/c56.pdf.asset.json": "6445a99e077b2928e5a68c7c11ed136a",
+      "src/assets/cuadernillos/c57.pdf.asset.json": "201d2c993226a413a46ec47b27601d0d",
+      "src/assets/cuadernillos/c58.pdf.asset.json": "88a9c0df509be5a36a5d054c8bbcdb96",
+      "src/assets/gicm-logo.jpg.asset.json": "c69fa83fa8033bd4ce6dc0188f5901f4",
+      "src/assets/guides/accounting-guide.pdf": "eff4f07539d0988ee75cafeea335a91d",
+      "src/assets/guides/architecture-guide.pdf": "fdb77a85e94794fbd17b828c24db5a32",
+      "src/assets/guides/banking-guide.pdf": "9a6f13fd88e9e543a2654bc6a3bc0c71",
+      "src/assets/guides/costs-guide.pdf": "b67952bacd6227527572ce29133cb73f",
+      "src/assets/guides/english-guide.pdf": "6efee3036ee48b5febb3b1d68738bf67",
+      "src/assets/guides/finance-guide.pdf": "5cc2249a7d8acfccc1e7fd4e41f25bf7",
+      "src/assets/guides/math-guide.pdf": "5e51b5b44b08bfb19f4eb6f0e24fbe4d",
+      "src/assets/guides/science-guide.pdf": "1f11cbb0f94f21989b2976fe52f89171",
+      "src/assets/guides/security-guide.pdf": "6761d0fb21d5f74d472600ce7fe875de",
+      "src/assets/guides/web-guide.pdf": "a580967514807f6c7ef63423a3f6880f",
+      "src/assets/hero-niveles.jpg": "cefb281bf2061b5ba61601b3359fc581",
+      "src/assets/illustrations/learning-achievements.jpg": "eb5d62139bf7e25b41fc017905d8ba9e",
+      "src/assets/illustrations/road-safety-campus.jpg": "0f18367027877c68a1cbdcd02e294c8f",
+      "src/assets/illustrations/technical-arena.jpg": "b0c51719f80263597945010dfc949e0e",
+      "src/assets/inicio-compartir.jpg.asset.json": "679e4ed085f9cbd5f44a4453fd539968",
+      "src/assets/libros-mep/ciberseguridad-10-compendio.pdf.asset.json": "879f76e45a7d88325027e3a817129cf2",
+      "src/assets/libros-mep/ciberseguridad-10-continuidad-recuperacion-mapa.pdf.asset.json": "e36c5e7fa3163e991e624c3d8a6dc502",
+      "src/assets/libros-mep/ciberseguridad-10-continuidad-recuperacion.pdf.asset.json": "b94b080258b0c77cea3779217ad6253c",
+      "src/assets/libros-mep/ciberseguridad-10-control-acceso-mapa.pdf.asset.json": "78c7699f30ccababa404be849a401685",
+      "src/assets/libros-mep/ciberseguridad-10-control-acceso.pdf.asset.json": "0fa5e65c23475fb278f67d0a9a71d290",
+      "src/assets/libros-mep/ciberseguridad-10-registros-incidentes-mapa.pdf.asset.json": "766735267e3e7dce68effcf35e9f5500",
+      "src/assets/libros-mep/ciberseguridad-10-registros-incidentes.pdf.asset.json": "c0d67bf831b5522e35051f2ce5ed6e1a",
+      "src/assets/libros-mep/contabilidad-10-analisis-horizontal-mapa.pdf.asset.json": "eef9eaff79ec23e4a08a683fba2b985c",
+      "src/assets/libros-mep/contabilidad-10-analisis-horizontal.pdf.asset.json": "78b08908e5b6d4a1b631d4cc422a04e5",
+      "src/assets/libros-mep/contabilidad-10-catalogo-asientos-mapa.pdf.asset.json": "36e34d2ff7e1f1dd25e84fe63e156b2c",
+      "src/assets/libros-mep/contabilidad-10-catalogo-asientos.pdf.asset.json": "14791f743c7037d8da82f54981cbc4c9",
+      "src/assets/libros-mep/contabilidad-10-compendio.pdf.asset.json": "26dc19762339bdca964cf5da32c79191",
+      "src/assets/libros-mep/contabilidad-10-interes-simple-mapa.pdf.asset.json": "9ba539165357c9fe9fc7b9d0b3094c15",
+      "src/assets/libros-mep/contabilidad-10-interes-simple.pdf.asset.json": "eb02b9b16e53ee39efd655403a665e5e",
+      "src/assets/libros-mep/costos-10-ciclo-contable-mapa.pdf.asset.json": "ab60705ad55dc0db26e5bb03f7c9e3e5",
+      "src/assets/libros-mep/costos-10-ciclo-contable.pdf.asset.json": "2c2c881359471ee144375ad36a677bc2",
+      "src/assets/libros-mep/costos-10-compendio.pdf.asset.json": "1f9a1d6ab2ba8c7dff7115c816936bb8",
+      "src/assets/libros-mep/costos-10-descuento-comercial-mapa.pdf.asset.json": "0f931a4153bf937d161fa237b5aae748",
+      "src/assets/libros-mep/costos-10-descuento-comercial.pdf.asset.json": "e656e41efa9e86a5bd781d78d6b8934e",
+      "src/assets/libros-mep/costos-10-razon-corriente-mapa.pdf.asset.json": "31879c6c9b22c9279c5a7a5837e93894",
+      "src/assets/libros-mep/costos-10-razon-corriente.pdf.asset.json": "adf9e0b6e42fe39363aff845f663162b",
+      "src/assets/libros-mep/costos-12-compendio.pdf.asset.json": "db08f59de15be7af5c5bea083f8938ec",
+      "src/assets/libros-mep/costos-12-costeo-abc-mapa.pdf.asset.json": "54c6a285c0654a1a7eeceb4362ed5265",
+      "src/assets/libros-mep/costos-12-costeo-abc.pdf.asset.json": "007bccc0b308fca6fc6031386da4d15b",
+      "src/assets/libros-mep/costos-12-margen-contribucion-mapa.pdf.asset.json": "bb4bc33fdc3ec38543aac8a5000c9186",
+      "src/assets/libros-mep/costos-12-margen-contribucion.pdf.asset.json": "1969157a4e6890c8f3c3a905a91b653f",
+      "src/assets/libros-mep/costos-12-punto-equilibrio-mapa.pdf.asset.json": "02c3f938d4314038a7a6283d0ef3afbf",
+      "src/assets/libros-mep/costos-12-punto-equilibrio.pdf.asset.json": "66f597f87dfa432957e101a5fe0ddf1e",
+      "src/assets/libros-mep/web-10-algoritmos-mapa.pdf.asset.json": "981a1be4a2a11b959853dde1876f0d04",
+      "src/assets/libros-mep/web-10-algoritmos.pdf.asset.json": "5536134ee83fc015b392430fa20dca7a",
+      "src/assets/libros-mep/web-10-compendio.pdf.asset.json": "e3c8466c30900c8fc3b61c4184181a8f",
+      "src/assets/libros-mep/web-10-funciones-arreglos-mapa.pdf.asset.json": "4fa87bb26abdca884596c067c89b7ae7",
+      "src/assets/libros-mep/web-10-funciones-arreglos.pdf.asset.json": "935898b9994ef242c0d3a0293a741616",
+      "src/assets/libros-mep/web-10-html-css-mapa.pdf.asset.json": "38ffb1e58bc9a9740579551d0f17d6cc",
+      "src/assets/libros-mep/web-10-html-css.pdf.asset.json": "06c72654db478f437c679e742ad2482b",
+      "src/assets/promo/logo_cuadrado.jpg.asset.json": "76049a9b751a7a186ee3c79bf8620181",
+      "src/assets/promo/promo_aprende.jpg.asset.json": "34818e606437e3ec4826b27a4b271387",
+      "src/assets/promo/promo_probala.jpg.asset.json": "94db371e7f3c33771a84d259de4584b4",
+      "src/assets/promo/promo_trivias.jpg.asset.json": "fd37426eb8ba347164cfb49024661d39",
+      "src/components/AccessGate.tsx": "be984786894f8a7e011a010597f62bbb",
+      "src/components/AccountProvider.tsx": "1733623936cde85bcccf54ecd6b1d6d9",
+      "src/components/AdminUserDetails.tsx": "275494f146a77f1b3e847dc5102b93c2",
+      "src/components/AiPractice.tsx": "6c158217dc4e9c44913dd2ea23cd28b4",
+      "src/components/AuthorizedContent.tsx": "01d2624572269c439c92bcc026ebc75a",
+      "src/components/BlindExam.tsx": "04ebdb4dea61574b207948af85d895c2",
+      "src/components/BottomNav.tsx": "88e5152f693a8c11a9a36ec03e58d66a",
+      "src/components/CitedSources.tsx": "56bbab2692d4209e8f2f2ef1767dd75d",
+      "src/components/DiscountBox.tsx": "686aab54ef83df8fd3cd795a528dddab",
+      "src/components/Greeting.tsx": "3fab133aed944bdefff52bcd21c47dbd",
+      "src/components/IdDocumentUpload.tsx": "c0f7893af11546a25017e8fe999ef7a2",
+      "src/components/IndicatorBank.tsx": "2b424ceaa55a69b58b88298efef1b670",
+      "src/components/InstallAppButton.tsx": "8f2c896289c3c1ec9433338d0d0af952",
+      "src/components/InviteBox.tsx": "c1d6f5c0a9ba99d2dd9016131ab559d1",
+      "src/components/LearningRecords.tsx": "4c1d1dcef502ff62a579994e3c9ba7b2",
+      "src/components/LevelTest.tsx": "0d8d8b8e79dd37770c4d29f38634a6e9",
+      "src/components/MepBooks.tsx": "eb129fcf29244c281e68291125b4bc82",
+      "src/components/MyAIHistory.tsx": "cb5ea5e306082c1f2bf1b7ed3e456f26",
+      "src/components/MyPaymentStatus.tsx": "da6b58902b96b1d9fd2930a52f6f59ef",
+      "src/components/PaymentTestModeBanner.tsx": "92db3214ff27971bf85f3ae2ad3cb70d",
+      "src/components/PaypalButtons.tsx": "f10a9316bdcfc1dd503c7ec759b84cb4",
+      "src/components/PortalDoors.tsx": "39f4d5349f4faee7e7d264529e3d0dc1",
+      "src/components/Progress.tsx": "d1fe25ac019a118101bdc87b7a222bb2",
+      "src/components/PromoBanners.tsx": "4dfe7c2ad091aa11f63dd787a26a3175",
+      "src/components/QuickBar.tsx": "a25d8bbdfbd1ba1f47be7bd6b0a1cf0b",
+      "src/components/Quiz.tsx": "145012a1099ef7c95144d6f323be9cc5",
+      "src/components/SchoolPractice.tsx": "8e4d07c5a8f47afb73e51b4a8886bb9b",
+      "src/components/SiteHeader.tsx": "cfa7b068f5253855e81b011a7e9346c7",
+      "src/components/SkillProgress.tsx": "92e73256b29317b4cef5d940b4a15d64",
+      "src/components/TeacherHub.tsx": "7d69a7a1338062d112139a81f8b6ae4d",
+      "src/components/ThemeToggle.tsx": "50e549ff56ee7981858470d2bc379df1",
+      "src/components/ui/accordion.tsx": "55f9dda62b4e3913c9b23e5015a86aef",
+      "src/components/ui/alert-dialog.tsx": "96350e949e9b7b674545430a410ab89c",
+      "src/components/ui/alert.tsx": "f993d7e96b1e25ce50e68ed97e11d2a8",
+      "src/components/ui/aspect-ratio.tsx": "c5c364545e1b25a94e9e752cd67ad048",
+      "src/components/ui/avatar.tsx": "72989cd32f72c4122802540ef32525a5",
+      "src/components/ui/badge.tsx": "81cade001fc4260f9943e18dcd79449b",
+      "src/components/ui/breadcrumb.tsx": "bb9ac254f12662b20d5d50b84308bf3a",
+      "src/components/ui/button.tsx": "7d07d520f486b12bd47373d694ecd2ee",
+      "src/components/ui/calendar.tsx": "d849cc610e2683271f3f1c47d093cf30",
+      "src/components/ui/card.tsx": "d6c48ea36221b9cdc3576d305d12d5d5",
+      "src/components/ui/carousel.tsx": "e324c68ae00cd5aed49317638abd429a",
+      "src/components/ui/chart.tsx": "6a3baf94f2e89f1f97d4d7a28f3622d2",
+      "src/components/ui/checkbox.tsx": "f78aac270ca482c8c2cb907ef6260462",
+      "src/components/ui/collapsible.tsx": "767631bbc344945c236f185f4078d71d",
+      "src/components/ui/command.tsx": "014782599cc838b021ec68b07ad4ea02",
+      "src/components/ui/context-menu.tsx": "3ba8244ea23df34a1dba92f3a1230dad",
+      "src/components/ui/dialog.tsx": "ef4fe8e7de8675730afe3d633b260e09",
+      "src/components/ui/drawer.tsx": "8be333e8fd8e42576b1b5f72f07f4337",
+      "src/components/ui/dropdown-menu.tsx": "28d6e98d3c7811fc0514bfa69416f087",
+      "src/components/ui/form.tsx": "1b0aa6302b9017ea2a1307c22a1d2983",
+      "src/components/ui/hover-card.tsx": "1442794c5ca2a78d69e4e613b315ed3d",
+      "src/components/ui/input-otp.tsx": "65625f2f1c4d731a760aeed7b54459d1",
+      "src/components/ui/input.tsx": "1d4cc52a4cd8afb3e18e45bda942bb8a",
+      "src/components/ui/label.tsx": "7e35df4ca8edd0835efd97ca7937ef92",
+      "src/components/ui/menubar.tsx": "3c4121a1e78d3f424a7295381a8997d3",
+      "src/components/ui/navigation-menu.tsx": "e85351147a02b29577ff83d188b63c24",
+      "src/components/ui/pagination.tsx": "fac6cdbb4bbf78b273d85cd36d6cbb49",
+      "src/components/ui/popover.tsx": "f18aa1da2144f25ee60795c539c51bcd",
+      "src/components/ui/progress.tsx": "55c462e5c9dd678dcf2c0c510b014ac4",
+      "src/components/ui/radio-group.tsx": "0e1ace237a5da3197e3eb1e6683faba9",
+      "src/components/ui/resizable.tsx": "d9fcb9203c749fcab4e125a99bb12a86",
+      "src/components/ui/scroll-area.tsx": "87b65d3eb26f2b02ff35a7acea585ba5",
+      "src/components/ui/select.tsx": "31ea1bbd6671833b010b2e852c8a55d0",
+      "src/components/ui/separator.tsx": "433d163c4ffa00b59398a0c293198b5e",
+      "src/components/ui/sheet.tsx": "0221fbf97b69611b47fcbc10bb27669a",
+      "src/components/ui/sidebar.tsx": "83c1623eb50ebc370d7b1b84a542e369",
+      "src/components/ui/skeleton.tsx": "41b182e6e2fc3805960d41e767d4a972",
+      "src/components/ui/slider.tsx": "4752f1bfa26426988d325599e01c335b",
+      "src/components/ui/sonner.tsx": "97f59f60be3413196d095fcbf7383216",
+      "src/components/ui/switch.tsx": "82f5d8b0c59bb7ff305caa9f502e79ff",
+      "src/components/ui/table.tsx": "7cc889989d53894b659903c73aded96e",
+      "src/components/ui/tabs.tsx": "56e725558c2ce72c18243bf51717f385",
+      "src/components/ui/textarea.tsx": "c7aad96fb9545210d53135a96c76ed6b",
+      "src/components/ui/toggle-group.tsx": "ac26383acf721d116ca8e3ab5c5355d5",
+      "src/components/ui/toggle.tsx": "ee8c5adac74e7242b85b544db1a8fbad",
+      "src/components/ui/tooltip.tsx": "67d71db5a1ab935695d1def497f5b8a6",
+      "src/generated/ai-gateway/models.d.cts": "1efb1b89b544365722c7c1fc3cca891b",
+      "src/generated/ai-gateway/models.d.ts": "1efb1b89b544365722c7c1fc3cca891b",
+      "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
+      "src/index.ts": "1ffd2070b54a33a95b3e4a88a489902f",
+      "src/integrations/lovable/index.ts": "e9cf6e6968dd0392b2222ee0745ecece",
+      "src/integrations/supabase/auth-attacher.ts": "dad043cda134d909e52de0346c16625e",
+      "src/integrations/supabase/auth-middleware.ts": "eabaf8c8ba32205717921ce5f255185e",
+      "src/integrations/supabase/client.server.ts": "23f838ab7633e0a97e695f3c500d91aa",
+      "src/integrations/supabase/client.ts": "2e72a87ed578e0084537f2646f2d7e6a",
+      "src/integrations/supabase/cron-auth.ts": "6c04781ff98ada5977945fae55d39385",
+      "src/integrations/supabase/previewAuthStorage.ts": "91a2fb985d2b9c9cf27a5151806d0d50",
+      "src/integrations/supabase/types.ts": "0c5cb82e1f0e14187c4d1d835e78a360",
+      "src/lib/admin-trace.functions.ts": "90a264b4af510b0e86a211e2f02e9822",
+      "src/lib/admin-trace.test.ts": "55542808d0a8af0e7988f894088d03cb",
+      "src/lib/admin-trace.ts": "1af47959540e9ce490e8cc58335c57f8",
+      "src/lib/admission-extra.bank.ts": "3b5e9d0258edf30a38082f038180f898",
+      "src/lib/admission-extra.test.ts": "9744eb7019ade4bc46f9482dc272fcdd",
+      "src/lib/agility-deck.ts": "5f578fcdfddfec39056313ea075e800c",
+      "src/lib/ai-budget.test.ts": "f8ed010b751f60a70104a6559f76543b",
+      "src/lib/ai-budget.ts": "8cdc4361ad419738d31c603993e25198",
+      "src/lib/ai-cost-summary.test.ts": "5d76c6293d059cf9af4fafb165d0d776",
+      "src/lib/ai-cost-summary.ts": "9b25f8a2b03c4d62aefb61faee264239",
+      "src/lib/ai.functions.ts": "4e64bb44daa55155bf53b211f3b9fdc9",
+      "src/lib/arena.bank.ts": "057c8908a6880daa900570e121a2512a",
+      "src/lib/arena.test.ts": "ba6b6225396ca297a1d6cfdf04ef029a",
+      "src/lib/arena.ts": "8a0006dd38f22258dbf388201613d7a8",
+      "src/lib/assessment-draft.test.ts": "6a59b63361e5aab0f7fdf6f3f2e2c32d",
+      "src/lib/assessment-draft.ts": "340a411f7c7c65fd3cdf9d2b95cfc426",
+      "src/lib/assignment-progress.test.ts": "ca61dc29ba0455296c709f2c29a45997",
+      "src/lib/assignment-progress.ts": "ca6871a9bcda1b037815e5fd51c6a0b5",
+      "src/lib/certification-policy.test.ts": "aedf01b8ef6451cbc3bfea689e6c93bf",
+      "src/lib/certification-policy.ts": "7a5095d270b444452d1a33499af5c0ca",
+      "src/lib/cloud-progress.ts": "741edc14c101a3b5d63a2d86c3d80635",
+      "src/lib/content-access.test.ts": "7dc9c0e4e2171fe7dcaafb2fc4d8e8ef",
+      "src/lib/content-access.ts": "ad60f267ad1ab49e3741173b51ea8468",
+      "src/lib/content.functions.test.ts": "d0b0ac4522802555716e4a1220ced9c1",
+      "src/lib/content.functions.ts": "0ff31965d5a0ddb07044874a0753b90e",
+      "src/lib/conversation-practice.test.ts": "cd6aec53f62a4c6fbc626209babe9322",
+      "src/lib/conversation-practice.ts": "3a0fd9452654dd91ae98f3ef0339d524",
+      "src/lib/cuadernillos.ts": "e83a75f88627538458754aec28756831",
+      "src/lib/curricular-subjects.bank.ts": "2f36441b7fea28a28864df33e125a23b",
+      "src/lib/curricular-subjects.test.ts": "b5f7ccb41f6a633ac847fa76c567d318",
+      "src/lib/curriculum-coverage.test.ts": "e4ed374b37cb046e9c4619d2f61b39c4",
+      "src/lib/curriculum-coverage.ts": "9afb8e9a34a524c4a91a8e5fe4370d95",
+      "src/lib/curriculum-search.test.ts": "395d1b2475ee638768312868328ebe16",
+      "src/lib/curriculum-search.ts": "1dbb57b0eafffaf97e0e951930048b13",
+      "src/lib/deck-catalog.json": "4feb445e2d3fa0ba119c01d2cb58d991",
+      "src/lib/discount.functions.ts": "8beb59528323fa46b6269d430dc19916",
+      "src/lib/email-templates/invitacion.tsx": "acb3740fc369d1eb4eedffcd4a0b3f80",
+      "src/lib/email-templates/registry.ts": "44f0df1343eaaddc4354d1524b689cdf",
+      "src/lib/email-templates/send-email.ts": "3881d66df66ebfe6566eccafd3c9ac61",
+      "src/lib/english-audio.ts": "df6dec35912414085e753aebda656f1c",
+      "src/lib/error-capture.ts": "f630d9686a9a989170f22eff4de7b30d",
+      "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
+      "src/lib/excel.bank.ts": "01e028a12cd72256e0e2ea55116e3abf",
+      "src/lib/excel.test.ts": "41f0de90b3563dbf6429cc385f57ece0",
+      "src/lib/expanded-subjects.bank.ts": "ad6502e4d28cc276d5c43f6de818a380",
+      "src/lib/expanded-subjects.test.ts": "e61326a8f6bdb39a0e4777a48debb0dc",
+      "src/lib/grade6-catalog.json": "4223042d323ad5a31ea9944fbc9483eb",
+      "src/lib/grade6.bank.ts": "bd3075ab913a2023cd078319eb3d90b9",
+      "src/lib/grade6.ts": "b40550c8c4b597cd802165ea29580fa6",
+      "src/lib/invite.functions.ts": "3a6f7f97648e7a097d7e77f7c15125b3",
+      "src/lib/lang-skills.test.ts": "e8dd5d3f2e3dac67286740aa625025e7",
+      "src/lib/lang-skills.ts": "fac8da53220ce77a0f9a33f66020f6a4",
+      "src/lib/language-practice.bank.ts": "129c232036ff39763aaffaed84cfa1c3",
+      "src/lib/language-practice.test.ts": "33dce1c200e2c9381ad6422787d047ed",
+      "src/lib/language-practice.ts": "11c901f51366e45f3d71f23d3a02e737",
+      "src/lib/learning-achievements.test.ts": "f96ecc569520b6c4c01422c5cd6699f2",
+      "src/lib/learning-achievements.ts": "2c52b76cd021f63789ff90cb109e556b",
+      "src/lib/learning-guides.ts": "ba050014b13f922bba0c99ae10186280",
+      "src/lib/learning-input.ts": "dc2324b088951b4c2f5484cfb8a4222d",
+      "src/lib/learning-paths.ts": "e7700123a81d1b09f8c2057bba05b3d0",
+      "src/lib/logic-games.test.ts": "424ba9ef14b8d5825211a55710b45f23",
+      "src/lib/logic-games.ts": "fa1c66f949b335b2bbf110f0ca05c83c",
+      "src/lib/lote-decks.bank.ts": "98a754530909abb0bda5a61911e3636e",
+      "src/lib/lote-decks.ts": "8edef5f44065c3e387f71b97dee8c14c",
+      "src/lib/lovable-error-reporting.ts": "920280997099588d609de792663bcbf0",
+      "src/lib/malla-scope.test.ts": "43fe1ea88ed0930cb02da06d88e50710",
+      "src/lib/malla.ts": "1e6bd9880a6e16f388cfc68fa2d3b732",
+      "src/lib/mat07-lote01.json": "55557e0e54485f1f713404ff3b0f0e6f",
+      "src/lib/mat08-lote01.json": "7f7b175087620ed57a79bcaca238d614",
+      "src/lib/material-search.test.ts": "f827a356668e6dde96948bd5a627206d",
+      "src/lib/material-search.ts": "5285f79d1223f0642c3668f09f5bf5ea",
+      "src/lib/material-sources.test.ts": "d0346220bb29b82015c200ec0f89ab1a",
+      "src/lib/material-sources.ts": "531e12ce6bbdc76ffbd5b64ae7095492",
+      "src/lib/math-expanded.bank.ts": "ba70c4eba11c7e4dd771655c6afe8192",
+      "src/lib/math-expanded.test.ts": "a7c25e0f799e4a83e9703eb868c89855",
+      "src/lib/math-first-grade.bank.ts": "41feced05421a9bfc121e4200878ada7",
+      "src/lib/math-first-grade.test.ts": "b800ec7360366c9961ef049808cca210",
+      "src/lib/mep-book-content.json": "6a0e84cd557ea1287b032f3862f40859",
+      "src/lib/mep-books.test.ts": "181a1ee89e3bc49e808a8b5fe8da9182",
+      "src/lib/mep-books.ts": "517258e35c1d7370aa99fcfc8bb53d3f",
+      "src/lib/metrology-catalog.json": "745796ca24e0599b6178bdd6a323e9d9",
+      "src/lib/metrology-en.ts": "43d056e3ba1a96a341842368e3897fc0",
+      "src/lib/metrology.bank.ts": "e80246068ece0c8fa31ad30b39bbddfa",
+      "src/lib/metrology.ts": "d4227fec56e1a6e91d1a8f0fa3d524be",
+      "src/lib/mopt-decks.test.ts": "02a145dad83e1c4e72592f1cacf4970d",
+      "src/lib/mopt-decks.ts": "d9c944508f32d799334114dd060fc001",
+      "src/lib/official-mopt-source.ts": "1a6a3f71c9dbc8069e7cb56174bdbdd8",
+      "src/lib/official-programs.ts": "6f867ea79678245ef396931d504e822b",
+      "src/lib/paddle.server.ts": "3ba6cb6b202d585ca801e1f8eeeb1293",
+      "src/lib/paddle.ts": "18687495a08001a96da312eef175baad",
+      "src/lib/paypal-pricing.test.ts": "0313efcadc88626acbe782de0e2adf72",
+      "src/lib/paypal-pricing.ts": "b45740aeb249fe19ae48500c9e77748b",
+      "src/lib/paypal.functions.ts": "b8f8ca05513a8287a3c48274ed04b9a2",
+      "src/lib/pne-decks.ts": "f8b1096cc1e77312d01c0f19ab2eba45",
+      "src/lib/practice-library.bank.ts": "3f00b1d5e551015da14557c94b82ef79",
+      "src/lib/practice-library.ts": "713cc7695936019087b3ae39774cf098",
+      "src/lib/primary-books.ts": "09e19834c5ebf3fc1c716f76eb041d80",
+      "src/lib/profile.ts": "29261053b18ef2be6f03b07dea50bdda",
+      "src/lib/progress-data.ts": "1cc7a9dec30fa79eebb6e55e1f38167a",
+      "src/lib/question-forms.bank.ts": "f1ca70a03aa0acf6709ff880c7d93d5d",
+      "src/lib/question-forms.test.ts": "848274fa34c69fa0828687867606c5fa",
+      "src/lib/question-forms.ts": "acac4e1bf33bedc19c9553794b5ed002",
+      "src/lib/questions.bank.ts": "a228edcddb456f8ebc44dfd090a54fde",
+      "src/lib/questions.ts": "98530db15a9345cbe37968200e41b365",
+      "src/lib/recreational-progress.test.ts": "f99d2d69feb2dd384ff93e1009dc3648",
+      "src/lib/recreational-progress.ts": "eaf87828f934cf7752a6114ba0f51229",
+      "src/lib/school-catalog.json": "af224a1b1b76e25c6694820bf92a4c31",
+      "src/lib/school-practice.bank.ts": "1fa330485a84d6e26b3ffc1028b1be5a",
+      "src/lib/school-practice.ts": "2e0e7eff3f5352a3ba80152697ae1c67",
+      "src/lib/sitemap.ts": "00dffb3dc759989a930dbbe5f5602131",
+      "src/lib/skill-areas.test.ts": "c94373979abadaa3b03fa06e6e1f141e",
+      "src/lib/skill-areas.ts": "985327e19cbaae42db1b54d7c412cb12",
+      "src/lib/spanish-first-grade.bank.ts": "a978c1056fa00e4244eb823f4223c977",
+      "src/lib/spanish-first-grade.test.ts": "51b983811ef6118b787b503a5a22eab4",
+      "src/lib/specialty-decks.test.ts": "0da8809bf2c3701b9d9644adcc4adfad",
+      "src/lib/specialty-decks.ts": "cc0247af2a09ce61e6a4ce53895d0573",
+      "src/lib/student.functions.ts": "928114e3f65d7e1b6de5d4dfc121795d",
+      "src/lib/study-paths.test.ts": "632933a115f7fad107e6b15c1c1bd47f",
+      "src/lib/study-paths.ts": "2dd7d8a98dbe19c78932a5e54143abd4",
+      "src/lib/teacher-classroom.functions.ts": "e7e33ef9a2d02e10971b95ca88610428",
+      "src/lib/teacher-review.functions.ts": "60ae4676ace124d94cc5c8e5ca35b7fd",
+      "src/lib/topic-catalog.json": "0fb61978b9214911b459c6dc9b1594c9",
+      "src/lib/topic-challenges.ts": "7952ee984ff8dadfba98a5605ea79e6b",
+      "src/lib/utils.ts": "d9837f38cc05303254571985e3164050",
+      "src/lib/wellbeing.bank.ts": "b98b439bdc6bde73c76b7ee3e75fbdfb",
+      "src/routeTree.gen.ts": "c8f6950e50fe39e203d9ae4f8dd4551c",
+      "src/router.tsx": "d448cb947dcf9afe7d0cf849cd6ad7f0",
+      "src/routes/README.md": "b3a2f259b66fd1a11f54b6d5ac83bf57",
+      "src/routes/__root.tsx": "bc6ee2dbd782db2c371893ad56ae9042",
+      "src/routes/acerca.tsx": "0995c429e4b4430708f099ec503d2d2f",
+      "src/routes/admin-pagos.tsx": "f10288a276714c1e7d5d51a460e1b198",
+      "src/routes/admision.tsx": "77f173bb7c7e4da9e8e626d8ce64f108",
+      "src/routes/api/public/payments/webhook.ts": "1a95b4f68303e89be83fcb34559adf42",
+      "src/routes/aprender.tsx": "6d9bc1723770e8e385ae674632b98fc4",
+      "src/routes/arena.tsx": "72df55e82c3b48df4e652f17f6622952",
+      "src/routes/auth.tsx": "255281a5afa1c505b13ddb7d57cfd673",
+      "src/routes/cabina.tsx": "a7ae3c780bddcc36c5a7729f85da6447",
+      "src/routes/certificados.tsx": "c133f5799133cf12a5e6dbdd267b5c0b",
+      "src/routes/cobertura.tsx": "5bf33cc9d9d262d015f9f8b0d6e5c919",
+      "src/routes/contacto.tsx": "2508623e50c7d24122f7bd645c5a8d69",
+      "src/routes/conversacion.tsx": "ac1aded8cdd14c7dd8fd8282a3a0fce6",
+      "src/routes/destrezas.tsx": "063331f7fb2327a37708c16131dca287",
+      "src/routes/docentes.tsx": "aecc3ecba54d6f103a454b240e039717",
+      "src/routes/especialidades.tsx": "380d7b93a45d49f221ef22b825ad6022",
+      "src/routes/estudiantes.tsx": "29cfa930d09c63a5cf21c810499800b2",
+      "src/routes/examenes-docentes.tsx": "aa580101bf49ae1b96d0545908145aec",
+      "src/routes/explorar.tsx": "ecd1320f0d7aaef21588be0571db1ded",
+      "src/routes/gastos-ia.tsx": "c586e0770929bf93d072f40b370baeb5",
+      "src/routes/habilidades.tsx": "28509d1c83a4ae7d2e9406ee8eacfed6",
+      "src/routes/habitos.tsx": "e926df01df1480a12a657f2e1189075a",
+      "src/routes/idiomas.tsx": "db794a73daa81a9125b31ec20f6d9ae6",
+      "src/routes/index.tsx": "3d058b82f3f2262224cdb510de67b46c",
+      "src/routes/ingreso.tsx": "62a1aab6e72ad40a5e7d0f272cc87466",
+      "src/routes/juegos.tsx": "913916e43e3339b1d1c167ed5618e195",
+      "src/routes/legal.tsx": "4d1ddcf192e40e4ac0fb273f0bf6b076",
+      "src/routes/libros.tsx": "9a287927c21dd2ab6408d1d0055d0fa8",
+      "src/routes/ligas.tsx": "2fff1ad298c9b50e042abba3fcfbfb67",
+      "src/routes/lovable/email/transactional/preview.ts": "edc0dce3da690b54c4510a97467902eb",
+      "src/routes/metrologia.tsx": "43f3e141f21070bd43c885683023dd2a",
+      "src/routes/mi-avance.tsx": "2355a8c4e18169d1382ab8302546bfcd",
+      "src/routes/pagos.tsx": "01b4ae6c92841743671b2d6154c5466b",
+      "src/routes/panel.tsx": "2766dfa27a9f7df19bcc68dd22e4e487",
+      "src/routes/pdf-preguntas.tsx": "c6fa8da4076d4945117530e5ad127737",
+      "src/routes/perfil.tsx": "a96f450a443128c38876a765fafe865e",
+      "src/routes/planeamiento.tsx": "b6fbef87f0f5f065eafd0aeba48872d9",
+      "src/routes/practicas-idiomas.tsx": "02939636d138e8f9295d404c87247c5e",
+      "src/routes/practicas.tsx": "8b286d60be1e0134be848a347ed4e5fc",
+      "src/routes/pregunta-ia.tsx": "e52afb2fec5ffd52c9a9f897e7db2394",
+      "src/routes/programas-mep.tsx": "cb213cc7fb13a8f7ec9fe5acaedeb0dc",
+      "src/routes/reset-password.tsx": "53b47a4bf8d8364e0b06fa92372a57c3",
+      "src/routes/resumen-primaria.tsx": "33acaa96468557fc9478e5d25918b010",
+      "src/routes/resumen-sexto.tsx": "1694673f885d596228773dbb3f6cac05",
+      "src/routes/ruleta.tsx": "8faeef3ad00db2a8180ad861bc1fd6e3",
+      "src/routes/sexto.tsx": "7843c45f66758948dfb1391eaed2b1cb",
+      "src/routes/simulacro.tsx": "385e3b2b80b5ede0404afb4da6e9570f",
+      "src/routes/sitemap[.]xml.ts": "7251469a7ebaad2247216f569f1dd609",
+      "src/routes/superadmin.tsx": "45452603f33ddccc6080d8b409a2d68f",
+      "src/routes/temario.tsx": "1fcda4a0a2416e5be801e583c9921cdc",
+      "src/server.ts": "91c9b724fb9ad417dc7702ca0fb39157",
+      "src/start.ts": "de75be42794fde6508161e3b3599fd3d",
+      "src/styles.css": "ddb4fe07b79d2c5150e5daddd5bffb71",
+      "src/test/app-routing.test.tsx": "dda0393c89450a1e5b7874b424dca80d",
+      "src/test/cloud-progress.test.ts": "d21f9c063fabbac26fa986cc38317e7d",
+      "src/test/founder-access.test.ts": "a2e872148df2c74aaaec7ce15d9cf8c7",
+      "src/test/grade6.test.ts": "be113f05ea45ecc6851471ad05e32405",
+      "src/test/practice-library.test.ts": "56bb920d8b13db21c3e653c5a23a4427",
+      "src/test/setup.ts": "ef5807c07db57482ab718e40246688a2",
+      "src/utils/payments.functions.ts": "f4e7fd31ad5f7127449f7e5384e2879e",
+      "supabase/config.toml": "c14e4f55a040f0813cc5ed682bcd61d0",
+      "tsconfig.json": "3d34aff71739a382bec105bad1c6948f",
+      "vite.config.ts": "180b60beec140d99f0bb7ed91fbaa4b4",
+      "vitest.config.ts": "cdf9aff9538e6bc3eb92842264b030a9"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--success",
+        "raw": "oklch(0.8 0.15 165)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--warn",
+        "raw": "oklch(0.8 0.15 80)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--background",
+        "raw": "oklch(0.17 0.05 262)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--foreground",
+        "raw": "oklch(0.97 0.01 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--card",
+        "raw": "oklch(0.23 0.07 262)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--card-foreground",
+        "raw": "oklch(0.97 0.01 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--popover",
+        "raw": "oklch(0.23 0.07 262)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--popover-foreground",
+        "raw": "oklch(0.97 0.01 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--primary",
+        "raw": "oklch(0.63 0.2 258)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--primary-foreground",
+        "raw": "oklch(0.99 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--secondary",
+        "raw": "oklch(0.28 0.07 262)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--secondary-foreground",
+        "raw": "oklch(0.97 0.01 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--muted",
+        "raw": "oklch(0.27 0.06 262)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--muted-foreground",
+        "raw": "oklch(0.76 0.06 250)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--accent",
+        "raw": "oklch(0.86 0.14 165)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--accent-foreground",
+        "raw": "oklch(0.2 0.05 262)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--destructive",
+        "raw": "oklch(0.577 0.245 27.325)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--destructive-foreground",
+        "raw": "oklch(0.984 0.003 247.858)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--border",
+        "raw": "oklch(0.4 0.09 260 / 55%)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--input",
+        "raw": "oklch(0.4 0.09 260 / 55%)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--ring",
+        "raw": "oklch(0.63 0.2 258)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-1",
+        "raw": "oklch(0.646 0.222 41.116)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-2",
+        "raw": "oklch(0.6 0.118 184.704)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-3",
+        "raw": "oklch(0.398 0.07 227.392)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-4",
+        "raw": "oklch(0.828 0.189 84.429)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--chart-5",
+        "raw": "oklch(0.769 0.188 70.08)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar",
+        "raw": "oklch(0.984 0.003 247.858)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-foreground",
+        "raw": "oklch(0.129 0.042 264.695)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-primary",
+        "raw": "oklch(0.208 0.042 265.755)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-primary-foreground",
+        "raw": "oklch(0.984 0.003 247.858)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-accent",
+        "raw": "oklch(0.968 0.007 247.896)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-accent-foreground",
+        "raw": "oklch(0.208 0.042 265.755)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-border",
+        "raw": "oklch(0.929 0.013 255.508)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--sidebar-ring",
+        "raw": "oklch(0.704 0.04 256.788)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--google-bg",
+        "raw": "oklch(0.19 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--google-fg",
+        "raw": "oklch(0.91 0.004 90)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--google-border",
+        "raw": "oklch(0.65 0.004 90)",
+        "source": "src/styles.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--font-display",
+        "raw": "\"Figtree\", system-ui, sans-serif",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--font-sans",
+        "raw": "\"Figtree\", system-ui, sans-serif",
+        "source": "src/styles.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--radius-sm",
+        "raw": "calc(var(--radius) - 4px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-md",
+        "raw": "calc(var(--radius) - 2px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-xl",
+        "raw": "calc(var(--radius) + 4px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-2xl",
+        "raw": "calc(var(--radius) + 8px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-3xl",
+        "raw": "calc(var(--radius) + 12px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-4xl",
+        "raw": "calc(var(--radius) + 16px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius",
+        "raw": "1rem",
+        "source": "src/styles.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--shadow-card",
+        "raw": "0 12px 40px -18px oklch(0.3 0.08 200 / 0.35)",
+        "source": "src/styles.css"
+      }
+    ],
+    "other": [
+      {
+        "name": "--gradient-hero",
+        "raw": "radial-gradient(circle at 50% -10%, oklch(0.5 0.2 258 / 0.45), transparent 55%), radial-gradient(circle at 90% 60%, oklch(0.6 0.14 170 / 0.15), transparent 45%)",
+        "source": "src/styles.css"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "AccessGate",
+      "file": "src/components/AccessGate",
+      "import_path": ""
+    },
+    {
+      "name": "AccountProvider",
+      "file": "src/components/AccountProvider",
+      "import_path": ""
+    },
+    {
+      "name": "AdminUserDetails",
+      "file": "src/components/AdminUserDetails",
+      "import_path": ""
+    },
+    {
+      "name": "AiPractice",
+      "file": "src/components/AiPractice",
+      "import_path": ""
+    },
+    {
+      "name": "AuthorizedContent",
+      "file": "src/components/AuthorizedContent",
+      "import_path": "",
+      "props": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "lang",
+          "type": "enum",
+          "values": [
+            "es",
+            "en"
+          ],
+          "default": "es"
+        },
+        {
+          "name": "exam",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "children",
+          "type": "function",
+          "required": true
+        }
+      ],
+      "usage": "Load access-checked private content, reusing the exact owner-scoped question form when an unfinished local draft exists.",
+      "examples": [
+        {
+          "label": "Authorized examination",
+          "code": "\u003cAuthorizedContent id=\"mep-math-01-v1\" exam\u003e{deck =\u003e \u003cBlindExam deck={deck} onExit={close} /\u003e}\u003c/AuthorizedContent\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not bypass access verification or publish private banks.",
+        "Do not claim option permutations create new concepts or guarantee unique tests."
+      ]
+    },
+    {
+      "name": "BlindExam",
+      "file": "src/components/BlindExam",
+      "import_path": "",
+      "props": [
+        {
+          "name": "deck",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "onExit",
+          "type": "function",
+          "required": true
+        }
+      ],
+      "usage": "Final-feedback exam with owner-scoped local resume of responses, item and remaining time for identical question forms; canonical scoring remains server-side.",
+      "examples": [
+        {
+          "label": "Authorized examination",
+          "code": "\u003cBlindExam deck={catalogDeck} onExit={close} /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not certify trivia, game, partial or guided-practice attempts; do not treat short introductory banks as complete examinations."
+      ]
+    },
+    {
+      "name": "BottomNav",
+      "file": "src/components/BottomNav",
+      "import_path": "",
+      "usage": "Mobile navigation to Home, downloadable Books, all Games and private Learning progress.",
+      "examples": [
+        {
+          "label": "Mobile navigation",
+          "code": "\u003cBottomNav /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not label a link Games while routing only to the roulette or Arena."
+      ]
+    },
+    {
+      "name": "CitedSources",
+      "file": "src/components/CitedSources",
+      "import_path": "",
+      "props": [
+        {
+          "name": "sources",
+          "type": "any",
+          "required": true
+        }
+      ],
+      "usage": "Show documentary references alongside an independent material, preserving review status and printable URLs.",
+      "examples": [
+        {
+          "label": "Curricular reference",
+          "code": "\u003cCitedSources sources={sourcesForMaterial('Español', 1)} /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not imply official endorsement or completed review from a source link alone.",
+        "Do not attribute unrelated grades or subjects to a material."
+      ]
+    },
+    {
+      "name": "DiscountBox",
+      "file": "src/components/DiscountBox",
+      "import_path": ""
+    },
+    {
+      "name": "Greeting",
+      "file": "src/components/Greeting",
+      "import_path": ""
+    },
+    {
+      "name": "IdDocumentUpload",
+      "file": "src/components/IdDocumentUpload",
+      "import_path": ""
+    },
+    {
+      "name": "IndicatorBank",
+      "file": "src/components/IndicatorBank",
+      "import_path": ""
+    },
+    {
+      "name": "InstallAppButton",
+      "file": "src/components/InstallAppButton",
+      "import_path": ""
+    },
+    {
+      "name": "InviteBox",
+      "file": "src/components/InviteBox",
+      "import_path": ""
+    },
+    {
+      "name": "LearningRecords",
+      "file": "src/components/LearningRecords",
+      "import_path": ""
+    },
+    {
+      "name": "LevelTest",
+      "file": "src/components/LevelTest",
+      "import_path": ""
+    },
+    {
+      "name": "MepBooks",
+      "file": "src/components/MepBooks",
+      "import_path": "",
+      "usage": "Browse independent specialty summaries with examples, chapter-level official curriculum links and existing sourced PDFs.",
+      "examples": [
+        {
+          "label": "Specialty library",
+          "code": "\u003cMepBooks /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not describe these summaries as official MEP publications or complete programs."
+      ]
+    },
+    {
+      "name": "MyAIHistory",
+      "file": "src/components/MyAIHistory",
+      "import_path": ""
+    },
+    {
+      "name": "MyPaymentStatus",
+      "file": "src/components/MyPaymentStatus",
+      "import_path": ""
+    },
+    {
+      "name": "PaymentTestModeBanner",
+      "file": "src/components/PaymentTestModeBanner",
+      "import_path": ""
+    },
+    {
+      "name": "PaypalButtons",
+      "file": "src/components/PaypalButtons",
+      "import_path": ""
+    },
+    {
+      "name": "PortalDoors",
+      "file": "src/components/PortalDoors",
+      "import_path": "",
+      "usage": "Use for discovery of study areas, specialties and institution-specific admission paths; UTN is academic preparation, not an entrance exam.",
+      "examples": [
+        {
+          "label": "Study navigation",
+          "code": "\u003cPortalDoors /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not claim unavailable exercises exist or route a specialty to an unrelated question bank."
+      ]
+    },
+    {
+      "name": "Progress",
+      "file": "src/components/Progress",
+      "import_path": ""
+    },
+    {
+      "name": "PromoBanners",
+      "file": "src/components/PromoBanners",
+      "import_path": ""
+    },
+    {
+      "name": "QuickBar",
+      "file": "src/components/QuickBar",
+      "import_path": "",
+      "usage": "Single bounded study search with exact curriculum results and direct access to canonical subject practice/exam blocks.",
+      "examples": [
+        {
+          "label": "Study navigation",
+          "code": "\u003cQuickBar /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not substitute unrelated subjects for scoped grade or institution queries."
+      ]
+    },
+    {
+      "name": "Quiz",
+      "file": "src/components/Quiz",
+      "import_path": "",
+      "props": [
+        {
+          "name": "deck",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "onExit",
+          "type": "function",
+          "required": true
+        },
+        {
+          "name": "onMore",
+          "type": "function"
+        },
+        {
+          "name": "lang",
+          "type": "enum",
+          "values": [
+            "es",
+            "en"
+          ],
+          "default": "es"
+        }
+      ],
+      "usage": "Guided practice with immediate feedback and owner-scoped local resume of item, answers and option order.",
+      "examples": [
+        {
+          "label": "Guided practice",
+          "code": "\u003cQuiz deck={deck} onExit={close} /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not treat local draft scores as verified academic attempts."
+      ]
+    },
+    {
+      "name": "SchoolPractice",
+      "file": "src/components/SchoolPractice",
+      "import_path": ""
+    },
+    {
+      "name": "SiteHeader",
+      "file": "src/components/SiteHeader",
+      "import_path": "",
+      "usage": "Compact navigation, initially collapsed on every viewport. More is independently collapsed; drawer supports Escape and focus trapping.",
+      "examples": [
+        {
+          "label": "Page navigation",
+          "code": "\u003cSiteHeader /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use visible navigation as authorization.",
+        "Do not open the navigation or More automatically."
+      ]
+    },
+    {
+      "name": "SkillProgress",
+      "file": "src/components/SkillProgress",
+      "import_path": ""
+    },
+    {
+      "name": "TeacherHub",
+      "file": "src/components/TeacherHub",
+      "import_path": ""
+    },
+    {
+      "name": "ThemeToggle",
+      "file": "src/components/ThemeToggle",
+      "import_path": ""
+    },
+    {
+      "name": "Button",
+      "file": "src/components/ui/button",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "default",
+            "destructive",
+            "outline",
+            "secondary",
+            "ghost",
+            "link"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "default",
+            "sm",
+            "lg",
+            "icon"
+          ],
+          "default": "default"
+        },
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "Constants",
+      "file": "src/integrations/supabase/types",
+      "import_path": ""
+    },
+    {
+      "name": "EventName",
+      "file": "src/lib/paddle.server",
+      "import_path": ""
+    }
+  ],
+  "assets": [
+    {
+      "file": "src/assets/gicm-logo.jpg.asset.json",
+      "kind": "logo",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/hero-niveles.jpg",
+      "kind": "image",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/illustrations/learning-achievements.jpg",
+      "kind": "illustration",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/illustrations/road-safety-campus.jpg",
+      "kind": "illustration",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/illustrations/technical-arena.jpg",
+      "kind": "illustration",
+      "format": "jpg"
+    },
+    {
+      "file": "src/assets/inicio-compartir.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/promo/logo_cuadrado.jpg.asset.json",
+      "kind": "logo",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/promo/promo_aprende.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/promo/promo_probala.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/promo/promo_trivias.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    }
+  ]
+}

@@ -16,12 +16,12 @@ export const Route = createFileRoute('/temas/$topic')({
     if (!topic || !chapter) throw notFound();
     return { topic, chapter };
   },
-  head: ({ loaderData }) => ({ meta { title: `${loaderData?.topic.title ?? 'Tema no disponible'} · Repaso gratuito · pracTICAtecnica.com` },
+  head: ({ loaderData }) => ({ meta: [{ title: `${loaderData?.topic.title ?? 'Tema no disponible'} · Repaso gratuito · pracTICAtecnica.com` },
     { name: 'description', content: 'Repaso gratuito independiente con resumen, ejemplos, ejercicios y actividad de clase. Bloque inicial, no programa completo.' },
     { property: 'og:title', content: `${loaderData?.topic.title ?? 'Tema no disponible'} · Repaso gratuito` },
     { property: 'og:description', content: 'Material original de repaso con ejercicios y actividad, sin pago para consultarlo.' },
     { property: 'og:type', content: 'article' }, { name: 'twitter:card', content: 'summary' },
-  ] }), component,
+  ] }), component: FreeTopic,
 });
 function FreeTopic() {
   const { topic, chapter } = Route.useLoaderData();

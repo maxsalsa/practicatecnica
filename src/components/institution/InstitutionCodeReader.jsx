@@ -4,8 +4,8 @@ import { Camera, Square } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { PickupNfc } from './PickupNfc';
 export function InstitutionCodeReader({ onCode }) {
-  const video = useRef<HTMLVideoElement>(null);
-  const controls = useRef<IScannerControls | null>(null);
+  const video = useRef(null);
+  const controls = useRef(null);
   const epoch = useRef(0);
   const [active, setActive] = useState(false);
   const [error, setError] = useState('');

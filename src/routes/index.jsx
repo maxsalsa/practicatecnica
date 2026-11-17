@@ -21,7 +21,7 @@ import { CurriculumSelector } from '@/components/CurriculumSelector';
 
 export const Route = createFileRoute("/")({staticData:{sitemap:true},
   head: () => ({
-    meta { title: "pracTICAtecnica.com | Prácticas, simulacros y juegos en Costa Rica" },
+    meta: [{ title: "pracTICAtecnica.com | Prácticas, simulacros y juegos en Costa Rica" },
       { name: "description", content: "Repase con prácticas guiadas, simulacros, juegos y materiales de primaria, secundaria y especialidades técnicas. Preparación independiente en Costa Rica." },
       { property: "og:title", content: "pracTICAtecnica.com | Prácticas, simulacros y juegos en Costa Rica" },
       { property: "og:description", content: "Repase con prácticas guiadas, simulacros, juegos y materiales de primaria, secundaria y especialidades técnicas. Preparación independiente en Costa Rica." },
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/")({staticData:{sitemap:true},
     ],
     links: [{ rel: "canonical", href: "https://practicatecnica.com" }],
   }),
-  component,
+  component: Index,
 });
 
 function Index() {
@@ -44,7 +44,7 @@ function Index() {
   const [stage, setStage] = useState("primaria");
   const current = STAGES.find((x) => x.id === stage) ?? STAGES[0];
   const shown = current ? decks.filter(current.match) : [];
-  const [best, setBest] = useState<Record<string, number>>({});
+  const [best, setBest] = useState({});
   useEffect(() => { setBest(JSON.parse(localStorage.getItem("pt-best") || "{}")); }, [deck]);
 
   return (

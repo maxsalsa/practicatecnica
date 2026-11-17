@@ -1,25 +1,101 @@
 import { useState } from 'react';
-import { useQuery,useQueryClient } from '@tanstack/react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useServerFn } from '@tanstack/react-start';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { saveEditorialResource } from '@/lib/institution-editorial.functions';
-import { editorialContent,campaignArtwork,downloadArtwork,sizes } from '@/lib/institution-editorial';
+import { editorialContent, campaignArtwork, downloadArtwork, sizes } from '@/lib/institution-editorial';
 import { toast } from 'sonner';
 import { ResourcePermissionsPanel } from './ResourcePermissionsPanel';
 import { InstitutionDocumentHeader } from './InstitutionDocumentHeader';
-
-const field='w-full rounded-md border border-input bg-background p-2';
-
-export function EditorialPanel({institutionId,name,approver,logoPath}){
- const qc=useQueryClient();const save=useServerFn(saveEditorialResource);const [id,setId]=useState();const [kind,setKind]=useState('campaign');const [title,setTitle]=useState('');const [content,setContent]=useState(editorialContent.parse({}));const [filePath,setFilePath]=useState(null);const [busy,setBusy]=useState(false);const [lang,setLang]=useState('es');const [preview,setPreview]=useState('');
- const list=useQuery({queryKey:['institution-resources',institutionId],queryFn:async()=>{const r=await supabase.from('institution_resources').select('*').eq('institution_id',institutionId).order('updated_at',{ascending:false});if(r.error)throw new Error('No se pudieron cargar campañas y circulares.');return r.data;}});
- const set=(patch)=>setContent(c=>({...c,...patch}));
- async function store(status){setBusy(true);try{const r=await save({data:{id,institutionId,kind,title,content,filePath,status}});setId(r.id);await qc.invalidateQueries({queryKey:['institution-resources',institutionId]});toast.success(status==='published'?'Publicado.':'Guardado.');}catch(e){toast.error(e instanceof Error?e.message:'No se pudo guardar.');}finally{setBusy(false);}}
- async function upload(f){if(!f)return;if(f.size>10485760||new TextDecoder().decode(await f.slice(0,5).arrayBuffer())!=='%PDF-'){toast.error('Use un PDF válido de hasta 10 MB.');return;}setBusy(true);const path=`${institutionId}/${crypto.randomUUID()}.pdf`;const r=await supabase.storage.from('institution-publications').upload(path,f,{contentType:'application/pdf'});setBusy(false);if(r.error){toast.error('No se pudo cargar el PDF.');return;}setFilePath(path);toast.success('Copia privada cargada; guarde y solicite revisión.');}
- async function artwork(png){try{let logo='';if(logoPath){const r=await supabase.storage.from('institution-logos').download(logoPath);if(r.data){logo=await new Promise<string>((resolve,reject)=>{const fr=new FileReader();fr.onload=()=>resolve(String(fr.result));fr.onerror=reject;fr.readAsDataURL(r.data);});}}
- const styles=getComputedStyle(document.documentElement);const canvas=document.createElement('canvas');canvas.width=1;canvas.height=1;const ctx=canvas.getContext('2d');if(!ctx)throw new Error();const color=(token)=>{ctx.fillStyle=styles.getPropertyValue(token).trim();ctx.fillRect(0,0,1,1);const d=ctx.getImageData(0,0,1,1).data;return `rgb(${d[0]},${d[1]},${d[2]})`;};
- const art=campaignArtwork(lang==='es'?title:content.titleEn,lang==='es'?content.text:content.textEn,name,content.format,{background:color('--background'),foreground:color('--foreground'),accent:color('--primary')},logo);setPreview(art.svg);if(art.hidden)toast.warning(`${art.hidden} líneas no caben; acorte el texto.`);const svg=new Blob([art.svg],{type:'image/svg+xml'});if(!png){downloadArtwork(svg,'campana.svg');return;}const img=new Image();const u=URL.createObjectURL(svg);img.src=u;await img.decode();const [w,h]=sizes[content.format];canvas.width=w;canvas.height=h;ctx.drawImage(img,0,0);URL.revokeObjectURL(u);canvas.toBlob(b=>{if(b)downloadArtwork(b,`campana-${lang}.png`);},'image/png');}catch{toast.error('No se pudo exportar el arte.');}}
- function fresh(){setId(undefined);setTitle('');setContent(editorialContent.parse({}));setFilePath(null);setPreview('');}
- return <section className="space-y-5"><InstitutionDocumentHeader name={name} logoPath={logoPath} title="Campañas y circulares" /><div className="grid gap-3 sm:grid-cols-2"><label>Contenido<select className={field} value={kind} onChange={e=>{fresh();setKind(e.target.value);}}><option value="campaign">Campaña</option><option value="pdf">Circular PDF</option></select></label><label>Título<input className={field} maxLength={140} value={title} onChange={e=>setTitle(e.target.value)}/></label></div>{kind==='pdf'?<label className="block">Circular PDF privada<input type="file" accept="application/pdf" aria-label="Circular PDF" className={field} onChange={e=>void upload(e.target.files?.[0])}/>{filePath&&<span className="text-sm text-accent">PDF cargado</span>}</label>:<><div className="grid gap-3 sm:grid-cols-2">{(['objective','audience','channel','tags']).map((k,i)=><label key={k}>{['Objetivo','Público','Canal','Etiquetas'][i]}<input className={field} value={content[k]} onChange={e=>set({[k]:e.target.value})}/></label>)}<label>Inicio<input type="date" className={field} value={content.start} onChange={e=>set({start:e.target.value})}/></label><label>Fin<input type="date" className={field} value={content.end} onChange={e=>set({end:e.target.value})}/></label></div><div className="flex gap-2"><Button variant={lang==='es'?'default':'outline'} onClick={()=>setLang('es')}>ES</Button><Button variant={lang==='en'?'default':'outline'} onClick={()=>setLang('en')}>EN</Button></div>{lang==='en'&&<label className="block">English title<input className={field} value={content.titleEn} onChange={e=>set({titleEn:e.target.value})}/></label>}<label className="block">{lang==='es'?'Texto español':'English text'}<textarea className={field} rows={5} value={lang==='es'?content.text:content.textEn} onChange={e=>set(lang==='es'?{text:e.target.value})}/></label><Button variant="outline" onClick={()=>set(lang==='es'?{text:'Respete a su comunidad.\nCuide los espacios compartidos.\nParticipe con responsabilidad.'})}>Propuesta temática {lang.toUpperCase()}</Button><label className="block"><input type="checkbox" checked={content.observance} onChange={e=>set({observance:e.target.checked})}/> Vinculada a efeméride</label>{content.observance&&<><label className="block">Fuente HTTPS<input className={field} value={content.source} onChange={e=>set({source:e.target.value,sourceConfirmed:false})}/></label><label><input type="checkbox" checked={content.sourceConfirmed} onChange={e=>set({sourceConfirmed:e.target.checked})}/> Revisé la fecha y su fuente</label></>}<label className="block">Formato<select className={field} value={content.format} onChange={e=>set({format:e.target.value'format']})}>{Object.keys(sizes).map(k=><option key={k}>{k}</option>)}</select></label><div className="flex gap-2"><Button variant="outline" onClick={()=>void artwork(false)}>Vista previa / SVG</Button><Button variant="outline" onClick={()=>void artwork(true)}>Descargar PNG</Button></div>{preview&&<img src={`data:image/svg+xml;charset=utf-8,${encodeURIComponent(preview)}`} alt="Vista previa de campaña" className="max-h-96 w-full object-contain"/>}</>}<label className="flex gap-2 text-sm"><input type="checkbox" checked={content.rights} onChange={e=>set({rights:e.target.checked})}/>Confirmo derechos y revisión de privacidad; sin datos personales ni informes de estudiantes.</label><div className="flex flex-wrap gap-2"><Button disabled={busy} onClick={()=>void store('draft')}>Guardar borrador</Button><Button disabled={busy} variant="outline" onClick={()=>void store('review')}>Enviar a revisión</Button>{approver&&<Button disabled={busy} onClick={()=>void store('published')}>Aprobar y publicar</Button>}<Button variant="ghost" onClick={fresh}>Nuevo</Button></div>{list.isError&&<p role="alert">{list.error.message}</p>}{list.data?.map(r=><article key={r.id} className="rounded-lg border border-border p-3"><h3 className="font-bold">{r.title}</h3><p>{r.kind} · {r.status}</p><div className="mt-2 flex flex-wrap gap-2"><Button variant="outline" onClick={()=>{setId(r.id);setTitle(r.title);setKind(r.kind);setContent(editorialContent.parse(r.content));setFilePath(r.file_path);}}>Editar / revisar</Button><Button variant="outline" onClick={()=>{fresh();setKind(r.kind);setTitle(r.title+' (copia)');setContent({...editorialContent.parse(r.content),rights:false});setFilePath(r.file_path);}}>Duplicar borrador</Button>{r.status==='published'&&r.visibility==='public'&&r.kind==='pdf'&&<Button asChild variant="outline"><a href={`/api/public/institution-pdf/${r.id}`} target="_blank" rel="noreferrer">Leer PDF público</a></Button>}{r.status==='published'&&<Button variant="outline" onClick={async()=>{const result=await supabase.from('institution_resources').update({status:'draft'}).eq('id',r.id);if(result.error)toast.error('No se pudo retirar.');else void qc.invalidateQueries({queryKey:['institution-resources',institutionId]});}}>Retirar publicación</Button>}</div>{approver&&<ResourcePermissionsPanel resourceId={r.id} visibility={r.visibility}/>}</article>)}</section>;
+const field = 'w-full rounded-md border border-input bg-background p-2';
+export function EditorialPanel({ institutionId, name, approver, logoPath }) {
+    const qc = useQueryClient();
+    const save = useServerFn(saveEditorialResource);
+    const [id, setId] = useState();
+    const [kind, setKind] = useState('campaign');
+    const [title, setTitle] = useState('');
+    const [content, setContent] = useState(editorialContent.parse({}));
+    const [filePath, setFilePath] = useState(null);
+    const [busy, setBusy] = useState(false);
+    const [lang, setLang] = useState('es');
+    const [preview, setPreview] = useState('');
+    const list = useQuery({ queryKey: ['institution-resources', institutionId], queryFn: async () => { const r = await supabase.from('institution_resources').select('*').eq('institution_id', institutionId).order('updated_at', { ascending: false }); if (r.error)
+            throw new Error('No se pudieron cargar campañas y circulares.'); return r.data; } });
+    const set = (patch) => setContent(c => ({ ...c, ...patch }));
+    async function store(status) { setBusy(true); try {
+        const r = await save({ data: { id, institutionId, kind, title, content, filePath, status } });
+        setId(r.id);
+        await qc.invalidateQueries({ queryKey: ['institution-resources', institutionId] });
+        toast.success(status === 'published' ? 'Publicado.' : 'Guardado.');
+    }
+    catch (e) {
+        toast.error(e instanceof Error ? e.message : 'No se pudo guardar.');
+    }
+    finally {
+        setBusy(false);
+    } }
+    async function upload(f) { if (!f)
+        return; if (f.size > 10485760 || new TextDecoder().decode(await f.slice(0, 5).arrayBuffer()) !== '%PDF-') {
+        toast.error('Use un PDF válido de hasta 10 MB.');
+        return;
+    } setBusy(true); const path = `${institutionId}/${crypto.randomUUID()}.pdf`; const r = await supabase.storage.from('institution-publications').upload(path, f, { contentType: 'application/pdf' }); setBusy(false); if (r.error) {
+        toast.error('No se pudo cargar el PDF.');
+        return;
+    } setFilePath(path); toast.success('Copia privada cargada; guarde y solicite revisión.'); }
+    async function artwork(png) {
+        try {
+            let logo = '';
+            if (logoPath) {
+                const r = await supabase.storage.from('institution-logos').download(logoPath);
+                if (r.data) {
+                    logo = await new Promise((resolve, reject) => { const fr = new FileReader(); fr.onload = () => resolve(String(fr.result)); fr.onerror = reject; fr.readAsDataURL(r.data); });
+                }
+            }
+            const styles = getComputedStyle(document.documentElement);
+            const canvas = document.createElement('canvas');
+            canvas.width = 1;
+            canvas.height = 1;
+            const ctx = canvas.getContext('2d');
+            if (!ctx)
+                throw new Error();
+            const color = (token) => { ctx.fillStyle = styles.getPropertyValue(token).trim(); ctx.fillRect(0, 0, 1, 1); const d = ctx.getImageData(0, 0, 1, 1).data; return `rgb(${d[0]},${d[1]},${d[2]})`; };
+            const art = campaignArtwork(lang === 'es' ? title : content.titleEn, lang === 'es' ? content.text : content.textEn, name, content.format, { background: color('--background'), foreground: color('--foreground'), accent: color('--primary') }, logo);
+            setPreview(art.svg);
+            if (art.hidden)
+                toast.warning(`${art.hidden} líneas no caben; acorte el texto.`);
+            const svg = new Blob([art.svg], { type: 'image/svg+xml' });
+            if (!png) {
+                downloadArtwork(svg, 'campana.svg');
+                return;
+            }
+            const img = new Image();
+            const u = URL.createObjectURL(svg);
+            img.src = u;
+            await img.decode();
+            const [w, h] = sizes[content.format];
+            canvas.width = w;
+            canvas.height = h;
+            ctx.drawImage(img, 0, 0);
+            URL.revokeObjectURL(u);
+            canvas.toBlob(b => { if (b)
+                downloadArtwork(b, `campana-${lang}.png`); }, 'image/png');
+        }
+        catch {
+            toast.error('No se pudo exportar el arte.');
+        }
+    }
+    function fresh() { setId(undefined); setTitle(''); setContent(editorialContent.parse({})); setFilePath(null); setPreview(''); }
+    return <section className="space-y-5"><InstitutionDocumentHeader name={name} logoPath={logoPath} title="Campañas y circulares"/><div className="grid gap-3 sm:grid-cols-2"><label>Contenido<select className={field} value={kind} onChange={e => { fresh(); setKind(e.target.value); }}><option value="campaign">Campaña</option><option value="pdf">Circular PDF</option></select></label><label>Título<input className={field} maxLength={140} value={title} onChange={e => setTitle(e.target.value)}/></label></div>{kind === 'pdf' ? <label className="block">Circular PDF privada<input type="file" accept="application/pdf" aria-label="Circular PDF" className={field} onChange={e => void upload(e.target.files?.[0])}/>{filePath && <span className="text-sm text-accent">PDF cargado</span>}</label> : <><div className="grid gap-3 sm:grid-cols-2">{(['objective', 'audience', 'channel', 'tags']).map((k, i) => <label key={k}>{['Objetivo', 'Público', 'Canal', 'Etiquetas'][i]}<input className={field} value={content[k]} onChange={e => set({ [k]: e.target.value })}/></label>)}<label>Inicio<input type="date" className={field} value={content.start} onChange={e => set({ start: e.target.value })}/></label><label>Fin<input type="date" className={field} value={content.end} onChange={e => set({ end: e.target.value })}/></label></div><div className="flex gap-2"><Button variant={lang === 'es' ? 'default' : 'outline'} onClick={() => setLang('es')}>ES</Button><Button variant={lang === 'en' ? 'default' : 'outline'} onClick={() => setLang('en')}>EN</Button></div>{lang === 'en' && <label className="block">English title<input className={field} value={content.titleEn} onChange={e => set({ titleEn: e.target.value })}/></label>}<label className="block">{lang === 'es' ? 'Texto español' : 'English text'}<textarea className={field} rows={5} value={lang === 'es' ? content.text : content.textEn} onChange={e => set(lang === 'es' ? { text: e.target.value } : )}/></label><Button variant="outline" onClick={() => set(lang === 'es' ? { text: 'Respete a su comunidad.\nCuide los espacios compartidos.\nParticipe con responsabilidad.' } : )}>Propuesta temática {lang.toUpperCase()}</Button><label className="block"><input type="checkbox" checked={content.observance} onChange={e => set({ observance: e.target.checked })}/> Vinculada a efeméride</label>{content.observance && <><label className="block">Fuente HTTPS<input className={field} value={content.source} onChange={e => set({ source: e.target.value, sourceConfirmed: false })}/></label><label><input type="checkbox" checked={content.sourceConfirmed} onChange={e => set({ sourceConfirmed: e.target.checked })}/> Revisé la fecha y su fuente</label></>}<label className="block">Formato<select className={field} value={content.format} onChange={e => set({ format: e.target.value, 'format':  })}/>]})}>{Object.keys(sizes).map(k => <option key={k}>{k}</option>)}</select></>}label><div className="flex gap-2"><Button variant="outline" onClick={() => void artwork(false)}>Vista previa / SVG</Button><Button variant="outline" onClick={() => void artwork(true)}>Descargar PNG</Button></div>{preview && <img src={`data:image/svg+xml;charset=utf-8,${encodeURIComponent(preview)}`} alt="Vista previa de campaña" className="max-h-96 w-full object-contain"/>}</>;
 }
+<label className="flex gap-2 text-sm"><input type="checkbox" checked={content.rights} onChange={e => set({ rights: e.target.checked })}/>Confirmo derechos y revisión de privacidad; sin datos personales ni informes de estudiantes.</label>, <div className="flex flex-wrap gap-2"><Button disabled={busy} onClick={() => void store('draft')}>Guardar borrador</Button><Button disabled={busy} variant="outline" onClick={() => void store('review')}>Enviar a revisión</Button>{approver && <Button disabled={busy} onClick={() => void store('published')}>Aprobar y publicar</Button>}<Button variant="ghost" onClick={fresh}>Nuevo</Button></div>;
+{
+    list.isError && <p role="alert">{list.error.message}</p>;
+}
+{
+    list.data?.map(r => <article key={r.id} className="rounded-lg border border-border p-3"><h3 className="font-bold">{r.title}</h3><p>{r.kind} · {r.status}</p><div className="mt-2 flex flex-wrap gap-2"><Button variant="outline" onClick={() => { setId(r.id); setTitle(r.title); setKind(r.kind); setContent(editorialContent.parse(r.content)); setFilePath(r.file_path); }}>Editar / revisar</Button><Button variant="outline" onClick={() => { fresh(); setKind(r.kind); setTitle(r.title + ' (copia)'); setContent({ ...editorialContent.parse(r.content), rights: false }); setFilePath(r.file_path); }}>Duplicar borrador</Button>{r.status === 'published' && r.visibility === 'public' && r.kind === 'pdf' && <Button asChild variant="outline"><a href={`/api/public/institution-pdf/${r.id}`} target="_blank" rel="noreferrer">Leer PDF público</a></Button>}{r.status === 'published' && <Button variant="outline" onClick={async () => { const result = await supabase.from('institution_resources').update({ status: 'draft' }).eq('id', r.id); if (result.error)
+        toast.error('No se pudo retirar.');
+    else
+        void qc.invalidateQueries({ queryKey: ['institution-resources', institutionId] }); }}>Retirar publicación</Button>}</div>{approver && <ResourcePermissionsPanel resourceId={r.id} visibility={r.visibility}/>}</article>);
+}
+section > ;

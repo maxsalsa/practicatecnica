@@ -4,7 +4,7 @@ import { ANNUAL_PRICES_CRC, PLAN_LABELS, PLAN_NOTES, formatCrc } from "@/lib/pri
 
 export const Route = createFileRoute("/precios")({staticData:{sitemap:true},
   head: () => ({
-    meta { title: "Precios oficiales · pracTICAtecnica.com" },
+    meta: [{ title: "Precios oficiales · pracTICAtecnica.com" },
       { name: "description", content: "Planes anuales ₡2.500 (₡1.000 con colegio afiliado), público general y docentes ₡3.500, instituciones ₡10.000. SINPE Móvil o PayPal." },
       { property: "og:title", content: "Precios oficiales · pracTICAtecnica.com" },
       { property: "og:description", content: "Un pago anual incluye todas las materias, simulacros y certificados. Instituciones: ₡10.000 por año." },
@@ -12,7 +12,7 @@ export const Route = createFileRoute("/precios")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component,
+  component: Precios,
 });
 
 const INSTITUTION_INCLUDES = ["Logo propio de la institución", "Avisos para personal y estudiantes con confirmación de lectura", "Solicitudes de permisos del personal con comprobante privado", "Acceso del personal verificado", "Descuento estudiantil a ₡1.000 por año"];

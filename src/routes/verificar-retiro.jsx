@@ -12,26 +12,26 @@ import { PickupNfc } from '@/components/institution/PickupNfc';
 
 export const Route = createFileRoute('/verificar-retiro')({
   staticData: { sitemap },
-  head: () => ({ meta { title: 'Consulta privada de retiros · pracTICAtecnica.com' },
+  head: () => ({ meta: [{ title: 'Consulta privada de retiros · pracTICAtecnica.com' },
     { name: 'description', content: 'Consulta autorizada del estado vigente de retiros mediante QR, barras o identificación registrada.' },
     { property: 'og:title', content: 'Verificar retiro · pracTICAtecnica.com' },
     { property: 'og:description', content: 'Verificación privada para familias y personal institucional autorizado.' },
     { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }, { name: 'robots', content: 'noindex' },
   ] }),
-  component,
+  component: PickupScanner,
 });
 
 function PickupScanner() {
   const { user, ready } = useAccount();
   const lookup = useServerFn(lookupPickup);
-  const video = useRef<HTMLVideoElement>(null);
-  const controls = useRef<IScannerControls | null>(null);
+  const video = useRef(null);
+  const controls = useRef(null);
   const generation = useRef(0);
   const [code, setCode] = useState('');
   const [scanning, setScanning] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
-  const [response, setResponse] = useState<Awaited<ReturnType<typeof lookupPickup>> | null>(null);
+  const [response, setResponse] = useState(null);
   function stop() { generation.current += 1; controls.current?.stop(); controls.current = null; setScanning(false); }
   useEffect(() => () => { generation.current += 1; controls.current?.stop(); }, []);
   useEffect(() => { stop(); setResponse(null); setCode(''); setError(''); }, [user?.id]);

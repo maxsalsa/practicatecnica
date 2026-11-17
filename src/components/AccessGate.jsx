@@ -10,7 +10,7 @@ export function AccessGate({ children }) {
   const { user } = useAccount();
   const path = useRouterState({ select: (s) => s.location.pathname });
   const [blocked, setBlocked] = useState(false);
-  const observedTrials = useRef(new Set<string>());
+  const observedTrials = useRef(new Set());
   const [access, setAccess] = useState(null);
 
   useEffect(() => {

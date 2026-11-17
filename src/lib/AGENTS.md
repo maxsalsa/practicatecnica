@@ -1,0 +1,17 @@
+# src/lib notes
+- Shared back navigation uses TanStack history with an Inicio fallback, preserving route search state rather than hardcoding previous destinations.
+- Menu-view selection filters navigation and hides non-role pages (preview-routes.ts) for verified global admins; never use a preview role for data authorization. Installation uses the existing manifest and native browser events, without app-shell caching.
+- Academic attempt limits are checked before content loading and enforced atomically by a database trigger; normalize seeded/form deck IDs so random variants cannot reset the three-practice/two-exam policy.
+- Cascading curriculum discovery uses canonical modality IDs and exact level/subject names in validated URL search; pending subjects remain selectable without inventing bank coverage.
+- Institution paths share explicit bank metadata without cloning questions; official program catalogs distinguish identified sources from completed curricular review to avoid false institutional coverage.
+- Scoped institution/grade searches suppress unrelated general shortcuts and preserve parsed grade filters; mixed banks carry explicit scope notices so discovery cannot imply specific curricular coverage.
+- Introductory cross-grade science and financial banks keep separate subject keys and explicit unreviewed scope; do not attach them to every grade or infer full specialty coverage from a general block.
+- Parametric decks use ids gen-<family>[-60]-s<seed> rebuilt deterministically by generated.bank; only the content handler mints seeds, scoring accepts seeded ids only, and exam seeds are reusable only with an open exam session.
+- Expanded generator concepts use separate family IDs and leave existing generator arrays unchanged so historical seeded answers remain reproducible.
+- Catalog controls reuse assessment-size requirements to show unavailable practice/exam actions before loading; UI never weakens canonical scoring sizes to hide missing content.
+- Teacher JSON imports validate canonical keys locally and enter the existing owner-scoped draft/publication flow, never overwrite platform banks.
+- Topic XP aggregates owner-read verified attempts by canonical family; generated seeds and option forms never split totals or admit self-reported points.
+- Variety audits report normalized stems and numeric structural repetitions as editorial signals; never alter historical seeded banks or equate permutations with reviewed concepts.
+- Diverse v2 reviews select at most one item per generator template, collapse known duplicate operations, and never pad short banks; legacy seeded forms remain unchanged for historical scoring.
+- Curated language reviews use fixed versioned items with unique skill IDs, not subject/number substitutions; authorized institutional preparation copies them to private drafts without approval or publication.
+- Institutional v4 preparation deduplicates explicit editorial skill labels and structures without changing historical decks; unknown skills remain pending human review, and section links select context but never grant permissions.

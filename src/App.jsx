@@ -1,101 +1,49 @@
-import React, { useState } from 'react';
-import ExamSimulatorHub from './components/simulator/ExamSimulatorHub.jsx';
-import AnnouncementsBroadcastPanel from './components/institution/AnnouncementsBroadcastPanel.jsx';
-import { SchedulesModule, CafeteriaModule, PermissionsModule } from './components/institution/InstitutionOperationsSuite.jsx';
-import GicmGoogleAuth from './components/auth/GicmGoogleAuth.jsx';
-
-const KPI_METRICS = [
-  { label: 'Simulacros Práctica Técnica', value: 'MEP · CTP · MOPT · U', delta: 'Motor Interactivo Activo', tone: 'text-indigo-600' },
-  { label: 'Horarios y Laboratorios', value: 'Bloques 40/80m', delta: 'Exportación Excel CSV', tone: 'text-indigo-600' },
-  { label: 'Comedor y Asistencia', value: 'Aforo + Reportes', delta: 'Descarga CSV UTF-8', tone: 'text-emerald-600' },
-  { label: 'Google Auth Soberano', value: 'GICM · Activo', delta: 'Client ID Propio 669679...', tone: 'text-emerald-600' }
-];
-
-const NAVIGATION_TABS = [
-  { id: 'simulacros', label: '1. Simulacros Práctica Técnica' },
-  { id: 'avisos', label: '2. Avisos Oficiales' },
-  { id: 'horarios', label: '3. Horarios (+Excel)' },
-  { id: 'comedor', label: '4. Comedor (+Excel)' },
-  { id: 'permisos', label: '5. Permisos (+Excel)' }
-];
+import React, { useState } from "react"
+import AnalyticsDashboard from "./components/institution/AnalyticsDashboard"
+import AnnouncementsBroadcastPanel from "./components/institution/AnnouncementsBroadcastPanel"
+import StudentWalletView from "./components/institution/StudentWalletView"
+import LumiAvatar from "./components/lumi/LumiAvatar"
+import { BarChart3, Bell, Wallet, Bot } from "lucide-react"
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('simulacros');
+  const [activeTab, setActiveTab] = useState("dashboard")
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f8f9fe]">
-      <header className="argon-header-gradient pb-28 pt-8 px-4 sm:px-8 text-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-white/15">
-            <div className="flex items-center gap-3">
-              <div className="h-11 w-11 rounded-xl bg-white text-indigo-700 font-black flex items-center justify-center shadow-md text-lg">
-                PT
-              </div>
-              <div>
-                <div className="flex items-center gap-2">
-                  <h1 className="text-xl font-extrabold tracking-tight">
-                    practicatecnica.com
-                  </h1>
-                  <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-400/20 text-emerald-100 border border-emerald-300/30">
-                    GICM · Marca Propia
-                  </span>
-                </div>
-                <p className="text-xs text-indigo-100 mt-0.5">
-                  Simulacros MEP · CTP · MOPT · Admisión U + Gestión Institucional con Reportes Excel
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-wrap items-center gap-3">
-              <div className="flex flex-wrap items-center gap-1.5 bg-white/15 p-1.5 rounded-xl backdrop-blur">
-                {NAVIGATION_TABS.map((tab) => (
-                  <button
-                    key={tab.id}
-                    onClick={() => setActiveTab(tab.id)}
-                    className={'px-3 py-2 rounded-lg text-xs font-bold transition cursor-pointer ' + (
-                      activeTab === tab.id
-                        ? 'bg-white text-indigo-700 shadow-sm'
-                        : 'text-white hover:bg-white/10'
-                    )}
-                  >
-                    {tab.label}
-                  </button>
-                ))}
-              </div>
-
-              <GicmGoogleAuth />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-7">
-            {KPI_METRICS.map((kpi, idx) => (
-              <div key={idx} className="argon-card p-5 text-slate-800">
-                <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
-                  {kpi.label}
-                </p>
-                <p className="text-xl font-black text-slate-800 mt-1">
-                  {kpi.value}
-                </p>
-                <p className={'text-xs font-semibold mt-2 ' + kpi.tone}>
-                  {kpi.delta}
-                </p>
-              </div>
-            ))}
+    <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
+      <header className="border-b bg-card px-6 py-4 flex items-center justify-between shadow-sm">
+        <div className="flex items-center gap-3">
+          <div className="p-2 bg-primary text-primary-foreground rounded-lg font-bold">PT</div>
+          <div>
+            <h1 className="text-lg font-bold">Práctica Técnica .com</h1>
+            <p className="text-xs text-muted-foreground">Ecosistema MEP — CTP Mercedes Norte (Max Salazar)</p>
           </div>
         </div>
+        <span className="text-xs px-2.5 py-1 bg-emerald-500/10 text-emerald-600 rounded-full font-medium">Producción Activa</span>
       </header>
 
-      <main className="max-w-7xl w-full mx-auto px-4 sm:px-8 -mt-16 pb-16 flex-1">
-        {activeTab === 'simulacros' && <ExamSimulatorHub />}
-        {activeTab === 'avisos' && <AnnouncementsBroadcastPanel />}
-        {activeTab === 'horarios' && <SchedulesModule />}
-        {activeTab === 'comedor' && <CafeteriaModule />}
-        {activeTab === 'permisos' && <PermissionsModule />}
-      </main>
+      <div className="flex flex-1 overflow-hidden">
+        <aside className="w-64 border-r bg-card p-4 space-y-2 hidden md:block">
+          <p className="text-xs font-semibold text-muted-foreground uppercase px-3 mb-2">Módulos GICM</p>
+          <button onClick={() => setActiveTab("dashboard")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "dashboard" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
+            <BarChart3 className="w-4 h-4" /><span>Analíticas SuperAdmin</span>
+          </button>
+          <button onClick={() => setActiveTab("announcements")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "announcements" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
+            <Bell className="w-4 h-4" /><span>Comunicados Oficiales</span>
+          </button>
+          <button onClick={() => setActiveTab("wallet")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "wallet" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
+            <Wallet className="w-4 h-4" /><span>CoopePago & Alcancía</span>
+          </button>
+        </aside>
 
-      <footer className="py-6 text-center text-xs text-slate-400 border-t border-slate-200/60 bg-white">
-        practicatecnica.com © 2026 · GICM & BDS Devs · Autenticación OAuth Soberana
-      </footer>
+        <main className="flex-1 p-6 overflow-y-auto bg-background space-y-6">
+          <div className="max-w-6xl mx-auto space-y-6">
+            <LumiAvatar state="feliz" />
+            {activeTab === "dashboard" && <AnalyticsDashboard />}
+            {activeTab === "announcements" && <AnnouncementsBroadcastPanel sectionId="11-Tecnico" />}
+            {activeTab === "wallet" && <StudentWalletView />}
+          </div>
+        </main>
+      </div>
     </div>
-  );
+  )
 }

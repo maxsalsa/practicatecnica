@@ -6,13 +6,13 @@ import { readAttempts } from "@/lib/cloud-progress";
 import { aggregateAttempts } from "@/lib/progress-data";
 
 export const Route = createFileRoute("/ligas")({staticData:{sitemap:false},
-  head: () => ({ meta { title: "Ligas Técnicas semanales · pracTICAtecnica.com" },
+  head: () => ({ meta: [{ title: "Ligas Técnicas semanales · pracTICAtecnica.com" },
     { name: "description", content: "Compita cada semana en las Ligas Bronce, Plata, Oro y Diamante, gane cofres y nuevos avatares." },
     { property: "og:title", content: "Ligas Técnicas semanales · pracTICAtecnica.com" },
     { property: "og:description", content: "Ascenso, descenso y cofres de recompensa cada semana." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
   ] }),
-  component,
+  component: Ligas,
 });
 
 const TIERS = ["🥉 Bronce", "🥈 Plata", "🥇 Oro", "💎 Diamante"];

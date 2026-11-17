@@ -2,13 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/ingreso")({staticData:{sitemap:false},
-  head: () => ({ meta { title: "Ingreso a colegios científicos, humanistas, bilingües y CTP · pracTICAtecnica.com" },
+  head: () => ({ meta: [{ title: "Ingreso a colegios científicos, humanistas, bilingües y CTP · pracTICAtecnica.com" },
     { name: "description", content: "Prepárese para el ingreso a colegios científicos, humanistas, bilingües, CTP de 7.º y especialidades de 10.º, y liceos académicos." },
     { property: "og:title", content: "Ingreso a colegios · pracTICAtecnica.com" },
     { property: "og:description", content: "Qué estudiar, cómo practicar y simulacros para cada tipo de colegio en Costa Rica." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
   ] }),
-  component,
+  component: Ingreso,
 });
 
 const TIPOS = [

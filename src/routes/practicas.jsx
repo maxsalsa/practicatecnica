@@ -31,7 +31,7 @@ const searchSchema = z.object({
 export const Route = createFileRoute("/practicas")({staticData:{sitemap:true},
   validateSearch: (search) => searchSchema.parse(search),
   head: () => ({
-    meta { title: "Fichas y prácticas por nivel · pracTICAtecnica.com" },
+    meta: [{ title: "Fichas y prácticas por nivel · pracTICAtecnica.com" },
       {
         name: "description",
         content "Fichas bilingües de seis materias, secuencia, ejercicios explicados y rúbricas por tema y nivel.",
@@ -45,7 +45,7 @@ export const Route = createFileRoute("/practicas")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component,
+  component: PracticeLibrary,
 });
 function PracticeLibrary() {
   const search = Route.useSearch();

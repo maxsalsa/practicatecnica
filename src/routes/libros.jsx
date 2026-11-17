@@ -18,13 +18,13 @@ import { LibraryEditorial } from '@/components/institution/LibraryEditorial';
 
 export const Route = createFileRoute("/libros")({staticData:{sitemap:true},
   validateSearch: (s) =>typeof s['q']==='string'?{q:s['q']}:{},
-  head: () => ({ meta { title: "Biblioteca y manuales de usuario e ingeniería · pracTICAtecnica.com" },
+  head: () => ({ meta: [{ title: "Biblioteca y manuales de usuario e ingeniería · pracTICAtecnica.com" },
     { name: "description", content: "Biblioteca de cuadernillos y resúmenes independientes con fuentes MEP, ejemplos resueltos y PDF de Desarrollo Web, Contabilidad, Contabilidad y Costos y Ciberseguridad; bloques de décimo y duodécimo." },
     { property: "og:title", content: "Libros digitales y resúmenes MEP · pracTICAtecnica.com" },
     { property: "og:description", content: "Lea y descargue diez manuales de usuario, ingeniería y gestión institucional junto a los materiales de estudio." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
   ] }),
-  component,
+  component: Libros,
 });
 
 function Libros() {
@@ -32,7 +32,7 @@ function Libros() {
   const all = [...primaryBooks, ...secondaryBooks, ctpBook];
   const book = all.find((b) => b.grade === g) ?? primaryBooks[0];
   const [q, setQ] = useState(Route.useSearch().q??'');
-  const [open, setOpen] = useState<Record<string, boolean>>({});
+  const [open, setOpen] = useState({});
   const [view, setView] = useState(null);
   const day = Math.floor((Date.now() - 6 * 3600e3) / 86400e3);
   const tip = MOTIVA[day % MOTIVA.length] ?? MOTIVA[0];

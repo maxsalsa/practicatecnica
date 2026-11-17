@@ -5,7 +5,7 @@ import { MyAIHistory } from "@/components/MyAIHistory";
 
 export const Route = createFileRoute("/panel")({staticData:{sitemap:false},
   head: () => ({
-    meta { title: "Mi panel · pracTICAtecnica.com" },
+    meta: [{ title: "Mi panel · pracTICAtecnica.com" },
       { name: "description", content: "Su avance, liga, habilidades completadas y oportunidades de mejora." },
       { property: "og:title", content: "Mi panel · pracTICAtecnica.com" },
       { property: "og:description", content: "Control de prácticas, simulacros y preguntas generadas con IA." },
@@ -13,7 +13,7 @@ export const Route = createFileRoute("/panel")({staticData:{sitemap:false},
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component,
+  component: Panel,
 });
 
 function Panel() {

@@ -5,7 +5,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { TeacherAccess } from '@/components/TeacherAccess';
 
 export const Route = createFileRoute("/docentes")({staticData:{sitemap:true},
-  head: () => ({ meta { title: "Docentes · Libro imprimible, reportes y registro de alumnos · pracTICAtecnica.com" },
+  head: () => ({ meta: [{ title: "Docentes · Libro imprimible, reportes y registro de alumnos · pracTICAtecnica.com" },
     { name: "description", content: "Herramientas para docentes, registro de alumnos, reportes de rachas, notas y avance." },
     { property: "og:title", content: "Docentes · pracTICAtecnica.com" },
     { property: "og:description", content: "Imprima libros, registre alumnos y vea reportes de clase." },

@@ -6,7 +6,7 @@ const WA = "https://wa.me/50660906359?text=" + encodeURIComponent("Hola, les esc
 
 export const Route = createFileRoute("/contacto")({staticData:{sitemap:true},
   head: () => ({
-    meta { title: "Contacto | pracTICAtecnica.com" },
+    meta: [{ title: "Contacto | pracTICAtecnica.com" },
       { name: "description", content: "Contacte a GICM por WhatsApp o correo, colegios y docentes." },
       { property: "og:title", content: "Contacto | pracTICAtecnica.com" },
       { property: "og:description", content: "WhatsApp y correo de GICM para familias y colegios." },
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/contacto")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component,
+  component: Contacto,
 });
 
 function Contacto() {

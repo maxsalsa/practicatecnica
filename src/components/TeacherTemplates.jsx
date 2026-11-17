@@ -10,11 +10,11 @@ const columns = ['Resultados de aprendizaje','Saberes esenciales','Estrategias p
 
 export function TeacherTemplates() {
   const [mode,setMode] = useState('ppp');
-  const [values,setValues] = useState<Record<string,string>>({'Curso lectivo':'2026'});
+  const [values,setValues] = useState({'Curso lectivo':'2026'});
   const [mercedes,setMercedes] = useState(false);
   const [customCrest,setCustomCrest] = useState('');
   const [rowCount,setRowCount] = useState(1);
-  const [cells,setCells] = useState<Record<string,string>>({});
+  const [cells,setCells] = useState({});
   const title = mode==='ppp' ? 'Plan de práctica pedagógica' : mode==='cotidiano' ? 'Registro de trabajo cotidiano' : 'Consulta institucional del reglamento';
   async function loadCrest(file) {
     if (!file || !['image/png','image/jpeg','image/webp'].includes(file.type) || file.size > 2_000_000) return;

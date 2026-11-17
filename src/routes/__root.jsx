@@ -1,6 +1,6 @@
-import { PreviewRouteGate } from '@/components/PreviewRouteGate';
+import { PreviewRouteGate } from "@/components/PreviewRouteGate";
 import { BottomNav } from "@/components/BottomNav";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
   Link,
@@ -8,14 +8,12 @@ import {
   useRouter,
   HeadContent,
   Scripts,
-
 } from "@tanstack/react-router";
 import { useEffect } from "react";
-
-import appCss from "../styles.css?url";
 import { AccountProvider } from "@/components/AccountProvider";
 import { Toaster } from "@/components/ui/sonner";
 import { AccessGate } from "@/components/AccessGate";
+import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
   return (
@@ -45,7 +43,6 @@ function ErrorComponent({ error, reset }) {
   useEffect(() => {
     console.error("Error de aplicación:", error);
   }, [error]);
-
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
@@ -59,7 +56,7 @@ function ErrorComponent({ error, reset }) {
           <button
             onClick={() => {
               router.invalidate();
-              reset();
+              if (typeof reset === "function") reset();
             }}
             className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
@@ -77,14 +74,17 @@ function ErrorComponent({ error, reset }) {
   );
 }
 
-export const Route = createRootRouteWithContext()({staticData:{sitemap:false},
+export const Route = createRootRouteWithContext()({
+  staticData: { sitemap: false },
   head: () => ({
-    // Replace these placeholders with the app's name and description when first building the app.
-    // Each content route, / included, must still set its own head(). Never add og // twitter here root's preview image.
-    meta { charSet: "utf-8" },
+    meta: [
+      { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Práctica Técnica CR | Plataforma de Estudio, Simulacros y MOPT" },
-      { name: "description", content: "Preparación interactiva para colegios técnicos, admisión universitaria y pruebas teóricas de manejo en Costa Rica." },
+      {
+        name: "description",
+        content: "Preparación interactiva para colegios técnicos, admisión universitaria y pruebas teóricas de manejo en Costa Rica.",
+      },
       { name: "author", content: "GICM Desarrollo de Sistemas Digitales y Constructivos ICM" },
       { name: "theme-color", content: "#0B132B" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
@@ -94,20 +94,18 @@ export const Route = createRootRouteWithContext()({staticData:{sitemap:false},
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links {
-        rel: "stylesheet",
-        href,
-      },
+    links: [
+      { rel: "stylesheet", href: appCss },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800;900&display=swap" },
-      { rel: "icon", href: "/favicon.png?v=owl-26x", type: "image/png" },
-      { rel: "manifest", href: "/manifest.webmanifest" },
-      { rel: "apple-touch-icon", href: "/apple-touch-icon.png?v=owl-26x" },
+      { rel: "icon", href: "/favicon.png?v=26", type: "image/png" },
+      { rel: "manifest", href: "/manifest.json?v=26" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png?v=26" },
     ],
   }),
-  shellComponent,
-  component,
-  notFoundComponent,
-  errorComponent,
+  shellComponent: RootShell,
+  component: RootComponent,
+  notFoundComponent: NotFoundComponent,
+  errorComponent: ErrorComponent,
 });
 
 function RootShell({ children }) {
@@ -125,12 +123,24 @@ function RootShell({ children }) {
 }
 
 function RootComponent() {
-  const { queryClient } = Route.useRouteContext();
-
-  return (
-    <QueryClientProvider client={queryClient}>
-      {/* Required here. Removing <Outlet /> breaks all child routes. */}
-      <AccountProvider><AccessGate><div className="pb-16 md:pb-0"><PreviewRouteGate><Outlet /></PreviewRouteGate></div></AccessGate><BottomNav /><Toaster /></AccountProvider>
-    </QueryClientProvider>
+  const context = Route.useRouteContext();
+  const queryClient = context?.queryClient;
+  const content = (
+    <AccountProvider>
+      <AccessGate>
+        <div className="pb-16 md:pb-0">
+          <PreviewRouteGate>
+            <Outlet />
+          </PreviewRouteGate>
+        </div>
+      </AccessGate>
+      <BottomNav />
+      <Toaster />
+    </AccountProvider>
+  );
+  return queryClient ? (
+    <QueryClientProvider client={queryClient}>{content}</QueryClientProvider>
+  ) : (
+    content
   );
 }

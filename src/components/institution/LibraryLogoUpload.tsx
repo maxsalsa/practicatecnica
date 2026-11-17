@@ -1,0 +1,22 @@
+import { useState,useRef } from 'react';
+import { useQuery,useQueryClient } from '@tanstack/react-query';
+import { supabase } from '@/integrations/supabase/client';
+import { useAccount } from '@/components/AccountProvider';
+import { Button } from '@/components/ui/button';
+import { hasVisibleTransparency } from '@/lib/institution-publication';
+import { toast } from 'sonner';
+export function LibraryLogoUpload(){
+ const {user}=useAccount();const qc=useQueryClient();const input=useRef<HTMLInputElement>(null);const [selected,setSelected]=useState('');const [preview,setPreview]=useState('');const [file,setFile]=useState<File>();const [busy,setBusy]=useState(false);
+ const list=useQuery({queryKey:['library-logo-institutions',user?.id],enabled:!!user,queryFn:async()=>{
+  if(!user)return[];const a=await supabase.rpc('has_role',{_user_id:user.id,_role:'admin'});
+  if(a.error)throw new Error('No se pudieron consultar permisos.');
+  if(a.data){const r=await supabase.rpc('admin_institutions');if(r.error)throw new Error('No se pudieron cargar instituciones.');return r.data;}
+  const r=await supabase.rpc('my_institutions');if(r.error)throw new Error('No se pudieron cargar instituciones.');return r.data.filter(i=>i.member_role==='direccion');
+ }});
+ async function choose(f:File|undefined){setFile(undefined);setPreview('');if(!f)return;
+  if(f.type!=='image/png'||f.size===0||f.size>1048576){toast.error('Use PNG transparente de hasta 1 MB.');return;}
+  try{const bitmap=await createImageBitmap(f);if(bitmap.width*bitmap.height>16000000){bitmap.close();throw new Error();}const canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;const ctx=canvas.getContext('2d');if(!ctx){bitmap.close();throw new Error();}ctx.drawImage(bitmap,0,0);bitmap.close();if(!hasVisibleTransparency(ctx.getImageData(0,0,canvas.width,canvas.height).data)){toast.error('El PNG debe tener fondo transparente y contenido visible.');return;}setPreview(canvas.toDataURL('image/png'));setFile(f);}catch{toast.error('No se pudo leer el PNG.');}
+ }
+ async function save(){const inst=list.data?.find(i=>i.id===(selected||list.data?.[0]?.id));if(!inst||!file)return;setBusy(true);const path=`${inst.id}/logo-${Date.now()}.png`;try{const up=await supabase.storage.from('institution-logos').upload(path,file,{contentType:'image/png',upsert:false});if(up.error)throw up.error;const r=await supabase.rpc('set_institution_logo',{_inst:inst.id,_path:path});if(r.error){await supabase.storage.from('institution-logos').remove([path]);throw r.error;}toast.success('Logo transparente guardado.');setFile(undefined);setPreview('');void qc.invalidateQueries();}catch{toast.error('No se pudo guardar el logo.');}finally{setBusy(false);}}
+ return <section className="border-y border-border py-5"><h2 className="text-xl font-black">Logos institucionales</h2>{!user?<p className="mt-2 text-sm text-muted-foreground">Ingrese como dirección de su colegio para subir su PNG transparente.</p>:list.isError?<p role="alert">No se pudieron consultar instituciones.</p>:!list.data?.length?<p className="mt-2 text-sm text-muted-foreground">Solo la dirección de su institución o Max puede cambiar el logo.</p>:<div className="mt-3 space-y-3"><label className="block text-sm font-semibold">Institución<select value={selected||list.data[0]?.id} onChange={e=>{setSelected(e.target.value);setFile(undefined);setPreview('');}} className="ml-3 max-w-full rounded-md border border-input bg-background p-2">{list.data.map(i=><option key={i.id} value={i.id}>{i.name}</option>)}</select></label><input ref={input} type="file" accept="image/png" className="sr-only" aria-label="Logo PNG transparente" onChange={e=>void choose(e.target.files?.[0])}/><Button variant="outline" onClick={()=>input.current?.click()}>Subir logo PNG transparente</Button>{preview&&<><div className="flex gap-4"><img src={preview} alt="Vista sobre fondo claro" className="h-24 w-24 rounded-md bg-foreground object-contain p-2"/><img src={preview} alt="Vista sobre fondo oscuro" className="h-24 w-24 rounded-md bg-background object-contain p-2"/></div><Button disabled={busy} onClick={()=>void save()}>{busy?'Guardando…':'Guardar logo'}</Button></>}</div>}</section>;
+}

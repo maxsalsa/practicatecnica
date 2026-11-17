@@ -13,7 +13,7 @@ import {TopicPoints} from '@/components/TopicPoints';
 
 export const Route = createFileRoute("/perfil")({staticData:{sitemap:false},
   head: () => ({
-    meta { title: "Mi perfil · pracTICAtecnica.com" },
+    meta: [{ title: "Mi perfil · pracTICAtecnica.com" },
       {
         name: "description",
         content: "Personalice su nivel, su meta de examen y su meta diaria de práctica.",
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/perfil")({staticData:{sitemap:false},
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component,
+  component: Perfil,
 });
 
 const avatars = ["🦉", "🚀", "🐆", "🌋", "🦜", "🐢", "⚡", "🎓"];

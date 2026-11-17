@@ -13,9 +13,9 @@ import { Button } from '@/components/ui/button';
 import { PRACTICE_SIZE, EXAM_SIZE } from '@/lib/assessment-size';
 
 export const Route = createFileRoute("/explorar")({staticData:{sitemap:true},
-  validateSearch: (s) => ({ ...validCurriculumSearch(s), ...(typeof s['banco']==='string'&&decks.some(d=>d.id===s['banco'])?{banco:s['banco']}),
+  validateSearch: (s) => ({ ...validCurriculumSearch(s), ...(typeof s['banco']==='string'&&decks.some(d=>d.id===s['banco'])?{banco:s['banco']}) }),
   head: () => ({
-    meta { title: "Explorar la malla MEP | pracTICAtecnica.com" },
+    meta: [{ title: "Explorar la malla MEP | pracTICAtecnica.com" },
       { name: "description", content: "Elija modalidad, nivel y materia, secundaria, CTP, ingreso, admisión y MOPT, con prácticas, simulacros y libros." },
       { property: "og:title", content: "Explorar la malla MEP | pracTICAtecnica.com" },
       { property: "og:description", content: "Catálogo parcial por nivel y materia con bancos disponibles y cobertura explícita." },
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/explorar")({staticData:{sitemap:true},
       { name: "twitter:card", content: "summary" },
     ],
   }),
-  component,
+  component: Explorar,
 });
 
 const pill = (on) => `rounded-xl border px-4 py-2 text-sm font-bold transition ${on ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card hover:border-primary"}`;
