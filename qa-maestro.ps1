@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$Mensaje = "feat(qa): auditoria Kaizen, build autonomo y sincronizacion total GICM"
 )
 $ErrorActionPreference = "Stop"

@@ -222,7 +222,7 @@
 - [ ] Trazabilidad y rúbricas por estudiante/materia/nivel con fechas, comentarios y valoración 3/2/1/0 separada de notas verificadas; solo matrícula autorizada.
 - [ ] Evaluaciones micro/macro: no atribuir ítems ni firma oficial MEP sin fuente y autorización verificadas; publicar únicamente contenido comprobado.
 ## Solicitudes 15-nov-2026 18:45 UTC
-- [x] Recarga confirmada: pago recibido por 50 créditos, US$15.00; entrega al saldo puede tardar unos minutos.
+- [x] Recarga confirmada: pago recibido por 50 créditos, US$101.14.090; entrega al saldo puede tardar unos minutos.
 - [ ] Priorizar trazabilidad, menú por Dirección/docente/estudiante/familia y asesor MEP únicamente con permisos definidos; no conceder acceso por seleccionar una vista ni crear poderes de asesor por suposición.
 - [ ] Planeamientos por materia/nivel vinculados a horarios, tabla de especificaciones y rúbricas; página docente para asignar indicadores 3/2/1/0 a estudiantes autorizados y publicar tras pruebas.
 - [ ] Micro A–C y macro A–D con dificultad y aleatoriedad, PDF con firmante; identificar fuentes MEP antes de etiquetar ítems como oficiales. Completar materias faltantes por bloques revisados, sin iniciar funciones adicionales.
@@ -337,7 +337,7 @@
 - [x] Publicada versión con tipos preescolar, escuela, liceo, CTP y universidad
 - [ ] Avisos al teléfono: Firebase conectado; falta registro de teléfonos y envío (web push)
 - [ ] Manuales PDF con capturas de canales, seguimiento y notas (notas aún no construidas)
-- [ ] Publicar la versión 26X.2 tras revisión de seguridad.
+- [ ] Publicar la versión v26xd.01.14.09 tras revisión de seguridad.
 - [ ] 23:13 UTC: notas institucionales: registro por grupo y materia, I y II período, promedio anual y nota final; historial de años anteriores; importar y exportar hoja de cálculo; impresión con código SHA-256 y QR verificable.
 - [ ] 23:13 UTC: constancias con SHA-256 y QR verificable: estudiante regular por ciclo lectivo (2026, 2027 y siguientes), beca, incapacidad y otras que la institución emita legalmente; plantilla con logo de cada institución y verificación pública con datos enmascarados.
 - [ ] 23:13 UTC: tipos de institución: preescolar, escuela, colegio académico/liceo, CTP y universidad.
@@ -368,7 +368,7 @@
 - [x] 22:17 UTC: permisos: aviso con 3 días de anticipación (excepciones por enfermedad marcadas), justificación dentro de 48 h tras la fecha o queda «sin justificar a tiempo»; código SHA-256 con QR verificable para permisos aprobados; dirección de cada institución aprueba los de su institución (Max global); también para estudiantes y citas de madres/padres.
 - [x] 22:17 UTC: agenda para dirección y docentes con «Agregar a mi calendario» (recordatorios del teléfono). Avisos push quedan en la tarea de Firebase.
 - [x] 22:15 UTC verificado: Max creó «Institución de Prueba GICM» (CTP, prueba) con logo; docente y estudiante asignados con cuentas reales de prueba (alias Gmail de Max); particular sin institución. Festival (todos) llegó a docente y estudiante; Consejo (personal) solo a docente; lecturas 1/1. Permiso de docente con comprobante aprobado por Max. Precios ₡10.000/₡2.500/₡1.000/₡3.500 en pantallas, políticas y PayPal; Stripe espera que Max desconecte el procesador actual.
-- [ ] 22:10 UTC: versión 26X.2 (control de versiones a cargo del agente).
+- [ ] 22:10 UTC: versión v26xd.01.14.09 (control de versiones a cargo del agente).
 - [ ] 22:10 UTC: chat interno solo para personal adulto verificado de la misma institución (nunca estudiantes), para no depender de WhatsApp.
 - [ ] 22:10 UTC: avisos/correos a madres, padres o encargados desde la app: requiere vínculo familiar autorizado y dominio de correo propio verificado; nunca por conocer un correo.
 - [ ] 22:10 UTC: nombre completo obligatorio en el perfil al ingresar para listas y secciones correctas; secciones/grupos por institución.
@@ -387,7 +387,7 @@
 - [x] 21:54 UTC: identidad independiente pracTICAtecnica.com; sin menciones ni copias de Open English/Duolingo (sitio revisado: sin menciones).
 - [~] 21:53 UTC: activar precios anuales institución ₡10.000 y estudiante ₡2.500 (₡1.000 con colegio activo verificado) con pago por Stripe; verificar proveedor de pagos disponible antes de cobrar.
 - [ ] 21:44 UTC: institución ₡10.000/año; estudiante ₡2.500/año o ₡1.000/año con colegio activo y vinculación verificada. Personal incluido en plan institucional; publicaciones/avisos institucionales, chat solo personal adulto verificado y permisos aprobados inicialmente solo por Max. Implementación y pruebas pendientes; precios anteriores estudiantiles requieren actualización coordinada.
-- [ ] Actualización 26X.2 solicitada 21:42 UTC: instituciones con logo propio, solicitudes/aprobación de permisos de personal y adjuntos privados; definir quién aprueba y resolver alcance de comunicación frente a prohibición vigente de chats entre usuarios. Campaña Clara excluida.
+- [ ] Actualización v26xd.01.14.09 solicitada 21:42 UTC: instituciones con logo propio, solicitudes/aprobación de permisos de personal y adjuntos privados; definir quién aprueba y resolver alcance de comunicación frente a prohibición vigente de chats entre usuarios. Campaña Clara excluida.
 - [~] 21:42 UTC: panel /cobertura ampliado con grado/área, capítulos, descargas catalogadas y bancos exactos de 20/60; pendientes por tipo sin metas inventadas. Cinco tests pasan; Max comprobó 12.º (15 selecciones) e Industrial (18), móvil sin desbordamiento. Cobertura editorial integral y evaluaciones nuevas siguen pendientes.
 - [~] 21:42 UTC: Quiz selecciona 20 índices canónicos; bancos insuficientes muestran preparación. BlindExam rechaza tamaños distintos de 60; trivias/repasos identificados siguen breves. Diez tests pasan y Max comprobó Matemática 1/20 y Ciberseguridad (5) sin simulacro falso. Falta ampliar bancos por diez y revisar dificultad/traducción; no publicar todavía.
 - [ ] 21:42 UTC: estudiantes reales vinculados a docentes propietarios; requiere identidad/correo confirmado de cada estudiante y autorización, nunca convertir alumnado en docentes ni crear avances académicos inventados.
@@ -438,11 +438,11 @@
 - [~] Pedido 18:37 UTC: libros existentes permiten guardar lectura/ejercicios por capítulo y fecha; panel docente consulta solo matrícula vinculada propia y separa resultados de examen por bancos exactos. Con Max se guardó/recargó/revirtió lectura; cuatro tests pasan y revisión básica sin hallazgos. Verificación docente real pendiente de estudiante vinculado; ampliar a temas internos y todos los materiales pendiente.
 - [ ] Pedido 18:37 UTC: ampliar/publicar Ejecutivo Comercial, Administración, Logística y Distribución, Electromecánica y Contabilidad con prácticas y dinámicas originales revisadas; cotejar primero bancos existentes.
 - [ ] Pedido 18:37 UTC: registrar pago docente real y verificar acceso solo después de aprobación de Max en Admin pagos. Bloqueado: el mensaje no incluye referencia ni teléfono del depósito; no inventarlos ni efectuar aprobación administrativa por el titular.
-## Lanzamiento 26X.1 — pedidos 14-nov-2026 18:16 UTC
+## Lanzamiento v26xd.01.14.09 — pedidos 14-nov-2026 18:16 UTC
 - [ ] Pedido 18:28 UTC: publicar catálogo disponible con libros, simulacros y ajedrez/damas/deducción; no denominarlo completo mientras haya áreas pendientes.
 - [ ] Pedido 18:25 UTC ampliado: organizar también Ejecutivo Comercial, Administración, Logística y Distribución, Electromecánica, Contabilidad y materias académicas de primaria/secundaria; no concentrar catálogo en Redes o Desarrollo Web.
 - [ ] Pedido 18:25 UTC: enviar solicitud SINPE docente y verificar activación después de aprobación en Admin pagos. Bloqueado hasta recibir referencia y teléfono del depósito real; no crear pago ficticio ni aprobar en nombre de Max.
-- [ ] Pedidos 18:24–18:25 UTC: publicar 26X.1 con Redes; ampliar libros/resúmenes/prácticas primaria y secundaria con progreso e insignias; completar prácticas, simulacros y dinámicas por tema de Redes. Recompensas por partida separadas de certificación académica; verificar cobertura antes de afirmar completitud.
+- [ ] Pedidos 18:24–18:25 UTC: publicar v26xd.01.14.09 con Redes; ampliar libros/resúmenes/prácticas primaria y secundaria con progreso e insignias; completar prácticas, simulacros y dinámicas por tema de Redes. Recompensas por partida separadas de certificación académica; verificar cobertura antes de afirmar completitud.
 - [x] Pedido 18:22 UTC: favicon, icono Apple y manifest ahora usan recortes exactos del logo GICM original con nuevas direcciones CDN; HTML comprobado y sin errores. Los iconos anteriores eran búhos propios, no Lovable. La insignia externa ya está oculta; la interfaz del editor y Google administrado no se sustituyen con iconos del sitio.
 - [~] Ajedrez y damas: movimientos de ambos lados comprobados con sesión de Max; deducción descarta tarjetas; seis pruebas pasan, móvil sin desbordamiento ni errores. Mejorado contraste de ajedrez y bloqueo de selección ajena durante captura encadenada. Partidas completas/capturas en pantalla aún pendientes.
 - [x] Inicio: nuevo título/descripción y recorte propio 1200×630 (144.698 bytes); texto verificado en HTML. Imagen reutiliza la ilustración visible; publicación pendiente.
@@ -453,7 +453,7 @@
 - [ ] Guiar verificación de cuenta de pagos y solicitud docente SINPE; activación solo tras aprobación de Max, sin fabricar depósitos ni efectuar cargos.
 - [ ] Simplificar navegación por modalidad → grado/especialidad → materia → tema y mostrar cobertura real de agroecología, agropecuaria, redes, soporte y diseño gráfico.
 - [ ] Ampliar malla primaria/secundaria/CTP y materiales originales por bloques revisados (libros, laboratorios, juegos, ilustraciones, videos/GIF, audios, idiomas, deportes y hábitos); no declarar cobertura completa sin revisión.
-- [~] Plan 26X.1 aprobado, primera entrega de Inicio/Juegos preparada y revisión básica sin hallazgos. Solicitar publicación única; Redes/navegación/materiales/persistencia recreativa siguen como entregas posteriores del plan, no se anuncian terminados.
+- [~] Plan v26xd.01.14.09 aprobado, primera entrega de Inicio/Juegos preparada y revisión básica sin hallazgos. Solicitar publicación única; Redes/navegación/materiales/persistencia recreativa siguen como entregas posteriores del plan, no se anuncian terminados.
 
 - [ ] Pedido 14-nov 10:22 UTC: menú compacto siempre cerrado, Más cerrado y reanudar prácticas/simulacros en el ítem pendiente; publicar tras verificar.
 - [~] Pedido 18:18 CR: entregado un video animado 30s 16:9 con música, sin narración; capturas públicas Inicio/búsqueda/libros. Pantallas con acceso se describen con tarjetas; conversación ilustrativa marcada, no captura real. Sin versión vertical ni múltiples videos. Agente revisó 12 cuadros/transición; pausas estáticas de lectura 1,2–2,6s.

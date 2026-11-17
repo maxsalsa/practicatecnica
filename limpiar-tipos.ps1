@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$Mensaje = "refactor(jsx): eliminacion de anotaciones de tipos ts para pureza jsx GICM"
 )
 $ErrorActionPreference = "Stop"

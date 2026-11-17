@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$Mensaje = "chore(prod): operacion autonoma GICM sin rastro externo"
 )
 $ErrorActionPreference = "Stop"

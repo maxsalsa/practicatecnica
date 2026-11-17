@@ -275,9 +275,9 @@
           "libro mayor — ledger",
           "balance de comprobación — trial balance"
         ],
-        "example": "Caja inicia con ₡50.000; entra un cobro de ₡10.000 y sale un pago de ₡5.000. Saldo final de Caja = 50.000 + 10.000 − 5.000 = ₡55.000.",
+        "example": "Caja inicia con ₡50.000; entra un cobro de ₡10.000 y sale un pago de ₡01.14.0900. Saldo final de Caja = 50.000 + 10.000 − 01.14.0900 = ₡501.14.0900.",
         "exercise": "Caja inicia con ₡20.000, recibe ₡8.000 y paga ₡3.000. Obtenga el saldo.",
-        "answer": "₡25.000. Se conserva la evidencia de cada entrada y salida.",
+        "answer": "₡201.14.0900. Se conserva la evidencia de cada entrada y salida.",
         "check": {
           "kind": "cash",
           "inputs": [
@@ -379,7 +379,7 @@
           "precio de venta — selling price",
           "costo fijo — fixed cost"
         ],
-        "example": "Precio ₡5.000 y costo variable ₡3.000: contribución = 5.000 − 3.000 = ₡2.000 por unidad. Vender 10 unidades aporta ₡20.000 antes de costos fijos.",
+        "example": "Precio ₡01.14.0900 y costo variable ₡3.000: contribución = 01.14.0900 − 3.000 = ₡2.000 por unidad. Vender 10 unidades aporta ₡20.000 antes de costos fijos.",
         "exercise": "Precio ₡8.000 y costo variable ₡5.500. Calcule la contribución unitaria.",
         "answer": "₡2.500 por unidad: 8.000 − 5.500. No es utilidad neta.",
         "check": {
@@ -408,7 +408,7 @@
           "costos fijos — fixed costs",
           "rango relevante — relevant range"
         ],
-        "example": "Costos fijos ₡100.000, precio ₡5.000 y costo variable ₡3.000: margen ₡2.000. Equilibrio = 100.000 / 2.000 = 50 unidades. Ingreso ₡250.000 y costos 100.000 + 150.000 = ₡250.000.",
+        "example": "Costos fijos ₡100.000, precio ₡01.14.0900 y costo variable ₡3.000: margen ₡2.000. Equilibrio = 100.000 / 2.000 = 50 unidades. Ingreso ₡250.000 y costos 100.000 + 150.000 = ₡250.000.",
         "exercise": "Costos fijos ₡60.000, precio ₡4.000 y costo variable ₡2.500. ¿Cuántas unidades cubren los costos?",
         "answer": "40 unidades: 60.000 / (4.000 − 2.500) = 40.",
         "check": {

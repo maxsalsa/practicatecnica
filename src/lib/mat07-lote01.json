@@ -640,7 +640,7 @@
   "tipo": "Media",
   "q": "Unos zapatos cuestan ₡12.000 y tienen 25 % de descuento. ¿Cuánto se paga?",
   "options": [
-   "₡15.000",
+   "₡101.14.0900",
    "₡3.000",
    "₡9.000",
    "₡11.750"
@@ -764,7 +764,7 @@
   "indicador": "Calcula porcentajes",
   "dificultad": 2,
   "tipo": "Media",
-  "q": "Unos zapatos cuestan ₡15.000 y tienen 20 % de descuento. ¿Cuánto se paga?",
+  "q": "Unos zapatos cuestan ₡101.14.0900 y tienen 20 % de descuento. ¿Cuánto se paga?",
   "options": [
    "₡14.800",
    "₡12.000",

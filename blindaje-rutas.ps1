@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$Mensaje = "refactor(jsx): purificacion avanzada de sintaxis ts en rutas criticas"
 )
 $ErrorActionPreference = "Stop"

@@ -92,7 +92,7 @@ for slug,title,audience,pages in manuals:
  story=[]
  for i,(heading,paragraphs,shot) in enumerate(pages):
   if i:story.append(PageBreak())
-  story += [para('pracTICAtecnica.com','sub'),para(title if i==0 else heading,'h'),para(f'{audience} · Edición 26X / revisión 15-11-2026','small'),Spacer(1,14)]
+  story += [para('pracTICAtecnica.com','sub'),para(title if i==0 else heading,'h'),para(f'{audience} · Edición v26xd.01.14.09 / revisión 15-11-2026','small'),Spacer(1,14)]
   if i==0:story.append(para(heading,'sub'))
   story += [para(x) for x in paragraphs]
   if shot:

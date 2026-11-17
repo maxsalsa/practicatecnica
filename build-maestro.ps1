@@ -1,4 +1,4 @@
-﻿
+
 $ErrorActionPreference = "Stop"
 Set-Location "C:\PT26xD"
 Write-Host "`n=== COMPILACION GICM ===" -ForegroundColor Cyan

@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$Mensaje = "refactor(jsx): conversion automatica estricta de tsx a jsx por mandato GICM"
 )
 $ErrorActionPreference = "Stop"
