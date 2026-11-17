@@ -1,7 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { lovable } from "@/integrations/lovable";
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useAccount } from "@/components/AccountProvider";
@@ -37,9 +36,7 @@ function Auth() {
     setBusy(true);
     setMessage("");
     try {
-      const r = await lovable.auth.signInWithOAuth(provider, {
-        redirect_uri: window.location.origin + "/auth",
-      });
+      const r = await supabase.auth.signInWithOAuth({ provider, options: { redirectTo: window.location.origin + "/auth" } });
       if (r.error) setMessage("No se pudo ingresar. Intente de nuevo.");
     } catch {
       setMessage("No se pudo ingresar.");

@@ -13,7 +13,6 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 import { AccountProvider } from "@/components/AccountProvider";
 import { Toaster } from "@/components/ui/sonner";
 import { AccessGate } from "@/components/AccessGate";
@@ -44,7 +43,7 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
+    console.error("Error de aplicación:", error);
   }, [error]);
 
   return (

@@ -4,7 +4,6 @@ import { renderErrorPage } from "./lib/error-page";
 import { attachSupabaseAuth } from "@/integrations/supabase/auth-attacher";
 
 const errorMiddleware = createMiddleware().server(async ({ request, next }) => {
-  if (new URL(request.url).pathname.startsWith("/lovable/")) return next();
   try {
     return await next();
   } catch (error) {
@@ -28,8 +27,8 @@ const csrfMiddleware = createCsrfMiddleware({
 
 // requestMiddleware runs on every request; functionMiddleware only on server functions, where
 // client sendContext is unvalidated input. Append to these arrays, never replace them.
-// Enabling Lovable Cloud adds functionMiddleware: [attachSupabaseAuth], the bearer token that
-// requireSupabaseAuth server functions need. Add it by hand only if Lovable Cloud or a
+// Enabling Supabase adds functionMiddleware: [attachSupabaseAuth], the bearer token that
+// requireSupabaseAuth server functions need. Add it by hand only if Supabase or a
 // user-managed Supabase project is connected, no middleware here sets Authorization, and the
 // project did not intentionally replace it.
 export const startInstance = createStart(() => ({

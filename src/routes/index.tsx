@@ -124,7 +124,7 @@ function Index() {
                 <div className="mt-4 flex items-center justify-between text-sm">
                   <span className="text-muted-foreground">{best[d.id] != null ? `Mejor: ${best[d.id]}%` : "Sin intentos"}</span>
                 </div>
-                <Button onClick={() => { window.__lovableEvents?.track?.("project.practice_started", { deck_id: d.id, source: "bank" }); setDeck(d); }} className="mt-4">
+                <Button onClick={() => { setDeck(d); }} className="mt-4">
                   Comenzar práctica →
                 </Button>
               </div>

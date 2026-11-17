@@ -24,21 +24,42 @@ async function assertInstitutionEligible(client: RpcClient, plan: AnnualPlan, in
   }
 }
 
-const GATEWAY_URL = "https://connector-gateway.lovable.dev/paypal";
+const PAYPAL_BASE_URL =
+  process.env["PAYPAL_MODE"] === "sandbox"
+    ? "https://api-m.sandbox.paypal.com"
+    : "https://api-m.paypal.com";
+
+async function obtenerTokenPaypal(): Promise<string> {
+  const clientId = process.env["PAYPAL_CLIENT_ID"] || process.env["VITE_PAYPAL_CLIENT_ID"];
+  const secret = process.env["PAYPAL_CLIENT_SECRET"] || process.env["PAYPAL_API_KEY"];
+  if (!clientId || !secret) throw new Error("PayPal no está configurado en el servidor.");
+
+  const basic = Buffer.from(`${clientId}:${secret}`).toString("base64");
+  const tokenRes = await fetch(`${PAYPAL_BASE_URL}/v1/oauth2/token`, {
+    method: "POST",
+    headers: {
+      Authorization: `Basic ${basic}`,
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: "grant_type=client_credentials"
+  });
+  if (!tokenRes.ok) {
+    throw new Error("No se pudo autenticar con PayPal.");
+  }
+  const tokenData = (await tokenRes.json()) as { access_token: string };
+  return tokenData.access_token;
+}
 
 async function paypal(path: string, init: RequestInit & { requestId?: string } = {}) {
-  const lovable = process.env["LOVABLE_API_KEY"];
-  const key = process.env["PAYPAL_API_KEY"];
-  if (!lovable || !key) throw new Error("PayPal no está configurado.");
-  const res = await fetch(`${GATEWAY_URL}${path}`, {
+  const accessToken = await obtenerTokenPaypal();
+  const res = await fetch(`${PAYPAL_BASE_URL}${path}`, {
     ...init,
     headers: {
-      Authorization: `Bearer ${lovable}`,
-      "X-Connection-Api-Key": key,
+      Authorization: `Bearer ${accessToken}`,
       "Content-Type": "application/json",
       Accept: "application/json",
-      ...(init.requestId ? { "PayPal-Request-Id": init.requestId } : {}),
-    },
+      ...(init.requestId ? { "PayPal-Request-Id": init.requestId } : {})
+    }
   });
   const body = await res.text();
   if (!res.ok) {

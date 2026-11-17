@@ -57,15 +57,13 @@ function Pagos() {
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     if (!user) return;
-    window.__lovableEvents?.track?.('project.payment_started', { method: 'sinpe', plan: option.plan, environment: 'manual' });
     setBusy(true);
     const { error } = await supabase.from("payments").insert({
       user_id: user.id, email: user.email ?? null, plan: option.plan, amount: option.amount, institution_id: option.institutionId ?? null,
       payer_phone: phone.trim(), reference: reference.trim(),
     });
     setBusy(false);
-    if (error) { window.__lovableEvents?.track?.('project.payment_result', { method: 'sinpe', plan: option.plan, environment: 'manual', result: 'failed' }); toast.error("No se pudo registrar el pago. Revise el plan elegido e intente de nuevo."); return; }
-    window.__lovableEvents?.track?.('project.payment_result', { method: 'sinpe', plan: option.plan, environment: 'manual', result: 'pending' });
+    if (error) { toast.error("No se pudo registrar el pago. Revise el plan elegido e intente de nuevo."); return; }
     setDone(true);
     setPaymentRevision(value => value + 1);
     toast.success("Pago registrado para revisión. El plan se activa al confirmar el pago.");
@@ -142,7 +140,7 @@ function Pagos() {
           <p className="mt-1 text-sm">Estudiantes US$4,99 · Público general y docentes US$6,99 por año. El acceso se activa al instante y puede cancelar la renovación cuando quiera.</p>
           <p className="mt-1 text-sm text-muted-foreground">Solo disponible en el entorno de prueba mientras se habilita el procesador definitivo; no realiza cobros reales.</p>
           {user ? <div className="mt-3 flex flex-wrap gap-2">
-            <Button onClick={() => { window.__lovableEvents?.track?.('project.payment_started', { method: 'card', plan: cardPlan, environment: 'sandbox' }); openCardCheckout(`${cardPlan}_anual`, user, result => { window.__lovableEvents?.track?.('project.payment_result', { method: 'card', plan: cardPlan, environment: 'sandbox', result }); }).catch(() => { window.__lovableEvents?.track?.('project.payment_result', { method: 'card', plan: cardPlan, environment: 'sandbox', result: 'failed' }); toast.error("No se pudo abrir el pago con tarjeta."); }); }}>💳 Probar pago con tarjeta</Button>
+            <Button onClick={() => { openCardCheckout(`${cardPlan}_anual`, user, result => { }).catch(() => { toast.error("No se pudo abrir el pago con tarjeta."); }); }}>💳 Probar pago con tarjeta</Button>
             <button type="button" className="rounded-full border border-border px-5 py-3 font-bold" onClick={() => { openBillingPortal({ data: { environment: getPaddleEnvironment() } }).then(u => window.open(u, "_blank")).catch(e => toast.error(e instanceof Error ? e.message : "No se pudo abrir.")); }}>Administrar suscripción de prueba</button>
           </div> : <p className="mt-3 text-sm">Ingrese a su cuenta para probar.</p>}
         </article>}

@@ -33,7 +33,7 @@ export function PaypalButtons({ plan, institutionId, onPaid }: { plan: AnnualPla
   const [quote, setQuote] = useState<Awaited<ReturnType<typeof quoteTeacherPaypal>>>();
   const [quoting, setQuoting] = useState(false);
   const [quoteError, setQuoteError] = useState('');
-  const clientId = import.meta.env['VITE_LOVABLE_CONNECTOR_PAYPAL_CLIENT_ID'] as string | undefined;
+  const clientId = import.meta.env['VITE_PAYPAL_CLIENT_ID'] as string | undefined;
 
   useEffect(() => {
     try { assertPaypalCheckoutEnabled(); } catch { return; }
@@ -50,22 +50,18 @@ export function PaypalButtons({ plan, institutionId, onPaid }: { plan: AnnualPla
     const buttons = window.paypal.Buttons({
       style: { shape: "pill", label: "pay" },
       createOrder: async () => {
-        window.__lovableEvents?.track?.('project.payment_started', { method: 'paypal', plan, environment: 'live' });
         return (await create({ data: { plan, quoteId: plan === 'docente' ? quote?.id : undefined, institutionId } })).id;
       },
       onApprove: async (d: { orderID: string }) => {
         try {
           await capture({ data: { orderId: d.orderID } });
-          window.__lovableEvents?.track?.('project.payment_result', { method: 'paypal', plan, environment: 'live', result: 'awaiting_review' });
           toast.success("Pago recibido. Su plan se activará cuando Max confirme el pago.");
           onPaid();
         } catch (e) {
-          window.__lovableEvents?.track?.('project.payment_result', { method: 'paypal', plan, environment: 'live', result: 'failed' });
           toast.error(e instanceof Error ? e.message : "No se pudo confirmar el pago.");
         }
       },
-      onCancel: () => window.__lovableEvents?.track?.('project.payment_result', { method: 'paypal', plan, environment: 'live', result: 'canceled' }),
-      onError: () => { window.__lovableEvents?.track?.('project.payment_result', { method: 'paypal', plan, environment: 'live', result: 'failed' }); toast.error("PayPal no pudo procesar el pago."); },
+      onCancel: () => toast.error("PayPal no pudo procesar el pago."); },
     });
     if (buttons.isEligible?.() !== false) buttons.render(el).catch(() => setLoadError(true));
     return () => { try { buttons.close?.(); } catch { /* ignore */ } el.innerHTML = ""; };

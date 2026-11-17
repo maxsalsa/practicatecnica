@@ -28,8 +28,7 @@ export function AccessGate({ children }: { children: ReactNode }) {
       const a = data?.[0]; if (error || !a) {setAccess({has:false,paid:false,daysLeft:0});return;}
       const paid = (!!a.paid_until && new Date(a.paid_until) > new Date()) || a.status === "gift";
       if (a.has_access && a.status === 'active' && !paid && Date.parse(a.trial_ends) > Date.now() && !observedTrials.current.has(user.id)) {
-        const eventId = window.__lovableEvents?.track?.('project.beta_activated', { duration_days: 13 });
-        if (eventId) observedTrials.current.add(user.id);
+        const eventId = if (eventId) observedTrials.current.add(user.id);
       }
       setAccess({ has: a.has_access, paid, daysLeft: Math.max(0, Math.ceil((+new Date(a.trial_ends) - Date.now()) / 864e5)), trialEnds:a.trial_ends });
     });

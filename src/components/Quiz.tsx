@@ -121,12 +121,7 @@ function QuizBody({
         pct,
         deck.id.startsWith("ia-") ? 0 : earnedPoints(deck.questions, responses),
       );
-    window.__lovableEvents?.track?.("project.practice_completed", {
-      deck_id: deck.id.startsWith("ia-") ? "ia" : deck.id,
-      score_pct: pct,
-      questions: order.length,
-    });
-  }, [done]);
+    }, [done]);
 
   const answer = (k: number) => {
     if (pick !== null || !q) return;
@@ -214,10 +209,6 @@ function QuizBody({
             <Button
               variant="ghost"
               onClick={() => {
-                window.__lovableEvents?.track?.("project.wrong_answers_retried", {
-                  deck_id: deck.id.startsWith("ia-") ? "ia" : deck.id,
-                  wrong_count: wrong.length,
-                });
                 restart(wrong);
               }}
               className="rounded-full bg-primary px-5 py-3 font-semibold text-primary-foreground"

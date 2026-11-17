@@ -20,7 +20,7 @@ export function AiPractice({ onStart }: { onStart: (d: Deck) => void }) {
     try {
       const r = await gen({ data: { topic, subject, lang, count: 5 } });
       if (r.error) setError(r.error);
-      else { window.__lovableEvents?.track?.("project.practice_started", { deck_id: "ia", source: "ai", subject, lang }); onStart({ id: `ia-${subject}`, title: `IA · ${subject}`, emoji: "✨", level: topic.slice(0, 40), questions: r.questions }); }
+      else { onStart({ id: `ia-${subject}`, title: `IA · ${subject}`, emoji: "✨", level: topic.slice(0, 40), questions: r.questions }); }
     } catch (e) {
       setError(e instanceof Error ? e.message : "Error inesperado.");
     } finally { setLoading(false); }
