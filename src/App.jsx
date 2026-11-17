@@ -10,6 +10,7 @@ import ReportePdfMep from './components/ReportePdfMep';
 import GestorPushPwa from './components/GestorPushPwa';
 import SelectorMultimedia from './components/SelectorMultimedia';
 import PanelCampanaClara from './components/PanelCampanaClara';
+import AsistenteIaGenerativo from './components/AsistenteIaGenerativo';
 
 export default function App() {
   const [usuarioActual, setUsuarioActual] = useState({
@@ -29,25 +30,6 @@ export default function App() {
     circuito: '04 (Incluye CTP Mercedes Norte)',
     modalidad: 'Colegios Técnicos Profesionales (CTP)'
   });
-
-  const [expedienteActivo, setExpedienteActivo] = useState(null);
-  const [cedulaBusqueda, setCedulaBusqueda] = useState('');
-
-  const estudiantesDB = [
-    { cedula: '1-1678-0411', nombre: 'Ana Sofía Mora', seccion: '11-1', especialidad: 'Desarrollo Web', notas: 'Periodo 1: 95.0 - Periodo 2: 92.5', conducta: 'Excelente - 0 boletas' },
-    { cedula: '2-0451-0982', nombre: 'Mateo Mora (Hermano)', seccion: '8-2', especialidad: 'Académica I Ciclo', notas: 'Periodo 1: 88.0 - Periodo 2: 90.0', conducta: 'Muy Buena - 0 boletas' }
-  ];
-
-  const buscarExpediente = (e) => {
-    e.preventDefault();
-    const encontrado = estudiantesDB.find(st => st.cedula.includes(cedulaBusqueda.trim()));
-    if (encontrado) {
-      setExpedienteActivo(encontrado);
-    } else {
-      alert('Estudiante no encontrado o sin permisos de acceso bajo Ley 8968.');
-      setExpedienteActivo(null);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
@@ -91,15 +73,21 @@ export default function App() {
                 🦉 Ecosistema Soberano <span className="text-cyan-400">Práctica Técnica</span>
               </h2>
               <p className="text-slate-300 text-sm max-w-3xl leading-relaxed">
-                Plataforma oficial para el <span className="text-white font-semibold">CTP Mercedes Norte</span> y el MEP. Ciberseguridad SHA-256, Ley 8968, multiverso multimedia y Campaña Clara.
+                Plataforma oficial para el <span className="text-white font-semibold">CTP Mercedes Norte</span> y el MEP. Inteligencia artificial generativa con tokens rotativos, Ley 8968 y expedientes privados.
               </p>
               
               <div className="mt-6 flex flex-wrap gap-3">
                 <button 
-                  onClick={() => setSeccionActiva('carnet')}
+                  onClick={() => setSeccionActiva('ia')}
                   className="bg-cyan-600 hover:bg-cyan-500 text-white font-bold px-5 py-2.5 rounded-xl shadow transition-all text-sm"
                 >
-                  🪪 Mi Carné Digital QR
+                  🤖 Asistente IA Generativo
+                </button>
+                <button 
+                  onClick={() => setSeccionActiva('carnet')}
+                  className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
+                >
+                  🪪 Carné Digital QR
                 </button>
                 <button 
                   onClick={() => setSeccionActiva('chats')}
@@ -111,7 +99,7 @@ export default function App() {
                   onClick={() => setSeccionActiva('multimedia')}
                   className="bg-slate-800 hover:bg-slate-700 text-cyan-300 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
                 >
-                  🖼️ Multimedia y Campaña Clara
+                  🖼️ Multimedia
                 </button>
                 <button 
                   onClick={() => setSeccionActiva('reportes')}
@@ -128,16 +116,19 @@ export default function App() {
               </div>
             </div>
 
-            {/* Submódulos integrados en Inicio */}
+            {/* Asistente IA integrado en Inicio */}
+            <AsistenteIaGenerativo />
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <SelectorMultimedia />
               <PanelCampanaClara />
             </div>
+          </div>
+        )}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ReportePdfMep />
-              <GestorPushPwa />
-            </div>
+        {seccionActiva === 'ia' && (
+          <div className="py-4">
+            <AsistenteIaGenerativo />
           </div>
         )}
 
