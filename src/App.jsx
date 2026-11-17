@@ -21,8 +21,9 @@ import CentroGestionDocenteAdminMep from './components/CentroGestionDocenteAdmin
 import SuiteSimuladoresOfimaticaCircuitos from './components/SuiteSimuladoresOfimaticaCircuitos';
 import BibliotecaLeyesLibrosMep from './components/BibliotecaLeyesLibrosMep';
 import Arcade32JuegosEducativos from './components/Arcade32JuegosEducativos';
+import ModalJustificacionRapidaMep from './components/ModalJustificacionRapidaMep';
 
-const CLAVE_PAGINA_OFFLINE = 'pt_pagina_activa_offline_v31_0';
+const CLAVE_PAGINA_OFFLINE = 'pt_pagina_activa_offline_v32_0';
 
 export default function App() {
   const [usuarioActual, setUsuarioActual] = useState({
@@ -40,6 +41,10 @@ export default function App() {
   const [mostrarSinpe, setMostrarSinpe] = useState(false);
   const [mostrarLogin, setMostrarLogin] = useState(false);
   const [mostrarSelector, setMostrarSelector] = useState(false);
+
+  // Modal Universal 1-Clic para que NUNCA cueste encontrar dónde pedir permisos o justificar
+  const [modalPermisoAbierto, setModalPermisoAbierto] = useState(false);
+  const [modoModalPermiso, setModoModalPermiso] = useState('personal_direccion');
 
   const [contextoMep, setContextoMep] = useState({
     provincia: 'Heredia',
@@ -59,6 +64,11 @@ export default function App() {
       setSeccionActiva(id);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+  };
+
+  const abrirVentanillaPermiso = (modo) => {
+    setModoModalPermiso(modo);
+    setModalPermisoAbierto(true);
   };
 
   const cambiarRolRapido = (nuevoRol) => {
@@ -86,45 +96,60 @@ export default function App() {
         onCambiarSeccion={cambiarPagina}
       />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto p-3 sm:p-6 lg:px-8 space-y-5">
+      <main className="flex-1 max-w-7xl w-full mx-auto p-3 sm:p-6 lg:px-8 space-y-4">
 
-        {/* Cintillo con Jerarquía Ministerial Completa del MEP */}
-        <div className="bg-slate-900 border border-slate-800 px-3.5 py-2.5 rounded-2xl flex flex-wrap justify-between items-center gap-2 shadow-md">
-          <div className="flex flex-wrap items-center gap-2 text-xs">
-            <span className="bg-cyan-950 text-cyan-300 border border-cyan-700 px-2 py-0.5 rounded font-extrabold">
-              🇨🇷 {contextoMep.provincia || 'Costa Rica'}
+        {/* BARRA SUPERIOR SIEMPRE VISIBLE DE ACCIÓN DIRECTA (UX 1-CLIC PARA PERMISOS, JUSTIFICACIONES Y DIRECCIÓN) */}
+        <div className="bg-gradient-to-r from-slate-900 via-cyan-950/60 to-slate-900 border border-cyan-500/40 p-3 rounded-2xl flex flex-wrap items-center justify-between gap-2 shadow-lg">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-[11px] font-extrabold text-cyan-300 uppercase px-2 py-0.5 bg-cyan-950 rounded border border-cyan-700">
+              ⚡ Accesos Rápidos 1-Clic:
             </span>
-            <span className="text-white font-bold">🏛️ {contextoMep.region}</span>
-            <span className="text-slate-600">•</span>
-            <span className="text-amber-300 font-semibold">Circuito {contextoMep.circuito}</span>
+            <button
+              onClick={() => abrirVentanillaPermiso('personal_direccion')}
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs shadow transition-all flex items-center gap-1"
+            >
+              👨‍🏫 Permiso / Tardía Personal → Dirección
+            </button>
+            <button
+              onClick={() => abrirVentanillaPermiso('estudiante_docente')}
+              className="bg-cyan-600 hover:bg-cyan-500 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs shadow transition-all flex items-center gap-1"
+            >
+              🎓 Justificar Estudiante → Profesor
+            </button>
+            <button
+              onClick={() => cambiarPagina('gestion')}
+              className="bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs shadow transition-all flex items-center gap-1"
+            >
+              🏛️ Bandeja Director(a) & Exportar CSV (PIAD / SEA)
+            </button>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
             <select
               value={usuarioActual.rol}
               onChange={(e) => cambiarRolRapido(e.target.value)}
-              className="bg-slate-950 border border-cyan-500/60 text-cyan-300 text-xs font-extrabold rounded-xl px-3 py-1.5"
+              className="bg-slate-950 border border-cyan-500/60 text-cyan-300 text-xs font-extrabold rounded-xl px-2.5 py-1.5"
             >
               <option value="SuperAdmin">👑 Rol: SuperAdmin Global</option>
-              <option value="Ministro(a) de Educación">🇨🇷 Rol: Ministro(a) / Viceministro(a) MEP</option>
-              <option value="Asesor(a) Nacional / Regional">🧭 Rol: Asesor(a) Pedagógico / Supervisor(a)</option>
-              <option value="Director(a) / Subdirector(a)">🏛️ Rol: Director(a) / Subdirector(a) de Centro</option>
-              <option value="Coordinador(a) Técnico / Académico">⚙️ Rol: Coordinador(a) Técnico / Académico</option>
-              <option value="Docente MEP">👨‍🏫 Rol: Docente Técnico / Académico</option>
+              <option value="Director(a) / Subdirector(a)">🏛️ Rol: Director(a) / Jefatura</option>
+              <option value="Ministro(a) de Educación">🇨🇷 Rol: Ministro(a) MEP</option>
+              <option value="Asesor(a) Nacional / Regional">🧭 Rol: Asesor(a) / Supervisor(a)</option>
+              <option value="Coordinador(a) Técnico / Académico">⚙️ Rol: Coordinador(a)</option>
+              <option value="Docente MEP">👨‍🏫 Rol: Docente MEP</option>
               <option value="Estudiante CTP / Académico">🎓 Rol: Estudiante</option>
-              <option value="Encargado Legal / Familia">👨‍👩‍👧 Rol: Encargado Legal / Familia</option>
+              <option value="Encargado Legal / Familia">👨‍👩‍👧 Rol: Familia / Encargado</option>
             </select>
 
             <button
               onClick={() => setMostrarSelector(true)}
-              className="bg-cyan-700 hover:bg-cyan-600 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs shadow"
+              className="bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 font-bold px-2.5 py-1.5 rounded-xl text-xs"
             >
-              🏛️ Cambiar Regional (27 MEP)
+              🇨🇷 {contextoMep.provincia} • Cambiar Regional
             </button>
 
             <button
               onClick={() => setMostrarSinpe(true)}
-              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-xl text-xs shadow"
+              className="bg-emerald-700 hover:bg-emerald-600 text-white font-bold px-2.5 py-1.5 rounded-xl text-xs"
             >
               📱 SINPE 6090-6359
             </button>
@@ -132,27 +157,16 @@ export default function App() {
         </div>
 
         {seccionActiva !== 'inicio' && (
-          <div className="flex flex-wrap items-center justify-between gap-2 bg-slate-900/80 border border-slate-800 px-4 py-2.5 rounded-xl">
+          <div className="flex flex-wrap items-center justify-between gap-2 bg-slate-900/80 border border-slate-800 px-4 py-2 rounded-xl">
             <button
               onClick={() => cambiarPagina('inicio')}
               className="bg-slate-800 hover:bg-slate-700 text-cyan-300 font-extrabold px-3.5 py-1.5 rounded-lg text-xs flex items-center gap-1.5"
             >
               ← Volver al Menú Principal
             </button>
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => cambiarPagina('gestion')}
-                className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs"
-              >
-                🏛️ Boletas Personal→Dirección & CSV PIAD/SEA
-              </button>
-              <button
-                onClick={() => cambiarPagina('arcade32')}
-                className="bg-purple-600 hover:bg-purple-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs"
-              >
-                🎮 32 Juegos Educativos
-              </button>
-            </div>
+            <span className="text-xs text-slate-400">
+              Vista activa: <strong className="text-white uppercase">{seccionActiva}</strong>
+            </span>
           </div>
         )}
 
@@ -163,17 +177,17 @@ export default function App() {
               busquedaGlobal={busquedaGlobal}
               setBusquedaGlobal={setBusquedaGlobal}
               onNavegarAccion={manejarAccionHero}
+              onAbrirModalPermiso={abrirVentanillaPermiso}
             />
 
-            {/* 4 Tarjetas Destacadas de Acceso Inmediato */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div
                 onClick={() => cambiarPagina('gestion')}
                 className="bg-gradient-to-br from-emerald-900/80 to-slate-900 border border-emerald-500/50 p-5 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all shadow-xl"
               >
                 <span className="text-2xl">🏛️</span>
-                <h3 className="text-sm font-extrabold text-white mt-2">Boletas Personal→Dirección & Exportar CSV (SEA / PIAD)</h3>
-                <p className="text-xs text-slate-300 mt-1">Citas CCSS, llegadas tardías de reloj, emergencias de personal y planilla CSV oficial para PIAD/SEA.</p>
+                <h3 className="text-sm font-extrabold text-white mt-2">Despacho de Dirección, Boletas & CSV (SEA / PIAD)</h3>
+                <p className="text-xs text-slate-300 mt-1">Aprobación de permisos de personal, justificaciones estudiantiles y planilla CSV para PIAD/SEA.</p>
               </div>
 
               <div
@@ -182,7 +196,7 @@ export default function App() {
               >
                 <span className="text-2xl">🎮</span>
                 <h3 className="text-sm font-extrabold text-white mt-2">Arcade de 32 Juegos Educativos (Razonamiento & CTP)</h3>
-                <p className="text-xs text-slate-300 mt-1">32 retos gamificados de lógica UCR/TEC, Contabilidad Pura, Ciberseguridad, Ciencias e Idiomas.</p>
+                <p className="text-xs text-slate-300 mt-1">32 retos interactivos de lógica UCR/TEC, Contabilidad Pura, Ciberseguridad, Ciencias e Idiomas.</p>
               </div>
 
               <div
@@ -190,8 +204,8 @@ export default function App() {
                 className="bg-gradient-to-br from-cyan-900/80 to-slate-900 border border-cyan-500/50 p-5 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all shadow-xl"
               >
                 <span className="text-2xl">🧪</span>
-                <h3 className="text-sm font-extrabold text-white mt-2">Simuladores de Excel, Word APA 7 y Circuitos Digitales</h3>
-                <p className="text-xs text-slate-300 mt-1">Hoja electrónica con IVA Ley 9635, procesador de textos, compuertas AND/OR/XOR y Cisco CLI.</p>
+                <h3 className="text-sm font-extrabold text-white mt-2">Simuladores de Excel, Word APA 7 y Circuitos</h3>
+                <p className="text-xs text-slate-300 mt-1">Hoja electrónica con IVA Ley 9635, procesador de textos, compuertas lógicas y Cisco CLI.</p>
               </div>
 
               <div
@@ -277,6 +291,16 @@ export default function App() {
 
       </main>
 
+      {/* Modal Rápido 1-Clic para Permisos Personal->Dirección y Justificaciones Estudiante->Profe */}
+      {modalPermisoAbierto && (
+        <ModalJustificacionRapidaMep
+          modoInicial={modoModalPermiso}
+          usuarioActual={usuarioActual}
+          onClose={() => setModalPermisoAbierto(false)}
+          onIrABandejaCompleta={() => cambiarPagina('gestion')}
+        />
+      )}
+
       {mostrarSinpe && (
         <PasarelaSinpeModal onClose={() => setMostrarSinpe(false)} />
       )}
@@ -310,7 +334,7 @@ export default function App() {
       )}
 
       <footer className="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-500 space-y-1 mt-8">
-        <p>© 2026 pracTICAtecnica.com — Desarrollado por GICM & BDS Devs S.A. | Roles: Ministro, Asesor, Director, Docente y Estudiante</p>
+        <p>© 2026 pracTICAtecnica.com — Desarrollado por GICM & BDS Devs S.A. | v32.0 UX Master 1-Clic</p>
         <p>Soporte Oficial MEP & WhatsApp: +506 6090-6359 | Ing. Max Salazar Sánchez</p>
       </footer>
 

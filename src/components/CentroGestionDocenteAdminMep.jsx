@@ -95,7 +95,42 @@ export default function CentroGestionDocenteAdminMep({ usuarioActual }) {
   const [solicitudesEst, setSolicitudesEst] = useState(SOLICITUDES_ESTUDIANTES_INICIAL);
   const [registroNotas, setRegistroNotas] = useState(REGISTRO_NOTAS_PIAD_SEA_INICIAL);
   const [horarioActual, setHorarioActual] = useState(HORARIO_BASE);
-  const [avisoSistema, setAvisoSistema] = useState('');
+    const [avisoSistema, setAvisoSistema] = useState('');
+
+  React.useEffect(() => {
+    try {
+      const rapidas = JSON.parse(localStorage.getItem('pt_solicitudes_rapidas_v32') || '[]');
+      if (rapidas.length > 0) {
+        const nuevasDir = rapidas
+          .filter((r) => r.flujo === 'personal_direccion')
+          .map((r) => ({
+            id: r.id,
+            funcionario: r.nombre,
+            cedula: r.cedulaSeccion,
+            puesto: r.cedulaSeccion,
+            destinatario: r.destinatario,
+            tipoBoleta: r.tipoMotivo,
+            fechaHora: r.fechaHora,
+            motivoDetalle: r.detalle,
+            rebajoSalarial: 'Registrado vía Ventanilla 1-Clic',
+            estadoDireccion: r.estado
+          }));
+        const nuevasEst = rapidas
+          .filter((r) => r.flujo === 'estudiante_docente')
+          .map((r) => ({
+            id: r.id,
+            solicitante: `${r.nombre} (${r.cedulaSeccion})`,
+            docenteGuia: r.destinatario,
+            tramite: r.tipoMotivo,
+            motivo: r.detalle,
+            fechaEvento: r.fechaHora,
+            estado: r.estado
+          }));
+        if (nuevasDir.length > 0) setBoletasPersonal((prev) => [...nuevasDir, ...prev]);
+        if (nuevasEst.length > 0) setSolicitudesEst((prev) => [...nuevasEst, ...prev]);
+      }
+    } catch (e) {}
+  }, []);
 
   // Campos Boleta de Personal -> Dirección
   const [funcNombre, setFuncNombre] = useState(usuarioActual?.nombre || 'Ing. Max Salazar Sánchez');
