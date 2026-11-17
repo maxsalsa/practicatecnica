@@ -1,23 +1,23 @@
 export const DELEGACION_ESPECIALIDADES_CTP = {
-  version: "2026.5.0-DelegacionTotal",
-  superAdminMaestro: {
-    nombre: "Ing. Max Salazar Sánchez",
-    facultad: "Propietario y SuperAdmin con autoridad exclusiva para delegar roles de Administración, Dirección, Asesoría, Supervisión o co-administración."
+  version: "2026.5.0-AntigravityMasterChangelog",
+  autor: "Ing. Max Salazar Sánchez (Profe Max) & BDS Devs",
+  modoAntigravity: {
+    activo: true,
+    directorEcosistema: "Antigravity Mode — CTP Mercedes Norte",
+    filosofiaIngenieria: "Calidad Kaizen, arquitectura offline-first, cero tolerancia a errores y soberanía educativa nacional de Costa Rica."
   },
-  rolesDelegables: [
-    { rol: "Director / Directora Institucional", alcance: "Gestión de horarios, comedores, permisos y visibilidad de sección (7-1 a 12-4)." },
-    { rol: "Ministro / Viceministro / Asesor Regional", alcance: "Auditoría macro, estadísticas de rendimiento y supervisión nacional." },
-    { rol: "Administrador Delegado", alcance: "Apoyo técnico y soporte operativo bajo supervisión directa del SuperAdmin." }
-  ],
-  especialidadesTecnicasCtpMercedesNorteYGiraNacional: [
-    "Desarrollo Web (Frontend y Backend)",
-    "Ciberseguridad y Hardening de Redes",
-    "Soporte TI y Mantenimiento de Equipos",
+  especialidadesTecnicasMep: [
+    "Desarrollo Web y Ciberseguridad",
     "Contabilidad y Finanzas",
-    "Ejecutivo para Centros de Servicios / Comercio",
     "Electrónica Industrial",
-    "Electromecánica"
+    "Electromecánica",
+    "Ejecutivo para Servicios al Cliente",
+    "Agroecología"
   ],
-  modeloIndependienteMep: "Plataforma soberana y de código autónomo basada en las directrices y necesidades reales del CTP Mercedes Norte y la educación técnica costarricense."
+  historialChangelog: [
+    "v26.5.0-FINALE: Sello final de auditoría Git, multiverso multimedia, IA generativa de planeamientos y respaldo ZIP definitivo.",
+    "v26.5.0-OMEGA: Integración de pasarela SINPE Móvil (6090-6359), Google OAuth y expedientes bajo Ley 8968.",
+    "v26.5.0-GOSH: BlindaJE a 5 años, canales institucionales estilo WhatsApp y aislamiento SHA-256."
+  ]
 };
-"// Módulo de Delegación y Especialidades CTP inicializado correctamente";
+"// Módulo de Delegación de Especialidades y Changelog inicializado correctamente";
