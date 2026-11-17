@@ -1,4 +1,4 @@
-import { createFileRoute,Link } from "@tanstack/react-router";
+﻿import { createFileRoute,Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LevelTest } from "@/components/LevelTest";
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/idiomas")({staticData:{sitemap:true},
 });
 
 type LangKey = "en" | "fr" | "de" | "pt" | "es" | "zh";
-type Unit = { level: string; topic: string; summary: string; examples: string[]; grammar: { q: string; opts: string[]; a: number }; listen: string; write: { prompt: string; answer: string } };
+ listen: string; write: { prompt: string; answer: string } };
 const DATA: Record<LangKey, { name: string; voice: string; units: Unit[] }> = {
   en: { name: "🇬🇧 English", voice: "en-US", units: [
     { level: "A1 · Primaria", topic: "Verb to be", summary: "Use am with I, is with he/she/it, are with you/we/they.", examples: ["I am ten years old.", "She is my sister.", "They are students."], grammar: { q: "We ___ from Costa Rica.", opts: ["is", "are", "am"], a: 1 }, listen: "My favorite color is blue.", write: { prompt: "Translate: «Él es mi amigo».", answer: "he is my friend" } },
@@ -145,3 +145,4 @@ function UnitCard({ u, voice }: { u: Unit; voice: string }) {
     </article>
   );
 }
+

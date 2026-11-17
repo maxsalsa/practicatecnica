@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 
 const KINDS = { carne: "Carné estudiantil", libro: "Libro de comunicación" } as const;
-type Doc = { name: string; url: string };
+
 
 export function IdDocumentUpload({ userId }: { userId: string }) {
   const [kind, setKind] = useState<keyof typeof KINDS>("carne");
@@ -58,3 +58,4 @@ export function IdDocumentUpload({ userId }: { userId: string }) {
     </div>
   );
 }
+

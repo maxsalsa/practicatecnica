@@ -1,11 +1,11 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "./ui/button";
 import { gradeAverages, GRADE_KINDS } from "@/lib/grades";
 import { REA_SOURCE, officialGradeWeights } from '@/lib/rea-weights';
 
-type Props = { studentId?: string; editable?: boolean; ownerUserId?: string };
+
 const field = "rounded-md border border-input bg-background p-3";
 export function GradeBook({ studentId, editable = false, ownerUserId }: Props) {
   const cache = useQueryClient();
@@ -68,3 +68,4 @@ export function GradeBook({ studentId, editable = false, ownerUserId }: Props) {
     </section>
   );
 }
+

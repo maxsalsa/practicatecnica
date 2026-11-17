@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/examenes-docentes")({staticData:{sitemap:
   component: Page,
 });
 
-type Q = { q: string; options: string[]; answer: number };
+
 const blank = (): Q => ({ q: "", options: ["", "", "", ""], answer: 0 });
 const input = "w-full rounded-md border border-input bg-background px-3 py-2 text-foreground";
 
@@ -95,7 +95,7 @@ function Editor() {
   );
 }
 
-type PubExam = { id: string; title: string; minutes: number; questions: { q: string; options: string[] }[] };
+[] };
 
 function StudentExams() {
   const list = useQuery({ queryKey: ["my-teacher-exams"], queryFn: async () => ((await supabase.rpc("my_teacher_exams")).data ?? []) as unknown as PubExam[] });
@@ -152,3 +152,4 @@ function Take({ exam, onExit }: { exam: PubExam; onExit: () => void }) {
     </div>
   );
 }
+

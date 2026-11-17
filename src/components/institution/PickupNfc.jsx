@@ -1,9 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+﻿import { useEffect, useRef, useState } from 'react';
 import { Nfc, Square } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-type NdefReader = {
-  scan: (options: { signal: AbortSignal }) => Promise<void>;
+) => Promise<void>;
   onreading: ((event: { message: { records: { recordType: string; encoding?: string; data: DataView }[] } }) => void) | null;
   onreadingerror: (() => void) | null;
 };

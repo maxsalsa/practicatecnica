@@ -1,4 +1,4 @@
-import { DiscountBox } from "@/components/DiscountBox";
+﻿import { DiscountBox } from "@/components/DiscountBox";
 import { InviteBox } from "@/components/InviteBox";
 import { AccessCodeAdmin } from "@/components/AccessCodeBox";
 import { createFileRoute } from "@tanstack/react-router";
@@ -30,7 +30,7 @@ export const Route = createFileRoute("/superadmin")({staticData:{sitemap:false},
   component: SuperAdmin,
 });
 
-type U = { user_id: string; email: string; display_name: string; created_at: string; last_sign_in: string | null; xp: number; attempts: number; avg_score: number | null; paid_plan: string | null; paid_until: string | null; status: string };
+
 const ST: Record<string, string> = { active: "🟢 Activo", gift: "🎁 Cortesía", inactive: "⏸️ Inactivo", blocked: "⛔ Bloqueado" };
 const d = (s: string | null) => (s ? new Date(s).toLocaleString("es-CR", {timeZone:'America/Costa_Rica',dateStyle:'medium',timeStyle:'short'}) : "—");
 
@@ -132,3 +132,4 @@ function SuperAdmin() {
     </div>
   );
 }
+

@@ -1,6 +1,6 @@
-import { Link } from "@tanstack/react-router";
+﻿import { Link } from "@tanstack/react-router";
 
-interface NavItem { to: "/" | "/libros" | "/juegos" | "/mi-avance"; icon: string; label: string }
+
 const items: NavItem[] = [
   { to: "/", icon: "🏠", label: "Inicio" },
   { to: "/libros", icon: "📚", label: "Libros" },
@@ -19,3 +19,4 @@ export function BottomNav() {
     </nav>
   );
 }
+

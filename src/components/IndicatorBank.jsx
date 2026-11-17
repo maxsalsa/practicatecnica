@@ -1,7 +1,7 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 
 type Component = "Trabajo cotidiano" | "Tareas" | "Proyecto" | "Prueba corta";
-interface Indicator { component: Component; text: string; levels: [string, string, string] }
+
 
 const bank: Indicator[] = [
   { component: "Trabajo cotidiano", text: "Describe los conceptos básicos del tema estudiado a partir de situaciones de su entorno.", levels: ["Menciona conceptos aislados del tema.", "Caracteriza los conceptos con ejemplos generales.", "Describe los conceptos y los relaciona con situaciones de su entorno."] },
@@ -46,3 +46,4 @@ export function IndicatorBank() {
     </section>
   );
 }
+

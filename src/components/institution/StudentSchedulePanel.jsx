@@ -1,8 +1,8 @@
-import {useQuery} from '@tanstack/react-query';
+﻿import {useQuery} from '@tanstack/react-query';
 import {supabase} from '@/integrations/supabase/client';
 import {useAccount} from '@/components/AccountProvider';
 import {DAYS,type Cell} from '@/lib/schedule';
-type Visible={id:string;title:string;grid:Record<string,Cell[][]>};
+
 export function StudentSchedulePanel({institutionId,studentId,sectionName}:{institutionId:string;studentId?:string;sectionName?:string}){
  const {user}=useAccount();
  const owner=studentId??user?.id;

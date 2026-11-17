@@ -1,4 +1,4 @@
-import { AuditLog } from '@/components/AuditLog';
+﻿import { AuditLog } from '@/components/AuditLog';
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { useEffect, useMemo, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
@@ -64,7 +64,7 @@ export const Route = createFileRoute('/institucion')({
   component: InstitutionPage,
 });
 
-type Option = { id: string; name: string; logo_path: string | null; is_test: boolean; kind?: string; paid_until: string | null; role: InstitutionRole | 'admin' };
+
 
 function InstitutionPage() {
   const { vista,centro,seccion } = Route.useSearch();
@@ -246,3 +246,4 @@ function ChannelsTrigger({ institutionId }: { institutionId: string }) {
   const unread = (list.data ?? []).reduce((n, r) => n + Number(r.unread ?? 0), 0);
   return <TabsTrigger value="canales">💬 Canales{unread > 0 && <span className="ml-1 rounded-full bg-accent px-1.5 text-xs font-black text-accent-foreground" aria-label={`${unread} mensajes nuevos`}>{unread}</span>}</TabsTrigger>;
 }
+

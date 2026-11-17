@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 
-type Code = { code: string; days: number; max_uses: number; uses: number; active: boolean };
+
 
 /** Admin: create free student access codes and see their use. */
 export function AccessCodeAdmin() {
@@ -48,3 +48,4 @@ export function RedeemCode() {
     </form>
   );
 }
+

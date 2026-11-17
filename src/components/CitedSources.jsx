@@ -1,7 +1,7 @@
-import { forwardRef } from 'react';
+﻿import { forwardRef } from 'react';
 import type { ComponentPropsWithoutRef } from 'react';
 
-export interface CitedSource { title: string; url: string; detail?: string }
+export 
 export interface CitedSourcesProps extends ComponentPropsWithoutRef<'section'> {
   sources: readonly CitedSource[];
 }

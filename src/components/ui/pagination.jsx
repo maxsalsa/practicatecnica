@@ -1,4 +1,4 @@
-import * as React from "react";
+﻿import * as React from "react";
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -26,9 +26,7 @@ const PaginationItem = React.forwardRef<HTMLLIElement, React.ComponentProps<"li"
 );
 PaginationItem.displayName = "PaginationItem";
 
-type PaginationLinkProps = {
-  isActive?: boolean;
-} & Pick<ButtonProps, "size"> &
+ & Pick<ButtonProps, "size"> &
   React.ComponentProps<"a">;
 
 const PaginationLink = ({ className, isActive, size = "icon", ...props }: PaginationLinkProps) => (
@@ -96,3 +94,4 @@ export {
   PaginationNext,
   PaginationEllipsis,
 };
+

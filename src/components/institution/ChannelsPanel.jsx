@@ -1,4 +1,4 @@
-import { openPrivateFile } from '@/lib/open-private-file';
+﻿import { openPrivateFile } from '@/lib/open-private-file';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
@@ -10,7 +10,7 @@ import { stripImageMetadata } from '@/lib/image-sanitize';
 import { CHANNEL_KIND_HELP, CHANNEL_KIND_LABELS, SENDER_ROLE_LABELS, canPost, messageError, type ChannelAccess, type ChannelKind } from '@/lib/channels';
 import {ArrowLeft,MessageSquare,FolderOpen,Send,ShieldCheck} from 'lucide-react';
 
-type ChannelRow = { kind: string; section_id: string | null; student_id: string | null; title: string; channel_id: string | null; last_at: string | null; unread: number };
+
 const rowKey = (r: ChannelRow) => `${r.kind}:${r.section_id ?? ''}:${r.student_id ?? ''}`;
 const time = (d: string) => new Date(d).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
 const kindIcon: Record<ChannelKind, string> = { personal: '🧑‍🏫', seccion: '🏷️', familia: '👪' };
@@ -209,3 +209,4 @@ function Conversation({ institutionId, channel, onBack }: { institutionId: strin
     </form> : <p className="border-t border-border p-3 text-center text-sm text-muted-foreground">{access.isPending ? 'Comprobando acceso…' : 'Canal informativo: solo el personal publica aquí.'}</p>}
   </section>;
 }
+

@@ -1,6 +1,6 @@
-import { Link } from "@tanstack/react-router";
+﻿import { Link } from "@tanstack/react-router";
 
-interface PortalCard { to: "/sexto" | "/especialidades" | "/explorar" | "/admision" | "/idiomas" | "/docentes"; icon: string; title: string; desc: string }
+
 const doors: PortalCard[] = [
   { to: "/explorar", icon: "🏫", title: "Escolar y Secundaria", desc: "Primaria, secundaria y materias MEP" },
   { to: "/especialidades", icon: "⚙️", title: "Colegios Técnicos", desc: "CTP 10.° a 12.°, especialidades y pruebas" },
@@ -23,3 +23,4 @@ export function PortalDoors() {
     </div>
   );
 }
+

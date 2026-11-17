@@ -1,6 +1,6 @@
-import { Link } from "@tanstack/react-router";
+﻿import { Link } from "@tanstack/react-router";
 
-interface Tool { to: "/examenes-docentes" | "/planeamiento" | "/estudiantes" | "/insignias"; icon: string; title: string; desc: string }
+
 const tools: Tool[] = [
   { to: "/examenes-docentes", icon: "📝", title: "Generar exámenes", desc: "Cree pruebas cronometradas de 4 opciones" },
   { to: "/planeamiento", icon: "🗂️", title: "Planeamiento DUA", desc: "Planes por nivel, materia y especialidad" },
@@ -21,3 +21,4 @@ export function TeacherHub() {
     </section>
   );
 }
+

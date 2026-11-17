@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useAccount } from "@/components/AccountProvider";
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/cabina")({staticData:{sitemap:false},
   component: Cabina,
 });
 
-type Mission = { id: string; t: string; xp: number; to: string };
+
 const PLANETS: { id: string; e: string; name: string; who: string; missions: Mission[] }[] = [
   { id: "primaria", e: "🪐", name: "Planeta Primaria", who: "Preescolar a 6.º", missions: [
     { id: "p1", t: "Leer el libro de Preescolar", xp: 10, to: "/libros" }, { id: "p2", t: "Repasar mapas de 1.º a 5.º", xp: 20, to: "/resumen-primaria" }, { id: "p3", t: "Practicar 6.º grado", xp: 30, to: "/sexto" } ] },
@@ -92,3 +92,4 @@ function Cabina() {
     </main>
   );
 }
+

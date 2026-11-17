@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { Printer } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/resumen-sexto")({staticData:{sitemap:true
   component: Resumen,
 });
 
-type Node = { t: string; c?: Node[] };
+
 const maps: { title: string; emoji: string; root: string; branches: Node[]; keys: string[] }[] = [
   {
     title: "Matemática", emoji: "➗", root: "Matemática 6.º",
@@ -105,3 +105,4 @@ function Resumen() {
     </main>
   );
 }
+

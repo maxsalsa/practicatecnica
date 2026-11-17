@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LANGS, similarity, type Lang, type MC } from "@/lib/lang-skills";
@@ -80,4 +80,5 @@ function Destrezas() {
     </main>);
 }
 
-type SpeechRecognitionLike = { lang: string; interimResults: boolean; start: () => void; onresult: (e: { results: { [k: number]: { [k: number]: { transcript: string } | undefined } | undefined } }) => void; onend: () => void; onerror: () => void };
+ | undefined } | undefined } }) => void; onend: () => void; onerror: () => void };
+

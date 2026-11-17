@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -24,8 +24,8 @@ export const Route = createFileRoute("/admin-pagos")({staticData:{sitemap:false}
   component: AdminPagos,
 });
 
-type Row = { id: string; user_id: string | null; email: string | null; plan: string; amount: number; payer_phone: string; reference: string; status: string; expires_at: string; created_at: string; method: string; institutions: { name: string } | null };
-type Seal = { id: string; email: string | null; amount: number; reference: string; status: string; folio: string; hash: string; at: string };
+ | null };
+
 async function sha256(t: string) { const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(t)); return [...new Uint8Array(b)].map((x) => x.toString(16).padStart(2, "0")).join(""); }
 function Barcode({ value }: { value: string }) {
   const w = code128B(value); let x = 10; const bars: { x: number; w: number }[] = [];
@@ -175,3 +175,4 @@ function AdminPagos() {
     </main>
   );
 }
+

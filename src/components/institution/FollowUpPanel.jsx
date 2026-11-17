@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { useAccount } from '@/components/AccountProvider';
@@ -13,7 +13,7 @@ const field = 'mt-1 w-full rounded-xl border border-border bg-background px-3 py
 const bandClass: Record<Band, string> = { Dominado: 'bg-accent text-accent-foreground', 'En proceso': 'bg-primary text-primary-foreground', 'Requiere reforzamiento': 'bg-destructive text-destructive-foreground' };
 const date = (d: string) => new Date(d).toLocaleDateString('es-CR', { timeZone: 'America/Costa_Rica', day: 'numeric', month: 'short' });
 
-type Followed = { id: string; name: string };
+
 /** Families see their linked students; direccion, administración/orientación and guides see the students they may follow. */
 export function FollowUpPanel({ institutionId, role, manager }: { institutionId: string; role: string; manager: boolean }) {
   const { user } = useAccount();
@@ -85,3 +85,4 @@ function FollowUp({ institutionId, studentId }: { institutionId: string; student
     <p className="text-xs text-muted-foreground">Solo se muestran notas calculadas por la plataforma; los juegos no cuentan como nota. Datos de los últimos 12 meses, visibles para la familia vinculada, la dirección, orientación y la persona guía.</p>
   </section>;
 }
+

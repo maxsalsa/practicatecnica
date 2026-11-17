@@ -1,4 +1,4 @@
-import { openPrivateFile } from '@/lib/open-private-file';
+﻿import { openPrivateFile } from '@/lib/open-private-file';
 import { useState } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
@@ -33,7 +33,7 @@ async function uploadProof(userId: string, original: File): Promise<string | nul
   if (up.error) { toast.error('No se pudo subir el comprobante.'); return null; }
   return path;
 }
-type Row = { kind: string; starts_on: string; ends_on: string; created_at: string; urgent: boolean; justified_at: string | null; attachment_path: string | null; status: string };
+
 function Deadlines({ r }: { r: Row }) {
   const kind = r.kind as PermissionKind;
   const late = lateNotice(kind, r.starts_on, r.created_at, r.urgent);
@@ -245,3 +245,4 @@ export function RoleHistory({ institutionId }: { institutionId: string }) {
       </li>)}</ul>}
   </section>;
 }
+

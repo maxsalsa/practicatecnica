@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+﻿import { Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState, forwardRef } from "react";
 import { loadStreak } from "@/lib/profile";
 import { useQuery } from "@tanstack/react-query";
@@ -15,7 +15,7 @@ import { useNavigationAccess } from './useNavigationAccess';
 import { BackButton } from './BackButton';
 
 type Dest = "/juegos" | "/arena" | "/sexto" | "/especialidades" | "/explorar" | "/simulacro" | "/idiomas" | "/docentes" | "/libros" | "/ruleta" | "/habilidades" | "/planeamiento" | "/examenes-docentes" | "/estudiantes" | "/ligas" | "/certificados" | "/temario" | "/metrologia" | "/practicas";
-interface Entry { to: Dest; label: string; keys: string }
+
 const entries: Entry[] = [
   { to: "/sexto", label: "🏫 Escolar y Secundaria", keys: "primaria sexto septimo 7 matematica español ciencias estudios sociales" },
   { to: "/especialidades", label: "⚙️ Especialidades CTP", keys: "ctp tecnico decimo web programacion redes contabilidad electrotecnia agroecologia" },
@@ -105,3 +105,4 @@ export const QuickBar = forwardRef<HTMLDivElement, QuickBarProps>(function Quick
   );
 });
 function scopedQuerySafe(q:string){return /\b(tec|ucr|utn|mep)\b/i.test(q)||searchedGrade(q)!==undefined;}
+

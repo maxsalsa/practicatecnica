@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Printer } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -18,8 +18,8 @@ export const Route = createFileRoute("/resumen-primaria")({staticData:{sitemap:t
   component: Resumen,
 });
 
-type Node = { t: string; c?: Node[] };
-type Map = { title: string; emoji: string; root: string; branches: Node[]; keys: string[] };
+
+
 const B = (t: string, ...c: string[]): Node => ({ t, c: c.map((x) => ({ t: x })) });
 const grades: Record<string, Map[]> = {
   "1": [
@@ -109,3 +109,4 @@ function Resumen() {
     </main>
   );
 }
+

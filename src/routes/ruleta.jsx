@@ -1,4 +1,4 @@
-import { createFileRoute,Link } from "@tanstack/react-router";
+﻿import { createFileRoute,Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Quiz } from "@/components/Quiz";
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/ruleta")({staticData:{sitemap:false},
   component: Ruleta,
 });
 
-type Slice = { label: string; emoji: string; make: () => Deck };
+
 const slices: Slice[] = [
   ...grade6Subjects.map((s) => ({
     label: `${s.title} 6.º`,
@@ -110,3 +110,4 @@ function Ruleta() {
     </main>
   );
 }
+

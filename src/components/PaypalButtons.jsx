@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { useServerFn } from "@tanstack/react-start";
 import { createPaypalOrder, capturePaypalOrder, quoteTeacherPaypal } from "@/lib/paypal.functions";
@@ -7,7 +7,7 @@ import type { AnnualPlan } from '@/lib/pricing';
 import { assertPaypalCheckoutEnabled } from '@/lib/payment-safety';
 
 declare global {
-  interface Window { paypal?: any }
+  
 }
 let sdkReady: Promise<void> | undefined;
 function loadPaypal(clientId: string) {
@@ -83,3 +83,4 @@ export function PaypalButtons({ plan, institutionId, onPaid }: { plan: AnnualPla
     <div key={plan} ref={ref} className="mt-3 min-h-12" />{loadError && <p role="alert" className="text-destructive">No se pudo cargar PayPal. Intente recargar o use SINPE.</p>}
   </>;
 }
+

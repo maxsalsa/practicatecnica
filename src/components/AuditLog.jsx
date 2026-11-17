@@ -1,7 +1,7 @@
-import { useQuery } from '@tanstack/react-query';
+﻿import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
 import { supabase } from '@/integrations/supabase/client';
-type Entry = { at: string; kind: string; action: string; actor: string; subject: string | null };
+
 const when = (s: string) => new Date(s).toLocaleString('es-CR', { timeZone: 'America/Costa_Rica', dateStyle: 'medium', timeStyle: 'short' });
 type R = Record<string, unknown>;
 const ES: Record<string, string> = { active: 'activa', inactive: 'inactiva', gift: 'cortesía', suspended: 'suspendida', pending: 'pendiente', approved: 'aprobada', rejected: 'rechazada', cancelled: 'cancelada', admin: 'administración', teacher: 'docente', student: 'estudiante' };
@@ -38,3 +38,4 @@ export function AuditLog({ institutionId }: { institutionId: string }) {
       <ul className="divide-y divide-border rounded-2xl border border-border bg-card text-sm">{shown.map((e, n) => <li key={n} className="p-3"><p className="font-semibold">{e.kind}: {e.action}</p><p className="break-words text-muted-foreground">{when(e.at)} · por {e.actor}{e.subject ? ` · cuenta ${e.subject}` : ''}</p></li>)}</ul>}
   </section>;
 }
+

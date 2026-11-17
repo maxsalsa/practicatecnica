@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useAccount } from "@/components/AccountProvider";
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/certificados")({staticData:{sitemap:true}
   component: Certificados,
 });
 
-type V = { holder: string; title: string; score: number; issued_at: string };
+
 
 function Certificados() {
   const { h } = Route.useSearch();
@@ -128,3 +128,4 @@ function Certificados() {
     </div>
   );
 }
+

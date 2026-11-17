@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/ligas")({staticData:{sitemap:false},
 });
 
 const TIERS = ["🥉 Bronce", "🥈 Plata", "🥇 Oro", "💎 Diamante"];
-type Row = { name: string; avatar: string; points: number; is_me: boolean; my_tier: number; chest: string | null; chest_claimed: boolean | null };
+
 
 function daysLeft() {
   const cr = new Date(Date.now() - 6 * 3600e3); const d = cr.getUTCDay(); return d === 0 ? 1 : 8 - d;
@@ -114,3 +114,4 @@ function Ligas() {
     </main>
   );
 }
+
