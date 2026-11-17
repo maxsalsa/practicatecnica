@@ -682,8 +682,8 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
         </div>
       )}
 
-      <SimuladorVialCoseviCanvas />
-      <SuiteAuditoriaQaBds />
+      
+      
     </div>
   );
 }
