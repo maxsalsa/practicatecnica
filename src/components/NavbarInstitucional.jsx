@@ -3,14 +3,14 @@ import React from 'react';
 export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCambiarSeccion }) {
   const itemsMenu = [
     { id: 'inicio', icono: '🏠', label: 'Inicio' },
+    { id: 'gestion', icono: '🏛️', label: 'Dirección, Boletas Personal & CSV PIAD/SEA' },
+    { id: 'arcade32', icono: '🎮', label: '32 Juegos Educativos' },
     { id: 'materias', icono: '🔬', label: 'Especialidades y Materias' },
     { id: 'ofimatica', icono: '🧪', label: 'Simuladores Excel / Word / Circuitos' },
     { id: 'simuladores', icono: '🎓', label: 'Exámenes (10 a 60 Ítems)' },
     { id: 'juegovial', icono: '🕹️', label: 'Juego Vial 2D (Rotonda)' },
-    { id: 'biblioteca', icono: '📚', label: 'Programas MEP, Libros y Leyes' },
-    { id: 'gestion', icono: '📋', label: 'Horarios y Tardías' },
-    { id: 'ia', icono: '🤖', label: 'Planes IA / Plantilla' },
-    { id: 'admin', icono: '🔐', label: 'SuperAdmin' }
+    { id: 'biblioteca', icono: '📚', label: 'Programas MEP y Leyes' },
+    { id: 'ia', icono: '🤖', label: 'Planes IA / Plantilla' }
   ];
 
   return (
@@ -30,11 +30,11 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
                   prac<span className="text-cyan-400">TICA</span>tecnica<span className="text-cyan-400">.com</span>
                 </span>
                 <span className="hidden sm:inline-block text-[10px] font-extrabold bg-emerald-950 text-emerald-300 border border-emerald-600 px-2 py-0.5 rounded-full">
-                  v30.0 MULTIVERSO
+                  v31.0 SEA/PIAD + 32 JUEGOS
                 </span>
               </div>
               <p className="text-[10px] sm:text-[11px] text-slate-400">
-                7 Provincias • 27 Regionales MEP • Simuladores Excel, Word, Circuitos & Universidades
+                Boletas Personal→Dirección • Exportador CSV PIAD/SEA • 32 Juegos & 27 Regionales MEP
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
               onClick={() => onCambiarSeccion('login')}
               className="bg-slate-900 hover:bg-slate-800 border border-slate-700 px-2.5 py-1 rounded-xl cursor-pointer text-right"
             >
-              <p className="text-[11px] font-bold text-white leading-tight truncate max-w-[130px] sm:max-w-none">
+              <p className="text-[11px] font-bold text-white leading-tight truncate max-w-[140px] sm:max-w-none">
                 {usuarioActual?.nombre}
               </p>
               <p className="text-[9px] font-extrabold text-cyan-400 uppercase">{usuarioActual?.rol}</p>
@@ -83,10 +83,10 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
       <nav className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 grid grid-cols-5 py-1.5 px-1">
         {[
           { id: 'inicio', icono: '🏠', txt: 'Inicio' },
-          { id: 'materias', icono: '🔬', txt: 'Materias' },
-          { id: 'ofimatica', icono: '🧪', txt: 'Labs' },
+          { id: 'gestion', icono: '🏛️', txt: 'Dirección' },
+          { id: 'arcade32', icono: '🎮', txt: '32 Juegos' },
           { id: 'simuladores', icono: '🎓', txt: 'Exámenes' },
-          { id: 'juegovial', icono: '🕹️', txt: 'Juego 2D' }
+          { id: 'ofimatica', icono: '🧪', txt: 'Labs' }
         ].map((m) => (
           <button
             key={m.id}

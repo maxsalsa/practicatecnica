@@ -20,8 +20,9 @@ import ExploradorMateriasMep from './components/ExploradorMateriasMep';
 import CentroGestionDocenteAdminMep from './components/CentroGestionDocenteAdminMep';
 import SuiteSimuladoresOfimaticaCircuitos from './components/SuiteSimuladoresOfimaticaCircuitos';
 import BibliotecaLeyesLibrosMep from './components/BibliotecaLeyesLibrosMep';
+import Arcade32JuegosEducativos from './components/Arcade32JuegosEducativos';
 
-const CLAVE_PAGINA_OFFLINE = 'pt_pagina_activa_offline_v30_0';
+const CLAVE_PAGINA_OFFLINE = 'pt_pagina_activa_offline_v31_0';
 
 export default function App() {
   const [usuarioActual, setUsuarioActual] = useState({
@@ -64,7 +65,7 @@ export default function App() {
     setUsuarioActual((prev) => ({
       ...prev,
       rol: nuevoRol,
-      nombre: nuevoRol === 'SuperAdmin' ? 'Ing. Max Salazar Sánchez' : `Usuario Activo (${nuevoRol})`
+      nombre: nuevoRol === 'SuperAdmin' ? 'Ing. Max Salazar Sánchez' : `Ing. Max Salazar (${nuevoRol})`
     }));
   };
 
@@ -72,8 +73,8 @@ export default function App() {
     if (accionId === 'cosevi') cambiarPagina('juegovial');
     else if (accionId === 'universidades' || accionId === 'idiomas') cambiarPagina('simuladores');
     else if (accionId === 'materias') cambiarPagina('materias');
-    else if (accionId === 'ctp_gestion') cambiarPagina('ofimatica');
-    else if (accionId === 'modalidades') cambiarPagina('modalidades');
+    else if (accionId === 'ctp_gestion') cambiarPagina('gestion');
+    else if (accionId === 'modalidades') cambiarPagina('arcade32');
   };
 
   return (
@@ -87,7 +88,7 @@ export default function App() {
 
       <main className="flex-1 max-w-7xl w-full mx-auto p-3 sm:p-6 lg:px-8 space-y-5">
 
-        {/* Cintillo Nacional con las 7 Provincias y 27 Direcciones Regionales */}
+        {/* Cintillo con Jerarquía Ministerial Completa del MEP */}
         <div className="bg-slate-900 border border-slate-800 px-3.5 py-2.5 rounded-2xl flex flex-wrap justify-between items-center gap-2 shadow-md">
           <div className="flex flex-wrap items-center gap-2 text-xs">
             <span className="bg-cyan-950 text-cyan-300 border border-cyan-700 px-2 py-0.5 rounded font-extrabold">
@@ -102,19 +103,23 @@ export default function App() {
             <select
               value={usuarioActual.rol}
               onChange={(e) => cambiarRolRapido(e.target.value)}
-              className="bg-slate-950 border border-slate-700 text-cyan-300 text-xs font-bold rounded-xl px-2.5 py-1.5"
+              className="bg-slate-950 border border-cyan-500/60 text-cyan-300 text-xs font-extrabold rounded-xl px-3 py-1.5"
             >
-              <option value="SuperAdmin">👑 Rol: SuperAdmin</option>
-              <option value="Docente MEP">👨‍🏫 Rol: Docente MEP</option>
-              <option value="Estudiante CTP">🎓 Rol: Estudiante</option>
-              <option value="Director / Coordinación">🏛️ Rol: Administrativo</option>
+              <option value="SuperAdmin">👑 Rol: SuperAdmin Global</option>
+              <option value="Ministro(a) de Educación">🇨🇷 Rol: Ministro(a) / Viceministro(a) MEP</option>
+              <option value="Asesor(a) Nacional / Regional">🧭 Rol: Asesor(a) Pedagógico / Supervisor(a)</option>
+              <option value="Director(a) / Subdirector(a)">🏛️ Rol: Director(a) / Subdirector(a) de Centro</option>
+              <option value="Coordinador(a) Técnico / Académico">⚙️ Rol: Coordinador(a) Técnico / Académico</option>
+              <option value="Docente MEP">👨‍🏫 Rol: Docente Técnico / Académico</option>
+              <option value="Estudiante CTP / Académico">🎓 Rol: Estudiante</option>
+              <option value="Encargado Legal / Familia">👨‍👩‍👧 Rol: Encargado Legal / Familia</option>
             </select>
 
             <button
               onClick={() => setMostrarSelector(true)}
               className="bg-cyan-700 hover:bg-cyan-600 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs shadow"
             >
-              🏛️ Cambiar Provincia / Regional (27 MEP)
+              🏛️ Cambiar Regional (27 MEP)
             </button>
 
             <button
@@ -136,16 +141,16 @@ export default function App() {
             </button>
             <div className="flex flex-wrap gap-2">
               <button
-                onClick={() => cambiarPagina('ofimatica')}
-                className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs"
+                onClick={() => cambiarPagina('gestion')}
+                className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs"
               >
-                🧪 Simuladores Excel / Word / Circuitos
+                🏛️ Boletas Personal→Dirección & CSV PIAD/SEA
               </button>
               <button
-                onClick={() => cambiarPagina('biblioteca')}
-                className="bg-amber-600 hover:bg-amber-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs"
+                onClick={() => cambiarPagina('arcade32')}
+                className="bg-purple-600 hover:bg-purple-500 text-white font-bold px-3 py-1.5 rounded-lg text-xs"
               >
-                📚 Programas MEP, Libros y Leyes
+                🎮 32 Juegos Educativos
               </button>
             </div>
           </div>
@@ -160,36 +165,53 @@ export default function App() {
               onNavegarAccion={manejarAccionHero}
             />
 
-            {/* Tarjetas de Acceso Directo a los Nuevos Simuladores de Ofimática, Circuitos y Biblioteca */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* 4 Tarjetas Destacadas de Acceso Inmediato */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div
-                onClick={() => cambiarPagina('ofimatica')}
-                className="bg-gradient-to-br from-emerald-900/70 to-slate-900 border border-emerald-500/40 p-5 rounded-2xl cursor-pointer hover:scale-[1.01] transition-all shadow-xl"
+                onClick={() => cambiarPagina('gestion')}
+                className="bg-gradient-to-br from-emerald-900/80 to-slate-900 border border-emerald-500/50 p-5 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all shadow-xl"
               >
-                <span className="text-2xl">📊</span>
-                <h3 className="text-base font-extrabold text-white mt-2">Simulador de Hoja Electrónica & Contabilidad Pura</h3>
-                <p className="text-xs text-slate-300 mt-1">Fórmulas de Excel, Libro Diario NIIF, cálculo de IVA 13% (Ley 9635) y Balance en vivo.</p>
+                <span className="text-2xl">🏛️</span>
+                <h3 className="text-sm font-extrabold text-white mt-2">Boletas Personal→Dirección & Exportar CSV (SEA / PIAD)</h3>
+                <p className="text-xs text-slate-300 mt-1">Citas CCSS, llegadas tardías de reloj, emergencias de personal y planilla CSV oficial para PIAD/SEA.</p>
+              </div>
+
+              <div
+                onClick={() => cambiarPagina('arcade32')}
+                className="bg-gradient-to-br from-purple-900/80 to-slate-900 border border-purple-500/50 p-5 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all shadow-xl"
+              >
+                <span className="text-2xl">🎮</span>
+                <h3 className="text-sm font-extrabold text-white mt-2">Arcade de 32 Juegos Educativos (Razonamiento & CTP)</h3>
+                <p className="text-xs text-slate-300 mt-1">32 retos gamificados de lógica UCR/TEC, Contabilidad Pura, Ciberseguridad, Ciencias e Idiomas.</p>
               </div>
 
               <div
                 onClick={() => cambiarPagina('ofimatica')}
-                className="bg-gradient-to-br from-cyan-900/70 to-slate-900 border border-cyan-500/40 p-5 rounded-2xl cursor-pointer hover:scale-[1.01] transition-all shadow-xl"
+                className="bg-gradient-to-br from-cyan-900/80 to-slate-900 border border-cyan-500/50 p-5 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all shadow-xl"
               >
-                <span className="text-2xl">🔌</span>
-                <h3 className="text-base font-extrabold text-white mt-2">Simulador de Circuitos, Electrónica & Redes Cisco</h3>
-                <p className="text-xs text-slate-300 mt-1">Compuertas lógicas digitales (AND/OR/XOR), Ley de Ohm, Procesador de Textos APA 7 y Cisco CLI.</p>
+                <span className="text-2xl">🧪</span>
+                <h3 className="text-sm font-extrabold text-white mt-2">Simuladores de Excel, Word APA 7 y Circuitos Digitales</h3>
+                <p className="text-xs text-slate-300 mt-1">Hoja electrónica con IVA Ley 9635, procesador de textos, compuertas AND/OR/XOR y Cisco CLI.</p>
               </div>
 
               <div
                 onClick={() => cambiarPagina('biblioteca')}
-                className="bg-gradient-to-br from-amber-900/70 to-slate-900 border border-amber-500/40 p-5 rounded-2xl cursor-pointer hover:scale-[1.01] transition-all shadow-xl"
+                className="bg-gradient-to-br from-amber-900/80 to-slate-900 border border-amber-500/50 p-5 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all shadow-xl"
               >
                 <span className="text-2xl">📚</span>
-                <h3 className="text-base font-extrabold text-white mt-2">Biblioteca Abierta, Programas MEP, Leyes e Impuestos</h3>
-                <p className="text-xs text-slate-300 mt-1">Folletos libres de derechos de autor, Ley 9635, Ley 8968, Ley 7600 y programas oficiales.</p>
+                <h3 className="text-sm font-extrabold text-white mt-2">Programas MEP, Libros Libres, Leyes e Impuestos</h3>
+                <p className="text-xs text-slate-300 mt-1">Folletos abiertos sin copyright, Ley 9635, Ley 8968, Ley 7600, REA y Diseño Digital.</p>
               </div>
             </div>
           </div>
+        )}
+
+        {seccionActiva === 'gestion' && (
+          <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
+        )}
+
+        {seccionActiva === 'arcade32' && (
+          <Arcade32JuegosEducativos onAbrirRotonda2D={() => cambiarPagina('juegovial')} />
         )}
 
         {seccionActiva === 'materias' && (
@@ -221,10 +243,6 @@ export default function App() {
 
         {seccionActiva === 'juegovial' && (
           <SimuladorVialCoseviCanvas />
-        )}
-
-        {seccionActiva === 'gestion' && (
-          <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
         )}
 
         {seccionActiva === 'ia' && (
@@ -292,7 +310,7 @@ export default function App() {
       )}
 
       <footer className="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-500 space-y-1 mt-8">
-        <p>© 2026 pracTICAtecnica.com — Desarrollado por GICM & BDS Devs S.A. | 7 Provincias y 27 Regionales MEP</p>
+        <p>© 2026 pracTICAtecnica.com — Desarrollado por GICM & BDS Devs S.A. | Roles: Ministro, Asesor, Director, Docente y Estudiante</p>
         <p>Soporte Oficial MEP & WhatsApp: +506 6090-6359 | Ing. Max Salazar Sánchez</p>
       </footer>
 
