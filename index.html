@@ -1,12 +1,39 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Práctica Técnica .com — Ecosistema Educativo MEP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#0284C7" />
+    <meta name="application-name" content="Práctica Técnica .com" />
+    <meta name="apple-mobile-web-app-title" content="Práctica Técnica" />
+    <meta name="description" content="Práctica Técnica .com — Plataforma Educativa y Técnica Oficial GICM: Asignaturas MEP, Especialidades CTP, Universidades y Licencias MOPT." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Práctica Técnica .com — Ecosistema Educativo y Técnico GICM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              background: "#090d16",
+              foreground: "#f8fafc",
+              card: "#111827",
+              border: "#1e293b",
+              muted: "#1e293b",
+              "muted-foreground": "#94a3b8",
+              primary: "#0284c7",
+              "primary-foreground": "#ffffff"
+            }
+          }
+        }
+      }
+    </script>
   </head>
-  <body class="bg-background text-foreground antialiased">
+  <body class="bg-background text-foreground antialiased selection:bg-sky-600 selection:text-white">
     <div id="root"></div>
-    <script type="module" src="/src/index.jsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

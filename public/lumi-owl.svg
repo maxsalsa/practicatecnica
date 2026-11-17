@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="owlBody" x1="40" y1="30" x2="216" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="owlBelly" x1="88" y1="125" x2="168" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#7DD3FC"/>
+    </linearGradient>
+    <linearGradient id="owlWing" x1="28" y1="110" x2="90" y2="205" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+  </defs>
+  <path d="M58 68L36 26L88 48Z" fill="url(#owlWing)"/>
+  <path d="M198 68L220 26L168 48Z" fill="url(#owlWing)"/>
+  <path d="M128 36C74 36 44 74 44 132C44 188 78 226 128 226C178 226 212 188 212 132C212 74 182 36 128 36Z" fill="url(#owlBody)"/>
+  <path d="M46 116C24 134 26 178 52 198C62 174 64 142 46 116Z" fill="url(#owlWing)"/>
+  <path d="M210 116C232 134 230 178 204 198C194 174 192 142 210 116Z" fill="url(#owlWing)"/>
+  <ellipse cx="128" cy="172" rx="48" ry="42" fill="url(#owlBelly)"/>
+  <path d="M106 160Q116 170 126 160" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M130 160Q140 170 150 160" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M116 182Q128 192 140 182" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="94" cy="102" r="32" fill="#0F172A"/>
+  <circle cx="162" cy="102" r="32" fill="#0F172A"/>
+  <circle cx="94" cy="102" r="24" fill="#38BDF8"/>
+  <circle cx="162" cy="102" r="24" fill="#38BDF8"/>
+  <circle cx="94" cy="102" r="13" fill="#090D16"/>
+  <circle cx="162" cy="102" r="13" fill="#090D16"/>
+  <circle cx="88" cy="95" r="5" fill="#7DD3FC"/>
+  <circle cx="156" cy="95" r="5" fill="#7DD3FC"/>
+  <path d="M116 114L140 114L128 136Z" fill="#F59E0B"/>
+  <path d="M96 224L86 238M96 224L96 240M96 224L106 238" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M160 224L150 238M160 224L160 240M160 224L170 238" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+</svg>
