@@ -8,6 +8,8 @@ import PasarelaSinpeModal from './components/PasarelaSinpeModal';
 import SelectorInstitucionalModal from './components/SelectorInstitucionalModal';
 import ReportePdfMep from './components/ReportePdfMep';
 import GestorPushPwa from './components/GestorPushPwa';
+import SelectorMultimedia from './components/SelectorMultimedia';
+import PanelCampanaClara from './components/PanelCampanaClara';
 
 export default function App() {
   const [usuarioActual, setUsuarioActual] = useState({
@@ -89,7 +91,7 @@ export default function App() {
                 🦉 Ecosistema Soberano <span className="text-cyan-400">Práctica Técnica</span>
               </h2>
               <p className="text-slate-300 text-sm max-w-3xl leading-relaxed">
-                Plataforma oficial para el <span className="text-white font-semibold">CTP Mercedes Norte</span> y el MEP. Ciberseguridad SHA-256, Ley 8968 y expedientes privados individuales.
+                Plataforma oficial para el <span className="text-white font-semibold">CTP Mercedes Norte</span> y el MEP. Ciberseguridad SHA-256, Ley 8968, multiverso multimedia y Campaña Clara.
               </p>
               
               <div className="mt-6 flex flex-wrap gap-3">
@@ -106,6 +108,12 @@ export default function App() {
                   💬 Canales y Chats
                 </button>
                 <button 
+                  onClick={() => setSeccionActiva('multimedia')}
+                  className="bg-slate-800 hover:bg-slate-700 text-cyan-300 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
+                >
+                  🖼️ Multimedia y Campaña Clara
+                </button>
+                <button 
                   onClick={() => setSeccionActiva('reportes')}
                   className="bg-slate-800 hover:bg-slate-700 text-cyan-300 font-semibold px-5 py-2.5 rounded-xl shadow transition-all text-sm border border-slate-700"
                 >
@@ -120,11 +128,23 @@ export default function App() {
               </div>
             </div>
 
-            {/* Submódulo de Reportes PDF y Notificaciones Push integrado en Inicio */}
+            {/* Submódulos integrados en Inicio */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <SelectorMultimedia />
+              <PanelCampanaClara />
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <ReportePdfMep />
               <GestorPushPwa />
             </div>
+          </div>
+        )}
+
+        {seccionActiva === 'multimedia' && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-4">
+            <SelectorMultimedia />
+            <PanelCampanaClara />
           </div>
         )}
 
