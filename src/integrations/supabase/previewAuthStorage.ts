@@ -1,4 +1,4 @@
-export const previewAuthStorage = {
+export const brokeredPreviewStorage = {
   getItem(key: string): string | null {
     if (typeof window === "undefined") return null;
     try {
@@ -24,3 +24,5 @@ export const previewAuthStorage = {
     }
   }
 };
+
+export const previewAuthStorage = brokeredPreviewStorage;
