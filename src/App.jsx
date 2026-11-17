@@ -5,17 +5,17 @@ import { SchedulesModule, CafeteriaModule, PermissionsModule } from './component
 
 const KPI_METRICS = [
   { label: 'Simulacros Práctica Técnica', value: 'MEP · CTP · MOPT · U', delta: 'Motor Interactivo Activo', tone: 'text-indigo-600' },
-  { label: 'Horarios y Laboratorios', value: 'Bloques 40/80m', delta: '10°, 11° y 12° Técnico', tone: 'text-indigo-600' },
-  { label: 'Comedor Estudiantil', value: 'Control + Excel', delta: 'Exportación CSV UTF-8', tone: 'text-emerald-600' },
+  { label: 'Horarios y Laboratorios', value: 'Bloques 40/80m', delta: 'Exportación Excel CSV', tone: 'text-indigo-600' },
+  { label: 'Comedor Estudiantil', value: 'Aforo + Reporte', delta: 'Descarga CSV UTF-8', tone: 'text-emerald-600' },
   { label: 'Permisos y Avisos', value: '100% Offline-First', delta: 'Sincronizado con Lovable', tone: 'text-emerald-600' }
 ];
 
 const NAVIGATION_TABS = [
-  { id: 'simulacros', label: '🎯 Simulacros Práctica Técnica' },
-  { id: 'avisos', label: '📢 Avisos Oficiales' },
-  { id: 'horarios', label: '🗓️ Horarios y Labs' },
-  { id: 'comedor', label: '🍽️ Comedor (+Excel)' },
-  { id: 'permisos', label: '🪪 Permisos (+Excel)' }
+  { id: 'simulacros', label: '1. Simulacros Práctica Técnica' },
+  { id: 'avisos', label: '2. Avisos Oficiales' },
+  { id: 'horarios', label: '3. Horarios (+Excel)' },
+  { id: 'comedor', label: '4. Comedor (+Excel)' },
+  { id: 'permisos', label: '5. Permisos (+Excel)' }
 ];
 
 export default function App() {
@@ -36,11 +36,11 @@ export default function App() {
                     practicatecnica.com
                   </h1>
                   <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-400/20 text-emerald-100 border border-emerald-300/30">
-                    Base + Suite Institucional
+                    Producción Activa
                   </span>
                 </div>
                 <p className="text-xs text-indigo-100 mt-0.5">
-                  Simulacros MEP · CTP · MOPT · Admisión U + Gestión de Avisos, Horarios, Comedor y Permisos
+                  Simulacros MEP · CTP · MOPT · Admisión U + Suite Institucional con Reportes Excel
                 </p>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function App() {
       </main>
 
       <footer className="py-6 text-center text-xs text-slate-400 border-t border-slate-200/60 bg-white">
-        practicatecnica.com © 2026 · Plataforma Unificada en JavaScript (.jsx) sincronizada con GitHub y Lovable
+        practicatecnica.com © 2026 · Sincronizado desde C:\pt26xd hacia GitHub y Lovable
       </footer>
     </div>
   );

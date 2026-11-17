@@ -75,19 +75,6 @@ const EXAM_TRACKS = [
         options: ['25 km/h', '40 km/h', '50 km/h', '60 km/h'],
         correctIndex: 0,
         explanation: 'La Ley de Tránsito de Costa Rica establece una velocidad máxima de 25 km/h frente a centros educativos con presencia de estudiantes.'
-      },
-      {
-        id: 'q6',
-        area: 'Conducción Preventiva',
-        prompt: '¿Cuál es el factor que integra el tiempo de reacción del conductor más la distancia que recorre el vehículo desde que se aplica el freno hasta detenerse por completo?',
-        options: [
-          'Distancia de percepción',
-          'Distancia total de parada (detención)',
-          'Fuerza centrífuga en curva',
-          'Hidroplaneamiento activo'
-        ],
-        correctIndex: 1,
-        explanation: 'La distancia total de parada suma la distancia de reacción más la distancia de frenado.'
       }
     ]
   },
@@ -99,7 +86,7 @@ const EXAM_TRACKS = [
     description: 'Entrenamiento intensivo en razonamiento verbal y matemático con explicación paso a paso.',
     questions: [
       {
-        id: 'q7',
+        id: 'q6',
         area: 'Razonamiento Verbal',
         prompt: 'Si todas las herramientas offline garantizan continuidad pedagógica, y Práctica Técnica CR opera bajo arquitectura offline, ¿qué conclusión se deduce necesariamente?',
         options: [
@@ -179,11 +166,10 @@ export default function ExamSimulatorHub() {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-      {/* Selector de Rutas de Examen de PracticaTecnica.com */}
       <div className="lg:col-span-4 space-y-4">
         <div className="argon-card p-5">
           <span className="text-xs font-bold uppercase tracking-wider text-indigo-600">
-            Base Práctica Técnica CR
+            practicatecnica.com
           </span>
           <h2 className="text-lg font-bold text-slate-800 mt-0.5 mb-3">
             Rutas de Entrenamiento Oficial
@@ -222,12 +208,11 @@ export default function ExamSimulatorHub() {
             <div className="h-full bg-emerald-500 transition-all" style={{ width: accuracy + '%' }} />
           </div>
           <p className="text-xs text-slate-500 mt-2">
-            Aciertos: <strong>{history.correct}</strong> de <strong>{history.total}</strong> reactivos practicados en modo Offline-First.
+            Aciertos: <strong>{history.correct}</strong> de <strong>{history.total}</strong> reactivos en modo Offline-First.
           </p>
         </div>
       </div>
 
-      {/* Motor Interactivo de Pregunta con Temporizador */}
       <div className="lg:col-span-8 argon-card p-6 flex flex-col justify-between">
         <div>
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4 mb-5">
@@ -239,11 +224,9 @@ export default function ExamSimulatorHub() {
                 {activeTrack.name} · Reactivo {currentIndex + 1} de {activeTrack.questions.length}
               </h3>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="px-3.5 py-1.5 rounded-xl bg-slate-900 text-white text-xs font-black tracking-wider">
-                ⏱ {formatTimer(secondsLeft)}
-              </span>
-            </div>
+            <span className="px-3.5 py-1.5 rounded-xl bg-slate-900 text-white text-xs font-black tracking-wider">
+              Reloj: {formatTimer(secondsLeft)}
+            </span>
           </div>
 
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 mb-5">
@@ -286,7 +269,7 @@ export default function ExamSimulatorHub() {
           {showFeedback && (
             <div className="mt-5 p-4 rounded-xl bg-indigo-50/90 border border-indigo-200">
               <p className="text-xs font-bold uppercase text-indigo-700">
-                Fundamento Técnico y Pedagógico
+                Explicación Oficial
               </p>
               <p className="text-sm text-slate-700 mt-1 leading-relaxed">
                 {currentQuestion.explanation}
@@ -297,7 +280,7 @@ export default function ExamSimulatorHub() {
 
         <div className="flex flex-wrap items-center justify-between gap-3 pt-5 mt-6 border-t border-slate-100">
           <span className="text-xs text-slate-400">
-            Modo sin conexión activo · Guardado automático en dispositivo
+            practicatecnica.com · Guardado automático Offline-First
           </span>
           <div className="flex items-center gap-3">
             {!showFeedback ? (
@@ -313,7 +296,7 @@ export default function ExamSimulatorHub() {
                 onClick={handleNextQuestion}
                 className="px-5 py-2.5 rounded-lg text-xs font-bold bg-emerald-600 text-white hover:bg-emerald-700 cursor-pointer"
               >
-                Siguiente Reactivo →
+                Siguiente Reactivo
               </button>
             )}
           </div>
