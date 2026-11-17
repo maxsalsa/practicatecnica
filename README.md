@@ -1,29 +1,10 @@
-# Welcome to your Lovable project
+# Práctica Técnica .com — Arquitectura Soberana (GICM & CTPMN)
+> **Autor principal / SuperAdmin:** Ing. Max Salazar Sánchez  
+> **Ubicación local:** `C:\PT26xD`  
+> **Estado:** Producción Activa (Cero dependencias de créditos externos, SPA pura en JSX, Neon DB, PWA Universal, IA Offline, CoopePago y Certificados SHA-256).
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+## Lineamientos de Ingeniería Soberana
+1. **Pureza JSX:** Prohibido el uso de TypeScript (`.ts` / `.tsx`). Todo el sistema opera con JavaScript moderno y componentes `.jsx`.
+2. **Soberanía de Código:** Todo el desarrollo, commits, tags y despliegues se ejecutan directamente desde el entorno local mediante scripts de PowerShell automatizados con sincronización hacia `origin/main`.
+3. **Ecosistema Académico MEP y Técnico:** Cobertura total de admisiones PAA (UCR/TEC/UNA), especialidades técnicas (Ciberseguridad, Desarrollo Web, Soporte TI), Teoría de Manejo MOPT (Motos, Carros, Camiones) y minijuegos educativos (Clue y Rummy Cub).
+4. **Infiprincipio Kaizen:** Mejora continua, auditorías automáticas de QA, compilar en verde absoluto sin warnings ni errores.
