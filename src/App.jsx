@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import NavbarInstitucional from './components/NavbarInstitucional';
+import HeroGamificadoMep from './components/HeroGamificadoMep';
 import ChatInstitucional from './components/ChatInstitucional';
 import CarnetEstudiantilQr from './components/CarnetEstudiantilQr';
 import PanelSuperAdmin from './components/PanelSuperAdmin';
@@ -26,6 +27,7 @@ export default function App() {
 
   const [seccionActiva, setSeccionActiva] = useState('inicio');
   const [modalidadMepId, setModalidadMepId] = useState('ctp_diurno');
+  const [busquedaGlobal, setBusquedaGlobal] = useState('');
   const [mostrarSinpe, setMostrarSinpe] = useState(false);
   const [mostrarLogin, setMostrarLogin] = useState(false);
   const [mostrarSelector, setMostrarSelector] = useState(false);
@@ -44,6 +46,19 @@ export default function App() {
     }));
   };
 
+  const manejarAccionHero = (accionId) => {
+    if (accionId === 'cosevi' || accionId === 'universidades' || accionId === 'idiomas') {
+      setSeccionActiva('simuladores');
+    } else if (accionId === 'materias') {
+      setSeccionActiva('materias');
+    } else if (accionId === 'ctp_gestion') {
+      setSeccionActiva('gestion');
+    } else if (accionId === 'modalidades') {
+      const el = document.getElementById('seccion-modalidades-mep');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
 
@@ -57,13 +72,15 @@ export default function App() {
         }}
       />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:px-6 lg:px-8 space-y-6">
+      <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:px-6 lg:px-8 space-y-8">
 
-        {/* Cintillo Institucional y Accesos Rápidos */}
+        {/* Cintillo Institucional Superior */}
         <div className="bg-slate-900/90 border border-slate-800 px-4 py-3 rounded-2xl flex flex-wrap justify-between items-center gap-3 shadow-lg">
           <div className="flex flex-wrap items-center gap-2 text-xs">
-            <span className="text-cyan-400 font-extrabold">🏛️ MEP Costa Rica:</span>
-            <span className="text-slate-200 font-medium">{contextoMep.region}</span>
+            <span className="bg-emerald-950 text-emerald-300 border border-emerald-600 px-2 py-0.5 rounded font-extrabold">
+              v27.5 FUSIÓN SUPREMA
+            </span>
+            <span className="text-cyan-400 font-extrabold">🏛️ {contextoMep.region}</span>
             <span className="text-slate-600">•</span>
             <span className="text-slate-300">Circuito {contextoMep.circuito}</span>
             <span className="text-slate-600">•</span>
@@ -100,21 +117,30 @@ export default function App() {
           </div>
         </div>
 
-        {/* VISTA INICIO: Todo visible y accesible de inmediato */}
+        {/* VISTA INICIO: Portada Gamificada + Materias + Horarios/Tardías + Modalidades + Simulacros */}
         {seccionActiva === 'inicio' && (
           <div className="space-y-8">
+            <HeroGamificadoMep
+              usuarioActual={usuarioActual}
+              busquedaGlobal={busquedaGlobal}
+              setBusquedaGlobal={setBusquedaGlobal}
+              onNavegarAccion={manejarAccionHero}
+            />
+
             <ExploradorMateriasMep onPracticarMateria={() => setSeccionActiva('simuladores')} />
 
             <CentroGestionDocenteAdminMep usuarioActual={usuarioActual} />
 
-            <HubModalidadesMep
-              modalidadActiva={modalidadMepId}
-              onSeleccionarModalidad={(mod) => {
-                setModalidadMepId(mod.id);
-                setContextoMep((prev) => ({ ...prev, modalidad: mod.nombre }));
-              }}
-              onIrASimuladores={() => setSeccionActiva('simuladores')}
-            />
+            <div id="seccion-modalidades-mep">
+              <HubModalidadesMep
+                modalidadActiva={modalidadMepId}
+                onSeleccionarModalidad={(mod) => {
+                  setModalidadMepId(mod.id);
+                  setContextoMep((prev) => ({ ...prev, modalidad: mod.nombre }));
+                }}
+                onIrASimuladores={() => setSeccionActiva('simuladores')}
+              />
+            </div>
 
             <SimuladorUniversitarioMep usuarioActual={usuarioActual} />
 
