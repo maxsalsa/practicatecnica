@@ -2,8 +2,13 @@ import React, { useState } from "react"
 import AnalyticsDashboard from "./components/institution/AnalyticsDashboard"
 import AnnouncementsBroadcastPanel from "./components/institution/AnnouncementsBroadcastPanel"
 import StudentWalletView from "./components/institution/StudentWalletView"
+import SchoolServicesPanel from "./components/institution/SchoolServicesPanel"
+import DrivingAcademyView from "./components/institution/DrivingAcademyView"
+import CertifiedCertificatesView from "./components/institution/CertifiedCertificatesView"
+import EducationalGames from "./components/games/EducationalGames"
+import AutoPlan from "./components/plan/AutoPlan"
 import LumiAvatar from "./components/lumi/LumiAvatar"
-import { BarChart3, Bell, Wallet, Bot } from "lucide-react"
+import { BarChart3, Bell, Wallet, Utensils, Car, Award, Puzzle, FileText } from "lucide-react"
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("dashboard")
@@ -18,12 +23,12 @@ export default function App() {
             <p className="text-xs text-muted-foreground">Ecosistema MEP — CTP Mercedes Norte (Max Salazar)</p>
           </div>
         </div>
-        <span className="text-xs px-2.5 py-1 bg-emerald-500/10 text-emerald-600 rounded-full font-medium">Producción Activa</span>
+        <span className="text-xs px-2.5 py-1 bg-emerald-500/10 text-emerald-600 rounded-full font-medium">Producción Activa Full</span>
       </header>
 
       <div className="flex flex-1 overflow-hidden">
-        <aside className="w-64 border-r bg-card p-4 space-y-2 hidden md:block">
-          <p className="text-xs font-semibold text-muted-foreground uppercase px-3 mb-2">Módulos GICM</p>
+        <aside className="w-64 border-r bg-card p-4 space-y-2 hidden md:block overflow-y-auto">
+          <p className="text-xs font-semibold text-muted-foreground uppercase px-3 mb-2">Módulos GICM Full</p>
           <button onClick={() => setActiveTab("dashboard")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "dashboard" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
             <BarChart3 className="w-4 h-4" /><span>Analíticas SuperAdmin</span>
           </button>
@@ -33,6 +38,21 @@ export default function App() {
           <button onClick={() => setActiveTab("wallet")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "wallet" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
             <Wallet className="w-4 h-4" /><span>CoopePago & Alcancía</span>
           </button>
+          <button onClick={() => setActiveTab("services")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "services" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
+            <Utensils className="w-4 h-4" /><span>Comedor & Horarios</span>
+          </button>
+          <button onClick={() => setActiveTab("driving")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "driving" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
+            <Car className="w-4 h-4" /><span>Manejo (Motos/Carros)</span>
+          </button>
+          <button onClick={() => setActiveTab("games")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "games" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
+            <Puzzle className="w-4 h-4" /><span>Clue & Rummy Cub</span>
+          </button>
+          <button onClick={() => setActiveTab("certs")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "certs" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
+            <Award className="w-4 h-4" /><span>Certificados SHA-256</span>
+          </button>
+          <button onClick={() => setActiveTab("plans")} className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === "plans" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
+            <FileText className="w-4 h-4" /><span>Planeamientos OER</span>
+          </button>
         </aside>
 
         <main className="flex-1 p-6 overflow-y-auto bg-background space-y-6">
@@ -41,6 +61,11 @@ export default function App() {
             {activeTab === "dashboard" && <AnalyticsDashboard />}
             {activeTab === "announcements" && <AnnouncementsBroadcastPanel sectionId="11-Tecnico" />}
             {activeTab === "wallet" && <StudentWalletView />}
+            {activeTab === "services" && <SchoolServicesPanel />}
+            {activeTab === "driving" && <DrivingAcademyView />}
+            {activeTab === "games" && <EducationalGames />}
+            {activeTab === "certs" && <CertifiedCertificatesView />}
+            {activeTab === "plans" && <AutoPlan />}
           </div>
         </main>
       </div>
