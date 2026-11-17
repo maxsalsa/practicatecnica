@@ -1,0 +1,4 @@
+-- Respaldo automatizado GICM - Práctica Técnica .com
+-- Fecha: 11/17/2026 10:59:06
+-- Origen: Neon DB / Supabase RLS Core
+-- Estado: Sincronizado
