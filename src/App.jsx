@@ -4,6 +4,7 @@ import ConfiguracionInstitucionalModal, { obtenerConfigInstitucion } from './com
 import HeroGamificadoMep from './components/HeroGamificadoMep';
 import ChatInstitucional from './components/ChatInstitucional';
 import CarnetEstudiantilQr from './components/CarnetEstudiantilQr';
+import CarnetInstitucionalPersonalizado from './components/CarnetInstitucionalPersonalizado';
 import PanelSuperAdmin from './components/PanelSuperAdmin';
 import LoginGoogleAuth from './components/LoginGoogleAuth';
 import PasarelaSinpeModal from './components/PasarelaSinpeModal';
@@ -277,9 +278,7 @@ export default function App() {
           <ChatInstitucional usuarioActual={usuarioActual} />
         )}
 
-        {seccionActiva === 'carnet' && (
-          <CarnetEstudiantilQr />
-        )}
+        {seccionActiva === 'carnet' && (<CarnetInstitucionalPersonalizado />)}
 
         {seccionActiva === 'admin' && (
           <div className="space-y-6">
