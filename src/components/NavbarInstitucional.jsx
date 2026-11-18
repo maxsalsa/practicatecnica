@@ -1,7 +1,7 @@
 import React from 'react';
 import { EscudoOficialMep, EscudoCtpMercedesNorte } from './LogosOficialesMepCtp';
 
-export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCambiarSeccion }) {
+export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCambiarSeccion, onAbrirConfigInstitucion }) {
   const itemsMenu = [
     { id: 'inicio', icono: '🏠', label: 'Inicio' },
     { id: 'gestion', icono: '🏛️', label: 'Dirección, Permisos y Calificaciones' },
@@ -42,6 +42,17 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
           </div>
 
           <div className="flex items-center gap-2">
+            {onAbrirConfigInstitucion && (
+              <button
+                onClick={onAbrirConfigInstitucion}
+                className="bg-amber-600/90 hover:bg-amber-500 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs shadow transition-all flex items-center gap-1"
+                title="Configurar Escudo, Logo y Nombre de la Institución"
+              >
+                <span>⚙️</span>
+                <span className="hidden md:inline">Institución</span>
+              </button>
+            )}
+
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-950/90 text-emerald-300 border border-emerald-600/60">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
               Activo

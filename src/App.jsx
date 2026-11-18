@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import NavbarInstitucional from './components/NavbarInstitucional';
+import ConfiguracionInstitucionalModal, { obtenerConfigInstitucion } from './components/ConfiguracionInstitucionalModal';
 import HeroGamificadoMep from './components/HeroGamificadoMep';
 import ChatInstitucional from './components/ChatInstitucional';
 import CarnetEstudiantilQr from './components/CarnetEstudiantilQr';
@@ -41,6 +42,7 @@ export default function App() {
   const [mostrarSinpe, setMostrarSinpe] = useState(false);
   const [mostrarLogin, setMostrarLogin] = useState(false);
   const [mostrarSelector, setMostrarSelector] = useState(false);
+  const [mostrarConfigInstitucion, setMostrarConfigInstitucion] = useState(false);
 
   // Modal Universal 1-Clic para que NUNCA cueste encontrar dónde pedir permisos o justificar
   const [modalPermisoAbierto, setModalPermisoAbierto] = useState(false);
@@ -94,6 +96,7 @@ export default function App() {
         usuarioActual={usuarioActual}
         seccionActiva={seccionActiva}
         onCambiarSeccion={cambiarPagina}
+        onAbrirConfigInstitucion={() => setMostrarConfigInstitucion(true)}
       />
 
       <main className="flex-1 max-w-7xl w-full mx-auto p-3 sm:p-6 lg:px-8 space-y-4">
@@ -319,6 +322,9 @@ export default function App() {
         </div>
       )}
 
+      {mostrarConfigInstitucion && (
+        <ConfiguracionInstitucionalModal onClose={() => setMostrarConfigInstitucion(false)} onGuardar={(cfg) => setContextoMep(prev => ({ ...prev, institucion: cfg.nombreInstitucion, region: cfg.regionMep }))} />
+      )}
       {mostrarSelector && (
         <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 z-50">
           <div className="relative w-full max-w-lg">
