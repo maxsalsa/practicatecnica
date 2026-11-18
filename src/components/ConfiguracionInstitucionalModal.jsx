@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const CLAVE_CONFIG_INSTITUCION = 'pt_config_institucion_whitelabel_v32';
+const CLAVE_CONFIG_INSTITUCION = 'pt_config_institucion_whitelabel_v36';
 
 export function obtenerConfigInstitucion() {
   try {
@@ -15,8 +15,9 @@ export function obtenerConfigInstitucion() {
     provincia: 'Heredia',
     contactoTelefono: '+506 2261-0000',
     correoInstitucional: 'ctp.mercedesnorte@mep.go.cr',
-    colorPrimario: 'from-cyan-500 to-blue-700',
-    logoUrlPersonalizado: '' // Si suben URL o imagen base64
+    logoUrlPersonalizado: '',        // 1. Logo oficial
+    estandarteUrlPersonalizado: '',  // 2. Escudo / Estandarte
+    mascotaUrlPersonalizado: ''      // 3. Mascota oficial
   };
 }
 
@@ -32,16 +33,16 @@ export default function ConfiguracionInstitucionalModal({ onClose, onGuardar }) 
       setMensajeGuardado(false);
       if (onGuardar) onGuardar(config);
       if (onClose) onClose();
-      window.location.reload(); // Refrescar para aplicar cambios globales
-    }, 800);
+      window.location.reload();
+    }, 700);
   };
 
-  const manejarSubidaLogo = (e) => {
+  const manejarSubidaArchivo = (e, campo) => {
     const file = e.target.files[0];
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        setConfig((prev) => ({ ...prev, logoUrlPersonalizado: reader.result }));
+        setConfig((prev) => ({ ...prev, [campo]: reader.result }));
       };
       reader.readAsDataURL(file);
     }
@@ -53,15 +54,15 @@ export default function ConfiguracionInstitucionalModal({ onClose, onGuardar }) 
         <div className="flex items-start justify-between gap-2 border-b border-slate-800 pb-3">
           <div>
             <span className="text-[10px] font-extrabold uppercase bg-amber-950 text-amber-300 border border-amber-600 px-2.5 py-0.5 rounded">
-              🏢 Plan Anual Institucional • Personalización Marca Blanca
+              🏢 Plan Anual Institucional • 3 Activos Gráficos (Logo, Estandarte y Mascota)
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mt-1">
-              Configuración de Escudo, Logo e Identidad del Colegio
+              Configuración de Identidad y Activos Institucionales
             </h3>
           </div>
           <button
             onClick={onClose}
-            className="bg-slate-800 hover:bg-rose-600 text-slate-300 hover:text-white font-extrabold px-3 py-1 rounded-xl text-xs transition-all"
+            className="bg-slate-800 hover:bg-rose-600 text-slate-300 hover:text-white font-extrabold px-3 py-1 rounded-xl text-xs"
           >
             ✕ Cerrar
           </button>
@@ -70,13 +71,13 @@ export default function ConfiguracionInstitucionalModal({ onClose, onGuardar }) 
         {mensajeGuardado ? (
           <div className="bg-emerald-950/90 border-2 border-emerald-500 p-6 rounded-2xl text-center space-y-2">
             <span className="text-3xl">✅</span>
-            <h4 className="text-base font-extrabold text-white">¡Configuración Institucional Actualizada!</h4>
-            <p className="text-xs text-emerald-200">Los escudos, nombres y reportes usarán la nueva identidad del colegio.</p>
+            <h4 className="text-base font-extrabold text-white">¡Identidad Institucional Actualizada!</h4>
+            <p className="text-xs text-emerald-200">El logo, estandarte y datos aplicados ya están vigentes.</p>
           </div>
         ) : (
           <form onSubmit={guardarCambios} className="space-y-3.5 text-xs">
             <div>
-              <label className="block font-bold text-slate-300 mb-1">Nombre Oficial del Centro Educativo (CTP / Liceo / Colegio):</label>
+              <label className="block font-bold text-slate-300 mb-1">Nombre Oficial del Centro Educativo:</label>
               <input
                 type="text"
                 value={config.nombreInstitucion}
@@ -107,37 +108,32 @@ export default function ConfiguracionInstitucionalModal({ onClose, onGuardar }) 
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label className="block font-bold text-slate-300 mb-1">Correo Institucional:</label>
-                <input
-                  type="email"
-                  value={config.correoInstitucional}
-                  onChange={(e) => setConfig({ ...config, correoInstitucional: e.target.value })}
-                  className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-white"
-                />
-              </div>
-              <div>
-                <label className="block font-bold text-slate-300 mb-1">Teléfono Oficial:</label>
-                <input
-                  type="text"
-                  value={config.contactoTelefono}
-                  onChange={(e) => setConfig({ ...config, contactoTelefono: e.target.value })}
-                  className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-white"
-                />
-              </div>
-            </div>
+            <div className="space-y-2 pt-1 border-t border-slate-800">
+              <label className="block font-bold text-cyan-300">Gestión de 3 Activos Gráficos Institucionales:</label>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <div className="bg-slate-950 border border-slate-800 p-3 rounded-xl space-y-1.5 text-center">
+                  <p className="font-bold text-[11px] text-slate-200">1. Logo Oficial</p>
+                  <div className="w-12 h-12 bg-slate-900 mx-auto rounded-lg flex items-center justify-center border border-slate-700 overflow-hidden">
+                    {config.logoUrlPersonalizado ? <img src={config.logoUrlPersonalizado} className="w-full h-full object-contain" /> : '🏫'}
+                  </div>
+                  <input type="file" accept="image/*" onChange={(e) => manejarSubidaArchivo(e, 'logoUrlPersonalizado')} className="text-[10px] text-slate-400 file:w-full file:py-1 file:px-2 file:rounded file:border-0 file:text-[10px] file:font-bold file:bg-cyan-600 file:text-white cursor-pointer" />
+                </div>
 
-            <div>
-              <label className="block font-bold text-slate-300 mb-1">Subir Escudo / Logo del Colegio (Imagen PNG o JPG):</label>
-              <div className="flex items-center gap-3 bg-slate-950 border border-dashed border-slate-700 p-3 rounded-xl">
-                {config.logoUrlPersonalizado ? (
-                  <img src={config.logoUrlPersonalizado} alt="Logo" className="w-12 h-12 object-contain rounded-lg bg-white p-1" />
-                ) : (
-                  <div className="w-12 h-12 rounded-lg bg-slate-900 flex items-center justify-center text-xl">🏫</div>
-                )}
-                <div className="flex-1">
-                  <input type="file" accept="image/*" onChange={manejarSubidaLogo} className="text-[11px] text-slate-400 file:mr-2 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-cyan-600 file:text-white hover:file:bg-cyan-500 cursor-pointer" />
+                <div className="bg-slate-950 border border-slate-800 p-3 rounded-xl space-y-1.5 text-center">
+                  <p className="font-bold text-[11px] text-slate-200">2. Estandarte / Escudo</p>
+                  <div className="w-12 h-12 bg-slate-900 mx-auto rounded-lg flex items-center justify-center border border-slate-700 overflow-hidden">
+                    {config.estandarteUrlPersonalizado ? <img src={config.estandarteUrlPersonalizado} className="w-full h-full object-contain" /> : '🛡️'}
+                  </div>
+                  <input type="file" accept="image/*" onChange={(e) => manejarSubidaArchivo(e, 'estandarteUrlPersonalizado')} className="text-[10px] text-slate-400 file:w-full file:py-1 file:px-2 file:rounded file:border-0 file:text-[10px] file:font-bold file:bg-emerald-600 file:text-white cursor-pointer" />
+                </div>
+
+                <div className="bg-slate-950 border border-slate-800 p-3 rounded-xl space-y-1.5 text-center">
+                  <p className="font-bold text-[11px] text-slate-200">3. Mascota Oficial</p>
+                  <div className="w-12 h-12 bg-slate-900 mx-auto rounded-lg flex items-center justify-center border border-slate-700 overflow-hidden">
+                    {config.mascotaUrlPersonalizado ? <img src={config.mascotaUrlPersonalizado} className="w-full h-full object-contain" /> : '🦉'}
+                  </div>
+                  <input type="file" accept="image/*" onChange={(e) => manejarSubidaArchivo(e, 'mascotaUrlPersonalizado')} className="text-[10px] text-slate-400 file:w-full file:py-1 file:px-2 file:rounded file:border-0 file:text-[10px] file:font-bold file:bg-purple-600 file:text-white cursor-pointer" />
                 </div>
               </div>
             </div>
@@ -147,7 +143,7 @@ export default function ConfiguracionInstitucionalModal({ onClose, onGuardar }) 
                 type="submit"
                 className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold py-3 rounded-xl text-xs shadow-lg transition-all"
               >
-                💾 Guardar y Aplicar Identidad Institucional
+                💾 Guardar e Institucionalizar Cambios
               </button>
             </div>
           </form>

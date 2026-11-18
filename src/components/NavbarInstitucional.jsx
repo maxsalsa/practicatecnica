@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
-import { EscudoOficialMep, EscudoCtpMercedesNorte } from './LogosOficialesMepCtp';
+import { LogoOficialMep2026, EscudoInstitucionalPersonalizado } from './LogosOficialesMepCtp';
+import { obtenerConfigInstitucion } from './ConfiguracionInstitucionalModal';
 
 export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCambiarSeccion, onAbrirConfigInstitucion }) {
   const [menuAbierto, setMenuAbierto] = useState(false);
+  const cfg = obtenerConfigInstitucion();
 
   const itemsMenu = [
     { id: 'inicio', icono: '🏠', label: 'Inicio' },
-    { id: 'gestion', icono: '🏛️', label: 'Dirección, Permisos y Notas' },
+    { id: 'gestion', icono: '🏛️', label: 'Dirección y Calificaciones' },
     { id: 'arcade32', icono: '🎮', label: '32 Juegos Educativos' },
-    { id: 'materias', icono: '🔬', label: 'Especialidades CTP y Materias' },
+    { id: 'materias', icono: '🔬', label: 'Especialidades y Materias' },
     { id: 'ofimatica', icono: '🧪', label: 'Simuladores Excel / Word / Circuitos' },
     { id: 'simuladores', icono: '🎓', label: 'Exámenes y Simulacros' },
     { id: 'juegovial', icono: '🕹️', label: 'Simulador Vial 2D' },
     { id: 'biblioteca', icono: '📚', label: 'Programas MEP y Leyes' },
-    { id: 'ia', icono: '🤖', label: 'Planeamientos e Instrumentos IA' }
+    { id: 'ia', icono: '🤖', label: 'Instrumentos IA' }
   ];
 
   const seleccionarOpcion = (id) => {
@@ -26,37 +28,35 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
       <header className="sticky top-0 z-40 bg-slate-950/95 backdrop-blur-md border-b border-slate-800 shadow-xl">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between gap-2">
           
-          {/* Logo y Escudos MEP / CTP Mercedes Norte */}
           <div
             onClick={() => seleccionarOpcion('inicio')}
-            className="flex items-center gap-2.5 cursor-pointer group"
+            className="flex items-center gap-3 cursor-pointer group"
           >
-            <div className="flex items-center -space-x-1.5 shrink-0">
-              <EscudoOficialMep className="w-9 h-9 sm:w-10 sm:h-10 drop-shadow-md transition-transform group-hover:scale-105" />
-              <EscudoCtpMercedesNorte className="w-9 h-9 sm:w-10 sm:h-10 drop-shadow-md transition-transform group-hover:scale-105" />
+            <div className="flex items-center gap-2 shrink-0">
+              <LogoOficialMep2026 className="h-9 transition-transform group-hover:scale-105" />
+              <EscudoInstitucionalPersonalizado className="w-9 h-9 transition-transform group-hover:scale-105" />
             </div>
             <div>
               <div className="flex items-center gap-1.5 flex-wrap">
-                <span className="text-sm sm:text-lg font-black tracking-tight text-white">
+                <span className="text-sm sm:text-base font-black tracking-tight text-white">
                   prac<span className="text-cyan-400">TICA</span>tecnica<span className="text-cyan-400">.com</span>
                 </span>
-                <span className="text-[9px] sm:text-[10px] font-extrabold bg-sky-950 text-sky-300 border border-sky-700 px-2 py-0.5 rounded-full">
-                  MEP • CTP Mercedes Norte
+                <span className="text-[9px] font-extrabold bg-cyan-950 text-cyan-300 border border-cyan-700 px-2 py-0.5 rounded-full">
+                  {cfg.nombreInstitucion}
                 </span>
               </div>
-              <p className="text-[9px] sm:text-[11px] text-slate-400 truncate max-w-[200px] sm:max-w-none">
-                Ministerio de Educación Pública • Costa Rica
+              <p className="text-[9px] sm:text-[10px] text-slate-400 truncate max-w-[180px] sm:max-w-none">
+                {cfg.regionMep} • {cfg.circuitoMep}
               </p>
             </div>
           </div>
 
-          {/* Botones de Acción Superior (Configuración e Institución) */}
           <div className="flex items-center gap-2">
             {onAbrirConfigInstitucion && (
               <button
                 onClick={onAbrirConfigInstitucion}
                 className="bg-amber-600/90 hover:bg-amber-500 text-white font-extrabold px-2.5 py-1.5 rounded-xl text-xs shadow transition-all flex items-center gap-1"
-                title="Configurar Escudo, Logo y Nombre de la Institución"
+                title="Configurar Logotipos e Identidad Institucional"
               >
                 <span>⚙️</span>
                 <span className="hidden sm:inline">Institución</span>
@@ -73,7 +73,6 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
               <p className="text-[9px] font-extrabold text-cyan-400 uppercase">{usuarioActual?.rol}</p>
             </div>
 
-            {/* Botón de Menú Hamburguesa Mobile-First */}
             <button
               onClick={() => setMenuAbierto(!menuAbierto)}
               className="lg:hidden bg-slate-900 border border-slate-700 text-white p-2 rounded-xl text-lg font-bold"
@@ -84,7 +83,6 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
           </div>
         </div>
 
-        {/* Menú de Escritorio (Oculto en móvil, visible en LG) */}
         <div className="hidden lg:block bg-slate-900/95 border-t border-slate-800/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center gap-2 overflow-x-auto no-scrollbar">
             {itemsMenu.map((item) => {
@@ -107,11 +105,10 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
           </div>
         </div>
 
-        {/* Menú Desplegable Hamburguesa Mobile-First (Visible al hacer clic en ☰ en Celular/Tablet) */}
         {menuAbierto && (
           <div className="lg:hidden bg-slate-950 border-t border-slate-800 p-3 space-y-1.5 shadow-2xl max-h-[75vh] overflow-y-auto">
             <p className="text-[10px] font-extrabold text-cyan-400 uppercase tracking-wider px-2 pb-1">
-              Menú Principal del Sistema MEP:
+              Menú Principal:
             </p>
             {itemsMenu.map((item) => {
               const activo = seccionActiva === item.id;
@@ -134,7 +131,6 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
         )}
       </header>
 
-      {/* Barra Inferior Fija Mobile-First para Celulares */}
       <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 grid grid-cols-5 py-1.5 px-1 shadow-2xl">
         {[
           { id: 'inicio', icono: '🏠', txt: 'Inicio' },

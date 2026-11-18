@@ -1,43 +1,67 @@
 import React from 'react';
+import { obtenerConfigInstitucion } from './ConfiguracionInstitucionalModal';
 
-export function EscudoOficialMep({ className = "w-10 h-10" }) {
+// Logo oficial del Ministerio de Educación Pública 2026 (Gobierno de Costa Rica)
+export function LogoOficialMep2026({ className = "h-9" }) {
   return (
-    <svg viewBox="0 0 100 100" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="mepGrad" x1="0" y1="0" x2="100" y2="100">
-          <stop offset="0%" stopColor="#003876" />
-          <stop offset="50%" stopColor="#0284c7" />
-          <stop offset="100%" stopColor="#ce1126" />
-        </linearGradient>
-      </defs>
-      <circle cx="50" cy="50" r="47" fill="url(#mepGrad)" stroke="#f8fafc" strokeWidth="4" />
-      <path d="M22 65 C35 55, 45 65, 50 68 C55 65, 65 55, 78 65 L78 40 C65 32, 55 40, 50 44 C45 40, 35 32, 22 40 Z" fill="#ffffff" />
-      <circle cx="50" cy="25" r="7" fill="#fbbf24" />
-      <text x="50" y="86" textAnchor="middle" fill="#ffffff" fontSize="16" fontWeight="900" fontFamily="Arial, sans-serif">
-        MEP
-      </text>
-    </svg>
+    <div className={`flex items-center gap-2.5 bg-[#111c33] px-3 py-1.5 rounded-xl border border-amber-400/40 shadow-md ${className}`}>
+      <div className="w-7 h-7 bg-[#0b1324] border border-amber-400 rounded flex items-center justify-center shrink-0 shadow-inner">
+        <svg viewBox="0 0 40 40" className="w-5 h-5" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 8 Q16 12, 14 18 T22 28 Q26 32, 24 35 Q18 32, 15 28 T10 18 Z" fill="#d4af37" />
+          <circle cx="8" cy="32" r="1.5" fill="#d4af37" />
+        </svg>
+      </div>
+      <div className="flex flex-col text-left leading-tight">
+        <span className="text-[10px] font-bold tracking-wider text-white uppercase" style={{ fontFamily: 'Georgia, serif' }}>
+          MINISTERIO
+        </span>
+        <span className="text-[9px] font-semibold text-slate-200 uppercase tracking-tight" style={{ fontFamily: 'Georgia, serif' }}>
+          DE EDUCACIÓN PÚBLICA
+        </span>
+        <span className="text-[7px] text-amber-300 font-mono tracking-tighter">
+          GOBIERNO DE COSTA RICA
+        </span>
+      </div>
+    </div>
   );
 }
 
+// Aliases requeridos por otros componentes del sistema
+export function EscudoOficialMep({ className = "w-10 h-10" }) {
+  return <LogoOficialMep2026 className={className} />;
+}
+
 export function EscudoCtpMercedesNorte({ className = "w-10 h-10" }) {
+  return <EscudoInstitucionalPersonalizado className={className} />;
+}
+
+// Componente personalizable whitelabel (Soporta Logo, Estandarte y Mascota)
+export function EscudoInstitucionalPersonalizado({ className = "w-10 h-10" }) {
+  const cfg = obtenerConfigInstitucion();
+  
+  if (cfg.estandarteUrlPersonalizado) {
+    return (
+      <img 
+        src={cfg.estandarteUrlPersonalizado} 
+        alt="Estandarte Institucional" 
+        className={`${className} object-contain rounded-xl bg-slate-900 border border-cyan-500/50 p-0.5 shadow`} 
+      />
+    );
+  }
+
+  if (cfg.logoUrlPersonalizado) {
+    return (
+      <img 
+        src={cfg.logoUrlPersonalizado} 
+        alt="Logo Institucional" 
+        className={`${className} object-contain rounded-xl bg-slate-900 border border-cyan-500/50 p-0.5 shadow`} 
+      />
+    );
+  }
+
   return (
-    <svg viewBox="0 0 100 100" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="ctpGrad" x1="0" y1="0" x2="100" y2="100">
-          <stop offset="0%" stopColor="#0f172a" />
-          <stop offset="50%" stopColor="#0369a1" />
-          <stop offset="100%" stopColor="#06b6d4" />
-        </linearGradient>
-      </defs>
-      <polygon points="50,4 93,22 84,74 50,96 16,74 7,22" fill="url(#ctpGrad)" stroke="#38bdf8" strokeWidth="4" />
-      <circle cx="50" cy="44" r="18" stroke="#fbbf24" strokeWidth="3.5" strokeDasharray="6 4" fill="#020617" />
-      <text x="50" y="49" textAnchor="middle" fill="#38bdf8" fontSize="14" fontWeight="900" fontFamily="Arial, sans-serif">
-        CTP
-      </text>
-      <text x="50" y="77" textAnchor="middle" fill="#f8fafc" fontSize="10" fontWeight="800" fontFamily="Arial, sans-serif">
-        MN • HEREDIA
-      </text>
-    </svg>
+    <div className={`${className} rounded-xl bg-gradient-to-br from-slate-900 to-blue-950 border border-cyan-400 flex items-center justify-center text-cyan-300 font-black text-xs shadow`}>
+      CTP
+    </div>
   );
 }
