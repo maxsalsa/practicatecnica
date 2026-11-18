@@ -3,24 +3,12 @@ import { obtenerConfigInstitucion } from './ConfiguracionInstitucionalModal';
 
 export function LogoOficialMep2026({ className = "h-9" }) {
   const cfg = obtenerConfigInstitucion();
-
   if (cfg.mepLogoPersonalizado) {
-    return (
-      <img 
-        src={cfg.mepLogoPersonalizado} 
-        alt="Logotipo Oficial MEP" 
-        className={`${className} object-contain rounded-xl shadow`} 
-      />
-    );
+    return <img src={cfg.mepLogoPersonalizado} alt="Logotipo Oficial MEP" className={`${className} object-contain rounded-xl shadow`} />;
   }
-
   return (
     <div className={`flex items-center shrink-0 ${className}`}>
-      <img 
-        src="/logo-mep-oficial.svg" 
-        alt="Ministerio de Educación Pública - Gobierno de Costa Rica" 
-        className="h-full w-auto object-contain rounded-xl shadow-md border border-amber-400/30" 
-      />
+      <img src="/logo-mep-oficial.svg" alt="Ministerio de Educación Pública - Gobierno de Costa Rica" className="h-full w-auto object-contain rounded-xl shadow-md border border-amber-400/30" />
     </div>
   );
 }
@@ -36,7 +24,7 @@ export function EscudoCtpMercedesNorte({ className = "w-10 h-10" }) {
   }
 
   return (
-    <div className={`flex items-center justify-center p-1 bg-slate-900/90 rounded-xl border border-cyan-400 shadow-lg ${className}`} title="TPMN - CTP Mercedes Norte">
+    <div className={`flex items-center justify-center p-1 bg-slate-900/90 rounded-xl border border-rose-500/60 shadow-lg ${className}`} title="TPMN - CTP Mercedes Norte">
       <img src="/rosa-vientos-tpmn.svg" alt="Rosa de los Vientos TPMN" className="w-full h-full object-contain drop-shadow" />
     </div>
   );
