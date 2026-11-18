@@ -2,27 +2,25 @@ import React from 'react';
 import { obtenerConfigInstitucion } from './ConfiguracionInstitucionalModal';
 
 export function LogoOficialMep2026({ className = "h-9" }) {
+  const cfg = obtenerConfigInstitucion();
+
+  if (cfg.mepLogoPersonalizado) {
+    return (
+      <img 
+        src={cfg.mepLogoPersonalizado} 
+        alt="Logotipo Oficial MEP" 
+        className={`${className} object-contain rounded-xl shadow`} 
+      />
+    );
+  }
+
   return (
-    <div className={`flex items-center gap-2.5 bg-[#17223b] px-3.5 py-1.5 rounded-xl border border-amber-400/40 shadow-md ${className}`}>
-      <div className="w-8 h-8 bg-[#11192e] border border-amber-400/70 rounded-lg flex items-center justify-center shrink-0 shadow-inner p-0.5">
-        <svg viewBox="0 0 120 120" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M42 12 Q52 18, 48 28 T62 48 Q72 58, 65 75 Q55 88, 45 72 T32 48 Q25 32, 42 12 Z" fill="#d4af37" />
-          <path d="M68 38 Q78 44, 74 56 T62 68 Z" fill="#d4af37" />
-          <circle cx="28" cy="85" r="3.5" fill="#d4af37" />
-        </svg>
-      </div>
-      <div className="flex flex-col text-left leading-tight">
-        <span className="text-[11px] font-bold tracking-wider text-white uppercase" style={{ fontFamily: 'Georgia, serif' }}>
-          MINISTERIO
-        </span>
-        <span className="text-[9.5px] font-semibold text-slate-200 uppercase tracking-tight" style={{ fontFamily: 'Georgia, serif' }}>
-          DE EDUCACIÓN PÚBLICA
-        </span>
-        <div className="w-full h-[1px] bg-amber-400/70 my-0.5"></div>
-        <span className="text-[7.5px] text-amber-300 font-mono tracking-tighter uppercase font-extrabold">
-          GOBIERNO DE COSTA RICA
-        </span>
-      </div>
+    <div className={`flex items-center shrink-0 ${className}`}>
+      <img 
+        src="/logo-mep-oficial.svg" 
+        alt="Ministerio de Educación Pública - Gobierno de Costa Rica" 
+        className="h-full w-auto object-contain rounded-xl shadow-md border border-amber-400/30" 
+      />
     </div>
   );
 }
