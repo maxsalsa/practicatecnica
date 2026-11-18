@@ -1,16 +1,17 @@
 import React from 'react';
+import { EscudoOficialMep, EscudoCtpMercedesNorte } from './LogosOficialesMepCtp';
 
 export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCambiarSeccion }) {
   const itemsMenu = [
     { id: 'inicio', icono: '🏠', label: 'Inicio' },
-    { id: 'gestion', icono: '🏛️', label: 'Dirección, Boletas Personal & CSV PIAD/SEA' },
+    { id: 'gestion', icono: '🏛️', label: 'Dirección, Permisos y Calificaciones' },
     { id: 'arcade32', icono: '🎮', label: '32 Juegos Educativos' },
     { id: 'materias', icono: '🔬', label: 'Especialidades y Materias' },
     { id: 'ofimatica', icono: '🧪', label: 'Simuladores Excel / Word / Circuitos' },
     { id: 'simuladores', icono: '🎓', label: 'Exámenes (10 a 60 Ítems)' },
-    { id: 'juegovial', icono: '🕹️', label: 'Juego Vial 2D (Rotonda)' },
+    { id: 'juegovial', icono: '🕹️', label: 'Simulador Vial 2D' },
     { id: 'biblioteca', icono: '📚', label: 'Programas MEP y Leyes' },
-    { id: 'ia', icono: '🤖', label: 'Planes IA / Plantilla' }
+    { id: 'ia', icono: '🤖', label: 'Planeamientos e Instrumentos' }
   ];
 
   return (
@@ -19,22 +20,23 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between gap-2">
           <div
             onClick={() => onCambiarSeccion('inicio')}
-            className="flex items-center gap-2.5 cursor-pointer group"
+            className="flex items-center gap-3 cursor-pointer group"
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-700 flex items-center justify-center text-lg shadow-lg">
-              🦉
+            <div className="flex items-center -space-x-1.5">
+              <EscudoOficialMep className="w-10 h-10 drop-shadow-md transition-transform group-hover:scale-105" />
+              <EscudoCtpMercedesNorte className="w-10 h-10 drop-shadow-md transition-transform group-hover:scale-105" />
             </div>
             <div>
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-2">
                 <span className="text-base sm:text-lg font-black tracking-tight text-white">
                   prac<span className="text-cyan-400">TICA</span>tecnica<span className="text-cyan-400">.com</span>
                 </span>
-                <span className="hidden sm:inline-block text-[10px] font-extrabold bg-emerald-950 text-emerald-300 border border-emerald-600 px-2 py-0.5 rounded-full">
-                  v31.0 SEA/PIAD + 32 JUEGOS
+                <span className="hidden md:inline-block text-[10px] font-extrabold bg-sky-950 text-sky-300 border border-sky-700 px-2.5 py-0.5 rounded-full">
+                  MEP • CTP Mercedes Norte
                 </span>
               </div>
               <p className="text-[10px] sm:text-[11px] text-slate-400">
-                Boletas Personal→Dirección • Exportador CSV PIAD/SEA • 32 Juegos & 27 Regionales MEP
+                Ministerio de Educación Pública • Educación Técnica, Académica y Superior de Costa Rica
               </p>
             </div>
           </div>
@@ -42,12 +44,12 @@ export default function NavbarInstitucional({ usuarioActual, seccionActiva, onCa
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-950/90 text-emerald-300 border border-emerald-600/60">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Online / Offline
+              Activo
             </span>
 
             <div
               onClick={() => onCambiarSeccion('login')}
-              className="bg-slate-900 hover:bg-slate-800 border border-slate-700 px-2.5 py-1 rounded-xl cursor-pointer text-right"
+              className="bg-slate-900 hover:bg-slate-800 border border-slate-700 px-3 py-1 rounded-xl cursor-pointer text-right"
             >
               <p className="text-[11px] font-bold text-white leading-tight truncate max-w-[140px] sm:max-w-none">
                 {usuarioActual?.nombre}

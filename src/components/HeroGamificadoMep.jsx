@@ -24,8 +24,8 @@ export default function HeroGamificadoMep({
     },
     {
       id: 'ctp_gestion',
-      titulo: '📊 Notas, Exportar CSV (PIAD / SEA) & Horarios',
-      subtitulo: 'Planilla oficial de calificaciones exportable a Excel/PIAD/SEA y aprobación Dirección',
+      titulo: '📊 Notas, Exportar Registro de Notas CSV & Horarios',
+      subtitulo: 'Planilla oficial de calificaciones exportable a Excel/Excel / MEP y aprobación Dirección',
       colorEspecial: 'bg-gradient-to-r from-indigo-600 to-purple-700 border-indigo-300 text-white shadow-lg'
     },
     {
@@ -59,7 +59,7 @@ export default function HeroGamificadoMep({
             type="text"
             value={busquedaGlobal}
             onChange={(e) => setBusquedaGlobal(e.target.value)}
-            placeholder="🔍 Buscar permiso, tardía, materia, simulacro UCR/TEC, CSV PIAD/SEA..."
+            placeholder="🔍 Buscar permiso, tardía, materia, simulacro UCR/TEC, CSV Excel / MEP..."
             className="w-full bg-slate-950/90 border border-slate-700/80 focus:border-cyan-400 rounded-full px-5 py-2.5 text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none shadow-inner"
           />
         </div>
@@ -89,7 +89,7 @@ export default function HeroGamificadoMep({
               </span>
             </div>
             <p className="text-xs text-slate-400 mt-0.5">
-              Acceso directo en 1 clic a Justificaciones, Permisos ante Dirección, Planillas CSV (SEA/PIAD) y Simulacros.
+              Acceso directo en 1 clic a Justificaciones, Permisos ante Dirección, Planillas CSV MEP y Simulacros.
             </p>
             <div className="w-full sm:w-64 h-2 bg-slate-950 rounded-full overflow-hidden mt-2 border border-slate-800">
               <div

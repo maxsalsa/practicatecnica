@@ -120,7 +120,7 @@ export default function App() {
               onClick={() => cambiarPagina('gestion')}
               className="bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs shadow transition-all flex items-center gap-1"
             >
-              🏛️ Bandeja Director(a) & Exportar CSV (PIAD / SEA)
+              🏛️ Bandeja Director(a) & Exportar Registro de Notas CSV
             </button>
           </div>
 
@@ -186,8 +186,8 @@ export default function App() {
                 className="bg-gradient-to-br from-emerald-900/80 to-slate-900 border border-emerald-500/50 p-5 rounded-2xl cursor-pointer hover:scale-[1.02] transition-all shadow-xl"
               >
                 <span className="text-2xl">🏛️</span>
-                <h3 className="text-sm font-extrabold text-white mt-2">Despacho de Dirección, Boletas & CSV (SEA / PIAD)</h3>
-                <p className="text-xs text-slate-300 mt-1">Aprobación de permisos de personal, justificaciones estudiantiles y planilla CSV para PIAD/SEA.</p>
+                <h3 className="text-sm font-extrabold text-white mt-2">Despacho de Dirección, Boletas & Registro de Notas CSV</h3>
+                <p className="text-xs text-slate-300 mt-1">Aprobación de permisos de personal, justificaciones estudiantiles y planilla CSV para MEP.</p>
               </div>
 
               <div
@@ -334,7 +334,7 @@ export default function App() {
       )}
 
       <footer className="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-500 space-y-1 mt-8">
-        <p>© 2026 pracTICAtecnica.com — Desarrollado por GICM & BDS Devs S.A. | v32.0 UX Master 1-Clic</p>
+        <p>© 2026 pracTICAtecnica.com — Desarrollado por GICM & BDS Devs S.A. | Ministerio de Educación Pública • CTP Mercedes Norte</p>
         <p>Soporte Oficial MEP & WhatsApp: +506 6090-6359 | Ing. Max Salazar Sánchez</p>
       </footer>
 

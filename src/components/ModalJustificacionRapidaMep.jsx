@@ -42,7 +42,7 @@ export default function ModalJustificacionRapidaMep({
   const procesarEnvio = (e) => {
     e.preventDefault();
     if (!detalle.trim()) return;
-    const guardadas = JSON.parse(localStorage.getItem('pt_solicitudes_rapidas_v32') || '[]');
+    const guardadas = JSON.parse(localStorage.getItem('pt_solicitudes_rapidas_mep') || '[]');
     const nueva = {
       id: `${flujo === 'personal_direccion' ? 'DIR' : 'EST'}-${Date.now().toString().slice(-4)}`,
       flujo,
@@ -55,7 +55,7 @@ export default function ModalJustificacionRapidaMep({
       estado: 'Pendiente de Aprobación',
       fechaRegistro: new Date().toLocaleString('es-CR')
     };
-    localStorage.setItem('pt_solicitudes_rapidas_v32', JSON.stringify([nueva, ...guardadas]));
+    localStorage.setItem('pt_solicitudes_rapidas_mep', JSON.stringify([nueva, ...guardadas]));
     setEnviadoOk(true);
   };
 
@@ -237,7 +237,7 @@ export default function ModalJustificacionRapidaMep({
                 }}
                 className="bg-slate-800 hover:bg-slate-700 text-cyan-300 font-bold px-4 py-3 rounded-xl text-xs"
               >
-                📋 Ir al Panel Completo (Aprobar / CSV PIAD)
+                📋 Ir al Panel Completo (Bandeja Dirección y Calificaciones)
               </button>
             </div>
           </form>
