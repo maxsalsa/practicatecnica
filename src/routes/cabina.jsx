@@ -5,9 +5,9 @@ import { useAccount } from "@/components/AccountProvider";
 import { readAttempts } from "@/lib/cloud-progress";
 import { aggregateAttempts } from "@/lib/progress-data";
 export const Route = createFileRoute("/cabina")({ staticData: { sitemap: false },
-    head: () => ({ meta: [{ title: "Cabina de mando · Misiones de estudio · pracTICAtecnica.com" },
+    head: () => ({ meta: [{ title: "Cabina de mando · Misiones de estudio · practicatecnica.com" },
             { name: "description", content: "Explore los planetas Primaria, Colegio, CTP, Universidad y Empresas; complete misiones y gane XP." },
-            { property: "og:title", content: "Cabina de mando · pracTICAtecnica.com" },
+            { property: "og:title", content: "Cabina de mando · practicatecnica.com" },
             { property: "og:description", content: "Misiones de estudio con XP y rangos de piloto." },
             { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
         ] }),

@@ -7,12 +7,12 @@ import { Quiz } from "@/components/Quiz";
 import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/metrologia")({ staticData: { sitemap: true },
     head: () => ({
-        meta: [{ title: "Curso de metrología · pracTICAtecnica.com" },
+        meta: [{ title: "Curso de metrología · practicatecnica.com" },
             {
                 name: "description",
                 content, "Ocho fichas de metrología: SI, conversiones, Vernier, micrómetro, error, calibración e incertidumbre; ejercicios y rúbricas.": ,
             },
-            { property: "og:title", content: "Curso de metrología · pracTICAtecnica.com" },
+            { property: "og:title", content: "Curso de metrología · practicatecnica.com" },
             {
                 property: "og:description",
                 content: "Objetivos, secuencias didácticas y prácticas explicadas.",

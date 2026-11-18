@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 export const Route = createFileRoute("/legal")({ staticData: { sitemap: true },
     head: () => ({
-        meta: [{ title: "Términos, privacidad y aviso legal · pracTICAtecnica.com" },
-            { name: "description", content: "Términos de uso, política de privacidad (Ley 8968), pagos y aviso legal de pracTICAtecnica.com." },
-            { property: "og:title", content: "Términos y privacidad · pracTICAtecnica.com" },
+        meta: [{ title: "Términos, privacidad y aviso legal · practicatecnica.com" },
+            { name: "description", content: "Términos de uso, política de privacidad (Ley 8968), pagos y aviso legal de practicatecnica.com." },
+            { property: "og:title", content: "Términos y privacidad · practicatecnica.com" },
             { property: "og:description", content: "Condiciones de uso, datos personales y pagos SINPE." },
             { property: "og:type", content: "website" },
             { name: "twitter:card", content: "summary" },
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/legal")({ staticData: { sitemap: true },
 });
 const sections, string, [], [] = [
     ["1. Aviso legal", [
-            "pracTICAtecnica.com es una plataforma de preparación independiente desarrollada por GICM Desarrollo de Sistemas Digitales y Constructivos ICM. Responsable Sánchez, contacto +506 6090 6359.",
+            "practicatecnica.com es una plataforma de preparación independiente desarrollada por GICM Desarrollo de Sistemas Digitales y Constructivos ICM. Responsable Sánchez, contacto +506 6090 6359.",
             "No tiene afiliación oficial con el MEP, el MOPT, COSEVI ni ninguna universidad. Los nombres de pruebas se usan solo como referencia. Los resultados de práctica no sustituyen evaluaciones oficiales.",
         ]],
     ["2. Términos de uso", [

@@ -6,7 +6,7 @@ import { Quiz } from '@/components/Quiz';
 import { BlindExam } from '@/components/BlindExam';
 import { malla } from '@/lib/malla';
 import { decks } from '@/lib/questions';
-export const Route = createFileRoute('/generador')({ staticData: { sitemap }, head: () => ({ meta: [{ title: 'Generador por materia · pracTICAtecnica.com' }, { name: 'description', content: 'Seleccione nivel y materia para preparar prácticas y simulacros con bancos disponibles.' }, { property: 'og:title', content: 'Generador por materia · pracTICAtecnica.com' }, { property: 'og:description', content: 'Práctica guiada y examen con selección curricular y cobertura explícita.' }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }] }), component });
+export const Route = createFileRoute('/generador')({ staticData: { sitemap }, head: () => ({ meta: [{ title: 'Generador por materia · practicatecnica.com' }, { name: 'description', content: 'Seleccione nivel y materia para preparar prácticas y simulacros con bancos disponibles.' }, { property: 'og:title', content: 'Generador por materia · practicatecnica.com' }, { property: 'og:description', content: 'Práctica guiada y examen con selección curricular y cobertura explícita.' }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }] }), component });
 function Generator() {
   const [mi, setMi] = useState(0); const [ni, setNi] = useState(0); const [si, setSi] = useState(0);
   const [run, setRun] = useState(null);

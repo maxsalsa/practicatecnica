@@ -4,9 +4,9 @@ import { FileText, Upload, LockKeyhole } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/pdf-preguntas")({ staticData: { sitemap: false },
-    head: () => ({ meta: [{ title: "Preguntas desde PDF · pracTICAtecnica.com" },
+    head: () => ({ meta: [{ title: "Preguntas desde PDF · practicatecnica.com" },
             { name: "description", content: "Lectura privada de PDF y preparación de preguntas con control de gasto de IA." },
-            { property: "og:title", content: "Preguntas desde PDF · pracTICAtecnica.com" },
+            { property: "og:title", content: "Preguntas desde PDF · practicatecnica.com" },
             { property: "og:description", content: "Prepare material de estudio desde sus documentos PDF." },
             { property: "og:type", content: "website" },
             { name: "twitter:card", content: "summary" },

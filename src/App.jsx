@@ -339,7 +339,7 @@ export default function App() {
       )}
 
       <footer className="bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-500 space-y-1 mt-8">
-        <p>© 2026 pracTICAtecnica.com — Desarrollado por GICM & BDS Devs S.A. | Ministerio de Educación Pública • CTP Mercedes Norte</p>
+        <p>© 2026 practicatecnica.com — Desarrollado por GICM & BDS Devs S.A. | Ministerio de Educación Pública • CTP Mercedes Norte</p>
         <p>Soporte Oficial MEP & WhatsApp: +506 6090-6359 | Ing. Max Salazar Sánchez</p>
       </footer>
 

@@ -5,9 +5,9 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 import { aiBudget } from "@/lib/ai-budget";
 export const Route = createFileRoute("/pregunta-ia")({staticData:{sitemap:false},
-  head: () => ({ meta: [{ title: "Mi pregunta a la IA · pracTICAtecnica.com" },
+  head: () => ({ meta: [{ title: "Mi pregunta a la IA · practicatecnica.com" },
     { name: "description", content: "Prepare su propia pregunta de estudio con control de gasto de IA." },
-    { property: "og:title", content: "Mi pregunta a la IA · pracTICAtecnica.com" },
+    { property: "og:title", content: "Mi pregunta a la IA · practicatecnica.com" },
     { property: "og:description", content: "Preguntas de estudio propias y presupuesto de IA controlado." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
   ] }), component: OwnQuestion,

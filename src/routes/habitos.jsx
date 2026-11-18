@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/habitos")({ staticData: { sitemap: false },
     head: () => ({
-        meta: [{ title: "Hábitos de estudio · pracTICAtecnica.com" },
+        meta: [{ title: "Hábitos de estudio · practicatecnica.com" },
             { name: "description", content: "Técnicas de memorización, planificación semanal y gestión del tiempo con temporizador de enfoque." },
             { property: "og:title", content: "Hábitos de estudio que sí funcionan" },
             { property: "og:description", content: "Práctica de recuperación, repaso espaciado y bloques de enfoque." },

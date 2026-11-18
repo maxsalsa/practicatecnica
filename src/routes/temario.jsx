@@ -7,12 +7,12 @@ import { SchoolPractice } from "@/components/SchoolPractice";
 import { SiteHeader } from "@/components/SiteHeader";
 export const Route = createFileRoute("/temario")({ staticData: { sitemap: true },
     head: () => ({
-        meta: [{ title: "Temario · pracTICAtecnica.com" },
+        meta: [{ title: "Temario · practicatecnica.com" },
             {
                 name: "description",
                 content, "Contenidos por prueba según programas del MEP, con preguntas ilimitadas por tema.": ,
             },
-            { property: "og:title", content: "Temario · pracTICAtecnica.com" },
+            { property: "og:title", content: "Temario · practicatecnica.com" },
             { property: "og:description", content: "Practique cada tema con preguntas ilimitadas." },
             { property: "og:type", content: "website" },
             { name: "twitter:card", content: "summary_large_image" },

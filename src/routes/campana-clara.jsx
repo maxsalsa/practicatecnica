@@ -6,9 +6,9 @@ import { Button } from '@/components/ui/button';
 
 export const Route = createFileRoute('/campana-clara')({
   staticData: { sitemap },
-  head: () => ({ meta: [{ title: 'Campaña Clara · publicaciones institucionales | pracTICAtecnica.com' },
+  head: () => ({ meta: [{ title: 'Campaña Clara · publicaciones institucionales | practicatecnica.com' },
     { name: 'description', content: 'Campañas y circulares institucionales aprobadas, con acceso a los canales autorizados de su institución.' },
-    { property: 'og:title', content: 'Campaña Clara · pracTICAtecnica.com' },
+    { property: 'og:title', content: 'Campaña Clara · practicatecnica.com' },
     { property: 'og:description', content: 'Publicaciones aprobadas y comunicación institucional protegida.' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary' },

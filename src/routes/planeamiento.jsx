@@ -12,9 +12,9 @@ import { buildBinomio } from '@/lib/binomio';
 import { RUBRIC_LEVELS, RUBRIC_DESCRIPTORS, lessonMinutes } from '@/lib/teaching-rubric';
 export const Route = createFileRoute("/planeamiento")({ staticData: { sitemap: false },
     head: () => ({
-        meta: [{ title: "Planeamiento docente | pracTICAtecnica.com" },
+        meta: [{ title: "Planeamiento docente | practicatecnica.com" },
             { name: "description", content: "Planeamiento por especialidad y unidad con indicadores, rúbricas, trabajo cotidiano, tareas y proyectos." },
-            { property: "og:title", content: "Planeamiento docente | pracTICAtecnica.com" },
+            { property: "og:title", content: "Planeamiento docente | practicatecnica.com" },
             { property: "og:description", content: "Indicadores, rúbricas, cotidianos, tareas y proyectos listos para imprimir." },
             { property: "og:type", content: "website" },
             { name: "twitter:card", content: "summary" },

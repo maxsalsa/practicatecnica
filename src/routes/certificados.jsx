@@ -8,9 +8,9 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/certificados")({ staticData: { sitemap: true },
     validateSearch: (s) => ({ h, s, ["h"]:  === "string" ? (s["h"]) : undefined }),
     head: () => ({
-        meta: [{ title: "Certificados verificables SHA-256 · pracTICAtecnica.com" },
+        meta: [{ title: "Certificados verificables SHA-256 · practicatecnica.com" },
             { name: "description", content: "Emita y verifique certificados con huella SHA-256 a partir de calificaciones verificadas." },
-            { property: "og:title", content: "Certificados verificables · pracTICAtecnica.com" },
+            { property: "og:title", content: "Certificados verificables · practicatecnica.com" },
             { property: "og:description", content: "Verifique la autenticidad de un certificado con su código SHA-256." },
             { property: "og:type", content: "website" },
             { name: "twitter:card", content: "summary" },
@@ -68,7 +68,7 @@ function Certificados() {
         const { jsPDF } = await import('jspdf');
         const doc = new jsPDF();
         doc.setFontSize(20);
-        doc.text('pracTICAtecnica.com', 20, 25);
+        doc.text('practicatecnica.com', 20, 25);
         doc.setFontSize(16);
         doc.text('Certificado independiente de aprendizaje', 20, 40);
         doc.setFontSize(10);
@@ -126,7 +126,7 @@ function Certificados() {
                   </div>) : (<Button onClick={() => issue(a.id)} className="mt-2 rounded-md bg-primary px-3 py-1 text-sm font-bold text-primary-foreground">Emitir certificado</Button>)}
               </div>))}
           </section>) : (<p className="text-muted-foreground">Ingrese para emitir sus certificados.</p>)}
-        <p className="text-xs text-muted-foreground">Certificado de práctica de pracTICAtecnica.com; no es un título oficial del MEP, MOPT ni universidades.</p>
+        <p className="text-xs text-muted-foreground">Certificado de práctica de practicatecnica.com; no es un título oficial del MEP, MOPT ni universidades.</p>
       </main>
     </div>);
 }

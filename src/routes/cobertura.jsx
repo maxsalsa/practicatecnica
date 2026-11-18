@@ -4,7 +4,7 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { curriculumCoverage } from '@/lib/curriculum-coverage';
 import { normalizeSearch } from '@/lib/material-search';
 
-export const Route=createFileRoute('/cobertura')({staticData:{sitemap:true},head:()=>({meta:[{title:'Cobertura por grado y especialidad ETP · pracTICAtecnica.com'},{name:'description',content:'Consulte capítulos, descargas y evaluaciones disponibles por grado, materia y especialidad, desde primaria hasta duodécimo ETP.'},{property:'og:title',content:'Cobertura curricular por grado · pracTICAtecnica.com'},{property:'og:description',content:'Materiales existentes y tipos de recursos pendientes, sin atribuir cobertura oficial completa.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary'}]}),component:Coverage});
+export const Route=createFileRoute('/cobertura')({staticData:{sitemap:true},head:()=>({meta:[{title:'Cobertura por grado y especialidad ETP · practicatecnica.com'},{name:'description',content:'Consulte capítulos, descargas y evaluaciones disponibles por grado, materia y especialidad, desde primaria hasta duodécimo ETP.'},{property:'og:title',content:'Cobertura curricular por grado · practicatecnica.com'},{property:'og:description',content:'Materiales existentes y tipos de recursos pendientes, sin atribuir cobertura oficial completa.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary'}]}),component:Coverage});
 
 function Coverage(){
  const [query,setQuery]=useState('');

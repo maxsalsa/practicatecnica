@@ -197,7 +197,7 @@ export default function SimuladorUniversitarioMep({ usuarioActual }) {
         <body>
           <div class="header">
             <div>
-              <h1 style="margin:0;font-size:20px;">🦉 pracTICAtecnica.com — CTP Mercedes Norte & BDS Devs</h1>
+              <h1 style="margin:0;font-size:20px;">🦉 practicatecnica.com — CTP Mercedes Norte & BDS Devs</h1>
               <p style="margin:4px 0 0 0;font-size:12px;color:#475569;">Certificado Oficial de Simulacro (${listaReactivos.length} Preguntas)</p>
             </div>
             <div style="text-align:right;font-size:11px;">

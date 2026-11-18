@@ -4,9 +4,9 @@ import { ANNUAL_PRICES_CRC, PLAN_LABELS, PLAN_NOTES, formatCrc } from "@/lib/pri
 
 export const Route = createFileRoute("/precios")({staticData:{sitemap:true},
   head: () => ({
-    meta: [{ title: "Precios oficiales · pracTICAtecnica.com" },
+    meta: [{ title: "Precios oficiales · practicatecnica.com" },
       { name: "description", content: "Planes anuales ₡2.500 (₡1.000 con colegio afiliado), público general y docentes ₡3.500, instituciones ₡10.000. SINPE Móvil o PayPal." },
-      { property: "og:title", content: "Precios oficiales · pracTICAtecnica.com" },
+      { property: "og:title", content: "Precios oficiales · practicatecnica.com" },
       { property: "og:description", content: "Un pago anual incluye todas las materias, simulacros y certificados. Instituciones: ₡10.000 por año." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

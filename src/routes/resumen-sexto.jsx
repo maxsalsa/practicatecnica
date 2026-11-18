@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/resumen-sexto")({ staticData: { sitemap: true },
     head: () => ({
-        meta: [{ title: "Resúmenes y mapas conceptuales 6.º grado · pracTICAtecnica.com" },
+        meta: [{ title: "Resúmenes y mapas conceptuales 6.º grado · practicatecnica.com" },
             { name: "description", content: "Resúmenes imprimibles en PDF con mapas conceptuales de Matemática, Ciencias, Español y Estudios Sociales de 6.º grado." },
             { property: "og:title", content: "Resúmenes y mapas conceptuales 6.º grado" },
             { property: "og:description", content: "Repase lo esencial de 6.º grado y descárguelo en PDF." },

@@ -2,13 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const EMAIL = "maxi.salsa@gmail.com";
-const WA = "https://wa.me/50660906359?text=" + encodeURIComponent("Hola, les escribo desde pracTICAtecnica.com. Deseo información para mi familia o colegio.");
+const WA = "https://wa.me/50660906359?text=" + encodeURIComponent("Hola, les escribo desde practicatecnica.com. Deseo información para mi familia o colegio.");
 
 export const Route = createFileRoute("/contacto")({staticData:{sitemap:true},
   head: () => ({
-    meta: [{ title: "Contacto | pracTICAtecnica.com" },
+    meta: [{ title: "Contacto | practicatecnica.com" },
       { name: "description", content: "Contacte a GICM por WhatsApp o correo, colegios y docentes." },
-      { property: "og:title", content: "Contacto | pracTICAtecnica.com" },
+      { property: "og:title", content: "Contacto | practicatecnica.com" },
       { property: "og:description", content: "WhatsApp y correo de GICM para familias y colegios." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

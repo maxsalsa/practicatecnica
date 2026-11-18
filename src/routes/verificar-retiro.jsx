@@ -12,9 +12,9 @@ import { PickupNfc } from '@/components/institution/PickupNfc';
 
 export const Route = createFileRoute('/verificar-retiro')({
   staticData: { sitemap },
-  head: () => ({ meta: [{ title: 'Consulta privada de retiros · pracTICAtecnica.com' },
+  head: () => ({ meta: [{ title: 'Consulta privada de retiros · practicatecnica.com' },
     { name: 'description', content: 'Consulta autorizada del estado vigente de retiros mediante QR, barras o identificación registrada.' },
-    { property: 'og:title', content: 'Verificar retiro · pracTICAtecnica.com' },
+    { property: 'og:title', content: 'Verificar retiro · practicatecnica.com' },
     { property: 'og:description', content: 'Verificación privada para familias y personal institucional autorizado.' },
     { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }, { name: 'robots', content: 'noindex' },
   ] }),

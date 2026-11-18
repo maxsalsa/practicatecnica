@@ -98,7 +98,7 @@ export async function downloadEnrollmentPdf(institutionName) {
     doc.line(15, y, 110, y);
     doc.text('Firma manuscrita y sello de Dirección', 15, y + 6);
     doc.setFontSize(8);
-    doc.text('pracTICAtecnica.com · GICM · No equivale a firma digital certificada.', 15, 285);
+    doc.text('practicatecnica.com · GICM · No equivale a firma digital certificada.', 15, 285);
     doc.save(`matricula-${r.id.slice(0, 8)}.pdf`);
 }
 export function EnrollmentPricing({ inst, institutionName, logoPath, request, tariffs, discounts, latest }, request, , { id }, tariffs, discounts, latest) {

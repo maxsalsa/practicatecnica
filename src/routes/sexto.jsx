@@ -8,12 +8,12 @@ import { GRADE6_VERSIONS, grade6Deck, grade6Subjects } from "@/lib/grade6";
 
 export const Route = createFileRoute("/sexto")({staticData:{sitemap:true},
   head: () => ({
-    meta: [{ title: "Preparación 6.º grado MEP · pracTICAtecnica.com" },
+    meta: [{ title: "Preparación 6.º grado MEP · practicatecnica.com" },
       {
         name: "description",
         content: "Matemática, Ciencias, Español y Estudios Sociales de 6.º grado: 500 versiones por materia con explicaciones.",
       },
-      { property: "og:title", content: "Preparación 6.º grado MEP · pracTICAtecnica.com" },
+      { property: "og:title", content: "Preparación 6.º grado MEP · practicatecnica.com" },
       { property: "og:description", content: "Practique 6.º grado con versiones distintas cada vez y respuestas explicadas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

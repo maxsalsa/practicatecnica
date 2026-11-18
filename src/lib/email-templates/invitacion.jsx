@@ -7,10 +7,10 @@ import type { TemplateEntry } from './registry'
 const Email = ({ inviter }) => (
   <Html lang="es" dir="ltr">
     <Head />
-    <Preview>Le invitaron a practicar en pracTICAtecnica.com</Preview>
+    <Preview>Le invitaron a practicar en practicatecnica.com</Preview>
     <Body style={main}>
       <Container style={container}>
-        <Heading style={h1}>pracTICAtecnica.com</Heading>
+        <Heading style={h1}>practicatecnica.com</Heading>
         <Text style={text}>{inviter ? `${inviter} le invitó` : 'Le invitamos'} a repasar y practicar para sus exámenes: MOPT, admisión universitaria, CTP y más.</Text>
         <Text style={text}>Pruebe gratis durante 13 días.</Text>
         <Button href="https://practicatecnica.com/auth" style={button}>Crear mi cuenta</Button>
@@ -22,7 +22,7 @@ const Email = ({ inviter }) => (
 
 export const template = {
   component,
-  subject: 'Invitación a pracTICAtecnica.com',
+  subject: 'Invitación a practicatecnica.com',
   displayName: 'Invitación',
   previewData: { inviter: 'Max Salazar' },
 } satisfies TemplateEntry

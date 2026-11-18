@@ -10,9 +10,9 @@ import {TopicPoints} from '@/components/TopicPoints';
 export const Route = createFileRoute('/practica-sin-repeticion')({
   staticData: { sitemap },
   head: () => ({
-    meta: [{ title: 'Práctica sin repetición · matemática, español, ciencias y técnica · pracTICAtecnica.com' },
+    meta: [{ title: 'Práctica sin repetición · matemática, español, ciencias y técnica · practicatecnica.com' },
       { name: 'description', content: 'Repasos breves de idiomas, matemática y técnica con selección de estructuras distintas y explicaciones. Banco finito de contenido original.' },
-      { property: 'og:title', content: 'Práctica sin repetición · pracTICAtecnica.com' },
+      { property: 'og:title', content: 'Práctica sin repetición · practicatecnica.com' },
       { property: 'og:description', content: 'Repasos originales con una pregunta por estructura disponible, sin rellenar sesiones con duplicados.' },
       { property: 'og:type', content: 'website' },
       { name: 'twitter:card', content: 'summary' },
@@ -36,7 +36,7 @@ function UnlimitedPractice() {
       <h1 className="text-3xl font-black md:text-4xl">Repasos por área</h1>
       <TopicPoints />
       <p className="mt-3 max-w-3xl text-muted-foreground">Repasos breves, sin certificación. Contenido introductorio; no constituye un banco de 1.000 preguntas revisadas por área.</p>
-      <p className="mt-2 text-xs text-muted-foreground">Ítems originales de pracTICAtecnica.com con fines de repaso; no reemplazan las pruebas oficiales del MEP.</p>
+      <p className="mt-2 text-xs text-muted-foreground">Ítems originales de practicatecnica.com con fines de repaso; no reemplazan las pruebas oficiales del MEP.</p>
       {AREAS.map(area => <div key={area} className="mt-8">
         <h2 className="text-xl font-extrabold">{area}</h2>
         <div className="mt-3 grid gap-3 md:grid-cols-2">

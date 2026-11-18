@@ -13,12 +13,12 @@ import {TopicPoints} from '@/components/TopicPoints';
 
 export const Route = createFileRoute("/perfil")({staticData:{sitemap:false},
   head: () => ({
-    meta: [{ title: "Mi perfil · pracTICAtecnica.com" },
+    meta: [{ title: "Mi perfil · practicatecnica.com" },
       {
         name: "description",
         content: "Personalice su nivel, su meta de examen y su meta diaria de práctica.",
       },
-      { property: "og:title", content: "Mi perfil · pracTICAtecnica.com" },
+      { property: "og:title", content: "Mi perfil · practicatecnica.com" },
       { property: "og:description", content: "Personalice su ruta de estudio." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

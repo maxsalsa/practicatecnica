@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 export const Route = createFileRoute("/acerca")({ staticData: { sitemap: true },
     head: () => ({
-        meta: [{ title: "Acerca de y pagos · pracTICAtecnica.com" },
-            { name: "description", content: "Quiénes somos, planes anuales y cómo pagar por SINPE Móvil en pracTICAtecnica.com." },
-            { property: "og:title", content: "Acerca de y pagos · pracTICAtecnica.com" },
+        meta: [{ title: "Acerca de y pagos · practicatecnica.com" },
+            { name: "description", content: "Quiénes somos, planes anuales y cómo pagar por SINPE Móvil en practicatecnica.com." },
+            { property: "og:title", content: "Acerca de y pagos · practicatecnica.com" },
             { property: "og:description", content: "Planes anuales ₡2.500, Público General ₡3.500 e instituciones ₡10.000. SINPE Móvil o PayPal." },
             { property: "og:type", content: "website" },
             { name: "twitter:card", content: "summary" },
@@ -12,7 +12,7 @@ export const Route = createFileRoute("/acerca")({ staticData: { sitemap: true },
     }),
     component: Acerca,
 });
-const wa = "https://api.whatsapp.com/send?phone=50660906359&text=" + encodeURIComponent("Hola, realicé un pago SINPE en pracTICAtecnica.com y deseo activar mi plan.");
+const wa = "https://api.whatsapp.com/send?phone=50660906359&text=" + encodeURIComponent("Hola, realicé un pago SINPE en practicatecnica.com y deseo activar mi plan.");
 function Acerca() {
     return (<main className="min-h-screen bg-hero">
       <SiteHeader />
@@ -21,7 +21,7 @@ function Acerca() {
           <p className="text-sm font-semibold text-primary">Acerca de</p>
           <h1 className="mt-2 text-4xl font-black">Repase. Practique. Prepárese.</h1>
           <p className="mt-3 text-muted-foreground">
-            pracTICAtecnica.com es una plataforma independiente de preparación para pruebas MEP, admisión universitaria, CTP y MOPT.
+            practicatecnica.com es una plataforma independiente de preparación para pruebas MEP, admisión universitaria, CTP y MOPT.
             Desarrollado por <strong className="text-foreground">GICM Desarrollo de Sistemas Digitales y Constructivos ICM</strong>. Sin afiliación oficial al MEP ni al MOPT.
           </p>
         </header>
@@ -55,7 +55,7 @@ function Acerca() {
         <article id="gicm" className="rounded-2xl border border-primary bg-card p-6 shadow-card">
           <p className="text-xs font-bold tracking-widest text-accent">QUIÉNES SOMOS</p>
           <h2 className="mt-1 text-2xl font-extrabold">GICM Desarrollo de Sistemas Digitales y Constructivos ICM</h2>
-          <p className="mt-3 text-sm">pracTICAtecnica.com es una plataforma costarricense de preparación independiente, creada para que estudiantes, familias y docentes repasen, practiquen y se preparen con información clara y verificable.</p>
+          <p className="mt-3 text-sm">practicatecnica.com es una plataforma costarricense de preparación independiente, creada para que estudiantes, familias y docentes repasen, practiquen y se preparen con información clara y verificable.</p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             <div className="rounded-xl bg-muted p-4"><p className="text-3xl">👨‍🏫</p><p className="mt-1 font-black">Max Salazar Sánchez</p><p className="text-sm text-muted-foreground">Fundador y director educativo</p></div>
             <div className="rounded-xl bg-muted p-4"><p className="text-3xl">👨‍💻</p><p className="mt-1 font-black">Steven Corrales</p><p className="text-sm text-muted-foreground">Cofundador y docente</p></div>

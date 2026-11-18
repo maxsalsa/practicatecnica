@@ -50,10 +50,10 @@ export const Route = createFileRoute('/institucion')({
     }),
     staticData: { sitemap },
     head: () => ({
-        meta: [{ title: 'Mi institución · avisos y permisos · pracTICAtecnica.com' },
+        meta: [{ title: 'Mi institución · avisos y permisos · practicatecnica.com' },
             { name: 'description', content: 'Avisos, agenda, canales con familias y profesor guía, permisos desde el teléfono con QR verificable y administración de colegios afiliados.' },
             { name: 'robots', content: 'noindex' },
-            { property: 'og:title', content: 'Mi institución · pracTICAtecnica.com' },
+            { property: 'og:title', content: 'Mi institución · practicatecnica.com' },
             { property: 'og:description', content: 'Avisos, permisos y personal de su colegio en un solo lugar.' },
             { property: 'og:type', content: 'website' },
             { name: 'twitter:card', content: 'summary' },

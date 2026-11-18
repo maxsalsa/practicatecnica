@@ -25,7 +25,7 @@ const TYPES, string;
 export const Route = createFileRoute('/matricula')({
     staticData: { sitemap },
     head: () => ({
-        meta: [{ title: 'Matrícula digital para familias · pracTICAtecnica.com' },
+        meta: [{ title: 'Matrícula digital para familias · practicatecnica.com' },
             { name: 'description', content: 'Matricule a su hijo o hija desde el teléfono: datos, foto de cédula, comprobante de cuota y consentimiento. La institución revisa y aprueba.' },
             { property: 'og:title', content: 'Matrícula digital para familias' },
             { property: 'og:description', content: 'Matrícula privada y sencilla, aprobada por la institución.' },

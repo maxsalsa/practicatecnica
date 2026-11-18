@@ -9,9 +9,9 @@ import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 export const Route = createFileRoute('/rubricas')({
     staticData: { sitemap },
-    head: () => ({ meta: [{ title: 'Rúbricas y trazabilidad docente · pracTICAtecnica.com' },
+    head: () => ({ meta: [{ title: 'Rúbricas y trazabilidad docente · practicatecnica.com' },
             { name: 'description', content: 'Indicadores y valoraciones docentes por estudiante, materia y nivel con seguimiento privado.' },
-            { property: 'og:title', content: 'Rúbricas y trazabilidad · pracTICAtecnica.com' },
+            { property: 'og:title', content: 'Rúbricas y trazabilidad · practicatecnica.com' },
             { property: 'og:description', content: 'Seguimiento privado de indicadores de logro y comentarios docentes.' },
             { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }, { name: 'robots', content: 'noindex' },
         ] }),

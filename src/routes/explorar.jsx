@@ -15,9 +15,9 @@ import { PRACTICE_SIZE, EXAM_SIZE } from '@/lib/assessment-size';
 export const Route = createFileRoute("/explorar")({staticData:{sitemap:true},
   validateSearch: (s) => ({ ...validCurriculumSearch(s), ...(typeof s['banco']==='string'&&decks.some(d=>d.id===s['banco'])?{banco:s['banco']}) }),
   head: () => ({
-    meta: [{ title: "Explorar la malla MEP | pracTICAtecnica.com" },
+    meta: [{ title: "Explorar la malla MEP | practicatecnica.com" },
       { name: "description", content: "Elija modalidad, nivel y materia, secundaria, CTP, ingreso, admisión y MOPT, con prácticas, simulacros y libros." },
-      { property: "og:title", content: "Explorar la malla MEP | pracTICAtecnica.com" },
+      { property: "og:title", content: "Explorar la malla MEP | practicatecnica.com" },
       { property: "og:description", content: "Catálogo parcial por nivel y materia con bancos disponibles y cobertura explícita." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -56,7 +56,7 @@ function Explorar() {
     <main className="min-h-screen bg-hero">
       <SiteHeader />
       <section className="mx-auto max-w-5xl space-y-6 px-5 pb-16">
-        <header className="mt-6"><img src={promoLogo} alt="Logo pracTICAtecnica.com" width={96} height={96} className="mb-3 h-24 w-24 rounded-2xl border shadow-card" /><h1 className="text-4xl font-black">🧭 Explorar la malla</h1><img src={subjectsScene} alt="Colegio con aulas de matemáticas, ciencias, español, inglés y estudios sociales" width={1536} height={1024} loading="lazy" className="mt-3 max-h-56 w-full rounded-2xl object-cover" />
+        <header className="mt-6"><img src={promoLogo} alt="Logo practicatecnica.com" width={96} height={96} className="mb-3 h-24 w-24 rounded-2xl border shadow-card" /><h1 className="text-4xl font-black">🧭 Explorar la malla</h1><img src={subjectsScene} alt="Colegio con aulas de matemáticas, ciencias, español, inglés y estudios sociales" width={1536} height={1024} loading="lazy" className="mt-3 max-h-56 w-full rounded-2xl object-cover" />
           <p className="mt-1 text-muted-foreground">1 · Modalidad → 2 · Nivel → 3 · Materia. Luego practique, haga un simulacro o descargue el libro.</p></header>
         <div><p className="mb-2 text-xs font-bold tracking-widest text-accent">1 · MODALIDAD</p>
           <div className="flex flex-wrap gap-2">{malla.map((m, i) => <Button variant="outline" aria-pressed={i===mi} key={m.id} className={`h-auto min-h-11 whitespace-normal ${pill(i === mi)}`} onClick={() => { setMi(i); setNi(0); setMa(0); }}>{m.emoji} {m.name}</Button>)}</div></div>

@@ -98,7 +98,7 @@ export default function BibliotecaLeyesLibrosMep() {
           <div class="box">
             <h3>Síntesis Pedagógica y Fundamento Oficial</h3>
             <p>${doc.resumen}</p>
-            <p><strong>Uso autorizado:</strong> Libre consulta, impresión y descarga para estudiantes, docentes y centros educativos de Costa Rica en pracTICAtecnica.com.</p>
+            <p><strong>Uso autorizado:</strong> Libre consulta, impresión y descarga para estudiantes, docentes y centros educativos de Costa Rica en practicatecnica.com.</p>
           </div>
           <script>window.onload = function() { window.print(); };</script>
         </body>

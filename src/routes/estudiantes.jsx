@@ -22,12 +22,12 @@ import { TeacherBookProgress } from '@/components/BookTopicProgress';
 import { TeacherAccess } from '@/components/TeacherAccess';
 export const Route = createFileRoute("/estudiantes")({ staticData: { sitemap: false },
     head: () => ({
-        meta: [{ title: "Estudiantes · pracTICAtecnica.com" },
+        meta: [{ title: "Estudiantes · practicatecnica.com" },
             {
                 name: "description",
                 content: "Seguimiento privado de estudiantes, notas, puntos y rachas.",
             },
-            { property: "og:title", content: "Estudiantes · pracTICAtecnica.com" },
+            { property: "og:title", content: "Estudiantes · practicatecnica.com" },
             { property: "og:description", content: "Panel docente de aprendizaje." },
             { property: "og:type", content: "website" },
             { name: "twitter:card", content: "summary" },

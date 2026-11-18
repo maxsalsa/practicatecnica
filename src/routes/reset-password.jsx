@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/SiteHeader";
 export const Route = createFileRoute("/reset-password")({staticData:{sitemap:false},
   head: () => ({
-    meta: [{ title: "Nueva contraseña · pracTICAtecnica.com" },
+    meta: [{ title: "Nueva contraseña · practicatecnica.com" },
       { name: "description", content: "Recupere el acceso a su cuenta de práctica." },
-      { property: "og:title", content: "Nueva contraseña · pracTICAtecnica.com" },
+      { property: "og:title", content: "Nueva contraseña · practicatecnica.com" },
       { property: "og:description", content: "Restablezca su contraseña de forma segura." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

@@ -9,9 +9,9 @@ import { AuthorizedContent } from '@/components/AuthorizedContent';
 
 export const Route = createFileRoute("/ruleta")({staticData:{sitemap:false},
   head: () => ({
-    meta: [{ title: "Ruleta del saber · pracTICAtecnica.com" },
+    meta: [{ title: "Ruleta del saber · practicatecnica.com" },
       { name: "description", content: "Gire la ruleta, responda hasta 20 preguntas de un tema al azar y sume XP y racha." },
-      { property: "og:title", content: "Ruleta del saber · pracTICAtecnica.com" },
+      { property: "og:title", content: "Ruleta del saber · practicatecnica.com" },
       { property: "og:description", content: "Trivia rápida con temas de estudio al azar." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

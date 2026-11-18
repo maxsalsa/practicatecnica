@@ -5,9 +5,9 @@ import { useAccount } from "@/components/AccountProvider";
 import { supabase } from "@/integrations/supabase/client";
 import { BADGE_TOPICS, badgeTopic } from "@/lib/badge-topics";
 export const Route = createFileRoute("/insignias")({ staticData: { sitemap: true },
-    head: () => ({ meta: [{ title: "Insignias por tema · pracTICAtecnica.com" },
+    head: () => ({ meta: [{ title: "Insignias por tema · practicatecnica.com" },
             { name: "description", content: "Insignias por tema emitidas automáticamente al aprobar un simulacro con certificado SHA-256." },
-            { property: "og:title", content: "Insignias por tema · pracTICAtecnica.com" },
+            { property: "og:title", content: "Insignias por tema · practicatecnica.com" },
             { property: "og:description", content: "Web, Ciberseguridad, Soporte TI, Python, IoT, Contabilidad, Turismo y más." },
             { property: "og:type", content: "website" },
             { name: "twitter:card", content: "summary" },

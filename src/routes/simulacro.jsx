@@ -14,12 +14,12 @@ export const Route = createFileRoute("/simulacro")({staticData:{sitemap:true},
     return typeof id === "string" && decks.some(d => d.id === id) ? { deck } : {};
   },
   head: () => ({
-    meta: [{ title: "Simulacro cronometrado · pracTICAtecnica.com" },
+    meta: [{ title: "Simulacro cronometrado · practicatecnica.com" },
       {
         name: "description",
         content: "Simulacros con tiempo, pausa y nota final, admisión, CTP, Historia, Español y más.",
       },
-      { property: "og:title", content: "Simulacro cronometrado · pracTICAtecnica.com" },
+      { property: "og:title", content: "Simulacro cronometrado · practicatecnica.com" },
       { property: "og:description", content: "Practique como en la prueba real, con tiempo y retroalimentación." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

@@ -9,9 +9,9 @@ import { malla } from "@/lib/malla";
 import { AuthorizedContent } from '@/components/AuthorizedContent';
 export const Route = createFileRoute("/habilidades")({ staticData: { sitemap: false },
     head: () => ({
-        meta: [{ title: "Mapa de habilidades y reto relámpago | pracTICAtecnica.com" },
+        meta: [{ title: "Mapa de habilidades y reto relámpago | practicatecnica.com" },
             { name: "description", content: "Vea su dominio por categoría, practique su punto débil y juegue el reto relámpago de 60 segundos." },
-            { property: "og:title", content: "Mapa de habilidades | pracTICAtecnica.com" },
+            { property: "og:title", content: "Mapa de habilidades | practicatecnica.com" },
             { property: "og:description", content: "Control de conocimientos por categoría con bandas de dominio y juego relámpago." },
             { property: "og:type", content: "website" },
             { name: "twitter:card", content: "summary" },

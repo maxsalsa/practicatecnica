@@ -99,7 +99,7 @@ function ChannelsList({ institutionId }) {
     }
     const rows = list.data ?? [];
     return <div className="overflow-hidden rounded-md border border-border bg-card">
-    <header className="flex flex-wrap items-center justify-between gap-2 border-b border-border p-4"><div><h2 className="text-xl font-black">Conversación institucional</h2><p className="text-sm font-bold text-primary">pracTICAtecnica.com</p></div><span className="flex items-center gap-2 text-xs text-muted-foreground"><ShieldCheck className="h-4 w-4 text-accent"/>Acceso autorizado</span></header>
+    <header className="flex flex-wrap items-center justify-between gap-2 border-b border-border p-4"><div><h2 className="text-xl font-black">Conversación institucional</h2><p className="text-sm font-bold text-primary">practicatecnica.com</p></div><span className="flex items-center gap-2 text-xs text-muted-foreground"><ShieldCheck className="h-4 w-4 text-accent"/>Acceso autorizado</span></header>
     <div className="grid md:grid-cols-[16rem_1fr]">
     <aside className={`${selected ? 'hidden md:block' : ''} border-b border-border p-2 md:border-b-0 md:border-r`} aria-label="Canales">
       {list.isPending ? <p role="status" className="p-3">Cargando canales…</p> : list.isError ? <p role="alert" className="p-3 text-destructive">{list.error.message}</p> : !rows.length ?

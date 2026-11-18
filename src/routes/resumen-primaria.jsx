@@ -5,7 +5,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/resumen-primaria")({ staticData: { sitemap: true },
     head: () => ({
-        meta: [{ title: "Resúmenes y mapas conceptuales 1.º a 5.º · pracTICAtecnica.com" },
+        meta: [{ title: "Resúmenes y mapas conceptuales 1.º a 5.º · practicatecnica.com" },
             { name: "description", content: "Mapas conceptuales imprimibles de Matemática, Español, Ciencias y Estudios Sociales de 1.º a 5.º grado." },
             { property: "og:title", content: "Resúmenes y mapas 1.º a 5.º grado" },
             { property: "og:description", content: "Repase lo esencial de primaria y descárguelo en PDF." },

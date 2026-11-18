@@ -15,9 +15,9 @@ import { RedeemCode } from '@/components/AccessCodeBox';
 import { availablePlans, formatCrc, PAYPAL_USD, PLAN_NOTES } from "@/lib/pricing";
 export const Route = createFileRoute("/pagos")({ staticData: { sitemap: false },
     head: () => ({
-        meta: [{ title: "Planes anuales y pagos SINPE/PayPal · pracTICAtecnica.com" },
+        meta: [{ title: "Planes anuales y pagos SINPE/PayPal · practicatecnica.com" },
             { name: "description", content: "Planes anuales ₡2.500 (₡1.000 con colegio afiliado), docentes y público general ₡3.500, instituciones ₡10.000. SINPE verificado y PayPal." },
-            { property: "og:title", content: "Pagos · pracTICAtecnica.com" },
+            { property: "og:title", content: "Pagos · practicatecnica.com" },
             { property: "og:description", content: "Pague por SINPE Móvil al 6090 6359 o PayPal y active su plan anual." },
             { property: "og:type", content: "website" },
             { name: "twitter:card", content: "summary" },

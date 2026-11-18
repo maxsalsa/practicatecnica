@@ -10,12 +10,12 @@ export const Route = createFileRoute("/auth")({
   staticData: { sitemap: false },
   head: () => ({
     meta: [
-      { title: "Ingresar · pracTICAtecnica.com" },
+      { title: "Ingresar · practicatecnica.com" },
       {
         name: "description",
         content: "Ingrese para guardar sus prácticas y progreso entre dispositivos.",
       },
-      { property: "og:title", content: "Ingresar · pracTICAtecnica.com" },
+      { property: "og:title", content: "Ingresar · practicatecnica.com" },
       { property: "og:description", content: "Su cuenta de aprendizaje y progreso." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

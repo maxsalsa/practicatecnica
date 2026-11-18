@@ -8,7 +8,7 @@ import { InstitutionRolesPanel } from '@/components/institution/InstitutionRoles
 import { canReadStudentRecords } from '@/lib/student-record-policy';
 export const Route = createFileRoute('/institucion_/roles')({
     staticData: { sitemap },
-    head: () => ({ meta: [{ title: 'Roles institucionales · pracTICAtecnica.com' }, { name: 'description', content: 'Asignación privada de roles por Dirección y Subdirección de cada centro.' }, { property: 'og:title', content: 'Roles institucionales · pracTICAtecnica.com' }, { property: 'og:description', content: 'Administración de usuarios autorizada por institución.' }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }, { name: 'robots', content: 'noindex' }] }),
+    head: () => ({ meta: [{ title: 'Roles institucionales · practicatecnica.com' }, { name: 'description', content: 'Asignación privada de roles por Dirección y Subdirección de cada centro.' }, { property: 'og:title', content: 'Roles institucionales · practicatecnica.com' }, { property: 'og:description', content: 'Administración de usuarios autorizada por institución.' }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary' }, { name: 'robots', content: 'noindex' }] }),
     component: RolesPage,
 });
 function RolesPage() {

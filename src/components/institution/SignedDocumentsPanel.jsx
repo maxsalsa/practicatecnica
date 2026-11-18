@@ -89,7 +89,7 @@ async function pdf(d) {
         const url = `${window.location.origin}/verificar-documento?codigo=${d.verification_hash}`;
         doc.addImage(await qr.toDataURL(url), 'PNG', 155, y, 35, 35);
         doc.setFontSize(8);
-        doc.text('pracTICAtecnica.com · GICM · No equivale a firma digital certificada.', 15, 282);
+        doc.text('practicatecnica.com · GICM · No equivale a firma digital certificada.', 15, 282);
         doc.save(`documento-${d.id}.pdf`);
     }
     catch {

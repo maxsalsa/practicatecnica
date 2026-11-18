@@ -362,7 +362,7 @@ export default function ExploradorMateriasMep({ onPracticarMateria }) {
         <body>
           <div class="banner">
             <h1 style="margin:0;font-size:22px;">${mat.icono} ${mat.nombre} — Material Descargable Oficial</h1>
-            <p style="margin:6px 0 0 0;color:#e2e8f0;font-size:13px;">pracTICAtecnica.com • CTP Mercedes Norte & Cobertura Nacional MEP</p>
+            <p style="margin:6px 0 0 0;color:#e2e8f0;font-size:13px;">practicatecnica.com • CTP Mercedes Norte & Cobertura Nacional MEP</p>
           </div>
           <div class="card">
             <h3>📌 Nivel y Cobertura Curricular: ${mat.niveles}</h3>
