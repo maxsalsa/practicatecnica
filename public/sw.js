@@ -1,4 +1,4 @@
-const CACHE_NAME = 'practicatecnica-offline-v29-5';
+const CACHE_NAME = 'practicatecnica-global-v47-prod';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
@@ -12,7 +12,6 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Estrategia Stale-While-Revalidate: sirve instantáneamente desde caché y actualiza en segundo plano
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   event.respondWith(
