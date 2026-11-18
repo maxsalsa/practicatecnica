@@ -3,7 +3,7 @@ export const INDEXED_DB_OFFLINE_MASTER = {
   autor: "Ing. Max Salazar Sánchez (Profe Max) & BDS Devs",
   estrategiaOfflineFirst: {
     activo: true,
-    baseDeDatos: "PracticaTecnicaOfflineDB",
+    baseDeDatos: "practicatecnicaOfflineDB",
     stores: ["estudiantes", "asistenciaQr", "calificacionesSea", "auditoriaSha256", "horariosDirectivos"],
     mecanismo: "Almacenamiento estructurado en IndexedDB con sincronización bidireccional automática hacia Neon DB al recuperar conectividad."
   },
